@@ -3,7 +3,7 @@ title: 'nonato的博客'
 description: 'nick to meet you'
 keyword: '王者荣耀, ios,前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
 url: 'http://obgnauh.com' # your host
-baseurl: '/'
+baseurl: 'http://obgnauh.com/'
 
 # Navigation links
 nav:

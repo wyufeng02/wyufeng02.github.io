@@ -1,0 +1,388 @@
+body, div, ul, li, header{
+	padding: 0;
+	margin: 0 auto;
+}
+li {
+	list-style: none;
+}
+body {
+	background-color: #edf0f1;
+}
+input, button{
+	outline: none;
+	border: 0;
+}
+p, a, span, input, .app-title, .okAddBtn {
+	font-family: "PingFang SC","Helvetica Neue","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+}
+.app-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	width: 100%;
+	height: 60px;
+	box-shadow: 0 2px 4px rgba( 0, 0, 0, 0.25);
+	transition: top .4s ease, background-color .5s;
+}
+.headerUp{
+	top: -65px;
+}
+.headerDown{
+	top: 0;
+}
+.app-title {
+	margin: 0 auto;
+	height: 100%;
+	font-size: 22px;
+	color: #fff;
+	letter-spacing: 1px;
+	line-height: 60px;
+	text-align: center;
+}
+.app-menu {
+	width: 40px;
+	position: absolute;
+	top: 14px;
+	left: 5%;
+	padding: 3px 0;
+	border-radius: 3px;
+}
+.app-menu:active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.mstrip {
+	margin: 6px auto;
+	width: 60%;
+	height: 2px;
+	border-radius: 10px;
+	background-color: #fff;
+	transform-origin: 0;
+}
+.app-back {
+	display: none;
+	position: absolute;
+	top: 15px;
+	left: 5%;
+	border-radius: 3px;
+	padding: 5px;
+	width: 24px;
+	height: 24px;
+}
+.app-back svg {
+	width: 100%;
+	height: 100%;
+}
+.app-back:active {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.app-main {	
+	position: relative;
+	top: 80px;
+}
+.todo-list {
+	position: absolute;
+	display: none;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+.completed-list {
+	position: absolute;
+	display: none;
+	width: 100%;
+	padding-bottom: 100px;
+}
+.completed-list span {
+	opacity: .4;
+	text-decoration: line-through;
+}
+.task-item {
+	position: relative;
+	list-style: none;
+	width: 90%;
+	padding: 20px 0;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+	overflow: auto;
+	margin-bottom: 15px;
+}
+.task-item:last-child {
+	margin-bottom: 10px;
+}
+.task-item span{
+	float: left;
+	width: 70%;
+	margin-left: 14px;
+	font-weight: 200;
+}
+.task-item i {
+	display: none;
+}
+.task-item svg {
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	fill: #c5c9ce;
+	padding: 6px;
+}
+.task-title {
+	font-size: 16px;
+}
+.clear {
+	position: absolute;
+	top: 12px;
+	right: 52px;
+}
+.completed-list .clear{
+	right: 12px;
+}
+.finish {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+.tips {
+	font-size: 20px;
+	color: #9E9E9E;
+	text-align: center;
+	margin-top: 60px;
+}
+.btnBox {
+	position: fixed;
+	bottom: 3%;
+	right: 5%;
+	z-index: 10;
+	transition: bottom .3s ease-out;
+}
+.btnDown{
+	bottom: -60px;
+}
+.btnUp{
+	bottom: 3%;
+}
+.addBtn {
+	position: relative;
+	z-index: 12;
+	width: 60px;
+	height: 60px;
+	background-color: #FFC107;
+	border-radius: 100px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+.addBtn svg {
+	width: 20px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	fill: #fff;
+	transition: .2s ease;
+}
+.okAddBtn {	
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	z-index: 11;
+	width: 50px;
+	height: 50px;
+	background-color: #757575;
+	border-radius: 100px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	font-size: 14px;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	transition: .15s ease-out;
+}
+.addContent{
+	display: none;
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(255, 255, 255, 1);
+}
+.add-task-input {
+	margin: 0 auto;
+	margin-top: 100px;
+	display: block;
+	width: 90%;
+	height: 50px;
+	background-color: transparent;
+	border-bottom: 2px solid #BDBDBD;
+	font-size: 22px;
+	color: #212121;
+	transition: .3s ease;
+}
+.cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.4;
+	display: none;
+}
+.menu-content {
+	position: fixed;
+	top: 0;
+	left: -260px;
+	z-index: 3;
+	width: 250px;
+	height: 100%;
+	background-color: #fff;
+	transition: .3s ease;
+}
+.menu-list {
+	width: 100%;
+	height: 300px;
+	margin-top: 80px;
+}
+.menu-item {
+	position: relative;
+	height: 60px;
+	cursor: pointer;
+	transition: .3s;
+}
+.menu-item:hover, .menu-item:active {
+	background-color: #eee;
+}
+.menu-text {
+	position: absolute;
+	left: 65px;
+	top: 21px;
+	font-size: 16px;
+	color: #757575;
+	letter-spacing: 1px;
+}
+.menu-item svg {
+	position: absolute;
+	left: 30px;
+	top: 22px;
+	width: 20px;
+	height: 20px;
+}
+.menu-subCard {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	width: 90%;
+	left: 5%;
+	top: 200px;
+	border-radius: 3px;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+	animation: flyup .4s;
+	-webkit-animation: flyup .4s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes flyup{
+	to {
+		top: 160px;
+	}
+}
+@-webkit-keyframes flyup{
+	to {
+		top: 160px;
+	}
+}
+.setColorPanel {
+	padding: 20px 0;
+}
+.colorItem {
+	position: relative;
+	height: 60px;
+	cursor: pointer;
+}
+.colorItem:active {
+	background-color: #eee;
+}
+.colorItem span{
+	position: absolute;
+	top: 20px;
+	left: 23%;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #616161;
+}
+.colorBlock {
+	position: absolute;
+	top: 21px;
+	right: 26%;
+	width: 70px;
+	height: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.colorBlock div {
+	float: left;
+	width: 35px;
+	height: 20px;
+}
+.shake {
+	animation: shake .3s;
+	-webkit-animation: shake .3s;
+}
+@keyframes shake {
+	30%{
+		transform: rotate(10deg);
+	}
+	50%{
+		transform: rotate(0deg);
+	}
+	80%{
+		transform: rotate(-10deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+@-webkit-keyframes shake {
+	30%{
+		transform: rotate(10deg);
+	}
+	50%{
+		transform: rotate(0deg);
+	}
+	80%{
+		transform: rotate(-10deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+.cgreen {
+	background-color: #25b99a;
+}
+.cgwhite {
+	background-color: #E8F5E9;
+}
+.cred {
+	background-color: #F44336;
+}
+.crwhite {
+	background-color: #FFEBEE;
+}
+.cblue {
+	background-color: #2196F3;
+}
+.cbwhite {
+	background-color: #E3F2FD;
+}
+.aboutApp p{
+	width: 300px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 30px;
+	padding: 30px 0;
+	text-align: center;
+}
+.aboutApp a{
+	color: #000;
+}

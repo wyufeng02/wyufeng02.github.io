@@ -1,7 +1,10 @@
 
 ## 插件
 
+![pub](https://pub.dev/static/img/pub-dev-logo-2x.png?hash=umitaheu8hl7gd3mineshk2koqfngugi)
 - [Pub Plugins](https://pub.dartlang.org/flutter/plugins) - 在上面可以查询与Flutter有关的插件，很实用。
+
+
 - [Plugins](https://github.com/flutter/plugins/tree/master/packages) - Flutter官方插件团队，提供了Flutter常用的插件。
 - [Sqflite](https://github.com/tekartik/sqflite) [381★] - SQLite的 flutter版插件，由 [Alexandre Roux](https://www.linkedin.com/in/alextekartik/)提供。
 - [WebView](https://github.com/dart-flitter/flutter_webview_plugin) [277★] - 一个WebView插件， 由[Hadrien Lejard](https://twitter.com/HadrienLejard)提供。

@@ -1,8 +1,8 @@
-name: Chengwei's Words
-author: Chengwei Yang
-url: http://www.chengweiyang.cn
+name: yufeng's Words
+author: yufeng_wang
+url: http://www.code4flutter.com
 description: "{hello world}"
-timezone: Asia/Chongqing
+timezone: wyf/code4flutter
 
 permalink: /:year/:month/:day/:title/
 paginate: 10

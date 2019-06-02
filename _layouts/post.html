@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article class="post">
+
+	{% if page.external-url %}
+		<h1>
+			<a href="{{ page.external-url }}">{{ page.title }}</a>
+			<a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>
+		</h1>
+	{% else %}
+		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+	{% endif %}
+
+	{% include widgets/postTagList.html %}
+
+	<div class="post-content">{{ content }}</div>
+
+	<p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
+
+	<div class="postnavigation">
+		{% if page.next %}
+		<a href="{{ page.next.url }}" class="next left">&larr; Newer</a>
+		{% else %}
+		<span class="nope left">&larr; Newer</span>
+		{% endif %}
+		<a href="/archives/" class="pages">Archive</a>
+		{% if page.previous %}
+		<a href="{{ page.previous.url }}" class="prev right">Older &rarr;</a>
+		{% else %}
+		<span class="nope right">Older &arra;</span>
+		{% endif %}
+	</div>
+
+	{% include comments/disqus %}
+
+</article>

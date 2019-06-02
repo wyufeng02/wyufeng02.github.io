@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8"/>
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width"/>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="/assets/css/colors-dark.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <header id="header">
+    <h1><a href="/"><i class="icon-sun"></i> {{ site.name }}</a></h1>
+    <p><span class="description">{{ site.description }}</span></p>
+  </header>
+
+  <! -- Add Fork me on GitHub: https://github.com/blog/273-github-ribbons -->
+	<a href="https://github.com/chengweiv5/chengweiv5.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+  <div id="page">
+
+    <div id="content">
+      {{ content }}
+    </div>
+
+    <div id="sidebar">
+      <nav>
+				{% include widgets/googleSearchForm.html %}
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/archives">Archive</a></li>
+          <li><a href="/feed.xml">RSS Feed</a></li>
+          <li><a href="/about">About Me</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="/gitbook">GitBook 简明教程</a></li>
+          <li><a href="/爱奇艺Mesos实践.pdf">Mesos Meetup 2015</a></li>
+          <li><a href="/爱奇艺基于Docker的AppEngine实践.pdf">容器大会 2016</a></li>
+          <li><a href="/爱奇艺基于Docker的容器云之日志实践.pdf">CNUTCon2016</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="/tags">Tags</a></li>
+        </ul>
+        {% if site.tags.size > 0 %}
+          <div class="tags-and-numbers">
+            <table class="tags-and-numbers-table">
+              {% assign sorted_tags = site.tags | sort %}
+              {% for tag in sorted_tags %}
+                {% assign tag_name = tag | first %}
+                {% assign tag_posts = site.tags[tag_name] %}
+                <tr>
+                  <td class="tag-name">
+                    <a href="/tags/index.html#{{tag | first | cgi_encode}}">{{ tag_name }}</a>
+                  </td>
+                  <td class="tag-count">{{ tag_posts.size }}</td>
+                </tr>
+              {% endfor %}
+              </tr>
+            </table>
+            <ul>
+            </ul>
+          </div>
+        {% endif %}
+      </nav>
+    </div>
+
+  </div>
+
+  <footer id="footer">
+    <p class="copyright">Copyright &copy; {{ site.time | date: '%Y' }} <a href="mailto:me@chengweiyang.cn">{{ site.author }}</a>. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a></p>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <script src="/assets/js/jquery.mobilemenu.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+    });
+  </script>
+
+	<!-- baidu tongji -->
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F254cfff11a6a67f367029c7522acbb1a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+
+
+</body>
+
+</html>

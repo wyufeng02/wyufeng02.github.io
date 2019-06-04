@@ -1,15 +1,9 @@
---- layout: default ---
+--- 
+layout: default 
+---
+
 <article class="post">
-
-
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- toubu -->
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3595647280789331" data-ad-slot="3699271048" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
+    {% include advertisements.html %}
     {% if page.external-url %}
     <h1>
         <a href="{{ page.external-url }}">{{ page.title }}</a>
@@ -32,15 +26,6 @@
         <span class="nope right">Older &arra;</span> {% endif %}
     </div>
 
-
     {% include comments/disqus %}
 
-
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- toubu -->
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3595647280789331" data-ad-slot="3699271048" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
 </article>

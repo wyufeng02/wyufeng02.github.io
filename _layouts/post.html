@@ -17,9 +17,6 @@ layout: default
 
     <p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
 
-
-    {% include advertisements.html %}
-    
     <div class="postnavigation">
         {% if page.next %}
         <a href="{{ page.next.url }}" class="next left">&larr; Newer</a> {% else %}

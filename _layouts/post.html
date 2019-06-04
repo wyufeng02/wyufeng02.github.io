@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post">
-
+    {% include advertisements.html %}
     {% if page.external-url %}
     <h1>
         <a href="{{ page.external-url }}">{{ page.title }}</a>
@@ -25,6 +25,7 @@ layout: default
         <a href="{{ page.previous.url }}" class="prev right">Older &rarr;</a> {% else %}
         <span class="nope right">Older &arra;</span> {% endif %}
     </div>
+
     {% include comments/disqus %}
 
 </article>

@@ -1,37 +1,46 @@
----
-layout: default
----
+--- layout: default ---
 <article class="post">
 
-	{% if page.external-url %}
-		<h1>
-			<a href="{{ page.external-url }}">{{ page.title }}</a>
-			<a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>
-		</h1>
-	{% else %}
-		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-	{% endif %}
 
-	{% include widgets/postTagList.html %}
 
-	<div class="post-content">{{ content }}</div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- toubu -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3595647280789331" data-ad-slot="3699271048" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 
-	<p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
+    {% if page.external-url %}
+    <h1>
+        <a href="{{ page.external-url }}">{{ page.title }}</a>
+        <a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>
+    </h1>
+    {% else %}
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    {% endif %} {% include widgets/postTagList.html %}
 
-	<div class="postnavigation">
-		{% if page.next %}
-		<a href="{{ page.next.url }}" class="next left">&larr; Newer</a>
-		{% else %}
-		<span class="nope left">&larr; Newer</span>
-		{% endif %}
-		<a href="/archives/" class="pages">Archive</a>
-		{% if page.previous %}
-		<a href="{{ page.previous.url }}" class="prev right">Older &rarr;</a>
-		{% else %}
-		<span class="nope right">Older &arra;</span>
-		{% endif %}
-	</div>
+    <div class="post-content">{{ content }}</div>
 
-	{% include comments/disqus %}
+    <p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
 
+    <div class="postnavigation">
+        {% if page.next %}
+        <a href="{{ page.next.url }}" class="next left">&larr; Newer</a> {% else %}
+        <span class="nope left">&larr; Newer</span> {% endif %}
+        <a href="/archives/" class="pages">Archive</a> {% if page.previous %}
+        <a href="{{ page.previous.url }}" class="prev right">Older &rarr;</a> {% else %}
+        <span class="nope right">Older &arra;</span> {% endif %}
+    </div>
+
+
+    {% include comments/disqus %}
+
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- toubu -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3595647280789331" data-ad-slot="3699271048" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </article>

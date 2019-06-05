@@ -1,286 +1,495 @@
-
-    ---
+---
     layout: post
     title:  # flutter 排行榜 
 
     tag: flutter
     date: 2019-06-05
-    ---
-    
+---
+
     # flutter 排行榜 
 
 
  ------------------------------------------ Page 1 ------------------------------------------ 
 
+## 1. [boltdb/bolt](http://github.com/boltdb/bolt)  ♥️ 9.8k
+         
+> An embedded key/value database for Go.
+       
+
+## 2. [google/leveldb](http://github.com/google/leveldb)  ♥️ 17.7k
+         
+> LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to st…
+       
+
+## 3. [Xyl2k/TSA-Travel-Sentry-master-keys](http://github.com/Xyl2k/TSA-Travel-Sentry-master-keys)  ♥️ 2.4k
+         
+> 3D reproduction of TSA Master keys
+ 
+
+## 4. [dgraph-io/badger](http://github.com/dgraph-io/badger)  ♥️ 5.8k
+         
+> Fast key-value DB in Go.
+       
+
+## 5. [dmauro/Keypress](http://github.com/dmauro/Keypress)  ♥️ 3.2k
+         
+> A keyboard input capturing utility in which any key can be a modifier key.
+       
+
+## 6. [syndtr/goleveldb](http://github.com/syndtr/goleveldb)  ♥️ 3k
+         
+> LevelDB key/value database in Go.
+       
+
+## 7. [randyrants/sharpkeys](http://github.com/randyrants/sharpkeys)  ♥️ 1.8k
+         
+> SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.
+       
+
+## 8. [basho/riak_kv](http://github.com/basho/riak_kv)  ♥️ 447
+         
+> Riak Key/Value Store
+       
+
+## 9. [orhanobut/hawk](http://github.com/orhanobut/hawk)  ♥️ 3.4k
+         
+> ✔️ Secure, simple key-value storage for Android
+       
+
+## 10. [apple/foundationdb](http://github.com/apple/foundationdb)  ♥️ 9.3k
+         
+> FoundationDB - the open source, distributed, transactional key-value store
+       
+
 
 
  ------------------------------------------ Page 2 ------------------------------------------ 
+
+## 1. [boltdb/bolt](http://github.com/boltdb/bolt)  ♥️ 9.8k
+         
+> An embedded key/value database for Go.
+       
+
+## 2. [google/leveldb](http://github.com/google/leveldb)  ♥️ 17.7k
+         
+> LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to st…
+       
+
+## 3. [Xyl2k/TSA-Travel-Sentry-master-keys](http://github.com/Xyl2k/TSA-Travel-Sentry-master-keys)  ♥️ 2.4k
+         
+> 3D reproduction of TSA Master keys
+ 
+
+## 4. [dgraph-io/badger](http://github.com/dgraph-io/badger)  ♥️ 5.8k
+         
+> Fast key-value DB in Go.
+       
+
+## 5. [dmauro/Keypress](http://github.com/dmauro/Keypress)  ♥️ 3.2k
+         
+> A keyboard input capturing utility in which any key can be a modifier key.
+       
+
+## 6. [syndtr/goleveldb](http://github.com/syndtr/goleveldb)  ♥️ 3k
+         
+> LevelDB key/value database in Go.
+       
+
+## 7. [randyrants/sharpkeys](http://github.com/randyrants/sharpkeys)  ♥️ 1.8k
+         
+> SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.
+       
+
+## 8. [basho/riak_kv](http://github.com/basho/riak_kv)  ♥️ 447
+         
+> Riak Key/Value Store
+       
+
+## 9. [orhanobut/hawk](http://github.com/orhanobut/hawk)  ♥️ 3.4k
+         
+> ✔️ Secure, simple key-value storage for Android
+       
+
+## 10. [apple/foundationdb](http://github.com/apple/foundationdb)  ♥️ 9.3k
+         
+> FoundationDB - the open source, distributed, transactional key-value store
+       
 
 
 
  ------------------------------------------ Page 3 ------------------------------------------ 
 
+## 1. [boltdb/bolt](http://github.com/boltdb/bolt)  ♥️ 9.8k
+         
+> An embedded key/value database for Go.
+       
+
+## 2. [google/leveldb](http://github.com/google/leveldb)  ♥️ 17.7k
+         
+> LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to st…
+       
+
+## 3. [Xyl2k/TSA-Travel-Sentry-master-keys](http://github.com/Xyl2k/TSA-Travel-Sentry-master-keys)  ♥️ 2.4k
+         
+> 3D reproduction of TSA Master keys
+ 
+
+## 4. [dgraph-io/badger](http://github.com/dgraph-io/badger)  ♥️ 5.8k
+         
+> Fast key-value DB in Go.
+       
+
+## 5. [dmauro/Keypress](http://github.com/dmauro/Keypress)  ♥️ 3.2k
+         
+> A keyboard input capturing utility in which any key can be a modifier key.
+       
+
+## 6. [syndtr/goleveldb](http://github.com/syndtr/goleveldb)  ♥️ 3k
+         
+> LevelDB key/value database in Go.
+       
+
+## 7. [randyrants/sharpkeys](http://github.com/randyrants/sharpkeys)  ♥️ 1.8k
+         
+> SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.
+       
+
+## 8. [basho/riak_kv](http://github.com/basho/riak_kv)  ♥️ 447
+         
+> Riak Key/Value Store
+       
+
+## 9. [orhanobut/hawk](http://github.com/orhanobut/hawk)  ♥️ 3.4k
+         
+> ✔️ Secure, simple key-value storage for Android
+       
+
+## 10. [apple/foundationdb](http://github.com/apple/foundationdb)  ♥️ 9.3k
+         
+> FoundationDB - the open source, distributed, transactional key-value store
+       
+
 
 
  ------------------------------------------ Page 4 ------------------------------------------ 
+
+## 1. [boltdb/bolt](http://github.com/boltdb/bolt)  ♥️ 9.8k
+         
+> An embedded key/value database for Go.
+       
+
+## 2. [google/leveldb](http://github.com/google/leveldb)  ♥️ 17.7k
+         
+> LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to st…
+       
+
+## 3. [Xyl2k/TSA-Travel-Sentry-master-keys](http://github.com/Xyl2k/TSA-Travel-Sentry-master-keys)  ♥️ 2.4k
+         
+> 3D reproduction of TSA Master keys
+ 
+
+## 4. [dgraph-io/badger](http://github.com/dgraph-io/badger)  ♥️ 5.8k
+         
+> Fast key-value DB in Go.
+       
+
+## 5. [dmauro/Keypress](http://github.com/dmauro/Keypress)  ♥️ 3.2k
+         
+> A keyboard input capturing utility in which any key can be a modifier key.
+       
+
+## 6. [syndtr/goleveldb](http://github.com/syndtr/goleveldb)  ♥️ 3k
+         
+> LevelDB key/value database in Go.
+       
+
+## 7. [randyrants/sharpkeys](http://github.com/randyrants/sharpkeys)  ♥️ 1.8k
+         
+> SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.
+       
+
+## 8. [basho/riak_kv](http://github.com/basho/riak_kv)  ♥️ 447
+         
+> Riak Key/Value Store
+       
+
+## 9. [orhanobut/hawk](http://github.com/orhanobut/hawk)  ♥️ 3.4k
+         
+> ✔️ Secure, simple key-value storage for Android
+       
+
+## 10. [apple/foundationdb](http://github.com/apple/foundationdb)  ♥️ 9.3k
+         
+> FoundationDB - the open source, distributed, transactional key-value store
+       
 
 
 
  ------------------------------------------ Page 5 ------------------------------------------ 
 
-## 1. [iampawan/FlutterWithFirebase](http://github.com/iampawan/FlutterWithFirebase)  ♥️ 261
+## 1. [boltdb/bolt](http://github.com/boltdb/bolt)  ♥️ 9.8k
          
-> A Flutter app with firebase libraries implementation
+> An embedded key/value database for Go.
        
 
-## 2. [go-flutter-desktop/go-flutter](http://github.com/go-flutter-desktop/go-flutter)  ♥️ 2.5k
+## 2. [google/leveldb](http://github.com/google/leveldb)  ♥️ 17.7k
          
-> Bringing Flutter to Windows, MacOS and Linux - through the power of Go and GLFW.
+> LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to st…
        
 
-## 3. [StephenGrider/FlutterCasts](http://github.com/StephenGrider/FlutterCasts)  ♥️ 198
+## 3. [Xyl2k/TSA-Travel-Sentry-master-keys](http://github.com/Xyl2k/TSA-Travel-Sentry-master-keys)  ♥️ 2.4k
          
-> Companion repo to a course hosted on Udemy
-       
-
-## 4. [fluttercommunity/flutter_webview_plugin](http://github.com/fluttercommunity/flutter_webview_plugin)  ♥️ 672
-         
-> WebView Plugin - Allows Flutter to communicate with a native WebView. Maintainer: @charafau
+> 3D reproduction of TSA Master keys
  
 
-## 5. [nb312/flutter-ui-nice](http://github.com/nb312/flutter-ui-nice)  ♥️ 1.3k
+## 4. [dgraph-io/badger](http://github.com/dgraph-io/badger)  ♥️ 5.8k
          
-> More than 130+ pages in this beautiful app and more than 45 developers has contributed to it.
+> Fast key-value DB in Go.
        
 
-## 6. [PonnamKarthik/FlutterToast](http://github.com/PonnamKarthik/FlutterToast)  ♥️ 311
+## 5. [dmauro/Keypress](http://github.com/dmauro/Keypress)  ♥️ 3.2k
          
-> Android Toast Plugin for Flutter
- 
-
-## 7. [luhenchang/flutter_study](http://github.com/luhenchang/flutter_study)  ♥️ 796
-         
-> 三天学会Flutter
- 
-
-## 8. [johnpryan/flutter_map](http://github.com/johnpryan/flutter_map)  ♥️ 669
-         
-> A Flutter map widget inspired by Leaflet
+> A keyboard input capturing utility in which any key can be a modifier key.
        
 
-## 9. [heruijun/flutter_boss](http://github.com/heruijun/flutter_boss)  ♥️ 676
+## 6. [syndtr/goleveldb](http://github.com/syndtr/goleveldb)  ♥️ 3k
          
-> flutter仿BOSS直聘（二），大前端技术实现
+> LevelDB key/value database in Go.
        
 
-## 10. [best-flutter/flutter_swiper](http://github.com/best-flutter/flutter_swiper)  ♥️ 1.1k
+## 7. [randyrants/sharpkeys](http://github.com/randyrants/sharpkeys)  ♥️ 1.8k
          
-> The best swiper for flutter , with multiple layouts, infinite loop. Compatible with Android & iOS.
+> SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.
+       
+
+## 8. [basho/riak_kv](http://github.com/basho/riak_kv)  ♥️ 447
+         
+> Riak Key/Value Store
+       
+
+## 9. [orhanobut/hawk](http://github.com/orhanobut/hawk)  ♥️ 3.4k
+         
+> ✔️ Secure, simple key-value storage for Android
+       
+
+## 10. [apple/foundationdb](http://github.com/apple/foundationdb)  ♥️ 9.3k
+         
+> FoundationDB - the open source, distributed, transactional key-value store
        
 
 
 
  ------------------------------------------ Page 6 ------------------------------------------ 
 
-## 1. [heruijun/flutter_boss](http://github.com/heruijun/flutter_boss)  ♥️ 676
+## 1. [boltdb/bolt](http://github.com/boltdb/bolt)  ♥️ 9.8k
          
-> flutter仿BOSS直聘（二），大前端技术实现
+> An embedded key/value database for Go.
        
 
-## 2. [Lyokone/flutterlocation](http://github.com/Lyokone/flutterlocation)  ♥️ 263
+## 2. [google/leveldb](http://github.com/google/leveldb)  ♥️ 17.7k
          
-> A Flutter plugin to easily handle realtime location in iOS and Android. Provides settings for optimizing performance …
+> LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to st…
        
 
-## 3. [tekartik/sqflite](http://github.com/tekartik/sqflite)  ♥️ 942
+## 3. [Xyl2k/TSA-Travel-Sentry-master-keys](http://github.com/Xyl2k/TSA-Travel-Sentry-master-keys)  ♥️ 2.4k
          
-> SQLite flutter plugin
-       
-
-## 4. [littlemarc2011/FlutterTodo](http://github.com/littlemarc2011/FlutterTodo)  ♥️ 282
-         
-> https://dribbble.com/shots/3812962-iPhone-X-Todo-Concept Made With Flutter
+> 3D reproduction of TSA Master keys
  
 
-## 5. [boyan01/flutter-netease-music](http://github.com/boyan01/flutter-netease-music)  ♥️ 1k
+## 4. [dgraph-io/badger](http://github.com/dgraph-io/badger)  ♥️ 5.8k
          
-> flutter music player application （仿网易云音乐）
+> Fast key-value DB in Go.
        
 
-## 6. [zino-app/graphql-flutter](http://github.com/zino-app/graphql-flutter)  ♥️ 887
+## 5. [dmauro/Keypress](http://github.com/dmauro/Keypress)  ♥️ 3.2k
          
-> A GraphQL client for Flutter, bringing all the features from a modern GraphQL client to one easy to use package.
+> A keyboard input capturing utility in which any key can be a modifier key.
        
 
-## 7. [pinkeshdarji/FlutterCreateSubmissions2019](http://github.com/pinkeshdarji/FlutterCreateSubmissions2019)  ♥️ 362
+## 6. [syndtr/goleveldb](http://github.com/syndtr/goleveldb)  ♥️ 3k
          
-> An Effort to gather all Flutter Create App submissions at one place from various resources.
+> LevelDB key/value database in Go.
        
 
-## 8. [huextrat/TheGorgeousLogin](http://github.com/huextrat/TheGorgeousLogin)  ♥️ 649
+## 7. [randyrants/sharpkeys](http://github.com/randyrants/sharpkeys)  ♥️ 1.8k
          
-> Login page built with @flutter 😍
- 
+> SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.
+       
 
-## 9. [PonnamKarthik/FlutterHtmlView](http://github.com/PonnamKarthik/FlutterHtmlView)  ♥️ 164
+## 8. [basho/riak_kv](http://github.com/basho/riak_kv)  ♥️ 447
          
-> Flutter Plugin to render html as a Widget
+> Riak Key/Value Store
+       
+
+## 9. [orhanobut/hawk](http://github.com/orhanobut/hawk)  ♥️ 3.4k
+         
+> ✔️ Secure, simple key-value storage for Android
+       
+
+## 10. [apple/foundationdb](http://github.com/apple/foundationdb)  ♥️ 9.3k
+         
+> FoundationDB - the open source, distributed, transactional key-value store
        
 
 
 
  ------------------------------------------ Page 7 ------------------------------------------ 
 
-## 1. [efoxTeam/flutter-ui](http://github.com/efoxTeam/flutter-ui)  ♥️ 886
+## 1. [boltdb/bolt](http://github.com/boltdb/bolt)  ♥️ 9.8k
          
-> Flutter 开发组件库中文社区
+> An embedded key/value database for Go.
        
 
-## 2. [iampawan/Flutter-Music-Player](http://github.com/iampawan/Flutter-Music-Player)  ♥️ 637
+## 2. [google/leveldb](http://github.com/google/leveldb)  ♥️ 17.7k
          
-> Flutter Music Player - First Open Source Flutter based material design music player with audio plugin to play local m…
+> LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to st…
        
 
-## 3. [luanpotter/flame](http://github.com/luanpotter/flame)  ♥️ 1.2k
+## 3. [Xyl2k/TSA-Travel-Sentry-master-keys](http://github.com/Xyl2k/TSA-Travel-Sentry-master-keys)  ♥️ 2.4k
          
-> A minimalist Flutter game engine
+> 3D reproduction of TSA Master keys
+ 
+
+## 4. [dgraph-io/badger](http://github.com/dgraph-io/badger)  ♥️ 5.8k
+         
+> Fast key-value DB in Go.
        
 
-## 4. [flutter/flutter-intellij](http://github.com/flutter/flutter-intellij)  ♥️ 728
+## 5. [dmauro/Keypress](http://github.com/dmauro/Keypress)  ♥️ 3.2k
          
-> Flutter makes it easy and fast to build beautiful mobile apps.
+> A keyboard input capturing utility in which any key can be a modifier key.
        
 
-## 5. [cloudwebrtc/flutter-webrtc](http://github.com/cloudwebrtc/flutter-webrtc)  ♥️ 551
+## 6. [syndtr/goleveldb](http://github.com/syndtr/goleveldb)  ♥️ 3k
          
-> Flutter WebRTC plugin for iOS/Android
+> LevelDB key/value database in Go.
        
 
-## 6. [rohan20/flutter-chat-app](http://github.com/rohan20/flutter-chat-app)  ♥️ 600
+## 7. [randyrants/sharpkeys](http://github.com/randyrants/sharpkeys)  ♥️ 1.8k
          
-> A chat app built on Flutter with firebase authentication and image sharing capability.
+> SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.
        
 
-## 7. [X-Wei/flutter_catalog](http://github.com/X-Wei/flutter_catalog)  ♥️ 530
+## 8. [basho/riak_kv](http://github.com/basho/riak_kv)  ♥️ 447
          
-> An app showcasing Flutter components, with side-by-side source code view.
+> Riak Key/Value Store
        
 
-## 8. [letsar/flutter_staggered_grid_view](http://github.com/letsar/flutter_staggered_grid_view)  ♥️ 745
+## 9. [orhanobut/hawk](http://github.com/orhanobut/hawk)  ♥️ 3.4k
          
-> A Flutter staggered grid view
+> ✔️ Secure, simple key-value storage for Android
        
 
-## 9. [zhujian1989/flutter_study](http://github.com/zhujian1989/flutter_study)  ♥️ 495
+## 10. [apple/foundationdb](http://github.com/apple/foundationdb)  ♥️ 9.3k
          
-> flutter知识点学习与实战，问题解决方案记录
-       
-
-## 10. [flutterchina/flukit](http://github.com/flutterchina/flukit)  ♥️ 1.1k
-         
-> A Flutter UI Kit. 一个Flutter UI组件库。
+> FoundationDB - the open source, distributed, transactional key-value store
        
 
 
 
  ------------------------------------------ Page 8 ------------------------------------------ 
 
-## 1. [letsar/flutter_slidable](http://github.com/letsar/flutter_slidable)  ♥️ 665
+## 1. [boltdb/bolt](http://github.com/boltdb/bolt)  ♥️ 9.8k
          
-> A Flutter implementation of slidable list item with directional slide actions.
+> An embedded key/value database for Go.
        
 
-## 2. [zhujian1989/flutter_study](http://github.com/zhujian1989/flutter_study)  ♥️ 495
+## 2. [google/leveldb](http://github.com/google/leveldb)  ♥️ 17.7k
          
-> flutter知识点学习与实战，问题解决方案记录
+> LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to st…
        
 
-## 3. [diegoveloper/flutter-samples](http://github.com/diegoveloper/flutter-samples)  ♥️ 212
+## 3. [Xyl2k/TSA-Travel-Sentry-master-keys](http://github.com/Xyl2k/TSA-Travel-Sentry-master-keys)  ♥️ 2.4k
          
-> Flutter Samples
-       
-
-## 4. [renefloor/flutter_cached_network_image](http://github.com/renefloor/flutter_cached_network_image)  ♥️ 553
-         
-> Download, cache and show images in a flutter app
-       
-
-## 5. [Nealyang/flutter](http://github.com/Nealyang/flutter)  ♥️ 117
-         
-> study flutter
+> 3D reproduction of TSA Master keys
  
 
-## 6. [xumaohuai/Flutter-CuriosityApp](http://github.com/xumaohuai/Flutter-CuriosityApp)  ♥️ 706
+## 4. [dgraph-io/badger](http://github.com/dgraph-io/badger)  ♥️ 5.8k
          
-> Flutter高仿好奇心日报
+> Fast key-value DB in Go.
        
 
-## 7. [xuelongqy/flutter_easyrefresh](http://github.com/xuelongqy/flutter_easyrefresh)  ♥️ 592
+## 5. [dmauro/Keypress](http://github.com/dmauro/Keypress)  ♥️ 3.2k
          
-> A widget provided to the flutter scroll component pull-refresh and push-load.
+> A keyboard input capturing utility in which any key can be a modifier key.
        
 
-## 8. [brianegan/flutter_redux](http://github.com/brianegan/flutter_redux)  ♥️ 840
+## 6. [syndtr/goleveldb](http://github.com/syndtr/goleveldb)  ♥️ 3k
          
-> A library that connects Widgets to a Redux Store
+> LevelDB key/value database in Go.
        
 
-## 9. [apptreesoftware/flutter_google_map_view](http://github.com/apptreesoftware/flutter_google_map_view)  ♥️ 376
+## 7. [randyrants/sharpkeys](http://github.com/randyrants/sharpkeys)  ♥️ 1.8k
          
-> A flutter plugin for Google Maps
+> SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.
+       
+
+## 8. [basho/riak_kv](http://github.com/basho/riak_kv)  ♥️ 447
+         
+> Riak Key/Value Store
+       
+
+## 9. [orhanobut/hawk](http://github.com/orhanobut/hawk)  ♥️ 3.4k
+         
+> ✔️ Secure, simple key-value storage for Android
+       
+
+## 10. [apple/foundationdb](http://github.com/apple/foundationdb)  ♥️ 9.3k
+         
+> FoundationDB - the open source, distributed, transactional key-value store
        
 
 
 
  ------------------------------------------ Page 9 ------------------------------------------ 
 
-## 1. [bizz84/layout-demo-flutter](http://github.com/bizz84/layout-demo-flutter)  ♥️ 545
+## 1. [boltdb/bolt](http://github.com/boltdb/bolt)  ♥️ 9.8k
          
-> Super Useful Flutter Layouts - Right in Your Pocket. 😉
+> An embedded key/value database for Go.
+       
+
+## 2. [google/leveldb](http://github.com/google/leveldb)  ♥️ 17.7k
+         
+> LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to st…
+       
+
+## 3. [Xyl2k/TSA-Travel-Sentry-master-keys](http://github.com/Xyl2k/TSA-Travel-Sentry-master-keys)  ♥️ 2.4k
+         
+> 3D reproduction of TSA Master keys
  
 
-## 2. [invoiceninja/flutter-mobile](http://github.com/invoiceninja/flutter-mobile)  ♥️ 399
+## 4. [dgraph-io/badger](http://github.com/dgraph-io/badger)  ♥️ 5.8k
          
-> iOS/Android app for Invoice Ninja built with Flutter
- 
-
-## 3. [braulio94/menu_flutter](http://github.com/braulio94/menu_flutter)  ♥️ 403
-         
-> 🍝 restaurant menu app made with flutter inspired by this design https://goo.gl/jChLBV
- 
-
-## 4. [stefanJi/Flutter4GitLab](http://github.com/stefanJi/Flutter4GitLab)  ♥️ 374
-         
-> A GitLab client by Flutter.
+> Fast key-value DB in Go.
        
 
-## 5. [Ivaskuu/dashboard](http://github.com/Ivaskuu/dashboard)  ♥️ 400
+## 5. [dmauro/Keypress](http://github.com/dmauro/Keypress)  ♥️ 3.2k
          
-> Dashboard concept made with Flutter.
+> A keyboard input capturing utility in which any key can be a modifier key.
        
 
-## 6. [pedromassango/my_flutter_challenges](http://github.com/pedromassango/my_flutter_challenges)  ♥️ 242
+## 6. [syndtr/goleveldb](http://github.com/syndtr/goleveldb)  ♥️ 3k
          
-> Flutter project containing all my flutter UI challenges
+> LevelDB key/value database in Go.
        
 
-## 7. [JadenZhong/wechat-flutter](http://github.com/JadenZhong/wechat-flutter)  ♥️ 481
+## 7. [randyrants/sharpkeys](http://github.com/randyrants/sharpkeys)  ♥️ 1.8k
          
-> 撸一款Flutter版『微信』
+> SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.
        
 
-## 8. [hitherejoe/FlutterOAuth](http://github.com/hitherejoe/FlutterOAuth)  ♥️ 114
+## 8. [basho/riak_kv](http://github.com/basho/riak_kv)  ♥️ 447
          
-> A Flutter OAuth package for performing user authentication for your apps.
+> Riak Key/Value Store
        
 
-## 9. [ZDfordream/FlutterTianYue](http://github.com/ZDfordream/FlutterTianYue)  ♥️ 403
+## 9. [orhanobut/hawk](http://github.com/orhanobut/hawk)  ♥️ 3.4k
          
-> 🔥🔥🔥 基于Flutter的超完整仿腾讯动漫，抖音视频项目，功能丰富，适合学习和日常使用，拥有较好的项目结构&比较规范的代码！Flutter入门，看这个就够了～Flutter project which provide richer …
+> ✔️ Secure, simple key-value storage for Android
        
 
-## 10. [jogboms/flutter_spinkit](http://github.com/jogboms/flutter_spinkit)  ♥️ 816
+## 10. [apple/foundationdb](http://github.com/apple/foundationdb)  ♥️ 9.3k
          
-> ✨ A collection of loading indicators animated with flutter. Heavily Inspired by http://tobiasahlin.com/spinkit.
+> FoundationDB - the open source, distributed, transactional key-value store
        
 

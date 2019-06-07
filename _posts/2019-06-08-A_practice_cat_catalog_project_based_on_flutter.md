@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A practice cat catalog project based on flutter
-tag: Todo
+title:  基于flutter的练习猫目录项目
+tag: Apps
 date: 2019-06-08
 ---
 
-# [A practice cat catalog project based on flutter ️⬇️ ](http://github.com/gnehcc/cat-book)  
+# [基于flutter的练习猫目录项目 ](http://github.com/gnehcc/cat-book) 
 
-![](https://flutterawesome.com/content/images/2019/06/do_more.jpg)
+
+
+## [查看Github/gnehcc/cat-book](http://github.com/gnehcc/cat-book)
+## [立即下载 ️⬇️ ](https://codeload.github.com/gnehcc/cat-book/zip/master) 
+
+
  
-> A good looking glorified todo list built with flutter.
+![](https://flutterawesome.com/content/images/2019/05/The-Cat-Book.jpg)
+ 
+>
+> 基于flutter的练习项目。
+>
 
  
 # The Cat Book
@@ -21,17 +30,7 @@ A practice project based on flutter, you can
 - read further information on wikipedia page
 
 ## Screenshots
-1
-<img src="https://raw.githubusercontent.com/gnehcc/cat-book/master/the-cat-book.gif" alt="screenshot" width="300">
-2
-<img src="https://raw.githubusercontent.com/gnehcc/cat-book/master/the-cat-book.gif" alt="screenshot" width="300">
-3
-<img src="https://raw.githubusercontent.com/gnehcc/cat-book/master/the-cat-book.gif" alt="screenshot" width="300">
-
-4
-<img src="http://www.aaa.cn/the-cat-book.gif" alt="screenshot" width="300"/>
-5
-<img src="https://www.aaa.cn/the-cat-book.gif" alt="screenshot" width="300"/>
+<img src="https://raw.githubusercontent.com/gnehcc/cat-book/master/the-cat-book.gif" alt="screenshot" width="300"/>
 
 ## Getting Started
 Please read the [Flutter Documentation](https://flutter.dev/docs) for more details.

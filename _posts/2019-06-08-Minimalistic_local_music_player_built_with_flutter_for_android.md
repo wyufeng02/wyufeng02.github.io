@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  极简主义的本地音乐播放器为Android设计了扑腾
+title:  极简主义的本地音乐播放器为Android设计了flutter
 tag: Music Player
 date: 2019-06-08
 ---
 
-# [极简主义的本地音乐播放器为Android设计了扑腾 ](http://github.com/janhrastnik/flutter-music-player) 
+# [极简主义的本地音乐播放器为Android设计了flutter ](http://github.com/janhrastnik/flutter-music-player) 
 
 
 
@@ -27,8 +27,6 @@ Simple local music player built with flutter. It uses the [audioplayer](https://
 
 # Screenshots
 <img src="https://raw.githubusercontent.com/janhrastnik/flutter-music-player/master/screenshots/1.png" height="480px" hspace="10"/><img src="screenshots/2.png" height="480px" hspace="10"/><img src="screenshots/3.png" height="480px" hspace="10"/>
-<img src="https://raw.githubusercontent.com/janhrastnik/flutter-music-player/master/screenshots/3.png" height="480px" hspace="10"    />
-
 ## Getting Started
 
 For help getting started with Flutter, view our online

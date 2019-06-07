@@ -17,7 +17,7 @@ date: 2019-06-08
 [![pub package](https://img.shields.io/badge/pub-1.0.3-blueviolet.svg)](https://pub.dev/packages/badges)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/logo.png" height="400px">
+  <img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/logo.png" height="400px"/>
 </p>
 
 
@@ -44,14 +44,14 @@ import 'package:badges/badges.dart';
 
 
 ## Animations:
-| <img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/first_badge_example.gif" height="200px">  | <img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/second_badge_example.gif" height="200px"> | <img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/third_badge_example.gif" height="200px"> |
+| <img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/first_badge_example.gif" height="200px"/>  | <img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/second_badge_example.gif" height="200px"/> | <img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/third_badge_example.gif" height="200px"/> |
 | ------------- | ------------- | ------------ |
 | `BadgeAnimationType.slide`  | `BadgeAnimationType.scale`  | `BadgeAnimationType.fade` |
 <br>
 
 # Chips:
 Sometimes you may want to use chip but it's too big, even if set padding to zero. This is where Badge comes handy.
-<img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/chip_badge_example.png" height="200px">
+<img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/chip_badge_example.png" height="200px"/>
 ```dart
     Chip(
       backgroundColor: Colors.deepPurple,

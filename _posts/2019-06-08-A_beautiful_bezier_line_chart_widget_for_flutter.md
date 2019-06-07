@@ -100,7 +100,7 @@ There is a example project in the `example` folder. Check it out. Otherwise, kee
 }
 ```
 <p align="center">
-  <img src="https://media.giphy.com/media/xUe2FKdR1V5nldAPmu/giphy.gif">
+  <img src="https://media.giphy.com/media/xUe2FKdR1V5nldAPmu/giphy.gif"/>
 </p>
 
 
@@ -175,7 +175,7 @@ Widget sample2(BuildContext context) {
 }
 ```
 <p align="center">
-  <img src="https://media.giphy.com/media/322EPqPW8oNSbJTq0U/giphy.gif">
+  <img src="https://media.giphy.com/media/322EPqPW8oNSbJTq0U/giphy.gif"/>
 </p>
 
 **Weekly Chart**
@@ -228,7 +228,7 @@ Widget sample3(BuildContext context) {
 }
 ```
 <p align="center">
-  <img src="https://media.giphy.com/media/1gdqUZAXlHpJfFpyqj/giphy.gif">
+  <img src="https://media.giphy.com/media/1gdqUZAXlHpJfFpyqj/giphy.gif"/>
 </p>
 
 
@@ -292,7 +292,7 @@ Widget sample4(BuildContext context) {
 }
 ```
 <p align="center">
-  <img src="https://media.giphy.com/media/1AgF6MKYykSNJMiUdl/giphy.gif">
+  <img src="https://media.giphy.com/media/1AgF6MKYykSNJMiUdl/giphy.gif"/>
 </p>
 
 
@@ -384,7 +384,7 @@ Widget sample5(BuildContext context) {
 }
 ```
 <p align="center">
-  <img src="https://media.giphy.com/media/8ccsvxkgEIG4jDYI0j/giphy.gif">
+  <img src="https://media.giphy.com/media/8ccsvxkgEIG4jDYI0j/giphy.gif"/>
 </p>
 
 

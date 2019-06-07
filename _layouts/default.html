@@ -1,139 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-    <!-- Document Settings -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" />
 
-    <!-- Base Meta -->
-    {% include dynamic_title.html %}
-    <title>{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Styles'n'Scripts -->
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.edited.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/syntax.css" />
-    <!-- highlight.js -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <style>.hljs { background: none; }</style>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3595647280789331",
+            enable_page_level_ads: true
+        });
+    </script>
 
-    <!--[if IE]>
-        <style>
-            p, ol, ul{
-                width: 100%;
-            }
-            blockquote{
-                width: 100%;
-            }
-        </style>
-    <![endif]-->
-    
-    <!-- This tag outputs SEO meta+structured data and other important settings -->
-    {% include head.html %}
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/colors-dark.css" rel="stylesheet" />
+
+    <meta name="baidu_ssp_verify" content="3c0f1e8a7babb8e902a52a2047440c94">
 
 </head>
-<body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
 
-    <div class="site-wrapper">
-        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        {{ content }}
+<body>
 
-        <!-- Previous/next page links - displayed on every page -->
-        {% if paginator.total_posts > site.paginate %}
-            {% if page.class == 'home-template' %}
-                {% include post_pagination.html %}
-            {% elsif page.class == 'page-template' %}
-                {% include post_pagination.html %}
-            {% elsif page.class == 'author-template' %}
-                {% include author_pagination.html %}
-            {% elsif page.class == 'tag-template' %}
-                {% include tag_pagination.html %}
-            {% else %}
-                {% include post_pagination.html %}
-            {% endif %}
-        {% endif %}
+    <header id="header">
+        <h1><a href="/"><i class="icon-sun"></i> {{ site.name }}</a></h1>
+        <p><span class="description">{{ site.description }}</span></p>
+    </header>
 
-        <!-- The footer at the very bottom of the screen -->
-        <footer class="site-footer outer">
-            <div class="site-footer-content inner">
-                <section class="copyright"><a href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a> &copy; {{  site.time | date: '%Y' }}</section>
-                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
-                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
-                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
-                <nav class="site-footer-nav">
-                    <a href="{{ site.baseurl }}">Latest Posts</a>
-                    {% if site.facebook %}<a href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>{% endif %}
-                    {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Twitter</a>{% endif %}
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-                </nav>
-            </div>
-        </footer>
+    <! -- Add Fork me on GitHub: https://github.com/blog/273-github-ribbons -->
+    <a href="https://github.com/wyufeng02/wyufeng02.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67"
+            alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+    <div id="page">
+
+        <div id="content">
+            {{ content }}
+        </div>
+
+        <div id="sidebar">
+            <nav>
+                {% include widgets/googleSearchForm.html %}
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/archives">Archive</a></li>
+                    <li><a href="/feed.xml">RSS Feed</a></li>
+                    <li><a href="/gitbook/">Geek Book</a></li>
+                </ul>
+
+
+                <ul>
+                    <li><a href="/tags">Tags</a></li>
+                </ul>
+                {% if site.tags.size > 0 %}
+                <div class="tags-and-numbers">
+                    <table class="tags-and-numbers-table">
+                        {% assign sorted_tags = site.tags | sort %} {% for tag in sorted_tags %} {% assign tag_name = tag | first %} {% assign tag_posts = site.tags[tag_name] %}
+                        <tr>
+                            <td class="tag-name">
+                                <a href="/tags/index.html#{{tag | first | cgi_encode}}">{{ tag_name }}</a>
+                            </td>
+                            <td class="tag-count">{{ tag_posts.size }}</td>
+                        </tr>
+                        {% endfor %}
+                        </tr>
+                    </table>
+                    <ul>
+                    </ul>
+                </div>
+                {% endif %}
+            </nav>
+        </div>
 
     </div>
 
-    <!-- The big email subscribe modal content -->
-    {% if site.subscribers %}
-        <div id="subscribe" class="subscribe-overlay">
-            <a class="subscribe-overlay-close" href="#"></a>
-            <div class="subscribe-overlay-content">
-                {% if site.logo %}
-                    <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
-                {% endif %}
-                <h1 class="subscribe-overlay-title">Subscribe to {{ site.title }}</h1>
-                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
-                {% include subscribe-form.html placeholder="youremail@example.com" %}
-            </div>
-        </div>
-    {% endif %}
+    <footer id="footer">
+        <p class="copyright">Copyright &copy; {{ site.time | date: '%Y' }} <a href="mailto:me@code4flutter.com">{{ site.author }}</a>. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a></p>
+    </footer>
 
-    <!-- highlight.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
-    <script>$(document).ready(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-      });
-    });</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+    <script src="/assets/js/jquery.mobilemenu.min.js"></script>
 
-
-    <!-- Paginator increased to "infinit" in _config.yml -->
-    <!-- if paginator.posts  -->
-    <!-- <script>
-        var maxPages = parseInt('{{ paginator.total_pages }}');
-    </script>
-    <script src="{{ site.baseurl }}assets/js/infinitescroll.js"></script> -->
-    <!-- /endif -->
-
-    {% if paginator.total_pages > site.paginate %}
     <script>
-        var maxPages = parseInt('{{ paginator.total_pages }}');
+        $(document).ready(function() {
+            $('#sidebar nav ul').mobileMenu({
+                'topOptionText': 'Menu',
+                'prependTo': '#sidebar nav'
+            });
+        });
     </script>
-    <script src="{{ site.baseurl }}assets/js/infinitescroll.js"></script>
-    {% endif %}
+
+    <!-- baidu tongji -->
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F254cfff11a6a67f367029c7522acbb1a' type='text/javascript'%3E%3C/script%3E"));
+    </script>
 
 
-    <!-- Add Google Analytics  -->
-    {% include analytics.html %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'geeklearn-1'; // 这里是你新建实例时实例的名称
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
-    {% if page.class == "post-template" %}
-        {% include post-scripts.html %}
-    {% elsif page.class == "page-template" %}
-        {% include page-scripts.html %}
-    {% endif %}
-
-    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
-    <!-- ghost_foot -->
 
 </body>
+
 </html>

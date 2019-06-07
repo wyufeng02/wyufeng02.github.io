@@ -14,10 +14,10 @@ date: 2019-06-08
 
 
  
-![](https://flutterawesome.com/content/images/2018/10/flutter_sequence_animation-1.jpg)
+![](https://flutterawesome.com/content/images/2018/10/flutter_sequence_animation.jpg)
  
 >
-> 轻松编排多个动画。
+> Norbert Kozsir的复合交错动画。
 >
 
  

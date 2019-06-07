@@ -1,0 +1,487 @@
+---
+layout: post
+title:  具有rtl支撑的材料设计滑块和范围滑块
+tag: Slider
+date: 2019-06-08
+---
+
+# [具有rtl支撑的材料设计滑块和范围滑块 ](http://github.com/Ali-Azmoud/flutter_xlider) 
+
+
+
+## [查看Github/Ali-Azmoud/flutter_xlider](http://github.com/Ali-Azmoud/flutter_xlider)
+## [立即下载 ️⬇️ ](https://codeload.github.com/Ali-Azmoud/flutter_xlider/zip/master) 
+
+
+ 
+![](https://flutterawesome.com/content/images/2019/02/flutter_slider.jpg)
+ 
+>
+> 具有rtl支持的材料设计滑块和范围滑块以及许多用于flutter的选项和自定义。
+>
+
+ 
+# flutter_xlider
+
+(Flutter Xlider) A material design slider and range slider, horizontal and vertical, with rtl support and lots of options and customizations for flutter
+
+**Version 2.4.1 and above, will break functionality of older versions**
+
+## Get Started
+
+### Single Slider
+
+A single slider
+
+```dart
+FlutterSlider(
+  values: [300],
+  max: 500,
+  min: 0,
+  onDragging: (handlerIndex, lowerValue, upperValue) {
+    _lowerValue = lowerValue;
+    _upperValue = upperValue;
+    setState(() {});
+  },
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/single.gif)
+
+To make slider `Right To Left` use `rtl: true`
+
+```dart
+ FlutterSlider(
+  ...
+  rtl: true,
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/single-rtl.gif)
+
+
+### Range Slider
+
+A simple example of range slider
+
+```dart
+FlutterSlider(
+  values: [30, 420],
+  rangeSlider: true,
+  max: 500,
+  min: 0,
+  onDragging: (handlerIndex, lowerValue, upperValue) {
+    _lowerValue = lowerValue;
+    _upperValue = upperValue;
+    setState(() {});
+  },
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/range-1.gif)
+
+### Vertical Axis
+
+You can change the axis of your slider by setting `axis` to `Axis.vertical`. Default is horizontal
+```dart
+FlutterSlider(
+  ...
+  axis: Axis.vertical,
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/vertical-simple.gif) ![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/vertical-range.gif)
+
+
+## Handlers
+
+You can customize handlers using `handler` and `rightHandler` properties.  
+Both `handler` and `rightHandler` accept `FlutterSliderHandler` class which has following properties:  
+
+1. `child`: is a widget
+2. `disabled`: to disable the handler
+3. `decoration`, `foregroundDecoration` and `transform` are come from `Container()` widget
+
+```dart
+FlutterSlider(
+  ...
+  handler: FlutterSliderHandler(
+    decoration: BoxDecoration(),
+    child: Material(
+      type: MaterialType.canvas,
+      color: Colors.orange,
+      elevation: 3,
+      child: Container(
+          padding: EdgeInsets.all(5),
+          child: Icon(Icons.adjust, size: 25,)),
+    ),
+  ),
+  rightHandler: FlutterSliderHandler(
+    child: Icon(Icons.chevron_left, color: Colors.red, size: 24,),
+  ),
+  ...
+)
+```
+
+
+### Handler Scale Animation
+
+You can control the scale animation type of your handlers, it's duration and it's scale size using `handlerAnimation`    
+`handlerAnimation` accepts a `FlutterSliderHandlerAnimation` class which has 4 properties as following
+
+```dart
+FlutterSlider(
+  ...
+    handlerAnimation: FlutterSliderHandlerAnimation(
+      curve: Curves.elasticOut,
+      reverseCurve: Curves.bounceIn,
+      duration: Duration(milliseconds: 500),
+      scale: 1.5
+    ),
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/range-handler-animation.gif)
+
+**if you don't want scale animation, then just pass `1` to `scale` property**  
+**if you don't want `reverseCurve`, just ignore it. default is null**
+
+
+
+## Trackbars
+
+To customize track bars you can use `FlutterSliderTrackBar`. [You can see the details here](https://pub.dartlang.org/documentation/flutter_xlider/latest/flutter_xlider/FlutterSliderTrackBar/FlutterSliderTrackBar.html)
+
+```dart
+FlutterSlider(
+  ...
+    trackBar: FlutterSliderTrackBar(
+      activeTrackBarColor: Colors.redAccent,
+      activeTrackBarHeight: 5,
+      inactiveTrackBarColor: Colors.greenAccent.withOpacity(0.5),
+    ),
+  ...
+)
+```
+
+## Tooltips
+
+In order to customize your tooltips, you can use `FlutterSliderTooltip` class. [You can see all properties here](https://pub.dartlang.org/documentation/flutter_xlider/latest/flutter_xlider/FlutterSliderTooltip/FlutterSliderTooltip.html)
+
+```dart
+FlutterSlider(
+  ...
+  tooltip: FlutterSliderTooltip(
+    textStyle: TextStyle(fontSize: 17, color: Colors.white),
+    boxStyle: FlutterSliderTooltipBox(
+      decoration: BoxDecoration(
+        color: Colors.redAccent.withOpacity(0.7)
+      )
+    )
+  ),
+  ...
+)
+```
+
+Here there is a range slider with customized handlers, trackbars and tooltips
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/range-customized.gif)
+
+### Tooltip Prefix
+
+You can use `leftPrefix`, `leftSuffix`, `rightPrefix`, `rightSuffix` to add your desired widget around tooltip content.
+
+```dart
+FlutterSlider(
+  ...
+    tooltip: FlutterSliderTooltip(
+      leftPrefix: Icon(Icons.attach_money, size: 19, color: Colors.black45,),
+      rightSuffix: Icon(Icons.attach_money, size: 19, color: Colors.black45,),
+    ),
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/range-tooltip-prefix-suffix.gif)
+
+
+### Tooltip Number Format
+
+You can customize tooltip numbers by using `NumberFormat` class  
+here is an example  
+
+```dart
+FlutterSlider(
+  ...
+    tooltip: FlutterSliderTooltip(
+      numberFormat: intl.compact(),
+      // numberFormat: intl.NumberFormat(),
+    ),
+  ...
+)
+```
+You can find more about [NumberFormat](https://docs.flutter.io/flutter/intl/NumberFormat-class.html)
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/range-compact.gif)
+
+
+### Disable tooltip
+
+To disable tooltips, use `disabled` in `FlutterSliderTooltip` class
+```dart
+FlutterSlider(
+  ...
+    tooltip: FlutterSliderTooltip(
+      disabled: true,
+    ),
+  ...
+)
+```
+
+
+### Always Show Tooltips
+
+Tooltips always displayed if this property is set to `true`.
+
+```dart
+FlutterSlider(
+  ...
+  tooltip: FlutterSliderTooltip(
+    alwaysShowTooltip: true,
+  ),
+  ...
+)
+```
+
+
+## Controls
+
+### Handlers width and height
+
+By default both handlers size are 35 width and height, but you can change this by `handlerWidth` and `handlerHeight`
+
+```dart
+FlutterSlider(
+  ...
+  handlerWidth: 30,
+  handlerHeight: 30,
+  ...
+)
+```
+
+### Select By Tap
+
+You can tap on the slider to select it's value.  
+if slider is range-slider, then the closest handler to the selected point will move to that point
+
+```dart
+FlutterSlider(
+  ...
+  selectByTap: true, // default is true
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/select-by-tap.gif)
+
+
+### Jump
+
+By default slider handlers move fluently, if you set `jump` to true, handlers will jump between intervals
+
+```dart
+FlutterSlider(
+  ...
+  jump: true,
+  ...
+)
+```
+
+### Step
+
+The amount the slider changes on movement can be set using `step` option
+
+```dart
+FlutterSlider(
+  ...
+  step: 100,
+  ...
+)
+```
+
+### Ignore Steps
+
+If your configurations requires that some steps are not available, you can use `ignoreSteps` property.  
+this property accepts a simple class to define `from` and `to` ranges.
+
+```dart
+FlutterSlider(
+  ...
+    ignoreSteps: [
+      FlutterSliderIgnoreSteps(from: 8000, to: 12000),
+      FlutterSliderIgnoreSteps(from: 18000, to: 22000),
+    ],
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/range-ignore-steps.gif)
+
+### Minimum Distance
+
+When using range slider, the minimum distance between two handlers can be defined using `minimumDistance` option
+
+```dart
+FlutterSlider(
+  ...
+    minimumDistance: 300,
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/range-minimum-distance.gif)
+
+### Maximum Distance
+
+This is the opposite of minimum distance, when using range slider, the maximum distance between two handlers can be defined using `maximumDistance` option
+
+```dart
+FlutterSlider(
+  ...
+    maximumDistance: 300,
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/range-maximum-distance.gif)
+
+
+### Hatch Mark
+
+You can display a `Hatch Mark` underneath or beside of your slider based on `axis`. In order to display hatch mark you must   
+use `FlutterSliderHatchMark` class which has following properties:
+
+1. `distanceFromTrackBar`: The distance between slider and hatch mark
+2. `density`: The amount of lines per percent. 1 is default. any number less or more than 1 will decrease and increase lines respectively
+3. `labels`: If you want to display some label or text at certain percent in your hatch mark, you can use `labels`
+4. `labelTextStyle`: The style of the label text
+5. `smallLine`: The widget of small lines in hatch mark
+6. `bigLine`: The widget of big lines in hatch mark
+7. `labelBox`: The widget of label box
+
+Here is an example:
+
+```dart
+FlutterSlider(
+  ...
+    hatchMark: FlutterSliderHatchMark(
+       distanceFromTrackBar: 10,
+       density: 0.5, // means 50 lines, from 0 to 100 percent
+       labels: [
+         FlutterSliderHatchMarkLabel(percent: 0, label: 'Start'),
+         FlutterSliderHatchMarkLabel(percent: 10, label: '10,000'),
+         FlutterSliderHatchMarkLabel(percent: 50, label: '50 %'),
+         FlutterSliderHatchMarkLabel(percent: 80, label: '80,000'),
+         FlutterSliderHatchMarkLabel(percent: 100, label: 'Finish'),
+       ],
+     ),
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/hatch-mark.gif)
+
+  
+**Each Label(`FlutterSliderHatchMarkLabel`) in `labels` property, has it's own textStyle which overrides `labelTextStyle` property**  
+    
+**You MUST define width or height for the parent container of your slider to display `hatchMark` properly.**
+
+
+
+### Touch Size
+
+You can control how big a handler's touch area could be. by default touch size is 25
+The range is between 5 to 50
+
+```dart
+FlutterSlider(
+  ...
+  touchSize: 25,
+  ...
+)
+```
+
+To see the touchable area for handlers, set `visibleTouchArea` to true and test your slider
+
+
+```dart
+FlutterSlider(
+  ...
+  visibleTouchArea: true,
+  ...
+)
+```
+
+![](https://raw.githubusercontent.com/Ali-Azmoud/flutter_xlider/master/images/range-touchable-area.gif)
+
+### Disabled
+
+to disable your slider, you can use `disabled`. 
+
+```dart
+FlutterSlider(
+  ...
+  disabled: true,
+  ...
+)
+```
+
+### RTL
+
+makes the slider `Right To Left`
+
+```dart
+FlutterSlider(
+  ...
+  rtl: true,
+  ...
+)
+```
+
+## Events
+
+There are 3 events
+
+`onDragStarted`: fires when drag starts  
+`onDragCompleted` fires when drag ends  
+`onDragging` keeps firing when dragging  
+
+All three of above functions returns three values. 
+```dart
+(int handlerIndex, double lowerValue, double upperValue)
+```
+
+First value is `handlerIndex`, which determines the handler. 0 is `Left Handler` and 1 refers to `Right Handler`
+
+```dart
+FlutterSlider(
+  ...
+  onDragging: (handlerIndex, lowerValue, upperValue) {
+    _lowerValue = lowerValue;
+    _upperValue = upperValue;
+    
+    if(handlerIndex == 0)
+        print(" Left handler ");
+    
+    setState(() {});
+  },
+  ...
+)
+```
+
+
+
+

@@ -1,49 +1,39 @@
---- 
-layout: default 
-title: code for flutter
+---
+layout: default
+current: home
+class: 'home-template'
+navigation: True
 ---
 
-<article class="post">
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
 
-    {% for post in paginator.posts %}
-
-    <table width="100%" style="margin-bottom:30px">
-        <tr>
-            <td rowspan='2' width='100px'>
-                <span class="date">{{ post.date | date_to_string }}</span>
-            </td>
-            <td>
-                {% if post.external-url %}
-                <h1>
-                    <a href="{{ post.external-url }}">{{ post.title }}</a>
-                    <a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-                </h1>
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {% if site.logo %}
+                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
                 {% else %}
-                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                    {{ site.title }}
                 {% endif %}
-            </td>
-        </tr>
+            </h1>
+            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
+        </div>
+        {% include site-nav.html %}
+    </div>
+</header>
 
-        <tr>
-            <td>
-                <div class="post-content">{{ post.excerpt | strip_html | truncatewords:50 }}</div>
-            </td>
-        </tr>
-    </table>
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
 
-    {% endfor %} {% if paginator.total_pages > 1 %}
-    <div class="postnavigation">
-
-        {% if paginator.previous_page %} {% if paginator.page == 2 %}
-        <a class="prev left" href="/">&larr; Newer</a> {% else %}
-        <a class="prev left" href="/page{{paginator.previous_page}}/">&larr; Newer</a> {% endif %} {% else %}
-        <span class="nope left">&larr; Newer</span> {% endif %}
-
-        <span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.next_page %}
-        <a class="next right" href="/page{{paginator.next_page}}/">Older &rarr;</a> {% else %}
-        <span class="nope right">Older &rarr;</span> {% endif %}
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
+        </div>
 
     </div>
-    {% endif %}
-
-</article>
+</main>

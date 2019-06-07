@@ -14,7 +14,7 @@ date: 2019-06-08
  
 # Morpheus
 
-![Pub](https://img.shields.io/pub/v/morpheus.svg)
+![Pub](https://raw.githubusercontent.com/Salby/morpheus/master/https://img.shields.io/pub/v/morpheus.svg)
 
 A Flutter package for easily implementing Material Design navigation transitions.
 

@@ -14,7 +14,7 @@ date: 2019-06-08
  
 # flutter_circular_slider
 
-[![Build Status](https://travis-ci.com/davidanaya/flutter-circular-slider.svg?branch=master)](https://travis-ci.com/davidanaya/flutter-circular-slider) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Pub](https://img.shields.io/pub/v/flutter_circular_slider.svg)](https://pub.dartlang.org/packages/flutter_circular_slider)
+[![Build Status](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/https://travis-ci.com/davidanaya/flutter-circular-slider.svg?branch=master)](https://travis-ci.com/davidanaya/flutter-circular-slider) [![License: MIT](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Pub](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/https://img.shields.io/pub/v/flutter_circular_slider.svg)](https://pub.dartlang.org/packages/flutter_circular_slider)
 
 A customizable circular slider for Flutter.
 
@@ -89,7 +89,7 @@ There are two different options:
 - SingleCircularSlider: has only one handler and can be moved either dragging the handler or just by clicking on different parts of the slider.
 - DoubleCircularSlider: has two handlers and both have to be moved by dragging them.
 
-![Basic Slider](./doc/basic-slider.gif)
+![Basic Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/./doc/basic-slider.gif)
 
 ### Constructor
 
@@ -268,7 +268,7 @@ class _SleepPageState extends State<SleepPage> {
 }
 ```
 
-![Sleep Slider](./doc/sleep-slider.gif)
+![Sleep Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/./doc/sleep-slider.gif)
 
-![Sleep Single Slider](./doc/single-slider.gif)
+![Sleep Single Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/./doc/single-slider.gif)
 

@@ -14,7 +14,7 @@ date: 2019-06-08
  
 # Bezier Chart
 
-[![pub package](https://img.shields.io/pub/v/bezier_chart.svg)](https://pub.dev/packages/bezier_chart)
+[![pub package](https://raw.githubusercontent.com/aeyrium/bezier-chart/master/https://img.shields.io/pub/v/bezier_chart.svg)](https://pub.dev/packages/bezier_chart)
 
 A beautiful bezier line chart widget for flutter that is highly interactive and configurable.
 

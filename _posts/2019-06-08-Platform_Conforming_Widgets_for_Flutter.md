@@ -87,22 +87,22 @@ Now you replace widgets that are included in this library with their "P" counter
 
 `Button`/`CupertinoButton` -> `PButton`
 
-![Material Raised Button](/screenshots/materialbutton.png)
-![Cupertino Button](/screenshots/cupertinobutton.png)
+![Material Raised Button](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/materialbutton.png)
+![Cupertino Button](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/cupertinobutton.png)
 
 [Source](/example/lib/button_page.dart)
 
 `FlatButton`/`CupertinoButton` -> `PFlatButton`
 
-![Material Flat Button](/screenshots/androidflat.png)
-![Cupertino Flat Button](/screenshots/iosflat.png)
+![Material Flat Button](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/androidflat.png)
+![Cupertino Flat Button](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/iosflat.png)
 
 [Source](/example/lib/button_page.dart)
 
 `AppBar`/`CupertinoNavigationBar` -> `PNavigationBar`
 
-![Android Nav](/screenshots/androidnav.png)
-![iOS Nav](/screenshots/iosnav.png)
+![Android Nav](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/androidnav.png)
+![iOS Nav](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/iosnav.png)
 
 [Source](/example/lib/navigation_bar_page.dart)
 
@@ -110,20 +110,20 @@ Now you replace widgets that are included in this library with their "P" counter
 
 `Slider`/`CupertinoSlider` -> `PSlider`
 
-![Sliders](/screenshots/sliders.png)
+![Sliders](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/sliders.png)
 
 [Source](/example/lib/sliders_page.dart)
 
 `Switch`/`CupertinoSwitch` -> `PSwitch`
 
-![Switch](/screenshots/switches.png)
+![Switch](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/switches.png)
 
 [Source](/example/lib/switches_page.dart)
 
 `BottomNavigationBar`/`CupertinoTabBar` -> `PTabBar`
 
-![Bottom Navigation Android](/screenshots/androidtabs.png)
-![Bottom Navigation iOS](/screenshots/iostabs.png)
+![Bottom Navigation Android](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/androidtabs.png)
+![Bottom Navigation iOS](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/iostabs.png)
 
 [Source](/example/lib/tabs_page.dart)
 
@@ -131,7 +131,7 @@ Now you replace widgets that are included in this library with their "P" counter
 
 `CircularProgressIndicator`/`CupertinoActivityIndicator` -> `PActivityIndicator`
 
-![Progress](/screenshots/progress.png)
+![Progress](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/progress.png)
 
 [Source](/example/lib/progress_page.dart)
 
@@ -139,8 +139,8 @@ Now you replace widgets that are included in this library with their "P" counter
 
 `AlertDialog`/`CupertinoAlertDialog` -> `PAlertDialog`
 
-![Android Alert](/screenshots/androidalert.png)
-![Ios Alert](/screenshots/iosalert.png)
+![Android Alert](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/androidalert.png)
+![Ios Alert](https://raw.githubusercontent.com/fuzz-productions/platty/master//screenshots/iosalert.png)
 
 [Source](/example/lib/alert_page.dart)
 

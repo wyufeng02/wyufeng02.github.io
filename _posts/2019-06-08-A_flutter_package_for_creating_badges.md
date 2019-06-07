@@ -14,7 +14,7 @@ date: 2019-06-08
  
 # Badges for Flutter
 
-[![pub package](https://img.shields.io/badge/pub-1.0.3-blueviolet.svg)](https://pub.dev/packages/badges)
+[![pub package](https://raw.githubusercontent.com/yadaniyil/flutter_badges/master/https://img.shields.io/badge/pub-1.0.3-blueviolet.svg)](https://pub.dev/packages/badges)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/yadaniil/flutter_badges/master/images/logo.png" height="400px"/>

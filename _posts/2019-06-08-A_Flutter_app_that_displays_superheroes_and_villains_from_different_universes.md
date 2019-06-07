@@ -12,7 +12,7 @@ date: 2019-06-08
 > A Flutter app that displays superheroes and villains from different universes.
 
  
-# 🤓 FlutterSuperHeroes [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/JideGuru/FlutterSuperHeroes/graphs/commit-activity) [![GitHub stars](https://img.shields.io/github/stars/JideGuru/FlutterSuperHeroes.svg?style=social&label=Star)](https://github.com/JideGuru/FlutterSuperHeroes/stargazers/)
+# 🤓 FlutterSuperHeroes [![PRs Welcome](https://raw.githubusercontent.com/JideGuru/FlutterSuperHeroes/master/https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Maintenance](https://raw.githubusercontent.com/JideGuru/FlutterSuperHeroes/master/https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/JideGuru/FlutterSuperHeroes/graphs/commit-activity) [![GitHub stars](https://raw.githubusercontent.com/JideGuru/FlutterSuperHeroes/master/https://img.shields.io/github/stars/JideGuru/FlutterSuperHeroes.svg?style=social&label=Star)](https://github.com/JideGuru/FlutterSuperHeroes/stargazers/)
 
 
 
@@ -60,7 +60,7 @@ Give a ⭐️ if you like what you see.
 ## Getting Started
 
 
-![](https://venturebeat.com/wp-content/uploads/2019/02/google-flutter-logo-white.png?fit=400%2C200&strip=all)
+![](https://raw.githubusercontent.com/JideGuru/FlutterSuperHeroes/master/https://venturebeat.com/wp-content/uploads/2019/02/google-flutter-logo-white.png?fit=400%2C200&strip=all)
 
 
 

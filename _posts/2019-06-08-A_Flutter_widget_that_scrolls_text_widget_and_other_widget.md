@@ -26,10 +26,10 @@ accelerating and decelerating.
 ## Usage
 
 
-![](Image/screenShot.gif)
+![](https://raw.githubusercontent.com/yousifk/marquee_widget/master/Image/screenShot.gif)
 
 
-![](https://youtu.be/nhRpEIibKJQ)
+![](https://raw.githubusercontent.com/yousifk/marquee_widget/master/https://youtu.be/nhRpEIibKJQ)
 
 
 This is a minimalistic example:

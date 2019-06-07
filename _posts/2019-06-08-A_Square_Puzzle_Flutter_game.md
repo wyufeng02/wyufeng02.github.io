@@ -23,5 +23,5 @@ The idea is to show data through widgets that react to a bloc's Stream.
 In order to simplify state management, I've also implemented EventStates: 
 blocs that emit a new widget's state based on an event.
 
-![](https://raw.githubusercontent.com/GLodi/squazzle/master/gfx/screen.png)
+![](https://raw.githubusercontent.com/GLodi/squazzle/master/https://raw.githubusercontent.com/GLodi/squazzle/master/gfx/screen.png)
 

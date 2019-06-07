@@ -50,7 +50,7 @@ View the Flutter app in the `example` directory.
 
 ## Screenshot
 
-![Eva Icons Screenshot](screenshot.png)
+![Eva Icons Screenshot](https://raw.githubusercontent.com/piyushmaurya23/eva_icons_flutter/master/screenshot.png)
 
 ## Contributors
 

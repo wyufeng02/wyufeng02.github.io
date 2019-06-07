@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Cuberto Bottom Bar扑腾
+title:  Cuberto Bottom Barflutter
 tag: Bottom Bar
 date: 2019-06-08
 ---
 
-# [Cuberto Bottom Bar扑腾 ](http://github.com/kushalmahapatro/cuberto_bottom_bar) 
+# [Cuberto Bottom Barflutter ](http://github.com/kushalmahapatro/cuberto_bottom_bar) 
 
 
 

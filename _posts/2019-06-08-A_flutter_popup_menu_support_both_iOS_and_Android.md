@@ -14,7 +14,7 @@ date: 2019-06-08
  
 <img src="https://raw.githubusercontent.com/chinabrant/popup_menu/master/popupmenu.png" />
 
-[![pub package](https://raw.githubusercontent.com/chinabrant/popup_menu/master/https://img.shields.io/badge/pub-v1.0.1-blue.svg)](https://pub.dev/packages/popup_menu)
+[![pub package](https://img.shields.io/badge/pub-v1.0.1-blue.svg)](https://pub.dev/packages/popup_menu)
 
 This project was writed with pure dart code，which means it's support both iOS and Android.
 

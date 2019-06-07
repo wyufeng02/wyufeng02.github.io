@@ -22,7 +22,7 @@ test it out. There are no tests and the code quality is what you'd expect
 from a weekend hack.
 
 ## Demo
-![Snake Gif](https://raw.githubusercontent.com/anupcowkur/Snake/master/snake.gif)
+![Snake Gif](https://raw.githubusercontent.com/anupcowkur/Snake/master/)
 
 ### License
 ````

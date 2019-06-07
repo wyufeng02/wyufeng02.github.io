@@ -27,7 +27,7 @@ No login. Free to use. Open-source.
 
 [Play Store Link](https://play.google.com/store/apps/details?id=n.dev.flutter_app_builder)
 
-![alt text](https://raw.githubusercontent.com/deven98/MetaFlutter/master/https://github.com/deven98/MetaFlutter/blob/master/screenshots/screenshot1.png)
+![alt text](https://github.com/deven98/MetaFlutter/blob/master/screenshots/screenshot1.png)
 
 ### To start contributing
 

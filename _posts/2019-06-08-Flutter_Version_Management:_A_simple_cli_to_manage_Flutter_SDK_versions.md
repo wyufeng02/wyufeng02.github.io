@@ -13,14 +13,14 @@ date: 2019-06-08
 
  
 # `fvm` 
-[![Go Report Card](https://raw.githubusercontent.com/leoafarias/fvm/master/https://goreportcard.com/badge/github.com/leoafarias/fvm)](https://goreportcard.com/report/github.com/leoafarias/go-fvm)
-[![Build Status](https://raw.githubusercontent.com/leoafarias/fvm/master/https://travis-ci.org/leoafarias/fvm.svg?branch=master)](https://travis-ci.org/leoafarias/fvm)
-[![MIT Licence](https://raw.githubusercontent.com/leoafarias/fvm/master/https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-[![Awesome Flutter](https://raw.githubusercontent.com/leoafarias/fvm/master/https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://github.com/Solido/awesome-flutter)
+[![Go Report Card](https://goreportcard.com/badge/github.com/leoafarias/fvm)](https://goreportcard.com/report/github.com/leoafarias/go-fvm)
+[![Build Status](https://travis-ci.org/leoafarias/fvm.svg?branch=master)](https://travis-ci.org/leoafarias/fvm)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Awesome Flutter](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://github.com/Solido/awesome-flutter)
 
 Flutter Version Management: A simple cli to manage Flutter SDK versions.
 
-![](https://raw.githubusercontent.com/leoafarias/fvm/master/https://raw.githubusercontent.com/leoafarias/fvm/master/assets/terminal.gif)
+![](https://raw.githubusercontent.com/leoafarias/fvm/master/assets/terminal.gif)
 ## Why not use Flutter Channels?
 If all you want is to use the latest stable version or a specific channel once in a while, you should be using [Flutter Channels](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels).
 

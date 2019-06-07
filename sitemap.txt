@@ -460,6 +460,8 @@ https://code4flutter.com/2019/06/08/Hacker_News_Client_built_using_Flutter/
 
 https://code4flutter.com/2019/06/08/Trying_to_replicate_various_app_UIs_in_flutter/
 
+sitemap_location.xml
+
 https://code4flutter.com/2019/06/08/A_flutter_plugin_to_crop_image_on_iOS_and_Android/
 
 https://code4flutter.com/2019/06/08/A_Flutter_project_of_book_app_UI_from_prototype_originally/

@@ -2071,6 +2071,15 @@
 
 
    <url> 
+      <loc>sitemap_location.xml</loc> 
+      <lastmod>190608</lastmod> 
+      <changefreq>always</changefreq> 
+      <priority>0.8</priority> 
+   </url>
+    
+
+
+   <url> 
       <loc>https://code4flutter.com/2019/06/08/A_flutter_plugin_to_crop_image_on_iOS_and_Android/</loc> 
       <lastmod>190608</lastmod> 
       <changefreq>always</changefreq> 

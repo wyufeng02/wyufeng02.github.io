@@ -89,7 +89,7 @@ There are two different options:
 - SingleCircularSlider: has only one handler and can be moved either dragging the handler or just by clicking on different parts of the slider.
 - DoubleCircularSlider: has two handlers and both have to be moved by dragging them.
 
-![Basic Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/doc/basic-slider.gif)
+![Basic Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/./doc/basic-slider.gif)
 
 ### Constructor
 
@@ -268,7 +268,7 @@ class _SleepPageState extends State<SleepPage> {
 }
 ```
 
-![Sleep Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/doc/sleep-slider.gif)
+![Sleep Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/./doc/sleep-slider.gif)
 
-![Sleep Single Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/doc/single-slider.gif)
+![Sleep Single Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/./doc/single-slider.gif)
 

@@ -26,7 +26,7 @@ accelerating and decelerating.
 ## Usage
 
 
-![](https://raw.githubusercontent.com/yousifk/marquee_widget/master/screenShot.gif)
+![](https://raw.githubusercontent.com/yousifk/marquee_widget/master/Image/screenShot.gif)
 
 
 ![](https://youtu.be/nhRpEIibKJQ)

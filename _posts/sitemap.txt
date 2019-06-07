@@ -1,4 +1,4 @@
-https://code4flutter.com 
+https://code4flutter.com
 
 https://code4flutter.com/2019/06/08/The_v2ex_client_write_in_flutter/
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  在Flutter开发的Material Design音乐播放器
-tag: Music Player, Material Design
+tag: Music Player, Templates, Material Design
 date: 2019-06-08
 ---
 
@@ -14,7 +14,7 @@ date: 2019-06-08
 
 
  
-![](https://flutterawesome.com/content/images/2018/11/Grey.jpg)
+![](https://flutterawesome.com/content/images/2018/10/Grey.jpg)
  
 >
 > 在Flutter开发的Material Design音乐播放器。

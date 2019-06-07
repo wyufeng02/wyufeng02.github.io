@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A Flutter package for easily implementing Material Design navigation transitions
+title:  一个Flutter包，用于轻松实现Material Design导航过渡
 tag: Navigation, Material Design
 date: 2019-06-08
 ---
 
-# [A Flutter package for easily implementing Material Design navigation transitions ️⬇️ ](http://github.com/Salby/morpheus)  
+# [一个Flutter包，用于轻松实现Material Design导航过渡 ](http://github.com/Salby/morpheus) 
 
+
+
+## [查看Github/Salby/morpheus](http://github.com/Salby/morpheus)
+## [立即下载 ️⬇️ ](https://codeload.github.com/Salby/morpheus/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/05/morpheus.gif)
  
-> A Flutter package for easily implementing Material Design navigation transitions.
+>
+> 一个Flutter包，用于轻松实现Material Design导航过渡。
+>
 
  
 # Morpheus

@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  Hacker News Client built using Flutter
+title:  使用Flutter构建的黑客新闻客户端
 tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [Hacker News Client built using Flutter ️⬇️ ](http://github.com/alfianlosari/flutter-hackernews)  
+# [使用Flutter构建的黑客新闻客户端 ](http://github.com/alfianlosari/flutter-hackernews) 
 
+
+
+## [查看Github/alfianlosari/flutter-hackernews](http://github.com/alfianlosari/flutter-hackernews)
+## [立即下载 ️⬇️ ](https://codeload.github.com/alfianlosari/flutter-hackernews/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/05/hackernews.jpg)
  
-> Hacker News Client built using Flutter.
+>
+> 使用Flutter构建的黑客新闻客户端。
+>
 
  
 # hackernews

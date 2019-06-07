@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A simple and clean news app made with Flutter and Dart
+title:  一个简单而干净的新闻应用程序，用Flutter和Dart制作
 tag: News, Apps
 date: 2019-06-08
 ---
 
-# [A simple and clean news app made with Flutter and Dart ️⬇️ ](http://github.com/bugudiramu/News_app)  
+# [一个简单而干净的新闻应用程序，用Flutter和Dart制作 ](http://github.com/bugudiramu/News_app) 
 
+
+
+## [查看Github/bugudiramu/News_app](http://github.com/bugudiramu/News_app)
+## [立即下载 ️⬇️ ](https://codeload.github.com/bugudiramu/News_app/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/05/News_appcs.jpg)
  
-> This project is a starting point for a Flutter application.
+>
+> 该项目是Flutter应用程序的起点。
+>
 
  
 # news_app --> Under Construction

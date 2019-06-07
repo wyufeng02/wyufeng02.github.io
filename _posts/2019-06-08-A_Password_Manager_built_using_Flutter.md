@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A Password Manager built using Flutter
+title:  使用Flutter构建的密码管理器
 tag: Password
 date: 2019-06-08
 ---
 
-# [A Password Manager built using Flutter ️⬇️ ](http://github.com/mtwn105/Cipherly)  
+# [使用Flutter构建的密码管理器 ](http://github.com/mtwn105/Cipherly) 
 
+
+
+## [查看Github/mtwn105/Cipherly](http://github.com/mtwn105/Cipherly)
+## [立即下载 ️⬇️ ](https://codeload.github.com/mtwn105/Cipherly/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/05/Cipherly.jpg)
  
-> Cipherly is a password manager built using Flutter based on AES Encryption. Cipherly securely stores the passwords and protect them using AES Encryption.
+>
+> Cipher是使用基于AES加密的Flutter构建的密码管理器。
+>
 
  
 # Cipherly: A Password Manager built using Flutter!

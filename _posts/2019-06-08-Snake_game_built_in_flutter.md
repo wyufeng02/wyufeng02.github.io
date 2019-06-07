@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  Snake game built in flutter
+title:  蛇游戏内置flutter
 tag: Games
 date: 2019-06-08
 ---
 
-# [Snake game built in flutter ️⬇️ ](http://github.com/anupcowkur/Snake)  
+# [蛇游戏内置flutter ](http://github.com/anupcowkur/Snake) 
 
+
+
+## [查看Github/anupcowkur/Snake](http://github.com/anupcowkur/Snake)
+## [立即下载 ️⬇️ ](https://codeload.github.com/anupcowkur/Snake/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/05/Snake.jpg)
  
-> Flutter is pretty cool. This is just a small project I did to test it out. There are no tests and the code quality is what you'd expect from a weekend hack.
+>
+> flutter非常酷。
+>
 
  
 # Snake

@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A flutter package for creating badges
+title:  用于创建徽章的flutter包
 tag: Badges
 date: 2019-06-08
 ---
 
-# [A flutter package for creating badges ️⬇️ ](http://github.com/yadaniyil/flutter_badges)  
+# [用于创建徽章的flutter包 ](http://github.com/yadaniyil/flutter_badges) 
 
+
+
+## [查看Github/yadaniyil/flutter_badges](http://github.com/yadaniyil/flutter_badges)
+## [立即下载 ️⬇️ ](https://codeload.github.com/yadaniyil/flutter_badges/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/06/Badges-for-Flutter.jpg)
  
-> A flutter package for creating badges.
+>
+> 用于创建徽章的flutter包。
+>
 
  
 # Badges for Flutter

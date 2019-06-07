@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A Flutter widget that scrolls text widget and other widget
+title:  一个Flutter小部件，用于滚动文本小部件和其他小部件
 tag: Widgets, Marquee
 date: 2019-06-08
 ---
 
-# [A Flutter widget that scrolls text widget and other widget ️⬇️ ](http://github.com/yousifk/marquee_widget)  
+# [一个Flutter小部件，用于滚动文本小部件和其他小部件 ](http://github.com/yousifk/marquee_widget) 
 
+
+
+## [查看Github/yousifk/marquee_widget](http://github.com/yousifk/marquee_widget)
+## [立即下载 ️⬇️ ](https://codeload.github.com/yousifk/marquee_widget/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/06/marquee_widget.jpg)
  
-> A Flutter widget that scrolls Widget Text and other Widget with supported RTL.
+>
+> 一个Flutter小部件，它使用支持的RTL滚动Widget Text和其他Widget。
+>
 
  
 # marquee_widget

@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A Flutter music app made with Provider and BLoC pattern
+title:  使用Provider和BLoC模式制作的Flutter音乐应用程序
 tag: Music Player, Apps
 date: 2019-06-08
 ---
 
-# [A Flutter music app made with Provider and BLoC pattern ️⬇️ ](http://github.com/KarimElghamry/chillify)  
+# [使用Provider和BLoC模式制作的Flutter音乐应用程序 ](http://github.com/KarimElghamry/chillify) 
 
+
+
+## [查看Github/KarimElghamry/chillify](http://github.com/KarimElghamry/chillify)
+## [立即下载 ️⬇️ ](https://codeload.github.com/KarimElghamry/chillify/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/06/chillify.jpg)
  
-> A Flutter music app made with Provider and BLoC pattern.
+>
+> 使用Provider和BLoC模式制作的Flutter音乐应用程序。
+>
 
  
 # Chillify

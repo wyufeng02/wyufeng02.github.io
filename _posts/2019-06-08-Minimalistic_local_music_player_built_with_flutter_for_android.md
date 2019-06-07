@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  Minimalistic local music player built with flutter for android
+title:  极简主义的本地音乐播放器为Android设计了扑腾
 tag: Music Player
 date: 2019-06-08
 ---
 
-# [Minimalistic local music player built with flutter for android ️⬇️ ](http://github.com/janhrastnik/flutter-music-player)  
+# [极简主义的本地音乐播放器为Android设计了扑腾 ](http://github.com/janhrastnik/flutter-music-player) 
 
+
+
+## [查看Github/janhrastnik/flutter-music-player](http://github.com/janhrastnik/flutter-music-player)
+## [立即下载 ️⬇️ ](https://codeload.github.com/janhrastnik/flutter-music-player/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/05/Nano-Music-Player.jpg)
  
-> It uses the audioplayer plugin to play files, and path_provider to locate the external directory and search it for playable files.
+>
+> 它使用audioplayer插件播放文件，使用path_provider定位外部目录并搜索可播放文件。
+>
 
  
 # Nano Music Player ![alt text](https://raw.githubusercontent.com/janhrastnik/flutter-music-player/master/android/app/src/main/res/mipmap-hdpi/icon.png)

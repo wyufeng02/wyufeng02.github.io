@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  Platform Conforming Widgets for Flutter
+title:  适合flutter的平台整合小部件
 tag: Widgets
 date: 2019-06-08
 ---
 
-# [Platform Conforming Widgets for Flutter ️⬇️ ](http://github.com/fuzz-productions/platty)  
+# [适合flutter的平台整合小部件 ](http://github.com/fuzz-productions/platty) 
 
+
+
+## [查看Github/fuzz-productions/platty](http://github.com/fuzz-productions/platty)
+## [立即下载 ️⬇️ ](https://codeload.github.com/fuzz-productions/platty/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/05/alert_page.jpg)
  
-> Flutter makes no attempt to provide familiar widgets for a specific platform (unlike React Native, ionic, and other cross platform tooling).
+>
+> Flutter不会尝试为特定平台提供熟悉的小部件（与React Native，离子和其他跨平台工具不同）。
+>
 
  
 # platty

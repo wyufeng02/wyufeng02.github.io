@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A glorified todo list with a beautiful ui
+title:  一个美丽的用户名单
 tag: Todo
 date: 2019-06-08
 ---
 
-# [A glorified todo list with a beautiful ui ️⬇️ ](http://github.com/AYM1607/do_more)  
+# [一个美丽的用户名单 ](http://github.com/AYM1607/do_more) 
 
+
+
+## [查看Github/AYM1607/do_more](http://github.com/AYM1607/do_more)
+## [立即下载 ️⬇️ ](https://codeload.github.com/AYM1607/do_more/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/06/do_more.jpg)
  
-> A good looking glorified todo list built with flutter.
+>
+> 一个漂亮的美化todo列表与flutter建立。
+>
 
  
 # do_more (DO>) [![Build Status](https://app.bitrise.io/app/11d283a1ca8ed38e/status.svg?token=rbZPQaJTLG1lyzb9cqGQCg)](https://app.bitrise.io/app/11d283a1ca8ed38e)

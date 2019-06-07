@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A customizable circular slider for Flutter
+title:  Flutter的可定制圆形滑块
 tag: Circle, Slider
 date: 2019-06-08
 ---
 
-# [A customizable circular slider for Flutter ️⬇️ ](http://github.com/davidanaya/flutter-circular-slider)  
+# [Flutter的可定制圆形滑块 ](http://github.com/davidanaya/flutter-circular-slider) 
 
+
+
+## [查看Github/davidanaya/flutter-circular-slider](http://github.com/davidanaya/flutter-circular-slider)
+## [立即下载 ️⬇️ ](https://codeload.github.com/davidanaya/flutter-circular-slider/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/06/flutter-circular-slider.jpg)
  
-> A customizable circular slider for Flutter.
+>
+> Flutter的可定制圆形滑块。
+>
 
  
 # flutter_circular_slider

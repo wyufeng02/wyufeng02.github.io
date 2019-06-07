@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A simple Pomodoro timer written in Flutter web
+title:  用Flutter web写的一个简单的番茄钟计时器
 tag: Time, Web, Pomodoro
 date: 2019-06-08
 ---
 
-# [A simple Pomodoro timer written in Flutter web ️⬇️ ](http://github.com/DinoLeung/pomodoro)  
+# [用Flutter web写的一个简单的番茄钟计时器 ](http://github.com/DinoLeung/pomodoro) 
 
+
+
+## [查看Github/DinoLeung/pomodoro](http://github.com/DinoLeung/pomodoro)
+## [立即下载 ️⬇️ ](https://codeload.github.com/DinoLeung/pomodoro/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/05/pomodoro.jpg)
  
-> A simple Pomodoro timer written in Flutter web.
+>
+> 用Flutter web写的一个简单的番茄钟计时器。
+>
 
  
 404: Not Found

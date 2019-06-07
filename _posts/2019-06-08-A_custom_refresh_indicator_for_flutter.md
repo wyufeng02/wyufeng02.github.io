@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  A custom refresh indicator for flutter
+title:  flutter的自定义刷新指示器
 tag: Refresh
 date: 2019-06-08
 ---
 
-# [A custom refresh indicator for flutter ️⬇️ ](http://github.com/aagarwal1012/Liquid-Pull-To-Refresh)  
+# [flutter的自定义刷新指示器 ](http://github.com/aagarwal1012/Liquid-Pull-To-Refresh) 
 
+
+
+## [查看Github/aagarwal1012/Liquid-Pull-To-Refresh](http://github.com/aagarwal1012/Liquid-Pull-To-Refresh)
+## [立即下载 ️⬇️ ](https://codeload.github.com/aagarwal1012/Liquid-Pull-To-Refresh/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/06/Liquid-Pull-To-Refresh.jpg)
  
-> A beautiful and custom refresh indicator for flutter highly inspired from Ramotion Pull Down to Refresh.
+>
+> 一个美丽的自定义刷新指示器，可以从Ramotion Pull Down to Refresh中获得灵感。
+>
 
  
 <div align="center"><img src="https://github.com/aagarwal1012/Liquid-Pull-To-Refresh/blob/master/display/cover.png?raw=true"/></div>

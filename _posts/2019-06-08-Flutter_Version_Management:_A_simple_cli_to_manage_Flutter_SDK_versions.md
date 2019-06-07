@@ -1,15 +1,24 @@
 ---
 layout: post
-title:  Flutter Version Management: A simple cli to manage Flutter SDK versions
+title:  Flutter版本管理：管理Flutter SDK版本的简单cli
 tag: Dev Tools
 date: 2019-06-08
 ---
 
-# [Flutter Version Management: A simple cli to manage Flutter SDK versions ️⬇️ ](http://github.com/leoafarias/fvm)  
+# [Flutter版本管理：管理Flutter SDK版本的简单cli ](http://github.com/leoafarias/fvm) 
 
+
+
+## [查看Github/leoafarias/fvm](http://github.com/leoafarias/fvm)
+## [立即下载 ️⬇️ ](https://codeload.github.com/leoafarias/fvm/zip/master) 
+
+
+ 
 ![](https://flutterawesome.com/content/images/2019/05/fvm.gif)
  
-> Flutter Version Management: A simple cli to manage Flutter SDK versions.
+>
+> Flutter版本管理：管理Flutter SDK版本的简单cli。
+>
 
  
 # `fvm` 

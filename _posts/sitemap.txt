@@ -299,8 +299,7 @@ https://code4flutter.com/2019/06/05/PHP-rank/
 https://code4flutter.com/2019/06/08/CryptoCurrency_Tracker_for_Android_&_iOS_built_with_flutter/
 
 https://code4flutter.com/2019/06/08/Yet_another_Todo_app_using_Flutter/
-
-2019-05-29-手把手教你futter engine内存泄漏.md
+ 
 
 https://code4flutter.com/2019/06/08/A_Full_fledged_todo_app_which_is_made_with_Flutter_and_Dart/
 
@@ -741,8 +740,6 @@ https://code4flutter.com/2019/06/08/A_Simple_EYE_Test_Game_built_using_Flutter_C
 https://code4flutter.com/2019/06/08/A_Flutter_package_for_picking_last_seven_dates_and_time_with_analog_view/
 
 https://code4flutter.com/2019/06/08/A_Flutter_app_to_showcase_different_types_of_Splash_Screens/
-
-2018-11-27-[译]Flutter JSON和序列化.md
 
 https://code4flutter.com/2019/06/08/A_flutter_popup_menu_support_both_iOS_and_Android/
 

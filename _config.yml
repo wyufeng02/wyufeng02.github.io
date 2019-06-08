@@ -4,18 +4,18 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
-subtitle:
-description:
-author: John Doe
+title: code4Flutter
+subtitle: flutter中国开发者社区
+description: Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展示作品等方面的交流。 
+author: code4flutter
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url:
-baseurl:
+url: https://code4futter.com
+baseurl: 
 permalink: pretty
 
 # Pagination
@@ -76,10 +76,10 @@ plugins:
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
-favicon: /assets/favicon.ico
+favicon: /assets/images/code4flutter.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "Jekyll, NexT"
+keywords: "Code4App,flutter开发,flutter代码,苹果开发,苹果代码,flutter问答,视频教程,flutter资源"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -105,11 +105,11 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle
-index_with_subtitle: false
+index_with_subtitle: true
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -226,8 +226,8 @@ social_icons:
   enable: true
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
-  Twitter: twitter
+  # GitHub: github
+  # Twitter: twitter
   Weibo: weibo
 
 
@@ -586,7 +586,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto

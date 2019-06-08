@@ -175,14 +175,14 @@ date: 2019-06-06
 > A secure JavaScript/TypeScript runtime built with V8, Rust, and Tokio
        
 
-## 34. [thedaviddias/Front-End-Checklist](http://github.com/thedaviddias/Front-End-Checklist)  ♥️ 34.6k
-         
-> 🗂 The perfect Front-End Checklist for modern websites and meticulous developers
-       
-
-## 35. [apache/incubator-echarts](http://github.com/apache/incubator-echarts)  ♥️ 34.6k
+## 34. [apache/incubator-echarts](http://github.com/apache/incubator-echarts)  ♥️ 34.6k
          
 > A powerful, interactive charting and visualization library for browser
+       
+
+## 35. [thedaviddias/Front-End-Checklist](http://github.com/thedaviddias/Front-End-Checklist)  ♥️ 34.6k
+         
+> 🗂 The perfect Front-End Checklist for modern websites and meticulous developers
        
 
 ## 36. [FreeCodeCampChina/freecodecamp.cn](http://github.com/FreeCodeCampChina/freecodecamp.cn)  ♥️ 34.2k
@@ -262,54 +262,54 @@ date: 2019-06-06
        
 
 
-## 51. [mozilla/pdf.js](http://github.com/mozilla/pdf.js)  ♥️ 26.8k
+## 51. [emberjs/ember.js](http://github.com/emberjs/ember.js)  ♥️ 21k
          
-> PDF Reader in JavaScript
+> Ember.js - A JavaScript framework for creating ambitious web applications
+       
+
+## 52. [hammerjs/hammer.js](http://github.com/hammerjs/hammer.js)  ♥️ 20.1k
+         
+> A javascript library for multi-touch gestures :// You can touch this
+       
+
+## 53. [dawnlabs/carbon](http://github.com/dawnlabs/carbon)  ♥️ 20k
+         
+> 🎨 Create and share beautiful images of your source code
+       
+
+## 54. [t4t5/sweetalert](http://github.com/t4t5/sweetalert)  ♥️ 20k
+         
+> A beautiful replacement for JavaScript's "alert"
+       
+
+## 55. [elsewhencode/project-guidelines](http://github.com/elsewhencode/project-guidelines)  ♥️ 19.7k
+         
+> A set of best practices for JavaScript projects
+       
+
+## 56. [transloadit/uppy](http://github.com/transloadit/uppy)  ♥️ 19.7k
+         
+> The next open source file uploader for web browsers 🐶
  
 
-## 52. [ariya/phantomjs](http://github.com/ariya/phantomjs)  ♥️ 26.8k
+## 57. [webtorrent/webtorrent](http://github.com/webtorrent/webtorrent)  ♥️ 19.7k
          
-> Scriptable Headless Browser
+> ⚡️ Streaming torrent client for the web
        
 
-## 53. [hexojs/hexo](http://github.com/hexojs/hexo)  ♥️ 26.7k
+## 58. [yangshun/front-end-interview-handbook](http://github.com/yangshun/front-end-interview-handbook)  ♥️ 19.6k
          
-> A fast, simple & powerful blog framework, powered by Node.js.
+> 🕸 Almost complete answers to "Front-end Job Interview Questions" which you can use to interview potential candidates…
        
 
-## 54. [alvarotrigo/fullPage.js](http://github.com/alvarotrigo/fullPage.js)  ♥️ 26.7k
+## 59. [facebook/flow](http://github.com/facebook/flow)  ♥️ 19.6k
          
-> fullPage plugin by Alvaro Trigo. Create full screen pages fast and simple
+> Adds static typing to JavaScript to improve developer productivity and code quality.
        
 
-## 55. [zenorocha/clipboard.js](http://github.com/zenorocha/clipboard.js)  ♥️ 26.2k
+## 60. [mobxjs/mobx](http://github.com/mobxjs/mobx)  ♥️ 19.5k
          
-> ✂️ Modern copy to clipboard. No Flash. Just 3kb gzipped 📋
- 
-
-## 56. [facebook/jest](http://github.com/facebook/jest)  ♥️ 25.9k
-         
-> Delightful JavaScript Testing.
-       
-
-## 57. [caolan/async](http://github.com/caolan/async)  ♥️ 25.7k
-         
-> Async utilities for node and the browser
-       
-
-## 58. [videojs/video.js](http://github.com/videojs/video.js)  ♥️ 25.2k
-         
-> Video.js - open source HTML5 & Flash video player
-       
-
-## 59. [Leaflet/Leaflet](http://github.com/Leaflet/Leaflet)  ♥️ 25k
-         
-> 🍃 JavaScript library for mobile-friendly interactive maps
-       
-
-## 60. [photonstorm/phaser](http://github.com/photonstorm/phaser)  ♥️ 24.9k
-         
-> Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporti…
+> Simple, scalable state management.
        
 
 
@@ -318,7 +318,7 @@ date: 2019-06-06
 > JavaScript's utility _ belt
        
 
-## 62. [pixijs/pixi.js](http://github.com/pixijs/pixi.js)  ♥️ 24.4k
+## 62. [pixijs/pixi.js](http://github.com/pixijs/pixi.js)  ♥️ 24.5k
          
 > The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.
        
@@ -466,53 +466,53 @@ date: 2019-06-06
        
 
 
-## 91. [usablica/intro.js](http://github.com/usablica/intro.js)  ♥️ 18k
+## 91. [ReactiveX/rxjs](http://github.com/ReactiveX/rxjs)  ♥️ 18.7k
+         
+> A reactive programming library for JavaScript
+ 
+
+## 92. [mbeaudru/modern-js-cheatsheet](http://github.com/mbeaudru/modern-js-cheatsheet)  ♥️ 18.7k
+         
+> Cheatsheet for the JavaScript knowledge you will frequently encounter in modern projects.
+       
+
+## 93. [dimsemenov/PhotoSwipe](http://github.com/dimsemenov/PhotoSwipe)  ♥️ 18.6k
+         
+> JavaScript image gallery for mobile and desktop, modular, framework independent
+       
+
+## 94. [sentsin/layui](http://github.com/sentsin/layui)  ♥️ 18.3k
+         
+> 采用自身模块规范编写的前端 UI 框架，遵循原生 HTML/CSS/JS 的书写形式，极低门槛，拿来即用。
+       
+
+## 95. [nefe/You-Dont-Need-jQuery](http://github.com/nefe/You-Dont-Need-jQuery)  ♥️ 18.3k
+         
+> Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript.
+       
+
+## 96. [Prinzhorn/skrollr](http://github.com/Prinzhorn/skrollr)  ♥️ 18.2k
+         
+> Stand-alone parallax scrolling library for mobile (Android + iOS) and desktop. No jQuery. Just plain JavaScript (and …
+       
+
+## 97. [usablica/intro.js](http://github.com/usablica/intro.js)  ♥️ 18k
          
 > A better way for new feature introduction and step-by-step users guide for your website and project.
        
 
-## 92. [date-fns/date-fns](http://github.com/date-fns/date-fns)  ♥️ 18k
+## 98. [date-fns/date-fns](http://github.com/date-fns/date-fns)  ♥️ 18k
          
 > ⏳ Modern JavaScript date utility library ⌛️
  
 
-## 93. [verekia/js-stack-from-scratch](http://github.com/verekia/js-stack-from-scratch)  ♥️ 18k
+## 99. [verekia/js-stack-from-scratch](http://github.com/verekia/js-stack-from-scratch)  ♥️ 18k
          
 > 🛠️⚡ Step-by-step tutorial to build a modern JavaScript stack.
        
 
-## 94. [mochajs/mocha](http://github.com/mochajs/mocha)  ♥️ 17.9k
+## 100. [mochajs/mocha](http://github.com/mochajs/mocha)  ♥️ 17.9k
          
 > ☕️ simple, flexible, fun javascript test framework for node.js & the browser
        
-
-## 95. [sorrycc/awesome-javascript](http://github.com/sorrycc/awesome-javascript)  ♥️ 17.9k
-         
-> 🐢 A collection of awesome browser-side JavaScript libraries, resources and shiny things.
-       
-
-## 96. [markerikson/react-redux-links](http://github.com/markerikson/react-redux-links)  ♥️ 17.7k
-         
-> Curated tutorial and resource links I've collected on React, Redux, ES6, and more
-       
-
-## 97. [scrollreveal/scrollreveal](http://github.com/scrollreveal/scrollreveal)  ♥️ 17.6k
-         
-> Animate elements as they scroll into view.
-       
-
-## 98. [airbnb/enzyme](http://github.com/airbnb/enzyme)  ♥️ 17.3k
-         
-> JavaScript Testing utilities for React
-       
-
-## 99. [serhii-londar/open-source-mac-os-apps](http://github.com/serhii-londar/open-source-mac-os-apps)  ♥️ 17.3k
-         
-> 🚀 Awesome list of open source applications for macOS.
-       
-
-## 100. [niklasvh/html2canvas](http://github.com/niklasvh/html2canvas)  ♥️ 17.1k
-         
-> Screenshots with JavaScript
- 
 

@@ -17,7 +17,7 @@ date: 2019-06-06
 > An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
        
 
-## 3. [alibaba/flutter-go](http://github.com/alibaba/flutter-go)  ♥️ 12.8k
+## 3. [alibaba/flutter-go](http://github.com/alibaba/flutter-go)  ♥️ 12.9k
          
 > flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档
        
@@ -144,7 +144,7 @@ date: 2019-06-06
 > FlutterBoost is a Flutter plugin which enables hybrid integration of Flutter for your existing native apps with minim…
        
 
-## 28. [felangel/bloc](http://github.com/felangel/bloc)  ♥️ 1.6k
+## 28. [felangel/bloc](http://github.com/felangel/bloc)  ♥️ 1.7k
          
 > A predictable state management library that helps implement the BLoC design pattern
        
@@ -216,7 +216,7 @@ date: 2019-06-06
 > Flutter开发的一款Github客户端。 A Github client APP developed with Flutter, and It both supports Android and iOS.
        
 
-## 43. [zino-app/graphql-flutter](http://github.com/zino-app/graphql-flutter)  ♥️ 892
+## 43. [zino-app/graphql-flutter](http://github.com/zino-app/graphql-flutter)  ♥️ 894
          
 > A GraphQL client for Flutter, bringing all the features from a modern GraphQL client to one easy to use package.
        
@@ -257,7 +257,7 @@ date: 2019-06-06
  
 
 
-## 51. [UnityTech/UIWidgets](http://github.com/UnityTech/UIWidgets)  ♥️ 778
+## 51. [UnityTech/UIWidgets](http://github.com/UnityTech/UIWidgets)  ♥️ 780
          
 > UIWidget is a Unity Package which helps developers to create, debug and deploy efficient, cross-platform Apps.
        
@@ -267,7 +267,7 @@ date: 2019-06-06
 > Flutter web site
        
 
-## 53. [letsar/flutter_staggered_grid_view](http://github.com/letsar/flutter_staggered_grid_view)  ♥️ 751
+## 53. [letsar/flutter_staggered_grid_view](http://github.com/letsar/flutter_staggered_grid_view)  ♥️ 752
          
 > A Flutter staggered grid view
        
@@ -282,7 +282,7 @@ date: 2019-06-06
 > Flutter makes it easy and fast to build beautiful mobile apps.
        
 
-## 56. [filiph/state_experiments](http://github.com/filiph/state_experiments)  ♥️ 712
+## 56. [filiph/state_experiments](http://github.com/filiph/state_experiments)  ♥️ 713
          
 > Companion repository to the "Build reactive mobile apps in Flutter" talk
        
@@ -297,12 +297,12 @@ date: 2019-06-06
 > 基于 Flutter 构建一个跨平台的原生APP
        
 
-## 59. [fluttercommunity/flutter_webview_plugin](http://github.com/fluttercommunity/flutter_webview_plugin)  ♥️ 678
+## 59. [fluttercommunity/flutter_webview_plugin](http://github.com/fluttercommunity/flutter_webview_plugin)  ♥️ 679
          
 > WebView Plugin - Allows Flutter to communicate with a native WebView. Maintainer: @charafau
  
 
-## 60. [johnpryan/flutter_map](http://github.com/johnpryan/flutter_map)  ♥️ 677
+## 60. [johnpryan/flutter_map](http://github.com/johnpryan/flutter_map)  ♥️ 678
          
 > A Flutter map widget inspired by Leaflet
        
@@ -323,17 +323,17 @@ date: 2019-06-06
 > Login page built with @flutter 😍
  
 
-## 64. [mdanics/fluttergram](http://github.com/mdanics/fluttergram)  ♥️ 642
+## 64. [mdanics/fluttergram](http://github.com/mdanics/fluttergram)  ♥️ 643
          
 > A fully functional Instagram clone written in Flutter using Firebase / Firestore
        
 
-## 65. [OpenFlutter/flutter_screenutil](http://github.com/OpenFlutter/flutter_screenutil)  ♥️ 642
+## 65. [OpenFlutter/flutter_screenutil](http://github.com/OpenFlutter/flutter_screenutil)  ♥️ 643
          
 > Flutter screen adaptation, font adaptation, get screen information
        
 
-## 66. [iampawan/Flutter-Music-Player](http://github.com/iampawan/Flutter-Music-Player)  ♥️ 641
+## 66. [iampawan/Flutter-Music-Player](http://github.com/iampawan/Flutter-Music-Player)  ♥️ 642
          
 > Flutter Music Player - First Open Source Flutter based material design music player with audio plugin to play local m…
        
@@ -348,28 +348,28 @@ date: 2019-06-06
 > A chat app built on Flutter with firebase authentication and image sharing capability.
        
 
-## 69. [pauldemarco/flutter_blue](http://github.com/pauldemarco/flutter_blue)  ♥️ 596
-         
-> Bluetooth plugin for Flutter
- 
-
-## 70. [xuelongqy/flutter_easyrefresh](http://github.com/xuelongqy/flutter_easyrefresh)  ♥️ 596
+## 69. [xuelongqy/flutter_easyrefresh](http://github.com/xuelongqy/flutter_easyrefresh)  ♥️ 597
          
 > A widget provided to the flutter scroll component pull-refresh and push-load.
        
 
+## 70. [pauldemarco/flutter_blue](http://github.com/pauldemarco/flutter_blue)  ♥️ 596
+         
+> Bluetooth plugin for Flutter
+ 
 
-## 71. [memspace/zefyr](http://github.com/memspace/zefyr)  ♥️ 595
+
+## 71. [memspace/zefyr](http://github.com/memspace/zefyr)  ♥️ 596
          
 > Soft and gentle rich text editing for Flutter applications.
        
 
-## 72. [rrousselGit/provider](http://github.com/rrousselGit/provider)  ♥️ 586
+## 72. [rrousselGit/provider](http://github.com/rrousselGit/provider)  ♥️ 589
          
 > A set of multipurpose generic Inheritedwidgets
        
 
-## 73. [renefloor/flutter_cached_network_image](http://github.com/renefloor/flutter_cached_network_image)  ♥️ 556
+## 73. [renefloor/flutter_cached_network_image](http://github.com/renefloor/flutter_cached_network_image)  ♥️ 557
          
 > Download, cache and show images in a flutter app
        
@@ -389,17 +389,17 @@ date: 2019-06-06
 > Flutter WebRTC plugin for iOS/Android
        
 
-## 77. [bizz84/layout-demo-flutter](http://github.com/bizz84/layout-demo-flutter)  ♥️ 547
+## 77. [bizz84/layout-demo-flutter](http://github.com/bizz84/layout-demo-flutter)  ♥️ 549
          
 > Super Useful Flutter Layouts - Right in Your Pocket. 😉
  
 
-## 78. [rrousselGit/flutter_hooks](http://github.com/rrousselGit/flutter_hooks)  ♥️ 545
+## 78. [rrousselGit/flutter_hooks](http://github.com/rrousselGit/flutter_hooks)  ♥️ 546
          
 > React hooks for Flutter. Hooks are a new kind of object that manages a Widget life-cycles. They are used to increase …
        
 
-## 79. [CarGuo/GSYGithubAppKotlin](http://github.com/CarGuo/GSYGithubAppKotlin)  ♥️ 545
+## 79. [CarGuo/GSYGithubAppKotlin](http://github.com/CarGuo/GSYGithubAppKotlin)  ♥️ 546
          
 > 超完整的Android Kotlin 项目，功能丰富，适合学习和日常使用。GSYGithubApp系列的优势：目前已经拥有Flutter、Weex、ReactNative、Kotlin四个版本。 功能齐全，项目框架内技术涉及面广，完成…
        
@@ -445,64 +445,64 @@ date: 2019-06-06
 > A Gmail Clone built with Flutter
  
 
-## 89. [mobxjs/mobx.dart](http://github.com/mobxjs/mobx.dart)  ♥️ 511
+## 89. [mobxjs/mobx.dart](http://github.com/mobxjs/mobx.dart)  ♥️ 513
          
 > MobX for the Dart language
        
 
-## 90. [aaronoe/FlutterCinematic](http://github.com/aaronoe/FlutterCinematic)  ♥️ 504
+## 90. [CarGuo/GSYFlutterBook](http://github.com/CarGuo/GSYFlutterBook)  ♥️ 510
+         
+> Flutter完整开发实战详解系列，提供在线预览和pdf下载，本系列将完整讲述：如何快速从 0 开发一个完整的 Flutter APP，配套高完成度 Flutter 开源项目 GSYGithubAppFlutter ，同时会提供一些F…
+ 
+
+
+## 91. [aaronoe/FlutterCinematic](http://github.com/aaronoe/FlutterCinematic)  ♥️ 505
          
 > Flutter clone of my "Cinematic" App
        
 
-
-## 91. [google/flutter-provide](http://github.com/google/flutter-provide)  ♥️ 502
+## 92. [google/flutter-provide](http://github.com/google/flutter-provide)  ♥️ 502
          
 > A simple framework for state management in Flutter.
        
 
-## 92. [zhujian1989/flutter_study](http://github.com/zhujian1989/flutter_study)  ♥️ 497
+## 93. [zhujian1989/flutter_study](http://github.com/zhujian1989/flutter_study)  ♥️ 497
          
 > flutter知识点学习与实战，问题解决方案记录
        
 
-## 93. [canhuah/WanAndroid-Flutter](http://github.com/canhuah/WanAndroid-Flutter)  ♥️ 485
+## 94. [canhuah/WanAndroid-Flutter](http://github.com/canhuah/WanAndroid-Flutter)  ♥️ 485
          
 > Flutter版本 WanAndroid客户端 适合Flutter入门学习 被张鸿洋微信公众号推荐为优质Flutter开源项目啦
        
 
-## 94. [JadenZhong/wechat-flutter](http://github.com/JadenZhong/wechat-flutter)  ♥️ 483
+## 95. [JadenZhong/wechat-flutter](http://github.com/JadenZhong/wechat-flutter)  ♥️ 483
          
 > 撸一款Flutter版『微信』
        
 
-## 95. [ibhavikmakwana/FlutterPlayground](http://github.com/ibhavikmakwana/FlutterPlayground)  ♥️ 474
+## 96. [ibhavikmakwana/FlutterPlayground](http://github.com/ibhavikmakwana/FlutterPlayground)  ♥️ 474
          
 > Playground app for Flutter
  
 
-## 96. [m3sv/Flutter-for-Android-developers](http://github.com/m3sv/Flutter-for-Android-developers)  ♥️ 456
+## 97. [m3sv/Flutter-for-Android-developers](http://github.com/m3sv/Flutter-for-Android-developers)  ♥️ 456
          
 > Compilation of Flutter materials for Android developers
        
 
-## 97. [sergiandreplace/flutter_planets_tutorial](http://github.com/sergiandreplace/flutter_planets_tutorial)  ♥️ 454
+## 98. [sergiandreplace/flutter_planets_tutorial](http://github.com/sergiandreplace/flutter_planets_tutorial)  ♥️ 454
          
 > The Flutter Planets app tutorial with commits per lesson
        
 
-## 98. [boyan01/flutter-tetris](http://github.com/boyan01/flutter-tetris)  ♥️ 454
+## 99. [boyan01/flutter-tetris](http://github.com/boyan01/flutter-tetris)  ♥️ 454
          
 > a tetris game powered by flutter. 使用flutter开发俄罗斯方块。
        
 
-## 99. [boeledi/Streams-Block-Reactive-Programming-in-Flutter](http://github.com/boeledi/Streams-Block-Reactive-Programming-in-Flutter)  ♥️ 451
+## 100. [boeledi/Streams-Block-Reactive-Programming-in-Flutter](http://github.com/boeledi/Streams-Block-Reactive-Programming-in-Flutter)  ♥️ 451
          
 > Sample application to illustrate the notions of Streams, BLoC and Reactive Programming in Flutter
- 
-
-## 100. [renancaraujo/photo_view](http://github.com/renancaraujo/photo_view)  ♥️ 449
-         
-> 📸 Easy to use yet very customizable zoomable image widget for Flutter
  
 

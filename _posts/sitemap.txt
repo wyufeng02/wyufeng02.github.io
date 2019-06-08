@@ -452,8 +452,6 @@ https://code4flutter.com/2019/06/08/An_autocomplete_Textfield_for_flutter/
 
 https://code4flutter.com/2019/06/05/python-rank/
 
-https://code4flutter.com/2019/06/08/Flutter_app_for_browsing_Code::Stats_profiles/
-
 https://code4flutter.com/2019/06/08/A_list_component_that_can_refreshes_and_adds_more_data_for_Flutter_App/
 
 https://code4flutter.com/2019/06/08/Hacker_News_Client_built_using_Flutter/

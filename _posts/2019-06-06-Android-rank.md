@@ -109,54 +109,54 @@ date: 2019-06-06
  
 
 
-## 21. [Solido/awesome-flutter](http://github.com/Solido/awesome-flutter)  ♥️ 18.3k
+## 21. [xitu/gold-miner](http://github.com/xitu/gold-miner)  ♥️ 21.7k
+         
+> 🥇掘金翻译计划，可能是世界最大最好的英译中技术社区，最懂读者和译者的翻译平台：
+       
+
+## 22. [greenrobot/EventBus](http://github.com/greenrobot/EventBus)  ♥️ 21.1k
+         
+> Event bus for Android and Java that simplifies communication between Activities, Fragments, Threads, Services, etc. L…
+       
+
+## 23. [skylot/jadx](http://github.com/skylot/jadx)  ♥️ 18.8k
+         
+> Dex to Java decompiler
+       
+
+## 24. [Solido/awesome-flutter](http://github.com/Solido/awesome-flutter)  ♥️ 18.3k
          
 > An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
        
 
-## 22. [geekcompany/ResumeSample](http://github.com/geekcompany/ResumeSample)  ♥️ 18.3k
+## 25. [geekcompany/ResumeSample](http://github.com/geekcompany/ResumeSample)  ♥️ 18.3k
          
 > Resume template for Chinese programmers . 程序员简历模板系列。包括PHP程序员简历模板、iOS程序员简历模板、Android程序员简历模板、Web前端程序员简历模板、Java程序员简历模板、C…
        
 
-## 23. [Prinzhorn/skrollr](http://github.com/Prinzhorn/skrollr)  ♥️ 18.2k
+## 26. [Prinzhorn/skrollr](http://github.com/Prinzhorn/skrollr)  ♥️ 18.2k
          
 > Stand-alone parallax scrolling library for mobile (Android + iOS) and desktop. No jQuery. Just plain JavaScript (and …
        
 
-## 24. [google/iosched](http://github.com/google/iosched)  ♥️ 18.1k
+## 27. [google/iosched](http://github.com/google/iosched)  ♥️ 18.1k
          
 > The Google I/O 2018 Android App
        
 
-## 25. [ReactiveX/RxAndroid](http://github.com/ReactiveX/RxAndroid)  ♥️ 18.1k
+## 28. [ReactiveX/RxAndroid](http://github.com/ReactiveX/RxAndroid)  ♥️ 18.1k
          
 > RxJava bindings for Android
  
 
-## 26. [alibaba/fastjson](http://github.com/alibaba/fastjson)  ♥️ 18k
+## 29. [alibaba/fastjson](http://github.com/alibaba/fastjson)  ♥️ 18k
          
 > 🚄 A fast JSON parser/generator for Java. (Aliyun Data Lake Analytics https://www.aliyun.com/product/datalakeanalytics …
        
 
-## 27. [futurice/android-best-practices](http://github.com/futurice/android-best-practices)  ♥️ 17.9k
+## 30. [futurice/android-best-practices](http://github.com/futurice/android-best-practices)  ♥️ 17.9k
          
 > Do's and Don'ts for Android development, by Futurice developers
-       
-
-## 28. [scwang90/SmartRefreshLayout](http://github.com/scwang90/SmartRefreshLayout)  ♥️ 17.6k
-         
-> 🔥下拉刷新、上拉加载、二级刷新、淘宝二楼、RefreshLayout、OverScroll，Android智能下拉刷新框架，支持越界回弹、越界拖动，具有极强的扩展性，集成了几十种炫酷的Header和 Footer。
-       
-
-## 29. [alibaba/weex](http://github.com/alibaba/weex)  ♥️ 17.5k
-         
-> A framework for building Mobile cross-platform UI
-       
-
-## 30. [CymChad/BaseRecyclerViewAdapterHelper](http://github.com/CymChad/BaseRecyclerViewAdapterHelper)  ♥️ 17.3k
-         
-> BRVAH:Powerful and flexible RecyclerAdapter
        
 
 
@@ -211,54 +211,54 @@ date: 2019-06-06
        
 
 
-## 41. [Tencent/tinker](http://github.com/Tencent/tinker)  ♥️ 13.8k
+## 41. [libgdx/libgdx](http://github.com/libgdx/libgdx)  ♥️ 15.5k
+         
+> Desktop/Android/HTML5/iOS Java game development framework
+       
+
+## 42. [chrisbanes/PhotoView](http://github.com/chrisbanes/PhotoView)  ♥️ 15.4k
+         
+> Implementation of ImageView for Android that supports zooming, by various touch gestures.
+       
+
+## 43. [framework7io/framework7](http://github.com/framework7io/framework7)  ♥️ 14.4k
+         
+> Full featured HTML framework for building iOS & Android apps
+       
+
+## 44. [Kotlin/anko](http://github.com/Kotlin/anko)  ♥️ 14.4k
+         
+> Pleasant Android application development
+       
+
+## 45. [google/flexbox-layout](http://github.com/google/flexbox-layout)  ♥️ 14k
+         
+> Flexbox for Android
+ 
+
+## 46. [Tencent/tinker](http://github.com/Tencent/tinker)  ♥️ 13.8k
          
 > Tinker is a hot-fix solution library for Android, it supports dex, library and resources update without reinstall apk.
        
 
-## 42. [android10/Android-CleanArchitecture](http://github.com/android10/Android-CleanArchitecture)  ♥️ 13.5k
+## 47. [android10/Android-CleanArchitecture](http://github.com/android10/Android-CleanArchitecture)  ♥️ 13.5k
          
 > This is a sample app that is part of a series of blog posts I have written about how to architect an android applicat…
        
 
-## 43. [googlesamples/android-architecture-components](http://github.com/googlesamples/android-architecture-components)  ♥️ 13.4k
+## 48. [googlesamples/android-architecture-components](http://github.com/googlesamples/android-architecture-components)  ♥️ 13.4k
          
 > Samples for Android Architecture Components. 
        
 
-## 44. [android/plaid](http://github.com/android/plaid)  ♥️ 13.3k
+## 49. [android/plaid](http://github.com/android/plaid)  ♥️ 13.3k
          
 > An Android app which provides design news & inspiration as well as being an example of implementing material design.
        
 
-## 45. [google/ExoPlayer](http://github.com/google/ExoPlayer)  ♥️ 13.2k
+## 50. [google/ExoPlayer](http://github.com/google/ExoPlayer)  ♥️ 13.2k
          
 > An extensible media player for Android
- 
-
-## 46. [Genymobile/scrcpy](http://github.com/Genymobile/scrcpy)  ♥️ 13.1k
-         
-> Display and control your Android device
-       
-
-## 47. [lgvalle/Material-Animations](http://github.com/lgvalle/Material-Animations)  ♥️ 12.8k
-         
-> Android Transition animations explanation with examples.
-       
-
-## 48. [GeekyAnts/NativeBase](http://github.com/GeekyAnts/NativeBase)  ♥️ 12k
-         
-> Essential cross-platform UI components for React Native
-       
-
-## 49. [DrKLO/Telegram](http://github.com/DrKLO/Telegram)  ♥️ 11.9k
-         
-> Telegram for Android source
-       
-
-## 50. [hdodenhof/CircleImageView](http://github.com/hdodenhof/CircleImageView)  ♥️ 11.9k
-         
-> A circular ImageView for Android
  
 
 
@@ -415,104 +415,104 @@ date: 2019-06-06
        
 
 
-## 81. [zhihu/Matisse](http://github.com/zhihu/Matisse)  ♥️ 9.6k
-         
-> 🎆 A well-designed local image and video selector for Android
- 
-
-## 82. [alibaba/vlayout](http://github.com/alibaba/vlayout)  ♥️ 9.5k
-         
-> Project vlayout is a powerfull LayoutManager extension for RecyclerView, it provides a group of layouts for RecyclerV…
-       
-
-## 83. [react-native-community/react-native-maps](http://github.com/react-native-community/react-native-maps)  ♥️ 9.5k
-         
-> React Native Mapview component for iOS + Android
- 
-
-## 84. [appium/appium](http://github.com/appium/appium)  ♥️ 9.4k
-         
-> 📱 Automation for iOS, Android, and Windows Apps.
-       
-
-## 85. [pockethub/PocketHub](http://github.com/pockethub/PocketHub)  ♥️ 9.4k
-         
-> PocketHub Android App
-       
-
-## 86. [ksoichiro/Android-ObservableScrollView](http://github.com/ksoichiro/Android-ObservableScrollView)  ♥️ 9.4k
-         
-> Android library to observe scroll events on scrollable views.
-       
-
-## 87. [kivy/kivy](http://github.com/kivy/kivy)  ♥️ 9.4k
-         
-> Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS
-       
-
-## 88. [vondear/RxTool](http://github.com/vondear/RxTool)  ♥️ 9.3k
-         
-> Android开发人员不得不收集的工具类集合 | 支付宝支付 | 微信支付（统一下单） | 微信分享 | Zip4j压缩（支持分卷压缩与加密） | 一键集成UCrop选择圆形头像 | 一键集成二维码和条形码的扫描与生成 | 常用Dia…
-       
-
-## 89. [wasabeef/recyclerview-animators](http://github.com/wasabeef/recyclerview-animators)  ♥️ 9.2k
-         
-> An Android Animation library which easily add itemanimator to RecyclerView items.
-       
-
-## 90. [lipangit/JiaoZiVideoPlayer](http://github.com/lipangit/JiaoZiVideoPlayer)  ♥️ 9.2k
+## 81. [lipangit/JiaoZiVideoPlayer](http://github.com/lipangit/JiaoZiVideoPlayer)  ♥️ 9.2k
          
 > Android VideoPlayer MediaPlayer VideoView MediaView Float View And Fullscreen.高度自定义的开源安卓视频框架
        
 
-
-## 91. [H07000223/FlycoTabLayout](http://github.com/H07000223/FlycoTabLayout)  ♥️ 8.7k
+## 82. [openstf/stf](http://github.com/openstf/stf)  ♥️ 9.1k
          
-> An Android TabLayout Lib
+> Control and manage Android devices from your browser.
        
 
-## 92. [81813780/AVLoadingIndicatorView](http://github.com/81813780/AVLoadingIndicatorView)  ♥️ 8.7k
+## 83. [xbmc/xbmc](http://github.com/xbmc/xbmc)  ♥️ 9.1k
+         
+> Kodi is an award-winning free and open source home theater/media center software and entertainment hub for digital me…
+       
+
+## 84. [navasmdc/MaterialDesignLibrary](http://github.com/navasmdc/MaterialDesignLibrary)  ♥️ 9k
+         
+> This is a library with components of Android L to you use in android 2.2
+       
+
+## 85. [txthinking/brook](http://github.com/txthinking/brook)  ♥️ 9k
+         
+> Brook is a cross-platform(Linux/MacOS/Windows/Android/iOS) proxy/vpn software
+       
+
+## 86. [permissions-dispatcher/PermissionsDispatcher](http://github.com/permissions-dispatcher/PermissionsDispatcher)  ♥️ 9k
+         
+> Simple annotation-based API to handle runtime permissions.
+       
+
+## 87. [JakeWharton/RxBinding](http://github.com/JakeWharton/RxBinding)  ♥️ 8.8k
+         
+> RxJava binding APIs for Android's UI widgets.
+       
+
+## 88. [chrisbanes/Android-PullToRefresh](http://github.com/chrisbanes/Android-PullToRefresh)  ♥️ 8.8k
          
 > DEPRECATED
        
 
-## 93. [YoKeyword/Fragmentation](http://github.com/YoKeyword/Fragmentation)  ♥️ 8.6k
+## 89. [Yalantis/uCrop](http://github.com/Yalantis/uCrop)  ♥️ 8.8k
+         
+> Image Cropping Library for Android
+ 
+
+## 90. [H07000223/FlycoTabLayout](http://github.com/H07000223/FlycoTabLayout)  ♥️ 8.7k
+         
+> An Android TabLayout Lib
+       
+
+
+## 91. [txthinking/brook](http://github.com/txthinking/brook)  ♥️ 9k
+         
+> Brook is a cross-platform(Linux/MacOS/Windows/Android/iOS) proxy/vpn software
+       
+
+## 92. [permissions-dispatcher/PermissionsDispatcher](http://github.com/permissions-dispatcher/PermissionsDispatcher)  ♥️ 9k
+         
+> Simple annotation-based API to handle runtime permissions.
+       
+
+## 93. [JakeWharton/RxBinding](http://github.com/JakeWharton/RxBinding)  ♥️ 8.8k
+         
+> RxJava binding APIs for Android's UI widgets.
+       
+
+## 94. [Yalantis/uCrop](http://github.com/Yalantis/uCrop)  ♥️ 8.8k
+         
+> Image Cropping Library for Android
+ 
+
+## 95. [H07000223/FlycoTabLayout](http://github.com/H07000223/FlycoTabLayout)  ♥️ 8.7k
+         
+> An Android TabLayout Lib
+       
+
+## 96. [81813780/AVLoadingIndicatorView](http://github.com/81813780/AVLoadingIndicatorView)  ♥️ 8.7k
+         
+> DEPRECATED
+       
+
+## 97. [YoKeyword/Fragmentation](http://github.com/YoKeyword/Fragmentation)  ♥️ 8.6k
          
 > A powerful library that manage Fragment for Android!
        
 
-## 94. [didi/DoraemonKit](http://github.com/didi/DoraemonKit)  ♥️ 8.6k
+## 98. [didi/DoraemonKit](http://github.com/didi/DoraemonKit)  ♥️ 8.6k
          
 > 简称 "DoKit" 。一款功能齐全的客户端（ iOS 、Android ）研发助手，你值得拥有。
        
 
-## 95. [tbruyelle/RxPermissions](http://github.com/tbruyelle/RxPermissions)  ♥️ 8.6k
+## 99. [tbruyelle/RxPermissions](http://github.com/tbruyelle/RxPermissions)  ♥️ 8.6k
          
 > Android runtime permissions powered by RxJava2
        
 
-## 96. [AppIntro/AppIntro](http://github.com/AppIntro/AppIntro)  ♥️ 8.5k
+## 100. [AppIntro/AppIntro](http://github.com/AppIntro/AppIntro)  ♥️ 8.5k
          
 > Make a cool intro for your Android app.
-       
-
-## 97. [umano/AndroidSlidingUpPanel](http://github.com/umano/AndroidSlidingUpPanel)  ♥️ 8.5k
-         
-> This library provides a simple way to add a draggable sliding up panel (popularized by Google Music and Google Maps) …
-       
-
-## 98. [lingochamp/FileDownloader](http://github.com/lingochamp/FileDownloader)  ♥️ 8.5k
-         
-> Multitask、MultiThread(MultiConnection)、Breakpoint-resume、High-concurrency、Simple to use、Single/NotSingle-process
-       
-
-## 99. [youth5201314/banner](http://github.com/youth5201314/banner)  ♥️ 8.4k
-         
-> Android广告图片轮播控件，支持无限循环和多种主题，可以灵活设置轮播样式、动画、轮播和切换时间、位置、图片加载框架等！
-       
-
-## 100. [chrisjenx/Calligraphy](http://github.com/chrisjenx/Calligraphy)  ♥️ 8.3k
-         
-> Custom fonts in Android the easy way...
        
 

@@ -5,9 +5,7 @@ tag: Carousel
 date: 2019-06-08
 ---
 
-# [一个简单的Carousel Widget，具有多个配置选项 ](http://github.com/GeekyAnts/flutter-carousel) 
-
-
+ 
 
 ## [查看Github/GeekyAnts/flutter-carousel](http://github.com/GeekyAnts/flutter-carousel)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/GeekyAnts/flutter-carousel/zip/master) 

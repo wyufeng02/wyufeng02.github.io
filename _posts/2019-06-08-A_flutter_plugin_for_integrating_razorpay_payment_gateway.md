@@ -5,9 +5,7 @@ tag: Miscellaneous
 date: 2019-06-08
 ---
 
-# [用于集成razorpay支付网关的flutter插件 ](http://github.com/dynamitechetan/razorpay_flutter) 
-
-
+ 
 
 ## [查看Github/dynamitechetan/razorpay_flutter](http://github.com/dynamitechetan/razorpay_flutter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/dynamitechetan/razorpay_flutter/zip/master) 

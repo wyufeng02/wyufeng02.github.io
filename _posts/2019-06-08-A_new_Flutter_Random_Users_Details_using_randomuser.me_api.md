@@ -5,9 +5,7 @@ tag: Miscellaneous
 date: 2019-06-08
 ---
 
-# [使用randomuser.me api的新Flutter随机用户详细信息 ](http://github.com/bharatagsrwal/random-users-details) 
-
-
+ 
 
 ## [查看Github/bharatagsrwal/random-users-details](http://github.com/bharatagsrwal/random-users-details)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/bharatagsrwal/random-users-details/zip/master) 

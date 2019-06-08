@@ -5,9 +5,7 @@ tag: Templates, Weather
 date: 2019-06-08
 ---
 
-# [一个天气应用程序，用于学习如何在Flutter中使用Canvas和Animation ](http://github.com/alessandroaime/Weather) 
-
-
+ 
 
 ## [查看Github/alessandroaime/Weather](http://github.com/alessandroaime/Weather)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/alessandroaime/Weather/zip/master) 

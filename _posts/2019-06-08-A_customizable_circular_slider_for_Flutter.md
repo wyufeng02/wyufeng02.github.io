@@ -5,9 +5,7 @@ tag: Circle, Slider
 date: 2019-06-08
 ---
 
-# [Flutter的可定制圆形滑块 ](http://github.com/davidanaya/flutter-circular-slider) 
-
-
+ 
 
 ## [查看Github/davidanaya/flutter-circular-slider](http://github.com/davidanaya/flutter-circular-slider)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/davidanaya/flutter-circular-slider/zip/master) 

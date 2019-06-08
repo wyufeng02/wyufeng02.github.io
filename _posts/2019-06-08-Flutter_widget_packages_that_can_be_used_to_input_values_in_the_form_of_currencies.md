@@ -5,9 +5,7 @@ tag: Input, Forms, Textfield
 date: 2019-06-08
 ---
 
-# [可用于以货币形式输入值的flutter窗口小部件包 ](http://github.com/fadhly-permata/flutter_moneytextfieldform) 
-
-
+ 
 
 ## [查看Github/fadhly-permata/flutter_moneytextfieldform](http://github.com/fadhly-permata/flutter_moneytextfieldform)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/fadhly-permata/flutter_moneytextfieldform/zip/master) 

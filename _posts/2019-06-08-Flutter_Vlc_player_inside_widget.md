@@ -5,9 +5,7 @@ tag: Video
 date: 2019-06-08
 ---
 
-# [小部件内的flutterVlc播放​​器 ](http://github.com/solid-software/flutter_vlc_player) 
-
-
+ 
 
 ## [查看Github/solid-software/flutter_vlc_player](http://github.com/solid-software/flutter_vlc_player)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/solid-software/flutter_vlc_player/zip/master) 

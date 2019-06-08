@@ -5,9 +5,7 @@ tag: Color, Material Design
 date: 2019-06-08
 ---
 
-# [基于Google Docs颜色选择器的Flutter颜色选择器 ](http://github.com/long1eu/material_pickers) 
-
-
+ 
 
 ## [查看Github/long1eu/material_pickers](http://github.com/long1eu/material_pickers)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/long1eu/material_pickers/zip/master) 

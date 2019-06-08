@@ -5,9 +5,7 @@ tag: Audio, Music Player
 date: 2019-06-08
 ---
 
-# [一个Flutter插件，可以同时播放多个音频文件 ](http://github.com/luanpotter/audioplayers) 
-
-
+ 
 
 ## [查看Github/luanpotter/audioplayers](http://github.com/luanpotter/audioplayers)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/luanpotter/audioplayers/zip/master) 

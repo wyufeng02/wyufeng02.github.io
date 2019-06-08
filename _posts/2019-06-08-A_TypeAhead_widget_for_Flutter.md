@@ -5,9 +5,7 @@ tag: Autocomplete
 date: 2019-06-08
 ---
 
-# [Flutter的TypeAhead小部件 ](http://github.com/AbdulRahmanAlHamali/flutter_typeahead) 
-
-
+ 
 
 ## [查看Github/AbdulRahmanAlHamali/flutter_typeahead](http://github.com/AbdulRahmanAlHamali/flutter_typeahead)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/AbdulRahmanAlHamali/flutter_typeahead/zip/master) 

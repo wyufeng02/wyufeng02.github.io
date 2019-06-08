@@ -5,9 +5,7 @@ tag: Miscellaneous
 date: 2019-06-08
 ---
 
-# [用于跳转到系统设置的Flutter插件 ](http://github.com/Edward608/system_setting) 
-
-
+ 
 
 ## [查看Github/Edward608/system_setting](http://github.com/Edward608/system_setting)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Edward608/system_setting/zip/master) 

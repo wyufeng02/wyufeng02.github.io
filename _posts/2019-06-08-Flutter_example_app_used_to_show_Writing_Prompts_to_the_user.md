@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [Flutter示例app用于向用户显示Writing Prompts ](http://github.com/Vanethos/flutter-writting-prompt) 
-
-
+ 
 
 ## [查看Github/Vanethos/flutter-writting-prompt](http://github.com/Vanethos/flutter-writting-prompt)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Vanethos/flutter-writting-prompt/zip/master) 

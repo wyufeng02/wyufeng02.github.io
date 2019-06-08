@@ -5,9 +5,7 @@ tag: Navigation
 date: 2019-06-08
 ---
 
-# [Flutter库可在导航栏中添加新样式 ](http://github.com/TioCoding/flutter_navigation_dot_bar) 
-
-
+ 
 
 ## [查看Github/TioCoding/flutter_navigation_dot_bar](http://github.com/TioCoding/flutter_navigation_dot_bar)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/TioCoding/flutter_navigation_dot_bar/zip/master) 

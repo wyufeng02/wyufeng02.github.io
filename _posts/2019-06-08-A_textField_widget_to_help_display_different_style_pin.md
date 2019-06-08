@@ -5,9 +5,7 @@ tag: Textfield, Pin, Password
 date: 2019-06-08
 ---
 
-# [一个textField小部件，用于帮助显示不同的样式引脚 ](http://github.com/TinoGuo/pin_input_text_field) 
-
-
+ 
 
 ## [查看Github/TinoGuo/pin_input_text_field](http://github.com/TinoGuo/pin_input_text_field)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/TinoGuo/pin_input_text_field/zip/master) 

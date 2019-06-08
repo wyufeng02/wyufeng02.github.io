@@ -5,9 +5,7 @@ tag: Images
 date: 2019-06-08
 ---
 
-# [Ozzie将在您需要时在集成测试期间截取屏幕截图 ](http://github.com/jorgecoca/ozzie.flutter) 
-
-
+ 
 
 ## [查看Github/jorgecoca/ozzie.flutter](http://github.com/jorgecoca/ozzie.flutter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/jorgecoca/ozzie.flutter/zip/master) 

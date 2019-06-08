@@ -5,9 +5,7 @@ tag: Music Player
 date: 2019-06-08
 ---
 
-# [极简主义的本地音乐播放器为Android设计了flutter ](http://github.com/janhrastnik/flutter-music-player) 
-
-
+ 
 
 ## [查看Github/janhrastnik/flutter-music-player](http://github.com/janhrastnik/flutter-music-player)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/janhrastnik/flutter-music-player/zip/master) 

@@ -5,9 +5,7 @@ tag: Swipe, Slide, Material Design
 date: 2019-06-08
 ---
 
-# [具有方向性滑动操作的可滑动列表项的Flutter实现 ](http://github.com/letsar/flutter_slidable) 
-
-
+ 
 
 ## [查看Github/letsar/flutter_slidable](http://github.com/letsar/flutter_slidable)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/letsar/flutter_slidable/zip/master) 

@@ -5,9 +5,7 @@ tag: Music Player
 date: 2019-06-08
 ---
 
-# [一个完整的音乐播放器，带有很酷的用户界面和设计 ](http://github.com/amangautam1/flutter-musicplayer) 
-
-
+ 
 
 ## [查看Github/amangautam1/flutter-musicplayer](http://github.com/amangautam1/flutter-musicplayer)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/amangautam1/flutter-musicplayer/zip/master) 

@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [使用Flutter制作的Voxxed Days计划应用程序 ](http://github.com/RedBrogdon/voxxedapp) 
-
-
+ 
 
 ## [查看Github/RedBrogdon/voxxedapp](http://github.com/RedBrogdon/voxxedapp)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/RedBrogdon/voxxedapp/zip/master) 

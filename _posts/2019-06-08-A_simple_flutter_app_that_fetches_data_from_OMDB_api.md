@@ -5,9 +5,7 @@ tag: Movie
 date: 2019-06-08
 ---
 
-# [一个简单的flutter应用程序，从OMDB api中获取数据 ](http://github.com/benhaxe/flutter_movie) 
-
-
+ 
 
 ## [查看Github/benhaxe/flutter_movie](http://github.com/benhaxe/flutter_movie)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/benhaxe/flutter_movie/zip/master) 

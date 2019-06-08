@@ -5,9 +5,7 @@ tag: Text
 date: 2019-06-08
 ---
 
-# [Flutter小部件，可自动调整文本大小以完全适合其范围 ](http://github.com/leisim/auto_size_text) 
-
-
+ 
 
 ## [查看Github/leisim/auto_size_text](http://github.com/leisim/auto_size_text)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/leisim/auto_size_text/zip/master) 

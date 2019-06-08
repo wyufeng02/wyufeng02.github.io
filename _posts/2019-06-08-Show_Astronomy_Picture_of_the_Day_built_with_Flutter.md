@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [展示用Flutter建造的天文图片 ](http://github.com/itzmeanjan/astroZ) 
-
-
+ 
 
 ## [查看Github/itzmeanjan/astroZ](http://github.com/itzmeanjan/astroZ)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/astroZ/zip/master) 

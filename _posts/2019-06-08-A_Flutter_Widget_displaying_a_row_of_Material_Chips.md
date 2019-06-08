@@ -5,9 +5,7 @@ tag: Chips, Material Design, Widgets
 date: 2019-06-08
 ---
 
-# [一个Flutter Widget显示一排Material Chips ](http://github.com/callstackincubator/flutter-sorted-chips-row) 
-
-
+ 
 
 ## [查看Github/callstackincubator/flutter-sorted-chips-row](http://github.com/callstackincubator/flutter-sorted-chips-row)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/callstackincubator/flutter-sorted-chips-row/zip/master) 

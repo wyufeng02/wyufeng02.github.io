@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [一个简单的Flutter Android应用程序，显示传感器数据 ](http://github.com/itzmeanjan/sensorz/) 
-
-
+ 
 
 ## [查看Github/itzmeanjan/sensorz/](http://github.com/itzmeanjan/sensorz/)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/sensorz//zip/master) 

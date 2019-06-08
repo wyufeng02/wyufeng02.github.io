@@ -5,9 +5,7 @@ tag: Images, Picker
 date: 2019-06-08
 ---
 
-# [Flutter插件，允许您显示多图像选择器 ](http://github.com/Sh1d0w/multi_image_picker) 
-
-
+ 
 
 ## [查看Github/Sh1d0w/multi_image_picker](http://github.com/Sh1d0w/multi_image_picker)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Sh1d0w/multi_image_picker/zip/master) 

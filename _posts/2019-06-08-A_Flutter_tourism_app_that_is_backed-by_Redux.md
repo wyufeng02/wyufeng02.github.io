@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [一个由Redux支持的Flutter旅游应用程序 ](http://github.com/bluemix/tourism-demo) 
-
-
+ 
 
 ## [查看Github/bluemix/tourism-demo](http://github.com/bluemix/tourism-demo)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/bluemix/tourism-demo/zip/master) 

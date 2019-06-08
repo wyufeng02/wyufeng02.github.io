@@ -5,9 +5,7 @@ tag: Music Player
 date: 2019-06-08
 ---
 
-# [一个flutter的音乐播放器应用程序 ](http://github.com/boyan01/quiet-flutter) 
-
-
+ 
 
 ## [查看Github/boyan01/quiet-flutter](http://github.com/boyan01/quiet-flutter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/boyan01/quiet-flutter/zip/master) 

@@ -5,9 +5,7 @@ tag: Animation, Loading
 date: 2019-06-08
 ---
 
-# [一组加载指示器，用flutter动画 ](http://github.com/jogboms/flutter_spinkit) 
-
-
+ 
 
 ## [查看Github/jogboms/flutter_spinkit](http://github.com/jogboms/flutter_spinkit)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/jogboms/flutter_spinkit/zip/master) 

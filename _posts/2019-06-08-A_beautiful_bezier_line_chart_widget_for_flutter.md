@@ -1,13 +1,11 @@
 ---
 layout: post
 title:  flutter的美丽bezier折线图小部件
-tag: 
+tag: Chart
 date: 2019-06-08
 ---
 
-# [flutter的美丽bezier折线图小部件 ](http://github.com/aeyrium/bezier-chart) 
-
-
+ 
 
 ## [查看Github/aeyrium/bezier-chart](http://github.com/aeyrium/bezier-chart)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/aeyrium/bezier-chart/zip/master) 

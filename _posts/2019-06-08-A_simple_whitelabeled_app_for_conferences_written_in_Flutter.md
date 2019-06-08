@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [一个简单的白色标签应用程序，用于以Flutter编写的会议 ](http://github.com/mimicmobile/flutter-conference-app) 
-
-
+ 
 
 ## [查看Github/mimicmobile/flutter-conference-app](http://github.com/mimicmobile/flutter-conference-app)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/mimicmobile/flutter-conference-app/zip/master) 

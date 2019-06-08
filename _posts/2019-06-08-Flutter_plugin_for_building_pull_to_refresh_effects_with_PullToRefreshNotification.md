@@ -5,9 +5,7 @@ tag: Refresh, Notification
 date: 2019-06-08
 ---
 
-# [使用PullToRefresh通知构建拉动以刷新效果的Flutter插件 ](http://github.com/fluttercandies/pull_to_refresh_notification) 
-
-
+ 
 
 ## [查看Github/fluttercandies/pull_to_refresh_notification](http://github.com/fluttercandies/pull_to_refresh_notification)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/fluttercandies/pull_to_refresh_notification/zip/master) 

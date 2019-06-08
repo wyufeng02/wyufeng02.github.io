@@ -5,9 +5,7 @@ tag: Apps, Machine Learning
 date: 2019-06-08
 ---
 
-# [一个古老的辩论机器学习应用程序 ](http://github.com/MotionMobs/Sandwhich) 
-
-
+ 
 
 ## [查看Github/MotionMobs/Sandwhich](http://github.com/MotionMobs/Sandwhich)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/MotionMobs/Sandwhich/zip/master) 

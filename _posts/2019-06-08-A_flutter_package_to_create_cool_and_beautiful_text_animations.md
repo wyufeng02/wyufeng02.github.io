@@ -5,9 +5,7 @@ tag: Animation, Text
 date: 2019-06-08
 ---
 
-# [一个flutter的包，以创建酷炫漂亮的文本动画 ](http://github.com/aagarwal1012/Animated-Text-Kit) 
-
-
+ 
 
 ## [查看Github/aagarwal1012/Animated-Text-Kit](http://github.com/aagarwal1012/Animated-Text-Kit)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/aagarwal1012/Animated-Text-Kit/zip/master) 

@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [原生Android App Cinematic的Flutter端口 ](http://github.com/aaronoe/FlutterCinematic) 
-
-
+ 
 
 ## [查看Github/aaronoe/FlutterCinematic](http://github.com/aaronoe/FlutterCinematic)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/aaronoe/FlutterCinematic/zip/master) 

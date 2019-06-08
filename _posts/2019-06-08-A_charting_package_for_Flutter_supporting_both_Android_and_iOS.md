@@ -5,9 +5,7 @@ tag: Chart
 date: 2019-06-08
 ---
 
-# [Flutter支持Android和iOS的图表包 ](http://github.com/google/charts) 
-
-
+ 
 
 ## [查看Github/google/charts](http://github.com/google/charts)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/google/charts/zip/master) 

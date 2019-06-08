@@ -5,9 +5,7 @@ tag: Cards, Payment
 date: 2019-06-08
 ---
 
-# [带有条纹支付插件集成的flutter插件 ](http://github.com/jonasbark/flutter_stripe_payment) 
-
-
+ 
 
 ## [查看Github/jonasbark/flutter_stripe_payment](http://github.com/jonasbark/flutter_stripe_payment)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/jonasbark/flutter_stripe_payment/zip/master) 

@@ -5,9 +5,7 @@ tag: Miscellaneous
 date: 2019-06-08
 ---
 
-# [用于捕获Flutter的屏幕截图的命令行实用程序和程序包 ](http://github.com/mmcc007/screenshots) 
-
-
+ 
 
 ## [查看Github/mmcc007/screenshots](http://github.com/mmcc007/screenshots)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/mmcc007/screenshots/zip/master) 

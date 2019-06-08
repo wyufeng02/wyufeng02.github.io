@@ -5,9 +5,7 @@ tag: Video
 date: 2019-06-08
 ---
 
-# [Flutter的视频播放器带有金色的心脏 ](http://github.com/brianegan/chewie) 
-
-
+ 
 
 ## [查看Github/brianegan/chewie](http://github.com/brianegan/chewie)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/brianegan/chewie/zip/master) 

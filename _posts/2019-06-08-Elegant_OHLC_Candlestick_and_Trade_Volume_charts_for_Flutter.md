@@ -5,9 +5,7 @@ tag: Chart
 date: 2019-06-08
 ---
 
-# [优雅的OHLC烛台和Flutter的交易量图表 ](http://github.com/trentpiercy/flutter-candlesticks) 
-
-
+ 
 
 ## [查看Github/trentpiercy/flutter-candlesticks](http://github.com/trentpiercy/flutter-candlesticks)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/trentpiercy/flutter-candlesticks/zip/master) 

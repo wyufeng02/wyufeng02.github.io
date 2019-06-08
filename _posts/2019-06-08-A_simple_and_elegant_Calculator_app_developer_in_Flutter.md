@@ -5,9 +5,7 @@ tag: Calculator
 date: 2019-06-08
 ---
 
-# [Flutter中一个简单而优雅的Calculator应用程序开发人员 ](http://github.com/shubhamhackz/flutter-calculator) 
-
-
+ 
 
 ## [查看Github/shubhamhackz/flutter-calculator](http://github.com/shubhamhackz/flutter-calculator)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/shubhamhackz/flutter-calculator/zip/master) 

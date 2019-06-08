@@ -5,9 +5,7 @@ tag: Miscellaneous
 date: 2019-06-08
 ---
 
-# [一个简单的示例，用于渲染Tetr in flutter ](http://github.com/shahzadakram67/flutter_tex) 
-
-
+ 
 
 ## [查看Github/shahzadakram67/flutter_tex](http://github.com/shahzadakram67/flutter_tex)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/shahzadakram67/flutter_tex/zip/master) 
@@ -50,7 +48,7 @@ This package mainly depends on [webview_flutter](https://pub.dartlang.org/packag
 
 ```yaml
 dependencies:
-  flutter_tex: ^1.0.0
+  flutter_tex: ^1.0.1
 ```
 
 **2:** You can install packages from the command line:

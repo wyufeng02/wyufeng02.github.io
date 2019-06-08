@@ -5,9 +5,7 @@ tag: Onboarding, Swipe, Intro Screen
 date: 2019-06-08
 ---
 
-# [Flutter上的入职屏幕示例 ](http://github.com/durannumit/flutter_onboarding_screen) 
-
-
+ 
 
 ## [查看Github/durannumit/flutter_onboarding_screen](http://github.com/durannumit/flutter_onboarding_screen)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/durannumit/flutter_onboarding_screen/zip/master) 

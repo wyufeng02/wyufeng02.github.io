@@ -5,9 +5,7 @@ tag: Authentication
 date: 2019-06-08
 ---
 
-# [使用Flutter系列编码的登录演示的源代码 ](http://github.com/bizz84/coding-with-flutter-login-demo) 
-
-
+ 
 
 ## [查看Github/bizz84/coding-with-flutter-login-demo](http://github.com/bizz84/coding-with-flutter-login-demo)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/bizz84/coding-with-flutter-login-demo/zip/master) 

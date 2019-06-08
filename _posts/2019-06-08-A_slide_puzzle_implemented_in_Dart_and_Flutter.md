@@ -5,9 +5,7 @@ tag: Slide
 date: 2019-06-08
 ---
 
-# [在Dart和Flutter中实现的幻灯片拼图 ](http://github.com/kevmoo/slide_puzzle) 
-
-
+ 
 
 ## [查看Github/kevmoo/slide_puzzle](http://github.com/kevmoo/slide_puzzle)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/kevmoo/slide_puzzle/zip/master) 

@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [多伦多大学三一学院的迎新周应用程序 ](http://github.com/matthewtory/trinity-orientation-2018) 
-
-
+ 
 
 ## [查看Github/matthewtory/trinity-orientation-2018](http://github.com/matthewtory/trinity-orientation-2018)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/matthewtory/trinity-orientation-2018/zip/master) 

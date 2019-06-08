@@ -5,9 +5,7 @@ tag: Password, Textfield, Pin
 date: 2019-06-08
 ---
 
-# [用于输入密码的高度可定制的Flutter小部件 ](http://github.com/LiewJunTung/pin_code_text_field) 
-
-
+ 
 
 ## [查看Github/LiewJunTung/pin_code_text_field](http://github.com/LiewJunTung/pin_code_text_field)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/LiewJunTung/pin_code_text_field/zip/master) 

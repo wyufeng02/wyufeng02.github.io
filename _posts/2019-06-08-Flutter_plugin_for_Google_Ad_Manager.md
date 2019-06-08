@@ -5,9 +5,7 @@ tag: Ad
 date: 2019-06-08
 ---
 
-# [Google广告管理系统的Flutter插件 ](http://github.com/ko2ic/flutter_google_ad_manager) 
-
-
+ 
 
 ## [查看Github/ko2ic/flutter_google_ad_manager](http://github.com/ko2ic/flutter_google_ad_manager)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ko2ic/flutter_google_ad_manager/zip/master) 

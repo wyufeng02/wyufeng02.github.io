@@ -5,9 +5,7 @@ tag: Templates
 date: 2019-06-08
 ---
 
-# [关于如何在Flutter中实现好友列表和个人资料页面的快速示例应用 ](http://github.com/CodemateLtd/FlutterMates) 
-
-
+ 
 
 ## [查看Github/CodemateLtd/FlutterMates](http://github.com/CodemateLtd/FlutterMates)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/CodemateLtd/FlutterMates/zip/master) 

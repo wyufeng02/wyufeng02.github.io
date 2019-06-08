@@ -5,9 +5,7 @@ tag: Templates
 date: 2019-06-08
 ---
 
-# [Flutter Liquid Pay Payment App UI ](http://github.com/longhoang2984/flutter_payment_app_ui) 
-
-
+ 
 
 ## [查看Github/longhoang2984/flutter_payment_app_ui](http://github.com/longhoang2984/flutter_payment_app_ui)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/longhoang2984/flutter_payment_app_ui/zip/master) 

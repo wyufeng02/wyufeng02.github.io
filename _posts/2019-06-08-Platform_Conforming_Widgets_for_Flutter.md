@@ -5,9 +5,7 @@ tag: Widgets
 date: 2019-06-08
 ---
 
-# [适合flutter的平台整合小部件 ](http://github.com/fuzz-productions/platty) 
-
-
+ 
 
 ## [查看Github/fuzz-productions/platty](http://github.com/fuzz-productions/platty)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/fuzz-productions/platty/zip/master) 

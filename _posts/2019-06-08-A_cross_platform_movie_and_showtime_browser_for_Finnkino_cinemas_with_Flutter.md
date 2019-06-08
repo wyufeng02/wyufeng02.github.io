@@ -5,9 +5,7 @@ tag: Apps, Movie
 date: 2019-06-08
 ---
 
-# [使用Flutter的Finnkino电影院的跨平台电影和showtime浏览器 ](http://github.com/roughike/inKino) 
-
-
+ 
 
 ## [查看Github/roughike/inKino](http://github.com/roughike/inKino)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/roughike/inKino/zip/master) 

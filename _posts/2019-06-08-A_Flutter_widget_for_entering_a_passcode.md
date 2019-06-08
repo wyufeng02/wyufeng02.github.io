@@ -5,9 +5,7 @@ tag: Password, Pin
 date: 2019-06-08
 ---
 
-# [用于输入密码的Flutter小部件 ](http://github.com/deven98/passcode) 
-
-
+ 
 
 ## [查看Github/deven98/passcode](http://github.com/deven98/passcode)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/deven98/passcode/zip/master) 

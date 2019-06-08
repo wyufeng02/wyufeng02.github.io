@@ -5,9 +5,7 @@ tag: UI
 date: 2019-06-08
 ---
 
-# [一个flutter包，用于在画布上呈现wavefront obj文件 ](http://github.com/hemanthrajv/flutter_3d_obj) 
-
-
+ 
 
 ## [查看Github/hemanthrajv/flutter_3d_obj](http://github.com/hemanthrajv/flutter_3d_obj)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/hemanthrajv/flutter_3d_obj/zip/master) 

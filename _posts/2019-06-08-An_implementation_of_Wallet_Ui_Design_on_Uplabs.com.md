@@ -5,9 +5,7 @@ tag: UI
 date: 2019-06-08
 ---
 
-# [在Uplabs.com上实现Wallet Ui Design ](http://github.com/RegNex/WalletUiApp) 
-
-
+ 
 
 ## [查看Github/RegNex/WalletUiApp](http://github.com/RegNex/WalletUiApp)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/RegNex/WalletUiApp/zip/master) 

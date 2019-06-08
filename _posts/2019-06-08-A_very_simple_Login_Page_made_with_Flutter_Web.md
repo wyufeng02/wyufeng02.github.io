@@ -5,9 +5,7 @@ tag: Login Screen, Web
 date: 2019-06-08
 ---
 
-# [使用Flutter Web制作的一个非常简单的登录页面 ](http://github.com/JideGuru/LoginPage) 
-
-
+ 
 
 ## [查看Github/JideGuru/LoginPage](http://github.com/JideGuru/LoginPage)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/JideGuru/LoginPage/zip/master) 

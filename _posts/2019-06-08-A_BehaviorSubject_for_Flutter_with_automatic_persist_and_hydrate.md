@@ -5,9 +5,7 @@ tag: UI
 date: 2019-06-08
 ---
 
-# [Flutter的BehaviorSubject具有自动持久和水合作用 ](http://github.com/lukepighetti/hydrated) 
-
-
+ 
 
 ## [查看Github/lukepighetti/hydrated](http://github.com/lukepighetti/hydrated)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/lukepighetti/hydrated/zip/master) 

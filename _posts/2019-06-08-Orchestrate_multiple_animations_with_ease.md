@@ -5,9 +5,7 @@ tag: Animation
 date: 2019-06-08
 ---
 
-# [轻松编排多个动画 ](http://github.com/Norbert515/flutter_sequence_animation) 
-
-
+ 
 
 ## [查看Github/Norbert515/flutter_sequence_animation](http://github.com/Norbert515/flutter_sequence_animation)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Norbert515/flutter_sequence_animation/zip/master) 

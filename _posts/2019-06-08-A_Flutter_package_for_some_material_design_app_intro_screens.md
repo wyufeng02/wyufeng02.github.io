@@ -5,9 +5,7 @@ tag: Intro Screen, Onboarding
 date: 2019-06-08
 ---
 
-# [一个材料设计应用程序介绍屏幕的Flutter包 ](http://github.com/aagarwal1012/IntroViews-Flutter) 
-
-
+ 
 
 ## [查看Github/aagarwal1012/IntroViews-Flutter](http://github.com/aagarwal1012/IntroViews-Flutter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/aagarwal1012/IntroViews-Flutter/zip/master) 

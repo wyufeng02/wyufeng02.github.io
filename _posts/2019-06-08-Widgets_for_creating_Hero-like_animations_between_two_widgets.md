@@ -5,9 +5,7 @@ tag: Animation
 date: 2019-06-08
 ---
 
-# [用于在两个小部件之间创建类似Hero的动画的小部件 ](http://github.com/letsar/flutter_sidekick) 
-
-
+ 
 
 ## [查看Github/letsar/flutter_sidekick](http://github.com/letsar/flutter_sidekick)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/letsar/flutter_sidekick/zip/master) 

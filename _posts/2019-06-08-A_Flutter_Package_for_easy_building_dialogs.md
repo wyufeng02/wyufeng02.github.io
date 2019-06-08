@@ -5,9 +5,7 @@ tag: Dialog
 date: 2019-06-08
 ---
 
-# [Flutter Package，便于构建对话框 ](http://github.com/ricardonior29/easy_dialog) 
-
-
+ 
 
 ## [查看Github/ricardonior29/easy_dialog](http://github.com/ricardonior29/easy_dialog)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ricardonior29/easy_dialog/zip/master) 

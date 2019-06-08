@@ -5,9 +5,7 @@ tag: Images, Avatar
 date: 2019-06-08
 ---
 
-# [一个Flutter包，允许开发人员实现圆形配置文件头像 ](http://github.com/ch-muhammad-adil/flutter-circular_profile_avatar) 
-
-
+ 
 
 ## [查看Github/ch-muhammad-adil/flutter-circular_profile_avatar](http://github.com/ch-muhammad-adil/flutter-circular_profile_avatar)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ch-muhammad-adil/flutter-circular_profile_avatar/zip/master) 

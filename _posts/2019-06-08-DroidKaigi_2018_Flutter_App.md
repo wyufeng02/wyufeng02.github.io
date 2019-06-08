@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [DroidKaigi 2018 Flutter App ](http://github.com/konifar/droidkaigi2018-flutter) 
-
-
+ 
 
 ## [查看Github/konifar/droidkaigi2018-flutter](http://github.com/konifar/droidkaigi2018-flutter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/konifar/droidkaigi2018-flutter/zip/master) 

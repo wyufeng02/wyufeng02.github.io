@@ -5,9 +5,7 @@ tag: Avatar
 date: 2019-06-08
 ---
 
-# [提供Avatar Glow Widget的Flutter Package ](http://github.com/apgapg/avatar_glow) 
-
-
+ 
 
 ## [查看Github/apgapg/avatar_glow](http://github.com/apgapg/avatar_glow)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/apgapg/avatar_glow/zip/master) 

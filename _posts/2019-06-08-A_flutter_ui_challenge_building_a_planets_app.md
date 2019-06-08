@@ -5,9 +5,7 @@ tag: UI, Apps
 date: 2019-06-08
 ---
 
-# [一个flutter的ui挑战建立一个行星应用程序 ](http://github.com/rvamsikrishna/flutter_ui_challenge_planets_app) 
-
-
+ 
 
 ## [查看Github/rvamsikrishna/flutter_ui_challenge_planets_app](http://github.com/rvamsikrishna/flutter_ui_challenge_planets_app)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/rvamsikrishna/flutter_ui_challenge_planets_app/zip/master) 

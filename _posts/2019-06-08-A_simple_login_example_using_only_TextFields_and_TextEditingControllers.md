@@ -5,9 +5,7 @@ tag: Textfield, Login Screen
 date: 2019-06-08
 ---
 
-# [一个简单的登录示例，仅使用Text Fields和TextEditingController ](http://github.com/ahmed-alzahrani/Flutter_Simple_Login) 
-
-
+ 
 
 ## [查看Github/ahmed-alzahrani/Flutter_Simple_Login](http://github.com/ahmed-alzahrani/Flutter_Simple_Login)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ahmed-alzahrani/Flutter_Simple_Login/zip/master) 

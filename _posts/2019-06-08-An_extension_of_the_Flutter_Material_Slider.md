@@ -5,9 +5,7 @@ tag: Slider, Material Design
 date: 2019-06-08
 ---
 
-# [Flutter材料滑块的扩展 ](http://github.com/boeledi/RangeSlider) 
-
-
+ 
 
 ## [查看Github/boeledi/RangeSlider](http://github.com/boeledi/RangeSlider)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/boeledi/RangeSlider/zip/master) 

@@ -5,9 +5,7 @@ tag: Miscellaneous
 date: 2019-06-08
 ---
 
-# [用于flutter的通用缓存管理器 ](http://github.com/renefloor/flutter_cache_manager) 
-
-
+ 
 
 ## [查看Github/renefloor/flutter_cache_manager](http://github.com/renefloor/flutter_cache_manager)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/renefloor/flutter_cache_manager/zip/master) 

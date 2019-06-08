@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [移动应用程序写在扑通为putin ](http://github.com/failnicely/puton_mobile_app) 
-
-
+ 
 
 ## [查看Github/failnicely/puton_mobile_app](http://github.com/failnicely/puton_mobile_app)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/failnicely/puton_mobile_app/zip/master) 

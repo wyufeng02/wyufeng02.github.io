@@ -5,9 +5,7 @@ tag: Keyboard
 date: 2019-06-08
 ---
 
-# [以简单的方式为Android  -  iOS键盘添加功能 ](http://github.com/diegoveloper/flutter_keyboard_actions) 
-
-
+ 
 
 ## [查看Github/diegoveloper/flutter_keyboard_actions](http://github.com/diegoveloper/flutter_keyboard_actions)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/diegoveloper/flutter_keyboard_actions/zip/master) 

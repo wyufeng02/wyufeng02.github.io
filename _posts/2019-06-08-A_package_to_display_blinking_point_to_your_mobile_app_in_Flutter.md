@@ -5,9 +5,7 @@ tag: Animation
 date: 2019-06-08
 ---
 
-# [用于在Flutter中向移动应用程序显示闪烁点的程序包 ](http://github.com/Aleadinglight/Flutter-Blinking-Point) 
-
-
+ 
 
 ## [查看Github/Aleadinglight/Flutter-Blinking-Point](http://github.com/Aleadinglight/Flutter-Blinking-Point)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Aleadinglight/Flutter-Blinking-Point/zip/master) 

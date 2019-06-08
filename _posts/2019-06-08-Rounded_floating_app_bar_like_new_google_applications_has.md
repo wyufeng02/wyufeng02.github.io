@@ -5,9 +5,7 @@ tag: Floating
 date: 2019-06-08
 ---
 
-# [圆形浮动appbar像新的谷歌应用程序一样 ](http://github.com/ibhavikmakwana/rounded_floating_app_bar) 
-
-
+ 
 
 ## [查看Github/ibhavikmakwana/rounded_floating_app_bar](http://github.com/ibhavikmakwana/rounded_floating_app_bar)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ibhavikmakwana/rounded_floating_app_bar/zip/master) 

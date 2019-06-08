@@ -5,9 +5,7 @@ tag: Rating
 date: 2019-06-08
 ---
 
-# [一个简单的flutter评级栏，还包括一个评级栏指示器 ](http://github.com/sarbagyastha/flutter_rating_bar) 
-
-
+ 
 
 ## [查看Github/sarbagyastha/flutter_rating_bar](http://github.com/sarbagyastha/flutter_rating_bar)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/sarbagyastha/flutter_rating_bar/zip/master) 

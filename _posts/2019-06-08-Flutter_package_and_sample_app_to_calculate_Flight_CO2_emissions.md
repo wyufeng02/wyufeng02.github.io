@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [flutter包和样品应用程序来计算飞行二氧化碳排放量 ](http://github.com/bizz84/flight_co2_calculator_flutter) 
-
-
+ 
 
 ## [查看Github/bizz84/flight_co2_calculator_flutter](http://github.com/bizz84/flight_co2_calculator_flutter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/bizz84/flight_co2_calculator_flutter/zip/master) 

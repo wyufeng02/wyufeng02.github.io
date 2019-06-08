@@ -5,9 +5,7 @@ tag: Widgets, Marquee
 date: 2019-06-08
 ---
 
-# [一个Flutter小部件，用于滚动文本小部件和其他小部件 ](http://github.com/yousifk/marquee_widget) 
-
-
+ 
 
 ## [查看Github/yousifk/marquee_widget](http://github.com/yousifk/marquee_widget)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/yousifk/marquee_widget/zip/master) 

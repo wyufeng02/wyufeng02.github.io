@@ -5,9 +5,7 @@ tag: Apps, Templates, Location
 date: 2019-06-08
 ---
 
-# [Android应用程序使用基于位置的数据 ](http://github.com/itzmeanjan/locatorz) 
-
-
+ 
 
 ## [查看Github/itzmeanjan/locatorz](http://github.com/itzmeanjan/locatorz)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/locatorz/zip/master) 

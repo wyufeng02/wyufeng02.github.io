@@ -5,9 +5,7 @@ tag: Pin, Textfield
 date: 2019-06-08
 ---
 
-# [用于在flutter-dart上输入PIN的库 ](http://github.com/nsi4927/flutter-pinbox) 
-
-
+ 
 
 ## [查看Github/nsi4927/flutter-pinbox](http://github.com/nsi4927/flutter-pinbox)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/nsi4927/flutter-pinbox/zip/master) 

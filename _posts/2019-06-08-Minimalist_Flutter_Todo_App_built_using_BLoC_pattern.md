@@ -5,9 +5,7 @@ tag: Todo
 date: 2019-06-08
 ---
 
-# [使用BLoC模式构建的Minimalist Flutter Todo App ](http://github.com/aleksanderwozniak/deer) 
-
-
+ 
 
 ## [查看Github/aleksanderwozniak/deer](http://github.com/aleksanderwozniak/deer)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/aleksanderwozniak/deer/zip/master) 

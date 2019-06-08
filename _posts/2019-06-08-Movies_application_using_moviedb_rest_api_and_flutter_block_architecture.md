@@ -5,9 +5,7 @@ tag: Movie, Apps
 date: 2019-06-08
 ---
 
-# [使用电影db rest api和flutter bloc架构的电影应用程序 ](http://github.com/sagarprince/flutter_movies_app) 
-
-
+ 
 
 ## [查看Github/sagarprince/flutter_movies_app](http://github.com/sagarprince/flutter_movies_app)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/sagarprince/flutter_movies_app/zip/master) 

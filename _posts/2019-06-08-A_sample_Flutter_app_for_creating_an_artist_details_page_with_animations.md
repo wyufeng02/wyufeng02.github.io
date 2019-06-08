@@ -5,9 +5,7 @@ tag: Animation
 date: 2019-06-08
 ---
 
-# [一个示例Flutter应用程序，用于创建带动画的艺术家详细信息页面 ](http://github.com/roughike/blurry_artist_details_page) 
-
-
+ 
 
 ## [查看Github/roughike/blurry_artist_details_page](http://github.com/roughike/blurry_artist_details_page)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/roughike/blurry_artist_details_page/zip/master) 

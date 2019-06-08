@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [Firebase使用News API支持新闻阅读器 ](http://github.com/theankurkedia/NewsBuzz) 
-
-
+ 
 
 ## [查看Github/theankurkedia/NewsBuzz](http://github.com/theankurkedia/NewsBuzz)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/theankurkedia/NewsBuzz/zip/master) 

@@ -5,9 +5,7 @@ tag: Swipe
 date: 2019-06-08
 ---
 
-# [创建Tinder中使用的滑动视图 ](http://github.com/geekruchika/FlutterCardSwipe) 
-
-
+ 
 
 ## [查看Github/geekruchika/FlutterCardSwipe](http://github.com/geekruchika/FlutterCardSwipe)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/geekruchika/FlutterCardSwipe/zip/master) 

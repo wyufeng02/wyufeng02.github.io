@@ -5,9 +5,7 @@ tag: Search
 date: 2019-06-08
 ---
 
-# [Flutter app bar和搜索小部件集成 ](http://github.com/tomwyr/loader-search-bar) 
-
-
+ 
 
 ## [查看Github/tomwyr/loader-search-bar](http://github.com/tomwyr/loader-search-bar)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/tomwyr/loader-search-bar/zip/master) 

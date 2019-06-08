@@ -5,9 +5,7 @@ tag: Cards, Forms
 date: 2019-06-08
 ---
 
-# [用于构建基于卡的设置表单的flutter包 ](http://github.com/codegrue/card_settings) 
-
-
+ 
 
 ## [查看Github/codegrue/card_settings](http://github.com/codegrue/card_settings)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/codegrue/card_settings/zip/master) 

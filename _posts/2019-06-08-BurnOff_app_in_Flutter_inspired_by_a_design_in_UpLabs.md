@@ -5,9 +5,7 @@ tag: Templates, Apps
 date: 2019-06-08
 ---
 
-# [Flutter中的BurnOff应用程序受到UpLabs设计的启发 ](http://github.com/huextrat/BurnOff) 
-
-
+ 
 
 ## [查看Github/huextrat/BurnOff](http://github.com/huextrat/BurnOff)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/huextrat/BurnOff/zip/master) 

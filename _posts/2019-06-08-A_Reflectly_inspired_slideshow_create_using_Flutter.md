@@ -5,9 +5,7 @@ tag: Slide
 date: 2019-06-08
 ---
 
-# [使用Flutter创建一个反射灵感的幻灯片 ](http://github.com/ReeceRose/Reflecty-Slideshow) 
-
-
+ 
 
 ## [查看Github/ReeceRose/Reflecty-Slideshow](http://github.com/ReeceRose/Reflecty-Slideshow)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ReeceRose/Reflecty-Slideshow/zip/master) 

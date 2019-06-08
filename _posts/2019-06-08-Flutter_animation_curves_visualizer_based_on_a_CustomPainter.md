@@ -5,9 +5,7 @@ tag: Curves, Animation
 date: 2019-06-08
 ---
 
-# [基于Custom Painter的flutter动画曲线可视化器 ](http://github.com/rxlabz/curves_painter) 
-
-
+ 
 
 ## [查看Github/rxlabz/curves_painter](http://github.com/rxlabz/curves_painter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/rxlabz/curves_painter/zip/master) 

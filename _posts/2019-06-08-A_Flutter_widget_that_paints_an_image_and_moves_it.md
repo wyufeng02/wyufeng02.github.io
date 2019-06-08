@@ -5,9 +5,7 @@ tag: Images
 date: 2019-06-08
 ---
 
-# [一个Flutter小部件，用于绘制图像并移动它 ](http://github.com/pulyaevskiy/parallax-image) 
-
-
+ 
 
 ## [查看Github/pulyaevskiy/parallax-image](http://github.com/pulyaevskiy/parallax-image)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/pulyaevskiy/parallax-image/zip/master) 

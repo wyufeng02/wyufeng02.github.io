@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [这款新闻应用程序由Fortnightly灵感打造而成 ](http://github.com/Salby/novum) 
-
-
+ 
 
 ## [查看Github/Salby/novum](http://github.com/Salby/novum)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Salby/novum/zip/master) 

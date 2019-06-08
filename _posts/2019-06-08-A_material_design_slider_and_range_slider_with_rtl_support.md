@@ -5,9 +5,7 @@ tag: Slider
 date: 2019-06-08
 ---
 
-# [具有rtl支撑的材料设计滑块和范围滑块 ](http://github.com/Ali-Azmoud/flutter_xlider) 
-
-
+ 
 
 ## [查看Github/Ali-Azmoud/flutter_xlider](http://github.com/Ali-Azmoud/flutter_xlider)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Ali-Azmoud/flutter_xlider/zip/master) 

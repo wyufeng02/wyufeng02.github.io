@@ -5,9 +5,7 @@ tag: Images
 date: 2019-06-08
 ---
 
-# [Flutter的简单可缩放图像小部件 ](http://github.com/renancaraujo/photo_view) 
-
-
+ 
 
 ## [查看Github/renancaraujo/photo_view](http://github.com/renancaraujo/photo_view)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/renancaraujo/photo_view/zip/master) 

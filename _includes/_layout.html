@@ -15,6 +15,7 @@
   <title>{{ title }}</title>
   {% include _third-party/analytics/index.html %}
   
+  <!-- google广告 👇 -->
     <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" />
 
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -28,6 +29,20 @@
     <meta charset="UTF-8" />
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width" />
+  <!-- google广告 👆 -->
+
+    <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <!-- 百度统计 👆-->
+
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang | default: page.language | default: site.language }}">

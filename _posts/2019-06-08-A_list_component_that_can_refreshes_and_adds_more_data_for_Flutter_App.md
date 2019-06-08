@@ -5,9 +5,7 @@ tag: List
 date: 2019-06-08
 ---
 
-# [一个列表组件，可以刷新并为Flutter App添加更多数据 ](http://github.com/leyan95/dynamic_list_view) 
-
-
+ 
 
 ## [查看Github/leyan95/dynamic_list_view](http://github.com/leyan95/dynamic_list_view)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/leyan95/dynamic_list_view/zip/master) 

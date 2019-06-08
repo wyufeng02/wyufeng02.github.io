@@ -5,9 +5,7 @@ tag: Maps
 date: 2019-06-08
 ---
 
-# [用于在iOS和Android上显示谷歌地图的flutter插件 ](http://github.com/apptreesoftware/flutter_google_map_view) 
-
-
+ 
 
 ## [查看Github/apptreesoftware/flutter_google_map_view](http://github.com/apptreesoftware/flutter_google_map_view)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/apptreesoftware/flutter_google_map_view/zip/master) 

@@ -5,9 +5,7 @@ tag: Calculator
 date: 2019-06-08
 ---
 
-# [一个简单的计算器应用程序，用于显示Flutter的功能 ](http://github.com/praharshbhatt/Flutter_Calculator) 
-
-
+ 
 
 ## [查看Github/praharshbhatt/Flutter_Calculator](http://github.com/praharshbhatt/Flutter_Calculator)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/praharshbhatt/Flutter_Calculator/zip/master) 

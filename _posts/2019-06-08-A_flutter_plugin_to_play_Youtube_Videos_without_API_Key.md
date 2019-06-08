@@ -5,9 +5,7 @@ tag: Video
 date: 2019-06-08
 ---
 
-# [一个flutter的插件，可以播放没有API密钥的Youtube视频 ](http://github.com/sarbagyastha/youtube_player) 
-
-
+ 
 
 ## [查看Github/sarbagyastha/youtube_player](http://github.com/sarbagyastha/youtube_player)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/sarbagyastha/youtube_player/zip/master) 

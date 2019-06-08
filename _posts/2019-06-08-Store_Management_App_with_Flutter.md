@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [使用Flutter存储管理应用程序 ](http://github.com/ndc07/store-management) 
-
-
+ 
 
 ## [查看Github/ndc07/store-management](http://github.com/ndc07/store-management)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ndc07/store-management/zip/master) 

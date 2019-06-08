@@ -5,9 +5,7 @@ tag: Chart
 date: 2019-06-08
 ---
 
-# [Flutter应用程序的一个漂亮的绘图包 ](http://github.com/RCHowell/flutter_plot) 
-
-
+ 
 
 ## [查看Github/RCHowell/flutter_plot](http://github.com/RCHowell/flutter_plot)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/RCHowell/flutter_plot/zip/master) 

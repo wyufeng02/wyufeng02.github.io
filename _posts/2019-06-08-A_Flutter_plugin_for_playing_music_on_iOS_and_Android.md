@@ -5,9 +5,7 @@ tag: Audio
 date: 2019-06-08
 ---
 
-# [用于在iOS和Android上播放音乐的Flutter插件 ](http://github.com/2find/stereo) 
-
-
+ 
 
 ## [查看Github/2find/stereo](http://github.com/2find/stereo)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/2find/stereo/zip/master) 

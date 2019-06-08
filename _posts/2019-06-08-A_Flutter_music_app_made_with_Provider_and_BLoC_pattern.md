@@ -1,13 +1,11 @@
 ---
 layout: post
 title:  使用Provider和BLoC模式制作的Flutter音乐应用程序
-tag: 
+tag: Music Player, Apps
 date: 2019-06-08
 ---
 
-# [使用Provider和BLoC模式制作的Flutter音乐应用程序 ](http://github.com/KarimElghamry/chillify) 
-
-
+ 
 
 ## [查看Github/KarimElghamry/chillify](http://github.com/KarimElghamry/chillify)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/KarimElghamry/chillify/zip/master) 

@@ -5,9 +5,7 @@ tag: Authentication
 date: 2019-06-08
 ---
 
-# [在Flutter中进行身份验证的最简单方法 ](http://github.com/Clancey/simple_auth) 
-
-
+ 
 
 ## [查看Github/Clancey/simple_auth](http://github.com/Clancey/simple_auth)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Clancey/simple_auth/zip/master) 

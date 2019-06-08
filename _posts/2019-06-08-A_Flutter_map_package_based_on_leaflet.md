@@ -5,9 +5,7 @@ tag: Maps
 date: 2019-06-08
 ---
 
-# [基于传单的Flutter地图包 ](http://github.com/apptreesoftware/flutter_map) 
-
-
+ 
 
 ## [查看Github/apptreesoftware/flutter_map](http://github.com/apptreesoftware/flutter_map)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/apptreesoftware/flutter_map/zip/master) 
@@ -21,7 +19,7 @@ date: 2019-06-08
 >
 
  
-[![BuildStatus](https://api.travis-ci.org/johnpryan/flutter_map.svg?branch=master)](https://api.travis-ci.org/johnpryan/flutter_map.svg?branch=master)
+[![BuildStatus](https://api.travis-ci.org/johnpryan/flutter_map.svg?branch=master)](https://travis-ci.org/johnpryan/flutter_map)
 [![Pub](https://img.shields.io/pub/v/flutter_map.svg)](https://pub.dartlang.org/packages/flutter_map)
 
 # flutter_map

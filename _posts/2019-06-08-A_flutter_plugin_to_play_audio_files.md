@@ -5,9 +5,7 @@ tag: Audio
 date: 2019-06-08
 ---
 
-# [一个播放音频文件的flutter插件 ](http://github.com/rxlabz/audioplayer) 
-
-
+ 
 
 ## [查看Github/rxlabz/audioplayer](http://github.com/rxlabz/audioplayer)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/rxlabz/audioplayer/zip/master) 

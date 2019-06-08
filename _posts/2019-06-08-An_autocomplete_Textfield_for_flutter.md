@@ -5,9 +5,7 @@ tag: Autocomplete, Textfield
 date: 2019-06-08
 ---
 
-# [flutter的自动完成文本字段 ](http://github.com/felixlucien/flutter-autocomplete-textfield) 
-
-
+ 
 
 ## [查看Github/felixlucien/flutter-autocomplete-textfield](http://github.com/felixlucien/flutter-autocomplete-textfield)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/felixlucien/flutter-autocomplete-textfield/zip/master) 

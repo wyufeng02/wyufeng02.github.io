@@ -5,9 +5,7 @@ tag: Perallax Scroll
 date: 2019-06-08
 ---
 
-# [一个简单的视差滚动项目，用于flutter ](http://github.com/parth181195/flutter-perallax-scroll) 
-
-
+ 
 
 ## [查看Github/parth181195/flutter-perallax-scroll](http://github.com/parth181195/flutter-perallax-scroll)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/parth181195/flutter-perallax-scroll/zip/master) 

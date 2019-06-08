@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [将帧添加到Nintendo Switch最喜欢的屏幕截图中 ](http://github.com/JuniperPhoton/SwitchDecor) 
-
-
+ 
 
 ## [查看Github/JuniperPhoton/SwitchDecor](http://github.com/JuniperPhoton/SwitchDecor)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/JuniperPhoton/SwitchDecor/zip/master) 

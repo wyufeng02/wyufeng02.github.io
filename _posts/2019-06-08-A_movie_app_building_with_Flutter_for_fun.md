@@ -5,9 +5,7 @@ tag: Movie, Templates
 date: 2019-06-08
 ---
 
-# [一个电影应用程序建设与Flutter的乐趣 ](http://github.com/xieweizhi/tubi_tv_flutter) 
-
-
+ 
 
 ## [查看Github/xieweizhi/tubi_tv_flutter](http://github.com/xieweizhi/tubi_tv_flutter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/xieweizhi/tubi_tv_flutter/zip/master) 

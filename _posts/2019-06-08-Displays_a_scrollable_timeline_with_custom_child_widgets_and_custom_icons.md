@@ -5,9 +5,7 @@ tag: Timeline, Icons
 date: 2019-06-08
 ---
 
-# [显示带有自定义子窗口小部件和自定义图标的可滚动时间轴 ](http://github.com/furkantektas/timeline_list) 
-
-
+ 
 
 ## [查看Github/furkantektas/timeline_list](http://github.com/furkantektas/timeline_list)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/furkantektas/timeline_list/zip/master) 

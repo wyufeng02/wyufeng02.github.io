@@ -5,9 +5,7 @@ tag: Textfield, Pin, Input
 date: 2019-06-08
 ---
 
-# [用于flutter的PIN输入字段小部件 ](http://github.com/Tkko/Flutter_PinPut) 
-
-
+ 
 
 ## [查看Github/Tkko/Flutter_PinPut](http://github.com/Tkko/Flutter_PinPut)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Tkko/Flutter_PinPut/zip/master) 

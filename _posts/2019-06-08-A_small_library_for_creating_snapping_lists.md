@@ -5,9 +5,7 @@ tag: List
 date: 2019-06-08
 ---
 
-# [用于创建购物清单的小型库 ](http://github.com/ariedov/flutter_snaplist) 
-
-
+ 
 
 ## [查看Github/ariedov/flutter_snaplist](http://github.com/ariedov/flutter_snaplist)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ariedov/flutter_snaplist/zip/master) 

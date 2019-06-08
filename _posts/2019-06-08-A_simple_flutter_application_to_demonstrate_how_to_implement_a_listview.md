@@ -5,9 +5,7 @@ tag: List
 date: 2019-06-08
 ---
 
-# [一个简单的flutter应用程序，演示如何实现listview ](http://github.com/TerryDiederich/flutter_listview) 
-
-
+ 
 
 ## [查看Github/TerryDiederich/flutter_listview](http://github.com/TerryDiederich/flutter_listview)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/TerryDiederich/flutter_listview/zip/master) 

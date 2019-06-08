@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [用Flutter编写的Al-Quran应用程序 ](http://github.com/yunusefendi52/quran_app) 
-
-
+ 
 
 ## [查看Github/yunusefendi52/quran_app](http://github.com/yunusefendi52/quran_app)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/yunusefendi52/quran_app/zip/master) 

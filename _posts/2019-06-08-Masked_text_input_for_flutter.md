@@ -5,9 +5,7 @@ tag: Editor
 date: 2019-06-08
 ---
 
-# [用于flutter的蒙面文本输入 ](http://github.com/benhurott/flutter-masked-text) 
-
-
+ 
 
 ## [查看Github/benhurott/flutter-masked-text](http://github.com/benhurott/flutter-masked-text)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/benhurott/flutter-masked-text/zip/master) 

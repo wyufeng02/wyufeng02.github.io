@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [一个日记应用程序，内置隐私和开放性 ](http://github.com/GitJournal/GitJournal) 
-
-
+ 
 
 ## [查看Github/GitJournal/GitJournal](http://github.com/GitJournal/GitJournal)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/GitJournal/GitJournal/zip/master) 

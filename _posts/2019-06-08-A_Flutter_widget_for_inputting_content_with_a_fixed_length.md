@@ -5,9 +5,7 @@ tag: Input, Password, Pin
 date: 2019-06-08
 ---
 
-# [用于输入具有固定长度的内容的Flutter小部件 ](http://github.com/Rahiche/flutter_code_input) 
-
-
+ 
 
 ## [查看Github/Rahiche/flutter_code_input](http://github.com/Rahiche/flutter_code_input)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Rahiche/flutter_code_input/zip/master) 

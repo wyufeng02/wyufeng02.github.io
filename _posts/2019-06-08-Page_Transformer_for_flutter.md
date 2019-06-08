@@ -5,9 +5,7 @@ tag: Transitions, Intro Screen
 date: 2019-06-08
 ---
 
-# [页面变压器用于flutter ](http://github.com/best-flutter/transformer_page_view) 
-
-
+ 
 
 ## [查看Github/best-flutter/transformer_page_view](http://github.com/best-flutter/transformer_page_view)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/best-flutter/transformer_page_view/zip/master) 

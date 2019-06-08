@@ -5,9 +5,7 @@ tag: Apps, Chat
 date: 2019-06-08
 ---
 
-# [Flutter的Friendlychat源代码 ](http://github.com/flutter/friendlychat-steps) 
-
-
+ 
 
 ## [查看Github/flutter/friendlychat-steps](http://github.com/flutter/friendlychat-steps)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/flutter/friendlychat-steps/zip/master) 

@@ -5,9 +5,7 @@ tag: Menu, Drawer
 date: 2019-06-08
 ---
 
-# [创建内部侧面部分的简便方法，您可以在其中插入列表菜单 ](http://github.com/Dn-a/flutter_inner_drawer) 
-
-
+ 
 
 ## [查看Github/Dn-a/flutter_inner_drawer](http://github.com/Dn-a/flutter_inner_drawer)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Dn-a/flutter_inner_drawer/zip/master) 

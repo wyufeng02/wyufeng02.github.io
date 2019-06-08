@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [间隔重复学习系统 ](http://github.com/dasfoo/delern) 
-
-
+ 
 
 ## [查看Github/dasfoo/delern](http://github.com/dasfoo/delern)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/dasfoo/delern/zip/master) 

@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [使用Flutter的Whatsapp克隆 ](http://github.com/hanmajid/flutter_whatsapp) 
-
-
+ 
 
 ## [查看Github/hanmajid/flutter_whatsapp](http://github.com/hanmajid/flutter_whatsapp)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/hanmajid/flutter_whatsapp/zip/master) 

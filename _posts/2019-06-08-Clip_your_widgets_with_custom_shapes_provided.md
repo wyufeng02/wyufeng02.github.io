@@ -5,9 +5,7 @@ tag: Shapes
 date: 2019-06-08
 ---
 
-# [使用提供的自定义形状剪辑小部件 ](http://github.com/figengungor/clippy_flutter) 
-
-
+ 
 
 ## [查看Github/figengungor/clippy_flutter](http://github.com/figengungor/clippy_flutter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/figengungor/clippy_flutter/zip/master) 

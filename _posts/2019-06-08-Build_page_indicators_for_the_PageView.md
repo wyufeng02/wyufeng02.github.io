@@ -5,9 +5,7 @@ tag: Navigation, Swipe
 date: 2019-06-08
 ---
 
-# [构建PageView的页面指示器 ](http://github.com/leocavalcante/page_view_indicator) 
-
-
+ 
 
 ## [查看Github/leocavalcante/page_view_indicator](http://github.com/leocavalcante/page_view_indicator)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/leocavalcante/page_view_indicator/zip/master) 

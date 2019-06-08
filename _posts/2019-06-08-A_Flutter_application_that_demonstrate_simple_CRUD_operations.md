@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [一个展示简单CRUD操作的Flutter应用程序 ](http://github.com/ibhavikmakwana/cricket_team) 
-
-
+ 
 
 ## [查看Github/ibhavikmakwana/cricket_team](http://github.com/ibhavikmakwana/cricket_team)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ibhavikmakwana/cricket_team/zip/master) 

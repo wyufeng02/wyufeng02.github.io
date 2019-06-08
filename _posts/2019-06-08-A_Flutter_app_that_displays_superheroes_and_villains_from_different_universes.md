@@ -5,9 +5,7 @@ tag: Apps
 date: 2019-06-08
 ---
 
-# [一个Flutter应用程序，显示来自不同宇宙的超级英雄和恶棍 ](http://github.com/JideGuru/FlutterSuperHeroes) 
-
-
+ 
 
 ## [查看Github/JideGuru/FlutterSuperHeroes](http://github.com/JideGuru/FlutterSuperHeroes)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/JideGuru/FlutterSuperHeroes/zip/master) 

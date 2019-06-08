@@ -5,9 +5,7 @@ tag: Animation, Flip
 date: 2019-06-08
 ---
 
-# [翻盖面板包，内置动画 ](http://github.com/hnvn/flutter_flip_panel) 
-
-
+ 
 
 ## [查看Github/hnvn/flutter_flip_panel](http://github.com/hnvn/flutter_flip_panel)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/hnvn/flutter_flip_panel/zip/master) 

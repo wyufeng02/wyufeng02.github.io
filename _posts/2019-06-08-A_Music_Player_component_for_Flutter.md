@@ -5,9 +5,7 @@ tag: Music Player, Templates
 date: 2019-06-08
 ---
 
-# [Flutter的音乐播放器组件 ](http://github.com/thosakwe/flutter_music_player) 
-
-
+ 
 
 ## [查看Github/thosakwe/flutter_music_player](http://github.com/thosakwe/flutter_music_player)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/thosakwe/flutter_music_player/zip/master) 

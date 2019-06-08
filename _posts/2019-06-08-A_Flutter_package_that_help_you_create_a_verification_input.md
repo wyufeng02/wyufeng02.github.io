@@ -5,9 +5,7 @@ tag: Input, Verification
 date: 2019-06-08
 ---
 
-# [一个Flutter包，可帮助您创建验证输入 ](http://github.com/tinylife-io/flutter_verification_code_input) 
-
-
+ 
 
 ## [查看Github/tinylife-io/flutter_verification_code_input](http://github.com/tinylife-io/flutter_verification_code_input)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/tinylife-io/flutter_verification_code_input/zip/master) 

@@ -5,9 +5,7 @@ tag: QRCode
 date: 2019-06-08
 ---
 
-# [用于使用相机读取QR码的Flutter插件 ](http://github.com/bcko/flutter_qrcode_reader) 
-
-
+ 
 
 ## [查看Github/bcko/flutter_qrcode_reader](http://github.com/bcko/flutter_qrcode_reader)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/bcko/flutter_qrcode_reader/zip/master) 

@@ -5,9 +5,7 @@ tag: Tabbar, Bottom Bar
 date: 2019-06-08
 ---
 
-# [Flutter SDK的可扩展底部应用栏小部件 ](http://github.com/rIIh/expandable-bottom-bar) 
-
-
+ 
 
 ## [查看Github/rIIh/expandable-bottom-bar](http://github.com/rIIh/expandable-bottom-bar)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/rIIh/expandable-bottom-bar/zip/master) 

@@ -5,9 +5,7 @@ tag: Splash Screen
 date: 2019-06-08
 ---
 
-# [一个Flutter应用程序，展示不同类型的启动画面 ](http://github.com/flutter-devs/flutter_splash_app) 
-
-
+ 
 
 ## [查看Github/flutter-devs/flutter_splash_app](http://github.com/flutter-devs/flutter_splash_app)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/flutter-devs/flutter_splash_app/zip/master) 

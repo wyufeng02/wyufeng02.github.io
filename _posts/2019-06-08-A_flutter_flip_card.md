@@ -5,9 +5,7 @@ tag: Cards
 date: 2019-06-08
 ---
 
-# [flutter翻转卡 ](http://github.com/fedeoo/flip_card) 
-
-
+ 
 
 ## [查看Github/fedeoo/flip_card](http://github.com/fedeoo/flip_card)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/fedeoo/flip_card/zip/master) 

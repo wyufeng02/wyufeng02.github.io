@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [用Flutter写的一个漂亮的xkcd查看器应用程序 ](http://github.com/wakahuula/xkcdViewer) 
-
-
+ 
 
 ## [查看Github/wakahuula/xkcdViewer](http://github.com/wakahuula/xkcdViewer)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/wakahuula/xkcdViewer/zip/master) 

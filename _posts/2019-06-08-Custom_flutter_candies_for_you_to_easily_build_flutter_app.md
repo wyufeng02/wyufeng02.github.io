@@ -5,9 +5,7 @@ tag: Refresh, Notification
 date: 2019-06-08
 ---
 
-# [自定义flutter糖果为您轻松构建flutter的应用程序 ](http://github.com/zmtzawqlp/Flutter_Candies) 
-
-
+ 
 
 ## [查看Github/zmtzawqlp/Flutter_Candies](http://github.com/zmtzawqlp/Flutter_Candies)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/zmtzawqlp/Flutter_Candies/zip/master) 

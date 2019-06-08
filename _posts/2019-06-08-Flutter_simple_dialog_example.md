@@ -5,9 +5,7 @@ tag: Dialog
 date: 2019-06-08
 ---
 
-# [flutter简单的对话框示例 ](http://github.com/Oclemy/dialog) 
-
-
+ 
 
 ## [查看Github/Oclemy/dialog](http://github.com/Oclemy/dialog)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Oclemy/dialog/zip/master) 

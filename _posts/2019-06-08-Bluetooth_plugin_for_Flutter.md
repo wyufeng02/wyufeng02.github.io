@@ -5,9 +5,7 @@ tag: Bluetooth
 date: 2019-06-08
 ---
 
-# [Flutter的蓝牙插件 ](http://github.com/pauldemarco/flutter_blue) 
-
-
+ 
 
 ## [查看Github/pauldemarco/flutter_blue](http://github.com/pauldemarco/flutter_blue)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/pauldemarco/flutter_blue/zip/master) 

@@ -5,9 +5,7 @@ tag: Games
 date: 2019-06-08
 ---
 
-# [Hangman风格的游戏用来自askOuija subreddit的单词 ](http://github.com/andreicorpo/ouija-quiz-game) 
-
-
+ 
 
 ## [查看Github/andreicorpo/ouija-quiz-game](http://github.com/andreicorpo/ouija-quiz-game)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/andreicorpo/ouija-quiz-game/zip/master) 

@@ -5,9 +5,7 @@ tag: Navigation
 date: 2019-06-08
 ---
 
-# [一个Flutter包，可以轻松实现弯曲导航栏 ](http://github.com/rafalbednarczuk/curved_navigation_bar) 
-
-
+ 
 
 ## [查看Github/rafalbednarczuk/curved_navigation_bar](http://github.com/rafalbednarczuk/curved_navigation_bar)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/rafalbednarczuk/curved_navigation_bar/zip/master) 

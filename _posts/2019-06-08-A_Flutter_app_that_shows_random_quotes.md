@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [一个Flutter应用程序，显示随机引号 ](http://github.com/bapspatil/kut_in) 
-
-
+ 
 
 ## [查看Github/bapspatil/kut_in](http://github.com/bapspatil/kut_in)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/bapspatil/kut_in/zip/master) 

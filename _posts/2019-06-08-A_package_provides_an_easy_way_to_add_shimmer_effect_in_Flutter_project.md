@@ -5,9 +5,7 @@ tag: Animation
 date: 2019-06-08
 ---
 
-# [包提供了一种在Flutter项目中添加微光效果的简便方法 ](http://github.com/hnvn/flutter_shimmer) 
-
-
+ 
 
 ## [查看Github/hnvn/flutter_shimmer](http://github.com/hnvn/flutter_shimmer)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/hnvn/flutter_shimmer/zip/master) 

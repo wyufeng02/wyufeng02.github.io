@@ -5,9 +5,7 @@ tag: Circle, Animation
 date: 2019-06-08
 ---
 
-# [圆形的Flutter包，可以通过动画选择 ](http://github.com/autlunatic/flutter_selectable_circle) 
-
-
+ 
 
 ## [查看Github/autlunatic/flutter_selectable_circle](http://github.com/autlunatic/flutter_selectable_circle)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/autlunatic/flutter_selectable_circle/zip/master) 

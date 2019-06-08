@@ -5,9 +5,7 @@ tag: Picker, Images
 date: 2019-06-08
 ---
 
-# [通过flutter从相册中选择图像 - 视频 ](http://github.com/CaiJingLong/flutter_photo) 
-
-
+ 
 
 ## [查看Github/CaiJingLong/flutter_photo](http://github.com/CaiJingLong/flutter_photo)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/CaiJingLong/flutter_photo/zip/master) 

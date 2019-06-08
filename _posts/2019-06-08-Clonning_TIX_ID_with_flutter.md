@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [用flutter克隆TIX ID ](http://github.com/anggit97/flutter-tixid-clonning) 
-
-
+ 
 
 ## [查看Github/anggit97/flutter-tixid-clonning](http://github.com/anggit97/flutter-tixid-clonning)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/anggit97/flutter-tixid-clonning/zip/master) 

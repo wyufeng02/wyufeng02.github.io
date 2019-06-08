@@ -5,9 +5,7 @@ tag: Video
 date: 2019-06-08
 ---
 
-# [使用Flutter浏览Netflix和Amazon Prime Video时显示电影评级 ](http://github.com/jayrambhia/MovieRatings) 
-
-
+ 
 
 ## [查看Github/jayrambhia/MovieRatings](http://github.com/jayrambhia/MovieRatings)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/jayrambhia/MovieRatings/zip/master) 

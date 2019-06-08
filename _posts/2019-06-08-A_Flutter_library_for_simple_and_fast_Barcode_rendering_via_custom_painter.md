@@ -5,9 +5,7 @@ tag: QRCode
 date: 2019-06-08
 ---
 
-# [一个Flutter库，通过自定义画家进行简单快速的条形码渲染 ](http://github.com/bigship/barcode.flutter) 
-
-
+ 
 
 ## [查看Github/bigship/barcode.flutter](http://github.com/bigship/barcode.flutter)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/bigship/barcode.flutter/zip/master) 

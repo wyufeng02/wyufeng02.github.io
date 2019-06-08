@@ -5,9 +5,7 @@ tag: Validation
 date: 2019-06-08
 ---
 
-# [简单的应用程序，显示如何验证电子邮件登录表单 ](http://github.com/fredeil/flutter-email-validator) 
-
-
+ 
 
 ## [查看Github/fredeil/flutter-email-validator](http://github.com/fredeil/flutter-email-validator)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/fredeil/flutter-email-validator/zip/master) 

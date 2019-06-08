@@ -5,9 +5,7 @@ tag: Maps, Location
 date: 2019-06-08
 ---
 
-# [flutter应用程序实现了flutter映射和位置插件 ](http://github.com/HoussemTN/localizer) 
-
-
+ 
 
 ## [查看Github/HoussemTN/localizer](http://github.com/HoussemTN/localizer)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/HoussemTN/localizer/zip/master) 

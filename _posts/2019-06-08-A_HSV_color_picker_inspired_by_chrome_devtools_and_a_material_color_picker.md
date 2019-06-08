@@ -5,9 +5,7 @@ tag: Color
 date: 2019-06-08
 ---
 
-# [HSV颜色选择器灵感来自镀铬devtools和材料颜色选择器 ](http://github.com/mchome/flutter_colorpicker) 
-
-
+ 
 
 ## [查看Github/mchome/flutter_colorpicker](http://github.com/mchome/flutter_colorpicker)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/mchome/flutter_colorpicker/zip/master) 

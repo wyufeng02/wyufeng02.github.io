@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [一个小应用程序，带有WhatsApp组链接的集合 ](http://github.com/Xbobo5530/linki) 
-
-
+ 
 
 ## [查看Github/Xbobo5530/linki](http://github.com/Xbobo5530/linki)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Xbobo5530/linki/zip/master) 

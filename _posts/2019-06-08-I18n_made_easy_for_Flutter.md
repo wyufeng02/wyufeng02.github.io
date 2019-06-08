@@ -5,9 +5,7 @@ tag: I18n
 date: 2019-06-08
 ---
 
-# [I18n让Flutter变得容易 ](http://github.com/ilteoood/flutter_i18n) 
-
-
+ 
 
 ## [查看Github/ilteoood/flutter_i18n](http://github.com/ilteoood/flutter_i18n)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ilteoood/flutter_i18n/zip/master) 

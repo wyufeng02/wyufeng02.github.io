@@ -5,9 +5,7 @@ tag: Games
 date: 2019-06-08
 ---
 
-# [一个简单的琐事游戏，用Flutter和frideos包构建 ](http://github.com/frideosapps/trivia_example) 
-
-
+ 
 
 ## [查看Github/frideosapps/trivia_example](http://github.com/frideosapps/trivia_example)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/frideosapps/trivia_example/zip/master) 

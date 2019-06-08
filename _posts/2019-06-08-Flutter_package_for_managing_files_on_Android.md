@@ -5,9 +5,7 @@ tag: File Manager
 date: 2019-06-08
 ---
 
-# [用于管理Android上文件的Flutter包 ](http://github.com/Eagle6789/flutter_file_manager) 
-
-
+ 
 
 ## [查看Github/Eagle6789/flutter_file_manager](http://github.com/Eagle6789/flutter_file_manager)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Eagle6789/flutter_file_manager/zip/master) 

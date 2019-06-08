@@ -5,9 +5,7 @@ tag: Circle, Bottom Bar
 date: 2019-06-08
 ---
 
-# [通过动画flutter圆底栏 ](http://github.com/mehrtarh/animation_circle_bottom_bar) 
-
-
+ 
 
 ## [查看Github/mehrtarh/animation_circle_bottom_bar](http://github.com/mehrtarh/animation_circle_bottom_bar)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/mehrtarh/animation_circle_bottom_bar/zip/master) 

@@ -5,9 +5,7 @@ tag: Intro Screen, Slider
 date: 2019-06-08
 ---
 
-# [Flutter的简单且可配置的应用程序简介滑块 ](http://github.com/duytq94/flutter-intro-slider) 
-
-
+ 
 
 ## [查看Github/duytq94/flutter-intro-slider](http://github.com/duytq94/flutter-intro-slider)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/duytq94/flutter-intro-slider/zip/master) 
@@ -29,7 +27,7 @@ Add to pubspec.yaml file
 
 ```sh
 dependencies:
-  intro_slider: ^2.2.0
+  intro_slider: ^2.2.1
 ```
 
 Import

@@ -5,9 +5,7 @@ tag: QRCode
 date: 2019-06-08
 ---
 
-# [适用于Android和iOS的Flutter快速QR阅读器小部件 ](http://github.com/facundomedica/fast_qr_reader_view) 
-
-
+ 
 
 ## [查看Github/facundomedica/fast_qr_reader_view](http://github.com/facundomedica/fast_qr_reader_view)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/facundomedica/fast_qr_reader_view/zip/master) 

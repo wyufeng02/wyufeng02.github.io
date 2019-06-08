@@ -5,9 +5,7 @@ tag: Chart
 date: 2019-06-08
 ---
 
-# [用于使用Flutter创建动画圆形图表小部件的库 ](http://github.com/xqwzts/flutter_circular_chart) 
-
-
+ 
 
 ## [查看Github/xqwzts/flutter_circular_chart](http://github.com/xqwzts/flutter_circular_chart)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/xqwzts/flutter_circular_chart/zip/master) 

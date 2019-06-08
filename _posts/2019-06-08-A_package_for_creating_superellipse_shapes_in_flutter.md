@@ -5,9 +5,7 @@ tag: Shapes
 date: 2019-06-08
 ---
 
-# [用于在flutter中创建超椭圆形状的包 ](http://github.com/Salby/superellipse_shape) 
-
-
+ 
 
 ## [查看Github/Salby/superellipse_shape](http://github.com/Salby/superellipse_shape)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Salby/superellipse_shape/zip/master) 

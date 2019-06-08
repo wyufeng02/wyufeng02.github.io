@@ -5,9 +5,7 @@ tag: Music Player, Material Design, Apps
 date: 2019-06-08
 ---
 
-# [基于flutter的美丽材料设计音乐播放器 ](http://github.com/iampawan/Flutter-Music-Player) 
-
-
+ 
 
 ## [查看Github/iampawan/Flutter-Music-Player](http://github.com/iampawan/Flutter-Music-Player)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/iampawan/Flutter-Music-Player/zip/master) 

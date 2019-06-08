@@ -5,9 +5,7 @@ tag: Apps, Templates
 date: 2019-06-08
 ---
 
-# [基于Flutter的媒体播放器和播放列表 ](http://github.com/silexcorp/Alexander-Playlist) 
-
-
+ 
 
 ## [查看Github/silexcorp/Alexander-Playlist](http://github.com/silexcorp/Alexander-Playlist)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/silexcorp/Alexander-Playlist/zip/master) 

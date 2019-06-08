@@ -5,9 +5,7 @@ tag: Apps, Templates, Book
 date: 2019-06-08
 ---
 
-# [最初从原型开始的书籍应用UI的Flutter项目 ](http://github.com/putraxor/flutter-book-app) 
-
-
+ 
 
 ## [查看Github/putraxor/flutter-book-app](http://github.com/putraxor/flutter-book-app)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/putraxor/flutter-book-app/zip/master) 

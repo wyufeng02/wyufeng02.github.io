@@ -5,9 +5,7 @@ tag: Slider, Material Design
 date: 2019-06-08
 ---
 
-# [流体设计滑块，其工作方式与Slider材质小部件类似 ](http://github.com/rvamsikrishna/flutter_fluid_slider) 
-
-
+ 
 
 ## [查看Github/rvamsikrishna/flutter_fluid_slider](http://github.com/rvamsikrishna/flutter_fluid_slider)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/rvamsikrishna/flutter_fluid_slider/zip/master) 

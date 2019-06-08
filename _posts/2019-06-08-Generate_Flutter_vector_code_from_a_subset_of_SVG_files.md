@@ -5,9 +5,7 @@ tag: SVG
 date: 2019-06-08
 ---
 
-# [从SVG文件的子集生成Flutter向量代码 ](http://github.com/aloisdeniel/built_vector) 
-
-
+ 
 
 ## [查看Github/aloisdeniel/built_vector](http://github.com/aloisdeniel/built_vector)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/aloisdeniel/built_vector/zip/master) 

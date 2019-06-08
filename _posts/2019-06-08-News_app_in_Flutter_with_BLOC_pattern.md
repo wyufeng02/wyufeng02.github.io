@@ -5,9 +5,7 @@ tag: News, Apps
 date: 2019-06-08
 ---
 
-# [Flotter中的新闻应用程序与BLOC模式 ](http://github.com/kaparray/NewsDaily) 
-
-
+ 
 
 ## [查看Github/kaparray/NewsDaily](http://github.com/kaparray/NewsDaily)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/kaparray/NewsDaily/zip/master) 

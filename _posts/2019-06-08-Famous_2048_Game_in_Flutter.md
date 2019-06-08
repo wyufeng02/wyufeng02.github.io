@@ -5,9 +5,7 @@ tag: Games
 date: 2019-06-08
 ---
 
-# [Flutter着名的2048年游戏 ](http://github.com/anuranBarman/2048) 
-
-
+ 
 
 ## [查看Github/anuranBarman/2048](http://github.com/anuranBarman/2048)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/anuranBarman/2048/zip/master) 

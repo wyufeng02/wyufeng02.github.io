@@ -5,9 +5,7 @@ tag: Splash Screen
 date: 2019-06-08
 ---
 
-# [一个小型的Splash Screen用于简单易用的任何flutter应用的介绍 ](http://github.com/KarimMohamed2005/SplashScreenFlutterPackage) 
-
-
+ 
 
 ## [查看Github/KarimMohamed2005/SplashScreenFlutterPackage](http://github.com/KarimMohamed2005/SplashScreenFlutterPackage)
 ## [立即下载 ️⬇️ ](https://codeload.github.com/KarimMohamed2005/SplashScreenFlutterPackage/zip/master) 

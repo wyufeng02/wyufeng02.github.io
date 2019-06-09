@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  试图在flutter中复制各种app IO
-tag: UI
+tag: UI, Apps
 date: 2019-06-08
 ---
 
@@ -12,7 +12,7 @@ date: 2019-06-08
 
 
  
-![](https://flutterawesome.com/content/images/2018/12/Flutter-UI-Challenges.jpg)
+![](https://flutterawesome.com/content/images/2019/04/flutter_ui_challenges.jpg)
  
 >
 > 我努力复制各种应用程序UI。

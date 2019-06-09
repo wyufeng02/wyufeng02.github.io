@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个美丽的动画底部导航
+title:  一个好看的底部导航动画
 tag: Navigation, Tabbar
 date: 2019-06-08
 ---
@@ -15,7 +15,7 @@ date: 2019-06-08
 ![](https://flutterawesome.com/content/images/2019/05/BottomNavyBar.jpg)
  
 >
-> 一个美丽的动画底部导航。
+> 一个好看的动画底部导航。
 >
 
  
@@ -28,10 +28,11 @@ Support setState to change BottomNavyBar's _selectindex,just copy bottom_navy_ba
 
 ## Preview
 
-![FanBottomNavyBar Gif](navy.gif "BottomNavyBar")
+![FanBottomNavyBar Gif](https://raw.githubusercontent.com/pedromassango/bottom_navy_bar/master/navy.gif)
+ 
 ## PageView
 
-![Fix Gif](fix.gif "Fix")
+![Fix Gif](https://github.com/pedromassango/bottom_navy_bar/raw/master/fix.gif)
 ## Getting Started
 
 Add the plugin:

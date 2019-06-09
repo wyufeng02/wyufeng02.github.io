@@ -48,7 +48,7 @@ This package mainly depends on [webview_flutter](https://pub.dartlang.org/packag
 
 ```yaml
 dependencies:
-  flutter_tex: ^1.0.1
+  flutter_tex: ^1.0.2
 ```
 
 **2:** You can install packages from the command line:

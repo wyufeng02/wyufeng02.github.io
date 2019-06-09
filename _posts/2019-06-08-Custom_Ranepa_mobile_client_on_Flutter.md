@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Flutter上的自定义Ranepa移动客户端
-tag: Apps
+tag: Apps, Templates
 date: 2019-06-08
 ---
 
@@ -12,7 +12,7 @@ date: 2019-06-08
 
 
  
-![](https://flutterawesome.com/content/images/2019/01/ranepa_timetable.jpg)
+![](https://flutterawesome.com/content/images/2019/03/nru.jpg)
  
 >
 > 在Flutter上编写的自定义开源NRU RANEPA移动客户端。

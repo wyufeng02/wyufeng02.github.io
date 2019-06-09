@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  创建Tinder中使用的滑动视图
-tag: Swipe
+tag: Cards, Swipe
 date: 2019-06-08
 ---
 
@@ -12,7 +12,7 @@ date: 2019-06-08
 
 
  
-![](https://flutterawesome.com/content/images/2018/10/Showtime-app.jpg)
+![](https://flutterawesome.com/content/images/2019/02/FlutterCardSwipe.jpg)
  
 >
 > 创建Tinder中使用的滑动视图。

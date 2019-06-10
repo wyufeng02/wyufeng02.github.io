@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/boyan01/quiet-flutter](http://github.com/boyan01/quiet-flutter)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/boyan01/quiet-flutter/zip/master) 
 
 
@@ -61,3 +61,4 @@ date: 2019-06-08
 
 
 
+## Github主页 👉[boyan01/quiet-flutter](http://github.com/boyan01/quiet-flutter)

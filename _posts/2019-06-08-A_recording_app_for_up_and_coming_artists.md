@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/Xbobo5530/chipkizi](http://github.com/Xbobo5530/chipkizi)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Xbobo5530/chipkizi/zip/master) 
 
 
@@ -52,3 +52,4 @@ Chipkizi also allows those who are seeking for new talent to be able to be able 
 ## Download
 <a href='https://play.google.com/store/apps/details?id=com.nyayozangu.labs.chipkizi'><img alt='Download it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' width="200"/></a>
 
+## Github主页 👉[Xbobo5530/chipkizi](http://github.com/Xbobo5530/chipkizi)

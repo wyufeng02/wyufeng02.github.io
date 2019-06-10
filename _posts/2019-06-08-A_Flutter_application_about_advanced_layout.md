@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/nb312/flutter_layouts_higher](http://github.com/nb312/flutter_layouts_higher)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/nb312/flutter_layouts_higher/zip/master) 
 
 
@@ -32,3 +32,4 @@ Articles | Pictures
 [Animation 02 Use the flare 2dimesion animation in the flutter?](https://medium.com/flutteropen/animation-02-use-the-flare-animation-in-the-flutter-5fa89dd74c54) | <img src="https://raw.githubusercontent.com/nb312/flutter_layouts_higher/master/doc/animation_flare.gif" height="320" />
 [Animation 01 How to use the animation in the flutter?](https://medium.com/flutteropen/animation-01-how-to-use-the-animation-in-the-flutter-e3ef7043f940) | <img src="https://raw.githubusercontent.com/nb312/flutter_layouts_higher/master/doc/animation_01.gif" height="320" />
 
+## Github主页 👉[nb312/flutter_layouts_higher](http://github.com/nb312/flutter_layouts_higher)

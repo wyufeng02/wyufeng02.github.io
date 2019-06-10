@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/bennorichters/bnoggles](http://github.com/bennorichters/bnoggles)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/bennorichters/bnoggles/zip/master) 
 
 
@@ -33,3 +33,4 @@ Download the app via the [Apple App Store](https://itunes.apple.com/us/app/bnogg
 
 ![dutch-game](/readme/nl.gif)
 
+## Github主页 👉[bennorichters/bnoggles](http://github.com/bennorichters/bnoggles)

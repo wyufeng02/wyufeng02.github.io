@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/aleksanderwozniak/deer](http://github.com/aleksanderwozniak/deer)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/aleksanderwozniak/deer/zip/master) 
 
 
@@ -81,3 +81,4 @@ Check those resources for more details on the pattern:
 flutter packages pub run build_runner build --delete-conflicting-outputs
 ```
 
+## Github主页 👉[aleksanderwozniak/deer](http://github.com/aleksanderwozniak/deer)

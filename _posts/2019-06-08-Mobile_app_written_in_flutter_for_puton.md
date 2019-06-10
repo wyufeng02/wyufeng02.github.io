@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/failnicely/puton_mobile_app](http://github.com/failnicely/puton_mobile_app)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/failnicely/puton_mobile_app/zip/master) 
 
 
@@ -81,3 +81,4 @@ The Dapp only support Andorid now. But this is developed by using Flutter. This 
 <img src="https://user-images.githubusercontent.com/17739122/49682801-e4f91880-fafd-11e8-91b2-b0b998200c76.jpg" width="280px" />
 
 
+## Github主页 👉[failnicely/puton_mobile_app](http://github.com/failnicely/puton_mobile_app)

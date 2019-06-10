@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/roughike/inKino](http://github.com/roughike/inKino)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/roughike/inKino/zip/master) 
 
 
@@ -102,3 +102,4 @@ Special thanks to [Olli Haataja](https://www.linkedin.com/in/olli-haataja-46b96b
 
 Additional thanks for the initial release go to [Thibaud Colas](https://twitter.com/thibaud_colas), [Brian Egan](https://twitter.com/brianegan), [Alessandro Aime](https://twitter.com/aimealessandro) and [Juho Rautioaho](https://github.com/Jraut) for giving their extra pair of eyes for reviewing the source code.
 
+## Github主页 👉[roughike/inKino](http://github.com/roughike/inKino)

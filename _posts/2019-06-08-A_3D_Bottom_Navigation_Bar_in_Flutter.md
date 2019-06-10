@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/deven98/flip_box_bar](http://github.com/deven98/flip_box_bar)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/deven98/flip_box_bar/zip/master) 
 
 
@@ -98,3 +98,4 @@ it allows programmatically changing the selected index whereas the earlier versi
 
 
 
+## Github主页 👉[deven98/flip_box_bar](http://github.com/deven98/flip_box_bar)

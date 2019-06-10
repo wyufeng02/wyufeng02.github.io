@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/ibhavikmakwana/cricket_team](http://github.com/ibhavikmakwana/cricket_team)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/ibhavikmakwana/cricket_team/zip/master) 
 
 
@@ -131,3 +131,4 @@ Hit me on
 <a href="https://medium.com/@ibhavikmakwana"><img src="./icons/medium-icon.png?raw=true" width="60"/></a>
 <a href="https://www.linkedin.com/in/ibhavikmakwana/"><img src="./icons/linkedin-icon.png?raw=true" width="60"/></a>
 
+## Github主页 👉[ibhavikmakwana/cricket_team](http://github.com/ibhavikmakwana/cricket_team)

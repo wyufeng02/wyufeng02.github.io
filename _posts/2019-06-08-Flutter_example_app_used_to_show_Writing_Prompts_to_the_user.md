@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/Vanethos/flutter-writting-prompt](http://github.com/Vanethos/flutter-writting-prompt)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Vanethos/flutter-writting-prompt/zip/master) 
 
 
@@ -82,3 +82,4 @@ Though the app is not fully tested, I strived to show how to:
 - [ ] Include more app features, such as share
 - [ ] Create more tests
 
+## Github主页 👉[Vanethos/flutter-writting-prompt](http://github.com/Vanethos/flutter-writting-prompt)

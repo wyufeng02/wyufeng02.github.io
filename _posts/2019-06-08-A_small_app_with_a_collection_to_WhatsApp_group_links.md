@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/Xbobo5530/linki](http://github.com/Xbobo5530/linki)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Xbobo5530/linki/zip/master) 
 
 
@@ -40,3 +40,4 @@ Users can login in to submit links to their social media groups, report spammed 
 
 You can download the app from the Playstore [here](https://goo.gl/MUfpLL).
 
+## Github主页 👉[Xbobo5530/linki](http://github.com/Xbobo5530/linki)

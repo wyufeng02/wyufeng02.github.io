@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/worldline-spain/flutter_votlin_app](http://github.com/worldline-spain/flutter_votlin_app)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/worldline-spain/flutter_votlin_app/zip/master) 
 
 
@@ -144,3 +144,4 @@ TODO
   
 ## Contributing 
 Feel free to open issues or make a pull request. All contributions are welcome!
+## Github主页 👉[worldline-spain/flutter_votlin_app](http://github.com/worldline-spain/flutter_votlin_app)

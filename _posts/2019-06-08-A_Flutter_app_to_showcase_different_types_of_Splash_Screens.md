@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/flutter-devs/flutter_splash_app](http://github.com/flutter-devs/flutter_splash_app)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/flutter-devs/flutter_splash_app/zip/master) 
 
 
@@ -41,3 +41,4 @@ A Flutter applicaiton to showcase how to make different types of Splash Screens.
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
+## Github主页 👉[flutter-devs/flutter_splash_app](http://github.com/flutter-devs/flutter_splash_app)

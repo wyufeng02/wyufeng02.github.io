@@ -1,0 +1,84 @@
+---
+layout: post
+title:  用于创建自定义地图的Mapbox GLflutter包
+tag: Maps
+date: 2019-06-08
+---
+
+ 
+
+## [查看Github/mapbox/flutter-mapbox-gl](http://github.com/mapbox/flutter-mapbox-gl)
+## [立即下载 ️⬇️ ](https://codeload.github.com/mapbox/flutter-mapbox-gl/zip/master) 
+
+
+ 
+![](https://flutterawesome.com/content/images/2018/10/Flutter-Mapbox-GL-Native.jpg)
+ 
+>
+> 这个用于mapbox-gl-native的Flutter插件可以在Flutter小部件内部嵌入交互式和可自定义的矢量地图。
+>
+
+ 
+> **Please note that this project has moved.** Please head to https://github.com/tobrun/flutter-mapbox-gl for updates.
+
+---
+
+# Flutter Mapbox GL Native
+
+This Flutter plugin for [mapbox-gl-native](https://github.com/mapbox/mapbox-gl-native) enables
+embedded interactive and customizable vector maps inside of a Flutter widget. This project plugin is in early development stage. Only Android is supported for now.
+
+![screenshot.png](screenshot.png)
+
+## Getting Started
+
+### Android
+
+Following examples use Mapbox vector tiles, which require a Mapbox account and a Mapbox access token. Obtain a free access token on [your Mapbox account page](https://www.mapbox.com/account/access-tokens/). After you get the key, place it in project's Android directory:
+- Create a `local.properties` file with the following path: `$project_dir/android/local.properties`
+- Add `mapbox.accessToken="YOUR MAPBOX ACCESS TOKEN"`
+ token to the **local.properties** file.
+
+#### Demo app
+
+- Install [Flutter](https://flutter.io/get-started/) and validate its installation with `flutter doctor`
+- Clone this repository with `git clone git@github.com:mapbox/flutter-mapbox-gl.git`
+- Run the app with `cd flutter_mapbox/example && flutter run`
+
+#### New project
+
+- Create new Flutter project in your IDE or via terminal
+- Add `mapbox_gl: ^0.0.1` dependency to `pubspec.yaml` file and [get the package](https://flutter.io/using-packages/#adding-a-package-dependency-to-an-app)
+- Add Mapbox read token value in the application manifest `android/app/src/main/AndroidManifest.xml`:
+
+```xml
+<manifest ...
+  <application ...
+    <meta-data android:name="com.mapbox.token" android:value="YOUR_TOKEN_HERE" />
+```
+
+- Import Mapbox widgets and add them to your widget tree
+```
+import 'package:mapbox_gl/mapbox_gl.dart';
+```
+
+## Documentation
+
+This README file currently houses all of the documentation for this Flutter project. Please visit [mapbox.com/android-docs](https://www.mapbox.com/android-docs/) if you'd like more information about the Mapbox Maps SDK for Android and [mapbox.com/ios-sdk](https://www.mapbox.com/ios-sdk/) for more information about the Mapbox Maps SDK for iOS.
+
+## Getting Help
+
+- **Need help with your code?**: Look for previous questions on the [#mapbox tag](https://stackoverflow.com/questions/tagged/mapbox+android) — or [ask a new question](https://stackoverflow.com/questions/tagged/mapbox+android).
+- **Have a bug to report?** [Open an issue](https://github.com/mapbox/flutter-mapbox-gl/issues/new). If possible, include a full log and information which shows the issue.
+- **Have a feature request?** [Open an issue](https://github.com/mapbox/flutter-mapbox-gl/issues/new). Tell us what the feature should do and why you want the feature.
+
+## Sample code
+
+[This repository's example library](https://github.com/mapbox/flutter-mapbox-gl/tree/master/example/lib) is currently the best place for you to find reference code for this project.
+
+## Contributing
+
+We welcome contributions to this repository!
+
+If you're interested in helping build this Mapbox/Flutter integration, please read [the contribution guide](https://github.com/mapbox/flutter-mapbox-gl/blob/master/CONTRIBUTING.md) to learn how to get started.
+

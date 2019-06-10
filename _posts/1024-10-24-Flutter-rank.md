@@ -9,7 +9,7 @@ categories:
 
 #Flutter开源项目排行榜 (06-10)
 
-![Flutter开源项目排行榜](https://code4flutter.com/assets/images/rank/Flutter.png)
+![Flutter开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Flutter.png)
 
 
 ## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 66.6k

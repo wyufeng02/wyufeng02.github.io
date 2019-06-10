@@ -9,7 +9,7 @@ categories:
 
 #Android开源项目排行榜 (06-10)
 
-![Android开源项目排行榜](https://code4flutter.com/assets/images/rank/Android.png)
+![Android开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Android.png)
 
 
 ## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 66.6k

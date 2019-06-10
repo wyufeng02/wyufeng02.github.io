@@ -9,7 +9,7 @@ categories:
 
 #python开源项目排行榜 (06-10)
 
-![python开源项目排行榜](https://code4flutter.com/assets/images/rank/python.png)
+![python开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/python.png)
 
 
 ## 1. [tensorflow/tensorflow](http://github.com/tensorflow/tensorflow)  ♥️ 129k

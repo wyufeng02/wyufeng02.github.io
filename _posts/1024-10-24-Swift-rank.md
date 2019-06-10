@@ -9,7 +9,7 @@ categories:
 
 #Swift开源项目排行榜 (06-10)
 
-![Swift开源项目排行榜](https://code4flutter.com/assets/images/rank/Swift.png)
+![Swift开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Swift.png)
 
 
 ## 1. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 51k

@@ -9,7 +9,7 @@ categories:
 
 #JavaScript开源项目排行榜 (06-10)
 
-![JavaScript开源项目排行榜](https://code4flutter.com/assets/images/rank/JavaScript.png)
+![JavaScript开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/JavaScript.png)
 
 
 ## 1. [freeCodeCamp/freeCodeCamp](http://github.com/freeCodeCamp/freeCodeCamp)  ♥️ 303k

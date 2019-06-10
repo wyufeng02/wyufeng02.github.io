@@ -1,16 +1,9 @@
----
-layout: post
-title:  手把手教你futter engine内存泄漏
-tag: flutter engine
-date: 2019-05-29 
----
 
 ## Flutter/engine 修复版介绍
 
 tags: `flutter` `engine` `memory` `leak` `fix` `natoto`
 
 ### 最近更新
-0520 更新flutter 1.5内存引用问题 
 0305 更新flutter 1.2内存引用问题 
 [demo地址](https://github.com/Natoto/flutterOnExistApp/tree/flutter1.2)
 
@@ -209,7 +202,7 @@ cp -rf "${SRCROOT}/flutterOnExistApp/Resources/Flutter.framework" "${SRCROOT}/my
  
  ---
  
- ### Flutter技术积累相关链接
+ ### YY Flutter技术积累相关链接
 
 [flutter多实例实战 by共田君](https://juejin.im/post/5c6e84156fb9a049a5718047)
 
@@ -232,4 +225,5 @@ williamwen1986](https://github.com/williamwen1986/flutter_luakit_demo)
  [github - 编译产物下载 修复内存泄漏后的flutter engine（可直接使用）by 共田君](https://github.com/Natoto/fixFlutterEngine)</font>
  
  [github demo - 修复内存泄漏后的flutter engine by 共田君](https://github.com/Natoto/flutterOnExistApp/tree/multiflutter) 
- 
+
+持续更新中... 

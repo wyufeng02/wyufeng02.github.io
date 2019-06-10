@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/NaagAlgates/vasitionary](http://github.com/NaagAlgates/vasitionary)
-## [立即下载 ️⬇️ ](https://codeload.github.com/NaagAlgates/vasitionary/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/NaagAlgates/vasitionary/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/vasitionary.jpg)
@@ -48,3 +48,4 @@ You can also see the word of the day. You can hear it for knowing the right pron
 
 You can also rate the app and share it with your friends.
 
+## Github主页 👉[NaagAlgates/vasitionary](http://github.com/NaagAlgates/vasitionary)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  在Flutter中构建WhatsApp克隆
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/iampawan/FlutterWhatsAppClone](http://github.com/iampawan/FlutterWhatsAppClone)
-## [立即下载 ️⬇️ ](https://codeload.github.com/iampawan/FlutterWhatsAppClone/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/iampawan/FlutterWhatsAppClone/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/Flutter-WhatsAppClone.jpg)
  
 >
-> 在Flutter中构建WhatsApp克隆。
+> 
 >
 
  
@@ -61,3 +61,4 @@ Building a WhatsApp Clone in Flutter.
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
+## Github主页 👉[iampawan/FlutterWhatsAppClone](http://github.com/iampawan/FlutterWhatsAppClone)

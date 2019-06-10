@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/kakiang/briefing](http://github.com/kakiang/briefing)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/kakiang/briefing/zip/master) 
 
 
@@ -38,3 +38,4 @@ An attempt to clone part of Google News app design using Flutter
     </p>
 </div>
 
+## Github主页 👉[kakiang/briefing](http://github.com/kakiang/briefing)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  用于在flutter中创建超椭圆形状的包
+title:  
 tag: Shapes
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Salby/superellipse_shape](http://github.com/Salby/superellipse_shape)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Salby/superellipse_shape/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Salby/superellipse_shape/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Superellipse-Shape.jpg)
  
 >
-> 用于在flutter中创建超椭圆形状的包。
+> 
 >
 
  
@@ -47,3 +47,4 @@ class SuperellipseDemo extends StatelessWidget {
 }
 ```
 
+## Github主页 👉[Salby/superellipse_shape](http://github.com/Salby/superellipse_shape)

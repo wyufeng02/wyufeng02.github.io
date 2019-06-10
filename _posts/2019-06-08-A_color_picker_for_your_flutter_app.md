@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/fluttercandies/flutter_color_picker](http://github.com/fluttercandies/flutter_color_picker)
-## [立即下载 ️⬇️ ](https://codeload.github.com/fluttercandies/flutter_color_picker/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/fluttercandies/flutter_color_picker/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter_color_picker.jpg)
@@ -81,3 +81,4 @@ new ColorPicker(
 ![](https://github.com/fluttercandies/flutter_hsvcolor_picker/blob/master/screenshot/design.png)
 Details in [example/] folder.
 
+## Github主页 👉[fluttercandies/flutter_color_picker](http://github.com/fluttercandies/flutter_color_picker)

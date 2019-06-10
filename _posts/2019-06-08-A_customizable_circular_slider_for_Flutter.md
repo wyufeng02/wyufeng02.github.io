@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter的可定制圆形滑块
+title:  A customizable circular slider for Flutter
 tag: Circle, Slider
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/davidanaya/flutter-circular-slider](http://github.com/davidanaya/flutter-circular-slider)
-## [立即下载 ️⬇️ ](https://codeload.github.com/davidanaya/flutter-circular-slider/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/davidanaya/flutter-circular-slider/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/06/flutter-circular-slider.jpg)
  
 >
-> Flutter的可定制圆形滑块。
+> A customizable circular slider for Flutter.
 >
 
  
@@ -279,3 +279,4 @@ class _SleepPageState extends State<SleepPage> {
 
 ![Sleep Single Slider](https://raw.githubusercontent.com/davidanaya/flutter-circular-slider/master/./doc/single-slider.gif)
 
+## Github主页 👉[davidanaya/flutter-circular-slider](http://github.com/davidanaya/flutter-circular-slider)

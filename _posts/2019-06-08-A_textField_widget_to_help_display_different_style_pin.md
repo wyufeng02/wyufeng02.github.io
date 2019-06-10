@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/TinoGuo/pin_input_text_field](http://github.com/TinoGuo/pin_input_text_field)
-## [立即下载 ️⬇️ ](https://codeload.github.com/TinoGuo/pin_input_text_field/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/TinoGuo/pin_input_text_field/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/pininputtext.jpg)
@@ -119,3 +119,4 @@ final String obscureText;
 ## Known Issue
 
 The `PinEditingController` listener will execute more than once in some situations, you can filter some duplicate values in your code. 
+## Github主页 👉[TinoGuo/pin_input_text_field](http://github.com/TinoGuo/pin_input_text_field)

@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/anggit97/flutter-tixid-clonning](http://github.com/anggit97/flutter-tixid-clonning)
-## [立即下载 ️⬇️ ](https://codeload.github.com/anggit97/flutter-tixid-clonning/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/anggit97/flutter-tixid-clonning/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/tix_app.jpg)
@@ -44,3 +44,4 @@ Here is the link to see the demo of this app link : <a href="https://youtu.be/xU
 
 feel free to fork and learn this project, thanks!
 
+## Github主页 👉[anggit97/flutter-tixid-clonning](http://github.com/anggit97/flutter-tixid-clonning)

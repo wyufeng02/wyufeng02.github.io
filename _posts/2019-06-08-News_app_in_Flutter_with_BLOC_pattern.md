@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flotter中的新闻应用程序与BLOC模式
+title:  
 tag: News, Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/kaparray/NewsDaily](http://github.com/kaparray/NewsDaily)
-## [立即下载 ️⬇️ ](https://codeload.github.com/kaparray/NewsDaily/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/kaparray/NewsDaily/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/NewsApp.jpg)
  
 >
-> Flotter中的新闻应用程序与BLOC模式。
+> 
 >
 
  
@@ -111,3 +111,4 @@ Released under the [MIT license](https://github.com/kaparray/NewsApp/blob/master
 
 Adeshchenko Kirill (Cyrill) ([@kaparray](https://www.linkedin.com/in/kirill-adeshchenko-b86362161/))
 
+## Github主页 👉[kaparray/NewsDaily](http://github.com/kaparray/NewsDaily)

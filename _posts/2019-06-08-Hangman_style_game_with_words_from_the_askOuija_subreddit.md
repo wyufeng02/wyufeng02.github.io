@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/andreicorpo/ouija-quiz-game](http://github.com/andreicorpo/ouija-quiz-game)
-## [立即下载 ️⬇️ ](https://codeload.github.com/andreicorpo/ouija-quiz-game/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/andreicorpo/ouija-quiz-game/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Ouija-Quizz.jpg)
@@ -45,3 +45,4 @@ The user is given a question and he has to guess the answer given by the communi
 
 Made in Flutter. 
 
+## Github主页 👉[andreicorpo/ouija-quiz-game](http://github.com/andreicorpo/ouija-quiz-game)

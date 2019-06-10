@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个Flutter插件，可以同时播放多个音频文件
+title:  
 tag: Audio, Music Player
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/luanpotter/audioplayers](http://github.com/luanpotter/audioplayers)
-## [立即下载 ️⬇️ ](https://codeload.github.com/luanpotter/audioplayers/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/luanpotter/audioplayers/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/AudioPlayers.jpg)
  
 >
-> 一个Flutter插件可播放多个同时播放的音频文件，适用于Android和iOS。
+> 
 >
 
  
@@ -272,3 +272,4 @@ This was originally a fork of [rxlabz's audioplayer](https://github.com/rxlabz/a
 
 Thanks for @rxlabz for the amazing work!
 
+## Github主页 👉[luanpotter/audioplayers](http://github.com/luanpotter/audioplayers)

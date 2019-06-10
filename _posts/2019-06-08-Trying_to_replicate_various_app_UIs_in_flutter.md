@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  试图在flutter中复制各种app IO
+title:  
 tag: UI
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/lohanidamodar/flutter_ui_challenges](http://github.com/lohanidamodar/flutter_ui_challenges)
-## [立即下载 ️⬇️ ](https://codeload.github.com/lohanidamodar/flutter_ui_challenges/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/lohanidamodar/flutter_ui_challenges/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/Flutter-UI-Challenges.jpg)
  
 >
-> 我努力复制各种应用程序UI。
+> 
 >
 
  
@@ -81,3 +81,4 @@ The code for Springy Widget is taken and refactored from (https://github.com/mat
  
 <img height="480px" src="screenshots/grocery_home.png"/> <img height="480px" src="screenshots/grocery_details.png"/>  <img height="480px" src="screenshots/grocery_cart.png"/>  <img height="480px" src="screenshots/grocery_wishlist.png"/>  <img height="480px" src="screenshots/grocery_options.png"/> 
 
+## Github主页 👉[lohanidamodar/flutter_ui_challenges](http://github.com/lohanidamodar/flutter_ui_challenges)

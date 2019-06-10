@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/chinotapales/FlutterCurrencyConverter](http://github.com/chinotapales/FlutterCurrencyConverter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/chinotapales/FlutterCurrencyConverter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/chinotapales/FlutterCurrencyConverter/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/FlutterCurrencyConverter.jpg)
@@ -39,3 +39,4 @@ Credits:
 
 Flag icons from flaticon.com
 
+## Github主页 👉[chinotapales/FlutterCurrencyConverter](http://github.com/chinotapales/FlutterCurrencyConverter)

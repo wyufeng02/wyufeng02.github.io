@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用Flutter系列编码的登录演示的源代码
+title:  
 tag: Authentication
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/bizz84/coding-with-flutter-login-demo](http://github.com/bizz84/coding-with-flutter-login-demo)
-## [立即下载 ️⬇️ ](https://codeload.github.com/bizz84/coding-with-flutter-login-demo/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/bizz84/coding-with-flutter-login-demo/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/Flutter---Firebase.jpg)
  
 >
-> 使用Flutter系列编码的登录演示的源代码。
+> 
 >
 
  
@@ -48,3 +48,4 @@ You need to register the project with your own Firebase account.
 
 
 ### [License: MIT](LICENSE.md)
+## Github主页 👉[bizz84/coding-with-flutter-login-demo](http://github.com/bizz84/coding-with-flutter-login-demo)

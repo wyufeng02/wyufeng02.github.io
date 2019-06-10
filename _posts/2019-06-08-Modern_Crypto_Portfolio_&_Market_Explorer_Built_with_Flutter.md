@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/trentpiercy/trace](http://github.com/trentpiercy/trace)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/trentpiercy/trace/zip/master) 
 
 
@@ -107,3 +107,4 @@ Building for iOS works just fine, but I'm not giving Apple $99 to put this on th
 - Make sure your Android SDK and Flutter are up to date (`flutter upgrade`)
 - Execute `flutter run`
 
+## Github主页 👉[trentpiercy/trace](http://github.com/trentpiercy/trace)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用nodejs和firebase构建的Flutter音乐应用程序
+title:  
 tag: Music Player, Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/singhbhavneet/bungee](http://github.com/singhbhavneet/bungee)
-## [立即下载 ️⬇️ ](https://codeload.github.com/singhbhavneet/bungee/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/singhbhavneet/bungee/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Bungee.jpg)
  
 >
-> 通过一个漂亮的界面，您可以播放旁遮普音乐，创建播放列表并与他人分享。
+> 
 >
 
  
@@ -72,3 +72,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Its because of my mummy's motivation,god's blessing and family'support that I am able to complete this project.Thank you all my teachers and friends. 
 
+## Github主页 👉[singhbhavneet/bungee](http://github.com/singhbhavneet/bungee)

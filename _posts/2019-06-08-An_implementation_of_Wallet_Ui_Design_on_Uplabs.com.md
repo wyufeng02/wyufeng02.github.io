@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/RegNex/WalletUiApp](http://github.com/RegNex/WalletUiApp)
-## [立即下载 ️⬇️ ](https://codeload.github.com/RegNex/WalletUiApp/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/RegNex/WalletUiApp/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/Wallet-Ui-App.jpg)
@@ -133,3 +133,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
+## Github主页 👉[RegNex/WalletUiApp](http://github.com/RegNex/WalletUiApp)

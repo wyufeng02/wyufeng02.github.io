@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  文本表单字段并集成日期选择器对话框
+title:  
 tag: Calendar, Datepicker, Dialog
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/jifalops/datetime_picker_formfield](http://github.com/jifalops/datetime_picker_formfield)
-## [立即下载 ️⬇️ ](https://codeload.github.com/jifalops/datetime_picker_formfield/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/jifalops/datetime_picker_formfield/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/datetime_picker_formfield.jpg)
  
 >
-> 两个flutter的小部件，用于包装文本表单字段并集成日期和/或时间选择器对话框。
+> 
 >
 
  
@@ -112,3 +112,4 @@ class MyHomePageState extends State<MyHomePage> {
 
 }
 ```
+## Github主页 👉[jifalops/datetime_picker_formfield](http://github.com/jifalops/datetime_picker_formfield)

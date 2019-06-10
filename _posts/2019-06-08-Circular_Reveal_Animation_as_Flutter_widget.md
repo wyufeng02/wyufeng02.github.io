@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  圆形显示动画作为flutter小部件
+title:  Circular Reveal Animation as Flutter widget
 tag: Circle, Animation, Widgets
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/qwert2603/circular_reveal_animation](http://github.com/qwert2603/circular_reveal_animation)
-## [立即下载 ️⬇️ ](https://codeload.github.com/qwert2603/circular_reveal_animation/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/qwert2603/circular_reveal_animation/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/CircularRevealAnimation.gif)
  
 >
-> 圆形显示动画作为flutter小部件！
+> Circular Reveal Animation as Flutter widget!
 >
 
  
@@ -126,3 +126,4 @@ class _MyHomePageState extends State<MyHomePage>
 
 ```
 
+## Github主页 👉[qwert2603/circular_reveal_animation](http://github.com/qwert2603/circular_reveal_animation)

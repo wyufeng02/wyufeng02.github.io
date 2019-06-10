@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter插件，允许您显示多图像选择器
+title:  
 tag: Images, Picker
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Sh1d0w/multi_image_picker](http://github.com/Sh1d0w/multi_image_picker)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Sh1d0w/multi_image_picker/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Sh1d0w/multi_image_picker/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/Flutter-Multi-Image-Picker.jpg)
  
 >
-> Flutter插件，允许您在iOS和Android上显示多个图像选择器。
+> 
 >
 
  
@@ -102,3 +102,4 @@ MIT
 > GitHub [@Sh1d0w](https://github.com/Sh1d0w) &nbsp;&middot;&nbsp;
 > Twitter [@RadoslavVitanov](http://twitter.com/RadoslavVitanov)
 
+## Github主页 👉[Sh1d0w/multi_image_picker](http://github.com/Sh1d0w/multi_image_picker)

@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/biessek/flutter_country_picker](http://github.com/biessek/flutter_country_picker)
-## [立即下载 ️⬇️ ](https://codeload.github.com/biessek/flutter_country_picker/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/biessek/flutter_country_picker/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter_country_pickerx.jpg)
@@ -63,3 +63,4 @@ Add the CountryPicker widget in your layout and use the `onChanged` callback.
 
  ```
 
+## Github主页 👉[biessek/flutter_country_picker](http://github.com/biessek/flutter_country_picker)

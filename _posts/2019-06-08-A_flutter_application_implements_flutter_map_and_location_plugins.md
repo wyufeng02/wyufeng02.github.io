@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  flutter应用程序实现了flutter映射和位置插件
+title:  A flutter application implements flutter map and location plugins
 tag: Maps, Location
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/HoussemTN/localizer](http://github.com/HoussemTN/localizer)
-## [立即下载 ️⬇️ ](https://codeload.github.com/HoussemTN/localizer/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/HoussemTN/localizer/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/localizer.jpg)
  
 >
-> Localizer是一个flutter的应用程序，它实现了flutter_map和位置插件，以提供当前/给定的位置，然后在地图上呈现它。
+> Localizer is a flutter application implements flutter_map and location plugins to provide your current/given position then render it on a map.
 >
 
  
@@ -43,3 +43,4 @@ Localizer is a flutter application implements flutter_map and location plugins t
 
 
 
+## Github主页 👉[HoussemTN/localizer](http://github.com/HoussemTN/localizer)

@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/ch-muhammad-adil/my_flutter_ui_challenges](http://github.com/ch-muhammad-adil/my_flutter_ui_challenges)
-## [立即下载 ️⬇️ ](https://codeload.github.com/ch-muhammad-adil/my_flutter_ui_challenges/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/ch-muhammad-adil/my_flutter_ui_challenges/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/my_flutter_ui_challenges.jpg)
@@ -75,3 +75,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[ch-muhammad-adil/my_flutter_ui_challenges](http://github.com/ch-muhammad-adil/my_flutter_ui_challenges)

@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/Ali-Azmoud/flutter_xlider](http://github.com/Ali-Azmoud/flutter_xlider)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Ali-Azmoud/flutter_xlider/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Ali-Azmoud/flutter_xlider/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter_slider.jpg)
@@ -483,3 +483,4 @@ FlutterSlider(
 
 
 
+## Github主页 👉[Ali-Azmoud/flutter_xlider](http://github.com/Ali-Azmoud/flutter_xlider)

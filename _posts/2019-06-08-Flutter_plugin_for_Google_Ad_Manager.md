@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/ko2ic/flutter_google_ad_manager](http://github.com/ko2ic/flutter_google_ad_manager)
-## [立即下载 ️⬇️ ](https://codeload.github.com/ko2ic/flutter_google_ad_manager/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/ko2ic/flutter_google_ad_manager/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/flutter_google_ad_manager.jpg)
@@ -340,3 +340,4 @@ The following event listeners are available:
 Not implemented.   
 I am glad if someone will give me a pull request.
 
+## Github主页 👉[ko2ic/flutter_google_ad_manager](http://github.com/ko2ic/flutter_google_ad_manager)

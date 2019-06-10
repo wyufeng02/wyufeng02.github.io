@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter Pass Code Page或Pin Code Page Package
+title:  
 tag: Verification
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/kalismeras61/flutter_lock_screen](http://github.com/kalismeras61/flutter_lock_screen)
-## [立即下载 ️⬇️ ](https://codeload.github.com/kalismeras61/flutter_lock_screen/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/kalismeras61/flutter_lock_screen/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/flutter_lock_screen.jpg)
  
 >
-> 这个软件包为您提供了使用android和ios的漂亮密码页面。
+> 
 >
 
  
@@ -148,3 +148,4 @@ Please make sure to update tests as appropriate.
 
 
 
+## Github主页 👉[kalismeras61/flutter_lock_screen](http://github.com/kalismeras61/flutter_lock_screen)

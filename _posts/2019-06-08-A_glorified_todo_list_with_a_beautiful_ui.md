@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个美丽的用户名单
+title:  A glorified todo list with a beautiful ui
 tag: Todo
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/AYM1607/do_more](http://github.com/AYM1607/do_more)
-## [立即下载 ️⬇️ ](https://codeload.github.com/AYM1607/do_more/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/AYM1607/do_more/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/06/do_more.jpg)
  
 >
-> 一个漂亮的美化todo列表与flutter建立。
+> A good looking glorified todo list built with flutter.
 >
 
  
@@ -66,3 +66,4 @@ Full screen gallery.
 https://trello.com/b/zdKMw2JL/do
 
 
+## Github主页 👉[AYM1607/do_more](http://github.com/AYM1607/do_more)

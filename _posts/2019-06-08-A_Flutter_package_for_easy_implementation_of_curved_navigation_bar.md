@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/rafalbednarczuk/curved_navigation_bar](http://github.com/rafalbednarczuk/curved_navigation_bar)
-## [立即下载 ️⬇️ ](https://codeload.github.com/rafalbednarczuk/curved_navigation_bar/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/rafalbednarczuk/curved_navigation_bar/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/curved_navigation_barc.gif)
@@ -63,3 +63,4 @@ onTap: Function handling taps on items
 animationCurve: Curves interpolating button change animation, default Curves.easeOutCubic  
 animationDuration: Duration of button change animation, default Duration(milliseconds: 600)  
 height: Height of NavigationBar, min 0.0, max 75.0  
+## Github主页 👉[rafalbednarczuk/curved_navigation_bar](http://github.com/rafalbednarczuk/curved_navigation_bar)

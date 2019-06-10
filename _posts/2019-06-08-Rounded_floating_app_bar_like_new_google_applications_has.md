@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/ibhavikmakwana/rounded_floating_app_bar](http://github.com/ibhavikmakwana/rounded_floating_app_bar)
-## [立即下载 ️⬇️ ](https://codeload.github.com/ibhavikmakwana/rounded_floating_app_bar/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/ibhavikmakwana/rounded_floating_app_bar/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/you.jpg)
@@ -97,3 +97,4 @@ Hit me on
 
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+## Github主页 👉[ibhavikmakwana/rounded_floating_app_bar](http://github.com/ibhavikmakwana/rounded_floating_app_bar)

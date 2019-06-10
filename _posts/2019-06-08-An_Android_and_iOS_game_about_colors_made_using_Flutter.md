@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/zackattack73/Random_Color](http://github.com/zackattack73/Random_Color)
-## [立即下载 ️⬇️ ](https://codeload.github.com/zackattack73/Random_Color/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/zackattack73/Random_Color/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Random-Color.jpg)
@@ -39,3 +39,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[zackattack73/Random_Color](http://github.com/zackattack73/Random_Color)

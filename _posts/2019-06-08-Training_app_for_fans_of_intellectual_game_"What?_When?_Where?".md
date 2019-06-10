@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/foxanna/WWW-flutter](http://github.com/foxanna/WWW-flutter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/foxanna/WWW-flutter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/foxanna/WWW-flutter/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/chgk.jpg)
@@ -29,3 +29,4 @@ Protected by "Doom Source Licence".
 
 You can use the software, but have no ownership thereof. Portions of the source may be used to develop new software; this is referred to as 'Educational Use'. Otherwise, you may not make any commercial gain from it. You can't distribute the source or software. You can't rent or sell the software. The copyright holders may not be held liable for anything & retain all copyright.
 
+## Github主页 👉[foxanna/WWW-flutter](http://github.com/foxanna/WWW-flutter)

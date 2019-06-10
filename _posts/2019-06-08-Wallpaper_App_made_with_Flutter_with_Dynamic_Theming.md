@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/bimsina/wallpaper](http://github.com/bimsina/wallpaper)
-## [立即下载 ️⬇️ ](https://codeload.github.com/bimsina/wallpaper/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/bimsina/wallpaper/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Wallpaper-App-made-with-Flutter.jpg)
@@ -42,3 +42,4 @@ Screenshots:<br>
 </tr>
 </table>
 
+## Github主页 👉[bimsina/wallpaper](http://github.com/bimsina/wallpaper)

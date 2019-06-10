@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/Tkko/Flutter_PinPut](http://github.com/Tkko/Flutter_PinPut)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Tkko/Flutter_PinPut/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Tkko/Flutter_PinPut/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Flutter_PinPut.jpg)
@@ -128,3 +128,4 @@ class PinPutTest extends StatelessWidget {
 4. Push to the branch (git push origin my-new-feature)
 
 5. Create new Pull Request
+## Github主页 👉[Tkko/Flutter_PinPut](http://github.com/Tkko/Flutter_PinPut)

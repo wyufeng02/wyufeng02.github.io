@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/singhbhavneet/Flutter-Dribbble-Challenge](http://github.com/singhbhavneet/Flutter-Dribbble-Challenge)
-## [立即下载 ️⬇️ ](https://codeload.github.com/singhbhavneet/Flutter-Dribbble-Challenge/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/singhbhavneet/Flutter-Dribbble-Challenge/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Online-Banking-App.jpg)
@@ -65,3 +65,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Its because of my mummy's motivation,god's blessing and family'support that I am able to complete this project.
 
+## Github主页 👉[singhbhavneet/Flutter-Dribbble-Challenge](http://github.com/singhbhavneet/Flutter-Dribbble-Challenge)

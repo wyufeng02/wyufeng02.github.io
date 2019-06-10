@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/tayormi/weatherly](http://github.com/tayormi/weatherly)
-## [立即下载 ️⬇️ ](https://codeload.github.com/tayormi/weatherly/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/tayormi/weatherly/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/weatherly.jpg)
@@ -27,3 +27,4 @@ A weather app built with flutter implementing the bloc repository pattern
 ![weatherlyGif](https://user-images.githubusercontent.com/13835725/56211368-a812d480-604f-11e9-80a0-2484482cb9ee.gif)
 
 
+## Github主页 👉[tayormi/weatherly](http://github.com/tayormi/weatherly)

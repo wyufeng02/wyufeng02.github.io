@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/zesage/flutter_compass](http://github.com/zesage/flutter_compass)
-## [立即下载 ️⬇️ ](https://codeload.github.com/zesage/flutter_compass/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/zesage/flutter_compass/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Compass.jpg)
@@ -30,3 +30,4 @@ The [Flare](https://www.2dimensions.com) asset:
 # Screenshot
 <img src="https://raw.githubusercontent.com/zesage/flutter_compass/master/icon/screenshot3.gif" width="30%" />
 
+## Github主页 👉[zesage/flutter_compass](http://github.com/zesage/flutter_compass)

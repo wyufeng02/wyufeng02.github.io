@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/itzmeanjan/astroZ](http://github.com/itzmeanjan/astroZ)
-## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/astroZ/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/astroZ/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Snipaste_S.jpg)
@@ -109,3 +109,4 @@ An Android App, shows Astronomy Picture of the Day, built with :heart: using Flu
 
 That's all. Hope it was helpful :blush:
 
+## Github主页 👉[itzmeanjan/astroZ](http://github.com/itzmeanjan/astroZ)

@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/Dn-a/flutter_inner_drawer](http://github.com/Dn-a/flutter_inner_drawer)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Dn-a/flutter_inner_drawer/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Dn-a/flutter_inner_drawer/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/flutter_inner_drawer.jpg)
@@ -125,3 +125,4 @@ If you found this project helpful or you learned something from the source code 
 If you encounter problems, open an issue. Pull request are also welcome.
 
 
+## Github主页 👉[Dn-a/flutter_inner_drawer](http://github.com/Dn-a/flutter_inner_drawer)

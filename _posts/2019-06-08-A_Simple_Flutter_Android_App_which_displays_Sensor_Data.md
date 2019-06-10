@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/itzmeanjan/sensorz/](http://github.com/itzmeanjan/sensorz/)
-## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/sensorz//zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/sensorz//zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/sensorz.jpg)
@@ -130,3 +130,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[itzmeanjan/sensorz/](http://github.com/itzmeanjan/sensorz/)

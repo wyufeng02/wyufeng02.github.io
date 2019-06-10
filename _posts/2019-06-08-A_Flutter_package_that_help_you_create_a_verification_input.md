@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个Flutter包，可帮助您创建验证输入
+title:  
 tag: Input, Verification
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/tinylife-io/flutter_verification_code_input](http://github.com/tinylife-io/flutter_verification_code_input)
-## [立即下载 ️⬇️ ](https://codeload.github.com/tinylife-io/flutter_verification_code_input/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/tinylife-io/flutter_verification_code_input/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/flutter_verification_code_input.jpg)
  
 >
-> 验证代码输入。
+> 
 >
 
  
@@ -58,3 +58,4 @@ import'package:flutter_verification_code_input/flutter_verification_code_input.d
 
 
 
+## Github主页 👉[tinylife-io/flutter_verification_code_input](http://github.com/tinylife-io/flutter_verification_code_input)

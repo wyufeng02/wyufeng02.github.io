@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/wakahuula/xkcdViewer](http://github.com/wakahuula/xkcdViewer)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/wakahuula/xkcdViewer/zip/master) 
 
 
@@ -39,3 +39,4 @@ xkcdViewer is a simple comic viewer for the infamous xkcd webcomic built with [F
 Google Play and the Google Play logo are trademarks of Google LLC.
 
 The comics displayed in this app are licensed under a Creative Commons Attribution-NonCommercial 2.5 License. Visit [xkcd](https://xkcd.com) for additional information.
+## Github主页 👉[wakahuula/xkcdViewer](http://github.com/wakahuula/xkcdViewer)

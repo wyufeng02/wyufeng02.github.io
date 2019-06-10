@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/kalismeras61/flutter_wallet_ui](http://github.com/kalismeras61/flutter_wallet_ui)
-## [立即下载 ️⬇️ ](https://codeload.github.com/kalismeras61/flutter_wallet_ui/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/kalismeras61/flutter_wallet_ui/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/flutter_wallet_ui.jpg)
@@ -33,3 +33,4 @@ Flutter Wallet UI Challange
  [Waşşet Home Page] | <img src="https://raw.githubusercontent.com/kalismeras61/flutter_wallet_ui/master/screens/homepage.png" height= "800"/>
  [Overview Page] | <img src="https://raw.githubusercontent.com/kalismeras61/flutter_wallet_ui/master/screens/overviewpage.png" height= "800"/>
 
+## Github主页 👉[kalismeras61/flutter_wallet_ui](http://github.com/kalismeras61/flutter_wallet_ui)

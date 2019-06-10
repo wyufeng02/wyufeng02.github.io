@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  蛇游戏内置flutter
+title:  Snake game built in flutter
 tag: Games
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/anupcowkur/Snake](http://github.com/anupcowkur/Snake)
-## [立即下载 ️⬇️ ](https://codeload.github.com/anupcowkur/Snake/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/anupcowkur/Snake/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Snake.jpg)
  
 >
-> flutter非常酷。
+> Flutter is pretty cool. This is just a small project I did to test it out. There are no tests and the code quality is what you'd expect from a weekend hack.
 >
 
  
@@ -41,3 +41,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ````
+## Github主页 👉[anupcowkur/Snake](http://github.com/anupcowkur/Snake)

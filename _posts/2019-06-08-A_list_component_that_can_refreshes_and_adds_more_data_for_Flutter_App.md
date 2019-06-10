@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个列表组件，可以刷新并为Flutter App添加更多数据
+title:  A list component that can refreshes and adds more data for Flutter App
 tag: List
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/leyan95/dynamic_list_view](http://github.com/leyan95/dynamic_list_view)
-## [立即下载 ️⬇️ ](https://codeload.github.com/leyan95/dynamic_list_view/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/leyan95/dynamic_list_view/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/dynamic_list_view.jpg)
  
 >
-> 一个列表组件，可以刷新并为Flutter App添加更多数据。
+> A list component that can refreshes and adds more data for Flutter App.
 >
 
  
@@ -103,3 +103,4 @@ Created by Shusheng.
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
 
+## Github主页 👉[leyan95/dynamic_list_view](http://github.com/leyan95/dynamic_list_view)

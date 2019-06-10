@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/haroldolivieri/MoviesCatalogFlutter](http://github.com/haroldolivieri/MoviesCatalogFlutter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/haroldolivieri/MoviesCatalogFlutter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/haroldolivieri/MoviesCatalogFlutter/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/movies_list-catalog.jpg)
@@ -23,3 +23,4 @@ date: 2019-06-08
 
 ![Movies Catalog](https://raw.githubusercontent.com/haroldolivieri/MoviesCatalogFlutter/master/movies_catalog_flutter_iOS.gif)
 
+## Github主页 👉[haroldolivieri/MoviesCatalogFlutter](http://github.com/haroldolivieri/MoviesCatalogFlutter)

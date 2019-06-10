@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/Morthor/flutter_todo_app_talk](http://github.com/Morthor/flutter_todo_app_talk)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/Morthor/flutter_todo_app_talk/zip/master) 
 
 
@@ -45,3 +45,4 @@ Are you new to Flutter? Start [here](https://flutter.io/) !
 ![Remove Item](https://github.com/Morthor/flutter_todo_app_talk/blob/develop/screenshots/remove_item2.png)
 ![Completed Item](https://github.com/Morthor/flutter_todo_app_talk/blob/develop/screenshots/list_items_completed2.png)
 
+## Github主页 👉[Morthor/flutter_todo_app_talk](http://github.com/Morthor/flutter_todo_app_talk)

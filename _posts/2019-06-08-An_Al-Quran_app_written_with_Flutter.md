@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/yunusefendi52/quran_app](http://github.com/yunusefendi52/quran_app)
-## [立即下载 ️⬇️ ](https://codeload.github.com/yunusefendi52/quran_app/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/yunusefendi52/quran_app/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/quran_app.jpg)
@@ -49,3 +49,4 @@ Quran text is using quran-uthmani from [Tanzil](http://tanzil.net)
   <img src="https://raw.githubusercontent.com/yunusefendi52/quran_app/master/screenshots/Screenshot_2019-01-27-07-20-06-604_com.yunus.quranapp.quranapp.png" width="200" />
 </p>
 
+## Github主页 👉[yunusefendi52/quran_app](http://github.com/yunusefendi52/quran_app)

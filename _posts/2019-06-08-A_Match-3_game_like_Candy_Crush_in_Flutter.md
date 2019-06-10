@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  像Flutter中的Candy Crush一样的Match-3游戏
+title:  
 tag: Games
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/boeledi/flutter_crush](http://github.com/boeledi/flutter_crush)
-## [立即下载 ️⬇️ ](https://codeload.github.com/boeledi/flutter_crush/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/boeledi/flutter_crush/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/flutter_crush.jpg)
  
 >
-> 如何建立一个Match-3游戏，如Candy Crush，Bejeweled，FishDom ......在Flutter中。
+> 
 >
 
  
@@ -51,3 +51,4 @@ Please note that my objective was not a release the game. Therefore, there are s
 
 Also, if the source code might give you ideas to build your own game, I will be more than happy… simply let me know…
 
+## Github主页 👉[boeledi/flutter_crush](http://github.com/boeledi/flutter_crush)

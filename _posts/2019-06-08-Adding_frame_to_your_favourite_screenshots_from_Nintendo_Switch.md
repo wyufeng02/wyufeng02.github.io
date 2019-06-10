@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/JuniperPhoton/SwitchDecor](http://github.com/JuniperPhoton/SwitchDecor)
-## [立即下载 ️⬇️ ](https://codeload.github.com/JuniperPhoton/SwitchDecor/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/JuniperPhoton/SwitchDecor/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/SwitchDecor.jpg)
@@ -69,3 +69,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+## Github主页 👉[JuniperPhoton/SwitchDecor](http://github.com/JuniperPhoton/SwitchDecor)

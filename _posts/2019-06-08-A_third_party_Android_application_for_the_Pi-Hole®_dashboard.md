@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/sterrenburg/flutterhole](http://github.com/sterrenburg/flutterhole)
-## [立即下载 ️⬇️ ](https://codeload.github.com/sterrenburg/flutterhole/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/sterrenburg/flutterhole/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/FlutterHole.jpg)
@@ -58,3 +58,4 @@ If you want to improve the network support for FlutterHole by testing against yo
 This application interacts with the [PHP API](https://discourse.pi-hole.net/t/pi-hole-api/1863) which has few features. For example, the Recently Blocked screen has to frequently ping the API to imitate a stream of domains being blocked.
 
 A [new official API](https://github.com/pi-hole/api) is being built in Rust, but has no official documentation or release yet. Once the new API documentation becomes available, new cool features can be implemented so that FlutterHole is equal in capability to the dashboard.
+## Github主页 👉[sterrenburg/flutterhole](http://github.com/sterrenburg/flutterhole)

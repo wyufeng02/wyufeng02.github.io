@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个flutter的插件，可以播放没有API密钥的Youtube视频
+title:  
 tag: Video
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/sarbagyastha/youtube_player](http://github.com/sarbagyastha/youtube_player)
-## [立即下载 ️⬇️ ](https://codeload.github.com/sarbagyastha/youtube_player/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/sarbagyastha/youtube_player/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/youtube_player.jpg)
  
 >
-> 一个flutter的插件，播放Youtube视频“内联”没有API Key的质量范围（240p，360p，480p，720p和1080p）。
+> 
 >
 
  
@@ -191,3 +191,4 @@ SOFTWARE.
 ```
 
 
+## Github主页 👉[sarbagyastha/youtube_player](http://github.com/sarbagyastha/youtube_player)

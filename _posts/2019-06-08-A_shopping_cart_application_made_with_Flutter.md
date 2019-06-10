@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  用Flutter制作的购物车应用程序
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/leoelstin/flutter_kart](http://github.com/leoelstin/flutter_kart)
-## [立即下载 ️⬇️ ](https://codeload.github.com/leoelstin/flutter_kart/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/leoelstin/flutter_kart/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter_kart.jpg)
  
 >
-> 基于udemy教程的示例flutter项目。
+> 
 >
 
  
@@ -56,3 +56,4 @@ This project needs you! If you would like to support this project's further deve
 Of course, you can also choose what you want to donate, all donations are awesome!
 
 
+## Github主页 👉[leoelstin/flutter_kart](http://github.com/leoelstin/flutter_kart)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Cuberto Bottom Barflutter
+title:  Cuberto Bottom Bar in flutter
 tag: Bottom Bar
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/kushalmahapatro/cuberto_bottom_bar](http://github.com/kushalmahapatro/cuberto_bottom_bar)
-## [立即下载 ️⬇️ ](https://codeload.github.com/kushalmahapatro/cuberto_bottom_bar/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/kushalmahapatro/cuberto_bottom_bar/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Cuberto-Bottom-Bar.jpg)
  
 >
-> Flutter插件 -  CubertoBottomBar。
+> Flutter plugin - CubertoBottomBar.
 >
 
  
@@ -128,3 +128,4 @@ https://www.instagram.com/p/BtyUbSkBlnF/ <br/>
 
 Contributions are welcome, please submit a PR :)
 
+## Github主页 👉[kushalmahapatro/cuberto_bottom_bar](http://github.com/kushalmahapatro/cuberto_bottom_bar)

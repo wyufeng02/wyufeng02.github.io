@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/nsi4927/flutter-pinbox](http://github.com/nsi4927/flutter-pinbox)
-## [立即下载 ️⬇️ ](https://codeload.github.com/nsi4927/flutter-pinbox/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/nsi4927/flutter-pinbox/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/flutter-pinbox.jpg)
@@ -49,3 +49,4 @@ After you run the file you will get the result as two pictures below.
 ![image](https://github.com/nsi4927/flutter-pinbox/blob/master/imgs/PinBoxDemo2.png?raw=true)
 ![image](https://github.com/nsi4927/flutter-pinbox/blob/master/imgs/PinBoxDemo3.png?raw=true)
 
+## Github主页 👉[nsi4927/flutter-pinbox](http://github.com/nsi4927/flutter-pinbox)

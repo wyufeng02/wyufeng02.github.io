@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/autlunatic/flutter_selectable_circle](http://github.com/autlunatic/flutter_selectable_circle)
-## [立即下载 ️⬇️ ](https://codeload.github.com/autlunatic/flutter_selectable_circle/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/autlunatic/flutter_selectable_circle/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/flutter_selectable_circle.jpg)
@@ -78,3 +78,4 @@ A Flutter package for an Circle that can be Selected with animation.
     /// check: Check Icon Animation is used
     final SelectMode selectMode;
 
+## Github主页 👉[autlunatic/flutter_selectable_circle](http://github.com/autlunatic/flutter_selectable_circle)

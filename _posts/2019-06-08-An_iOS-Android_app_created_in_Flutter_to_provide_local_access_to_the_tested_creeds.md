@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/json469/sound_doctrine](http://github.com/json469/sound_doctrine)
-## [立即下载 ️⬇️ ](https://codeload.github.com/json469/sound_doctrine/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/json469/sound_doctrine/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Sound-Doctrinec.jpg)
@@ -48,3 +48,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+## Github主页 👉[json469/sound_doctrine](http://github.com/json469/sound_doctrine)

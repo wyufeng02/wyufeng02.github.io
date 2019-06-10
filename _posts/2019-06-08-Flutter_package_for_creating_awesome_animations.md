@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/felixblaschke/simple_animations](http://github.com/felixblaschke/simple_animations)
-## [立即下载 ️⬇️ ](https://codeload.github.com/felixblaschke/simple_animations/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/felixblaschke/simple_animations/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/hello-flutter.gif)
@@ -91,3 +91,4 @@ You find these and other examples in [Example App](https://github.com/felixblasc
 ![fancy-background](https://cdn-images-1.medium.com/max/1040/1*5H-XkZeZ1LW7nqH1leDshg.gif)
 
 ![fade-in](https://cdn-images-1.medium.com/max/1040/1*f9_TgZaAe24EalcD0qERwA.gif)
+## Github主页 👉[felixblaschke/simple_animations](http://github.com/felixblaschke/simple_animations)

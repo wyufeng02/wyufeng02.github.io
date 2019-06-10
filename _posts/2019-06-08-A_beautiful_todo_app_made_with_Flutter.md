@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/sabinbajracharya/fluttery-todo](http://github.com/sabinbajracharya/fluttery-todo)
-## [立即下载 ️⬇️ ](https://codeload.github.com/sabinbajracharya/fluttery-todo/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/sabinbajracharya/fluttery-todo/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Todo.jpg)
@@ -90,3 +90,4 @@ MIT
 > Instagram [@er_sabin](https://www.instagram.com/er_sabin/)
 
 
+## Github主页 👉[sabinbajracharya/fluttery-todo](http://github.com/sabinbajracharya/fluttery-todo)

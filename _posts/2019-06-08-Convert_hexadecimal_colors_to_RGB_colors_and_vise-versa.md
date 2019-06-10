@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/hipoojan/Color-Converter](http://github.com/hipoojan/Color-Converter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/hipoojan/Color-Converter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/hipoojan/Color-Converter/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/COLOR.jpg)
@@ -49,3 +49,4 @@ A minimalist application made with flutter to convert hexadecimal colors to RGB 
 - <a href="https://www.instagram.com/hipoojan/">Instagram</a>
 
 - <a href="https://twitter.com/hipoojan">Twitter</a>
+## Github主页 👉[hipoojan/Color-Converter](http://github.com/hipoojan/Color-Converter)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  带有flutter的花式底部导航
+title:  
 tag: Navigation
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/tunitowen/fancy_bottom_navigation](http://github.com/tunitowen/fancy_bottom_navigation)
-## [立即下载 ️⬇️ ](https://codeload.github.com/tunitowen/fancy_bottom_navigation/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/tunitowen/fancy_bottom_navigation/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/FancyBottomNavigation.gif)
  
 >
-> Flutter插件 - 花式底部导航。
+> 
 >
 
  
@@ -97,3 +97,4 @@ https://dribbble.com/shots/5419022-Tab
 ## Contributing
 
 Contributions are welcome, please submit a PR :)
+## Github主页 👉[tunitowen/fancy_bottom_navigation](http://github.com/tunitowen/fancy_bottom_navigation)

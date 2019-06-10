@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  flutter的杂货店购物应用程序完全工作模板
+title:  
 tag: Apps, Templates
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Widle-Studio/Grocery-App](http://github.com/Widle-Studio/Grocery-App)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Widle-Studio/Grocery-App/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Widle-Studio/Grocery-App/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Grocery-App.jpg)
  
 >
-> Grocery Shopping Flutter应用程序被创建为任何食品店Flutter App UI模板的精彩解决方案。
+> 
 >
 
  
@@ -56,3 +56,4 @@ You can use this Flutter app as one big super market app to sale product of your
 Reference 
 - https://codecanyon.net/item/grocery-store-template/22526727
 
+## Github主页 👉[Widle-Studio/Grocery-App](http://github.com/Widle-Studio/Grocery-App)

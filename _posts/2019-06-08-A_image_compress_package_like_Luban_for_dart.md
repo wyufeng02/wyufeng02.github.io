@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/crazecoder/flutter_luban](http://github.com/crazecoder/flutter_luban)
-## [立即下载 ️⬇️ ](https://codeload.github.com/crazecoder/flutter_luban/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/crazecoder/flutter_luban/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter_luban.jpg)
@@ -41,3 +41,4 @@ A image compress package like [Luban](https://github.com/Curzibn/Luban) for dart
 ```
 ![](https://github.com/crazecoder/flutter_luban/blob/62bae66c5d067db82117038c6bb8bac2d54e14f9/screenshot/test.png?raw=true)
 
+## Github主页 👉[crazecoder/flutter_luban](http://github.com/crazecoder/flutter_luban)

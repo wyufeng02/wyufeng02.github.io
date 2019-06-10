@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/deriegle/flutter-calculator](http://github.com/deriegle/flutter-calculator)
-## [立即下载 ️⬇️ ](https://codeload.github.com/deriegle/flutter-calculator/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/deriegle/flutter-calculator/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/flutter-calculator.jpg)
@@ -39,3 +39,4 @@ Let me know if you encounter issues with the calculator
 | ![image](https://raw.githubusercontent.com/deriegle/flutter-calculator/master/images/calculator.png) | ![history](https://raw.githubusercontent.com/deriegle/flutter-calculator/master/images/history.png) |
 
 
+## Github主页 👉[deriegle/flutter-calculator](http://github.com/deriegle/flutter-calculator)

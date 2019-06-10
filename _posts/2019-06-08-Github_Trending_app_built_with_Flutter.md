@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/huangyanxiong01/Github-Trending-App](http://github.com/huangyanxiong01/Github-Trending-App)
-## [立即下载 ️⬇️ ](https://codeload.github.com/huangyanxiong01/Github-Trending-App/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/huangyanxiong01/Github-Trending-App/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/Github-Trending-App.jpg)
@@ -56,3 +56,4 @@ flutter run
 - How read data from Remote Api
 - How auto serializing JSON
 - How add interactivity with multi widget
+## Github主页 👉[huangyanxiong01/Github-Trending-App](http://github.com/huangyanxiong01/Github-Trending-App)

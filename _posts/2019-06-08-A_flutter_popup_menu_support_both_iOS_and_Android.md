@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个flutter的弹出菜单支持iOS和Android
+title:  A flutter popup menu support both iOS and Android
 tag: Menu, Popup
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/chinabrant/popup_menu](http://github.com/chinabrant/popup_menu)
-## [立即下载 ️⬇️ ](https://codeload.github.com/chinabrant/popup_menu/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/chinabrant/popup_menu/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/06/popup_menux.jpg)
  
 >
-> 这个项目是用纯dart代码编写的，这意味着它支持iOS和Android。
+> This project was writed with pure dart code，which means it's support both iOS and Android.
 >
 
  
@@ -98,3 +98,4 @@ PopupMenu menu = PopupMenu(
     menu.show(widgetKey: btnKey2);
 ```
 
+## Github主页 👉[chinabrant/popup_menu](http://github.com/chinabrant/popup_menu)

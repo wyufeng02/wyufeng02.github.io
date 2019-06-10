@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/bigship/barcode.flutter](http://github.com/bigship/barcode.flutter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/bigship/barcode.flutter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/bigship/barcode.flutter/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/Barcode-Flutter.jpg)
@@ -83,3 +83,4 @@ I've only implemented some most commonly used barcode types. But feel free to se
 ## License
 Barcode flutter is released under [BSD license](http://opensource.org/licenses/BSD-2-Clause). See `LICENSE` for details.
 
+## Github主页 👉[bigship/barcode.flutter](http://github.com/bigship/barcode.flutter)

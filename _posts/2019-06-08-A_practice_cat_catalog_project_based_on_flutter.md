@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  基于flutter的练习猫目录项目
+title:  A practice cat catalog project based on flutter
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/gnehcc/cat-book](http://github.com/gnehcc/cat-book)
-## [立即下载 ️⬇️ ](https://codeload.github.com/gnehcc/cat-book/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/gnehcc/cat-book/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/The-Cat-Book.jpg)
  
 >
-> 基于flutter的练习项目。
+> A practice project based on flutter.
 >
 
  
@@ -36,3 +36,4 @@ Please read the [Flutter Documentation](https://flutter.dev/docs) for more detai
 ## Data source
 [Thecatapi](https://thecatapi.com/)
 
+## Github主页 👉[gnehcc/cat-book](http://github.com/gnehcc/cat-book)

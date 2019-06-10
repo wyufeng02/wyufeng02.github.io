@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/bharatagsrwal/random-users-details](http://github.com/bharatagsrwal/random-users-details)
-## [立即下载 ️⬇️ ](https://codeload.github.com/bharatagsrwal/random-users-details/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/bharatagsrwal/random-users-details/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/random-users-details.jpg)
@@ -78,3 +78,4 @@ This Project is implemented in `android` `9.0` and `8.0` in `Pixel 2` and `Redmi
 Write me in [issues](https://github.com/bharatagsrwal/random-users-details/issues) section. I will try solve your issue within 10-12 hours.
 ### Keep Fluttering.
 
+## Github主页 👉[bharatagsrwal/random-users-details](http://github.com/bharatagsrwal/random-users-details)

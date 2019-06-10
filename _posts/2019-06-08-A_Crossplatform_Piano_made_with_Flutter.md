@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/AppleEducate/flutter_piano](http://github.com/AppleEducate/flutter_piano)
-## [立即下载 ️⬇️ ](https://codeload.github.com/AppleEducate/flutter_piano/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/AppleEducate/flutter_piano/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/A-Crossplatform-Midi-Piano-built-with-Flutter.jpg)
@@ -233,3 +233,4 @@ const BorderRadiusGeometry borderRadius = BorderRadius.only(
  - @DFreds
  - @jesusrp98
 
+## Github主页 👉[AppleEducate/flutter_piano](http://github.com/AppleEducate/flutter_piano)

@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/dasfoo/delern](http://github.com/dasfoo/delern)
-## [立即下载 ️⬇️ ](https://codeload.github.com/dasfoo/delern/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/dasfoo/delern/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/Delern.jpg)
@@ -60,3 +60,4 @@ Features:
 
 <img src="https://raw.githubusercontent.com/dasfoo/delern/master/screenshots/share_deck_delern_flashcards.png" height="400px" /><img src="/screenshots/share_deck_with_access_delern_flashcards.png" height="400px" />
 
+## Github主页 👉[dasfoo/delern](http://github.com/dasfoo/delern)

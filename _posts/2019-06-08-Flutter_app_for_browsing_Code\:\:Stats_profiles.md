@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  用于浏览Code \：\：Stats配置文件的Flutter应用
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Schwusch/codestats_flutter](http://github.com/Schwusch/codestats_flutter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Schwusch/codestats_flutter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Schwusch/codestats_flutter/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Stats-Viewer.jpg)
  
 >
-> 用于浏览Code :: Stats配置文件的Flutter应用程序。
+> 
 >
 
  
@@ -42,3 +42,4 @@ To run this project:
 ## The code
 
 Application-specific code is in [/lib](/lib).
+## Github主页 👉[Schwusch/codestats_flutter](http://github.com/Schwusch/codestats_flutter)

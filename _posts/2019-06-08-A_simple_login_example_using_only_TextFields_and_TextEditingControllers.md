@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/ahmed-alzahrani/Flutter_Simple_Login](http://github.com/ahmed-alzahrani/Flutter_Simple_Login)
-## [立即下载 ️⬇️ ](https://codeload.github.com/ahmed-alzahrani/Flutter_Simple_Login/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/ahmed-alzahrani/Flutter_Simple_Login/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Flutter-Simple-Login-Example.jpg)
@@ -29,3 +29,4 @@ Here is an example of the application in action:
 
 ![gif](https://raw.githubusercontent.com/ahmed-alzahrani/Flutter_Simple_Login/master/simple_login.gif)
 
+## Github主页 👉[ahmed-alzahrani/Flutter_Simple_Login](http://github.com/ahmed-alzahrani/Flutter_Simple_Login)

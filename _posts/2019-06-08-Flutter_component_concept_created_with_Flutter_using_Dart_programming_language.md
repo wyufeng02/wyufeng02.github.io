@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/wiltonribeiro/gooey_tabbar_flutter](http://github.com/wiltonribeiro/gooey_tabbar_flutter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/wiltonribeiro/gooey_tabbar_flutter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/wiltonribeiro/gooey_tabbar_flutter/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/gooey_tabbar_flutter.jpg)
@@ -46,3 +46,4 @@ The GIF below shows this current component running.
 
 ![App Running](https://raw.githubusercontent.com/wiltonribeiro/gooey_tabbar_flutter/master/./docs/app_running.gif)
 
+## Github主页 👉[wiltonribeiro/gooey_tabbar_flutter](http://github.com/wiltonribeiro/gooey_tabbar_flutter)

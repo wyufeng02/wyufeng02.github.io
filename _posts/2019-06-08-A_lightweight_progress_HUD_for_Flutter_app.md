@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter应用程序的轻量级进度HUD
+title:  A lightweight progress HUD for Flutter app
 tag: Progress, Loading
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/zhengbomo/bmprogresshud](http://github.com/zhengbomo/bmprogresshud)
-## [立即下载 ️⬇️ ](https://codeload.github.com/zhengbomo/bmprogresshud/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/zhengbomo/bmprogresshud/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/bmprogresshud.jpg)
  
 >
-> Flutter应用程序的轻量级进度HUD，灵感来自SVProgressHUD。
+> A lightweight progress HUD for your Flutter app, Inspired by SVProgressHUD.
 >
 
  
@@ -121,3 +121,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[zhengbomo/bmprogresshud](http://github.com/zhengbomo/bmprogresshud)

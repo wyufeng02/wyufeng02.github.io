@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/SubirZ/Awesome_Flutter_UI](http://github.com/SubirZ/Awesome_Flutter_UI)
-## [立即下载 ️⬇️ ](https://codeload.github.com/SubirZ/Awesome_Flutter_UI/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/SubirZ/Awesome_Flutter_UI/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Login-Screen.jpg)
@@ -36,3 +36,4 @@ This Design is inspired from Sandip Ramani's Best Mobile APP Login, Sign up Conc
 
 https://www.uplabs.com/posts/best-mobile-app-login-sign-up-concept
 
+## Github主页 👉[SubirZ/Awesome_Flutter_UI](http://github.com/SubirZ/Awesome_Flutter_UI)

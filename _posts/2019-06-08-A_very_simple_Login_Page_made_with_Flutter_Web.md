@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用Flutter Web制作的一个非常简单的登录页面
+title:  A very simple Login Page made with Flutter Web
 tag: Login Screen, Web
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/JideGuru/LoginPage](http://github.com/JideGuru/LoginPage)
-## [立即下载 ️⬇️ ](https://codeload.github.com/JideGuru/LoginPage/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/JideGuru/LoginPage/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/LoginPage.jpg)
  
 >
-> 使用Flutter Web制作的一个非常简单的登录页面。
+> A very simple Login Page made with Flutter Web.
 >
 
  
@@ -44,3 +44,4 @@ This is just a simple project i made as my **second Flutter web project** for pr
 
 ## Getting Started
 For help getting started with Flutter, view the [online documentation](https://flutter.dev/web).
+## Github主页 👉[JideGuru/LoginPage](http://github.com/JideGuru/LoginPage)

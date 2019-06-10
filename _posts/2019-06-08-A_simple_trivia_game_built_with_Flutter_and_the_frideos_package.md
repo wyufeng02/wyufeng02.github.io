@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/frideosapps/trivia_example](http://github.com/frideosapps/trivia_example)
-## [立即下载 ️⬇️ ](https://codeload.github.com/frideosapps/trivia_example/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/frideosapps/trivia_example/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/Trivia-game-example.jpg)
@@ -51,3 +51,4 @@ Alternative version using the [rebuilder](https://pub.dartlang.org/packages/rebu
 ![Screenshot](https://raw.githubusercontent.com/frideosapps/trivia_example/master/screenshots/3.png)
 ![Screenshot](https://raw.githubusercontent.com/frideosapps/trivia_example/master/screenshots/4.png)
 
+## Github主页 👉[frideosapps/trivia_example](http://github.com/frideosapps/trivia_example)

@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/samarthagarwal/FlutterScreens](http://github.com/samarthagarwal/FlutterScreens)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/samarthagarwal/FlutterScreens/zip/master) 
 
 
@@ -170,3 +170,4 @@ Container(
 
   Feel free to contribute. If you like the project and want to donate, [click here](https://www.paypal.me/samarthagarwal).
 
+## Github主页 👉[samarthagarwal/FlutterScreens](http://github.com/samarthagarwal/FlutterScreens)

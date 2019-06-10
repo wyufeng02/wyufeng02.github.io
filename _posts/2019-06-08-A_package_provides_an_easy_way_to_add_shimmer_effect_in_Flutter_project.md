@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  包提供了一种在Flutter项目中添加微光效果的简便方法
+title:  
 tag: Animation
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/hnvn/flutter_shimmer](http://github.com/hnvn/flutter_shimmer)
-## [立即下载 ️⬇️ ](https://codeload.github.com/hnvn/flutter_shimmer/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/hnvn/flutter_shimmer/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Shimmer.jpg)
  
 >
-> 包提供了一种在Flutter项目中添加微光效果的简便方法。
+> 
 >
 
  
@@ -57,3 +57,4 @@ SizedBox(
 );
 
 ```
+## Github主页 👉[hnvn/flutter_shimmer](http://github.com/hnvn/flutter_shimmer)

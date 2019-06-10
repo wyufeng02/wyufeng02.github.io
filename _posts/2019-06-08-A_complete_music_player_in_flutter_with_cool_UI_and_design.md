@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/amangautam1/flutter-musicplayer](http://github.com/amangautam1/flutter-musicplayer)
-## [立即下载 ️⬇️ ](https://codeload.github.com/amangautam1/flutter-musicplayer/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/amangautam1/flutter-musicplayer/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter-musicplayer.jpg)
@@ -158,3 +158,4 @@ Hey dude! Help me out for a couple of :beers:!
 
 [![Beerpay](https://beerpay.io/amangautam1/flutter-musicplayer/badge.svg?style=beer-square)](https://beerpay.io/amangautam1/flutter-musicplayer)  [![Beerpay](https://beerpay.io/amangautam1/flutter-musicplayer/make-wish.svg?style=flat-square)](https://beerpay.io/amangautam1/flutter-musicplayer?focus=wish)
 
+## Github主页 👉[amangautam1/flutter-musicplayer](http://github.com/amangautam1/flutter-musicplayer)

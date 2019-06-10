@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  flutter的美丽bezier折线图小部件
+title:  A beautiful bezier line chart widget for flutter
 tag: Chart
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/aeyrium/bezier-chart](http://github.com/aeyrium/bezier-chart)
-## [立即下载 ️⬇️ ](https://codeload.github.com/aeyrium/bezier-chart/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/aeyrium/bezier-chart/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/06/Bezier-Chart.jpg)
  
 >
-> 一个漂亮的bezier折线图小部件，用于高度交互和可配置的flutter。
+> A beautiful bezier line chart widget for flutter that is highly interactive and configurable.
 >
 
  
@@ -398,3 +398,4 @@ Widget sample5(BuildContext context) {
 [Aeyrium Inc](https://aeyrium.com/)
 
 You can follow me on twitter [@diegoveloper](https://www.twitter.com/diegoveloper)
+## Github主页 👉[aeyrium/bezier-chart](http://github.com/aeyrium/bezier-chart)

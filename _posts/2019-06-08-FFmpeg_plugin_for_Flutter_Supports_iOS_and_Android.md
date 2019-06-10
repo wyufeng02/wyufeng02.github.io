@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter的FFmpeg插件支持iOS和Android
+title:  
 tag: Video
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/tanersener/flutter-ffmpeg](http://github.com/tanersener/flutter-ffmpeg)
-## [立即下载 ️⬇️ ](https://codeload.github.com/tanersener/flutter-ffmpeg/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/tanersener/flutter-ffmpeg/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter_ffmpeg.jpg)
  
 >
-> Flutter的FFmpeg插件。
+> 
 >
 
  
@@ -363,3 +363,4 @@ Feel free to submit issues or pull requests.
 - [Mobile FFmpeg Wiki](https://github.com/tanersener/mobile-ffmpeg/wiki)
 - [FFmpeg License and Legal Considerations](https://ffmpeg.org/legal.html)
 
+## Github主页 👉[tanersener/flutter-ffmpeg](http://github.com/tanersener/flutter-ffmpeg)

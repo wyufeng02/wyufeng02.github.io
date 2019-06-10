@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个好看的底部导航动画
+title:  A beautiful and animated bottom navigation
 tag: Navigation, Tabbar
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/pedromassango/bottom_navy_bar](http://github.com/pedromassango/bottom_navy_bar)
-## [立即下载 ️⬇️ ](https://codeload.github.com/pedromassango/bottom_navy_bar/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/pedromassango/bottom_navy_bar/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/BottomNavyBar.jpg)
  
 >
-> 一个好看的动画底部导航。
+> A beautiful and animated bottom navigation. The navigation bar use your current theme, but you are free to customize it.
 >
 
  
@@ -28,11 +28,10 @@ Support setState to change BottomNavyBar's _selectindex,just copy bottom_navy_ba
 
 ## Preview
 
-![FanBottomNavyBar Gif](https://raw.githubusercontent.com/pedromassango/bottom_navy_bar/master/navy.gif)
- 
+![FanBottomNavyBar Gif](navy.gif "BottomNavyBar")
 ## PageView
 
-![Fix Gif](https://github.com/pedromassango/bottom_navy_bar/raw/master/fix.gif)
+![Fix Gif](fix.gif "Fix")
 ## Getting Started
 
 Add the plugin:
@@ -95,3 +94,4 @@ bottomNavigationBar: BottomNavyBar(
 **activeColor** - the active item's background and text color<br/>
 **inactiveColor** - the inactive item's icon color<br/>
 
+## Github主页 👉[pedromassango/bottom_navy_bar](http://github.com/pedromassango/bottom_navy_bar)

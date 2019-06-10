@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个新的Flutter包，可帮助开发人员创建演练
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/iampawan/Flutter-Walkthrough](http://github.com/iampawan/Flutter-Walkthrough)
-## [立即下载 ️⬇️ ](https://codeload.github.com/iampawan/Flutter-Walkthrough/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/iampawan/Flutter-Walkthrough/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/flutter_walkthrough.jpg)
  
 >
-> 适用于Android和iOS的全新Flutter软件包，可帮助开发人员创建应用程序的动画演练。
+> 
 >
 
  
@@ -129,3 +129,4 @@ For help getting started with Flutter, view our online [documentation](https://f
 
 For help on editing package code, view the [documentation](https://flutter.io/developing-packages/).
 
+## Github主页 👉[iampawan/Flutter-Walkthrough](http://github.com/iampawan/Flutter-Walkthrough)

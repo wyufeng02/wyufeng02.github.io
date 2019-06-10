@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/best-flutter/transformer_page_view](http://github.com/best-flutter/transformer_page_view)
-## [立即下载 ️⬇️ ](https://codeload.github.com/best-flutter/transformer_page_view/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/best-flutter/transformer_page_view/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/transformer_page_view.jpg)
@@ -179,3 +179,4 @@ Inspired by [page-transformer](https://github.com/roughike/page-transformer), an
 
 
 
+## Github主页 👉[best-flutter/transformer_page_view](http://github.com/best-flutter/transformer_page_view)

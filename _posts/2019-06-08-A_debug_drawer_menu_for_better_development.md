@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/sergiandreplace/flutter_debug_drawer](http://github.com/sergiandreplace/flutter_debug_drawer)
-## [立即下载 ️⬇️ ](https://codeload.github.com/sergiandreplace/flutter_debug_drawer/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/sergiandreplace/flutter_debug_drawer/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/flutter_debug_drawerx.jpg)
@@ -58,3 +58,4 @@ class MyApp extends StatelessWidget {
 Right now, only PlatformModule and MediaQueryModule are availables. More will come soon.
 
 
+## Github主页 👉[sergiandreplace/flutter_debug_drawer](http://github.com/sergiandreplace/flutter_debug_drawer)

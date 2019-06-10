@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用Flutter创建的Notes应用程序
+title:  Notes App Created Using Flutter
 tag: Note
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/simformsolutions/flutter_note_app](http://github.com/simformsolutions/flutter_note_app)
-## [立即下载 ️⬇️ ](https://codeload.github.com/simformsolutions/flutter_note_app/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/simformsolutions/flutter_note_app/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Created-Using-Flutter.jpg)
  
 >
-> 此应用程序使用Flutter创建。
+> This Application is Created Using Flutter.
 >
 
  
@@ -37,3 +37,4 @@ This Application is Created Using Flutter.
 *  [Shared Preferances](https://pub.dev/packages/shared_preferences)
 *  [Share]( https://pub.dev/packages/share )
 
+## Github主页 👉[simformsolutions/flutter_note_app](http://github.com/simformsolutions/flutter_note_app)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  用于捕获Flutter的屏幕截图的命令行实用程序和程序包
+title:  
 tag: Miscellaneous
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/mmcc007/screenshots](http://github.com/mmcc007/screenshots)
-## [立即下载 ️⬇️ ](https://codeload.github.com/mmcc007/screenshots/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/mmcc007/screenshots/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/screenshotsx.jpg)
  
 >
-> 用于捕获Flutter的屏幕截图的命令行实用程序和程序包。
+> 
 >
 
  
@@ -253,3 +253,4 @@ Priority of this limitation in Flutter project:
 [pull requests](https://github.com/mmcc007/screenshots/pulls) are welcome.
 
 Your feedback is welcome and is used to guide where development effort is focused. So feel free to create as many issues and pull requests as you want. You should expect a timely and considered response.
+## Github主页 👉[mmcc007/screenshots](http://github.com/mmcc007/screenshots)

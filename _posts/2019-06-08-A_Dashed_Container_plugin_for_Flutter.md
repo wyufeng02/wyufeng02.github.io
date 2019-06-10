@@ -1,23 +1,24 @@
 ---
 layout: post
-title:  Flutter的Dashed Container插件
+title:  A Dashed Container plugin for Flutter
 tag: Widgets
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/](http://github.com/)
-## [立即下载 ️⬇️ ](https://codeload.github.com//zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com//zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/dashed_container.jpg)
  
 >
-> Flutter的Dashed Container插件，易于为您的小部件实现虚线
+> A Dashed Container plugin for Flutter, easy to implement dashed line for your widgets
 >
 
  
 400: Invalid request
 
+## Github主页 👉[](http://github.com/)

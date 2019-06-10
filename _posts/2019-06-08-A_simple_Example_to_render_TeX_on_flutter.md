@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个简单的示例，用于渲染Tetr in flutter
+title:  
 tag: Miscellaneous
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/shahzadakram67/flutter_tex](http://github.com/shahzadakram67/flutter_tex)
-## [立即下载 ️⬇️ ](https://codeload.github.com/shahzadakram67/flutter_tex/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/shahzadakram67/flutter_tex/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter_tex.jpg)
  
 >
-> 一个Flutter应用程序示例，用于渲染Text，基于MathJax缩小。
+> 
 >
 
  
@@ -95,3 +95,4 @@ For iOS add following code in your `<project-directory>/ios/Runner/Info.plist`
 [![Tweet Flutter_TeX](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=A%20Flutter%20Package%20to%20render%20Mathematics%2C%20Physics%20and%20Chemistry%20Equations%20based%20on%20LaTeX%20with%20full%20HTML%20support.&url=https://github.com/shahzadakram67/flutter_tex&via=shahzadakram67&hashtags=flutter,flutter_tex,latex,equations)
 
 
+## Github主页 👉[shahzadakram67/flutter_tex](http://github.com/shahzadakram67/flutter_tex)

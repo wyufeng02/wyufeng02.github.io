@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/mohak1283/Instagram-Clone](http://github.com/mohak1283/Instagram-Clone)
-## [立即下载 ️⬇️ ](https://codeload.github.com/mohak1283/Instagram-Clone/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/mohak1283/Instagram-Clone/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/Instagram-Clone.jpg)
@@ -163,3 +163,4 @@ Double check install instructions for both
     
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+## Github主页 👉[mohak1283/Instagram-Clone](http://github.com/mohak1283/Instagram-Clone)

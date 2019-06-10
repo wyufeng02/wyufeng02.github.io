@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/ReeceRose/Reflecty-Slideshow](http://github.com/ReeceRose/Reflecty-Slideshow)
-## [立即下载 ️⬇️ ](https://codeload.github.com/ReeceRose/Reflecty-Slideshow/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/ReeceRose/Reflecty-Slideshow/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Reflecty-Slideshowc.gif)
@@ -50,3 +50,4 @@ Fill in the above form with the appropriate data. Document ID can be left alone 
 ```bash
 flutter run
 ```
+## Github主页 👉[ReeceRose/Reflecty-Slideshow](http://github.com/ReeceRose/Reflecty-Slideshow)

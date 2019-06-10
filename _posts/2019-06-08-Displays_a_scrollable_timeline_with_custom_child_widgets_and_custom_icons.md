@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  显示带有自定义子窗口小部件和自定义图标的可滚动时间轴
+title:  
 tag: Timeline, Icons
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/furkantektas/timeline_list](http://github.com/furkantektas/timeline_list)
-## [立即下载 ️⬇️ ](https://codeload.github.com/furkantektas/timeline_list/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/furkantektas/timeline_list/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Flutter-Timeline-Widget.jpg)
  
 >
-> 显示带有自定义子窗口小部件和自定义图标的可滚动时间轴。
+> 
 >
 
  
@@ -69,3 +69,4 @@ A sample timeline app can be found in the [`example/`](https://github.com/furkan
 
 ![ehlibyte games](http://ehlibyte.com/images/ehlibyte-logo-small.png?raw=true)
 
+## Github主页 👉[furkantektas/timeline_list](http://github.com/furkantektas/timeline_list)

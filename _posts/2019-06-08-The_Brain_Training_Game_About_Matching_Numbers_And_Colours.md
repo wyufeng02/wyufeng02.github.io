@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/numcol/numcol](http://github.com/numcol/numcol)
-## [立即下载 ️⬇️ ](https://codeload.github.com/numcol/numcol/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/numcol/numcol/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/NumCol.jpg)
@@ -125,3 +125,4 @@ License: [Apache License](https://github.com/google/fonts/blob/master/apache/rob
 [1]: https://flutter.io/
 [2]: https://docs.fastlane.tools/
 
+## Github主页 👉[numcol/numcol](http://github.com/numcol/numcol)

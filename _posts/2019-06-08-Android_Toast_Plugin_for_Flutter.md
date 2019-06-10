@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter的Android Toast插件
+title:  
 tag: Toast
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/PonnamKarthik/FlutterToast](http://github.com/PonnamKarthik/FlutterToast)
-## [立即下载 ️⬇️ ](https://codeload.github.com/PonnamKarthik/FlutterToast/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/PonnamKarthik/FlutterToast/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/FlutterToast.jpg)
  
 >
-> Flutter的Android和iOS Toast Library。
+> 
 >
 
  
@@ -78,3 +78,4 @@ Fluttertoast.cancel()
 
 ## If you need any features suggest
 
+## Github主页 👉[PonnamKarthik/FlutterToast](http://github.com/PonnamKarthik/FlutterToast)

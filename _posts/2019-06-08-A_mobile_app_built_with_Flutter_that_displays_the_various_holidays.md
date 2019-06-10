@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/herovickers/world_holidays](http://github.com/herovickers/world_holidays)
-## [立即下载 ️⬇️ ](https://codeload.github.com/herovickers/world_holidays/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/herovickers/world_holidays/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/World-Holidays.jpg)
@@ -132,3 +132,4 @@ MIT
 > Twitter [@herovickers](https://twitter.com/herovickers)
 
 
+## Github主页 👉[herovickers/world_holidays](http://github.com/herovickers/world_holidays)

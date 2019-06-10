@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/itzmeanjan/fCreate](http://github.com/itzmeanjan/fCreate)
-## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/fCreate/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/fCreate/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/fCreate.jpg)
@@ -211,3 +211,4 @@ samples, guidance on mobile development, and a full API reference.
 
 Hope it was helpful :smile:
 
+## Github主页 👉[itzmeanjan/fCreate](http://github.com/itzmeanjan/fCreate)

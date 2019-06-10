@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/lukepighetti/hydrated](http://github.com/lukepighetti/hydrated)
-## [立即下载 ️⬇️ ](https://codeload.github.com/lukepighetti/hydrated/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/lukepighetti/hydrated/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/hydrated.jpg)
@@ -86,3 +86,4 @@ Hydrated is mock tested with all supported types and is dogfooded by its creator
 ## Contributing
 
 The goal of Hydrated is to make persistence of BLoC classes as simple as possible for Flutter projects. PRs are welcome, but be warned that I am committed to simplicity.
+## Github主页 👉[lukepighetti/hydrated](http://github.com/lukepighetti/hydrated)

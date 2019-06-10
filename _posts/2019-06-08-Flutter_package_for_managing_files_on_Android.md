@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  用于管理Android上文件的Flutter包
+title:  Flutter package for managing files on Android
 tag: File Manager
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Eagle6789/flutter_file_manager](http://github.com/Eagle6789/flutter_file_manager)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Eagle6789/flutter_file_manager/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Eagle6789/flutter_file_manager/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/flutter_file_manager.jpg)
  
 >
-> 
+> A set of utilities, that help to manage the files & directories in Android system.
 >
 
  
@@ -154,3 +154,4 @@ class MyApp extends StatelessWidget {
 
 * me.developer.a@gmail.com
 
+## Github主页 👉[Eagle6789/flutter_file_manager](http://github.com/Eagle6789/flutter_file_manager)

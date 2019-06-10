@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  通过模仿京东开发的flutter案例程序
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/wchaowu/flutter_sample](http://github.com/wchaowu/flutter_sample)
-## [立即下载 ️⬇️ ](https://codeload.github.com/wchaowu/flutter_sample/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/wchaowu/flutter_sample/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/imitating-Jingdong.jpg)
  
 >
-> 这是一个模仿京东（京东）国际站开发的案例。
+> 
 >
 
  
@@ -56,3 +56,4 @@ android
 [2]: ./file/ios_joybuy.png
 [3]: ./file/android_joybuy.png
 
+## Github主页 👉[wchaowu/flutter_sample](http://github.com/wchaowu/flutter_sample)

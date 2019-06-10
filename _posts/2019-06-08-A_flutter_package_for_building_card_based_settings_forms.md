@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/codegrue/card_settings](http://github.com/codegrue/card_settings)
-## [立即下载 ️⬇️ ](https://codeload.github.com/codegrue/card_settings/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/codegrue/card_settings/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/Card-Settings.jpg)
@@ -318,3 +318,4 @@ If you fixed a bug or implemented a new feature, please send a [pull request](ht
 
 If you want to discuss this project, please join the [Discord](https://discord.gg/BT7RGsd) chat.
 
+## Github主页 👉[codegrue/card_settings](http://github.com/codegrue/card_settings)

@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/rvamsikrishna/flutter_ui_challenge_planets_app](http://github.com/rvamsikrishna/flutter_ui_challenge_planets_app)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/rvamsikrishna/flutter_ui_challenge_planets_app/zip/master) 
 
 
@@ -35,3 +35,4 @@ Recreated the design by [Anto Skvortsovn ](https://dribbble.com/shots/4220958-xo
 For help getting started with Flutter, view the online
 [documentation](https://flutter.io/).
 
+## Github主页 👉[rvamsikrishna/flutter_ui_challenge_planets_app](http://github.com/rvamsikrishna/flutter_ui_challenge_planets_app)

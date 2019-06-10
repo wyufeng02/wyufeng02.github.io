@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/lukepighetti/flutter-developers](http://github.com/lukepighetti/flutter-developers)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/lukepighetti/flutter-developers/zip/master) 
 
 
@@ -68,3 +68,4 @@ We're live on both app stores. Pipeline provided by Codemagic.
     <img src="https://raw.githubusercontent.com/lukepighetti/flutter-developers/master/docs/devpage2.jpg" width="290px"/>
 </div>
 
+## Github主页 👉[lukepighetti/flutter-developers](http://github.com/lukepighetti/flutter-developers)

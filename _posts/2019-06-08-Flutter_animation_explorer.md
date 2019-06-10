@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/rxlabz/flutter_animation_explorer](http://github.com/rxlabz/flutter_animation_explorer)
-## [立即下载 ️⬇️ ](https://codeload.github.com/rxlabz/flutter_animation_explorer/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/rxlabz/flutter_animation_explorer/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/flutter_animation_explorer.jpg)
@@ -33,3 +33,4 @@ date: 2019-06-08
   - AnimatedCrossFade
   
 
+## Github主页 👉[rxlabz/flutter_animation_explorer](http://github.com/rxlabz/flutter_animation_explorer)

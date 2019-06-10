@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter SDK的可扩展底部应用栏小部件
+title:  Expandable bottom app bar widget for Flutter SDK
 tag: Tabbar, Bottom Bar
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/rIIh/expandable-bottom-bar](http://github.com/rIIh/expandable-bottom-bar)
-## [立即下载 ️⬇️ ](https://codeload.github.com/rIIh/expandable-bottom-bar/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/rIIh/expandable-bottom-bar/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/ExpandableBottomAppB2ar.gif)
  
 >
-> 具有可扩展工作表的可动画底部应用栏。
+> Animatable bottom app bar with expandable sheet.
 >
 
  
@@ -115,3 +115,4 @@ or
 **close** - switch the sheet to opened state<br/>
 **swap** - if sheet is opened closes the sheet and vice versa<br/>
 
+## Github主页 👉[rIIh/expandable-bottom-bar](http://github.com/rIIh/expandable-bottom-bar)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个完整的todo应用程序，由Flutter和Dart制成
+title:  A Full fledged todo app which is made with Flutter and Dart
 tag: Todo, Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/bugudiramu/TaskList](http://github.com/bugudiramu/TaskList)
-## [立即下载 ️⬇️ ](https://codeload.github.com/bugudiramu/TaskList/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/bugudiramu/TaskList/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/task_listx.jpg)
  
 >
-> 该项目是Flutter应用程序的起点。
+> This project is a starting point for a Flutter application.
 >
 
  
@@ -38,3 +38,4 @@ This project is a starting point for a Flutter application.
 
 
 
+## Github主页 👉[bugudiramu/TaskList](http://github.com/bugudiramu/TaskList)

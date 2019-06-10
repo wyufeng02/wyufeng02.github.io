@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/Sheikhsoft/analog_time_picker](http://github.com/Sheikhsoft/analog_time_picker)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Sheikhsoft/analog_time_picker/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Sheikhsoft/analog_time_picker/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/analog_time_picker.jpg)
@@ -78,3 +78,4 @@ class FullPageClock extends StatelessWidget {
   }
 }
 ```
+## Github主页 👉[Sheikhsoft/analog_time_picker](http://github.com/Sheikhsoft/analog_time_picker)

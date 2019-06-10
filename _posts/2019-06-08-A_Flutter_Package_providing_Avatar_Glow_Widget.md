@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/apgapg/avatar_glow](http://github.com/apgapg/avatar_glow)
-## [立即下载 ️⬇️ ](https://codeload.github.com/apgapg/avatar_glow/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/apgapg/avatar_glow/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/avatar_glow.jpg)
@@ -76,3 +76,4 @@ AvatarGlow(
 4. Push to the branch (git push origin my-new-feature)
 5. Create new Pull Request
 
+## Github主页 👉[apgapg/avatar_glow](http://github.com/apgapg/avatar_glow)

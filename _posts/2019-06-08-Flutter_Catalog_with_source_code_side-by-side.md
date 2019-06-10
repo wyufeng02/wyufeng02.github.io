@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter目录与源代码并排
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/X-Wei/flutter_catalog](http://github.com/X-Wei/flutter_catalog)
-## [立即下载 ️⬇️ ](https://codeload.github.com/X-Wei/flutter_catalog/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/X-Wei/flutter_catalog/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/Flutter-Catalog.jpg)
  
 >
-> 一个展示Flutter组件的开源应用程序，带有并排的源代码视图。
+> 
 >
 
  
@@ -63,3 +63,4 @@ This app is written with reference to many resources, including:
 * Andrea Bizzotto's YouTube channel: https://www.youtube.com/channel/UCrTnsT4OYZ53l0QGKqLeD5Q
 * Tensor Programming's YouTube channel: https://www.youtube.com/watch?v=WwhyaqNtNQY&list=PLJbE2Yu2zumDqr_-hqpAN0nIr6m14TAsd
 * Eajy's flutter demo: https://github.com/Eajy/flutter_demo
+## Github主页 👉[X-Wei/flutter_catalog](http://github.com/X-Wei/flutter_catalog)

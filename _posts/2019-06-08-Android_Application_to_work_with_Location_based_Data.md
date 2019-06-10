@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/itzmeanjan/locatorz](http://github.com/itzmeanjan/locatorz)
-## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/locatorz/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/itzmeanjan/locatorz/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/locatorzxa.jpg)
@@ -46,3 +46,4 @@ A Simple Flutter based Android Application to work with Location based Data ;)
 
 Hope it was helpful.
 
+## Github主页 👉[itzmeanjan/locatorz](http://github.com/itzmeanjan/locatorz)

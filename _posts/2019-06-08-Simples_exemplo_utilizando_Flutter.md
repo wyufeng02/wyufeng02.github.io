@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/RogerPhilippe/f_imc_calc](http://github.com/RogerPhilippe/f_imc_calc)
-## [立即下载 ️⬇️ ](https://codeload.github.com/RogerPhilippe/f_imc_calc/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/RogerPhilippe/f_imc_calc/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/f_imc_calc.jpg)
@@ -40,3 +40,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[RogerPhilippe/f_imc_calc](http://github.com/RogerPhilippe/f_imc_calc)

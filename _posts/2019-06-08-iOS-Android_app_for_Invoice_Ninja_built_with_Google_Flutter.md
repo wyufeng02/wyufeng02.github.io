@@ -29,10 +29,10 @@ Companion app for the [Invoice Ninja](https://github.com/invoiceninja/invoicenin
 Note: the mobile app requires the latest version of the web app.
 
 <p align="center">
-    <img src="https://github.com/invoiceninja/flutter-mobile/blob/master/samples/screenshots/screenshot_01.png" alt="View Invoice" width="200"/>
-    <img src="https://github.com/invoiceninja/flutter-mobile/blob/master/samples/screenshots/screenshot_02.png" alt="List Invoices" width="200"/>
-    <img src="https://github.com/invoiceninja/flutter-mobile/blob/master/samples/screenshots/screenshot_03.png" alt="Contact Details" width="200"/>
-    <img src="https://github.com/invoiceninja/flutter-mobile/blob/master/samples/screenshots/screenshot_04.png" alt="Edit Product" width="200"/>
+    <img src="https://github.com/invoiceninja/flutter-mobile/blob/master/samples/screenshots/screenshot_01.png?raw=true" alt="View Invoice" width="200"/>
+    <img src="https://github.com/invoiceninja/flutter-mobile/blob/master/samples/screenshots/screenshot_02.png?raw=true" alt="List Invoices" width="200"/>
+    <img src="https://github.com/invoiceninja/flutter-mobile/blob/master/samples/screenshots/screenshot_03.png?raw=true" alt="Contact Details" width="200"/>
+    <img src="https://github.com/invoiceninja/flutter-mobile/blob/master/samples/screenshots/screenshot_04.png?raw=true" alt="Edit Product" width="200"/>
 </p>
 
 ## Features

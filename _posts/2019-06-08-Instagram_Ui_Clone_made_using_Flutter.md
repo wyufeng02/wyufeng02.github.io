@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Instagram Ui Clone使用Flutter制作
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/iampawan/Flutter-Instagram-UI-Clone](http://github.com/iampawan/Flutter-Instagram-UI-Clone)
-## [立即下载 ️⬇️ ](https://codeload.github.com/iampawan/Flutter-Instagram-UI-Clone/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/iampawan/Flutter-Instagram-UI-Clone/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/Flutter-Instagram-UI-Clone.jpg)
  
 >
-> Instagram Ui Clone使用Flutter制作。
+> 
 >
 
  
@@ -34,3 +34,4 @@ A new Flutter project.
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
+## Github主页 👉[iampawan/Flutter-Instagram-UI-Clone](http://github.com/iampawan/Flutter-Instagram-UI-Clone)

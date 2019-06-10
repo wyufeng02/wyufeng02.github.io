@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter的可自定义且易于使用的警报弹出对话框
+title:  
 tag: Dialog, Popup, Alert
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/RatelHub/rflutter_alert](http://github.com/RatelHub/rflutter_alert)
-## [立即下载 ️⬇️ ](https://codeload.github.com/RatelHub/rflutter_alert/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/RatelHub/rflutter_alert/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/rflutter_alertX.jpg)
  
 >
-> Flutter Alert是Flutter的超级可定制且易于使用的警报/弹出对话框。
+> 
 >
 
  
@@ -241,3 +241,4 @@ See CHANGELOG for all breaking (and non-breaking) changes.
 Made with ❤ by <a href="https://ratel.com.tr">Ratel</a>
 </p>
 
+## Github主页 👉[RatelHub/rflutter_alert](http://github.com/RatelHub/rflutter_alert)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用Firebase Auth和Facebook登录的flutter登录屏幕
+title:  
 tag: Login Screen, Onboarding
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/instaflutter/flutter-login-screen-firebase-auth-facebook-login](http://github.com/instaflutter/flutter-login-screen-firebase-auth-facebook-login)
-## [立即下载 ️⬇️ ](https://codeload.github.com/instaflutter/flutter-login-screen-firebase-auth-facebook-login/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/instaflutter/flutter-login-screen-firebase-auth-facebook-login/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Instaflutter-Onboarding.jpg)
  
 >
-> 使用此预先构建的Flutter入门套件快速启动Flutter应用程序开发。
+> 
 >
 
  
@@ -72,3 +72,4 @@ Instaflutter Onboarding is a fully functional app that provides Flutter develope
 * Modularized Code
 
 Coded with ❤️ by <a href="https://www.instaflutter.com">Instaflutter</a>.
+## Github主页 👉[instaflutter/flutter-login-screen-firebase-auth-facebook-login](http://github.com/instaflutter/flutter-login-screen-firebase-auth-facebook-login)

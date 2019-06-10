@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter的TypeAhead小部件
+title:  
 tag: Autocomplete
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/AbdulRahmanAlHamali/flutter_typeahead](http://github.com/AbdulRahmanAlHamali/flutter_typeahead)
-## [立即下载 ️⬇️ ](https://codeload.github.com/AbdulRahmanAlHamali/flutter_typeahead/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/AbdulRahmanAlHamali/flutter_typeahead/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/flutter_typeahead.jpg)
  
 >
-> Flutter的TypeAhead（自动填充）小部件，您可以在键入时向用户显示建议。
+> 
 >
 
  
@@ -338,3 +338,4 @@ This project is the result of the collective effort of contributors who particip
 ## How you can help
 [Contribution Guidelines](https://github.com/AbdulRahmanAlHamali/flutter_typeahead/blob/master/CONTRIBUTING.md)
 
+## Github主页 👉[AbdulRahmanAlHamali/flutter_typeahead](http://github.com/AbdulRahmanAlHamali/flutter_typeahead)

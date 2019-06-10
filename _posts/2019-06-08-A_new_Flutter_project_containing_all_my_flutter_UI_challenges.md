@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/pedromassango/my_flutter_challenges](http://github.com/pedromassango/my_flutter_challenges)
-## [立即下载 ️⬇️ ](https://codeload.github.com/pedromassango/my_flutter_challenges/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/pedromassango/my_flutter_challenges/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/my_flutter_challenges.jpg)
@@ -63,3 +63,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[pedromassango/my_flutter_challenges](http://github.com/pedromassango/my_flutter_challenges)

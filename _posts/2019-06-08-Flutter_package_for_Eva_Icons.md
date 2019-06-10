@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Eva Icons的flutter包
+title:  Flutter package for Eva Icons
 tag: Icons
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/piyushmaurya23/eva_icons_flutter](http://github.com/piyushmaurya23/eva_icons_flutter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/piyushmaurya23/eva_icons_flutter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/piyushmaurya23/eva_icons_flutter/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/eva_icons_flutter.jpg)
  
 >
-> Eva Icons的flutter包。 
+> Flutter package for Eva Icons. Eva Icons is a pack of more than 480 beautifully crafted Open Source icons for common actions and items.
 >
 
  
@@ -64,3 +64,4 @@ View the Flutter app in the `example` directory.
 - [Piyush Maurya](https://github.com/piyushmaurya23/)
 - [Karan Shah](https://github.com/karan413255)
 
+## Github主页 👉[piyushmaurya23/eva_icons_flutter](http://github.com/piyushmaurya23/eva_icons_flutter)

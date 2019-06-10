@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/diegoveloper/flutter_keyboard_actions](http://github.com/diegoveloper/flutter_keyboard_actions)
-## [立即下载 ️⬇️ ](https://codeload.github.com/diegoveloper/flutter_keyboard_actions/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/diegoveloper/flutter_keyboard_actions/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/Keyboard-Actions.jpg)
@@ -258,3 +258,4 @@ class _ContentState extends State<Content> {
 
 You can follow me on twitter [@diegoveloper](https://www.twitter.com/diegoveloper)
 
+## Github主页 👉[diegoveloper/flutter_keyboard_actions](http://github.com/diegoveloper/flutter_keyboard_actions)

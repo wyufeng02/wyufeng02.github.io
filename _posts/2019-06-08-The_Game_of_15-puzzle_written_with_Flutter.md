@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  用Flutter写的15拼图游戏
+title:  
 tag: Games
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/AChep/15puzzle](http://github.com/AChep/15puzzle)
-## [立即下载 ️⬇️ ](https://codeload.github.com/AChep/15puzzle/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/AChep/15puzzle/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Game-of-Fifteen.jpg)
  
 >
-> 十五岁的游戏（也称为15拼图，宝石拼图，老板拼图，神秘广场等等）是一个滑动拼图，由一组编号方形拼块按随机顺序组成，缺少一个拼贴。
+> 
 >
 
  
@@ -76,3 +76,4 @@ For more information on SemVer, please visit http://semver.org/.
 [3]: https://github.com/AChep/15puzzle/issues?state=closed
 [4]: https://github.com/AChep/15puzzle/blob/master/LICENSE
 
+## Github主页 👉[AChep/15puzzle](http://github.com/AChep/15puzzle)

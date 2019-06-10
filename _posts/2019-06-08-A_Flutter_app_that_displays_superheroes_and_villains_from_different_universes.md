@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个Flutter应用程序，显示来自不同宇宙的超级英雄和恶棍
+title:  A Flutter app that displays superheroes and villains from different universes
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/JideGuru/FlutterSuperHeroes](http://github.com/JideGuru/FlutterSuperHeroes)
-## [立即下载 ️⬇️ ](https://codeload.github.com/JideGuru/FlutterSuperHeroes/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/JideGuru/FlutterSuperHeroes/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/FlutterSuperHeroes.jpg)
  
 >
-> 一个Flutter应用程序，显示来自不同宇宙的超级英雄和恶棍。
+> A Flutter app that displays superheroes and villains from different universes.
 >
 
  
@@ -75,3 +75,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[JideGuru/FlutterSuperHeroes](http://github.com/JideGuru/FlutterSuperHeroes)

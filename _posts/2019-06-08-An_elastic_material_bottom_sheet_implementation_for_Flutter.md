@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/mcrovero/rubber](http://github.com/mcrovero/rubber)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/mcrovero/rubber/zip/master) 
 
 
@@ -39,3 +39,4 @@ Is also available the complete [example](https://github.com/mcrovero/rubber/tree
 </table>
 
 
+## Github主页 👉[mcrovero/rubber](http://github.com/mcrovero/rubber)

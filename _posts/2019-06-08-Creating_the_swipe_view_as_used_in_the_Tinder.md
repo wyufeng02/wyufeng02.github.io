@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/geekruchika/FlutterCardSwipe](http://github.com/geekruchika/FlutterCardSwipe)
-## [立即下载 ️⬇️ ](https://codeload.github.com/geekruchika/FlutterCardSwipe/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/geekruchika/FlutterCardSwipe/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/FlutterCardSwipe.jpg)
@@ -69,3 +69,4 @@ In the command terminal, run the following commands:
     $ flutter run
 
 ##### Check out Flutter’s online [documentation](http://flutter.io/) for help getting start with your Flutter Animation project.
+## Github主页 👉[geekruchika/FlutterCardSwipe](http://github.com/geekruchika/FlutterCardSwipe)

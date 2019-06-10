@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用flutter创建的flutter工作板应用程序
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Rahiche/flutter_jobs_app](http://github.com/Rahiche/flutter_jobs_app)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Rahiche/flutter_jobs_app/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Rahiche/flutter_jobs_app/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Flutter-Jobs-App.jpg)
  
 >
-> 在这个应用程序中使用Flutter的Android / IOSflutter工作板应用程序从flutter的工作网站获取信息
+> 
 >
 
  
@@ -79,3 +79,4 @@ Please :star: this repo and share it with others
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
+## Github主页 👉[Rahiche/flutter_jobs_app](http://github.com/Rahiche/flutter_jobs_app)

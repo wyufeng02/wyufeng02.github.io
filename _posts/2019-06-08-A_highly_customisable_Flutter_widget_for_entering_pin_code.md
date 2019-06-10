@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/LiewJunTung/pin_code_text_field](http://github.com/LiewJunTung/pin_code_text_field)
-## [立即下载 ️⬇️ ](https://codeload.github.com/LiewJunTung/pin_code_text_field/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/LiewJunTung/pin_code_text_field/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/pin_code_text_field.jpg)
@@ -211,3 +211,4 @@ Star 🌟 to show support!
 [Pub package](https://pub.dartlang.org/packages/pin_code_text_field)
 [Flutter documentation](https://flutter.io/).
 
+## Github主页 👉[LiewJunTung/pin_code_text_field](http://github.com/LiewJunTung/pin_code_text_field)

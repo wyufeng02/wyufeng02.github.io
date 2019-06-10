@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用Flutter构建的开源GitHub客户端
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/pd4d10/git-touch](http://github.com/pd4d10/git-touch)
-## [立即下载 ️⬇️ ](https://codeload.github.com/pd4d10/git-touch/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/pd4d10/git-touch/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/GitTouch.jpg)
  
 >
-> 使用Flutter构建的开源GitHub客户端。
+> 
 >
 
  
@@ -78,3 +78,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 MIT
 
+## Github主页 👉[pd4d10/git-touch](http://github.com/pd4d10/git-touch)

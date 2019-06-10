@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/CaiJingLong/flutter_photo](http://github.com/CaiJingLong/flutter_photo)
-## [立即下载 ️⬇️ ](https://codeload.github.com/CaiJingLong/flutter_photo/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/CaiJingLong/flutter_photo/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter_photo.jpg)
@@ -178,3 +178,4 @@ or scan my alipay
 
 <img width="200px"  src="https://raw.githubusercontent.com/CaiJingLong/asset_for_picgo/master/20181228213953.png"/>
 
+## Github主页 👉[CaiJingLong/flutter_photo](http://github.com/CaiJingLong/flutter_photo)

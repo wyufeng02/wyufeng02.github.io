@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/matteocrippa/flutter-nfc-reader](http://github.com/matteocrippa/flutter-nfc-reader)
-## [立即下载 ️⬇️ ](https://codeload.github.com/matteocrippa/flutter-nfc-reader/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/matteocrippa/flutter-nfc-reader/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/nfc-flutter.jpg)
@@ -146,3 +146,4 @@ For help on editing plugin code, view the [documentation](https://flutter.io/dev
 Please take a quick look at the [contribution guidelines](https://github.com/matteocrippa/flutter-nfc-reader/blob/master/.github/CONTRIBUTING.md) first. If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. 
 Thank you to all [contributors](https://github.com/matteocrippa/flutter-nfc-reader/graphs/contributors)!!
 
+## Github主页 👉[matteocrippa/flutter-nfc-reader](http://github.com/matteocrippa/flutter-nfc-reader)

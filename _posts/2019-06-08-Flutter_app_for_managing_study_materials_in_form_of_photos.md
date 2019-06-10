@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  用于管理照片形式的学习材料的flutter应用程序
+title:  Flutter app for managing study materials in form of photos
 tag: Images
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/DimitarPetrov/study-snap](http://github.com/DimitarPetrov/study-snap)
-## [立即下载 ️⬇️ ](https://codeload.github.com/DimitarPetrov/study-snap/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/DimitarPetrov/study-snap/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Study-Snap.jpg)
  
 >
-> Study Snap是一个用Flutter编写的多平台移动应用程序。
+> Study Snap is a multi-platform mobile application written with Flutter.
 >
 
  
@@ -40,3 +40,4 @@ When a photo is uploaded to Study Snap it is free to be deleted from gallery, do
 
 <a href='https://play.google.com/store/apps/details?id=dnp.study_snap'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="170"/></a>
 
+## Github主页 👉[DimitarPetrov/study-snap](http://github.com/DimitarPetrov/study-snap)

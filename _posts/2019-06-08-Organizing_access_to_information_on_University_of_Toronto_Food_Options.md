@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/KyrelJerome/DeerFoods](http://github.com/KyrelJerome/DeerFoods)
-## [立即下载 ️⬇️ ](https://codeload.github.com/KyrelJerome/DeerFoods/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/KyrelJerome/DeerFoods/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/UofT-Foods-1.jpg)
@@ -54,3 +54,4 @@ A Flutter Mobile App designed to aid UofT Students and Staff easily find food op
 ## Disclaimer because I am just a student and do not want to be sued by a scary big budget UofT boogieman.
 We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with University of Toronto, or any of its subsidiaries or its affiliates. The official University of Toronto website can be found at https://www.utoronto.ca/ . The name “University of Toronto” as well as related names, marks, emblems and images are registered trademarks of University of Toronto. 
 
+## Github主页 👉[KyrelJerome/DeerFoods](http://github.com/KyrelJerome/DeerFoods)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用Flutter框架的Android基本文件管理应用程序
+title:  Basic file managing app for Android using Flutter framework
 tag: File Manager
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Eagle6789/basic_file_manager](http://github.com/Eagle6789/basic_file_manager)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Eagle6789/basic_file_manager/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Eagle6789/basic_file_manager/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/06/basic_file_manager.jpg)
  
 >
-> 一个使用Flutter框架管理Android设备上文件的简单应用程序。
+> A simple application for managing files on Android devices using Flutter framework.
 >
 
  
@@ -60,3 +60,4 @@ samples, guidance on mobile development, and a full API reference.
 <img src="https://raw.githubusercontent.com/Eagle6789/basic_file_manager/master/screenshots/all_dark.png?raw" alt="dark" width="600" height="600"/>
 <img src="https://raw.githubusercontent.com/Eagle6789/basic_file_manager/master/screenshots/all_white.png?raw" alt="light" width="600" height="600"/> 
 
+## Github主页 👉[Eagle6789/basic_file_manager](http://github.com/Eagle6789/basic_file_manager)

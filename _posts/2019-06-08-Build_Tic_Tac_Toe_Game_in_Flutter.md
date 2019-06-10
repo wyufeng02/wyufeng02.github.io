@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  在Flutter建立Tic Tac Toe游戏
+title:  
 tag: Games
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/iampawan/FlutterTicTacToe](http://github.com/iampawan/FlutterTicTacToe)
-## [立即下载 ️⬇️ ](https://codeload.github.com/iampawan/FlutterTicTacToe/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/iampawan/FlutterTicTacToe/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/Flutter-TicTacToe-Game.jpg)
  
 >
-> 打造传奇的Tic Tac Toe游戏。
+> 
 >
 
  
@@ -61,3 +61,4 @@ Build legendary Tic Tac Toe game in flutter.
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
+## Github主页 👉[iampawan/FlutterTicTacToe](http://github.com/iampawan/FlutterTicTacToe)

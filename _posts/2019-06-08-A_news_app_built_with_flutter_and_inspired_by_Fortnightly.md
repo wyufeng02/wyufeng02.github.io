@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/Salby/novum](http://github.com/Salby/novum)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Salby/novum/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Salby/novum/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/Novum.jpg)
@@ -38,3 +38,4 @@ Novum is powered by [newsapi.org](https://newsapi.org) for news articles and [ie
 
 You are very welcome to contribute to Novum with bug reports, code, or just spelling mistakes. I appreciate every contribution :raised_hands:
 
+## Github主页 👉[Salby/novum](http://github.com/Salby/novum)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter上的自定义Ranepa移动客户端
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/CoolONEOfficial/ranepa_timetable](http://github.com/CoolONEOfficial/ranepa_timetable)
-## [立即下载 ️⬇️ ](https://codeload.github.com/CoolONEOfficial/ranepa_timetable/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/CoolONEOfficial/ranepa_timetable/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/ranepa_timetable.jpg)
  
 >
-> 在Flutter上编写的自定义开源NRU RANEPA移动客户端。
+> 
 >
 
  
@@ -96,3 +96,4 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 
 [appstore-url]: https://itunes.apple.com/ru/app//id1454700217
 [playstore-url]: https://play.google.com/store/apps/details?id=ru.coolone.ranepatimetable
+## Github主页 👉[CoolONEOfficial/ranepa_timetable](http://github.com/CoolONEOfficial/ranepa_timetable)

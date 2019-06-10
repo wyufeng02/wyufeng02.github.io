@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/salmaanahmed/flutterCounter](http://github.com/salmaanahmed/flutterCounter)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/salmaanahmed/flutterCounter/zip/master) 
 
 
@@ -72,3 +72,4 @@ Pull requests are welcome! The best contributions will consist of substitutions 
 
 I would love to know if you are using Counter in your app, send an email to [Salmaan Ahmed](mailto:salmaan.ahmed@hotmail.com)
 
+## Github主页 👉[salmaanahmed/flutterCounter](http://github.com/salmaanahmed/flutterCounter)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  通过动画flutter圆底栏
+title:  Flutter circle bottom bar by animation
 tag: Circle, Bottom Bar
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/mehrtarh/animation_circle_bottom_bar](http://github.com/mehrtarh/animation_circle_bottom_bar)
-## [立即下载 ️⬇️ ](https://codeload.github.com/mehrtarh/animation_circle_bottom_bar/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/mehrtarh/animation_circle_bottom_bar/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Animation-circle-bottom-bar.jpg)
  
 >
-> 通过动画flutter圆底栏。
+> Flutter circle bottom bar by animation.
 >
 
  
@@ -71,3 +71,4 @@ bottomNavigationBar: CircularBottomNavigation(
         barShowLine: true,
       )
 ```
+## Github主页 👉[mehrtarh/animation_circle_bottom_bar](http://github.com/mehrtarh/animation_circle_bottom_bar)

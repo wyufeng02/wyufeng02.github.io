@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/dasmikko/flutterpunch](http://github.com/dasmikko/flutterpunch)
-## [立即下载 ️⬇️ ](https://codeload.github.com/dasmikko/flutterpunch/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/dasmikko/flutterpunch/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/news.jpg)
@@ -67,3 +67,4 @@ The app *should* work on iOS but, I still need a Macbook and iPhone to test/buil
 - [ ] Make thread
 - [x] Rate posts
 
+## Github主页 👉[dasmikko/flutterpunch](http://github.com/dasmikko/flutterpunch)

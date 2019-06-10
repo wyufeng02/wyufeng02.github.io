@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/sarbagyastha/flutter_tagging](http://github.com/sarbagyastha/flutter_tagging)
-## [立即下载 ️⬇️ ](https://codeload.github.com/sarbagyastha/flutter_tagging/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/sarbagyastha/flutter_tagging/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/Flutter-Tagging.jpg)
@@ -127,3 +127,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+## Github主页 👉[sarbagyastha/flutter_tagging](http://github.com/sarbagyastha/flutter_tagging)

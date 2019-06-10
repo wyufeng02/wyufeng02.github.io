@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter的蓝牙插件
+title:  
 tag: Bluetooth
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/pauldemarco/flutter_blue](http://github.com/pauldemarco/flutter_blue)
-## [立即下载 ️⬇️ ](https://codeload.github.com/pauldemarco/flutter_blue/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/pauldemarco/flutter_blue/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/flutter_blue.jpg)
  
 >
-> Flutter_Blue是Flutter的蓝牙插件，Flutter是一款新的移动SDK，可帮助开发人员为iOS和Android构建现代应用。
+> 
 >
 
  
@@ -139,3 +139,4 @@ device.onValueChanged(characteristic).listen((value) {
 Make sure the device is advertising which service UUID's it supports.  This is found in the advertisement
 packet as **UUID 16 bit complete list** or **UUID 128 bit complete list**.
 
+## Github主页 👉[pauldemarco/flutter_blue](http://github.com/pauldemarco/flutter_blue)

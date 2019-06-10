@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/TioCoding/flutter_navigation_dot_bar](http://github.com/TioCoding/flutter_navigation_dot_bar)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/TioCoding/flutter_navigation_dot_bar/zip/master) 
 
 
@@ -55,3 +55,4 @@ Scaffold(
 )
 ````
 
+## Github主页 👉[TioCoding/flutter_navigation_dot_bar](http://github.com/TioCoding/flutter_navigation_dot_bar)

@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/HJaliliani/flutter_web_view](http://github.com/HJaliliani/flutter_web_view)
-## [立即下载 ️⬇️ ](https://codeload.github.com/HJaliliani/flutter_web_view/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/HJaliliani/flutter_web_view/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/flutter_web_view.jpg)
@@ -54,3 +54,4 @@ https://click.ir
 </div>
 
 
+## Github主页 👉[HJaliliani/flutter_web_view](http://github.com/HJaliliani/flutter_web_view)

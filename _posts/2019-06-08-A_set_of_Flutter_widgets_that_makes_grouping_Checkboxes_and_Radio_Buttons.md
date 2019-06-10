@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/akshathjain/grouped_buttons](http://github.com/akshathjain/grouped_buttons)
-## [立即下载 ️⬇️ ](https://codeload.github.com/akshathjain/grouped_buttons/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/akshathjain/grouped_buttons/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/grouped_buttons.jpg)
@@ -147,3 +147,4 @@ There are several options that allow for more control.
 #### Screenshot
 <img width="250px" src="https://raw.githubusercontent.com/akshathjain/grouped_buttons/master/screenshots/customusagescreenshot.png" alt="Basic Usage"/>
 
+## Github主页 👉[akshathjain/grouped_buttons](http://github.com/akshathjain/grouped_buttons)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  我的Titanium Watch Tips应用程序的flutter版本
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/magnatronus/flutter-watchtips](http://github.com/magnatronus/flutter-watchtips)
-## [立即下载 ️⬇️ ](https://codeload.github.com/magnatronus/flutter-watchtips/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/magnatronus/flutter-watchtips/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/watchtips.png)
  
 >
-> 这是一个实验，看看是否可以使用Flutter构建带有watchOS应用程序的iOS应用程序。
+> 
 >
 
  
@@ -158,3 +158,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[magnatronus/flutter-watchtips](http://github.com/magnatronus/flutter-watchtips)

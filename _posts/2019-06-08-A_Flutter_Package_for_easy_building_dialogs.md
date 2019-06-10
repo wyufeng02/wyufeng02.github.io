@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/ricardonior29/easy_dialog](http://github.com/ricardonior29/easy_dialog)
-## [立即下载 ️⬇️ ](https://codeload.github.com/ricardonior29/easy_dialog/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/ricardonior29/easy_dialog/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/easy_dialog.jpg)
@@ -161,3 +161,4 @@ All customizable [attributes](https://pub.dartlang.org/documentation/easy_dialog
 For help getting started with Flutter, view our online [documentation](https://flutter.io/).
 
 For help on editing package code, view the [documentation](https://flutter.io/developing-packages/).
+## Github主页 👉[ricardonior29/easy_dialog](http://github.com/ricardonior29/easy_dialog)

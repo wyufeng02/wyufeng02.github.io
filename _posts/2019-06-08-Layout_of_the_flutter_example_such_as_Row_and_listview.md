@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter示例的布局，例如Row和listview
+title:  
 tag: Layout
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/nb312/flutter_layout](http://github.com/nb312/flutter_layout)
-## [立即下载 ️⬇️ ](https://codeload.github.com/nb312/flutter_layout/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/nb312/flutter_layout/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/flutter_layout.jpg)
  
 >
-> flutter示例的布局，如Row，Column，listview，仅供学习。
+> 
 >
 
  
@@ -63,3 +63,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+## Github主页 👉[nb312/flutter_layout](http://github.com/nb312/flutter_layout)

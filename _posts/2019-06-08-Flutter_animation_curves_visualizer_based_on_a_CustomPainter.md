@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/rxlabz/curves_painter](http://github.com/rxlabz/curves_painter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/rxlabz/curves_painter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/rxlabz/curves_painter/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Flutter-curves.jpg)
@@ -64,3 +64,4 @@ Flutter animation [curves](https://docs.flutter.io/flutter/animation/Curves-clas
 - Curves.elasticIn
 - Curves.elasticOut
 - Curves.elasticInOut
+## Github主页 👉[rxlabz/curves_painter](http://github.com/rxlabz/curves_painter)

@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/wingkwong/dart_tel_input](http://github.com/wingkwong/dart_tel_input)
-## [立即下载 ️⬇️ ](https://codeload.github.com/wingkwong/dart_tel_input/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/wingkwong/dart_tel_input/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/Dart-Tel-Input.jpg)
@@ -314,3 +314,4 @@ TelInput(
 |Zambia|zm|+260|
 |Zimbabwe|zw|+263|
 |Åland Islands|ax|+358|
+## Github主页 👉[wingkwong/dart_tel_input](http://github.com/wingkwong/dart_tel_input)

@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/bizz84/flight_co2_calculator_flutter](http://github.com/bizz84/flight_co2_calculator_flutter)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/bizz84/flight_co2_calculator_flutter/zip/master) 
 
 
@@ -88,3 +88,4 @@ FlightCalculationData _calculate(FlightDetails flightDetails) {
 See the sample Flight CO2 Calculator app bundled with the project in the `example` folder.
 
 ### [License: MIT](LICENSE)
+## Github主页 👉[bizz84/flight_co2_calculator_flutter](http://github.com/bizz84/flight_co2_calculator_flutter)

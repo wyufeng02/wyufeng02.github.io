@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  flutter材料主题编辑器
+title:  
 tag: Material Design
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/rxlabz/panache](http://github.com/rxlabz/panache)
-## [立即下载 ️⬇️ ](https://codeload.github.com/rxlabz/panache/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/rxlabz/panache/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/panache.jpg)
  
 >
-> Panache可帮助您为Flutter应用程序创建漂亮的Material主题。
+> 
 >
 
  
@@ -102,3 +102,4 @@ to configure Google signin and Google drive :
 For help getting started with Flutter, view our online
 [documentation](http://flutter.io/).
 
+## Github主页 👉[rxlabz/panache](http://github.com/rxlabz/panache)

@@ -7,7 +7,7 @@ date: 2019-06-08
 
  
 
-## [查看Github/zhaoya188/flutter_app](http://github.com/zhaoya188/flutter_app)
+
 ## [立即下载 ️⬇️ ](https://codeload.github.com/zhaoya188/flutter_app/zip/master) 
 
 
@@ -40,3 +40,4 @@ An exercise for flutter.
   <div><img width="782" height="595" src="https://github.com/zhaoya188/flutter_app/raw/master/screenshot/screenshot-native-embeded-flutter.png"/></div>
 
 - Other more
+## Github主页 👉[zhaoya188/flutter_app](http://github.com/zhaoya188/flutter_app)

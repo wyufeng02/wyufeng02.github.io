@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/GeekyAnts/flutter-carousel](http://github.com/GeekyAnts/flutter-carousel)
-## [立即下载 ️⬇️ ](https://codeload.github.com/GeekyAnts/flutter-carousel/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/GeekyAnts/flutter-carousel/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/flutter-carousel.jpg)
@@ -179,3 +179,4 @@ Feel free to Contribute!
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
 
+## Github主页 👉[GeekyAnts/flutter-carousel](http://github.com/GeekyAnts/flutter-carousel)

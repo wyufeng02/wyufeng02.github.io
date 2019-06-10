@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/apgapg/pie_chart](http://github.com/apgapg/pie_chart)
-## [立即下载 ️⬇️ ](https://codeload.github.com/apgapg/pie_chart/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/apgapg/pie_chart/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Pie-Chart.jpg)
@@ -95,3 +95,4 @@ PieChart(
 4. Push to the branch (git push origin my-new-feature)
 5. Create new Pull Request
 
+## Github主页 👉[apgapg/pie_chart](http://github.com/apgapg/pie_chart)

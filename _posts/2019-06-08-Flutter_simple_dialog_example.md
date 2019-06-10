@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/Oclemy/dialog](http://github.com/Oclemy/dialog)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Oclemy/dialog/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Oclemy/dialog/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/dialog.jpg)
@@ -36,3 +36,4 @@ Fork of [simple-dialog-flutter](https://github.com/inkubator-belajar/simple-dial
 
 - [Flutter documentation](https://flutter.io/).
 
+## Github主页 👉[Oclemy/dialog](http://github.com/Oclemy/dialog)

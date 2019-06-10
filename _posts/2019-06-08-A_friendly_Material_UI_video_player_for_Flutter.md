@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Flutter的友好Material UI视频播放器
+title:  
 tag: Video
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/brianegan/chewie](http://github.com/brianegan/chewie)
-## [立即下载 ️⬇️ ](https://codeload.github.com/brianegan/chewie/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/brianegan/chewie/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/chewie.jpg)
  
 >
-> video_player插件提供对视频播放的低级访问。
+> 
 >
 
  
@@ -148,3 +148,4 @@ dc;,'...';c,,:c:::'c:';cldoo;:odolxoc:.,o:oldlxol;lddl,.,lkO0KdlcckKO
 ...........'......'...',..'';,'..'.....................',';,..'....'.
 ```
 
+## Github主页 👉[brianegan/chewie](http://github.com/brianegan/chewie)

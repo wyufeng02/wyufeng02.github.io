@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/hitherejoe/Voice](http://github.com/hitherejoe/Voice)
-## [立即下载 ️⬇️ ](https://codeload.github.com/hitherejoe/Voice/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/hitherejoe/Voice/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/Voice.jpg)
@@ -32,3 +32,4 @@ Whilst data is still being collated for display in the app, you can download the
 and from the App Store here:
 
 (currently under review)
+## Github主页 👉[hitherejoe/Voice](http://github.com/hitherejoe/Voice)

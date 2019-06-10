@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  flutter的波斯语（波斯语）日期选择器
+title:  
 tag: Calendar, Picker, Datepicker
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Ali-Azmoud/persian_datepicker](http://github.com/Ali-Azmoud/persian_datepicker)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Ali-Azmoud/persian_datepicker/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Ali-Azmoud/persian_datepicker/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/ersian_datepicker.jpg)
  
 >
-> flutter的波斯语（波斯语）日期选择器。
+> 
 >
 
  
@@ -421,3 +421,4 @@ in order to update these options programmatically you can use `update` method, l
 ### Examples
 You can find the full example in the Git Repository, example directory
 
+## Github主页 👉[Ali-Azmoud/persian_datepicker](http://github.com/Ali-Azmoud/persian_datepicker)

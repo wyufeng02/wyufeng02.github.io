@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个用于github客户端的新Flutter应用程序
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Anmol92verma/FlutterGithubClient](http://github.com/Anmol92verma/FlutterGithubClient)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Anmol92verma/FlutterGithubClient/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Anmol92verma/FlutterGithubClient/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/FLutter-Github-Client.jpg)
  
 >
-> 一个用于github客户端的新Flutter应用程序。
+> 
 >
 
  
@@ -64,3 +64,4 @@ POST https://github.com/login/oauth/access_token
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details
 
+## Github主页 👉[Anmol92verma/FlutterGithubClient](http://github.com/Anmol92verma/FlutterGithubClient)

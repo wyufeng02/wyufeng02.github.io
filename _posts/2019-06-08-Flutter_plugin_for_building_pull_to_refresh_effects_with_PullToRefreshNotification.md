@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/fluttercandies/pull_to_refresh_notification](http://github.com/fluttercandies/pull_to_refresh_notification)
-## [立即下载 ️⬇️ ](https://codeload.github.com/fluttercandies/pull_to_refresh_notification/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/fluttercandies/pull_to_refresh_notification/zip/master) 
+<p-2> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/pull_to_refresh_notification.gif)
@@ -313,3 +313,4 @@ build zoom image to pull to refresh with using PullToRefreshContainer.
 ```
 
 Please see the example app of this for a full example.
+## Github主页 👉[fluttercandies/pull_to_refresh_notification](http://github.com/fluttercandies/pull_to_refresh_notification)

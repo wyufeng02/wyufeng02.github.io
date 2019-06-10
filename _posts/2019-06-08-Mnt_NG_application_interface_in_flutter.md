@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Mnt NG应用程序界面在flutter
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/nginformatica/mnt-ng-flutter](http://github.com/nginformatica/mnt-ng-flutter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/nginformatica/mnt-ng-flutter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/nginformatica/mnt-ng-flutter/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/mntng.jpg)
  
 >
-> 这个项目只是Mnt Ng接口，这里展示的所有数据都是假的。
+> 
 >
 
  
@@ -43,3 +43,4 @@ Service orders screen:
  <img src="https://github.com/nginformatica/mnt-ng-flutter/blob/master/screenshots/original.jpg" alt="Original" height="500" />
 </p>
 
+## Github主页 👉[nginformatica/mnt-ng-flutter](http://github.com/nginformatica/mnt-ng-flutter)

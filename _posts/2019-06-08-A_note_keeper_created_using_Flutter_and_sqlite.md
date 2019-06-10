@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/ElmouradiAmine/note_keeper](http://github.com/ElmouradiAmine/note_keeper)
-## [立即下载 ️⬇️ ](https://codeload.github.com/ElmouradiAmine/note_keeper/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/ElmouradiAmine/note_keeper/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/note_keeperx.jpg)
@@ -38,3 +38,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[ElmouradiAmine/note_keeper](http://github.com/ElmouradiAmine/note_keeper)

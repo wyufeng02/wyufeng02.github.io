@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用flutter创建的家具应用仪表板代码
+title:  
 tag: UI
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/rajayogan/flutterui-furnitureapp](http://github.com/rajayogan/flutterui-furnitureapp)
-## [立即下载 ️⬇️ ](https://codeload.github.com/rajayogan/flutterui-furnitureapp/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/rajayogan/flutterui-furnitureapp/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Furniture-app-using-Flutter.jpg)
  
 >
-> 使用Flutter的家具应用程序的屏幕设计。
+> 
 >
 
  
@@ -31,3 +31,4 @@ Screenshots
 
 ![screenshot_20181203-232850](https://user-images.githubusercontent.com/8137504/49392298-09e33980-f754-11e8-9fc2-7cd12b62e604.png)
 
+## Github主页 👉[rajayogan/flutterui-furnitureapp](http://github.com/rajayogan/flutterui-furnitureapp)

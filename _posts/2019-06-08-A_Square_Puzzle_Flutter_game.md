@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  Square Puzzle Flutter游戏
-tag: 
+title:  A Square Puzzle Flutter game
+tag: Games
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/GLodi/squazzle](http://github.com/GLodi/squazzle)
-## [立即下载 ️⬇️ ](https://codeload.github.com/GLodi/squazzle/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/GLodi/squazzle/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/06/squazzle-1.jpg)
  
 >
-> 这个应用程序实现了Didier Boelens的BLoC方法。
+> This app implements Didier Boelens' approach to BLoC. The idea is to show data through widgets that react to a bloc's Stream.
 >
 
  
@@ -47,3 +47,4 @@ blocs that emit a new widget's state based on an event.
 Multiplayer is handled by Firebase. You can find the Firebase project under the directory functions. 
 Still under development, but you can copy it into your Firebase project and give it a try.
 
+## Github主页 👉[GLodi/squazzle](http://github.com/GLodi/squazzle)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  DroidKaigi 2018东京的非官方会议应用程序
+title:  
 tag: Apps, Communication
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/konifar/droidkaigi2018-flutter](http://github.com/konifar/droidkaigi2018-flutter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/konifar/droidkaigi2018-flutter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/konifar/droidkaigi2018-flutter/zip/master) 
+<p-8> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/droidkaigi2018-flutterv-1.jpg)
  
 >
-> DroidKaigi 2018是2018年2月8日和9日为开发人员量身定制的会议。
+> 
 >
 
  
@@ -85,3 +85,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+## Github主页 👉[konifar/droidkaigi2018-flutter](http://github.com/konifar/droidkaigi2018-flutter)

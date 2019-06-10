@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/xieweizhi/tubi_tv_flutter](http://github.com/xieweizhi/tubi_tv_flutter)
-## [立即下载 ️⬇️ ](https://codeload.github.com/xieweizhi/tubi_tv_flutter/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/xieweizhi/tubi_tv_flutter/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/flutter_tubi-1.jpg)
@@ -45,3 +45,4 @@ Andoird:
     <img src="https://github.com/xieweizhi/tubi_tv_flutter/blob/master/screenshot/android/video_player.jpg?raw=true" height="300px" alt="video player" />
 </div>
 
+## Github主页 👉[xieweizhi/tubi_tv_flutter](http://github.com/xieweizhi/tubi_tv_flutter)

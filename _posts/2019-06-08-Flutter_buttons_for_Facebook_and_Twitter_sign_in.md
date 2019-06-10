@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/dmjones/flutter_auth_buttons](http://github.com/dmjones/flutter_auth_buttons)
-## [立即下载 ️⬇️ ](https://codeload.github.com/dmjones/flutter_auth_buttons/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/dmjones/flutter_auth_buttons/zip/master) 
+<p-4> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/flutter_auth_buttons.jpg)
@@ -63,3 +63,4 @@ TwitterSignInButton(
 
 See the documentation for API details: https://pub.dartlang.org/documentation/flutter_auth_buttons/latest/.
 
+## Github主页 👉[dmjones/flutter_auth_buttons](http://github.com/dmjones/flutter_auth_buttons)

@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/fadhly-permata/flutter_moneytextfieldform](http://github.com/fadhly-permata/flutter_moneytextfieldform)
-## [立即下载 ️⬇️ ](https://codeload.github.com/fadhly-permata/flutter_moneytextfieldform/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/fadhly-permata/flutter_moneytextfieldform/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/flutter_moneytextfieldform.jpg)
@@ -236,3 +236,4 @@ The views and conclusions contained in the software and documentation are those
 of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of the MoneyTextFormField project.
 ```
+## Github主页 👉[fadhly-permata/flutter_moneytextfieldform](http://github.com/fadhly-permata/flutter_moneytextfieldform)

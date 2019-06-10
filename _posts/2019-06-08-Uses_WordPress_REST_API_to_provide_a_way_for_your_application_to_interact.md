@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/dreamsoftin/flutter_wordpress](http://github.com/dreamsoftin/flutter_wordpress)
-## [立即下载 ️⬇️ ](https://codeload.github.com/dreamsoftin/flutter_wordpress/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/dreamsoftin/flutter_wordpress/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Flutter-Wordpress.jpg)
@@ -166,3 +166,4 @@ void postComment(wp.User user, wp.Post post) {
 ## Future Work
 1. Implementing OAuth 2.0 authentication.
 
+## Github主页 👉[dreamsoftin/flutter_wordpress](http://github.com/dreamsoftin/flutter_wordpress)

@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个Flutter包，用于轻松实现Material Design导航过渡
+title:  A Flutter package for easily implementing Material Design navigation transitions
 tag: Navigation, Material Design
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Salby/morpheus](http://github.com/Salby/morpheus)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Salby/morpheus/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Salby/morpheus/zip/master) 
+<p-1> 
 
  
 ![](https://flutterawesome.com/content/images/2019/05/morpheus.gif)
  
 >
-> 一个Flutter包，用于轻松实现Material Design导航过渡。
+> A Flutter package for easily implementing Material Design navigation transitions.
 >
 
  
@@ -119,3 +119,4 @@ class _MyTabScreenState extends State<MyTabScreen> {
 }
 ```
 
+## Github主页 👉[Salby/morpheus](http://github.com/Salby/morpheus)

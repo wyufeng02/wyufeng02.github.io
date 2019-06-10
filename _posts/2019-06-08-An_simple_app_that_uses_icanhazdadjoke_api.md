@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个使用icanhazdadjoke api的简单应用程序
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/parth181195/bad-dad-joke](http://github.com/parth181195/bad-dad-joke)
-## [立即下载 ️⬇️ ](https://codeload.github.com/parth181195/bad-dad-joke/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/parth181195/bad-dad-joke/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/Bad-Dad-Joke.jpg)
  
 >
-> 使用icanhazdadjoke API的Flutter应用程序
+> 
 >
 
  
@@ -40,3 +40,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[parth181195/bad-dad-joke](http://github.com/parth181195/bad-dad-joke)

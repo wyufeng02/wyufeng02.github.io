@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个Flutter包，允许开发人员实现圆形配置文件头像
+title:  
 tag: Images, Avatar
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/ch-muhammad-adil/flutter-circular_profile_avatar](http://github.com/ch-muhammad-adil/flutter-circular_profile_avatar)
-## [立即下载 ️⬇️ ](https://codeload.github.com/ch-muhammad-adil/flutter-circular_profile_avatar/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/ch-muhammad-adil/flutter-circular_profile_avatar/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2018/12/circular_profile_avatarC.jpg)
  
 >
-> 圆形轮廓头像是一个Flutter包，允许开发人员实现带边框的圆形轮廓头像
+> 
 >
 
  
@@ -76,3 +76,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[ch-muhammad-adil/flutter-circular_profile_avatar](http://github.com/ch-muhammad-adil/flutter-circular_profile_avatar)

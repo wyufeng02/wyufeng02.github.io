@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/jonasbark/flutter_stripe_payment](http://github.com/jonasbark/flutter_stripe_payment)
-## [立即下载 ️⬇️ ](https://codeload.github.com/jonasbark/flutter_stripe_payment/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/jonasbark/flutter_stripe_payment/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/stripe_payment.jpg)
@@ -58,3 +58,4 @@ StripeSource.addSource().then((String token) {
 - [ ] internationalization
 - [ ] more stripe library implementations?
 
+## Github主页 👉[jonasbark/flutter_stripe_payment](http://github.com/jonasbark/flutter_stripe_payment)

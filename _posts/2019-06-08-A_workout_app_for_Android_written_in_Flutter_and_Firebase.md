@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/Crazywater/knuffiworkout](http://github.com/Crazywater/knuffiworkout)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Crazywater/knuffiworkout/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Crazywater/knuffiworkout/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/Knuffiworkout.jpg)
@@ -74,3 +74,4 @@ Instructions can be found on the [Flutter homepage](https://flutter.io/android-r
 ## Feature wishlist
 * Presets for other popular workouts (5x5, Starting Strength, ...)
 
+## Github主页 👉[Crazywater/knuffiworkout](http://github.com/Crazywater/knuffiworkout)

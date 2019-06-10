@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/hanmajid/flutter_whatsapp](http://github.com/hanmajid/flutter_whatsapp)
-## [立即下载 ️⬇️ ](https://codeload.github.com/hanmajid/flutter_whatsapp/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/hanmajid/flutter_whatsapp/zip/master) 
+<p-3> 
 
  
 ![](https://flutterawesome.com/content/images/2019/04/6flutter_whatsapp.jpg)
@@ -64,3 +64,4 @@ I made this for my study/exercise on Flutter. I only make the client-side app, t
     * Make an intent to open Contacts app on Android.
     * Make an intent to open an email app to invite friends.
 
+## Github主页 👉[hanmajid/flutter_whatsapp](http://github.com/hanmajid/flutter_whatsapp)

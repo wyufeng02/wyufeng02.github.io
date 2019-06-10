@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  使用iOS版嵌入式Watchkit应用程序的Flutter App
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/magnatronus/flutter-watchtips](http://github.com/magnatronus/flutter-watchtips)
-## [立即下载 ️⬇️ ](https://codeload.github.com/magnatronus/flutter-watchtips/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/magnatronus/flutter-watchtips/zip/master) 
+<p-7> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/watchtips-1.png)
  
 >
-> Watch提示项目已再次更新，界面已经整理，并且已添加并显示了提示成本的单独值（请求的更新）。
+> 
 >
 
  
@@ -158,3 +158,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+## Github主页 👉[magnatronus/flutter-watchtips](http://github.com/magnatronus/flutter-watchtips)

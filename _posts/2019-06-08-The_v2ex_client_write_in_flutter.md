@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  v2ex客户端写入flutter
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/w4mxl/V2LF](http://github.com/w4mxl/V2LF)
-## [立即下载 ️⬇️ ](https://codeload.github.com/w4mxl/V2LF/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/w4mxl/V2LF/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/V2LF.jpg)
  
 >
-> V2LF是一个v2ex非官方app.'V2LF'意味着'爱的方式'。
+> 
 >
 
  
@@ -84,3 +84,4 @@ Please pay attention to the project progress in [trello](https://trello.com/b/YP
 
 [GPL v3.0 License](https://www.wikiwand.com/zh/GNU%E9%80%9A%E7%94%A8%E5%85%AC%E5%85%B1%E8%AE%B8%E5%8F%AF%E8%AF%81)
 
+## Github主页 👉[w4mxl/V2LF](http://github.com/w4mxl/V2LF)

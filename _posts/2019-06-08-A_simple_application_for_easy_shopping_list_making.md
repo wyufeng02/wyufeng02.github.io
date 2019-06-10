@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  一个简单的应用程序，便于购物清单制作
+title:  
 tag: Apps
 date: 2019-06-08
 ---
 
  
 
-## [查看Github/Albert221/FastShopping](http://github.com/Albert221/FastShopping)
-## [立即下载 ️⬇️ ](https://codeload.github.com/Albert221/FastShopping/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/Albert221/FastShopping/zip/master) 
+<p-9> 
 
  
 ![](https://flutterawesome.com/content/images/2019/01/FastShopping.jpg)
  
 >
-> 快速购物是一个简单的应用程序，方便购物清单制作，适合每个人。
+> 
 >
 
  
@@ -69,3 +69,4 @@ flutter pub pub run intl_translation:generate_from_arb --output-dir=lib/l10n \
     lib/localization.dart lib/l10n/intl_*.arb --no-use-deferred-loading
 ```
 
+## Github主页 👉[Albert221/FastShopping](http://github.com/Albert221/FastShopping)

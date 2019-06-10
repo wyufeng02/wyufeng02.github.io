@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/bapspatil/kut_in](http://github.com/bapspatil/kut_in)
-## [立即下载 ️⬇️ ](https://codeload.github.com/bapspatil/kut_in/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/bapspatil/kut_in/zip/master) 
+<p-5> 
 
  
 ![](https://flutterawesome.com/content/images/2019/03/kut_in.jpg)
@@ -66,3 +66,4 @@ https://bapspatil.com
     See the License for the specific language governing permissions and
     limitations under the License.
 
+## Github主页 👉[bapspatil/kut_in](http://github.com/bapspatil/kut_in)

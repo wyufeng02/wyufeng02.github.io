@@ -7,9 +7,9 @@ date: 2019-06-08
 
  
 
-## [查看Github/solid-software/flutter_vlc_player](http://github.com/solid-software/flutter_vlc_player)
-## [立即下载 ️⬇️ ](https://codeload.github.com/solid-software/flutter_vlc_player/zip/master) 
 
+## [立即下载 ️⬇️ ](https://codeload.github.com/solid-software/flutter_vlc_player/zip/master) 
+<p-6> 
 
  
 ![](https://flutterawesome.com/content/images/2019/02/imgpsh_mobile.jpg)
@@ -70,3 +70,4 @@ Uint8List image = await controller.makeSnapshot();
 Current issues list [is here](https://github.com/solid-software/flutter_vlc_player/issues).   
 Found a bug? [Open the issue](https://github.com/solid-software/flutter_vlc_player/issues/new).
 
+## Github主页 👉[solid-software/flutter_vlc_player](http://github.com/solid-software/flutter_vlc_player)

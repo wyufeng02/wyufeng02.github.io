@@ -1,11 +1,16 @@
 ---
 layout: post
-title:  python开源项目排行榜
+title:  python开源项目排行榜 (06-10)
 tag: python 排行榜
-date: 2019-06-06
+date: 2019-06-10
+categories:
+- rank
 ---
 
-#python开源项目排行榜
+#python开源项目排行榜 (06-10)
+
+![python开源项目排行榜](https://code4flutter.com/assets/images/rank/python.png)
+
 
 ## 1. [tensorflow/tensorflow](http://github.com/tensorflow/tensorflow)  ♥️ 129k
          
@@ -22,22 +27,22 @@ date: 2019-06-06
 > A curated list of awesome Python frameworks, libraries, software and resources
        
 
-## 4. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 65.5k
+## 4. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 65.8k
          
-> 📚 Basic Knowledge of Technical Interview（技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计）
+> 📚 技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计
        
 
-## 5. [donnemartin/system-design-primer](http://github.com/donnemartin/system-design-primer)  ♥️ 64.3k
+## 5. [donnemartin/system-design-primer](http://github.com/donnemartin/system-design-primer)  ♥️ 64.4k
          
 > Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.
        
 
-## 6. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 50.9k
+## 6. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 51k
          
 > 📚 免费的计算机编程类中文书籍，欢迎投稿
        
 
-## 7. [TheAlgorithms/Python](http://github.com/TheAlgorithms/Python)  ♥️ 45.1k
+## 7. [TheAlgorithms/Python](http://github.com/TheAlgorithms/Python)  ♥️ 45.3k
          
 > All Algorithms implemented in Python
  
@@ -52,60 +57,60 @@ date: 2019-06-06
 > Magnificent app which corrects your previous console command.
        
 
-## 10. [django/django](http://github.com/django/django)  ♥️ 42k
+## 10. [django/django](http://github.com/django/django)  ♥️ 42.1k
          
 > The Web framework for perfectionists with deadlines.
        
 
 
-## 11. [jackfrued/Python-100-Days](http://github.com/jackfrued/Python-100-Days)  ♥️ 39.6k
+## 11. [jakubroztocil/httpie](http://github.com/jakubroztocil/httpie)  ♥️ 41.8k
+         
+> As easy as httpie /aitch-tee-tee-pie/ 🥧 Modern command line HTTP client – user-friendly curl alternative with intuiti…
+       
+
+## 12. [keras-team/keras](http://github.com/keras-team/keras)  ♥️ 41.8k
+         
+> Deep Learning for humans
+       
+
+## 13. [jackfrued/Python-100-Days](http://github.com/jackfrued/Python-100-Days)  ♥️ 40.2k
          
 > Python - 100天从新手到大师
        
 
-## 12. [kennethreitz/requests](http://github.com/kennethreitz/requests)  ♥️ 38.9k
+## 14. [kennethreitz/requests](http://github.com/kennethreitz/requests)  ♥️ 38.9k
          
 > Python HTTP Requests for Humans™ ✨🍰✨
  
 
-## 13. [ansible/ansible](http://github.com/ansible/ansible)  ♥️ 37.6k
+## 15. [ansible/ansible](http://github.com/ansible/ansible)  ♥️ 37.6k
          
 > Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid…
        
 
-## 14. [scrapy/scrapy](http://github.com/scrapy/scrapy)  ♥️ 33.1k
+## 16. [scikit-learn/scikit-learn](http://github.com/scikit-learn/scikit-learn)  ♥️ 35.5k
          
-> Scrapy, a fast high-level web crawling & scraping framework for Python.
-       
+> scikit-learn: machine learning in Python
+ 
 
-## 15. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 32k
+## 17. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 32k
          
 > TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)
        
 
-## 16. [blueimp/jQuery-File-Upload](http://github.com/blueimp/jQuery-File-Upload)  ♥️ 30k
+## 18. [blueimp/jQuery-File-Upload](http://github.com/blueimp/jQuery-File-Upload)  ♥️ 30k
          
 > File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audi…
        
 
-## 17. [pytorch/pytorch](http://github.com/pytorch/pytorch)  ♥️ 28.8k
+## 19. [pytorch/pytorch](http://github.com/pytorch/pytorch)  ♥️ 28.8k
          
 > Tensors and Dynamic neural networks in Python with strong GPU acceleration
        
 
-## 18. [certbot/certbot](http://github.com/certbot/certbot)  ♥️ 25.2k
+## 20. [certbot/certbot](http://github.com/certbot/certbot)  ♥️ 25.2k
          
 > Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. It can al…
-       
-
-## 19. [python/cpython](http://github.com/python/cpython)  ♥️ 24.8k
-         
-> The Python programming language
-       
-
-## 20. [home-assistant/home-assistant](http://github.com/home-assistant/home-assistant)  ♥️ 24.1k
-         
-> 🏡 Open source home automation that puts local control and privacy first
        
 
 
@@ -119,7 +124,7 @@ date: 2019-06-06
 > The Python programming language
        
 
-## 23. [ageitgey/face_recognition](http://github.com/ageitgey/face_recognition)  ♥️ 24.6k
+## 23. [ageitgey/face_recognition](http://github.com/ageitgey/face_recognition)  ♥️ 24.7k
          
 > The world's simplest facial recognition api for Python and the command line
        
@@ -129,7 +134,7 @@ date: 2019-06-06
 > 🏡 Open source home automation that puts local control and privacy first
        
 
-## 25. [imhuay/Algorithm_Interview_Notes-Chinese](http://github.com/imhuay/Algorithm_Interview_Notes-Chinese)  ♥️ 23.7k
+## 25. [imhuay/Algorithm_Interview_Notes-Chinese](http://github.com/imhuay/Algorithm_Interview_Notes-Chinese)  ♥️ 23.8k
          
 > 2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记
        
@@ -139,7 +144,7 @@ date: 2019-06-06
 > 100 Days of ML Coding
        
 
-## 27. [tuvtran/project-based-learning](http://github.com/tuvtran/project-based-learning)  ♥️ 21.7k
+## 27. [tuvtran/project-based-learning](http://github.com/tuvtran/project-based-learning)  ♥️ 21.8k
          
 > Curated list of project-based tutorials
        
@@ -160,54 +165,54 @@ date: 2019-06-06
        
 
 
-## 31. [apachecn/AiLearning](http://github.com/apachecn/AiLearning)  ♥️ 15k
+## 31. [realpython/python-guide](http://github.com/realpython/python-guide)  ♥️ 18.3k
          
-> AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP
+> Python best practices guidebook, written for humans. 
        
 
-## 32. [satwikkansal/wtfpython](http://github.com/satwikkansal/wtfpython)  ♥️ 14.7k
+## 32. [GokuMohandas/practicalAI](http://github.com/GokuMohandas/practicalAI)  ♥️ 18.3k
          
-> A collection of surprising Python snippets and lesser-known features.
+> 📚 A practical approach to learning and using machine learning.
        
 
-## 33. [SeleniumHQ/selenium](http://github.com/SeleniumHQ/selenium)  ♥️ 14.6k
+## 33. [jakevdp/PythonDataScienceHandbook](http://github.com/jakevdp/PythonDataScienceHandbook)  ♥️ 18.3k
          
-> A browser automation framework and ecosystem.
+> Python Data Science Handbook: full text in Jupyter Notebooks
        
 
-## 34. [sqlmapproject/sqlmap](http://github.com/sqlmapproject/sqlmap)  ♥️ 14.4k
+## 34. [CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers](http://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)  ♥️ 18.1k
          
-> Automatic SQL injection and database takeover tool
+> aka "Bayesian Methods for Hackers": An introduction to Bayesian methods + probabilistic programming with a computatio…
        
 
-## 35. [lukasz-madon/awesome-remote-job](http://github.com/lukasz-madon/awesome-remote-job)  ♥️ 14.3k
+## 35. [tornadoweb/tornado](http://github.com/tornadoweb/tornado)  ♥️ 17.8k
          
-> A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python
- 
-
-## 36. [google/python-fire](http://github.com/google/python-fire)  ♥️ 14.2k
-         
-> Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object.
+> Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
        
 
-## 37. [fastai/fastai](http://github.com/fastai/fastai)  ♥️ 14k
+## 36. [serhii-londar/open-source-mac-os-apps](http://github.com/serhii-londar/open-source-mac-os-apps)  ♥️ 17.3k
          
-> The fastai deep learning library, plus lessons and tutorials
+> 🚀 Awesome list of open source applications for macOS.
        
 
-## 38. [odoo/odoo](http://github.com/odoo/odoo)  ♥️ 13.9k
+## 37. [donnemartin/interactive-coding-challenges](http://github.com/donnemartin/interactive-coding-challenges)  ♥️ 17.3k
          
-> Odoo. Open Source Apps To Grow Your Business.
+> 120+ interactive Python coding interview challenges (algorithms and data structures). Includes Anki flashcards.
        
 
-## 39. [wangshub/wechat_jump_game](http://github.com/wangshub/wechat_jump_game)  ♥️ 13.9k
+## 38. [pypa/pipenv](http://github.com/pypa/pipenv)  ♥️ 17.2k
          
-> 微信《跳一跳》Python 辅助
+> Python Development Workflow for Humans.
        
 
-## 40. [ipython/ipython](http://github.com/ipython/ipython)  ♥️ 13.6k
+## 39. [apache/incubator-mxnet](http://github.com/apache/incubator-mxnet)  ♥️ 17.1k
          
-> Official repository for IPython itself. Other repos in the IPython organization contain things like the website, docu…
+> Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler;…
+       
+
+## 40. [docker/compose](http://github.com/docker/compose)  ♥️ 16.3k
+         
+> Define and run multi-container applications with Docker
        
 
 
@@ -241,28 +246,28 @@ date: 2019-06-06
 > A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python …
        
 
-## 47. [jobbole/awesome-python-cn](http://github.com/jobbole/awesome-python-cn)  ♥️ 15.1k
+## 47. [jobbole/awesome-python-cn](http://github.com/jobbole/awesome-python-cn)  ♥️ 15.2k
          
 > Python资源大全中文版，包括：Web框架、网络爬虫、模板引擎、数据库、数据可视化、图片处理等，由伯乐在线持续更新。
        
 
-## 48. [keon/algorithms](http://github.com/keon/algorithms)  ♥️ 15.1k
+## 48. [keon/algorithms](http://github.com/keon/algorithms)  ♥️ 15.2k
          
 > Minimal examples of data structures and algorithms in Python
  
 
-## 49. [reddit-archive/reddit](http://github.com/reddit-archive/reddit)  ♥️ 15k
-         
-> historical code from reddit.com
-       
-
-## 50. [apachecn/AiLearning](http://github.com/apachecn/AiLearning)  ♥️ 15k
+## 49. [apachecn/AiLearning](http://github.com/apachecn/AiLearning)  ♥️ 15.1k
          
 > AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP
        
 
+## 50. [reddit-archive/reddit](http://github.com/reddit-archive/reddit)  ♥️ 15k
+         
+> historical code from reddit.com
+       
 
-## 51. [satwikkansal/wtfpython](http://github.com/satwikkansal/wtfpython)  ♥️ 14.7k
+
+## 51. [satwikkansal/wtfpython](http://github.com/satwikkansal/wtfpython)  ♥️ 14.8k
          
 > A collection of surprising Python snippets and lesser-known features.
        
@@ -338,9 +343,9 @@ date: 2019-06-06
 > A Powerful Spider(Web Crawler) System in Python.
        
 
-## 66. [521xueweihan/HelloGitHub](http://github.com/521xueweihan/HelloGitHub)  ♥️ 12.9k
+## 66. [521xueweihan/HelloGitHub](http://github.com/521xueweihan/HelloGitHub)  ♥️ 13k
          
-> 一个分享 GitHub 上有趣、入门级的开源项目。让你找到编程的乐趣，欢迎推荐、自荐项目「每月28号更新」
+> 分享 GitHub 上有趣、入门级的开源项目「每月28号更新」
        
 
 ## 67. [getredash/redash](http://github.com/getredash/redash)  ♥️ 12.8k
@@ -394,14 +399,14 @@ date: 2019-06-06
 > 100-Days-Of-ML-Code中文版
        
 
-## 77. [fabric/fabric](http://github.com/fabric/fabric)  ♥️ 11.3k
-         
-> Simple, Pythonic remote execution and deployment.
-       
-
-## 78. [cool-RR/PySnooper](http://github.com/cool-RR/PySnooper)  ♥️ 11.3k
+## 77. [cool-RR/PySnooper](http://github.com/cool-RR/PySnooper)  ♥️ 11.4k
          
 > Never use print for debugging again
+       
+
+## 78. [fabric/fabric](http://github.com/fabric/fabric)  ♥️ 11.3k
+         
+> Simple, Pythonic remote execution and deployment.
        
 
 ## 79. [ccxt/ccxt](http://github.com/ccxt/ccxt)  ♥️ 11k
@@ -506,7 +511,7 @@ date: 2019-06-06
 > Interactive Web Plotting for Python
  
 
-## 99. [dianping/cat](http://github.com/dianping/cat)  ♥️ 9.4k
+## 99. [dianping/cat](http://github.com/dianping/cat)  ♥️ 9.5k
          
 > CAT 作为服务端项目基础组件，提供了 Java, C/C++, Node.js, Python, Go 等多语言客户端，已经在美团点评的基础架构中间件框架（MVC框架，RPC框架，数据库框架，缓存框架等，消息队列，配置系统等）深度集…
        

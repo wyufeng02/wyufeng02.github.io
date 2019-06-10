@@ -1,18 +1,23 @@
 ---
 layout: post
-title:  Android开源项目排行榜
+title:  Android开源项目排行榜 (06-10)
 tag: Android 排行榜
-date: 2019-06-06
+date: 2019-06-10
+categories:
+- rank
 ---
 
-#Android开源项目排行榜
+#Android开源项目排行榜 (06-10)
 
-## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 66.5k
+![Android开源项目排行榜](https://code4flutter.com/assets/images/rank/Android.png)
+
+
+## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 66.6k
          
 > Flutter makes it easy and fast to build beautiful mobile apps.
        
 
-## 2. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 50.9k
+## 2. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 51k
          
 > 📚 免费的计算机编程类中文书籍，欢迎投稿
        
@@ -58,58 +63,58 @@ date: 2019-06-06
        
 
 
-## 11. [bumptech/glide](http://github.com/bumptech/glide)  ♥️ 26.2k
-         
-> An image loading and caching library for Android focused on smooth scrolling
-       
-
-## 12. [airbnb/lottie-android](http://github.com/airbnb/lottie-android)  ♥️ 25.7k
-         
-> Render After Effects animations natively on Android and iOS, Web, and React Native
-       
-
-## 13. [fastlane/fastlane](http://github.com/fastlane/fastlane)  ♥️ 25.6k
-         
-> 🚀 The easiest way to automate building and releasing your iOS and Android apps
-       
-
-## 14. [codepath/android_guides](http://github.com/codepath/android_guides)  ♥️ 25.5k
-         
-> Extensive Open-Source Guides for Android Developers
-       
-
-## 15. [shadowsocks/shadowsocks-android](http://github.com/shadowsocks/shadowsocks-android)  ♥️ 24k
-         
-> A shadowsocks client for Android
- 
-
-## 16. [JakeWharton/butterknife](http://github.com/JakeWharton/butterknife)  ♥️ 24k
+## 11. [JakeWharton/butterknife](http://github.com/JakeWharton/butterknife)  ♥️ 24k
          
 > Bind Android views and callbacks to fields and methods.
        
 
-## 17. [Blankj/AndroidUtilCode](http://github.com/Blankj/AndroidUtilCode)  ♥️ 23.6k
+## 12. [Blankj/AndroidUtilCode](http://github.com/Blankj/AndroidUtilCode)  ♥️ 23.6k
          
 > 🔥 Android developers should collect the following utils(updating).
        
 
-## 18. [bilibili/ijkplayer](http://github.com/bilibili/ijkplayer)  ♥️ 23.5k
+## 13. [bilibili/ijkplayer](http://github.com/bilibili/ijkplayer)  ♥️ 23.6k
          
 > Android/iOS video player based on FFmpeg n3.4, with MediaCodec, VideoToolbox support.
        
 
-## 19. [square/leakcanary](http://github.com/square/leakcanary)  ♥️ 22.9k
-         
-> A memory leak detection library for Android
- 
-
-## 20. [zxing/zxing](http://github.com/zxing/zxing)  ♥️ 22.7k
+## 14. [zxing/zxing](http://github.com/zxing/zxing)  ♥️ 22.8k
          
 > ZXing ("Zebra Crossing") barcode scanning library for Java, Android
  
 
+## 15. [greenrobot/EventBus](http://github.com/greenrobot/EventBus)  ♥️ 21.1k
+         
+> Event bus for Android and Java that simplifies communication between Activities, Fragments, Threads, Services, etc. L…
+       
 
-## 21. [xitu/gold-miner](http://github.com/xitu/gold-miner)  ♥️ 21.7k
+## 16. [skylot/jadx](http://github.com/skylot/jadx)  ♥️ 18.9k
+         
+> Dex to Java decompiler
+       
+
+## 17. [Solido/awesome-flutter](http://github.com/Solido/awesome-flutter)  ♥️ 18.4k
+         
+> An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
+       
+
+## 18. [Prinzhorn/skrollr](http://github.com/Prinzhorn/skrollr)  ♥️ 18.2k
+         
+> Stand-alone parallax scrolling library for mobile (Android + iOS) and desktop. No jQuery. Just plain JavaScript (and …
+       
+
+## 19. [google/iosched](http://github.com/google/iosched)  ♥️ 18.1k
+         
+> The Google I/O 2018 Android App
+       
+
+## 20. [ReactiveX/RxAndroid](http://github.com/ReactiveX/RxAndroid)  ♥️ 18.1k
+         
+> RxJava bindings for Android
+ 
+
+
+## 21. [xitu/gold-miner](http://github.com/xitu/gold-miner)  ♥️ 21.8k
          
 > 🥇掘金翻译计划，可能是世界最大最好的英译中技术社区，最懂读者和译者的翻译平台：
        
@@ -119,7 +124,7 @@ date: 2019-06-06
 > Event bus for Android and Java that simplifies communication between Activities, Fragments, Threads, Services, etc. L…
        
 
-## 23. [skylot/jadx](http://github.com/skylot/jadx)  ♥️ 18.8k
+## 23. [skylot/jadx](http://github.com/skylot/jadx)  ♥️ 18.9k
          
 > Dex to Java decompiler
        
@@ -139,15 +144,15 @@ date: 2019-06-06
 > Stand-alone parallax scrolling library for mobile (Android + iOS) and desktop. No jQuery. Just plain JavaScript (and …
        
 
-## 27. [ReactiveX/RxAndroid](http://github.com/ReactiveX/RxAndroid)  ♥️ 18.1k
-         
-> RxJava bindings for Android
- 
-
-## 28. [google/iosched](http://github.com/google/iosched)  ♥️ 18.1k
+## 27. [google/iosched](http://github.com/google/iosched)  ♥️ 18.1k
          
 > The Google I/O 2018 Android App
        
+
+## 28. [ReactiveX/RxAndroid](http://github.com/ReactiveX/RxAndroid)  ♥️ 18.1k
+         
+> RxJava bindings for Android
+ 
 
 ## 29. [alibaba/fastjson](http://github.com/alibaba/fastjson)  ♥️ 18k
          
@@ -160,7 +165,7 @@ date: 2019-06-06
        
 
 
-## 31. [scwang90/SmartRefreshLayout](http://github.com/scwang90/SmartRefreshLayout)  ♥️ 17.6k
+## 31. [scwang90/SmartRefreshLayout](http://github.com/scwang90/SmartRefreshLayout)  ♥️ 17.7k
          
 > 🔥下拉刷新、上拉加载、二级刷新、淘宝二楼、RefreshLayout、OverScroll，Android智能下拉刷新框架，支持越界回弹、越界拖动，具有极强的扩展性，集成了几十种炫酷的Header和 Footer。
        
@@ -262,105 +267,105 @@ date: 2019-06-06
  
 
 
-## 51. [Genymobile/scrcpy](http://github.com/Genymobile/scrcpy)  ♥️ 13.1k
-         
-> Display and control your Android device
-       
-
-## 52. [lgvalle/Material-Animations](http://github.com/lgvalle/Material-Animations)  ♥️ 12.8k
-         
-> Android Transition animations explanation with examples.
-       
-
-## 53. [GeekyAnts/NativeBase](http://github.com/GeekyAnts/NativeBase)  ♥️ 12k
-         
-> Essential cross-platform UI components for React Native
-       
-
-## 54. [DrKLO/Telegram](http://github.com/DrKLO/Telegram)  ♥️ 11.9k
-         
-> Telegram for Android source
-       
-
-## 55. [hdodenhof/CircleImageView](http://github.com/hdodenhof/CircleImageView)  ♥️ 11.9k
-         
-> A circular ImageView for Android
- 
-
-## 56. [react-community/create-react-native-app](http://github.com/react-community/create-react-native-app)  ♥️ 11.6k
-         
-> Create a React Native app on any OS with no build config.
-       
-
-## 57. [signalapp/Signal-Android](http://github.com/signalapp/Signal-Android)  ♥️ 11.6k
+## 51. [signalapp/Signal-Android](http://github.com/signalapp/Signal-Android)  ♥️ 11.6k
          
 > A private messenger for Android.
        
 
-## 58. [greenrobot/greenDAO](http://github.com/greenrobot/greenDAO)  ♥️ 11.4k
+## 52. [greenrobot/greenDAO](http://github.com/greenrobot/greenDAO)  ♥️ 11.4k
          
 > greenDAO is a light & fast ORM solution for Android that maps objects to SQLite databases.
        
 
-## 59. [francistao/LearningNotes](http://github.com/francistao/LearningNotes)  ♥️ 11.3k
+## 53. [francistao/LearningNotes](http://github.com/francistao/LearningNotes)  ♥️ 11.3k
          
 > Enjoy Learning.
        
 
-## 60. [orhanobut/logger](http://github.com/orhanobut/logger)  ♥️ 11.2k
+## 54. [orhanobut/logger](http://github.com/orhanobut/logger)  ♥️ 11.3k
          
 > ✔️ Simple, pretty and powerful logger for android
  
 
+## 55. [jfeinstein10/SlidingMenu](http://github.com/jfeinstein10/SlidingMenu)  ♥️ 11.2k
+         
+> An Android library that allows you to easily create applications with slide-in menus. You may use it in your Android …
+       
 
-## 61. [googlesamples/android-UniversalMusicPlayer](http://github.com/googlesamples/android-UniversalMusicPlayer)  ♥️ 10.9k
+## 56. [facebook/stetho](http://github.com/facebook/stetho)  ♥️ 11.1k
+         
+> Stetho is a debug bridge for Android applications, enabling the powerful Chrome Developer Tools and much more.
+       
+
+## 57. [googlesamples/android-UniversalMusicPlayer](http://github.com/googlesamples/android-UniversalMusicPlayer)  ♥️ 10.9k
          
 > This sample shows how to implement an audio media app that works across multiple form factors and provide a consisten…
        
 
-## 62. [androidannotations/androidannotations](http://github.com/androidannotations/androidannotations)  ♥️ 10.8k
+## 58. [androidannotations/androidannotations](http://github.com/androidannotations/androidannotations)  ♥️ 10.8k
          
 > Fast Android Development. Easy maintainance.
        
 
-## 63. [daimajia/AndroidViewAnimations](http://github.com/daimajia/AndroidViewAnimations)  ♥️ 10.6k
-         
-> Cute view animation collection.
-       
-
-## 64. [realm/realm-java](http://github.com/realm/realm-java)  ♥️ 10.5k
+## 59. [realm/realm-java](http://github.com/realm/realm-java)  ♥️ 10.5k
          
 > Realm is a mobile database: a replacement for SQLite & ORMs
        
 
-## 65. [android-async-http/android-async-http](http://github.com/android-async-http/android-async-http)  ♥️ 10.4k
+## 60. [android-async-http/android-async-http](http://github.com/android-async-http/android-async-http)  ♥️ 10.4k
          
 > An Asynchronous HTTP Library for Android
  
 
-## 66. [mikepenz/MaterialDrawer](http://github.com/mikepenz/MaterialDrawer)  ♥️ 10.4k
-         
-> The flexible, easy to use, all in one drawer library for your Android project. Now brand new with material 2 design.
-       
 
-## 67. [kesenhoo/android-training-course-in-chinese](http://github.com/kesenhoo/android-training-course-in-chinese)  ♥️ 10.2k
+## 61. [kesenhoo/android-training-course-in-chinese](http://github.com/kesenhoo/android-training-course-in-chinese)  ♥️ 10.2k
          
 > Android官方培训课程中文版
        
 
-## 68. [CarGuo/GSYVideoPlayer](http://github.com/CarGuo/GSYVideoPlayer)  ♥️ 10.2k
+## 62. [CarGuo/GSYVideoPlayer](http://github.com/CarGuo/GSYVideoPlayer)  ♥️ 10.2k
          
 > 视频播放器（IJKplayer、ExoPlayer、MediaPlayer），HTTPS支持，支持弹幕，支持滤镜、水印、gif截图，片头广告、中间广告，多个同时播放，支持基本的拖动，声音、亮度调节，支持边播边缓存，支持视频本身自带ro…
        
 
-## 69. [quasarframework/quasar](http://github.com/quasarframework/quasar)  ♥️ 10.2k
+## 63. [Konloch/bytecode-viewer](http://github.com/Konloch/bytecode-viewer)  ♥️ 10.2k
+         
+> A Java 8+ Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)
+       
+
+## 64. [quasarframework/quasar](http://github.com/quasarframework/quasar)  ♥️ 10.2k
          
 > Quasar Framework - High performance, Material Design 2, full front end stack with Vue.js
        
 
-## 70. [JakeWharton/ViewPagerIndicator](http://github.com/JakeWharton/ViewPagerIndicator)  ♥️ 10.1k
+## 65. [JakeWharton/ViewPagerIndicator](http://github.com/JakeWharton/ViewPagerIndicator)  ♥️ 10.1k
          
 > Paging indicator widgets compatible with the ViewPager from the Android Support Library and ActionBarSherlock.
+       
+
+## 66. [Bigkoo/Android-PickerView](http://github.com/Bigkoo/Android-PickerView)  ♥️ 10k
+         
+> This is a picker view for android , support linkage effect, timepicker and optionspicker.（时间选择器、省市区三级联动）
+       
+
+## 67. [hehonghui/android-tech-frontier](http://github.com/hehonghui/android-tech-frontier)  ♥️ 10k
+         
+> 【停止维护】一个定期翻译国外Android优质的技术、开源库、软件架构设计、测试等文章的开源项目
+       
+
+## 68. [alibaba/ARouter](http://github.com/alibaba/ARouter)  ♥️ 9.9k
+         
+> 💪 A framework for assisting in the renovation of Android componentization (帮助 Android App 进行组件化改造的路由框架)
+       
+
+## 69. [Tencent/VasSonic](http://github.com/Tencent/VasSonic)  ♥️ 9.8k
+         
+> VasSonic is a lightweight and high-performance Hybrid framework developed by tencent VAS team, which is intended to s…
+       
+
+## 70. [liaohuqiu/android-Ultra-Pull-To-Refresh](http://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh)  ♥️ 9.6k
+         
+> Ultra Pull to Refresh for Android. Support all the views.
        
 
 
@@ -476,7 +481,7 @@ date: 2019-06-06
 > Kodi is an award-winning free and open source home theater/media center software and entertainment hub for digital me…
        
 
-## 93. [txthinking/brook](http://github.com/txthinking/brook)  ♥️ 9k
+## 93. [txthinking/brook](http://github.com/txthinking/brook)  ♥️ 9.1k
          
 > Brook is a cross-platform(Linux/MacOS/Windows/Android/iOS) proxy/vpn software
        

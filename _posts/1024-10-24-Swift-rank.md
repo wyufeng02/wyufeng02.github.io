@@ -1,43 +1,48 @@
 ---
 layout: post
-title:  Swift开源项目排行榜
+title:  Swift开源项目排行榜 (06-10)
 tag: Swift 排行榜
-date: 2019-06-05
+date: 2019-06-10
+categories:
+- rank
 ---
 
-#Swift开源项目排行榜
+#Swift开源项目排行榜 (06-10)
 
-## 1. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 50.8k
+![Swift开源项目排行榜](https://code4flutter.com/assets/images/rank/Swift.png)
+
+
+## 1. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 51k
          
 > 📚 免费的计算机编程类中文书籍，欢迎投稿
        
 
-## 2. [apple/swift](http://github.com/apple/swift)  ♥️ 48k
+## 2. [apple/swift](http://github.com/apple/swift)  ♥️ 48.1k
          
 > The Swift Programming Language
        
 
-## 3. [vsouza/awesome-ios](http://github.com/vsouza/awesome-ios)  ♥️ 31.8k
+## 3. [vsouza/awesome-ios](http://github.com/vsouza/awesome-ios)  ♥️ 31.9k
          
 > A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects 
        
 
-## 4. [Alamofire/Alamofire](http://github.com/Alamofire/Alamofire)  ♥️ 31k
+## 4. [Alamofire/Alamofire](http://github.com/Alamofire/Alamofire)  ♥️ 31.1k
          
 > Elegant HTTP Networking in Swift
  
 
-## 5. [xitu/gold-miner](http://github.com/xitu/gold-miner)  ♥️ 21.6k
+## 5. [xitu/gold-miner](http://github.com/xitu/gold-miner)  ♥️ 21.8k
          
 > 🥇掘金翻译计划，可能是世界最大最好的英译中技术社区，最懂读者和译者的翻译平台：
        
 
-## 6. [SDWebImage/SDWebImage](http://github.com/SDWebImage/SDWebImage)  ♥️ 21.5k
+## 6. [SDWebImage/SDWebImage](http://github.com/SDWebImage/SDWebImage)  ♥️ 21.6k
          
 > Asynchronous image downloader with cache support as a UIImageView category
        
 
-## 7. [shadowsocks/ShadowsocksX-NG](http://github.com/shadowsocks/ShadowsocksX-NG)  ♥️ 21k
+## 7. [shadowsocks/ShadowsocksX-NG](http://github.com/shadowsocks/ShadowsocksX-NG)  ♥️ 21.1k
          
 > Next Generation of ShadowsocksX
        
@@ -63,7 +68,7 @@ date: 2019-06-05
 > The modern video player for macOS.
        
 
-## 12. [SwiftGGTeam/the-swift-programming-language-in-chinese](http://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)  ♥️ 18.5k
+## 12. [SwiftGGTeam/the-swift-programming-language-in-chinese](http://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)  ♥️ 18.6k
          
 > 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
        
@@ -109,7 +114,7 @@ date: 2019-06-05
        
 
 
-## 21. [ncw/rclone](http://github.com/ncw/rclone)  ♥️ 14.3k
+## 21. [ncw/rclone](http://github.com/ncw/rclone)  ♥️ 14.4k
          
 > "rsync for cloud storage" - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfile…
        
@@ -124,19 +129,19 @@ date: 2019-06-05
 > Server-side Swift. The Perfect core toolset and framework for Swift Developers. (For mobile back-end development, web…
        
 
-## 24. [realm/realm-cocoa](http://github.com/realm/realm-cocoa)  ♥️ 13.2k
+## 24. [realm/realm-cocoa](http://github.com/realm/realm-cocoa)  ♥️ 13.3k
          
 > Realm is a mobile database: a replacement for Core Data & SQLite
        
 
-## 25. [MengTo/Spring](http://github.com/MengTo/Spring)  ♥️ 13.2k
-         
-> A library to simplify iOS animations in Swift.
-       
-
-## 26. [hackiftekhar/IQKeyboardManager](http://github.com/hackiftekhar/IQKeyboardManager)  ♥️ 13.1k
+## 25. [hackiftekhar/IQKeyboardManager](http://github.com/hackiftekhar/IQKeyboardManager)  ♥️ 13.2k
          
 > Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. …
+       
+
+## 26. [MengTo/Spring](http://github.com/MengTo/Spring)  ♥️ 13.2k
+         
+> A library to simplify iOS animations in Swift.
        
 
 ## 27. [Carthage/Carthage](http://github.com/Carthage/Carthage)  ♥️ 12.9k
@@ -190,7 +195,7 @@ date: 2019-06-05
 > 📖 Design Patterns implemented in Swift 5.0
        
 
-## 37. [apple/swift-evolution](http://github.com/apple/swift-evolution)  ♥️ 10k
+## 37. [apple/swift-evolution](http://github.com/apple/swift-evolution)  ♥️ 10.1k
          
 > This maintains proposals for changes and user-visible enhancements to the Swift Programming Language.
        
@@ -211,14 +216,14 @@ date: 2019-06-05
  
 
 
-## 41. [Ramotion/folding-cell](http://github.com/Ramotion/folding-cell)  ♥️ 9.2k
-         
-> 📃 FoldingCell is an expanding content cell with animation made by @Ramotion - https://github.com/Ramotion/swift-ui-…
-       
-
-## 42. [futurice/ios-good-practices](http://github.com/futurice/ios-good-practices)  ♥️ 9.2k
+## 41. [futurice/ios-good-practices](http://github.com/futurice/ios-good-practices)  ♥️ 9.2k
          
 > Good ideas for iOS development, by Futurice developers.
+       
+
+## 42. [Ramotion/folding-cell](http://github.com/Ramotion/folding-cell)  ♥️ 9.2k
+         
+> 📃 FoldingCell is an expanding content cell with animation made by @Ramotion - https://github.com/Ramotion/swift-ui-…
        
 
 ## 43. [fullstackio/FlappySwift](http://github.com/fullstackio/FlappySwift)  ♥️ 8.8k
@@ -236,7 +241,7 @@ date: 2019-06-05
 > Xcode plug-in which helps you write documentation comment easier, for both Objective-C and Swift.
        
 
-## 46. [ninjaprox/NVActivityIndicatorView](http://github.com/ninjaprox/NVActivityIndicatorView)  ♥️ 8.3k
+## 46. [ninjaprox/NVActivityIndicatorView](http://github.com/ninjaprox/NVActivityIndicatorView)  ♥️ 8.4k
          
 > A collection of awesome loading animations
        
@@ -267,14 +272,14 @@ date: 2019-06-05
 > Comprehensive mailing tools for PHP
        
 
-## 52. [Juanpe/SkeletonView](http://github.com/Juanpe/SkeletonView)  ♥️ 7.4k
-         
-> An elegant way to show users that something is happening and also prepare them to which contents he is waiting
-       
-
-## 53. [Tencent/MMKV](http://github.com/Tencent/MMKV)  ♥️ 7.4k
+## 52. [Tencent/MMKV](http://github.com/Tencent/MMKV)  ♥️ 7.5k
          
 > An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS, Android, macOS and Windows.
+       
+
+## 53. [Juanpe/SkeletonView](http://github.com/Juanpe/SkeletonView)  ♥️ 7.4k
+         
+> An elegant way to show users that something is happening and also prepare them to which contents he is waiting
        
 
 ## 54. [steipete/Aspects](http://github.com/steipete/Aspects)  ♥️ 7.3k
@@ -307,9 +312,9 @@ date: 2019-06-05
 > CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift
  
 
-## 60. [lexrus/LTMorphingLabel](http://github.com/lexrus/LTMorphingLabel)  ♥️ 6.9k
+## 60. [apple/swift-package-manager](http://github.com/apple/swift-package-manager)  ♥️ 7k
          
-> [EXPERIMENTAL] Graceful morphing effects for UILabel written in Swift.
+> The Package Manager for the Swift Programming Language
        
 
 
@@ -318,9 +323,9 @@ date: 2019-06-05
 > Draveness's Blog
        
 
-## 62. [apple/swift-package-manager](http://github.com/apple/swift-package-manager)  ♥️ 6.9k
+## 62. [lexrus/LTMorphingLabel](http://github.com/lexrus/LTMorphingLabel)  ♥️ 6.9k
          
-> The Package Manager for the Swift Programming Language
+> [EXPERIMENTAL] Graceful morphing effects for UILabel written in Swift.
        
 
 ## 63. [robb/Cartography](http://github.com/robb/Cartography)  ♥️ 6.9k
@@ -399,14 +404,14 @@ date: 2019-06-05
 > The Swift machine learning library.
        
 
-## 78. [xmartlabs/XLForm](http://github.com/xmartlabs/XLForm)  ♥️ 5.5k
-         
-> XLForm is the most flexible and powerful iOS library to create dynamic table-view forms. Fully compatible with Swift …
-       
-
-## 79. [mattgodbolt/compiler-explorer](http://github.com/mattgodbolt/compiler-explorer)  ♥️ 5.5k
+## 78. [mattgodbolt/compiler-explorer](http://github.com/mattgodbolt/compiler-explorer)  ♥️ 5.5k
          
 > Run compilers interactively from your web browser and interact with the assembly
+       
+
+## 79. [xmartlabs/XLForm](http://github.com/xmartlabs/XLForm)  ♥️ 5.5k
+         
+> XLForm is the most flexible and powerful iOS library to create dynamic table-view forms. Fully compatible with Swift …
        
 
 ## 80. [SwiftGen/SwiftGen](http://github.com/SwiftGen/SwiftGen)  ♥️ 5.5k
@@ -440,20 +445,20 @@ date: 2019-06-05
 > Swift Language Weather is an iOS weather app developed in Swift 4. 
        
 
-## 86. [Ramotion/expanding-collection](http://github.com/Ramotion/expanding-collection)  ♥️ 5k
+## 86. [apple/swift-nio](http://github.com/apple/swift-nio)  ♥️ 5k
          
-> ExpandingCollection is an animated material design UI card peek/pop controller. iOS library made by @Ramotion - htt…
- 
+> Event-driven network application framework for high performance protocol servers & clients, non-blocking.
+       
 
-## 87. [cgoldsby/LoginCritter](http://github.com/cgoldsby/LoginCritter)  ♥️ 4.9k
+## 87. [cgoldsby/LoginCritter](http://github.com/cgoldsby/LoginCritter)  ♥️ 5k
          
 > An animated avatar that responds to text field interactions
        
 
-## 88. [apple/swift-nio](http://github.com/apple/swift-nio)  ♥️ 4.9k
+## 88. [Ramotion/expanding-collection](http://github.com/Ramotion/expanding-collection)  ♥️ 5k
          
-> Event-driven network application framework for high performance protocol servers & clients, non-blocking.
-       
+> ExpandingCollection is an animated material design UI card peek/pop controller. iOS library made by @Ramotion - htt…
+ 
 
 ## 89. [malcommac/SwiftDate](http://github.com/malcommac/SwiftDate)  ♥️ 4.9k
          
@@ -491,7 +496,7 @@ date: 2019-06-05
 > A very flexible message bar for iOS written in Swift.
        
 
-## 96. [kishikawakatsumi/KeychainAccess](http://github.com/kishikawakatsumi/KeychainAccess)  ♥️ 4.7k
+## 96. [kishikawakatsumi/KeychainAccess](http://github.com/kishikawakatsumi/KeychainAccess)  ♥️ 4.8k
          
 > Simple Swift wrapper for Keychain that works on iOS, watchOS, tvOS and macOS.
        
@@ -511,7 +516,7 @@ date: 2019-06-05
 > Powerful and easy-to-use vector graphics Swift library with SVG support
        
 
-## 100. [joeblau/gitignore.io](http://github.com/joeblau/gitignore.io)  ♥️ 4.5k
+## 100. [joeblau/gitignore.io](http://github.com/joeblau/gitignore.io)  ♥️ 4.6k
          
 > Create useful .gitignore files for your project
        

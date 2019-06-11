@@ -6,13 +6,21 @@ https://code4flutter.com/2019/06/10/An_interval_progress_widget_for_Flutter/
 
 https://code4flutter.com/2019/06/10/Flutter_package_for_Eva_Icons/
 
+https://code4flutter.com/2019/06/11/Objective-C-rank/
+
 https://code4flutter.com/1024/10/24/JavaScript-rank/
 
 https://code4flutter.com/2019/06/10/A_customizable_circular_slider_for_Flutter/
 
 https://code4flutter.com/2019/06/10/A_custom_refresh_indicator_for_flutter/
 
+https://code4flutter.com/2019/06/11/c++-rank/
+
+https://code4flutter.com/2019/06/11/微信小程序-rank/
+
 https://code4flutter.com/2018/11/27/jsonxuliehua/
+
+https://code4flutter.com/2019/06/11/JavaScript-rank/
 
 https://code4flutter.com/1024/10/24/PHP-rank/
 
@@ -38,11 +46,17 @@ https://code4flutter.com/2019/06/10/Basic_file_managing_app_for_Android_using_Fl
 
 https://code4flutter.com/2019/06/10/A_Full_fledged_todo_app_which_is_made_with_Flutter_and_Dart/
 
+https://code4flutter.com/2019/06/11/SQL-rank/
+
 https://code4flutter.com/1024/10/24/c-rank/
 
 https://code4flutter.com/1024/10/24/c++-rank/
 
 https://code4flutter.com/2019/06/10/A_glorified_todo_list_with_a_beautiful_ui/
+
+https://code4flutter.com/2019/06/11/c-rank/
+
+https://code4flutter.com/2019/06/11/Swift-rank/
 
 https://code4flutter.com/2019/06/10/A_Square_Puzzle_Flutter_game/
 
@@ -50,9 +64,13 @@ https://code4flutter.com/1024/10/24/python-rank/
 
 https://code4flutter.com/2019/06/10/A_Flutter_music_app_made_with_Provider_and_BLoC_pattern/
 
+https://code4flutter.com/2019/05/29/jiejue-futter-engine/
+
 https://code4flutter.com/2019/06/10/A_Password_Manager_built_using_Flutter/
 
 https://code4flutter.com/1024/10/24/Flutter-rank/
+
+https://code4flutter.com/2019/06/11/Flutter-rank/
 
 https://code4flutter.com/2019/06/10/An_attempt_to_clone_part_of_Google_News_app_design_using_Flutter/
 
@@ -62,6 +80,10 @@ https://code4flutter.com/2019/06/10/A_simple_and_clean_news_app_made_with_Flutte
 
 https://code4flutter.com/1024/10/24/微信小程序-rank/
 
+https://code4flutter.com/2019/06/11/python-rank/
+
+https://code4flutter.com/2019/06/11/Android-rank/
+
 https://code4flutter.com/1024/10/24/Android-rank/
 
 https://code4flutter.com/1024/10/24/Objective-C-rank/
@@ -70,10 +92,10 @@ https://code4flutter.com/1024/10/24/SQL-rank/
 
 https://code4flutter.com/2019/06/10/A_flutter_package_for_creating_badges/
 
-https://code4flutter.com/2019/05/29/shoubashou-jiejie-neicunxielou/
-
 https://code4flutter.com/2019/06/10/A_simple_Pomodoro_timer_written_in_Flutter_web/
 
 https://code4flutter.com/2019/05/29/shoubashoubianyi-flutter-engine/
 
 https://code4flutter.com/2019/06/10/A_Flutter_widget_that_scrolls_text_widget_and_other_widget/
+
+https://code4flutter.com/2019/06/11/PHP-rank/

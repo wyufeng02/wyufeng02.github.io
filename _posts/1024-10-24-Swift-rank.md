@@ -1,168 +1,18 @@
 ---
 layout: post
-title:  Swift开源项目排行榜 (06-10)
+title:  Swift开源项目排行榜 (06-11)
 tag: Swift 排行榜
-date: 2019-06-10
+date: 2019-06-11
 categories:
 - rank
 ---
 
-#Swift开源项目排行榜 (06-10)
+#Swift开源项目排行榜 (06-11)
 
 ![Swift开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Swift.png)
 
 
-## 1. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 51k
-         
-> 📚 免费的计算机编程类中文书籍，欢迎投稿
-       
 
-## 2. [apple/swift](http://github.com/apple/swift)  ♥️ 48.1k
-         
-> The Swift Programming Language
-       
-
-## 3. [vsouza/awesome-ios](http://github.com/vsouza/awesome-ios)  ♥️ 31.9k
-         
-> A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects 
-       
-
-## 4. [Alamofire/Alamofire](http://github.com/Alamofire/Alamofire)  ♥️ 31.1k
-         
-> Elegant HTTP Networking in Swift
- 
-
-## 5. [xitu/gold-miner](http://github.com/xitu/gold-miner)  ♥️ 21.8k
-         
-> 🥇掘金翻译计划，可能是世界最大最好的英译中技术社区，最懂读者和译者的翻译平台：
-       
-
-## 6. [SDWebImage/SDWebImage](http://github.com/SDWebImage/SDWebImage)  ♥️ 21.6k
-         
-> Asynchronous image downloader with cache support as a UIImageView category
-       
-
-## 7. [shadowsocks/ShadowsocksX-NG](http://github.com/shadowsocks/ShadowsocksX-NG)  ♥️ 21.1k
-         
-> Next Generation of ShadowsocksX
-       
-
-## 8. [raywenderlich/swift-algorithm-club](http://github.com/raywenderlich/swift-algorithm-club)  ♥️ 20.5k
-         
-> Algorithms and data structures in Swift, with explanations!
-       
-
-## 9. [dkhamsing/open-source-ios-apps](http://github.com/dkhamsing/open-source-ios-apps)  ♥️ 20.3k
-         
-> 📱 Collaborative List of Open-Source iOS Apps
-       
-
-## 10. [ReactiveCocoa/ReactiveCocoa](http://github.com/ReactiveCocoa/ReactiveCocoa)  ♥️ 19.5k
-         
-> Reactive extensions to Cocoa frameworks, built on top of ReactiveSwift
-       
-
-
-## 11. [iina/iina](http://github.com/iina/iina)  ♥️ 19.2k
-         
-> The modern video player for macOS.
-       
-
-## 12. [SwiftGGTeam/the-swift-programming-language-in-chinese](http://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)  ♥️ 18.6k
-         
-> 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
-       
-
-## 13. [SwiftyJSON/SwiftyJSON](http://github.com/SwiftyJSON/SwiftyJSON)  ♥️ 18.5k
-         
-> The better way to deal with JSON data in Swift.
-       
-
-## 14. [matteocrippa/awesome-swift](http://github.com/matteocrippa/awesome-swift)  ♥️ 17.3k
-         
-> A collaborative list of awesome Swift libraries and resources. Feel free to contribute!
-       
-
-## 15. [serhii-londar/open-source-mac-os-apps](http://github.com/serhii-londar/open-source-mac-os-apps)  ♥️ 17.3k
-         
-> 🚀 Awesome list of open source applications for macOS.
-       
-
-## 16. [HeroTransitions/Hero](http://github.com/HeroTransitions/Hero)  ♥️ 16.8k
-         
-> Elegant transition library for iOS & tvOS
-       
-
-## 17. [vapor/vapor](http://github.com/vapor/vapor)  ♥️ 16.6k
-         
-> 💧 A server-side Swift web framework.
-       
-
-## 18. [ReactiveX/RxSwift](http://github.com/ReactiveX/RxSwift)  ♥️ 16.5k
-         
-> Reactive Programming in Swift
- 
-
-## 19. [SnapKit/SnapKit](http://github.com/SnapKit/SnapKit)  ♥️ 15.1k
-         
-> A Swift Autolayout DSL for iOS & OS X
-       
-
-## 20. [ipader/SwiftGuide](http://github.com/ipader/SwiftGuide)  ♥️ 14.4k
-         
-> Swift Featured Projects in brain Mapping
-       
-
-
-## 21. [ncw/rclone](http://github.com/ncw/rclone)  ♥️ 14.4k
-         
-> "rsync for cloud storage" - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfile…
-       
-
-## 22. [onevcat/Kingfisher](http://github.com/onevcat/Kingfisher)  ♥️ 14.2k
-         
-> A lightweight, pure-Swift library for downloading and caching images from the web.
-       
-
-## 23. [PerfectlySoft/Perfect](http://github.com/PerfectlySoft/Perfect)  ♥️ 13.5k
-         
-> Server-side Swift. The Perfect core toolset and framework for Swift Developers. (For mobile back-end development, web…
-       
-
-## 24. [realm/realm-cocoa](http://github.com/realm/realm-cocoa)  ♥️ 13.3k
-         
-> Realm is a mobile database: a replacement for Core Data & SQLite
-       
-
-## 25. [hackiftekhar/IQKeyboardManager](http://github.com/hackiftekhar/IQKeyboardManager)  ♥️ 13.2k
-         
-> Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. …
-       
-
-## 26. [MengTo/Spring](http://github.com/MengTo/Spring)  ♥️ 13.2k
-         
-> A library to simplify iOS animations in Swift.
-       
-
-## 27. [Carthage/Carthage](http://github.com/Carthage/Carthage)  ♥️ 12.9k
-         
-> A simple, decentralized dependency manager for Cocoa
-       
-
-## 28. [viccalexander/Chameleon](http://github.com/viccalexander/Chameleon)  ♥️ 12.1k
-         
-> Color framework for Swift & Objective-C (Gradient colors, hexcode support, colors from images & more).
-       
-
-## 29. [realm/SwiftLint](http://github.com/realm/SwiftLint)  ♥️ 11.9k
-         
-> A tool to enforce Swift style and conventions.
-       
-
-## 30. [CocoaPods/CocoaPods](http://github.com/CocoaPods/CocoaPods)  ♥️ 11.7k
-         
-> The Cocoa Dependency Manager.
-       
 
 
 ## 31. [mxcl/PromiseKit](http://github.com/mxcl/PromiseKit)  ♥️ 11.6k
@@ -231,40 +81,40 @@ categories:
 > swift implementation of flappy bird. More at fullstackedu.com
        
 
-## 44. [mozilla-mobile/firefox-ios](http://github.com/mozilla-mobile/firefox-ios)  ♥️ 8.7k
-         
-> Firefox for iOS
-       
-
-## 45. [onevcat/VVDocumenter-Xcode](http://github.com/onevcat/VVDocumenter-Xcode)  ♥️ 8.5k
+## 44. [onevcat/VVDocumenter-Xcode](http://github.com/onevcat/VVDocumenter-Xcode)  ♥️ 8.5k
          
 > Xcode plug-in which helps you write documentation comment easier, for both Objective-C and Swift.
        
 
-## 46. [ninjaprox/NVActivityIndicatorView](http://github.com/ninjaprox/NVActivityIndicatorView)  ♥️ 8.4k
+## 45. [ninjaprox/NVActivityIndicatorView](http://github.com/ninjaprox/NVActivityIndicatorView)  ♥️ 8.4k
          
 > A collection of awesome loading animations
        
 
-## 47. [Quick/Quick](http://github.com/Quick/Quick)  ♥️ 8.2k
+## 46. [Quick/Quick](http://github.com/Quick/Quick)  ♥️ 8.2k
          
 > The Swift (and Objective-C) testing framework.
        
 
-## 48. [IBAnimatable/IBAnimatable](http://github.com/IBAnimatable/IBAnimatable)  ♥️ 8.1k
+## 47. [IBAnimatable/IBAnimatable](http://github.com/IBAnimatable/IBAnimatable)  ♥️ 8.1k
          
 > Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Int…
        
 
-## 49. [tristanhimmelman/ObjectMapper](http://github.com/tristanhimmelman/ObjectMapper)  ♥️ 8k
+## 48. [tristanhimmelman/ObjectMapper](http://github.com/tristanhimmelman/ObjectMapper)  ♥️ 8k
          
 > Simple JSON Object mapping written in Swift
  
 
-## 50. [WenchaoD/FSCalendar](http://github.com/WenchaoD/FSCalendar)  ♥️ 8k
+## 49. [WenchaoD/FSCalendar](http://github.com/WenchaoD/FSCalendar)  ♥️ 8k
          
 > A fully customizable iOS calendar library, compatible with Objective-C and Swift
  
+
+## 50. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8k
+         
+> Comprehensive mailing tools for PHP
+       
 
 
 ## 51. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8k
@@ -389,14 +239,14 @@ categories:
 > The Unofficial Apple iOS Swift Calendar View. Swift calendar Library. iOS calendar Control. 100% Customizable
        
 
-## 75. [kanaka/mal](http://github.com/kanaka/mal)  ♥️ 5.7k
-         
-> mal - Make a Lisp
-       
-
-## 76. [olucurious/Awesome-ARKit](http://github.com/olucurious/Awesome-ARKit)  ♥️ 5.7k
+## 75. [olucurious/Awesome-ARKit](http://github.com/olucurious/Awesome-ARKit)  ♥️ 5.7k
          
 > A curated list of awesome ARKit projects and resources. Feel free to contribute!
+       
+
+## 76. [kanaka/mal](http://github.com/kanaka/mal)  ♥️ 5.7k
+         
+> mal - Make a Lisp
        
 
 ## 77. [Swift-AI/Swift-AI](http://github.com/Swift-AI/Swift-AI)  ♥️ 5.6k
@@ -460,7 +310,7 @@ categories:
 > ExpandingCollection is an animated material design UI card peek/pop controller. iOS library made by @Ramotion - htt…
  
 
-## 89. [malcommac/SwiftDate](http://github.com/malcommac/SwiftDate)  ♥️ 4.9k
+## 89. [malcommac/SwiftDate](http://github.com/malcommac/SwiftDate)  ♥️ 5k
          
 > Parse, validate, manipulate, and display dates, time and timezones in Swift
  

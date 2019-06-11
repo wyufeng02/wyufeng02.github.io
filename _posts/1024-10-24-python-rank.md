@@ -27,9 +27,9 @@ categories:
 > A curated list of awesome Python frameworks, libraries, software and resources
        
 
-## 4. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 65.8k
+## 4. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 65.9k
          
-> 📚 技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计
+> 📚 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计
        
 
 ## 5. [donnemartin/system-design-primer](http://github.com/donnemartin/system-design-primer)  ♥️ 64.4k
@@ -321,3 +321,5 @@ categories:
 > matplotlib: plotting with Python
  
 
+
+### 以上数据由[code4flutter](https://code4flutter.com)收集整理

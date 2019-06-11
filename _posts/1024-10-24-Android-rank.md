@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  Android开源项目排行榜 (06-10)
+title:  Android开源项目排行榜 (06-11)
 tag: Android 排行榜
-date: 2019-06-10
+date: 2019-06-11
 categories:
 - rank
 ---
 
-#Android开源项目排行榜 (06-10)
+#Android开源项目排行榜 (06-11)
 
 ![Android开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Android.png)
 
 
-## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 66.6k
+## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 66.7k
          
 > Flutter makes it easy and fast to build beautiful mobile apps.
        
@@ -32,7 +32,7 @@ categories:
 > A curated list of awesome Android UI/UX libraries
        
 
-## 5. [googlesamples/android-architecture](http://github.com/googlesamples/android-architecture)  ♥️ 32.8k
+## 5. [googlesamples/android-architecture](http://github.com/googlesamples/android-architecture)  ♥️ 32.9k
          
 > A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.
        
@@ -42,7 +42,7 @@ categories:
 > An HTTP+HTTP/2 client for Android and Java applications.
        
 
-## 7. [square/retrofit](http://github.com/square/retrofit)  ♥️ 32.6k
+## 7. [square/retrofit](http://github.com/square/retrofit)  ♥️ 32.7k
          
 > Type-safe HTTP client for Android and Java by Square, Inc.
        
@@ -63,54 +63,54 @@ categories:
        
 
 
-## 11. [JakeWharton/butterknife](http://github.com/JakeWharton/butterknife)  ♥️ 24k
+## 11. [bumptech/glide](http://github.com/bumptech/glide)  ♥️ 26.2k
+         
+> An image loading and caching library for Android focused on smooth scrolling
+       
+
+## 12. [airbnb/lottie-android](http://github.com/airbnb/lottie-android)  ♥️ 25.7k
+         
+> Render After Effects animations natively on Android and iOS, Web, and React Native
+       
+
+## 13. [fastlane/fastlane](http://github.com/fastlane/fastlane)  ♥️ 25.6k
+         
+> 🚀 The easiest way to automate building and releasing your iOS and Android apps
+       
+
+## 14. [codepath/android_guides](http://github.com/codepath/android_guides)  ♥️ 25.5k
+         
+> Extensive Open-Source Guides for Android Developers
+       
+
+## 15. [shadowsocks/shadowsocks-android](http://github.com/shadowsocks/shadowsocks-android)  ♥️ 24k
+         
+> A shadowsocks client for Android
+ 
+
+## 16. [JakeWharton/butterknife](http://github.com/JakeWharton/butterknife)  ♥️ 24k
          
 > Bind Android views and callbacks to fields and methods.
        
 
-## 12. [Blankj/AndroidUtilCode](http://github.com/Blankj/AndroidUtilCode)  ♥️ 23.6k
+## 17. [Blankj/AndroidUtilCode](http://github.com/Blankj/AndroidUtilCode)  ♥️ 23.6k
          
 > 🔥 Android developers should collect the following utils(updating).
        
 
-## 13. [bilibili/ijkplayer](http://github.com/bilibili/ijkplayer)  ♥️ 23.6k
+## 18. [bilibili/ijkplayer](http://github.com/bilibili/ijkplayer)  ♥️ 23.6k
          
 > Android/iOS video player based on FFmpeg n3.4, with MediaCodec, VideoToolbox support.
        
 
-## 14. [zxing/zxing](http://github.com/zxing/zxing)  ♥️ 22.8k
+## 19. [square/leakcanary](http://github.com/square/leakcanary)  ♥️ 22.9k
          
-> ZXing ("Zebra Crossing") barcode scanning library for Java, Android
+> A memory leak detection library for Android
  
 
-## 15. [greenrobot/EventBus](http://github.com/greenrobot/EventBus)  ♥️ 21.1k
+## 20. [zxing/zxing](http://github.com/zxing/zxing)  ♥️ 22.8k
          
-> Event bus for Android and Java that simplifies communication between Activities, Fragments, Threads, Services, etc. L…
-       
-
-## 16. [skylot/jadx](http://github.com/skylot/jadx)  ♥️ 18.9k
-         
-> Dex to Java decompiler
-       
-
-## 17. [Solido/awesome-flutter](http://github.com/Solido/awesome-flutter)  ♥️ 18.4k
-         
-> An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
-       
-
-## 18. [Prinzhorn/skrollr](http://github.com/Prinzhorn/skrollr)  ♥️ 18.2k
-         
-> Stand-alone parallax scrolling library for mobile (Android + iOS) and desktop. No jQuery. Just plain JavaScript (and …
-       
-
-## 19. [google/iosched](http://github.com/google/iosched)  ♥️ 18.1k
-         
-> The Google I/O 2018 Android App
-       
-
-## 20. [ReactiveX/RxAndroid](http://github.com/ReactiveX/RxAndroid)  ♥️ 18.1k
-         
-> RxJava bindings for Android
+> ZXing ("Zebra Crossing") barcode scanning library for Java, Android
  
 
 
@@ -144,15 +144,15 @@ categories:
 > Stand-alone parallax scrolling library for mobile (Android + iOS) and desktop. No jQuery. Just plain JavaScript (and …
        
 
-## 27. [google/iosched](http://github.com/google/iosched)  ♥️ 18.1k
-         
-> The Google I/O 2018 Android App
-       
-
-## 28. [ReactiveX/RxAndroid](http://github.com/ReactiveX/RxAndroid)  ♥️ 18.1k
+## 27. [ReactiveX/RxAndroid](http://github.com/ReactiveX/RxAndroid)  ♥️ 18.1k
          
 > RxJava bindings for Android
  
+
+## 28. [google/iosched](http://github.com/google/iosched)  ♥️ 18.1k
+         
+> The Google I/O 2018 Android App
+       
 
 ## 29. [alibaba/fastjson](http://github.com/alibaba/fastjson)  ♥️ 18k
          
@@ -175,7 +175,7 @@ categories:
 > A framework for building Mobile cross-platform UI
        
 
-## 33. [CymChad/BaseRecyclerViewAdapterHelper](http://github.com/CymChad/BaseRecyclerViewAdapterHelper)  ♥️ 17.3k
+## 33. [CymChad/BaseRecyclerViewAdapterHelper](http://github.com/CymChad/BaseRecyclerViewAdapterHelper)  ♥️ 17.4k
          
 > BRVAH:Powerful and flexible RecyclerAdapter
        
@@ -267,208 +267,8 @@ categories:
  
 
 
-## 51. [signalapp/Signal-Android](http://github.com/signalapp/Signal-Android)  ♥️ 11.6k
-         
-> A private messenger for Android.
-       
-
-## 52. [greenrobot/greenDAO](http://github.com/greenrobot/greenDAO)  ♥️ 11.4k
-         
-> greenDAO is a light & fast ORM solution for Android that maps objects to SQLite databases.
-       
-
-## 53. [francistao/LearningNotes](http://github.com/francistao/LearningNotes)  ♥️ 11.3k
-         
-> Enjoy Learning.
-       
-
-## 54. [orhanobut/logger](http://github.com/orhanobut/logger)  ♥️ 11.3k
-         
-> ✔️ Simple, pretty and powerful logger for android
- 
-
-## 55. [jfeinstein10/SlidingMenu](http://github.com/jfeinstein10/SlidingMenu)  ♥️ 11.2k
-         
-> An Android library that allows you to easily create applications with slide-in menus. You may use it in your Android …
-       
-
-## 56. [facebook/stetho](http://github.com/facebook/stetho)  ♥️ 11.1k
-         
-> Stetho is a debug bridge for Android applications, enabling the powerful Chrome Developer Tools and much more.
-       
-
-## 57. [googlesamples/android-UniversalMusicPlayer](http://github.com/googlesamples/android-UniversalMusicPlayer)  ♥️ 10.9k
-         
-> This sample shows how to implement an audio media app that works across multiple form factors and provide a consisten…
-       
-
-## 58. [androidannotations/androidannotations](http://github.com/androidannotations/androidannotations)  ♥️ 10.8k
-         
-> Fast Android Development. Easy maintainance.
-       
-
-## 59. [realm/realm-java](http://github.com/realm/realm-java)  ♥️ 10.5k
-         
-> Realm is a mobile database: a replacement for SQLite & ORMs
-       
-
-## 60. [android-async-http/android-async-http](http://github.com/android-async-http/android-async-http)  ♥️ 10.4k
-         
-> An Asynchronous HTTP Library for Android
- 
 
 
-## 61. [kesenhoo/android-training-course-in-chinese](http://github.com/kesenhoo/android-training-course-in-chinese)  ♥️ 10.2k
-         
-> Android官方培训课程中文版
-       
-
-## 62. [CarGuo/GSYVideoPlayer](http://github.com/CarGuo/GSYVideoPlayer)  ♥️ 10.2k
-         
-> 视频播放器（IJKplayer、ExoPlayer、MediaPlayer），HTTPS支持，支持弹幕，支持滤镜、水印、gif截图，片头广告、中间广告，多个同时播放，支持基本的拖动，声音、亮度调节，支持边播边缓存，支持视频本身自带ro…
-       
-
-## 63. [Konloch/bytecode-viewer](http://github.com/Konloch/bytecode-viewer)  ♥️ 10.2k
-         
-> A Java 8+ Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)
-       
-
-## 64. [quasarframework/quasar](http://github.com/quasarframework/quasar)  ♥️ 10.2k
-         
-> Quasar Framework - High performance, Material Design 2, full front end stack with Vue.js
-       
-
-## 65. [JakeWharton/ViewPagerIndicator](http://github.com/JakeWharton/ViewPagerIndicator)  ♥️ 10.1k
-         
-> Paging indicator widgets compatible with the ViewPager from the Android Support Library and ActionBarSherlock.
-       
-
-## 66. [Bigkoo/Android-PickerView](http://github.com/Bigkoo/Android-PickerView)  ♥️ 10k
-         
-> This is a picker view for android , support linkage effect, timepicker and optionspicker.（时间选择器、省市区三级联动）
-       
-
-## 67. [hehonghui/android-tech-frontier](http://github.com/hehonghui/android-tech-frontier)  ♥️ 10k
-         
-> 【停止维护】一个定期翻译国外Android优质的技术、开源库、软件架构设计、测试等文章的开源项目
-       
-
-## 68. [alibaba/ARouter](http://github.com/alibaba/ARouter)  ♥️ 9.9k
-         
-> 💪 A framework for assisting in the renovation of Android componentization (帮助 Android App 进行组件化改造的路由框架)
-       
-
-## 69. [Tencent/VasSonic](http://github.com/Tencent/VasSonic)  ♥️ 9.8k
-         
-> VasSonic is a lightweight and high-performance Hybrid framework developed by tencent VAS team, which is intended to s…
-       
-
-## 70. [liaohuqiu/android-Ultra-Pull-To-Refresh](http://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh)  ♥️ 9.6k
-         
-> Ultra Pull to Refresh for Android. Support all the views.
-       
-
-
-## 71. [CarGuo/GSYVideoPlayer](http://github.com/CarGuo/GSYVideoPlayer)  ♥️ 10.2k
-         
-> 视频播放器（IJKplayer、ExoPlayer、MediaPlayer），HTTPS支持，支持弹幕，支持滤镜、水印、gif截图，片头广告、中间广告，多个同时播放，支持基本的拖动，声音、亮度调节，支持边播边缓存，支持视频本身自带ro…
-       
-
-## 72. [Konloch/bytecode-viewer](http://github.com/Konloch/bytecode-viewer)  ♥️ 10.2k
-         
-> A Java 8+ Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)
-       
-
-## 73. [quasarframework/quasar](http://github.com/quasarframework/quasar)  ♥️ 10.2k
-         
-> Quasar Framework - High performance, Material Design 2, full front end stack with Vue.js
-       
-
-## 74. [JakeWharton/ViewPagerIndicator](http://github.com/JakeWharton/ViewPagerIndicator)  ♥️ 10.1k
-         
-> Paging indicator widgets compatible with the ViewPager from the Android Support Library and ActionBarSherlock.
-       
-
-## 75. [Curzibn/Luban](http://github.com/Curzibn/Luban)  ♥️ 10.1k
-         
-> Luban(鲁班)—Image compression with efficiency very close to WeChat Moments/可能是最接近微信朋友圈的图片压缩算法
-       
-
-## 76. [Bigkoo/Android-PickerView](http://github.com/Bigkoo/Android-PickerView)  ♥️ 10k
-         
-> This is a picker view for android , support linkage effect, timepicker and optionspicker.（时间选择器、省市区三级联动）
-       
-
-## 77. [hehonghui/android-tech-frontier](http://github.com/hehonghui/android-tech-frontier)  ♥️ 10k
-         
-> 【停止维护】一个定期翻译国外Android优质的技术、开源库、软件架构设计、测试等文章的开源项目
-       
-
-## 78. [alibaba/ARouter](http://github.com/alibaba/ARouter)  ♥️ 9.9k
-         
-> 💪 A framework for assisting in the renovation of Android componentization (帮助 Android App 进行组件化改造的路由框架)
-       
-
-## 79. [Tencent/VasSonic](http://github.com/Tencent/VasSonic)  ♥️ 9.8k
-         
-> VasSonic is a lightweight and high-performance Hybrid framework developed by tencent VAS team, which is intended to s…
-       
-
-## 80. [liaohuqiu/android-Ultra-Pull-To-Refresh](http://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh)  ♥️ 9.6k
-         
-> Ultra Pull to Refresh for Android. Support all the views.
-       
-
-
-## 81. [zhihu/Matisse](http://github.com/zhihu/Matisse)  ♥️ 9.6k
-         
-> 🎆 A well-designed local image and video selector for Android
- 
-
-## 82. [react-native-community/react-native-maps](http://github.com/react-native-community/react-native-maps)  ♥️ 9.5k
-         
-> React Native Mapview component for iOS + Android
- 
-
-## 83. [alibaba/vlayout](http://github.com/alibaba/vlayout)  ♥️ 9.5k
-         
-> Project vlayout is a powerfull LayoutManager extension for RecyclerView, it provides a group of layouts for RecyclerV…
-       
-
-## 84. [appium/appium](http://github.com/appium/appium)  ♥️ 9.4k
-         
-> 📱 Automation for iOS, Android, and Windows Apps.
-       
-
-## 85. [pockethub/PocketHub](http://github.com/pockethub/PocketHub)  ♥️ 9.4k
-         
-> PocketHub Android App
-       
-
-## 86. [ksoichiro/Android-ObservableScrollView](http://github.com/ksoichiro/Android-ObservableScrollView)  ♥️ 9.4k
-         
-> Android library to observe scroll events on scrollable views.
-       
-
-## 87. [kivy/kivy](http://github.com/kivy/kivy)  ♥️ 9.4k
-         
-> Open source UI framework written in Python, running on Windows, Linux, macOS, Android and iOS
-       
-
-## 88. [vondear/RxTool](http://github.com/vondear/RxTool)  ♥️ 9.3k
-         
-> Android开发人员不得不收集的工具类集合 | 支付宝支付 | 微信支付（统一下单） | 微信分享 | Zip4j压缩（支持分卷压缩与加密） | 一键集成UCrop选择圆形头像 | 一键集成二维码和条形码的扫描与生成 | 常用Dia…
-       
-
-## 89. [wasabeef/recyclerview-animators](http://github.com/wasabeef/recyclerview-animators)  ♥️ 9.2k
-         
-> An Android Animation library which easily add itemanimator to RecyclerView items.
-       
-
-## 90. [lipangit/JiaoZiVideoPlayer](http://github.com/lipangit/JiaoZiVideoPlayer)  ♥️ 9.2k
-         
-> Android VideoPlayer MediaPlayer VideoView MediaView Float View And Fullscreen.高度自定义的开源安卓视频框架
-       
 
 
 ## 91. [openstf/stf](http://github.com/openstf/stf)  ♥️ 9.1k
@@ -521,3 +321,5 @@ categories:
 > DEPRECATED
        
 
+
+### 以上数据由[code4flutter](https://code4flutter.com)收集整理

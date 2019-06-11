@@ -81,40 +81,40 @@ categories:
 > swift implementation of flappy bird. More at fullstackedu.com
        
 
-## 44. [onevcat/VVDocumenter-Xcode](http://github.com/onevcat/VVDocumenter-Xcode)  ♥️ 8.5k
+## 44. [mozilla-mobile/firefox-ios](http://github.com/mozilla-mobile/firefox-ios)  ♥️ 8.7k
+         
+> Firefox for iOS
+       
+
+## 45. [onevcat/VVDocumenter-Xcode](http://github.com/onevcat/VVDocumenter-Xcode)  ♥️ 8.5k
          
 > Xcode plug-in which helps you write documentation comment easier, for both Objective-C and Swift.
        
 
-## 45. [ninjaprox/NVActivityIndicatorView](http://github.com/ninjaprox/NVActivityIndicatorView)  ♥️ 8.4k
+## 46. [ninjaprox/NVActivityIndicatorView](http://github.com/ninjaprox/NVActivityIndicatorView)  ♥️ 8.4k
          
 > A collection of awesome loading animations
        
 
-## 46. [Quick/Quick](http://github.com/Quick/Quick)  ♥️ 8.2k
+## 47. [Quick/Quick](http://github.com/Quick/Quick)  ♥️ 8.2k
          
 > The Swift (and Objective-C) testing framework.
        
 
-## 47. [IBAnimatable/IBAnimatable](http://github.com/IBAnimatable/IBAnimatable)  ♥️ 8.1k
+## 48. [IBAnimatable/IBAnimatable](http://github.com/IBAnimatable/IBAnimatable)  ♥️ 8.1k
          
 > Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Int…
        
 
-## 48. [tristanhimmelman/ObjectMapper](http://github.com/tristanhimmelman/ObjectMapper)  ♥️ 8k
+## 49. [tristanhimmelman/ObjectMapper](http://github.com/tristanhimmelman/ObjectMapper)  ♥️ 8k
          
 > Simple JSON Object mapping written in Swift
  
 
-## 49. [WenchaoD/FSCalendar](http://github.com/WenchaoD/FSCalendar)  ♥️ 8k
+## 50. [WenchaoD/FSCalendar](http://github.com/WenchaoD/FSCalendar)  ♥️ 8k
          
 > A fully customizable iOS calendar library, compatible with Objective-C and Swift
  
-
-## 50. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8k
-         
-> Comprehensive mailing tools for PHP
-       
 
 
 ## 51. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8k
@@ -142,14 +142,14 @@ categories:
 > The ultimate API for iOS & OS X Auto Layout — impressively simple, immensely powerful. Objective-C and Swift compatible.
        
 
-## 56. [SwifterSwift/SwifterSwift](http://github.com/SwifterSwift/SwifterSwift)  ♥️ 7.2k
-         
-> A handy collection of more than 500 native Swift extensions to boost your productivity.
-       
-
-## 57. [insidegui/WWDC](http://github.com/insidegui/WWDC)  ♥️ 7.2k
+## 56. [insidegui/WWDC](http://github.com/insidegui/WWDC)  ♥️ 7.2k
          
 > The unofficial WWDC app for macOS
+       
+
+## 57. [SwifterSwift/SwifterSwift](http://github.com/SwifterSwift/SwifterSwift)  ♥️ 7.2k
+         
+> A handy collection of more than 500 native Swift extensions to boost your productivity.
        
 
 ## 58. [IBM-Swift/Kitura](http://github.com/IBM-Swift/Kitura)  ♥️ 7k
@@ -371,3 +371,5 @@ categories:
 > Create useful .gitignore files for your project
        
 
+
+### 以上数据由[code4flutter](https://code4flutter.com)收集整理

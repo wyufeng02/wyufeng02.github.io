@@ -1,4 +1,10 @@
+---
+layout: post
+title:  手把手教你解决flutter engine内存泄漏
+tag: flutter engine
+date: 2018-11-26 
 
+---
 ## Flutter/engine 修复版介绍
 
 tags: `flutter` `engine` `memory` `leak` `fix` `natoto`

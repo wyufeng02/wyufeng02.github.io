@@ -14,7 +14,7 @@ date: 2019-06-15
  * 架构图参考[flutter.dev](https://flutter.dev/docs/resources/technical-overview)
 
 
-![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b64545ea5113?w=1588&h=884&f=png&s=106964)
+![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b64545ea5113?imageslim)
 
 flutter 有三个学习层次，framework，engine，embedder
 上层的framework负责ui相关的事情，动画，widget，绘图，手势，基础库
@@ -23,7 +23,7 @@ engine层次c++实现，支持flutter相关的渲染，线程管理，平台事�
 > engine里面有个内存泄漏，flutter官方一直没有解决，可以出门左转找到解决方案《手把手教你解决flutter内存泄漏》。一句话就是，flutter在处理flutter method channel和register与engine之间持有关系比较混乱，存在一个比较大的循环引用。
 
 
-![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b61aaad058c3?w=731&h=357&f=png&s=25065)
+![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b61aaad058c3?imageslim)
 
 
 embedder 为engine提供四个task runner，将引擎移植到平台的中间层代码
@@ -46,7 +46,7 @@ Fushia,为ui，gpu，io，platform各自创建一个线程。
 
 
 
-![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b630686912a0?w=627&h=297&f=png&s=11919)
+![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b630686912a0?imageslim)
 
 isolate 是dart vm自己管理，engine无法访问，它是对actor并发模式的实现，运行中程序由一个或多个actor组成，这些actor就是isolate。
 
@@ -84,19 +84,19 @@ isolate直接的通信方式只能通过port，消息传递异步，与普通线
 以上代码是google工程师提供的测试代码，autoreleasepool中包括了flutter和engine的创建，然后自动释放，然后在释放之后重新调用sendmessage的方法，此时会有一个访问野指针的崩溃。
 对于engine的改写就需要放置在释放的时候放置对内部方法的访问
 
-![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b7e6cca95542?w=1484&h=724&f=png&s=206849)
+![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b7e6cca95542?imageslim)
 
 这样可以防止释放时候崩溃，但是对于根本的原因是fml内部实现的问题，如上所说，释放完成而指针变成了悬空指针。
 
 engine的第二个隐患，在shell.cc访问weakptr一定会得到一个不为空的指针，即使是在engine或platformview释放的时候，以下是它的实现代码
 
-![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b82d301bf985?w=1438&h=852&f=png&s=187994)
+![]()
 
-![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b82144b3e46a?w=1450&h=886&f=png&s=243688)
+![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b82144b3e46a?imageslim)
 
 粗略算了一下，四个taskrunner的getweakptr方法的实现都有隐患，归根到底还是fml的实现问题，悬空指针没有解决，这些都会造成野指针访问内存的崩溃。
 
-![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b8481e4553f9?w=1582&h=1376&f=png&s=378743)
+![](https://user-gold-cdn.xitu.io/2019/6/15/16b5b8481e4553f9?imageslim)
 
 
 * 本文[demo](https://github.com/Natoto/flutterOnExistApp) https://github.com/Natoto/flutterOnExistApp

@@ -64,6 +64,8 @@ defaults:
 feed:
   path: atom.xml
 
+whitelist:
+  - jekyll-redirect-from
 # Plugins
 ## Docs: https://help.github.com/articles/configuring-jekyll-plugins/
 plugins_dir:
@@ -72,6 +74,7 @@ plugins_dir:
  - jekyll-feed  
  - jekyll-related-posts
  - jekyll-seo-tag 
+ - jekyll-redirect-from
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------

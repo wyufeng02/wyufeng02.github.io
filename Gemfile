@@ -4,6 +4,7 @@ gem 'github-pages'
     gem 'jekyll-related-posts'
     gem 'jekyll-seo-tag'
     gem 'jekyll-paginate'
+    gem 'jekyll-redirect-from'
 end
 
 #gem 'jekyll-admin', group: :jekyll_plugins

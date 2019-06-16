@@ -36,25 +36,25 @@ I made this for my study/exercise on Flutter. I only make the client-side app, t
 ## Screenshots
 
 1. AppBar & TabBar
-<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image1.gif" height="300" alt="AppBar & TabBar"/>
+<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image1.gif?raw=true" height="300" alt="AppBar & TabBar"/>
 
 2. Retrieve list of chats from API and display them
-<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image2.gif" height="300" alt="Retrieve list of chats from API and display them"/>
+<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image2.gif?raw=true" height="300" alt="Retrieve list of chats from API and display them"/>
 
 3. Search through chats/statuses/calls
-<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image3.gif" height="300" alt="Search through chats/statuses/calls"/>
+<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image3.gif?raw=true" height="300" alt="Search through chats/statuses/calls"/>
 
 4. Show popup when profile is clicked
-<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image4.gif" height="300" alt="Show popup when profile is clicked"/>
+<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image4.gif?raw=true" height="300" alt="Show popup when profile is clicked"/>
 
 5. Retrieve list of contacts in phone
-<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image5.gif" height="300" alt="Retrieve list of contacts in phone"/>
+<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image5.gif?raw=true" height="300" alt="Retrieve list of contacts in phone"/>
 
 6. See chat messages and send a new message
-<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image6.gif" height="300" alt="See chat messages and send a new message"/>
+<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image6.gif?raw=true" height="300" alt="See chat messages and send a new message"/>
 
 7. See status detail
-<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image7.gif" height="300" alt="See status detail"/>
+<img src="https://github.com/hanmajid/flutter_whatsapp/blob/master/images/image7.gif?raw=true" height="300" alt="See status detail"/>
 
 8. Others
     * Retrieve images from DCIM/Camera folder in Camera tab.

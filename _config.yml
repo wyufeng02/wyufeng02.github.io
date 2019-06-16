@@ -9,7 +9,7 @@ subtitle: flutter开发者社区
 description: Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。
 author: code4flutter
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: zh-Hans
+language: en
 date_format: '%Y-%m-%d'
 
 # URL

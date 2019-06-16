@@ -1,5 +1,5 @@
 <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 {% if site.pace %}
@@ -129,6 +129,7 @@
 {% comment %} Canonical, good for google search engine (SEO) : https://support.google.com/webmasters/answer/139066 {% endcomment %}
 {% if site.canonical %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  
   <!-- <link rel="canonical" href="{{ page.canonical_path | replace: 'index.html', '' | absolute_url }}"/> -->
 {% endif %}
 

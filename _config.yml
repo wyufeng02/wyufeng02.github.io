@@ -41,7 +41,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 ## 'pygments' is unsupported on GitHub Pages now.
 highlighter: rouge
 highlight:
-  line_number: true
+  line_number: false
 
 #### Markdown Processors
 ## 'redcarpet' is unsupported on GitHub Pages now.
@@ -66,10 +66,11 @@ feed:
 
 # Plugins
 ## Docs: https://help.github.com/articles/configuring-jekyll-plugins/
-plugins:
+plugins_dir:
  - jemoji
  - jekyll-sitemap
- - jekyll-feed 
+ - jekyll-feed  
+ - jekyll-related-posts
  - jekyll-seo-tag
 
 # ---------------------------------------------------------------
@@ -80,7 +81,7 @@ plugins:
 favicon: /assets/images/code4flutter.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "Code4Flutter,flutter开发,flutter代码,flutter开发,跨平台,flutter资源"
+keywords: "Code4Flutter,flutter,flutter engine,flutter开发,flutter代码,flutter开发,跨平台,flutter资源"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -154,7 +155,7 @@ menu_icons:
 # Schemes
 scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+# scheme: Pisces
 
 
 # ---------------------------------------------------------------

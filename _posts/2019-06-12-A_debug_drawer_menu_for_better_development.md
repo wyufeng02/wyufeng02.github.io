@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  调试抽屉菜单，以便更好地开发
+title:  调试抽屉菜单 
 tag: [Drawer, Dev Tools]
 date: 2019-06-12
 ---

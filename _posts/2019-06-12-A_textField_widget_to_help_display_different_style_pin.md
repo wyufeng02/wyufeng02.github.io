@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个textField插件，用于帮助显示不同的样式引脚
+title:  验证码输入框
 tag: [Textfield, Pin, Password]
 date: 2019-06-12
 ---

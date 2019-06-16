@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  由Flutter制作的Tissue Box游戏
+title:  Tissue Box游戏
 tag: [Games]
 date: 2019-06-12
 ---
@@ -55,18 +55,20 @@ Assets are all made by yum650350.
     3. Game Over (assets\audio\a.mp3)
 
 ## Game Play
-Beat the best to win the crown.<img src="https://i.imgur.com/79sMhD1.png" title="source: imgur.com" />
-1. Drag the tissue up straight to start game and gain point(s).
-2. If box is empty, drag it to the right/left to reload.
-3. Drag more tissue before time out.
+
+击败最佳赢得冠军。<img src ="https://i.imgur.com/79sMhD1.png" title ="source：imgur.com"/>
+
+1.直接拖动组织以开始游戏和获得点。
+2.如果框为空，请将其向右/向左拖动以重新加载。
+3.在超时之前拖动更多组织。
 
 ![](https://raw.githubusercontent.com/yum650350/tissuebox/master/instruction1.png)
 
 ![](https://raw.githubusercontent.com/yum650350/tissuebox/master/instruction2.png)
 
 ## Game Tips
-1. Do not drag the box if it's not empry.
-2. Drag the tissue up as straight as you can to get more points.
+1.如果盒子不是空的，请不要拖动它。
+2.尽可能向上拖动组织以获得更多分数。
 
 ![](https://raw.githubusercontent.com/yum650350/tissuebox/master/instruction3.png)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  带有标记功能的TextField flutter包
+title:  带有标记功能的TextField  
 tag: [Textfield, Tags]
 date: 2019-06-12
 ---
@@ -107,24 +107,5 @@ For more detailed usage of properties, head on to [flutter_typeahead's documenta
 This package uses [flutter_typeahead](https://pub.dartlang.org/packages/flutter_typeahead) in order to display typeahead TextField with suggestions.
 
 Huge thanks to [@AbdulRahmanAlHamali](https://github.com/AbdulRahmanAlHamali) and team for developing Flutter Typeahead.
-
-
-## License
-
-```
-Copyright 2018 Sarbagya Dhaubanjar
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
-
+ 
 ## Github主页 👉[sarbagyastha/flutter_tagging](http://github.com/sarbagyastha/flutter_tagging)

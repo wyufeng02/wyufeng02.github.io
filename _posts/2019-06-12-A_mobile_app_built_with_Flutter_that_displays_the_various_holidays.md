@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个使用Flutter构建的移动应用程序，可显示各种假期
+title: 假期日历app
 tag: [Calendar, Apps]
 date: 2019-06-12
 ---
@@ -120,16 +120,5 @@ This app uses the following:
 
 - [World Holidays Twitter Bot](https://github.com/herovickers/worldholidaysbot) - World Holidays Twitter Bot is a Twitter bot built with [node.js](https://nodejs.org/en/) that tweets daily holidays taking place in various countries all over the world.
 -->
-
-## License
-
-MIT
-
----
-
-> [herovickers.github.io](https://herovickers.github.io) &nbsp;&middot;&nbsp;
-> GitHub [@herovickers](https://github.com/herovickers) &nbsp;&middot;&nbsp;
-> Twitter [@herovickers](https://twitter.com/herovickers)
-
-
+ 
 ## Github主页 👉[herovickers/world_holidays](http://github.com/herovickers/world_holidays)

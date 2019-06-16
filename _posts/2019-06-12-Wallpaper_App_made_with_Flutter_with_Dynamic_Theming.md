@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  使用动态主题的Flutter制作的壁纸应用程序
+title:  Flutter 壁纸应用程序
 tag: [Apps, Templates, Wallpaper]
 date: 2019-06-12
 ---

@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  用于创建令人敬畏的动画的flutter包
+title:  动画 | flutter package
 tag: [Animation]
 date: 2019-06-12
 ---
 
- 
 
 
 ## [立即下载 ️⬇️ ](https://codeload.github.com/felixblaschke/simple_animations/zip/master) 
@@ -30,18 +29,18 @@ productivity by simplifying the way to create animations.
 
 ## Project goal
 
-Flutter has a strong and flexible foundation of animation capabilities.
+Flutter拥有强大而灵活的动画功能基础。
 
-But even small animations feel **verbose** and **blow up** your code base. 
-**Animations** are one of the **most desired aspects** of Flutter, while being 
-difficult to master.
+但是，即使是小动画也会感觉**和**爆炸**你的代码库。
+**动画**是Flutter最需要的**方面之一**
+很难掌握。
 
-**Simple Animation**'s goal is to solve this issue, by
+**简单动画**的目标是解决这个问题
 
-- **simplifying** the way to creates **custom animations**,
-- softly dipping developers into the animation topic,
-- offering a lot of **documentation** and **examples**.
-
+ -  **简化**创建**自定义动画**的方式，
+ - 轻松地将开发人员放入动画主题中，
+ - 提供大量**文档**和**示例**。
+ - 
 ## Getting started
 
 There are multiple ways to get started:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  使用randomuser.me api的新Flutter随机用户详细信息
+title:  一个随机用户列表
 tag: [Miscellaneous]
 date: 2019-06-12
 ---
@@ -21,7 +21,7 @@ date: 2019-06-12
  
 # Random Users 
 
-A new Flutter Random Users Details using randomuser.me api.
+使用 randomuser.me api 创建的用户列表
 
 ## Getting Started
 
@@ -29,41 +29,27 @@ It is an Random users details with some cool UI, Details of users are fetched fr
 
 ### Show some :heart: and star the repo to support the project. 
 For more contact me @[facebook](https://www.facebook.com/bharatagsrwal), @[Twitter](https://twitter.com/bharatagsrwal) or @[Website](https://iambharat.tk)
-
-### I :heart: Flutter 
-
+ 
 ### Screenshots
 
-<img src="https://raw.githubusercontent.com/bharatagsrwal/random-users-details/master/screenshots/1.png" height="300em" /> <img src="/screenshots/2.png" height="300em" /> <img src="/screenshots/3.png" height="300em" /> <img src="/screenshots/4.png" height="300em" /><br>
+<img src="https://raw.githubusercontent.com/bharatagsrwal/random-users-details/master/screenshots/1.png" height="300em" /> <img src="https://raw.githubusercontent.com/bharatagsrwal/random-users-details/master/screenshots/2.png" height="300em" /> <img src="https://raw.githubusercontent.com/bharatagsrwal/random-users-details/master/screenshots/3.png" height="300em" /> <img src="https://raw.githubusercontent.com/bharatagsrwal/random-users-details/master/screenshots/4.png" height="300em" /><br>
 ### GIF
 `Please wait for GIF to load`<br><br>
-<img src="/screenshots/random_users.gif"/>
+<img src="https://raw.githubusercontent.com/bharatagsrwal/random-users-details/master/screenshots/random_users.gif"/>
 
 # Pull Requests
 
-I welcome and encourage all pull requests. It usually will take me within 10-21 hours to respond to any issue or request. Here are some basic rules to follow to ensure timely addition of your request:
+我欢迎并鼓励所有拉动请求。 我通常会在10-21个小时内回复任何问题或要求。 以下是一些基本规则，以确保及时添加您的请求：
 
-1.  Match coding style (braces, spacing, etc.) This is best achieved using `Reformat Code` feature of Android Studio `CMD`+`Option`+`L` on Mac and `CTRL` + `ALT` + `L` on Linux + Windows .
-2.  If its a feature, bugfix, or anything please only change code to what you specify.
-3.  Please keep PR titles easy to read and descriptive of changes, this will make them easier to merge :)
-4.  Pull requests _must_ be made against `develop` branch. Any other branch (unless specified by the maintainers) will get rejected.
-5.  Check for existing [issues](https://github.com/bharatagsrwal/random-users-details/issues) first, before filing an issue.
-6.  Make sure you follow the set standard as all other projects in this repo do
-7.  Have fun!
-
-# 👍 Contribution
-1. Fork it
-2. Create your feature branch (git checkout -b my-new-feature)
-3. Commit your changes (git commit -m 'Add some feature')
-4. Push to the branch (git push origin my-new-feature)
-5. Create new Pull Request
-
-
-### Created By
-
-[Github](https://github.com/bharatagsrwal) ([Facebook](https://www.facebook.com/bharatagsrwal)) ([Linkedin](https://www.linkedin.com/in/bharatagsrwal)) ([Hackerrank](https://www.hackerrank.com/bharatagsrwal))
-([Bharat Agarwal](https://iambharat.tk))([Twitter](https://www.twitter.com/bharatagsrwal))
-
+1.匹配编码风格（大括号，间距等）最好使用Mac上的Android Studio`CMD` +`Option` +`L`的`Reformat Code`功能和`CTRL` +`ALT` +`L `在Linux + Windows上。
+2.如果是功能，错误修正或其他任何内容，请只将代码更改为您指定的内容。
+3.请保持PR标题易于阅读和描述变化，这将使它们更容易合并:)
+4.拉出请求_must_对`develop`分支。 任何其他分支（除非由维护者指定）将被拒绝。
+5.在提交问题之前，首先检查现有的[问题]（https://github.com/bharatagsrwal/random-users-details/issues）。
+6.确保按照设定的标准执行此仓库中的所有其他项目
+7.玩得开心！
+ 
+ 
 ## More
 Have any Idea, you can tell me or can contribute in this repo.
 

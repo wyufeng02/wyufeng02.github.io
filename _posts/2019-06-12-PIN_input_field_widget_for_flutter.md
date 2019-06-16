@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  用于flutter的PIN输入字段插件
+title:  PIN输入字段插件
 tag: [Textfield, Pin, Input]
 date: 2019-06-12
 ---

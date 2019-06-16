@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在Uplabs.com上实现Wallet Ui Design
+title:  钱包app
 tag: [UI]
 date: 2019-06-12
 ---
@@ -92,13 +92,13 @@ What things you need to run the app
 
 ## How to contribute
 
-- **Fork the repository and clone it locally**. Connect your local to the original “upstream” repository by adding it as a remote. Pull in changes from “upstream” often so that you stay up to date so that when you submit your pull request, merge conflicts will be less likely. (See more detailed instructions here.)
-- **Create a branch** for your edits.
-- **Reference any relevant issues** or supporting documentation in your PR (for example, “Closes #37.”)
-- **Include screenshots of the before and after** if your changes include differences in HTML/CSS. Drag and drop the images into the body of your pull request.
-- **Test your changes!** Run your changes against any existing tests if they exist and create new ones when needed. Whether tests exist or not, make sure your changes don’t break the existing project.
-- **Contribute in the style of the project** to the best of your abilities. This may mean using indents, semi-colons or comments differently than you would in your own repository, but makes it easier for the maintainer to merge, others to understand and maintain in the future.
-
+ -  **分叉存储库并在本地克隆它**。通过将其本地添加为远程，将本地连接到原始“上游”存储库。经常从“上游”引入更改，以便您保持最新状态，这样当您提交拉取请求时，合并冲突的可能性就会降低。 （请在此处查看更详细的说明。）
+ -  **为您的编辑创建分支**。
+ -  **参考PR中的任何相关问题**或支持文档（例如，“关闭＃37。”）
+ -  **如果您的更改包含HTML / CSS的差异，请包括之前和之后**的屏幕截图。将图像拖放到拉取请求的正文中。
+ -  **测试您的更改！**对任何现有测试运行更改（如果存在）并在需要时创建新测试。无论是否存在测试，请确保您的更改不会破坏现有项目。
+ -  **尽可能以项目的方式贡献**。这可能意味着使用缩进，分号或注释的方式与您在自己的存储库中的方式不同，但是使维护者更容易合并，其他人可以在将来理解和维护。
+ -  
 ## Built With
 
 - [Android Studio](https://developer.android.com/studio/install) - How to install Android Studio
@@ -116,21 +116,5 @@ What things you need to run the app
 **Subramanian**
 
 - [**Subramanian**](https://www.uplabs.com/subhu)
-
-## License
-
-Copyright 2019 Sunu Bright Etornam
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
+ 
 ## Github主页 👉[RegNex/WalletUiApp](http://github.com/RegNex/WalletUiApp)

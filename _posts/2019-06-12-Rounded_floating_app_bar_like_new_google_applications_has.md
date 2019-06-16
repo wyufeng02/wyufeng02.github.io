@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  圆形浮动appbar像新的谷歌应用程序一样
+title:  圆形浮动appbar仿谷歌应用程序
 tag: [Floating]
 date: 2019-06-12
 ---

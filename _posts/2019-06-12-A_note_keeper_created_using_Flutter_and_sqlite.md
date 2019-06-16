@@ -27,9 +27,9 @@ This is a note keeper created using flutter and sqlite.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+该项目是Flutter应用程序的起点。
 
-A few resources to get you started if this is your first Flutter project:
+如果这是您的第一个Flutter项目，可以使用一些资源来帮助您入门：
 
 - [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)

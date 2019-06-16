@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  使用Flutter的Whatsapp克隆
+title:  Flutter版Whatsapp
 tag: [Apps, Templates]
 date: 2019-06-12
 ---

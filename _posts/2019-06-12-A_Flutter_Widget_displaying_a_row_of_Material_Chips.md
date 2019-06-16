@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个Flutter Widget显示一排Material Chips
+title:  并排选项按钮
 tag: [Chips, Material Design, Widgets]
 date: 2019-06-12
 ---

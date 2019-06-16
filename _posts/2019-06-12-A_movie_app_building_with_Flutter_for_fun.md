@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个电影应用程序建设与Flutter的乐趣
+title:  影评app
 tag: [Movie, Templates]
 date: 2019-06-12
 ---
@@ -21,10 +21,10 @@ date: 2019-06-12
  
 # flutter_tubi
 
-A movie app building with Flutter for fun.
+一个电影应用程序建设与Flutter的乐趣。
 
 
-Some screenshots
+一些截图
 
 iOS:
 

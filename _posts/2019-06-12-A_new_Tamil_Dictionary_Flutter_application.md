@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个新的泰米尔语词典flutter应用程序
+title:  一个flutter泰米尔语词典
 tag: [Apps, Templates]
 date: 2019-06-12
 ---
@@ -18,18 +18,18 @@ date: 2019-06-12
 > 泰米尔语词典 - flutter应用程序
 >
 
- 
-# vasitionary
+ # vasitionary
 
-A new Tamil Dictionary Flutter application.
+一个新的泰米尔语词典颤振应用程序。
 
-## Getting Started
+##  入门
 
-This App is a new and first of its kind app for Tamil Language.
+此应用程序是泰米尔语言的新应用程序。
 
-It servers the purpose of a dictionary and also we can play the Sorkkuvari (Tamil version of Scrabble game). 
+它服务于字典的目的，我们也可以玩Sorkkuvari（泰米尔语版的Scrabble游戏）。
 
-You can search the meaning for any valid Tamil word.
+您可以搜索任何有效泰米尔语单词的含义。
+
 
 <img width="452" alt="Screen Shot 2019-04-22 at 8 54 11 pm" src="https://user-images.githubusercontent.com/14884575/56497651-dc036380-6541-11e9-90cd-5dffe8bb0f81.png"/>
 

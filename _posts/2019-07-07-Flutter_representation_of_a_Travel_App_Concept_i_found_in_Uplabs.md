@@ -15,7 +15,7 @@ date: 2019-07-07
 ![](https://flutterawesome.com/content/images/2019/07/FlutterTravelx.jpg)
  
 >
-> 我在Uplabs找到的旅行应用概念的flutter表示。
+>  Uplabs找到的旅行应用概念的flutter版
 >
 
  

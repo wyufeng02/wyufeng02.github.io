@@ -1,7 +1,7 @@
 ---
 layout: post
 title: flutter代码解耦插件
-tag: [flutter, Widgets,解耦]
+tag: [flutter, Widgets]
 date: 2019-07-07
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个简单而干净的新闻应用程序，用Flutter和Dart制作
+title:  一个简单干净的新闻App
 tag: [code4flutter,flutterAwesome , News, Apps]
 date: 2019-06-10
 ---
@@ -15,11 +15,11 @@ date: 2019-06-10
 ![](https://flutterawesome.com/content/images/2019/05/News_appcs.jpg)
  
 >
-> 该项目是Flutter应用程序的起点。
+> 一个新闻客户端项目
 >
 
  
-# news_app --> Under Construction
+# 新闻app --> 开发中
 
 A new Flutter project.
 

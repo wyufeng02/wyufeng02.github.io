@@ -28,9 +28,9 @@ date: 2019-06-10
   - [Running the app](#running-the-app)
   - [Features](#features)
   - [Screenshots](#screenshots)
-  - [Donate](#donate)
-  - [Contact me](#contact-me)
-  - [Inspiration](#inspiration)
+  - [赞助](#%E8%B5%9E%E5%8A%A9)
+  - [联系我](#%E8%81%94%E7%B3%BB%E6%88%91)
+  - [灵感](#%E7%81%B5%E6%84%9F)
   - [Github主页 👉Eagle6789/basic_file_manager](#github%E4%B8%BB%E9%A1%B5-%F0%9F%91%89eagle6789basicfilemanager)
   
 ## Getting Started
@@ -72,18 +72,18 @@ date: 2019-06-10
 <img src="https://raw.githubusercontent.com/Eagle6789/basic_file_manager/master/screenshots/all_dark.png?raw" alt="dark" width="650" height="600"/>
 <img src="https://raw.githubusercontent.com/Eagle6789/basic_file_manager/master/screenshots/all_white.png?raw" alt="light" width="650" height="600"/> 
 
-## Donate
+## 赞助
 
 - PayPal me: [https://www.paypal.me/eagle6789](https://www.paypal.me/eagle6789)
 - PayPal account: me49544@gmail.com
 - Bitcoin: 1AP6bypSaFt7ptFydmjuWWWS8a9MCWRt3m
 
-## Contact me
+## 联系我
 
 - me49544@gmail.com
 
-## Inspiration
+## 灵感
 
-- [Filip Hracek](https://github.com/filiph) from the Google and the Boring Show
+- 来自Google和Boring Show的[Filip Hracek]（https://github.com/filiph）
 
 ## Github主页 👉[Eagle6789/basic_file_manager](http://github.com/Eagle6789/basic_file_manager)

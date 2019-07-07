@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  弹出菜单支持iOS和Android
+title:  弹出菜单PopupMenu 插件
 tag: [code4flutter,flutterAwesome , Menu, Popup]
 date: 2019-06-10
 ---
@@ -15,7 +15,7 @@ date: 2019-06-10
 ![](https://flutterawesome.com/content/images/2019/06/popup_menux.jpg)
  
 >
-> 这个项目是用纯dart代码编写的，这意味着它支持iOS和Android。
+> 这个项目是用纯dart代码编写的，支持iOS和Android。
 >
 
  

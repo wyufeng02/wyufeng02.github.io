@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在设备上构建Flutter布局的工具
+title:  一个真机上创建Flutter布局工具
 tag: [code4flutter,flutterAwesome , Dev Tools]
 date: 2019-06-10
 ---
@@ -22,25 +22,20 @@ date: 2019-06-10
 
 # MetaFlutter
 
-MetaFlutter is a project to create Flutter layouts on device. 
+MetaFlutter是一个在设备上创建Flutter布局的项目。
 
-Learn, explore and experiment with Flutter widgets directly on your phone.
+直接在手机上学习，探索和试验Flutter小部件。
 
-MetaFlutter allows you to create Flutter layouts using a wide and constantly growing range of Flutter widgets. 
+MetaFlutter允许您使用广泛且不断增长的Flutter小部件来创建Flutter布局。
 
-Build out an idea you had instantly, try out something you've never tried before or just use it as a tool for Flutter layout demonstrations. 
+建立一个你立即想到的想法，试试你以前从未尝试过的东西，或者只是将它用作Flutter布局演示的工具。
 
-No login. Free to use. Open-source.
+没有登录。 免费使用。开源。
 
 [Play Store Link](https://play.google.com/store/apps/details?id=n.dev.flutter_app_builder)
 
-![alt text](https://github.com/deven98/MetaFlutter/blob/master/screenshots/screenshot1.png)
+![alt text](https://github.com/deven98/MetaFlutter/blob/master/screenshots/screenshot1.png?raw=true)
 
-### To start contributing
-
-Read [CONTRIBUTING.md](https://github.com/deven98/MetaFlutter/blob/master/CONTRIBUTING.md) to start contributing to this project. 
-
-We would love to have you on board.
 
 
 ## Github主页 👉[deven98/MetaFlutter](http://github.com/deven98/MetaFlutter)

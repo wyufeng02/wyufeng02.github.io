@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  可定制和可插入的主题提供商与Flutter
+title: 主题插件
 tag: [flutter, Theme]
 date: 2019-07-07
 ---

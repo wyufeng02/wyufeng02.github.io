@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flutter应用程序的Facebook Audience Network插件
+title:  Flutter Facebook Audience Network插件
 tag: [flutter, Ad, Network]
 date: 2019-07-07
 ---

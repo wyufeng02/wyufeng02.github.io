@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  [Plugin]，可以轻松处理iOS和Android中的实时位置
+title:  Plugin 可以轻松处理iOS和Android中的实时位置
 tag: [flutter, Location, Maps,Plugin]
 date: 2019-07-07
 ---

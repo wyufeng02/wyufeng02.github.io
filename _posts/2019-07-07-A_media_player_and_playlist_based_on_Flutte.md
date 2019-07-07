@@ -24,7 +24,7 @@ date: 2019-07-07
 A new Flutter application. http://alexandermateo.com/
 
 ## Config Firebase
-![alt text](https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/firebase-db.png)
+![Flutter 视频播放器](https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/firebase-db.png?raw=true)
 
 Configure firebase to your project.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个Flutter插件，用于滚动文本插件和其他插件
+title:  滚动文字&走马灯
 tag: [flutter, Widgets, Marquee]
 date: 2019-07-07
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  
+title:  flutter keep 应用
 tag: [flutter, Apps]
 date: 2019-07-07
 ---
@@ -14,11 +14,6 @@ date: 2019-07-07
  
 ![](https://flutterawesome.com/content/images/2019/06/Goalkeeper.jpg)
  
->
-> 一个简单的Flutter应用程序，以跟踪您的目标！
->
-
- 
-404: Not Found
+  
 
 ## Github主页 👉[urmilshroff/goalkeeper](http://github.com/urmilshroff/goalkeeper)

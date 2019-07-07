@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  一个flutter的插件，目的是简化样式并减少嵌套
-tag: [flutter, Widgets]
+title:  flutter代码解耦插件
+tag: [flutter, Widgets,解耦]
 date: 2019-07-07
 ---
 

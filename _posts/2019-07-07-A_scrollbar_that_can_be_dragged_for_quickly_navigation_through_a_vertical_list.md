@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  可以拖动滚动条以快速浏览垂直列表
-tag: [flutter, ]
+title:  flutter列表拖拽滚动条
+tag: [flutter, 拖拽]
 date: 2019-07-07
 ---
 

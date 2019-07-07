@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  带有flutter的全局加载插件
+title:  flutter loading 
 tag: [flutter, Loading, Widgets]
 date: 2019-07-07
 ---

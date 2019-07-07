@@ -75,6 +75,6 @@ samples, guidance on mobile development, and a full API reference.
 [WTFPL](http://www.wtfpl.net/about/)
 ## Github主页 👉[JideGuru/FlutterTravel](http://github.com/JideGuru/FlutterTravel)
 
-
-<div class="github-widget" data-repo="JideGuru/FlutterTravel"></div>
+<div class="github-widget" data-repo="hustcc/GitHub-Repo-Widget.js"></div>
+<div class="github-widget" data-username="JideGuru"></div>
 <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>

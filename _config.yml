@@ -82,7 +82,7 @@ plugins_dir:
 favicon: /assets/images/code4flutter.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "flutter,Flutter.io,flutter.dev,Flutter packages,intellij, Flutterio, Flutter app,flutter 例子,padding,fluttr awesome,flutterdev,expanded,flutter wiki,flutter language,flutter tutorial,code4flutter,flutter engine,flutter ui,flutter 语言,flutter 教程,flutter 学习,react native,flutter 例子, google io"
+keywords: "flutter,Flutter.io,flutter.dev,Flutter packages,intellij, Flutterio, Flutter app,flutter 例子,padding,fluttr awesome,flutterdev,expanded,flutter wiki,flutter language"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.

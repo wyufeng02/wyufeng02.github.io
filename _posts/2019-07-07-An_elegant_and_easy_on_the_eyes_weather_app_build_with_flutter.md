@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个优雅和容易的眼睛天气应用程序构建与flutter
+title:  flutter 天气应用程序 
 tag: [flutter, Weather, Apps, Templates]
 date: 2019-07-07
 ---

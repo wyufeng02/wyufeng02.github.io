@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  使用Dart编程语言使用Flutter创建的flutter组件概念
+title:  可拖拽的 tab bar  
 tag: [flutter, Tabbar]
 date: 2019-07-07
 ---

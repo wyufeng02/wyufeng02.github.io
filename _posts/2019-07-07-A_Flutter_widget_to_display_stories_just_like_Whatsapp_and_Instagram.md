@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  一个Flutter插件，可以像Whatsapp和Instagram一样显示故事
-tag: [flutter, Widgets]
+title:  Plugin，可以像Whatsapp和Instagram一样显示story
+tag: [flutter, Widgets,Plugin]
 date: 2019-07-07
 ---
 

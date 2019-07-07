@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  用Flutter制作的Beauty Textfield
+title:  Beauty Textfield
 tag: [flutter, Textfield]
 date: 2019-07-07
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  用于管理照片形式的学习材料的flutter应用程序
+title:  管理照片flutter应用程序
 tag: [flutter, Images]
 date: 2019-07-07
 ---

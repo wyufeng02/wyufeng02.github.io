@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  来自论坛La Confraternita della Pizza的官方工具的Android版本
+title:  Calcolapizza，Pizza的官方工具的Android版本
 tag: [flutter, Apps, Templates]
 date: 2019-07-07
 ---

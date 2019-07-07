@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  我在Uplabs找到的旅行应用概念的flutter表示
+title:  flutter 旅行应用程序
 tag: [flutter, Apps, Templates]
 date: 2019-07-07
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  具有空灵的flutter选择插件
+title:  flutter选择插件
 tag: [flutter, Select]
 date: 2019-07-07
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  圆形列表的新Flutter包
-tag: [flutter, Circle]
+title:  Plugin,圆形列表
+tag: [flutter, Circle,Plugin]
 date: 2019-07-07
 ---
 

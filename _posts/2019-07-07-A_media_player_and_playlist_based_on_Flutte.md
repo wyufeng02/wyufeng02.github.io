@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  基于Flutter的媒体播放器和播放列表
-tag: [flutter, Apps, Templates]
+title:  Flutter 视频播放器 
+tag: [flutter, Apps, video player]
 date: 2019-07-07
 ---
 
@@ -12,7 +12,7 @@ date: 2019-07-07
 
 
  
-![](https://flutterawesome.com/content/images/2019/05/Alexander-Playlist.jpg)
+![Flutter 媒体播放器 ](https://flutterawesome.com/content/images/2019/05/Alexander-Playlist.jpg)
  
 >
 > 一个新的Flutter应用程序。
@@ -29,7 +29,7 @@ A new Flutter application. http://alexandermateo.com/
 Configure firebase to your project.
 
 ## Screenshot
-<img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-090904.jpg" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-090922.jpg" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-090925.jpg" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-090928.jpg" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-084044.jpg" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-084100.jpg" width="250"/>
+<img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-090904.jpg?raw=true" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-090922.jpg?raw=true" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-090925.jpg?raw=true" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-090928.jpg?raw=true" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-084044.jpg?raw=true" width="250"/> | <img src="https://github.com/silexcorp/Alexander-Playlist/blob/master/screenshots/Screenshot_20190430-084100.jpg?raw=true" width="250"/>
 
 ## Getting Started
 

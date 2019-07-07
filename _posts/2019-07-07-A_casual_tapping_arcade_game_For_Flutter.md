@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个随意的攻击街机游戏For Flutter
+title:  一个攻击街机游戏For Flutter
 tag: [flutter, Games]
 date: 2019-07-07
 ---

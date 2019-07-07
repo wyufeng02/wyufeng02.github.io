@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  flutter定制剪刀，以帮助您实现各种自定义形状
+title:  flutter定制剪刀, 实现各种自定义形状
 tag: [flutter, Clippers, Shapes]
 date: 2019-07-07
 ---

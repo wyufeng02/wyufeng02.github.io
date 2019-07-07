@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  简单的计算器应用程序使用flutter
+title:  flutter 计算器应用程序
 tag: [flutter, Calculator]
 date: 2019-07-07
 ---

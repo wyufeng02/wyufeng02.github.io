@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  一个插件，可以将flutter应用程序适应不同的平台
-tag: [flutter, UI]
+title:  Plugin，与原生平台自由切换
+tag: [flutter, UI,Plugin]
 date: 2019-07-07
 ---
 

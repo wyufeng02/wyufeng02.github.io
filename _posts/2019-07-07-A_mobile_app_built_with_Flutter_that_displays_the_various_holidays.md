@@ -1,13 +1,11 @@
 ---
 layout: post
-title:  一个使用Flutter构建的移动应用程序，可显示各种假期
+title:  flutter 假期日历
 tag: [flutter, Calendar, Apps]
 date: 2019-07-07
 ---
 
  
-
-
 ## [立即下载 ️⬇️ ](https://codeload.github.com/herovickers/world_holidays/zip/master) 
 
 
@@ -17,8 +15,6 @@ date: 2019-07-07
 >
 > World Holidays是一款使用Flutter构建的移动应用程序，可显示世界各国一年中的各种假期，并提醒您最喜欢的假期。
 >
-
- 
 
 
 <h1 align="center">

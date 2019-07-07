@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  一个完整的应用程序，显示来自不同宇宙的超级英雄和恶棍
+title:  一个应用程序，显示来自不同宇宙的超级英雄和恶棍
 tag: [Apps]
 date: 2019-06-11
 ---
@@ -21,9 +21,7 @@ date: 2019-06-11
  
 # 🤓 FlutterSuperHeroes [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/JideGuru/FlutterSuperHeroes/graphs/commit-activity) [![GitHub stars](https://img.shields.io/github/stars/JideGuru/FlutterSuperHeroes.svg?style=social&label=Star)](https://github.com/JideGuru/FlutterSuperHeroes/stargazers/)
 
-
-
-A Flutter app that displays superheroes and villains from different universes
+ 
 
 
 <a href="https://github.com/JideGuru/FlutterSuperHeroes/raw/master/assets/app-release.apk">
@@ -46,10 +44,10 @@ A Flutter app that displays superheroes and villains from different universes
 |<img src="https://raw.githubusercontent.com/JideGuru/FlutterSuperHeroes/master/assets/1.jpg" width="400"/>|<img src="assets/2.jpg" width="400"/>|
 
 ## ✨ Requirements
-* Any Operating System (ie. MacOS X, Linux, Windows)
-* Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
-* A little knowledge of Dart and Flutter
-* A brain to think 🤓🤓
+*任何操作系统（即MacOS X，Linux，Windows）
+*安装了Flutter SDK的任何IDE（即IntelliJ，Android Studio，VSCode等）
+*有关Dart和Flutter的一点知识
+*思考brain的大脑
 
 ## 🤓 Author(s)
 **Olusegun Festus Babajide**

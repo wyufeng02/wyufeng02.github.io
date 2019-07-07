@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  关于使用Flutter制作的颜色的Android和iOS游戏
+title:  Flutter制作的选取颜色的Android和iOS游戏
 tag: [flutter, Color]
 date: 2019-07-07
 ---

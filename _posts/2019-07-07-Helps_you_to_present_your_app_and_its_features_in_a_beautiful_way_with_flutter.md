@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  帮助您以漂亮的方式呈现您的应用程序及其功能
+title:  flutter 制作引导页面
 tag: [flutter, UI, Coach Mark]
 date: 2019-07-07
 ---

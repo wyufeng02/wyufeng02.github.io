@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  压缩视频会产生一个flutter的新路径
+title:  压缩视频工具
 tag: [flutter, Video]
 date: 2019-07-07
 ---

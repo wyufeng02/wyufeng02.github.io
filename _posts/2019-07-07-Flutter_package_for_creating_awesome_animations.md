@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  用于创建令人敬畏的动画的flutter包
+title:  一个最简单的创建动画方式
 tag: [flutter, Animation]
 date: 2019-07-07
 ---

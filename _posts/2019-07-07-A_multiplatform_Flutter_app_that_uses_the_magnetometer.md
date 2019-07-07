@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  使用磁力计的多平台flutter应用程序
-tag: [flutter, Compass]
+title:  磁力计 flutter应用程序
+tag: [flutter, Compass,磁力计]
 date: 2019-07-07
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-07
 ![](https://flutterawesome.com/content/images/2019/05/Compass.jpg)
  
 >
-> 这是一个多平台flutter应用程序，它使用磁力计，加速度计，位置传感器来获取当前的方向，位置，天气，温度，湿度。
+>  flutter应用程序，它使用磁力计，加速度计，位置传感器来获取当前的方向，位置，天气，温度，湿度。
 >
 
  
@@ -25,6 +25,7 @@ date: 2019-07-07
 </div>
 
 # Compass
+
 This is a multiplatform [Flutter](https://www.flutter.dev) app that uses the magnetometer, accelerometer, location sensors to get the current direction, location, weather, temperature, humidity.
 
 The [Flare](https://www.2dimensions.com) asset:  

@@ -15,7 +15,7 @@ date: 2019-07-07
 ![](https://flutterawesome.com/content/images/2019/06/FlutterFoodybite.jpg)
  
 >
-> 我在Uplabs找到的餐馆应用UI的flutter表示。
+>  flutter版 Uplabs 餐馆应用
 >
 
  

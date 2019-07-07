@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flutter Package，便于构建对话
+title:  Flutter bmprogresshud
 tag: [Dialog]
 date: 2019-06-11
 ---

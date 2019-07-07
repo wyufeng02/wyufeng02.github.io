@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  圆形的Flutter包，可以通过动画选择
+title:  selectable circle
 tag: [flutter, Circle, Animation]
 date: 2019-07-07
 ---

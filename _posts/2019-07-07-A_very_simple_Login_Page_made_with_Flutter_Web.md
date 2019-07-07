@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  使用Flutter Web制作的一个非常简单的登录页面
+title:  Flutter Web 制作的一个非常简单的登录页面
 tag: [flutter, Login Screen, Web]
 date: 2019-07-07
 ---

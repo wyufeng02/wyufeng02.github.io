@@ -82,7 +82,7 @@ plugins_dir:
 favicon: /assets/images/code4flutter.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "code4Flutter,flutter,flutterdev,flutter engine,flutter开发,flutter代码,flutter开发,跨平台,flutter资源"
+keywords: "code4Flutter,flutter,flutterdev,flutter engine,应用开发,跨平台,例子"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -105,14 +105,14 @@ copyright: true
 # Canonical, set a canonical link tag in your jekyll, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
 # Tips: Before you open this tag, remember set up your URL in _config.yml ( ex. url: http://yourdomain.com )
-canonical: true
+canonical: false
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
 seo: true
 
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle
-index_with_subtitle: true
+index_with_subtitle: false
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -259,8 +259,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
+  # position: left
   position: left
-  #position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -268,7 +268,7 @@ sidebar:
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
   display: remove
-  #display: always
+  # display: always
   #display: hide
   #display: remove
 
@@ -280,7 +280,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
 
 # Blog rolls
@@ -296,19 +296,19 @@ sidebar:
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
 
 # Automatically saving scroll position on each post/page in cookies.
 save_scroll: false
 
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
+excerpt_description: false
 
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 30
 
 # Post meta display settings
 post_meta:
@@ -321,7 +321,7 @@ post_meta:
 post_wordcount:
   item_text: true
   wordcount: true
-  min2read: false
+  min2read: true
   separated_meta: true
 
 # Wechat Subscriber

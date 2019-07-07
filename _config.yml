@@ -71,8 +71,7 @@ whitelist:
 plugins_dir:
  - jemoji
  - jekyll-sitemap
- - jekyll-feed  
- - jekyll-related-posts
+ - jekyll-feed   
  - jekyll-seo-tag 
  - jekyll-redirect-from
 # ---------------------------------------------------------------

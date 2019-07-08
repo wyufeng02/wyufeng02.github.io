@@ -287,8 +287,8 @@ sidebar:
 #links_title: Links
 #links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  Title: http://whenbar.com/
 
 
 # ---------------------------------------------------------------
@@ -307,13 +307,13 @@ excerpt_description: false
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
+  enable: false
   length: 30
 
 # Post meta display settings
 post_meta:
-  item_text: true
-  created_at: true
+  item_text: false
+  created_at: false
   updated_at: false
   categories: true
 

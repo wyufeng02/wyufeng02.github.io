@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  使用自定义圆形进度与画板 flutter圆形进度条
-tag: [flutter,进度条]
+title:  flutter圆形进度条-使用自定义圆形进度与画板实现
+tag: [flutter,进度条,flutter开发,圆形进度条]
 date: 2019-07-11
 ---
 

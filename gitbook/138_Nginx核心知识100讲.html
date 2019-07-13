@@ -1,0 +1,1460 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>138_Nginx核心知识100讲 · 极客时间索引</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tags/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="139_MySQL实战45讲.html" />
+    
+    
+    <link rel="prev" href="133_从0开始学大数据.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="42_技术与商业案例解读.html">
+            
+                <a href="42_技术与商业案例解读.html">
+            
+                    
+                    42_技术与商业案例解读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="43_AI技术内参.html">
+            
+                <a href="43_AI技术内参.html">
+            
+                    
+                    43_AI技术内参
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="48_左耳听风.html">
+            
+                <a href="48_左耳听风.html">
+            
+                    
+                    48_左耳听风
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="49_朱赟的技术管理课.html">
+            
+                <a href="49_朱赟的技术管理课.html">
+            
+                    
+                    49_朱赟的技术管理课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="50_邱岳的产品手记.html">
+            
+                <a href="50_邱岳的产品手记.html">
+            
+                    
+                    50_邱岳的产品手记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="61_如何做好一场技术演讲.html">
+            
+                <a href="61_如何做好一场技术演讲.html">
+            
+                    
+                    61_如何做好一场技术演讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="62_人工智能基础课.html">
+            
+                <a href="62_人工智能基础课.html">
+            
+                    
+                    62_人工智能基础课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="63_赵成的运维体系管理课.html">
+            
+                <a href="63_赵成的运维体系管理课.html">
+            
+                    
+                    63_赵成的运维体系管理课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="66_微服务架构核心20讲.html">
+            
+                <a href="66_微服务架构核心20讲.html">
+            
+                    
+                    66_微服务架构核心20讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="73_ServiceMesh实践指南.html">
+            
+                <a href="73_ServiceMesh实践指南.html">
+            
+                    
+                    73_ServiceMesh实践指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="74_推荐系统三十六式.html">
+            
+                <a href="74_推荐系统三十六式.html">
+            
+                    
+                    74_推荐系统三十六式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="75_深入浅出gRPC.html">
+            
+                <a href="75_深入浅出gRPC.html">
+            
+                    
+                    75_深入浅出gRPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="76_深入浅出区块链.html">
+            
+                <a href="76_深入浅出区块链.html">
+            
+                    
+                    76_深入浅出区块链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="77_9小时搞定微信小程序开发.html">
+            
+                <a href="77_9小时搞定微信小程序开发.html">
+            
+                    
+                    77_9小时搞定微信小程序开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="79_技术领导力300讲.html">
+            
+                <a href="79_技术领导力300讲.html">
+            
+                    
+                    79_技术领导力300讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="80_硅谷产品实战36讲.html">
+            
+                <a href="80_硅谷产品实战36讲.html">
+            
+                    
+                    80_硅谷产品实战36讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="81_从0开始学架构.html">
+            
+                <a href="81_从0开始学架构.html">
+            
+                    
+                    81_从0开始学架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="82_Java核心技术36讲.html">
+            
+                <a href="82_Java核心技术36讲.html">
+            
+                    
+                    82_Java核心技术36讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="84_微服务架构实战160讲.html">
+            
+                <a href="84_微服务架构实战160讲.html">
+            
+                    
+                    84_微服务架构实战160讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="85_趣谈网络协议.html">
+            
+                <a href="85_趣谈网络协议.html">
+            
+                    
+                    85_趣谈网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="87_从0开始学游戏开发.html">
+            
+                <a href="87_从0开始学游戏开发.html">
+            
+                    
+                    87_从0开始学游戏开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="97_机器学习40讲.html">
+            
+                <a href="97_机器学习40讲.html">
+            
+                    
+                    97_机器学习40讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="98_零基础学Python.html">
+            
+                <a href="98_零基础学Python.html">
+            
+                    
+                    98_零基础学Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="100_React实战进阶45讲.html">
+            
+                <a href="100_React实战进阶45讲.html">
+            
+                    
+                    100_React实战进阶45讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="103_软件测试52讲.html">
+            
+                <a href="103_软件测试52讲.html">
+            
+                    
+                    103_软件测试52讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="104_持续交付36讲.html">
+            
+                <a href="104_持续交付36讲.html">
+            
+                    
+                    104_持续交付36讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="105_快速上手Kotlin开发.html">
+            
+                <a href="105_快速上手Kotlin开发.html">
+            
+                    
+                    105_快速上手Kotlin开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="108_深入拆解Java虚拟机.html">
+            
+                <a href="108_深入拆解Java虚拟机.html">
+            
+                    
+                    108_深入拆解Java虚拟机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="110_邱岳的产品实战.html">
+            
+                <a href="110_邱岳的产品实战.html">
+            
+                    
+                    110_邱岳的产品实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="111_程序员进阶攻略.html">
+            
+                <a href="111_程序员进阶攻略.html">
+            
+                    
+                    111_程序员进阶攻略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="112_Go语言核心36讲.html">
+            
+                <a href="112_Go语言核心36讲.html">
+            
+                    
+                    112_Go语言核心36讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="113_技术管理实战36讲.html">
+            
+                <a href="113_技术管理实战36讲.html">
+            
+                    
+                    113_技术管理实战36讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="115_从0开始学微服务.html">
+            
+                <a href="115_从0开始学微服务.html">
+            
+                    
+                    115_从0开始学微服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.35" data-path="116_深入剖析Kubernetes.html">
+            
+                <a href="116_深入剖析Kubernetes.html">
+            
+                    
+                    116_深入剖析Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.36" data-path="126_数据结构与算法之美.html">
+            
+                <a href="126_数据结构与算法之美.html">
+            
+                    
+                    126_数据结构与算法之美
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.37" data-path="127_如何设计一个秒杀系统.html">
+            
+                <a href="127_如何设计一个秒杀系统.html">
+            
+                    
+                    127_如何设计一个秒杀系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.38" data-path="129_代码精进之路.html">
+            
+                <a href="129_代码精进之路.html">
+            
+                    
+                    129_代码精进之路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.39" data-path="130_算法面试通关40讲.html">
+            
+                <a href="130_算法面试通关40讲.html">
+            
+                    
+                    130_算法面试通关40讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.40" data-path="132_白话法律42讲.html">
+            
+                <a href="132_白话法律42讲.html">
+            
+                    
+                    132_白话法律42讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.41" data-path="133_从0开始学大数据.html">
+            
+                <a href="133_从0开始学大数据.html">
+            
+                    
+                    133_从0开始学大数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.42" data-path="138_Nginx核心知识100讲.html">
+            
+                <a href="138_Nginx核心知识100讲.html">
+            
+                    
+                    138_Nginx核心知识100讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.43" data-path="139_MySQL实战45讲.html">
+            
+                <a href="139_MySQL实战45讲.html">
+            
+                    
+                    139_MySQL实战45讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.44" data-path="140_Linux性能优化实战.html">
+            
+                <a href="140_Linux性能优化实战.html">
+            
+                    
+                    140_Linux性能优化实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.45" data-path="142_Android开发高手课.html">
+            
+                <a href="142_Android开发高手课.html">
+            
+                    
+                    142_Android开发高手课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.46" data-path="143_程序员的数学基础课.html">
+            
+                <a href="143_程序员的数学基础课.html">
+            
+                    
+                    143_程序员的数学基础课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.47" data-path="145_玩转Git三剑客.html">
+            
+                <a href="145_玩转Git三剑客.html">
+            
+                    
+                    145_玩转Git三剑客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.48" data-path="147_数据分析实战45讲.html">
+            
+                <a href="147_数据分析实战45讲.html">
+            
+                    
+                    147_数据分析实战45讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.49" data-path="148_10x程序员工作法.html">
+            
+                <a href="148_10x程序员工作法.html">
+            
+                    
+                    148_10x程序员工作法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.50" data-path="153_TensorFlow快速入门与实战.html">
+            
+                <a href="153_TensorFlow快速入门与实战.html">
+            
+                    
+                    153_TensorFlow快速入门与实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.51" data-path="154_重学前端.html">
+            
+                <a href="154_重学前端.html">
+            
+                    
+                    154_重学前端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.52" data-path="155_面试现场.html">
+            
+                <a href="155_面试现场.html">
+            
+                    
+                    155_面试现场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.53" data-path="156_玩转Spring全家桶.html">
+            
+                <a href="156_玩转Spring全家桶.html">
+            
+                    
+                    156_玩转Spring全家桶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.54" data-path="158_软件工程之美.html">
+            
+                <a href="158_软件工程之美.html">
+            
+                    
+                    158_软件工程之美
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.55" data-path="159_Java并发编程实战.html">
+            
+                <a href="159_Java并发编程实战.html">
+            
+                    
+                    159_Java并发编程实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.56" data-path="160_Go语言从入门到实战.html">
+            
+                <a href="160_Go语言从入门到实战.html">
+            
+                    
+                    160_Go语言从入门到实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.57" data-path="161_iOS开发高手课.html">
+            
+                <a href="161_iOS开发高手课.html">
+            
+                    
+                    161_iOS开发高手课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.58" data-path="163_Vue开发实战.html">
+            
+                <a href="163_Vue开发实战.html">
+            
+                    
+                    163_Vue开发实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.59" data-path="164_趣谈Linux操作系统.html">
+            
+                <a href="164_趣谈Linux操作系统.html">
+            
+                    
+                    164_趣谈Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.60" data-path="165_从0开始做增长.html">
+            
+                <a href="165_从0开始做增长.html">
+            
+                    
+                    165_从0开始做增长
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.61" data-path="166_许式伟的架构课.html">
+            
+                <a href="166_许式伟的架构课.html">
+            
+                    
+                    166_许式伟的架构课
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.62" data-path="167_大规模数据处理实战.html">
+            
+                <a href="167_大规模数据处理实战.html">
+            
+                    
+                    167_大规模数据处理实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.63" data-path="169_从0开发一款iOSApp.html">
+            
+                <a href="169_从0开发一款iOSApp.html">
+            
+                    
+                    169_从0开发一款iOSApp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.64" data-path="170_深入浅出计算机组成原理.html">
+            
+                <a href="170_深入浅出计算机组成原理.html">
+            
+                    
+                    170_深入浅出计算机组成原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.65" data-path="175_Web协议详解与抓包实战.html">
+            
+                <a href="175_Web协议详解与抓包实战.html">
+            
+                    
+                    175_Web协议详解与抓包实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.66" data-path="176_Python核心技术与实战.html">
+            
+                <a href="176_Python核心技术与实战.html">
+            
+                    
+                    176_Python核心技术与实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.67" data-path="180_深入拆解Tomcat&Jetty.html">
+            
+                <a href="180_深入拆解Tomcat&Jetty.html">
+            
+                    
+                    180_深入拆解Tomcat&Jetty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.68" data-path="181_零基础学Java.html">
+            
+                <a href="181_零基础学Java.html">
+            
+                    
+                    181_零基础学Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.69" data-path="185_Java性能调优实战.html">
+            
+                <a href="185_Java性能调优实战.html">
+            
+                    
+                    185_Java性能调优实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.70" data-path="186_OpenResty从入门到实战.html">
+            
+                <a href="186_OpenResty从入门到实战.html">
+            
+                    
+                    186_OpenResty从入门到实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.71" data-path="189_透视HTTP协议.html">
+            
+                <a href="189_透视HTTP协议.html">
+            
+                    
+                    189_透视HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.72" data-path="190_玩转webpack.html">
+            
+                <a href="190_玩转webpack.html">
+            
+                    
+                    190_玩转webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.73" data-path="191_Kafka核心技术与实战.html">
+            
+                <a href="191_Kafka核心技术与实战.html">
+            
+                    
+                    191_Kafka核心技术与实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.74" data-path="192_SQL必知必会.html">
+            
+                <a href="192_SQL必知必会.html">
+            
+                    
+                    192_SQL必知必会
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.75" data-path="193_Linux实战技能100讲.html">
+            
+                <a href="193_Linux实战技能100讲.html">
+            
+                    
+                    193_Linux实战技能100讲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.76" data-path="197_Elasticsearch核心技术与实战.html">
+            
+                <a href="197_Elasticsearch核心技术与实战.html">
+            
+                    
+                    197_Elasticsearch核心技术与实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.77" data-path="199_黄勇的OKR实战笔记.html">
+            
+                <a href="199_黄勇的OKR实战笔记.html">
+            
+                    
+                    199_黄勇的OKR实战笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.78" data-path="200_Flutter核心技术与实战.html">
+            
+                <a href="200_Flutter核心技术与实战.html">
+            
+                    
+                    200_Flutter核心技术与实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.79" data-path="201_编辑训练营.html">
+            
+                <a href="201_编辑训练营.html">
+            
+                    
+                    201_编辑训练营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.80" data-path="204_SpringBoot与Kubernetes云原生微服务实践.html">
+            
+                <a href="204_SpringBoot与Kubernetes云原生微服务实践.html">
+            
+                    
+                    204_SpringBoot与Kubernetes云原生微服务实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >138_Nginx核心知识100讲</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nginx&#x6838;&#x5FC3;&#x77E5;&#x8BC6;100&#x8BB2;">Nginx&#x6838;&#x5FC3;&#x77E5;&#x8BC6;100&#x8BB2;</h1>
+<h2 id="author-&#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3;nginx&#x300B;&#x4F5C;&#x8005;&#xFF0C;&#x667A;&#x94FE;&#x8FBE;cto">author: &#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3;Nginx&#x300B;&#x4F5C;&#x8005;&#xFF0C;&#x667A;&#x94FE;&#x8FBE;CTO</h2>
+<p> <img src="https://static001.geekbang.org/resource/image/a1/61/a16634874988fe862e13726be8663561.jpg" alt="img"></p>
+<ul>
+<li>&#x7248;&#x6743;&#x5F52;&#x6781;&#x5BA2;&#x65F6;&#x95F4;&#x548C;&#x4F5C;&#x8005;&#x8001;&#x5E08;&#x6240;&#x6709;&#xFF0C;&#x7D20;&#x6750;&#x7531;<code>code4flutter</code>&#x6536;&#x96C6;&#x6574;&#x7406;&#xFF0C;&#x8BF7;&#x5927;&#x5BB6;&#x591A;&#x591A;&#x652F;&#x6301;</li>
+</ul>
+<p><a href="https://time.geekbang.org/column/article/65084" target="_blank">01 | &#x8BFE;&#x7A0B;&#x7EFC;&#x8FF0;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65063" target="_blank">02 | Nginx&#x9002;&#x7528;&#x4E8E;&#x54EA;&#x4E9B;&#x573A;&#x666F;&#xFF1F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65064" target="_blank">03 | Nginx&#x51FA;&#x73B0;&#x7684;&#x5386;&#x53F2;&#x80CC;&#x666F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65065" target="_blank">04 | &#x4E3A;&#x4EC0;&#x4E48;&#x7528;Nginx&#xFF1A;&#x5B83;&#x7684; 5 &#x4E2A;&#x4E3B;&#x8981;&#x4F18;&#x70B9;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65066" target="_blank">05 | Nginx&#x7684;&#x56DB;&#x4E2A;&#x4E3B;&#x8981;&#x7EC4;&#x6210;&#x90E8;&#x5206;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65067" target="_blank">06 | Nginx&#x7684;&#x7248;&#x672C;&#x53D1;&#x5E03;&#x5386;&#x53F2;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65068" target="_blank">07 | &#x9009;&#x62E9;&#x54EA;&#x4E00;&#x4E2A;Nginx&#x53D1;&#x884C;&#x7248;&#x672C;&#xFF1F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65069" target="_blank">08 | &#x7F16;&#x8BD1;&#x51FA;&#x9002;&#x5408;&#x81EA;&#x5DF1;&#x7684;Nginx</a></p>
+<p><a href="https://time.geekbang.org/column/article/65070" target="_blank">09 | Nginx&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x901A;&#x7528;&#x8BED;&#x6CD5;&#x4ECB;&#x7ECD;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65071" target="_blank">10 | Nginx&#x547D;&#x4EE4;&#x884C;&#x53CA;&#x6F14;&#x793A;&#xFF1A;&#x91CD;&#x8F7D;&#x3001;&#x70ED;&#x90E8;&#x7F72;&#x3001;&#x65E5;&#x5FD7;&#x5207;&#x5272;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65072" target="_blank">11 | &#x7528;Nginx&#x642D;&#x5EFA;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;Web&#x670D;&#x52A1;&#x5668;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65073" target="_blank">12 | &#x7528;Nginx&#x642D;&#x5EFA;&#x4E00;&#x4E2A;&#x5177;&#x5907;&#x7F13;&#x5B58;&#x529F;&#x80FD;&#x7684;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x670D;&#x52A1;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65074" target="_blank">13 | &#x7528;GoAccess&#x5B9E;&#x73B0;&#x53EF;&#x89C6;&#x5316;&#x5E76;&#x5B9E;&#x65F6;&#x76D1;&#x63A7;access&#x65E5;&#x5FD7;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65075" target="_blank">14 | &#x4ECE;&#x7F51;&#x7EDC;&#x539F;&#x7406;&#x6765;&#x770B;SSL&#x5B89;&#x5168;&#x534F;&#x8BAE;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65079" target="_blank">15 | &#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x4E0E;&#x975E;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x5404;&#x81EA;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65082" target="_blank">16 | SSL&#x8BC1;&#x4E66;&#x7684;&#x516C;&#x4FE1;&#x529B;&#x662F;&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x7684;&#xFF1F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65083" target="_blank">17 | SSL&#x534F;&#x8BAE;&#x63E1;&#x624B;&#x65F6;Nginx&#x7684;&#x6027;&#x80FD;&#x74F6;&#x9888;&#x5728;&#x54EA;&#x91CC;&#xFF1F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65085" target="_blank">18 | &#x7528;&#x514D;&#x8D39;SSL&#x8BC1;&#x4E66;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;HTTPS&#x7AD9;&#x70B9;</a></p>
+<p><a href="https://time.geekbang.org/column/article/65086" target="_blank">19 | &#x57FA;&#x4E8E;OpenResty&#x7528;Lua&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#x670D;&#x52A1;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68384" target="_blank">20 | Nginx&#x7684;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x6D41;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68385" target="_blank">21 | Nginx&#x7684;&#x8FDB;&#x7A0B;&#x7ED3;&#x6784;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68386" target="_blank">22 | Nginx&#x7684;&#x8FDB;&#x7A0B;&#x7ED3;&#x6784;&#x5B9E;&#x4F8B;&#x6F14;&#x793A;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68387" target="_blank">23 | &#x4F7F;&#x7528;&#x4FE1;&#x53F7;&#x7BA1;&#x7406;Nginx&#x7684;&#x7236;&#x5B50;&#x8FDB;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68388" target="_blank">24 | reload&#x91CD;&#x8F7D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x771F;&#x76F8;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68389" target="_blank">25 | &#x70ED;&#x5347;&#x7EA7;&#x7684;&#x5B8C;&#x6574;&#x6D41;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68390" target="_blank">26 | &#x4F18;&#x96C5;&#x5730;&#x5173;&#x95ED;worker&#x8FDB;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68391" target="_blank">27 | &#x7F51;&#x7EDC;&#x6536;&#x53D1;&#x4E0E;Nginx&#x4E8B;&#x4EF6;&#x95F4;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68392" target="_blank">28 | Nginx&#x7F51;&#x7EDC;&#x4E8B;&#x4EF6;&#x5B9E;&#x4F8B;&#x6F14;&#x793A;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68393" target="_blank">29 | Nginx&#x7684;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x6A21;&#x578B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68394" target="_blank">30 | epoll&#x7684;&#x4F18;&#x52A3;&#x53CA;&#x539F;&#x7406;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68415" target="_blank">31 | Nginx&#x7684;&#x8BF7;&#x6C42;&#x5207;&#x6362;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68416" target="_blank">32 | &#x540C;&#x6B65;&amp;&#x5F02;&#x6B65;&#x3001;&#x963B;&#x585E;&amp;&#x975E;&#x963B;&#x585E;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68417" target="_blank">33 | Nginx&#x7684;&#x6A21;&#x5757;&#x7A76;&#x7ADF;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68418" target="_blank">34 | Nginx&#x6A21;&#x5757;&#x7684;&#x5206;&#x7C7B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68419" target="_blank">35 | Nginx&#x5982;&#x4F55;&#x901A;&#x8FC7;&#x8FDE;&#x63A5;&#x6C60;&#x5904;&#x7406;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68420" target="_blank">36 | &#x5185;&#x5B58;&#x6C60;&#x5BF9;&#x6027;&#x80FD;&#x7684;&#x5F71;&#x54CD;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68421" target="_blank">37 | &#x6240;&#x6709;worker&#x8FDB;&#x7A0B;&#x534F;&#x540C;&#x5DE5;&#x4F5C;&#x7684;&#x5173;&#x952E;&#xFF1A;&#x5171;&#x4EAB;&#x5185;&#x5B58;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68422" target="_blank">38 | &#x7528;&#x597D;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x7684;&#x5DE5;&#x5177;&#xFF1A;Slab&#x7BA1;&#x7406;&#x5668;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68423" target="_blank">39 | &#x54C8;&#x5E0C;&#x8868;&#x7684;max_size&#x4E0E;bucket_size&#x5982;&#x4F55;&#x914D;&#x7F6E;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68424" target="_blank">40 | Nginx&#x4E2D;&#x6700;&#x5E38;&#x7528;&#x7684;&#x5BB9;&#x5668;&#xFF1A;&#x7EA2;&#x9ED1;&#x6811;</a></p>
+<p><a href="https://time.geekbang.org/column/article/68425" target="_blank">41 | &#x4F7F;&#x7528;&#x52A8;&#x6001;&#x6A21;&#x5757;&#x6765;&#x63D0;&#x5347;&#x8FD0;&#x7EF4;&#x6548;&#x7387;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71988" target="_blank">42 | &#x7B2C;&#x4E09;&#x7AE0;&#x5185;&#x5BB9;&#x4ECB;&#x7ECD;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71456" target="_blank">43 | &#x51B2;&#x7A81;&#x7684;&#x914D;&#x7F6E;&#x6307;&#x4EE4;&#x4EE5;&#x8C01;&#x4E3A;&#x51C6;&#xFF1F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71457" target="_blank">44 | Listen&#x6307;&#x4EE4;&#x7684;&#x7528;&#x6CD5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71458" target="_blank">45 | &#x5904;&#x7406;HTTP&#x8BF7;&#x6C42;&#x5934;&#x90E8;&#x7684;&#x6D41;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71460" target="_blank">46 | Nginx&#x4E2D;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71461" target="_blank">47 | &#x5982;&#x4F55;&#x627E;&#x5230;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x7684;server&#x6307;&#x4EE4;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71462" target="_blank">48 | &#x8BE6;&#x89E3;HTTP&#x8BF7;&#x6C42;&#x7684;11&#x4E2A;&#x9636;&#x6BB5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71463" target="_blank">49 | 11&#x4E2A;&#x9636;&#x6BB5;&#x7684;&#x987A;&#x5E8F;&#x5904;&#x7406;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71464" target="_blank">50 | postread&#x9636;&#x6BB5;&#xFF1A;&#x83B7;&#x53D6;&#x771F;&#x5B9E;&#x5BA2;&#x6237;&#x7AEF;&#x5730;&#x5740;&#x7684;realip&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71465" target="_blank">51 | rewrite&#x9636;&#x6BB5;&#x7684;rewrite&#x6A21;&#x5757;&#xFF1A;return&#x6307;&#x4EE4;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71466" target="_blank">52 | rewrite&#x9636;&#x6BB5;&#x7684;rewrite&#x6A21;&#x5757;&#xFF1A;&#x91CD;&#x5199;URL</a></p>
+<p><a href="https://time.geekbang.org/column/article/71467" target="_blank">53 | rewrite&#x9636;&#x6BB5;&#x7684;rewrite&#x6A21;&#x5757;&#xFF1A;&#x6761;&#x4EF6;&#x5224;&#x65AD;</a></p>
+<p><a href="https://time.geekbang.org/column/article/71470" target="_blank">54 | find_config&#x9636;&#x6BB5;&#xFF1A;&#x627E;&#x5230;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x7684;location&#x6307;&#x4EE4;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72272" target="_blank">55 | preaccess&#x9636;&#x6BB5;&#xFF1A;&#x5BF9;&#x8FDE;&#x63A5;&#x505A;&#x9650;&#x5236;&#x7684;limit_conn&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72273" target="_blank">56 | preaccess&#x9636;&#x6BB5;&#xFF1A;&#x5BF9;&#x8BF7;&#x6C42;&#x505A;&#x9650;&#x5236;&#x7684;limit_req&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72275" target="_blank">57 | access&#x9636;&#x6BB5;&#xFF1A;&#x5BF9;ip&#x505A;&#x9650;&#x5236;&#x7684;access&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72276" target="_blank">58 | access&#x9636;&#x6BB5;&#xFF1A;&#x5BF9;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;&#x505A;&#x9650;&#x5236;&#x7684;auth_basic&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72277" target="_blank">59 | access&#x9636;&#x6BB5;&#xFF1A;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x505A;&#x6743;&#x9650;&#x63A7;&#x5236;&#x7684;auth_request&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72278" target="_blank">60 | access&#x9636;&#x6BB5;&#x7684;satisfy&#x6307;&#x4EE4;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72279" target="_blank">61 | precontent&#x9636;&#x6BB5;&#xFF1A;&#x6309;&#x5E8F;&#x8BBF;&#x95EE;&#x8D44;&#x6E90;&#x7684;try_files&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72280" target="_blank">62 | &#x5B9E;&#x65F6;&#x62F7;&#x8D1D;&#x6D41;&#x91CF;&#xFF1A;precontent&#x9636;&#x6BB5;&#x7684;mirror&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72403" target="_blank">63 | content&#x9636;&#x6BB5;&#xFF1A;&#x8BE6;&#x89E3;root&#x548C;alias&#x6307;&#x4EE4;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72405" target="_blank">64 | static&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x7684;3&#x4E2A;&#x53D8;&#x91CF;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72406" target="_blank">65 | static&#x6A21;&#x5757;&#x5BF9;url&#x4E0D;&#x4EE5;&#x659C;&#x6760;&#x7ED3;&#x5C3E;&#x5374;&#x8BBF;&#x95EE;&#x76EE;&#x5F55;&#x7684;&#x505A;&#x6CD5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72407" target="_blank">66 | index&#x548C;autoindex&#x6A21;&#x5757;&#x7684;&#x7528;&#x6CD5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72408" target="_blank">67 | &#x63D0;&#x5347;&#x591A;&#x4E2A;&#x5C0F;&#x6587;&#x4EF6;&#x6027;&#x80FD;&#x7684;concat&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72409" target="_blank">68 | access&#x65E5;&#x5FD7;&#x7684;&#x8BE6;&#x7EC6;&#x7528;&#x6CD5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72410" target="_blank">69 | HTTP&#x8FC7;&#x6EE4;&#x6A21;&#x5757;&#x7684;&#x8C03;&#x7528;&#x6D41;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72411" target="_blank">70 | &#x7528;&#x8FC7;&#x6EE4;&#x6A21;&#x5757;&#x66F4;&#x6539;&#x54CD;&#x5E94;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;sub&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72412" target="_blank">71 | &#x7528;&#x8FC7;&#x6EE4;&#x6A21;&#x5757;&#x5728;http&#x54CD;&#x5E94;&#x7684;&#x524D;&#x540E;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF1A;addition&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/72413" target="_blank">72 | Nginx&#x53D8;&#x91CF;&#x7684;&#x8FD0;&#x884C;&#x539F;&#x7406;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74369" target="_blank">73 | HTTP&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x7684;&#x8BF7;&#x6C42;&#x76F8;&#x5173;&#x7684;&#x53D8;&#x91CF;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74372" target="_blank">74 | HTTP&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x7684;&#x5176;&#x4ED6;&#x53D8;&#x91CF;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74373" target="_blank">75 | &#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x9632;&#x76D7;&#x94FE;&#x7684;referer&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74496" target="_blank">76 | &#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x5B9E;&#x73B0;&#x9632;&#x76D7;&#x94FE;&#x529F;&#x80FD;&#x5B9E;&#x8DF5;&#xFF1A;secure_link&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74499" target="_blank">77 | &#x4E3A;&#x590D;&#x6742;&#x7684;&#x4E1A;&#x52A1;&#x751F;&#x6210;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#xFF1A;map&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74622" target="_blank">78 | &#x901A;&#x8FC7;&#x53D8;&#x91CF;&#x6307;&#x5B9A;&#x5C11;&#x91CF;&#x7528;&#x6237;&#x5B9E;&#x73B0;AB&#x6D4B;&#x8BD5;&#xFF1A;split_client&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74623" target="_blank">79 | &#x6839;&#x636E;IP&#x5730;&#x5740;&#x8303;&#x56F4;&#x7684;&#x5339;&#x914D;&#x751F;&#x6210;&#x65B0;&#x53D8;&#x91CF;&#xFF1A;geo&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74624" target="_blank">80 | &#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x83B7;&#x5F97;&#x7528;&#x6237;&#x7684;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#xFF1A;geoip&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74625" target="_blank">81 | &#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x4F7F;&#x7528;keepalive&#x63D0;&#x5347;&#x8FDE;&#x63A5;&#x6548;&#x7387;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74825" target="_blank">82 | &#x53CD;&#x5411;&#x4EE3;&#x7406;&#x4E0E;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x539F;&#x7406;</a></p>
+<p><a href="https://time.geekbang.org/column/article/74826" target="_blank">83 | &#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;&#xFF1A;round-robin</a></p>
+<p><a href="https://time.geekbang.org/column/article/74827" target="_blank">84 | &#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#xFF1A;ip_hash&#x4E0E;hash&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75007" target="_blank">85 | &#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#xFF1A;hash&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75008" target="_blank">86 | &#x6700;&#x5C11;&#x8FDE;&#x63A5;&#x7B97;&#x6CD5;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x8DE8;worker&#x8FDB;&#x7A0B;&#x751F;&#x6548;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75009" target="_blank">87 | upstream&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x7684;&#x53D8;&#x91CF;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75139" target="_blank">88 | proxy&#x6A21;&#x5757;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x7684;&#x6D41;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75140" target="_blank">89 | proxy&#x6A21;&#x5757;&#x4E2D;&#x7684;proxy_pass&#x6307;&#x4EE4;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75141" target="_blank">90 | &#x6839;&#x636E;&#x6307;&#x4EE4;&#x4FEE;&#x6539;&#x53D1;&#x5F80;&#x4E0A;&#x6E38;&#x7684;&#x8BF7;&#x6C42;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75142" target="_blank">91 | &#x63A5;&#x6536;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x5305;&#x4F53;&#x7684;&#x65B9;&#x5F0F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75874" target="_blank">92 | &#x4E0E;&#x4E0A;&#x6E38;&#x670D;&#x52A1;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75875" target="_blank">93 | &#x63A5;&#x6536;&#x4E0A;&#x6E38;&#x7684;&#x54CD;&#x5E94;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75876" target="_blank">94 | &#x5904;&#x7406;&#x4E0A;&#x6E38;&#x7684;&#x54CD;&#x5E94;&#x5934;&#x90E8;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75877" target="_blank">95 | &#x4E0A;&#x6E38;&#x51FA;&#x73B0;&#x5931;&#x8D25;&#x65F6;&#x7684;&#x5BB9;&#x9519;&#x65B9;&#x6848;</a></p>
+<p><a href="https://time.geekbang.org/column/article/75878" target="_blank">96 | &#x5BF9;&#x4E0A;&#x6E38;&#x4F7F;&#x7528;SSL&#x8FDE;&#x63A5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76358" target="_blank">97 | &#x7528;&#x597D;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x7F13;&#x5B58;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76359" target="_blank">98 | Nginx&#x51B3;&#x7B56;&#x6D4F;&#x89C8;&#x5668;&#x8FC7;&#x671F;&#x7F13;&#x5B58;&#x662F;&#x5426;&#x6709;&#x6548;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76360" target="_blank">99 | &#x7F13;&#x5B58;&#x7684;&#x57FA;&#x672C;&#x7528;&#x6CD5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76626" target="_blank">100 | &#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x7684;&#x7F13;&#x5B58;&#x5904;&#x7406;&#x6D41;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76627" target="_blank">101 | &#x63A5;&#x6536;&#x4E0A;&#x6E38;&#x54CD;&#x5E94;&#x7684;&#x7F13;&#x5B58;&#x5904;&#x7406;&#x6D41;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76629" target="_blank">102 | &#x5982;&#x4F55;&#x51CF;&#x8F7B;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x65F6;&#x4E0A;&#x6E38;&#x670D;&#x52A1;&#x7684;&#x538B;&#x529B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76630" target="_blank">103 | &#x53CA;&#x65F6;&#x6E05;&#x9664;&#x7F13;&#x5B58;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76631" target="_blank">104 | uwsgi&#x3001;fastcgi&#x3001;scgi&#x6307;&#x4EE4;&#x7684;&#x5BF9;&#x7167;&#x8868;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76632" target="_blank">105 | memcached&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x7684;&#x7528;&#x6CD5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76633" target="_blank">106 | &#x642D;&#x5EFA;websocket&#x53CD;&#x5411;&#x4EE3;&#x7406;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76634" target="_blank">107 | &#x7528;&#x5206;&#x7247;&#x63D0;&#x5347;&#x7F13;&#x5B58;&#x6548;&#x7387;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76730" target="_blank">108 | open file cache&#x63D0;&#x5347;&#x7CFB;&#x7EDF;&#x6027;&#x80FD;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76731" target="_blank">109 | HTTP/2&#x534F;&#x8BAE;&#x4ECB;&#x7ECD;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76732" target="_blank">110 | &#x642D;&#x5EFA;HTTP/2&#x670D;&#x52A1;&#x5E76;&#x63A8;&#x9001;&#x8D44;&#x6E90;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76733" target="_blank">111 | gRPC&#x53CD;&#x5411;&#x4EE3;&#x7406;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76734" target="_blank">112 | stream&#x56DB;&#x5C42;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x7684;7&#x4E2A;&#x9636;&#x6BB5;&#x53CA;&#x5E38;&#x7528;&#x53D8;&#x91CF;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76735" target="_blank">113 | proxy protocol&#x534F;&#x8BAE;&#x4E0E;realip&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/76736" target="_blank">114 | &#x9650;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x3001;&#x9650;IP&#x3001;&#x8BB0;&#x65E5;&#x5FD7;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79348" target="_blank">115 | stream&#x56DB;&#x5C42;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x5904;&#x7406;SSL&#x4E0B;&#x6E38;&#x6D41;&#x91CF;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79349" target="_blank">116 | stream_preread&#x6A21;&#x5757;&#x53D6;&#x51FA;SSL&#x5173;&#x952E;&#x4FE1;&#x606F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79352" target="_blank">117 | stream proxy&#x56DB;&#x5C42;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x7684;&#x7528;&#x6CD5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79353" target="_blank">118 | UDP&#x53CD;&#x5411;&#x4EE3;&#x7406;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79354" target="_blank">119 | &#x900F;&#x4F20;IP&#x5730;&#x5740;&#x7684;3&#x4E2A;&#x65B9;&#x6848;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79355" target="_blank">120 | &#x6027;&#x80FD;&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#x8BBA;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79356" target="_blank">121 | &#x5982;&#x4F55;&#x9AD8;&#x6548;&#x4F7F;&#x7528;CPU</a></p>
+<p><a href="https://time.geekbang.org/column/article/79357" target="_blank">122 | &#x591A;&#x6838;&#x95F4;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79358" target="_blank">123 | &#x63A7;&#x5236;TCP&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x53C2;&#x6570;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79359" target="_blank">124 | &#x5EFA;&#x7ACB;TCP&#x8FDE;&#x63A5;&#x7684;&#x4F18;&#x5316;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79360" target="_blank">125 | &#x6ED1;&#x52A8;&#x7A97;&#x53E3;&#x4E0E;&#x7F13;&#x51B2;&#x533A;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79361" target="_blank">126 | &#x4F18;&#x5316;&#x7F13;&#x51B2;&#x533A;&#x4E0E;&#x4F20;&#x8F93;&#x6548;&#x7387;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79362" target="_blank">127 | &#x6162;&#x542F;&#x52A8;&#x4E0E;&#x62E5;&#x585E;&#x7A97;&#x53E3;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79363" target="_blank">128 | TCP&#x534F;&#x8BAE;&#x7684;keepalive&#x529F;&#x80FD;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79364" target="_blank">129 | &#x51CF;&#x5C11;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x65F6;&#x7684;time_wait&#x7AEF;&#x53E3;&#x6570;&#x91CF;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79365" target="_blank">130 | lingering_close&#x5EF6;&#x8FDF;&#x5173;&#x95ED;TCP&#x8FDE;&#x63A5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79618" target="_blank">131 | &#x5E94;&#x7528;&#x5C42;&#x534F;&#x8BAE;&#x7684;&#x4F18;&#x5316;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79619" target="_blank">132 | &#x78C1;&#x76D8;IO&#x7684;&#x4F18;&#x5316;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79620" target="_blank">133 | &#x51CF;&#x5C11;&#x78C1;&#x76D8;&#x8BFB;&#x5199;&#x6B21;&#x6570;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79621" target="_blank">134 | &#x96F6;&#x62F7;&#x8D1D;&#x4E0E;gzip_static&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79622" target="_blank">135 | &#x7528;tcmalloc&#x4F18;&#x5316;&#x5185;&#x5B58;&#x5206;&#x914D;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79623" target="_blank">136 | &#x4F7F;&#x7528;Google PerfTools&#x5206;&#x6790;Nginx</a></p>
+<p><a href="https://time.geekbang.org/column/article/79634" target="_blank">137 | &#x4F7F;&#x7528;stub_status&#x6A21;&#x5757;&#x76D1;&#x63A7;Nginx&#x7684;&#x72B6;&#x6001;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79636" target="_blank">138 | &#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;&#x6E90;&#x7801;&#x7684;&#x9605;&#x8BFB;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79637" target="_blank">139 | Nginx&#x7684;&#x542F;&#x52A8;&#x6D41;&#x7A0B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79638" target="_blank">140 | HTTP&#x7B2C;&#x4E09;&#x65B9;&#x6A21;&#x5757;&#x7684;&#x521D;&#x59CB;&#x5316;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79639" target="_blank">141 | if&#x6307;&#x4EE4;&#x662F;&#x90AA;&#x6076;&#x7684;&#x5417;&#xFF1F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79640" target="_blank">142 | &#x89E3;&#x8BFB;Nginx&#x7684;&#x6838;&#x5FC3;&#x8F6C;&#x50A8;&#x6587;&#x4EF6;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79641" target="_blank">143 | &#x901A;&#x8FC7;debug&#x65E5;&#x5FD7;&#x5B9A;&#x4F4D;&#x95EE;&#x9898;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79851" target="_blank">144 | OpenResty&#x6982;&#x8FF0;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79852" target="_blank">145 | OpenResty&#x4E2D;&#x7684;Nginx&#x6A21;&#x5757;&#x4E0E;Lua&#x6A21;&#x5757;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79853" target="_blank">146 | &#x5982;&#x4F55;&#x5728;Nginx&#x4E2D;&#x5D4C;&#x5165;Lua&#x4EE3;&#x7801;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79854" target="_blank">147 | OpenResty&#x4E2D;Lua&#x4E0E;C&#x4EE3;&#x7801;&#x4EA4;&#x4E92;&#x7684;&#x539F;&#x7406;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79855" target="_blank">148 | &#x83B7;&#x53D6;&#x3001;&#x4FEE;&#x6539;&#x8BF7;&#x6C42;&#x4E0E;&#x54CD;&#x5E94;&#x7684;SDK</a></p>
+<p><a href="https://time.geekbang.org/column/article/79856" target="_blank">149 | &#x5DE5;&#x5177;&#x7C7B;&#x578B;&#x7684;SDK</a></p>
+<p><a href="https://time.geekbang.org/column/article/79858" target="_blank">150 | &#x540C;&#x6B65;&#x4E14;&#x975E;&#x963B;&#x585E;&#x7684;&#x5E95;&#x5C42;SDK&#xFF1A;cosocket</a></p>
+<p><a href="https://time.geekbang.org/column/article/79859" target="_blank">151 | &#x57FA;&#x4E8E;&#x534F;&#x7A0B;&#x7684;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;SDK</a></p>
+<p><a href="https://time.geekbang.org/column/article/79860" target="_blank">152 | &#x5B9A;&#x65F6;&#x5668;&#x53CA;&#x65F6;&#x95F4;&#x76F8;&#x5173;&#x7684;SDK</a></p>
+<p><a href="https://time.geekbang.org/column/article/79861" target="_blank">153 | share.DICT&#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x7684;&#x5B57;&#x5178;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79862" target="_blank">154 | &#x5B50;&#x8BF7;&#x6C42;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</a></p>
+<p><a href="https://time.geekbang.org/column/article/79863" target="_blank">155 | &#x57FA;&#x4E8E;OpenResty&#x7684;WAF&#x9632;&#x706B;&#x5899;</a></p><!-- tags --><div id="tags" class="tags"><p><i class="fa fa-tags" aria-hidden="true"></i> <a href="tags.html#nginx&#x6838;&#x5FC3;&#x77E5;&#x8BC6;100&#x8BB2;">Nginx&#x6838;&#x5FC3;&#x77E5;&#x8BC6;100&#x8BB2;</a> <a href="tags.html#code4flutter">code4flutter</a> <a href="tags.html#flutter">flutter</a> <a href="tags.html#code">code</a> <a href="tags.html#geekbook">geekbook</a> <a href="tags.html#&#x6781;&#x5BA2;&#x65F6;&#x95F4;">&#x6781;&#x5BA2;&#x65F6;&#x95F4;</a> <a href="tags.html#it">IT</a> <a href="tags.html#&#x804C;&#x4E1A;&#x6559;&#x80B2;">&#x804C;&#x4E1A;&#x6559;&#x80B2;</a> <a href="tags.html#&#x77E5;&#x8BC6;&#x4ED8;&#x8D39;">&#x77E5;&#x8BC6;&#x4ED8;&#x8D39;</a> <a href="tags.html#&#x4E8C;&#x53C9;&#x6811;">&#x4E8C;&#x53C9;&#x6811;</a> <a href="tags.html#&#x6781;&#x5BA2;live">&#x6781;&#x5BA2;Live</a> <a href="tags.html#&#x6781;&#x5BA2;&#x641C;&#x7D22;">&#x6781;&#x5BA2;&#x641C;&#x7D22;</a> <a href="tags.html#&#x4E92;&#x8054;&#x7F51;">&#x4E92;&#x8054;&#x7F51;</a> <a href="tags.html#&#x524D;&#x7AEF;&#x5F00;&#x53D1;">&#x524D;&#x7AEF;&#x5F00;&#x53D1;</a> <a href="tags.html#&#x540E;&#x7AEF;&#x5F00;&#x53D1;">&#x540E;&#x7AEF;&#x5F00;&#x53D1;</a> <a href="tags.html#&#x7F16;&#x7A0B;&#x8BED;&#x8A00;">&#x7F16;&#x7A0B;&#x8BED;&#x8A00;</a> <a href="tags.html#&#x4EBA;&#x5DE5;&#x667A;&#x80FD;">&#x4EBA;&#x5DE5;&#x667A;&#x80FD;</a> <a href="tags.html#&#x533A;&#x5757;&#x94FE;">&#x533A;&#x5757;&#x94FE;</a> <a href="tags.html#&#x6280;&#x672F;&#x5927;&#x4F1A;">&#x6280;&#x672F;&#x5927;&#x4F1A;</a> <a href="tags.html#&#x6280;&#x672F;&#x7BA1;&#x7406;">&#x6280;&#x672F;&#x7BA1;&#x7406;</a> <a href="tags.html#&#x4EA7;&#x54C1;">&#x4EA7;&#x54C1;</a> <a href="tags.html#&#x7814;&#x53D1;">&#x7814;&#x53D1;</a> <a href="tags.html#&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</a> <a href="tags.html#&#x8FD0;&#x7EF4;">&#x8FD0;&#x7EF4;</a> <a href="tags.html#&#x6570;&#x636E;&#x5E93;">&#x6570;&#x636E;&#x5E93;</a> <a href="tags.html#&#x67B6;&#x6784;">&#x67B6;&#x6784;</a> <a href="tags.html#&#x5FAE;&#x670D;&#x52A1;">&#x5FAE;&#x670D;&#x52A1;</a> <a href="tags.html#&#x5B9E;&#x6218;">&#x5B9E;&#x6218;</a> <a href="tags.html#&#x6280;&#x672F;&#x4E13;&#x5BB6;">&#x6280;&#x672F;&#x4E13;&#x5BB6;</a> <a href="tags.html#java">Java</a> <a href="tags.html#ios">iOS</a> <a href="tags.html#android">Android</a> <a href="tags.html#linux">Linux</a> <a href="tags.html#go">Go</a> <a href="tags.html#flutter4codecom">flutter4code.com</a></p></div><!-- tagsstop -->
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="133_从0开始学大数据.html" class="navigation navigation-prev " aria-label="Previous page: 133_从0开始学大数据">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="139_MySQL实战45讲.html" class="navigation navigation-next " aria-label="Next page: 139_MySQL实战45讲">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"138_Nginx核心知识100讲","level":"1.42","depth":1,"next":{"title":"139_MySQL实战45讲","level":"1.43","depth":1,"path":"139_MySQL实战45讲.md","ref":"139_MySQL实战45讲.md","articles":[]},"previous":{"title":"133_从0开始学大数据","level":"1.41","depth":1,"path":"133_从0开始学大数据.md","ref":"133_从0开始学大数据.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","github","editlink","prism","-highlight","baidu","splitter","sitemap","tags","adsense","baiduana"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"disqus":{"useIdentifier":false,"shortName":"geeklearn-1"},"github":{"url":"https://github.com/wyufeng02/geeklearn"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/"},"splitter":{},"search":{},"adsense":{"client":"ca-pub-3595647280789331","slot":"8284206653","format":"auto","element":".page-inner section","position":"bottom"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://code4flutter.com/geekbook/"},"tags":{"placement":"bottom"},"baiduana":{},"baidu":{"token":"426f1e4464116c54060fd43355f14f53"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"极客时间索引","language":"zh","gitbook":"*","description":"帮助开发者快速找到自己想要的内容"},"file":{"path":"138_Nginx核心知识100讲.md","mtime":"2019-07-13T15:08:08.859Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-13T15:08:09.959Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-adsense/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-baiduana/baidu_gitbook.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

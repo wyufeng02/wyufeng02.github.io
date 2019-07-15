@@ -82,7 +82,7 @@ plugins_dir:
 favicon: /assets/images/code4flutter.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "flutter,flutter代码库,flutter 热重载,flutter 为什么快,flutter 有什么用,flutte 如何, flutter安装, Flutter下载,flutter 例子,flutter跨平台,fluttr 中文网,flutterdev,flutter框架优缺点,flutter wiki,flutter language"
+keywords: "flutter,flutter代码库,flutter 热重载, Flutter下载,flutter 例子,flutter跨平台,fluttr 中文网,flutterdev"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -121,8 +121,8 @@ index_with_subtitle: true
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  # categories: /categories/
-  #about: /about/
+  categories: /categories/
+  about: /about/
   archives: /archives/
   tags: /tags/
   # sitemap: /sitemap.xml

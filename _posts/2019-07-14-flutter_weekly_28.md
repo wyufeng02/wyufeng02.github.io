@@ -3,6 +3,8 @@ layout: post
 title:  flutter 周报 - 28期(0708-0714)
 tag: [flutter,weekly]
 date: 2019-07-14
+categories:
+- weekly
 ---
 
 

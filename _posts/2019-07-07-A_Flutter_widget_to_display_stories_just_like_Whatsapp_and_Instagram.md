@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Plugin，可以像Whatsapp和Instagram一样显示story
+title:  flutter 高防Whatsapp Instagram story
 tag: [flutter, Widgets,Plugin]
 date: 2019-07-07
 ---

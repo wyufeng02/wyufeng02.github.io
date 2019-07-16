@@ -88,12 +88,17 @@ $  cat /Users/boo/Documents/flutter/bin/internal/engine.version
 
 如1.5.4 hot fix版的engine版本号，这是一个commit号
 
+
+
 ```
 52c7a1e849a170be4b2b2fe34142ca2c0a6fea1f
 ```
 
+
 * 2.2 回滚当时提交版本
+  
 执行命令
+
 ``` 
 bogon:src boo$ git reset --hard 52c7a1e849a170be4b2b2fe34142ca2c0a6fea1f 
 HEAD is now at 52c7a1 Fix dart/create_updated_flutter_deps script so it actually updates flutter/DEPS. (#175)

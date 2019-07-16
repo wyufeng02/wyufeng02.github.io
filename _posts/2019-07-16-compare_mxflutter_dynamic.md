@@ -2,7 +2,7 @@
 layout: post
 title:  动态化方案MXFlutter分析和DynamicWidget对比
 tag: 动态化
-date: 2019-06-11
+date: 2019-06-16
 categories:
 - note
 ---

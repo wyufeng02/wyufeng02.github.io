@@ -5,7 +5,7 @@ git push -u origin master
 echo '代码已成功提交到github ✔️'
 
 
-curl http://www.google.com/ping?sitemap=https://code4flutter.com/sitemap_location.xml
+curl http://www.google.com/ping?sitemap=http://flutterdev.top/sitemap_location.xml
 
 echo 'sitemap已成功提交到google ✔️'
 

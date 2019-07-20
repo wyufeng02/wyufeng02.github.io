@@ -267,159 +267,59 @@ categories:
        
 
 
-## 51. [jogboms/flutter_spinkit](http://github.com/jogboms/flutter_spinkit)  ♥️ 928
+
+
+
+
+## 91. [burhanrashid52/WhatTodo](http://github.com/burhanrashid52/WhatTodo)  ♥️ 589
          
-> ✨ A collection of loading indicators animated with flutter. Heavily Inspired by http://tobiasahlin.com/spinkit.
+> A Simple Todo app design in Flutter to keep track of your task on daily basis. Its build on BLoC Pattern. You can add…
        
 
-## 52. [Mayandev/morec](http://github.com/Mayandev/morec)  ♥️ 908
+## 92. [google/flutter-provide](http://github.com/google/flutter-provide)  ♥️ 583
          
-> 💥非常精美的 Flutter 版电影客户端，利用豆瓣现有的 Api，打造了一个完整的电影展示 App(部分 UI 仿豆瓣电影🎥)。 A beautiful movie application build by flutter.
+> A simple framework for state management in Flutter.
        
 
-## 53. [UnityTech/UIWidgets](http://github.com/UnityTech/UIWidgets)  ♥️ 908
+## 93. [Dart-Code/Dart-Code](http://github.com/Dart-Code/Dart-Code)  ♥️ 559
          
-> UIWidget is a Unity Package which helps developers to create, debug and deploy efficient, cross-platform Apps.
+> Dart and Flutter support for VS Code
        
 
-## 54. [flutter/udacity-course](http://github.com/flutter/udacity-course)  ♥️ 895
+## 94. [peng8350/flutter_pulltorefresh](http://github.com/peng8350/flutter_pulltorefresh)  ♥️ 551
          
-> Build native mobile apps with Flutter
+> a widget provided to the flutter scroll component drop-down refresh and pull up load.
+       
+
+## 95. [songxiaoliang/visitor-flutter](http://github.com/songxiaoliang/visitor-flutter)  ♥️ 550
+         
+> 基于 Flutter & scoped_model 实现的视频类App客户端
+       
+
+## 96. [CarGuo/GSYGithubAppWeex](http://github.com/CarGuo/GSYGithubAppWeex)  ♥️ 550
+         
+> 超完整的Weex开源项目，功能丰富，适合学习和日常使用。GSYGithubApp系列的优势：我们目前已经拥有Flutter、Weex、ReactNative、Kotlin四三个版本。 功能齐全，项目框架内技术涉及面广，完成度高，配套文…
+       
+
+## 97. [shichunlei/flutter_app](http://github.com/shichunlei/flutter_app)  ♥️ 549
+         
+> 🔥🔥🔥本项目包括各种基本控件使用（Text、TextField、Icon、Image、Listview、Gridview、Picker、Stepper、Dialog、Slider、Row、Appbar、Sizebox、BottomS…
+       
+
+## 98. [ibhavikmakwana/FlutterPlayground](http://github.com/ibhavikmakwana/FlutterPlayground)  ♥️ 547
+         
+> Playground app for Flutter
  
 
-## 55. [luhenchang/flutter_study](http://github.com/luhenchang/flutter_study)  ♥️ 874
+## 99. [angel-dart/angel](http://github.com/angel-dart/angel)  ♥️ 543
          
-> 三天学会Flutter
- 
-
-## 56. [letsar/flutter_staggered_grid_view](http://github.com/letsar/flutter_staggered_grid_view)  ♥️ 853
-         
-> A Flutter staggered grid view
+> A polished, production-ready backend framework in Dart for the VM, AOT, and Flutter.
        
 
-## 57. [flutter/website](http://github.com/flutter/website)  ♥️ 851
+## 100. [zhujian1989/flutter_study](http://github.com/zhujian1989/flutter_study)  ♥️ 541
          
-> Flutter web site
-       
-
-## 58. [GanZhiXiong/GZXTaoBaoAppFlutter](http://github.com/GanZhiXiong/GZXTaoBaoAppFlutter)  ♥️ 821
-         
-> Flutter淘宝App，支持iOS、Android
-       
-
-## 59. [tomialagbe/flutter_ui_challenges](http://github.com/tomialagbe/flutter_ui_challenges)  ♥️ 810
-         
-> Flutter UI Challenges
-       
-
-## 60. [OpenFlutter/flutter_screenutil](http://github.com/OpenFlutter/flutter_screenutil)  ♥️ 803
-         
-> Flutter screen adaptation, font adaptation, get screen information
+> flutter知识点学习与实战，问题解决方案记录
        
 
 
-## 61. [xuelongqy/flutter_easyrefresh](http://github.com/xuelongqy/flutter_easyrefresh)  ♥️ 791
-         
-> A widget provided to the flutter scroll component pull-refresh and push-load.
-       
-
-## 62. [flutter/flutter-intellij](http://github.com/flutter/flutter-intellij)  ♥️ 781
-         
-> Flutter makes it easy and fast to build beautiful mobile apps.
-       
-
-## 63. [ZDfordream/FlutterTianYue](http://github.com/ZDfordream/FlutterTianYue)  ♥️ 769
-         
-> 🔥🔥🔥 基于Flutter的超完整仿腾讯动漫，小说阅读，抖音视频项目，功能丰富，适合学习和日常使用，拥有较好的项目结构&比较规范的代码！Flutter入门，看这个就够了～Flutter project which provide ri…
-       
-
-## 64. [letsar/flutter_slidable](http://github.com/letsar/flutter_slidable)  ♥️ 763
-         
-> A Flutter implementation of slidable list item with directional slide actions.
-       
-
-## 65. [fluttercommunity/flutter_webview_plugin](http://github.com/fluttercommunity/flutter_webview_plugin)  ♥️ 760
-         
-> WebView Plugin - Allows Flutter to communicate with a native WebView. Maintainer: @charafau
- 
-
-## 66. [filiph/state_experiments](http://github.com/filiph/state_experiments)  ♥️ 756
-         
-> Companion repository to the "Build reactive mobile apps in Flutter" talk
-       
-
-## 67. [johnpryan/flutter_map](http://github.com/johnpryan/flutter_map)  ♥️ 754
-         
-> A Flutter map widget inspired by Leaflet
-       
-
-## 68. [pauldemarco/flutter_blue](http://github.com/pauldemarco/flutter_blue)  ♥️ 733
-         
-> Bluetooth plugin for Flutter
- 
-
-## 69. [xumaohuai/Flutter-CuriosityApp](http://github.com/xumaohuai/Flutter-CuriosityApp)  ♥️ 725
-         
-> Flutter高仿好奇心日报
-       
-
-## 70. [mdanics/fluttergram](http://github.com/mdanics/fluttergram)  ♥️ 723
-         
-> A fully functional Instagram clone written in Flutter using Firebase / Firestore
-       
-
-
-## 71. [bailicangdu/native-xdm](http://github.com/bailicangdu/native-xdm)  ♥️ 723
-         
-> 基于 Flutter 构建一个跨平台的原生APP
-       
-
-## 72. [huextrat/TheGorgeousLogin](http://github.com/huextrat/TheGorgeousLogin)  ♥️ 720
-         
-> Login page built with @flutter 😍
- 
-
-## 73. [heruijun/flutter_boss](http://github.com/heruijun/flutter_boss)  ♥️ 719
-         
-> flutter仿BOSS直聘（二），大前端技术实现
-       
-
-## 74. [iampawan/Flutter-Music-Player](http://github.com/iampawan/Flutter-Music-Player)  ♥️ 688
-         
-> Flutter Music Player - First Open Source Flutter based material design music player with audio plugin to play local m…
-       
-
-## 75. [mjohnsullivan/flutter-by-example](http://github.com/mjohnsullivan/flutter-by-example)  ♥️ 678
-         
-> A collection of simple, bare-bones Flutter apps that each demonstrate a concept
-       
-
-## 76. [memspace/zefyr](http://github.com/memspace/zefyr)  ♥️ 675
-         
-> Soft and gentle rich text editing for Flutter applications.
-       
-
-## 77. [crazycodeboy/awesome-flutter-cn](http://github.com/crazycodeboy/awesome-flutter-cn)  ♥️ 656
-         
-> 一个很棒的Flutter学习资源，官方教程，插件，工具，文章，App，视频教程等的资源列表
-       
-
-## 78. [qingmei2/MVVM-Rhine](http://github.com/qingmei2/MVVM-Rhine)  ♥️ 646
-         
-> The MVVM Architecture in Android（MVVM+Jetpack的开发实践）.参考了众多优秀的开源MVVM项目的优秀思想，页面功能简单，易于【进阶学习】MVVM，同款MVI架构项目https://github…
- 
-
-## 79. [rohan20/flutter-chat-app](http://github.com/rohan20/flutter-chat-app)  ♥️ 645
-         
-> A chat app built on Flutter with firebase authentication and image sharing capability.
-       
-
-## 80. [gliheng/flutter-rs](http://github.com/gliheng/flutter-rs)  ♥️ 633
-         
-> Build beautiful desktop apps with flutter and rust. 🌠
- 
-
-
-
-
-### 以上数据由[code4flutter](https://flutterdev.top)收集整理
+### 以上数据由[code4flutter](http://flutterdev.top)收集整理

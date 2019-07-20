@@ -73,100 +73,50 @@ categories:
 > Deep Learning for humans
        
 
-## 13. [kennethreitz/requests](http://github.com/kennethreitz/requests)  ♥️ 39.4k
+## 13. [jakubroztocil/httpie](http://github.com/jakubroztocil/httpie)  ♥️ 42.4k
+         
+> As easy as httpie /aitch-tee-tee-pie/ 🥧 Modern command line HTTP client – user-friendly curl alternative with intuiti…
+       
+
+## 14. [kennethreitz/requests](http://github.com/kennethreitz/requests)  ♥️ 39.4k
          
 > Python HTTP Requests for Humans™ ✨🍰✨
  
 
-## 14. [ansible/ansible](http://github.com/ansible/ansible)  ♥️ 38.4k
+## 15. [ansible/ansible](http://github.com/ansible/ansible)  ♥️ 38.4k
          
 > Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid…
        
 
-## 15. [scikit-learn/scikit-learn](http://github.com/scikit-learn/scikit-learn)  ♥️ 36.2k
+## 16. [scikit-learn/scikit-learn](http://github.com/scikit-learn/scikit-learn)  ♥️ 36.2k
          
 > scikit-learn: machine learning in Python
  
 
-## 16. [scrapy/scrapy](http://github.com/scrapy/scrapy)  ♥️ 33.7k
+## 17. [scrapy/scrapy](http://github.com/scrapy/scrapy)  ♥️ 33.7k
          
 > Scrapy, a fast high-level web crawling & scraping framework for Python.
        
 
-## 17. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 32.8k
+## 18. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 32.8k
          
 > TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)
        
 
-## 18. [blueimp/jQuery-File-Upload](http://github.com/blueimp/jQuery-File-Upload)  ♥️ 30.1k
+## 19. [blueimp/jQuery-File-Upload](http://github.com/blueimp/jQuery-File-Upload)  ♥️ 30.1k
          
 > File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audi…
        
 
-## 19. [pytorch/pytorch](http://github.com/pytorch/pytorch)  ♥️ 30k
+## 20. [pytorch/pytorch](http://github.com/pytorch/pytorch)  ♥️ 30k
          
 > Tensors and Dynamic neural networks in Python with strong GPU acceleration
        
 
-## 20. [python/cpython](http://github.com/python/cpython)  ♥️ 25.5k
-         
-> The Python programming language
-       
 
 
 
 
-
-
-## 61. [521xueweihan/HelloGitHub](http://github.com/521xueweihan/HelloGitHub)  ♥️ 14.2k
-         
-> Find pearls on open-source seashore 分享 GitHub 上有趣、入门级的开源项目
-       
-
-## 62. [HelloZeroNet/ZeroNet](http://github.com/HelloZeroNet/ZeroNet)  ♥️ 14.1k
-         
-> ZeroNet - Decentralized websites using Bitcoin crypto and BitTorrent network
-       
-
-## 63. [wangshub/wechat_jump_game](http://github.com/wangshub/wechat_jump_game)  ♥️ 13.9k
-         
-> 微信《跳一跳》Python 辅助
-       
-
-## 64. [explosion/spaCy](http://github.com/explosion/spaCy)  ♥️ 13.9k
-         
-> 💫 Industrial-strength Natural Language Processing (NLP) with Python and Cython
-       
-
-## 65. [nicolargo/glances](http://github.com/nicolargo/glances)  ♥️ 13.8k
-         
-> Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
-       
-
-## 66. [azl397985856/leetcode](http://github.com/azl397985856/leetcode)  ♥️ 13.7k
-         
-> LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)
-       
-
-## 67. [ipython/ipython](http://github.com/ipython/ipython)  ♥️ 13.7k
-         
-> Official repository for IPython itself. Other repos in the IPython organization contain things like the website, docu…
-       
-
-## 68. [binux/pyspider](http://github.com/binux/pyspider)  ♥️ 13.4k
-         
-> A Powerful Spider(Web Crawler) System in Python.
-       
-
-## 69. [getredash/redash](http://github.com/getredash/redash)  ♥️ 13.2k
-         
-> Make Your Company Data Driven. Connect to any data source, easily visualize, dashboard and share your data.
-       
-
-## 70. [StevenBlack/hosts](http://github.com/StevenBlack/hosts)  ♥️ 13.1k
-         
-> Extending and consolidating hosts files from several well-curated sources like adaway.org, mvps.org, malwaredomainlis…
-       
 
 
 ## 71. [celery/celery](http://github.com/celery/celery)  ♥️ 13k
@@ -322,4 +272,4 @@ categories:
        
 
 
-### 以上数据由[code4flutter](https://flutterdev.top)收集整理
+### 以上数据由[code4flutter](http://flutterdev.top)收集整理

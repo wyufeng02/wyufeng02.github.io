@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  适用于Android和iOS的Flutter插件支持裁剪图像
+title:  Image Cropper 图形裁剪插件
 tag: [flutter代码库, Images, Cropper]
 date: 2019-07-20
 ---
@@ -14,14 +14,8 @@ date: 2019-07-20
  
 ![](https://flutterawesome.com/content/images/2019/07/Image-Cropper.jpg)
  
->
-> 
->
-
- 
 # Image Cropper
-
-A Flutter plugin for Android and iOS supports cropping images
+适用于Android和iOS的Flutter插件支持裁剪图像
 
 [![pub package](https://img.shields.io/pub/v/image_cropper.svg)](https://pub.dartlang.org/packages/image_cropper)
 
@@ -44,9 +38,9 @@ A Flutter plugin for Android and iOS supports cropping images
 ````
 
 ### iOS
-- No configuration required
+-无需配置
 
-## Example
+## 例子
 
 ````dart
 Future<Null> _cropImage(File imageFile) async {
@@ -60,7 +54,7 @@ Future<Null> _cropImage(File imageFile) async {
 }
 ````
 
-## Credits
+## 参考
 This plugin is based on two native libraries:
 
 - Android: [uCrop](https://github.com/Yalantis/uCrop) created by [Yalantis](https://github.com/Yalantis)

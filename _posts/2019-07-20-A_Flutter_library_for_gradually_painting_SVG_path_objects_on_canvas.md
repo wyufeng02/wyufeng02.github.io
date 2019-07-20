@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  
+title:  绘图动画插件库
 tag: [flutter代码库, SVG, Animation]
 date: 2019-07-20
 ---
@@ -8,96 +8,102 @@ date: 2019-07-20
  
 
 
-## [立即下载 ️⬇️ ](https://codeload.github.com/biocarl/drawing_animation/zip/master) 
+## [立即下载 ️⬇️ ](https://codeload.github.com/biocarl/drawing_animation/zip/master)
 
 
  
 ![](https://flutterawesome.com/content/images/2019/07/drawing_animation1.gif)
  
 >
-> 用于在画布上逐渐绘制SVG路径对象的Flutter库（绘制线动画）。
+> 用于在画布上逐渐绘制SVG路径对象的Flutter库(绘制线动画)。
 >
 
  
-# drawing_animation [![Pub](https://img.shields.io/pub/v/drawing_animation.svg)](https://pub.dartlang.org/packages/drawing_animation) [![awesome](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://github.com/Solido/awesome-flutter)
+# drawing_animation [![Pub](https://img.shields.io/pub/v/drawing_animation.svg)](https://pub.dartlang.org/packages/drawing_animation)[![awesome](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://github.com/Solido/awesome-flutter)
 
 |**From static SVG assets**  | | See more examples in the [showcasing app](https://github.com/biocarl/drawing_animation/tree/master/example/example_03). |
 | :---             |     :---:                   |     :---:     |
-| <img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_egypt1.gif" width="400px" /> |<img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_dino2.gif" width="400px"/> <br/> <img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_order.gif" width="400px"/>   | <img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_child7.gif" width="400px"/>      |
+| <img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_egypt1.gif" width="400px"/> |<img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_dino2.gif" width="400px"/> <br/> <img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_order.gif" width="400px"/>   | <img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_child7.gif" width="400px"/>      |
 | **Dynamically created from Path objects which are animated over time** | |  |
-| <img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_dynamic_1.gif" width="400px" /> |*more coming soon*<br/>... | <img src="https://github.com/biocarl/img/raw/master/drawing_animation/loader_1.gif" width="400px"/>      |
+| <img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_dynamic_1.gif" width="400px"/> |*more coming soon*<br/>... | <img src="https://github.com/biocarl/img/raw/master/drawing_animation/loader_1.gif" width="400px"/>      |
 
-The rendering library exposes a central widget called `AnimatedDrawing` which allows to render SVG paths (via `AnimatedDrawing.svg`) or Flutter Path objects (via `AnimatedDrawing.paths`) in a drawing like fashion.
+渲染库公开了一个名为`AnimatedDrawing`的中央窗口小部件，它允许在类似时尚的图形中渲染SVG路径(通过`AnimatedDrawing.svg`)或Flutter Path对象(通过`AnimatedDrawing.paths`)。
 
-## Getting Started  - AnimatedDrawing.svg
-To get started with the `drawing_animation` package you need a valid Svg file.
-Currently only simple path elements without transforms are supported (see [Supported SVG specifications](https://github.com/biocarl/drawing_animation#supported-svg-specifications))
+##入门 -  AnimatedDrawing.svg
+要开始使用`drawing_animation`包，您需要一个有效的Svg文件。
+目前只支持没有转换的简单路径元素(参见[支持的SVG规范](https://github.com/biocarl/drawing_animation#supported-svg-specifications))
 
-1. **Add dependency in your `pubspec.yaml`**
+
+
+1. **添加依赖，在文件 `pubspec.yaml`**
+
 ```yaml
 dependencies:
   drawing_animation: ^0.1.1
 
 ```
 
-2. **Add the SVG asset**
+2. ** 添加 SVG 资源**
 ```yaml
 assets:
   - assets/my_drawing.svg
 ```
-3. **Use the widget**
 
-    An AnimatedDrawing widget can be initiated in two ways:
-    1. **Simplified - without animation controller (See [Example_01](https://github.com/biocarl/drawing_animation/tree/master/example/example_01))**
+**使用插件 **
+   
+可以通过两种方式启动AnimatedDrawing小部件:
 
-        By default every animation repeats infinitely. For running an animation only once you can use a callback to set `run` to false after the first animation cycle completed (see field `onFinish`).
-        ```dart
+例子 - 没有动画控制器(参见[Example_01](https://github.com/biocarl/drawing_animation/tree/master/example/example_01))
+      默认情况下，每个动画都会无限重复。 仅在运行动画一次后，您可以使用回调在第一个动画循环完成后将`run`设置为false(请参阅字段`onFinish`)。
+   
+``` dart
         AnimatedDrawing.svg(
           "assets/my_drawing.svg",
           run: this.run,
           duration: new Duration(seconds: 3),
-          onFinish: () => setState(() {
+          onFinish: ()=> setState((){
             this.run  = false;
           }),
         )
-        ```
+```
 
-    2. **Standard - with animation controller (See [Example_02](https://github.com/biocarl/drawing_animation/tree/master/example/example_02))**
+带动画控制器(参见[Example_02](https://github.com/biocarl/drawing_animation/tree/master/example/example_02))
 
-        The simplified version will be sufficient in most of the use cases. If you wish to controll the animation furthermore or you want to syncronize it with other existing animations, you might consider using an custom [animation controller](https://docs.flutter.io/flutter/animation/AnimationController-class.html):
-        ```dart
-        AnimatedDrawing.svg(
-          "assets/test.svg",
-          controller: this.controller,
-        )
-        ```
-
-4. Check out examples in the `examples` folder. It seems that antialising for the Paint/Canvas is switched off when using debug mode. For pretty results use `flutter run --release`.
-
-## Getting Started  - AnimatedDrawing.paths (still experimental)
-By providing Path objects directly to the widget, elements can be changed dynamically, even during the animation. The internal data structure is rebuild every time the state changes, therefore the animation performance might suffer if the amount of elements in `paths` is very high (see Limitations). More examples will be provided soon (for now see [Example_01](https://github.com/biocarl/drawing_animation/tree/master/example/example_01) and [Example_04](https://github.com/biocarl/drawing_animation/tree/master/example/example_04)).
+在大多数用例中，简化版本就足够了。 如果您希望进一步控制动画或者想要将其与其他现有动画同步，您可以考虑使用自定义[动画控制器](https://docs.flutter.io/flutter/animation/AnimationController-class.html):
 
   ```dart
+  AnimatedDrawing.svg(
+    "assets/test.svg",
+    controller: this.controller,
+  )
+```
+查看`examples`文件夹中的示例。 在使用调试模式时，似乎关闭了Paint/ Canvas的抗锯齿功能。 为了获得漂亮的结果，请使用`flutter run --release`。
+
+## 入门 -  AnimatedDrawing.paths(仍在实验中)
+通过将Path对象直接提供给窗口小部件，即使在动画期间，也可以动态更改元素。 每次状态更改时都会重建内部数据结构，因此如果`paths`中的元素数量非常高(见限制)，动画性能可能会受到影响。 不久将提供更多示例(现在请参阅 [Example_01](https://github.com/biocarl/drawing_animation/tree/master/example/example_01)and [Example_04](https://github.com/biocarl/drawing_animation/tree/master/example/example_04)).
+
+```dart
   AnimatedDrawing.paths(
       [
-      ///Path objects
+     ///Path objects
       ],
       paints:[
-      ///Paint objects (optional), specifies a [Paint] object for each [Path] element in `paths`.
+     ///Paint objects (optional), specifies a [Paint] object for each [Path] element in `paths`.
       ],
       run: this.run,
       duration: new Duration(seconds: 3),
-      onFinish: () => setState(() {
+      onFinish: ()=> setState((){
         this.run  = false;
       }),
     )
   ```
-**Current limitations:**
 
-As stated, for every state change of the widget, the internal data structure for the path objects is rebuilt. When the amount of provided path objects is high and a custom `animationOrder` is defined (which triggers a sorting operation over the data structure) it can result in lags. This becomes especially apparent when the state is rebuild at 60fps by another animation (e.g. rotating the path objects at every frame). Any suggestions on how to elegantly solve this are very welcome :-)
+**目前的限制:**
 
-## Option list
-Here is increasingly growing list with all available parameters and their visual effect.
+如上所述，对于窗口小部件的每个状态更改，都会重建路径对象的内部数据结构。 当提供的路径对象的数量很大并且定义了自定义`animationOrder`(触发对数据结构的排序操作)时，它可能导致滞后。 当通过另一个动画以60fps重建状态时(例如，在每帧处旋转路径对象)，这变得尤其明显。 关于如何优雅地解决这个问题的任何建议都非常受欢迎:-)
+
+## 选项列表
+这是越来越多的列表，包括所有可用参数及其视觉效果。
 
 | Field            | Type                            | <pre> ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ </pre>Example<pre> ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ </pre> |
 | :---             |    :---:                       |     :---:     |
@@ -120,47 +126,50 @@ Here is increasingly growing list with all available parameters and their visual
 | `range` <br/><br/> *Start and stop a animation from a certain moment in time by defining a `AnimationRange` object.*|  | |
 | `scaleToViewport` <br/><br/> *Path objects are scaled to the available viewport while maintaining the aspect ratio. Defaults to true.*|  | |
 
-## Supported SVG specifications
-   - Only path elements (`<path d="M3m1....">`) are supported for now. I'm currently considering to add [flutter_svg](https://pub.dartlang.org/packages/flutter_svg) as dependency for more complete SVG parsing.
-   - Attributes
-     * stroke, only Hex-Color without alpha for now
-     * stroke-width
-     * style, but only the both fields above
-   - No transforms are supported, yet.
+## 支持的SVG规范
+     - 现在只支持路径元素(`<path d =“M3m1 ....”>`)。 我目前正在考虑添加[flutter_svg](https://pub.dartlang.org/packages/flutter_svg)作为更完整的SVG解析的依赖项。
+     - 属性
+      *笔画，现在只有没有alpha的Hex-Color
+      *笔画宽度
+      *风格，但只有上面的两个字段
+     - 尚未支持转换。
 
-## How can I use my own SVG files?
-A lot of tools can convert existing SVG files to the [supported format](#supported-svg-specifications).
-For example with Inkscape:
-1. Select all objects and ungroup till there is no group left (Ctrl+U)
-2. Convert selection to paths: `Path>>Object to Path` and hit save
-3. Afterwards remove transforms with [svgo](https://github.com/svg/svgo) or the webversion [svgomg](https://jakearchibald.github.io/svgomg/).
-4. Now it should work, if not feel free to write an issue!
 
-## Examples:
-  - [`Example_01`](https://github.com/biocarl/drawing_animation/tree/master/example/example_01): Set up simplfied AnimatedDrawing with AnimatedDrawing.svg and AnimatedDrawing.paths
-  - [`Example_02`](https://github.com/biocarl/drawing_animation/tree/master/example/example_02): Set up AnimatedDrawing with an custom animation controller
-  - [`Example_03`](https://github.com/biocarl/drawing_animation/tree/master/example/example_03): Small artistic showcasing app with vectorizied drawings of [old book scans](https://www.flickr.com/photos/britishlibrary) provided by the British Library
-  - [`Example_04`](https://github.com/biocarl/drawing_animation/tree/master/example/example_04): Show how to create Gifs with high resolution using the `debug` field.
+## 如何使用自己的SVG文件？
+许多工具可以将现有的SVG文件转换为[支持的格式](#supported-svg-specifications)。
+例如使用Inkscape:
+1.选择所有对象并取消组合，直到没有组为止(Ctrl + U)
+2.将选择转换为路径:`Path >> Object to Path`并点击保存
+3.然后使用[svgo](https://github.com/svg/svgo)或webversion [svgomg](https://jakearchibald.github.io/svgomg/)删除转换。
+现在它应该工作，如果不是随便写一个问题！
+
+## 例子:
+    -  [`Example_01`](https://github.com/biocarl/drawing_animation/tree/master/example/example_01):使用AnimatedDrawing.svg和AnimatedDrawing.paths设置simplfied AnimatedDrawing
+    -  [`Example_02`](https://github.com/biocarl/drawing_animation/tree/master/example/example_02):使用自定义动画控制器设置AnimatedDrawing
+    -  [`Example_03`](https://github.com/biocarl/drawing_animation/tree/master/example/example_03):小型艺术展示应用程序，带有[旧书扫描]的矢量化图纸(https://www.flickr。 com/ photos/ britishlibrary)由大英图书馆提供
+    -  [`Example_04`](https://github.com/biocarl/drawing_animation/tree/master/example/example_04):演示如何使用`debug`字段创建高分辨率的Gif。
+
 
 ## Todo
-  - Better test coverage
-  - Improve SVG parsing capabilities
-    * Circles, rect etc.
-    * Better color parsing incl. alpha for hex code and RGB(A)
-    * Subsitute SVG parsing logic with an mature parsering library as [flutter_svg](https://pub.dartlang.org/packages/flutter_svg)
-  - Provide a way to overwrite color/brush etc. for `AnimatedDrawing.svg` - maybe also over `paints` object?
-  - Define a [PathOrder] which maintains each Path and only sorts them relative to each other
-  - Improve performance AnimatedDrawing.paths, for every rebuild all provided paths have to be parsed again. Is there a way to check Path-Objects for equality like Keys for widget? Idea: implementing a proxy for Path which creates a unique hash when command evoked
-  - Showcase: write "drawing_animation" in different ways + 3 cirlcles + color it and one gif and put it at the top
-  - Showcase: Create fractals with L-Systems
-  - AnimatedDrawing.paths:
-    * Provide some kind of fixed boundingBox since Paths and the overall bounding box can dynamically change (e.g. rotating circle pulses in size)
-    * Also custom viewport
 
-## Credits
+- 更好的测试覆盖率
+- 改进SVG解析功能
+    *圈子，矩形等
+    *更好的色彩分析，包括。十六进制代码和RGB的阿尔法(A)
+    *使用成熟的解析库将SVG解析逻辑替换为[flutter_svg](https://pub.dartlang.org/packages/flutter_svg)
+- 提供一种覆盖`AnimatedDrawing.svg`的颜色/画笔等的方法 - 也许还可以覆盖`paint`对象？
+- 定义[PathOrder]，它维护每个Path并仅相对于彼此进行排序
+- 提高性能AnimatedDrawing.paths，对于每次重建，必须再次解析所有提供的路径。有没有办法检查路径对象是否相等，如小部件的键？想法:为Path实现一个代理，在命令被唤起时创建一个唯一的哈希
+- 展示:以不同方式编写“drawing_animation”+ 3个cirlcles +为它添加颜色和一个gif并将其放在顶部
+- 展示:使用L-Systems创建分形
+-  AnimatedDrawing.paths:
+    *提供某种固定边界框，因为路径和整个边界框可以动态改变(例如旋转圆形脉冲的大小)
+    *也是自定义视口
 
-Thank you to [maxwellito](https://github.com/maxwellito) for his [vivus project](https://github.com/maxwellito/vivus) which served me as initial inspiration for this library. Thank you also to [dnfield](https://github.com/dnfield) for the [path_parsing](https://github.com/dnfield/dart_path_parsing) library.
+## 学分
 
-Credits to the British Library for their awesome [collection of old book scans](https://www.flickr.com/photos/britishlibrary) which I used for the [showcasing app](https://github.com/biocarl/drawing_animation/tree/master/example/example_03).
+感谢[maxwellito](https://github.com/maxwellito)为他的[vivus项目](https://github.com/maxwellito/vivus)提供了这个库的初步灵感。也感谢[dnfield](https://github.com/dnfield)了解[path_parsing](https://github.com/dnfield/dart_path_parsing)库。
+
+英国图书馆为他们用于[展示应用程序](https://github.com/biocarl/)的精彩[旧书扫描集](https://www.flickr.com/photos/britishlibrary)的信用额度drawing_animation/树/主/示例/ example_03)。
 
 ## Github主页 👉[biocarl/drawing_animation](http://github.com/biocarl/drawing_animation)

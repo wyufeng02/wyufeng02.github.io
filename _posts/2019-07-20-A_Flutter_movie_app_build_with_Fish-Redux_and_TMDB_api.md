@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  
-tag: [flutter代码库, Movie]
+title:  Fish-Redux开发的电影app
+tag: [flutter代码库, Movie,app]
 date: 2019-07-20
 ---
 
@@ -24,8 +24,9 @@ date: 2019-07-20
 A Flutter movie app build with Fish-Redux and TMDB api.  
 ## Demo
 <a href='https://raw.githubusercontent.com/o1298098/Flutter-Movie/master/build/app/outputs/apk/release/app-release.apk'>Download</a>
-## Preview 
-<img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios1.png" width="250"/><img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios2.png" width="250"/><img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios3.png" width="250"/>  
-<img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios4.png" width="250"/><img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios5.png" width="250"/><img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios6.png" width="250"/>  
+
+## 预览
+<img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios1.png?raw=true" width="250"/><img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios2.png?raw=true" width="250"/><img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios3.png?raw=true" width="250"/>  
+<img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios4.png?raw=true" width="250"/><img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios5.png?raw=true" width="250"/><img src="https://github.com/o1298098/Flutter-Movie/blob/master/srceenshot/ios6.png?raw=true" width="250"/>  
 
 ## Github主页 👉[o1298098/Flutter-Movie](http://github.com/o1298098/Flutter-Movie)

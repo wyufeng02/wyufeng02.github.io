@@ -1,23 +1,23 @@
 ---
 layout: post
-title:  Objective-C开源项目排行榜 (07-16)
+title:  Objective-C开源项目排行榜 (07-20)
 tag: Objective-C 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#Objective-C开源项目排行榜 (07-16)
+#Objective-C开源项目排行榜 (07-20)
 
 ![Objective-C开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Objective-C.png)
 
 
-## 1. [vsouza/awesome-ios](http://github.com/vsouza/awesome-ios)  ♥️ 32.3k
+## 1. [vsouza/awesome-ios](http://github.com/vsouza/awesome-ios)  ♥️ 32.4k
          
 > A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects 
        
 
-## 2. [grpc/grpc](http://github.com/grpc/grpc)  ♥️ 22.1k
+## 2. [grpc/grpc](http://github.com/grpc/grpc)  ♥️ 22.2k
          
 > The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
        
@@ -175,44 +175,44 @@ categories:
 > The Objective-C block utilities you always wish you had.
        
 
-## 33. [sequelpro/sequelpro](http://github.com/sequelpro/sequelpro)  ♥️ 6.8k
+## 33. [tonymillion/Reachability](http://github.com/tonymillion/Reachability)  ♥️ 6.8k
+         
+> ARC and GCD Compatible Reachability Class for iOS and MacOS. Drop in replacement for Apple Reachability
+       
+
+## 34. [sequelpro/sequelpro](http://github.com/sequelpro/sequelpro)  ♥️ 6.8k
          
 > MySQL/MariaDB database management for macOS
        
 
-## 34. [jverkoey/nimbus](http://github.com/jverkoey/nimbus)  ♥️ 6.4k
+## 35. [jverkoey/nimbus](http://github.com/jverkoey/nimbus)  ♥️ 6.4k
          
 > The iOS framework that grows only as fast as its documentation
        
 
-## 35. [johnezang/JSONKit](http://github.com/johnezang/JSONKit)  ♥️ 6.2k
+## 36. [johnezang/JSONKit](http://github.com/johnezang/JSONKit)  ♥️ 6.2k
          
 > Objective-C JSON
        
 
-## 36. [johnno1962/injectionforxcode](http://github.com/johnno1962/injectionforxcode)  ♥️ 6.1k
+## 37. [johnno1962/injectionforxcode](http://github.com/johnno1962/injectionforxcode)  ♥️ 6.1k
          
 > Runtime Code Injection for Objective-C & Swift
        
 
-## 37. [realm/jazzy](http://github.com/realm/jazzy)  ♥️ 6.1k
+## 38. [realm/jazzy](http://github.com/realm/jazzy)  ♥️ 6.1k
          
 > Soulful docs for Swift & Objective-C
  
 
-## 38. [microsoft/WinObjC](http://github.com/microsoft/WinObjC)  ♥️ 6k
+## 39. [microsoft/WinObjC](http://github.com/microsoft/WinObjC)  ♥️ 6k
          
 > Objective-C for Windows
        
 
-## 39. [JetBrains/kotlin-native](http://github.com/JetBrains/kotlin-native)  ♥️ 6k
+## 40. [JetBrains/kotlin-native](http://github.com/JetBrains/kotlin-native)  ♥️ 6k
          
 > Kotlin/Native infrastructure
-       
-
-## 40. [pokeb/asi-http-request](http://github.com/pokeb/asi-http-request)  ♥️ 5.8k
-         
-> Easy to use CFNetwork wrapper for HTTP requests, Objective-C, Mac OS X and iPhone
        
 
 
@@ -221,146 +221,146 @@ categories:
 > A curated list of awesome ARKit projects and resources. Feel free to contribute!
        
 
-## 42. [robbiehanson/XMPPFramework](http://github.com/robbiehanson/XMPPFramework)  ♥️ 5.7k
+## 42. [pokeb/asi-http-request](http://github.com/pokeb/asi-http-request)  ♥️ 5.8k
+         
+> Easy to use CFNetwork wrapper for HTTP requests, Objective-C, Mac OS X and iPhone
+       
+
+## 43. [robbiehanson/XMPPFramework](http://github.com/robbiehanson/XMPPFramework)  ♥️ 5.7k
          
 > An XMPP Framework in Objective-C for Mac and iOS
        
 
-## 43. [ChenYilong/CYLTabBarController](http://github.com/ChenYilong/CYLTabBarController)  ♥️ 5.6k
+## 44. [ChenYilong/CYLTabBarController](http://github.com/ChenYilong/CYLTabBarController)  ♥️ 5.6k
          
 > [EN]It is an iOS UI module library for adding animation to iOS tabbar items and icons with Lottie, and adding a bigge…
        
 
-## 44. [schneiderandre/popping](http://github.com/schneiderandre/popping)  ♥️ 5.6k
+## 45. [schneiderandre/popping](http://github.com/schneiderandre/popping)  ♥️ 5.6k
          
 > A collection of animation examples for iOS apps.
        
 
-## 45. [xmartlabs/XLForm](http://github.com/xmartlabs/XLForm)  ♥️ 5.5k
+## 46. [xmartlabs/XLForm](http://github.com/xmartlabs/XLForm)  ♥️ 5.5k
          
 > XLForm is the most flexible and powerful iOS library to create dynamic table-view forms. Fully compatible with Swift …
        
 
-## 46. [Hammerspoon/hammerspoon](http://github.com/Hammerspoon/hammerspoon)  ♥️ 5.5k
+## 47. [Hammerspoon/hammerspoon](http://github.com/Hammerspoon/hammerspoon)  ♥️ 5.5k
          
 > Staggeringly powerful macOS desktop automation with Lua
        
 
-## 47. [google/j2objc](http://github.com/google/j2objc)  ♥️ 5.5k
+## 48. [google/j2objc](http://github.com/google/j2objc)  ♥️ 5.5k
          
 > A Java to iOS Objective-C translation tool and runtime.
        
 
-## 48. [nytimes/objective-c-style-guide](http://github.com/nytimes/objective-c-style-guide)  ♥️ 5.5k
+## 49. [nytimes/objective-c-style-guide](http://github.com/nytimes/objective-c-style-guide)  ♥️ 5.5k
          
 > The Objective-C Style Guide used by The New York Times
        
 
-## 49. [kyleneideck/BackgroundMusic](http://github.com/kyleneideck/BackgroundMusic)  ♥️ 5.3k
+## 50. [kyleneideck/BackgroundMusic](http://github.com/kyleneideck/BackgroundMusic)  ♥️ 5.3k
          
 > Background Music, a macOS audio utility: automatically pause your music, set individual apps' volumes and record syst…
        
 
-## 50. [soffes/SAMKeychain](http://github.com/soffes/SAMKeychain)  ♥️ 5.2k
+
+## 51. [soffes/SAMKeychain](http://github.com/soffes/SAMKeychain)  ♥️ 5.2k
          
 > Simple Objective-C wrapper for the keychain that works on Mac and iOS
        
 
-
-## 51. [NJHu/iOSProject](http://github.com/NJHu/iOSProject)  ♥️ 5.1k
+## 52. [NJHu/iOSProject](http://github.com/NJHu/iOSProject)  ♥️ 5.1k
          
 > iOS project of collected some demos for iOS App, use Objective-C
  
 
-## 52. [joeldev/JLRoutes](http://github.com/joeldev/JLRoutes)  ♥️ 5.1k
+## 53. [joeldev/JLRoutes](http://github.com/joeldev/JLRoutes)  ♥️ 5.1k
          
 > URL routing library for iOS with a simple block-based API
        
 
-## 53. [julienXX/terminal-notifier](http://github.com/julienXX/terminal-notifier)  ♥️ 5k
+## 54. [julienXX/terminal-notifier](http://github.com/julienXX/terminal-notifier)  ♥️ 5k
          
 > Send User Notifications on macOS from the command-line.
        
 
-## 54. [KrauseFx/TSMessages](http://github.com/KrauseFx/TSMessages)  ♥️ 5k
+## 55. [KrauseFx/TSMessages](http://github.com/KrauseFx/TSMessages)  ♥️ 5k
          
 > 💌 Easy to use and customizable messages/notifications for iOS à la Tweetbot
        
 
-## 55. [Wolg/awesome-swift](http://github.com/Wolg/awesome-swift)  ♥️ 4.9k
+## 56. [Wolg/awesome-swift](http://github.com/Wolg/awesome-swift)  ♥️ 4.9k
          
 > A curated list of awesome Swift frameworks, libraries and software.
        
 
-## 56. [MacPass/MacPass](http://github.com/MacPass/MacPass)  ♥️ 4.8k
+## 57. [MacPass/MacPass](http://github.com/MacPass/MacPass)  ♥️ 4.9k
          
 > A native OS X KeePass client 
        
 
-## 57. [ameizi/awesome-ios-animation](http://github.com/ameizi/awesome-ios-animation)  ♥️ 4.5k
+## 58. [ameizi/awesome-ios-animation](http://github.com/ameizi/awesome-ios-animation)  ♥️ 4.5k
          
 > A curated list of awesome iOS animation, including Objective-C and Swift libraries
        
 
-## 58. [WenchaoD/FSPagerView](http://github.com/WenchaoD/FSPagerView)  ♥️ 4.4k
+## 59. [WenchaoD/FSPagerView](http://github.com/WenchaoD/FSPagerView)  ♥️ 4.5k
          
 > FSPagerView is an elegant Screen Slide Library. It is extremely helpful for making Banner View、Product Show、Welcome/G…
        
 
-## 59. [assimp/assimp](http://github.com/assimp/assimp)  ♥️ 4.4k
+## 60. [assimp/assimp](http://github.com/assimp/assimp)  ♥️ 4.4k
          
 > Official Open Asset Import Library Repository. Loads 40+ 3D file formats into one unified and clean data structure. 
        
 
-## 60. [jspahrsummers/libextobjc](http://github.com/jspahrsummers/libextobjc)  ♥️ 4.3k
+
+## 61. [jspahrsummers/libextobjc](http://github.com/jspahrsummers/libextobjc)  ♥️ 4.3k
          
 > A Cocoa library to extend the Objective-C programming language.
        
 
-
-## 61. [AliSoftware/OHHTTPStubs](http://github.com/AliSoftware/OHHTTPStubs)  ♥️ 4.2k
+## 62. [AliSoftware/OHHTTPStubs](http://github.com/AliSoftware/OHHTTPStubs)  ♥️ 4.2k
          
 > Stub your network requests easily! Test your apps with fake network data and custom response time, response code and …
        
 
-## 62. [qvacua/vimr](http://github.com/qvacua/vimr)  ♥️ 4.2k
+## 63. [qvacua/vimr](http://github.com/qvacua/vimr)  ♥️ 4.2k
          
 > VimR — Neovim GUI for macOS
        
 
-## 63. [ZipArchive/ZipArchive](http://github.com/ZipArchive/ZipArchive)  ♥️ 4.1k
+## 64. [ZipArchive/ZipArchive](http://github.com/ZipArchive/ZipArchive)  ♥️ 4.1k
          
 > ZipArchive is a simple utility class for zipping and unzipping files on iOS, macOS and tvOS.
        
 
-## 64. [cocos2d/cocos2d-objc](http://github.com/cocos2d/cocos2d-objc)  ♥️ 4.1k
+## 65. [cocos2d/cocos2d-objc](http://github.com/cocos2d/cocos2d-objc)  ♥️ 4.1k
          
 > Cocos2d for iOS and OS X, built using Objective-C
  
 
-## 65. [halfrost/Halfrost-Field](http://github.com/halfrost/Halfrost-Field)  ♥️ 4.1k
+## 66. [halfrost/Halfrost-Field](http://github.com/halfrost/Halfrost-Field)  ♥️ 4.1k
          
 > ✍️ 这里是写博客的地方 —— Halfrost-Field 冰霜之地
        
 
-## 66. [tomaz/appledoc](http://github.com/tomaz/appledoc)  ♥️ 4k
+## 67. [tomaz/appledoc](http://github.com/tomaz/appledoc)  ♥️ 4k
          
 > Objective-c code Apple style documentation set generator.
        
 
-## 67. [ninjinkun/NJKWebViewProgress](http://github.com/ninjinkun/NJKWebViewProgress)  ♥️ 4k
+## 68. [ninjinkun/NJKWebViewProgress](http://github.com/ninjinkun/NJKWebViewProgress)  ♥️ 4k
          
 > UIWebView progress interface
        
 
-## 68. [Provenance-Emu/Provenance](http://github.com/Provenance-Emu/Provenance)  ♥️ 3.9k
+## 69. [Provenance-Emu/Provenance](http://github.com/Provenance-Emu/Provenance)  ♥️ 3.9k
          
 > iOS & tvOS multi-emulator frontend, supporting various Atari, Bandai, NEC, Nintendo, Sega, SNK and Sony console syste…
-       
-
-## 69. [tombenner/nui](http://github.com/tombenner/nui)  ♥️ 3.8k
-         
-> Style iOS apps with a stylesheet, similar to CSS
        
 
 ## 70. [AloneMonkey/MonkeyDev](http://github.com/AloneMonkey/MonkeyDev)  ♥️ 3.8k
@@ -369,9 +369,9 @@ categories:
        
 
 
-## 71. [stig/json-framework](http://github.com/stig/json-framework)  ♥️ 3.8k
+## 71. [tombenner/nui](http://github.com/tombenner/nui)  ♥️ 3.8k
          
-> JSON (JavaScript Object Notation) is a light-weight data interchange format that's easy to read and write for humans …
+> Style iOS apps with a stylesheet, similar to CSS
        
 
 ## 72. [eggswift/ESTabBarController](http://github.com/eggswift/ESTabBarController)  ♥️ 3.8k
@@ -379,147 +379,97 @@ categories:
 > ESTabBarController is a Swift model for customize UI, badge and adding animation to tabbar items. Support lottie!
        
 
-## 73. [sveinbjornt/Sloth](http://github.com/sveinbjornt/Sloth)  ♥️ 3.8k
+## 73. [stig/json-framework](http://github.com/stig/json-framework)  ♥️ 3.8k
+         
+> JSON (JavaScript Object Notation) is a light-weight data interchange format that's easy to read and write for humans …
+       
+
+## 74. [sveinbjornt/Sloth](http://github.com/sveinbjornt/Sloth)  ♥️ 3.8k
          
 > Mac app that shows all open files and sockets in use by all running processes. Nice GUI for lsof.
        
 
-## 74. [telly/TLYShyNavBar](http://github.com/telly/TLYShyNavBar)  ♥️ 3.8k
+## 75. [telly/TLYShyNavBar](http://github.com/telly/TLYShyNavBar)  ♥️ 3.8k
          
 > Unlike all those arrogant UINavigationBar, this one is shy and humble! Easily create auto-scrolling navigation bars!
        
 
-## 75. [Yalantis/FoldingTabBar.iOS](http://github.com/Yalantis/FoldingTabBar.iOS)  ♥️ 3.7k
+## 76. [Yalantis/FoldingTabBar.iOS](http://github.com/Yalantis/FoldingTabBar.iOS)  ♥️ 3.7k
          
 > Folding Tab Bar and Tab Bar Controller
        
 
-## 76. [pinterest/PINRemoteImage](http://github.com/pinterest/PINRemoteImage)  ♥️ 3.7k
+## 77. [pinterest/PINRemoteImage](http://github.com/pinterest/PINRemoteImage)  ♥️ 3.7k
          
 > A thread safe, performant, feature rich image fetcher
        
 
-## 77. [HeshamMegid/HMSegmentedControl](http://github.com/HeshamMegid/HMSegmentedControl)  ♥️ 3.6k
+## 78. [HeshamMegid/HMSegmentedControl](http://github.com/HeshamMegid/HMSegmentedControl)  ♥️ 3.6k
          
 > A drop-in replacement for UISegmentedControl mimicking the style of the segmented control used in Google Currents and…
        
 
-## 78. [BohdanOrlov/iOS-Developer-Roadmap](http://github.com/BohdanOrlov/iOS-Developer-Roadmap)  ♥️ 3.6k
+## 79. [BohdanOrlov/iOS-Developer-Roadmap](http://github.com/BohdanOrlov/iOS-Developer-Roadmap)  ♥️ 3.6k
          
 > Roadmap to becoming an iOS developer in 2018.
        
 
-## 79. [Xcode-Snippets/Objective-C](http://github.com/Xcode-Snippets/Objective-C)  ♥️ 3.5k
+## 80. [Xcode-Snippets/Objective-C](http://github.com/Xcode-Snippets/Objective-C)  ♥️ 3.5k
          
 > A few code snippets from my Xcode arsenal
        
 
-## 80. [material-components/material-components-ios](http://github.com/material-components/material-components-ios)  ♥️ 3.5k
+
+## 81. [material-components/material-components-ios](http://github.com/material-components/material-components-ios)  ♥️ 3.5k
          
 > Modular and customizable Material Design UI components for iOS
        
 
-
-## 81. [ko1o/PYSearch](http://github.com/ko1o/PYSearch)  ♥️ 3.5k
+## 82. [ko1o/PYSearch](http://github.com/ko1o/PYSearch)  ♥️ 3.5k
          
 > 🔍 An elegant search controller which replaces the UISearchController for iOS (iPhone & iPad) .
        
 
-## 82. [youngsoft/MyLinearLayout](http://github.com/youngsoft/MyLinearLayout)  ♥️ 3.5k
+## 83. [youngsoft/MyLinearLayout](http://github.com/youngsoft/MyLinearLayout)  ♥️ 3.5k
          
 > MyLayout is a powerful iOS UI framework implemented by Objective-C. It integrates the functions with Android Layout,i…
        
 
-## 83. [pujiaxin33/JXCategoryView](http://github.com/pujiaxin33/JXCategoryView)  ♥️ 3.5k
+## 84. [pujiaxin33/JXCategoryView](http://github.com/pujiaxin33/JXCategoryView)  ♥️ 3.5k
          
 > A powerful and easy to use category view (segmentedcontrol, segmentview, pagingview, pagerview, pagecontrol) (腾讯新闻、今日…
        
 
-## 84. [mapbox/mapbox-gl-native](http://github.com/mapbox/mapbox-gl-native)  ♥️ 3.4k
+## 85. [mapbox/mapbox-gl-native](http://github.com/mapbox/mapbox-gl-native)  ♥️ 3.4k
          
 > Interactive, thoroughly customizable maps in native Android, iOS, macOS, Node.js, and Qt applications, powered by vec…
        
 
-## 85. [scalessec/Toast](http://github.com/scalessec/Toast)  ♥️ 3.4k
+## 86. [scalessec/Toast](http://github.com/scalessec/Toast)  ♥️ 3.4k
          
 > An Objective-C category that adds toast notifications to the UIView object class.
        
 
-## 86. [gavinkwoe/BeeFramework](http://github.com/gavinkwoe/BeeFramework)  ♥️ 3.4k
+## 87. [gavinkwoe/BeeFramework](http://github.com/gavinkwoe/BeeFramework)  ♥️ 3.4k
          
 > [Experimental] A semi-hybrid framework that allows you to create mobile apps using Objective-C and XML/CSS
        
 
-## 87. [Quick/Nimble](http://github.com/Quick/Nimble)  ♥️ 3.3k
+## 88. [Quick/Nimble](http://github.com/Quick/Nimble)  ♥️ 3.4k
          
 > A Matcher Framework for Swift and Objective-C
  
 
-## 88. [draveness/DKNightVersion](http://github.com/draveness/DKNightVersion)  ♥️ 3.3k
+## 89. [draveness/DKNightVersion](http://github.com/draveness/DKNightVersion)  ♥️ 3.3k
          
 > Manage Colors, Integrate Night/Multiple Themes
        
 
-## 89. [dogo/SCLAlertView](http://github.com/dogo/SCLAlertView)  ♥️ 3.3k
+## 90. [dogo/SCLAlertView](http://github.com/dogo/SCLAlertView)  ♥️ 3.3k
          
 > Beautiful animated Alert View. Written in Objective-C
  
 
-## 90. [alibaba/coobjc](http://github.com/alibaba/coobjc)  ♥️ 3.3k
-         
-> coobjc provides coroutine support for Objective-C and Swift. We added await method、generator and actor model like C#、…
-       
-
-
-## 91. [newmarcel/KeepingYouAwake](http://github.com/newmarcel/KeepingYouAwake)  ♥️ 3.2k
-         
-> Prevents your Mac from going to sleep.
-       
-
-## 92. [CocoaDebug/CocoaDebug](http://github.com/CocoaDebug/CocoaDebug)  ♥️ 3.2k
-         
-> 🚀 iOS Debugging Tool
-       
-
-## 93. [jhurray/JHChainableAnimations](http://github.com/jhurray/JHChainableAnimations)  ♥️ 3.2k
-         
-> Easy to read and write chainable animations in Objective-C and Swift
-       
-
-## 94. [nisrulz/flutter-examples](http://github.com/nisrulz/flutter-examples)  ♥️ 3.2k
-         
-> [Examples] Simple basic isolated apps, for budding flutter devs.
-       
-
-## 95. [marcobambini/gravity](http://github.com/marcobambini/gravity)  ♥️ 3.1k
-         
-> Gravity Programming Language
-       
-
-## 96. [quicktype/quicktype](http://github.com/quicktype/quicktype)  ♥️ 3.1k
-         
-> Generate types and converters from JSON, Schema, and GraphQL
-       
-
-## 97. [raywenderlich/objective-c-style-guide](http://github.com/raywenderlich/objective-c-style-guide)  ♥️ 3k
-         
-> A style guide that outlines the coding conventions for raywenderlich.com
-       
-
-## 98. [shaojiankui/JKCategories](http://github.com/shaojiankui/JKCategories)  ♥️ 3k
-         
-> JKCategories(iOS-Categories,Category), a collection of useful Objective-C Categories extending iOS Frameworks such as…
-       
-
-## 99. [nst/RuntimeBrowser](http://github.com/nst/RuntimeBrowser)  ♥️ 2.9k
-         
-> Objective-C Runtime Browser, for Mac OS X and iOS
-       
-
-## 100. [CoderZhuXH/XHLaunchAd](http://github.com/CoderZhuXH/XHLaunchAd)  ♥️ 2.9k
-         
-> 🔥The screen opening advertising solutions - 开屏广告、启动广告解决方案-支持静态/动态图片广告,mp4视频广告,全屏/半屏广告、兼容iPhone/iPad.
-       
 
 
 ### 以上数据由[code4flutter](https://flutterdev.top)收集整理

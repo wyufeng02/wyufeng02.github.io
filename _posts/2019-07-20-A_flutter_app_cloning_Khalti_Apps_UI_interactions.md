@@ -17,22 +17,19 @@ date: 2019-07-20
 >
 > flutter应用程序，仿 Khalti Apps UI交互。
 >
-
  
-# Flutter Khalti Clone (WIP)
-A flutter app cloning Khalti Apps UI interactions.
 
-## Expandable Bottom App Bar
-Implementing the expandable bottom app bar was a challenge, and luckily I found [this](https://github.com/rIIh/expandable-bottom-bar) repository. I just had to make few modifications to make it look and work near about as implemented in original Khalti app.
+## 可扩展底部应用栏
+实现可扩展的底部应用程序栏是一个挑战，幸运的是我找到了[这个](https://github.com/rIIh/expandable-bottom-bar) 存储库。 我只需进行一些修改就可以使它看起来和工作接近，就像在原始Khalti应用程序中实现的那样。
 
-## Home page
-Home page had multiple grids, floating app bar and different items, so I had to use `CustomScrollView` with `Slivers` to get the required output.
+## 主页
+主页有多个网格，浮动应用栏和不同的项目，所以我不得不使用`CustomScrollView`和`Slivers`来获得所需的输出。
+
 
 ## Implemented Screens
 <img src="https://raw.githubusercontent.com/lohanidamodar/khalticlone/master/screenshots/onboarding.png" height="480px" /> <img src="https://raw.githubusercontent.com/lohanidamodar/khalticlone/master/screenshots/login.png" height="480px" /> <img src="https://raw.githubusercontent.com/lohanidamodar/khalticlone/master/screenshots/reset-password.png" height="480px" /> <img src="https://raw.githubusercontent.com/lohanidamodar/khalticlone/master/screenshots/register.png" height="480px" />  <img src="https://raw.githubusercontent.com/lohanidamodar/khalticlone/master/screenshots/bottom-expandable-appbar.gif" height="480px" /> <img src="https://raw.githubusercontent.com/lohanidamodar/khalticlone/master/screenshots/home-page.png" height="480px" />  
 
-## Getting Started
-参考资源
+## 参考资源
 
 - [Lab: 编写第一个flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: 使用flutter例子](https://flutter.dev/docs/cookbook)

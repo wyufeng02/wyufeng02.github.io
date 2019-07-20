@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Flutter社区的Material Design Icons
-tag: [flutter, Icons, Material Design]
+title:  
+tag: [flutter代码库, Icons, Material Design]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/Material-Design-Icons.jpg)
  
 >
-> 
+> 材料设计图标图标包可用作一组flutter图标。
 >
 
  

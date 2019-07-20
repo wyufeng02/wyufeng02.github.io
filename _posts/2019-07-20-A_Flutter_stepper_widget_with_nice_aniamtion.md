@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  一个flutter的步进插件与漂亮的动画
-tag: [flutter, Widgets, Animation]
+tag: [flutter代码库, Widgets, Animation]
 date: 2019-07-20
 ---
 

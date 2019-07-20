@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  有趣的翻译与flutter和BLoC模式
-tag: [flutter, Translation]
+title:  
+tag: [flutter代码库, Translation]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/fun_translation_flutter.jpg)
  
 >
-> 一个Flutter项目，使用Fun translation API尝试使用BLoC模式的UI库equinox。
+> 
 >
 
  

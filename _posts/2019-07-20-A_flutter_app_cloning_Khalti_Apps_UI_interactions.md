@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  一个flutter的应用程序克隆Khalti Apps UI交互
-tag: [flutter, Templates, Apps]
+tag: [flutter代码库, Templates, Apps]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/Flutter-Khalti-Clone.jpg)
  
 >
-> 
+> 一个flutter的应用程序克隆Khalti Apps UI交互。
 >
 
  

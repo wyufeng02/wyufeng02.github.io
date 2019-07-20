@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  丰富且易于使用的flutter页面转换包
-tag: [flutter, Transitions]
+tag: [flutter代码库, Transitions]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/flutter_page_transition.jpg)
  
 >
-> 
+> 丰富，方便，易用的flutter页面过渡包。
 >
 
  

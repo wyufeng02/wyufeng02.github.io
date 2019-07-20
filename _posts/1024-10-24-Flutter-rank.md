@@ -9,7 +9,7 @@ categories:
 
 #Flutter开源项目排行榜 (07-20)
 
-![Flutter开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Flutter.png)
+![Flutter开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/Flutter.png)
 
 
 ## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 70.6k
@@ -246,7 +246,7 @@ categories:
 > Flutter 开发组件库中文社区
        
 
-## 47. [TGIF-iMatrix/MXFlutter](http://github.com/TGIF-iMatrix/MXFlutter)  ♥️ 950
+## 47. [TGIF-iMatrix/MXFlutter](http://github.com/TGIF-iMatrix/MXFlutter)  ♥️ 952
          
 > 基于JS的高性能Flutter动态化框架 high-performance Flutter dynamic framework based on JS
        
@@ -256,12 +256,12 @@ categories:
 > Flutter开发的一款Github客户端。 A Github client APP developed with Flutter, and It both supports Android and iOS.
        
 
-## 49. [brianegan/flutter_redux](http://github.com/brianegan/flutter_redux)  ♥️ 936
+## 49. [brianegan/flutter_redux](http://github.com/brianegan/flutter_redux)  ♥️ 937
          
 > A library that connects Widgets to a Redux Store
        
 
-## 50. [rrousselGit/provider](http://github.com/rrousselGit/provider)  ♥️ 931
+## 50. [rrousselGit/provider](http://github.com/rrousselGit/provider)  ♥️ 933
          
 > A mixture between dependency injection (DI) and state management, built with widgets for widgets.
        
@@ -277,7 +277,7 @@ categories:
 > 💥非常精美的 Flutter 版电影客户端，利用豆瓣现有的 Api，打造了一个完整的电影展示 App(部分 UI 仿豆瓣电影🎥)。 A beautiful movie application build by flutter.
        
 
-## 53. [UnityTech/UIWidgets](http://github.com/UnityTech/UIWidgets)  ♥️ 907
+## 53. [UnityTech/UIWidgets](http://github.com/UnityTech/UIWidgets)  ♥️ 908
          
 > UIWidget is a Unity Package which helps developers to create, debug and deploy efficient, cross-platform Apps.
        
@@ -302,7 +302,7 @@ categories:
 > Flutter web site
        
 
-## 58. [GanZhiXiong/GZXTaoBaoAppFlutter](http://github.com/GanZhiXiong/GZXTaoBaoAppFlutter)  ♥️ 820
+## 58. [GanZhiXiong/GZXTaoBaoAppFlutter](http://github.com/GanZhiXiong/GZXTaoBaoAppFlutter)  ♥️ 821
          
 > Flutter淘宝App，支持iOS、Android
        
@@ -312,13 +312,13 @@ categories:
 > Flutter UI Challenges
        
 
-## 60. [OpenFlutter/flutter_screenutil](http://github.com/OpenFlutter/flutter_screenutil)  ♥️ 802
+## 60. [OpenFlutter/flutter_screenutil](http://github.com/OpenFlutter/flutter_screenutil)  ♥️ 803
          
 > Flutter screen adaptation, font adaptation, get screen information
        
 
 
-## 61. [xuelongqy/flutter_easyrefresh](http://github.com/xuelongqy/flutter_easyrefresh)  ♥️ 790
+## 61. [xuelongqy/flutter_easyrefresh](http://github.com/xuelongqy/flutter_easyrefresh)  ♥️ 791
          
 > A widget provided to the flutter scroll component pull-refresh and push-load.
        
@@ -328,7 +328,7 @@ categories:
 > Flutter makes it easy and fast to build beautiful mobile apps.
        
 
-## 63. [ZDfordream/FlutterTianYue](http://github.com/ZDfordream/FlutterTianYue)  ♥️ 768
+## 63. [ZDfordream/FlutterTianYue](http://github.com/ZDfordream/FlutterTianYue)  ♥️ 769
          
 > 🔥🔥🔥 基于Flutter的超完整仿腾讯动漫，小说阅读，抖音视频项目，功能丰富，适合学习和日常使用，拥有较好的项目结构&比较规范的代码！Flutter入门，看这个就够了～Flutter project which provide ri…
        
@@ -379,12 +379,12 @@ categories:
 > Login page built with @flutter 😍
  
 
-## 73. [heruijun/flutter_boss](http://github.com/heruijun/flutter_boss)  ♥️ 718
+## 73. [heruijun/flutter_boss](http://github.com/heruijun/flutter_boss)  ♥️ 719
          
 > flutter仿BOSS直聘（二），大前端技术实现
        
 
-## 74. [iampawan/Flutter-Music-Player](http://github.com/iampawan/Flutter-Music-Player)  ♥️ 687
+## 74. [iampawan/Flutter-Music-Player](http://github.com/iampawan/Flutter-Music-Player)  ♥️ 688
          
 > Flutter Music Player - First Open Source Flutter based material design music player with audio plugin to play local m…
        

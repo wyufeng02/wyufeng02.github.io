@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  一个插件，可以将flutter应用程序适应不同的平台
-tag: [flutter, UI]
+tag: [flutter代码库, UI]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/flutter_adapter.jpg)
  
 >
-> 
+> 一个插件，可以将flutter应用程序适应不同的平台，使您的flutter应用程序能够灵活高效地适应同一flutter项目中的各种平台。
 >
 
  

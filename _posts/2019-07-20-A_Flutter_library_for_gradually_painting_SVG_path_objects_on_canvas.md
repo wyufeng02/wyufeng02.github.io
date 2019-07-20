@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  
-tag: [flutter, SVG, Animation]
+tag: [flutter代码库, SVG, Animation]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/drawing_animation1.gif)
  
 >
-> 
+> 用于在画布上逐渐绘制SVG路径对象的Flutter库（绘制线动画）。
 >
 
  

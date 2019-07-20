@@ -9,7 +9,7 @@ categories:
 
 #python开源项目排行榜 (07-20)
 
-![python开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/python.png)
+![python开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/python.png)
 
 
 ## 1. [tensorflow/tensorflow](http://github.com/tensorflow/tensorflow)  ♥️ 131k
@@ -22,12 +22,12 @@ categories:
 > 🙃 A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 20…
        
 
-## 3. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 71.5k
+## 3. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 71.6k
          
 > 📚 Tech Interview Guide 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计
        
 
-## 4. [vinta/awesome-python](http://github.com/vinta/awesome-python)  ♥️ 70.1k
+## 4. [vinta/awesome-python](http://github.com/vinta/awesome-python)  ♥️ 70.2k
          
 > A curated list of awesome Python frameworks, libraries, software and resources
        
@@ -47,7 +47,7 @@ categories:
 > All Algorithms implemented in Python
  
 
-## 8. [jackfrued/Python-100-Days](http://github.com/jackfrued/Python-100-Days)  ♥️ 49.6k
+## 8. [jackfrued/Python-100-Days](http://github.com/jackfrued/Python-100-Days)  ♥️ 49.7k
          
 > Python - 100天从新手到大师
        
@@ -73,44 +73,44 @@ categories:
 > Deep Learning for humans
        
 
-## 13. [jakubroztocil/httpie](http://github.com/jakubroztocil/httpie)  ♥️ 42.4k
-         
-> As easy as httpie /aitch-tee-tee-pie/ 🥧 Modern command line HTTP client – user-friendly curl alternative with intuiti…
-       
-
-## 14. [kennethreitz/requests](http://github.com/kennethreitz/requests)  ♥️ 39.4k
+## 13. [kennethreitz/requests](http://github.com/kennethreitz/requests)  ♥️ 39.4k
          
 > Python HTTP Requests for Humans™ ✨🍰✨
  
 
-## 15. [ansible/ansible](http://github.com/ansible/ansible)  ♥️ 38.4k
+## 14. [ansible/ansible](http://github.com/ansible/ansible)  ♥️ 38.4k
          
 > Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid…
        
 
-## 16. [scikit-learn/scikit-learn](http://github.com/scikit-learn/scikit-learn)  ♥️ 36.2k
+## 15. [scikit-learn/scikit-learn](http://github.com/scikit-learn/scikit-learn)  ♥️ 36.2k
          
 > scikit-learn: machine learning in Python
  
 
-## 17. [scrapy/scrapy](http://github.com/scrapy/scrapy)  ♥️ 33.7k
+## 16. [scrapy/scrapy](http://github.com/scrapy/scrapy)  ♥️ 33.7k
          
 > Scrapy, a fast high-level web crawling & scraping framework for Python.
        
 
-## 18. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 32.8k
+## 17. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 32.8k
          
 > TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)
        
 
-## 19. [blueimp/jQuery-File-Upload](http://github.com/blueimp/jQuery-File-Upload)  ♥️ 30.1k
+## 18. [blueimp/jQuery-File-Upload](http://github.com/blueimp/jQuery-File-Upload)  ♥️ 30.1k
          
 > File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audi…
        
 
-## 20. [pytorch/pytorch](http://github.com/pytorch/pytorch)  ♥️ 30k
+## 19. [pytorch/pytorch](http://github.com/pytorch/pytorch)  ♥️ 30k
          
 > Tensors and Dynamic neural networks in Python with strong GPU acceleration
+       
+
+## 20. [python/cpython](http://github.com/python/cpython)  ♥️ 25.5k
+         
+> The Python programming language
        
 
 
@@ -143,14 +143,14 @@ categories:
 > Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
        
 
-## 66. [ipython/ipython](http://github.com/ipython/ipython)  ♥️ 13.7k
-         
-> Official repository for IPython itself. Other repos in the IPython organization contain things like the website, docu…
-       
-
-## 67. [azl397985856/leetcode](http://github.com/azl397985856/leetcode)  ♥️ 13.7k
+## 66. [azl397985856/leetcode](http://github.com/azl397985856/leetcode)  ♥️ 13.7k
          
 > LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)
+       
+
+## 67. [ipython/ipython](http://github.com/ipython/ipython)  ♥️ 13.7k
+         
+> Official repository for IPython itself. Other repos in the IPython organization contain things like the website, docu…
        
 
 ## 68. [binux/pyspider](http://github.com/binux/pyspider)  ♥️ 13.4k
@@ -179,7 +179,7 @@ categories:
 > Simple and ready-to-use tutorials for TensorFlow 
        
 
-## 73. [trekhleb/homemade-machine-learning](http://github.com/trekhleb/homemade-machine-learning)  ♥️ 12.5k
+## 73. [trekhleb/homemade-machine-learning](http://github.com/trekhleb/homemade-machine-learning)  ♥️ 12.6k
          
 > 🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained
        

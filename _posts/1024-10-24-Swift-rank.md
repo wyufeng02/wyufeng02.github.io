@@ -9,7 +9,7 @@ categories:
 
 #Swift开源项目排行榜 (07-20)
 
-![Swift开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Swift.png)
+![Swift开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/Swift.png)
 
 
 
@@ -66,55 +66,55 @@ categories:
  
 
 
-## 41. [fullstackio/FlappySwift](http://github.com/fullstackio/FlappySwift)  ♥️ 8.8k
+## 41. [futurice/ios-good-practices](http://github.com/futurice/ios-good-practices)  ♥️ 9.3k
+         
+> Good ideas for iOS development, by Futurice developers.
+       
+
+## 42. [Ramotion/folding-cell](http://github.com/Ramotion/folding-cell)  ♥️ 9.3k
+         
+> 📃 FoldingCell is an expanding content cell with animation made by @Ramotion - https://github.com/Ramotion/swift-ui-…
+       
+
+## 43. [fullstackio/FlappySwift](http://github.com/fullstackio/FlappySwift)  ♥️ 8.8k
          
 > swift implementation of flappy bird. More at fullstackedu.com
        
 
-## 42. [mozilla-mobile/firefox-ios](http://github.com/mozilla-mobile/firefox-ios)  ♥️ 8.8k
+## 44. [mozilla-mobile/firefox-ios](http://github.com/mozilla-mobile/firefox-ios)  ♥️ 8.8k
          
 > Firefox for iOS
        
 
-## 43. [onevcat/VVDocumenter-Xcode](http://github.com/onevcat/VVDocumenter-Xcode)  ♥️ 8.5k
+## 45. [onevcat/VVDocumenter-Xcode](http://github.com/onevcat/VVDocumenter-Xcode)  ♥️ 8.5k
          
 > Xcode plug-in which helps you write documentation comment easier, for both Objective-C and Swift.
        
 
-## 44. [Quick/Quick](http://github.com/Quick/Quick)  ♥️ 8.3k
+## 46. [ninjaprox/NVActivityIndicatorView](http://github.com/ninjaprox/NVActivityIndicatorView)  ♥️ 8.5k
+         
+> A collection of awesome loading animations
+       
+
+## 47. [Quick/Quick](http://github.com/Quick/Quick)  ♥️ 8.3k
          
 > The Swift (and Objective-C) testing framework.
        
 
-## 45. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8.1k
+## 48. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8.1k
          
 > Comprehensive mailing tools for PHP
        
 
-## 46. [IBAnimatable/IBAnimatable](http://github.com/IBAnimatable/IBAnimatable)  ♥️ 8.1k
+## 49. [IBAnimatable/IBAnimatable](http://github.com/IBAnimatable/IBAnimatable)  ♥️ 8.1k
          
 > Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Int…
        
 
-## 47. [WenchaoD/FSCalendar](http://github.com/WenchaoD/FSCalendar)  ♥️ 8.1k
+## 50. [WenchaoD/FSCalendar](http://github.com/WenchaoD/FSCalendar)  ♥️ 8.1k
          
 > A fully customizable iOS calendar library, compatible with Objective-C and Swift
  
-
-## 48. [tristanhimmelman/ObjectMapper](http://github.com/tristanhimmelman/ObjectMapper)  ♥️ 8.1k
-         
-> Simple JSON Object mapping written in Swift
- 
-
-## 49. [Tencent/MMKV](http://github.com/Tencent/MMKV)  ♥️ 7.8k
-         
-> An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS, Android, macOS and Windows.
-       
-
-## 50. [Juanpe/SkeletonView](http://github.com/Juanpe/SkeletonView)  ♥️ 7.6k
-         
-> An elegant way to show users that something is happening and also prepare them to which contents he is waiting
-       
 
 
 ## 51. [tristanhimmelman/ObjectMapper](http://github.com/tristanhimmelman/ObjectMapper)  ♥️ 8.1k
@@ -285,22 +285,22 @@ categories:
 > ViewAnimator brings your UI to life with just one line
        
 
-## 84. [raulriera/TextFieldEffects](http://github.com/raulriera/TextFieldEffects)  ♥️ 5.1k
-         
-> Custom UITextFields effects inspired by Codrops, built using Swift
- 
-
-## 85. [soapyigu/Swift-30-Projects](http://github.com/soapyigu/Swift-30-Projects)  ♥️ 5.1k
+## 84. [soapyigu/Swift-30-Projects](http://github.com/soapyigu/Swift-30-Projects)  ♥️ 5.1k
          
 > 30 mini Swift Apps for self-study
        
+
+## 85. [raulriera/TextFieldEffects](http://github.com/raulriera/TextFieldEffects)  ♥️ 5.1k
+         
+> Custom UITextFields effects inspired by Codrops, built using Swift
+ 
 
 ## 86. [apple/swift-nio](http://github.com/apple/swift-nio)  ♥️ 5.1k
          
 > Event-driven network application framework for high performance protocol servers & clients, non-blocking.
        
 
-## 87. [daltoniam/Starscream](http://github.com/daltoniam/Starscream)  ♥️ 5k
+## 87. [daltoniam/Starscream](http://github.com/daltoniam/Starscream)  ♥️ 5.1k
          
 > Websockets in swift for iOS and OSX
        

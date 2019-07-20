@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  
-tag: [flutter, Toast, Notification]
+tag: [flutter代码库, Toast, Notification]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/bot_toast.jpg)
  
 >
-> 一个非常容易使用的flutter吐司库。
+> 
 >
 
  

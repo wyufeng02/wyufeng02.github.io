@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  一个flutter的应用程序，使用themoviedb显示电影列表
-tag: [flutter, Movie]
+tag: [flutter代码库, Movie]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/MoviePedia.jpg)
  
 >
-> 该项目是使用Flutter和TheMovieDB的测试应用程序。
+> 
 >
 
  

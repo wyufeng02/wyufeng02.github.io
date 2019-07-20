@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  可自定义的wave进度插件
-tag: [flutter, Progress, Widgets]
+title:  
+tag: [flutter代码库, Progress, Widgets]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/WaveProgress.gif)
  
 >
-> 
+> 可自定义的wave进度插件。
 >
 
  

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  
-tag: [flutter, Rating]
+title:  已启用触摸和滑动率的星级评级
+tag: [flutter代码库, Rating]
 date: 2019-07-20
 ---
 

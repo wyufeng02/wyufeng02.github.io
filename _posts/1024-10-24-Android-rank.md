@@ -9,7 +9,7 @@ categories:
 
 #Android开源项目排行榜 (07-20)
 
-![Android开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Android.png)
+![Android开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/Android.png)
 
 
 ## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 70.6k
@@ -63,54 +63,54 @@ categories:
        
 
 
-## 11. [bumptech/glide](http://github.com/bumptech/glide)  ♥️ 26.6k
-         
-> An image loading and caching library for Android focused on smooth scrolling
-       
-
-## 12. [fastlane/fastlane](http://github.com/fastlane/fastlane)  ♥️ 26.1k
-         
-> 🚀 The easiest way to automate building and releasing your iOS and Android apps
-       
-
-## 13. [airbnb/lottie-android](http://github.com/airbnb/lottie-android)  ♥️ 26.1k
-         
-> Render After Effects animations natively on Android and iOS, Web, and React Native
-       
-
-## 14. [codepath/android_guides](http://github.com/codepath/android_guides)  ♥️ 25.6k
-         
-> Extensive Open-Source Guides for Android Developers
-       
-
-## 15. [shadowsocks/shadowsocks-android](http://github.com/shadowsocks/shadowsocks-android)  ♥️ 25k
-         
-> A shadowsocks client for Android
- 
-
-## 16. [JakeWharton/butterknife](http://github.com/JakeWharton/butterknife)  ♥️ 24.2k
-         
-> Bind Android views and callbacks to fields and methods.
-       
-
-## 17. [Blankj/AndroidUtilCode](http://github.com/Blankj/AndroidUtilCode)  ♥️ 24.1k
+## 11. [Blankj/AndroidUtilCode](http://github.com/Blankj/AndroidUtilCode)  ♥️ 24.1k
          
 > 🔥 Android developers should collect the following utils(updating).
        
 
-## 18. [bilibili/ijkplayer](http://github.com/bilibili/ijkplayer)  ♥️ 24k
+## 12. [bilibili/ijkplayer](http://github.com/bilibili/ijkplayer)  ♥️ 24k
          
 > Android/iOS video player based on FFmpeg n3.4, with MediaCodec, VideoToolbox support.
        
 
-## 19. [square/leakcanary](http://github.com/square/leakcanary)  ♥️ 23.2k
-         
-> LeakCanary is a memory leak detection library for Android.
-       
-
-## 20. [zxing/zxing](http://github.com/zxing/zxing)  ♥️ 23.1k
+## 13. [zxing/zxing](http://github.com/zxing/zxing)  ♥️ 23.1k
          
 > ZXing ("Zebra Crossing") barcode scanning library for Java, Android
+ 
+
+## 14. [xitu/gold-miner](http://github.com/xitu/gold-miner)  ♥️ 22.8k
+         
+> 🥇掘金翻译计划，可能是世界最大最好的英译中技术社区，最懂读者和译者的翻译平台：
+       
+
+## 15. [greenrobot/EventBus](http://github.com/greenrobot/EventBus)  ♥️ 21.3k
+         
+> Event bus for Android and Java that simplifies communication between Activities, Fragments, Threads, Services, etc. L…
+       
+
+## 16. [Solido/awesome-flutter](http://github.com/Solido/awesome-flutter)  ♥️ 20.1k
+         
+> An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
+       
+
+## 17. [skylot/jadx](http://github.com/skylot/jadx)  ♥️ 19.4k
+         
+> Dex to Java decompiler
+       
+
+## 18. [geekcompany/ResumeSample](http://github.com/geekcompany/ResumeSample)  ♥️ 18.7k
+         
+> Resume template for Chinese programmers . 程序员简历模板系列。包括PHP程序员简历模板、iOS程序员简历模板、Android程序员简历模板、Web前端程序员简历模板、Java程序员简历模板、C…
+       
+
+## 19. [alibaba/fastjson](http://github.com/alibaba/fastjson)  ♥️ 18.5k
+         
+> 🚄 A fast JSON parser/generator for Java. (Aliyun Data Lake Analytics https://www.aliyun.com/product/datalakeanalytics …
+       
+
+## 20. [ReactiveX/RxAndroid](http://github.com/ReactiveX/RxAndroid)  ♥️ 18.3k
+         
+> RxJava bindings for Android
  
 
 
@@ -129,7 +129,7 @@ categories:
 > An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
        
 
-## 24. [skylot/jadx](http://github.com/skylot/jadx)  ♥️ 19.3k
+## 24. [skylot/jadx](http://github.com/skylot/jadx)  ♥️ 19.4k
          
 > Dex to Java decompiler
        
@@ -226,7 +226,7 @@ categories:
 > Implementation of ImageView for Android that supports zooming, by various touch gestures.
        
 
-## 43. [Genymobile/scrcpy](http://github.com/Genymobile/scrcpy)  ♥️ 15k
+## 43. [Genymobile/scrcpy](http://github.com/Genymobile/scrcpy)  ♥️ 15.1k
          
 > Display and control your Android device
        
@@ -276,7 +276,7 @@ categories:
 > Kodi is an award-winning free and open source home theater/media center software and entertainment hub for digital me…
        
 
-## 92. [wasabeef/recyclerview-animators](http://github.com/wasabeef/recyclerview-animators)  ♥️ 9.3k
+## 92. [wasabeef/recyclerview-animators](http://github.com/wasabeef/recyclerview-animators)  ♥️ 9.4k
          
 > An Android Animation library which easily add itemanimator to RecyclerView items.
        

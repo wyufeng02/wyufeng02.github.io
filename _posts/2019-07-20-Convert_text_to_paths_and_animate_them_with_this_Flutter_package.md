@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  将文本转换为路径并使用此Flutter包为它们设置动画
-tag: [flutter, SVG, Text]
+title:  
+tag: [flutter代码库, SVG, Text]
 date: 2019-07-20
 ---
 

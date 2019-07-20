@@ -9,7 +9,7 @@ categories:
 
 #Objective-C开源项目排行榜 (07-20)
 
-![Objective-C开源项目排行榜](https://raw.githubusercontent.com/wyufeng02/wyufeng02.github.io/awesome_prepub/assets/images/rank/Objective-C.png)
+![Objective-C开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/Objective-C.png)
 
 
 ## 1. [vsouza/awesome-ios](http://github.com/vsouza/awesome-ios)  ♥️ 32.4k

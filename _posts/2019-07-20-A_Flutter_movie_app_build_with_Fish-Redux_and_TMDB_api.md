@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  使用Fish-Redux和TMDB api构建的Flutter电影应用程序
-tag: [flutter, Movie]
+title:  
+tag: [flutter代码库, Movie]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/movie.jpg)
  
 >
-> 使用Fish-Redux和TMDB api构建的Flutter电影应用程序。
+> 
 >
 
  

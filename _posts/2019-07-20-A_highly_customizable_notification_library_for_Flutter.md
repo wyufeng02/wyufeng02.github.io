@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  
-tag: [flutter, Notification, Alert]
+title:  一个高度可定制的Flutter通知库
+tag: [flutter代码库, Notification, Alert]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/flushbar.gif)
  
 >
-> 用于用户通知的灵活插件。
+> 
 >
 
  

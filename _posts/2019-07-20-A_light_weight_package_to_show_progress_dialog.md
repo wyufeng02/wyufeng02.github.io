@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  
-tag: [flutter, Dialog, Progress]
+tag: [flutter代码库, Dialog, Progress]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/progress_dialog1.gif)
  
 >
-> 
+> 轻量级库，可在需要时轻松管理进度对话框，并提供简单的步骤。
 >
 
  

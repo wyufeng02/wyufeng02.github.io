@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  flutter的误差边界
-tag: [flutter, Error]
+tag: [flutter代码库, Error]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/boundary.jpg)
  
 >
-> 
+> Boundary是Flutter的一个新插件，它接管Flutter Error.onError和Error Widget.builder以使它们可组合和作用域。
 >
 
  

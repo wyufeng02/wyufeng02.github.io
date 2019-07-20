@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  使用来自Firestore的图表数据中的charts_flutter插件创建图表
-tag: [flutter, Chart]
+title:  
+tag: [flutter代码库, Chart]
 date: 2019-07-20
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  
-tag: [flutter, Wallpaper, Pattern]
+tag: [flutter代码库, Wallpaper, Pattern]
 date: 2019-07-20
 ---
 
@@ -15,7 +15,7 @@ date: 2019-07-20
 ![](https://flutterawesome.com/content/images/2019/07/geopattern_flutter.jpg)
  
 >
-> 
+> 使用CustomPaintersflutter的几何图案。
 >
 
  

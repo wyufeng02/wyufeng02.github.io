@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  widet中的state到底是什么
+title:  widget 中的state到底是什么
 tag: [flutter,state]
 date: 2019-07-20
 categories:

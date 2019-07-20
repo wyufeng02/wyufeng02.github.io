@@ -9,9 +9,9 @@ categories:
 
 ## 0x00 无状态组件和状态组件
 
-wiget是fltter界面开发中的基础控件，如同ios中的uiview这种地位，所谓万物皆wiget。
+widget是fltter界面开发中的基础控件，如同ios中的uiview这种地位，所谓万物皆widget。
 
-wiget有分为statelessWidget和statefulWidget，这两者是什么区别呢。一句话就是说statelessWiget用来展示无状态的视图，而statefulWiget用来展示可交互的，动态的视图。 
+widget有分为statelessWidget和statefulWidget，这两者是什么区别呢。一句话就是说statelesswidget用来展示无状态的视图，而statefulwidget用来展示可交互的，动态的视图。 
 
 到此基本的结论已经出来了，那么state究竟是怎么实现状态的更新的？
 
@@ -62,7 +62,7 @@ class _BgChangeViewState extends State<BgChangeView> {
 
 ```
 
-![flutterdev.top](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/wiget_state_rebuild_demo.png)
+![flutterdev.top](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/widget_state_rebuild_demo.png)
 
 将color指定给raisebutton，color在state中更新了，从而更新了raisebuttom的背景颜色
 
@@ -71,14 +71,14 @@ class _BgChangeViewState extends State<BgChangeView> {
 
 state是表示视图的状态，当setState触发当前视图及其子视图的销毁重建，从父视图到子视图，从上到下的顺序重建。
 
-![flutterdev.top](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/wiget_state_rebuild.png)
+![flutterdev.top](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/widget_state_rebuild.png)
 
 
 猜测内部state的实现
 
-其实state是负责销毁重建的，在重建的过程中重新对wiget树一级级生成，并把外部的数据重新对wiget进行赋值操作，因为内部机制小部件重建的效率很高，几乎肉眼看不到它销毁的过程，但是如果对于root视图频繁进行state的操作，会带来很大的性能开销，卡顿，cpu，gpu使用率过高等情况。这也是声明式编程一个弊端。使用中需要进来避免过多的setState的操作。
+其实state是负责销毁重建的，在重建的过程中重新对widget树一级级生成，并把外部的数据重新对widget进行赋值操作，因为内部机制小部件重建的效率很高，几乎肉眼看不到它销毁的过程，但是如果对于root视图频繁进行state的操作，会带来很大的性能开销，卡顿，cpu，gpu使用率过高等情况。这也是声明式编程一个弊端。使用中需要进来避免过多的setState的操作。
 
-flutter engine内部当然会优化这部分的性能，每次重建之后之前申请的wiget或randerobject使用的空间不会一个个的清空释放，而是采取一直`滑动压缩`的方式进行清理。如下图所示
+flutter engine内部当然会优化这部分的性能，每次重建之后之前申请的widget或randerobject使用的空间不会一个个的清空释放，而是采取一直`滑动压缩`的方式进行清理。如下图所示
 
 ![code4fluttter](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/dart_gc.png)
 

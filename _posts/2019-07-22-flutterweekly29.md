@@ -35,7 +35,7 @@ Didier Boelens对提供者包的广泛审查
 
 Ryan Edge通过使用提取方法作为示例来回顾他最常使用的一些模式。
 
-### [使用流构建一个反应性和持久性的flutter应用程序](https://medium.com/flutter-community/building-a-reactive-and-persistent-flutter-app-using-streams-4d6b947c5cb5)
+### [使用流构建一个反应性和持久性的flutter应用程序](/2019/07/21/building-a-reactive/)
 
 Jayesh关于如何创建基于流更改的UI的示例。
 

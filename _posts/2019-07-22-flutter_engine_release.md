@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  flutter engine 没被释放的那些东西
+title:  flutter engine 那些没被释放的东西
 tag: [flutter engine]
 date: 2019-07-22
 categories:

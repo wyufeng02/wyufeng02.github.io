@@ -1,0 +1,23 @@
+
+
+<html>
+
+<body>
+
+    <div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'test', // 可选。默认为 location.href
+  owner: 'Natoto',
+  repo: 'FlutterDev_Top',
+  oauth: {
+    client_id: '0d12cc03be5029eff7b5',
+    client_secret: 'af01669d13a6258ac9f2886fb0d974cf41bcac49',
+  },
+})
+gitment.render('container')
+</script>
+</body>
+</html>

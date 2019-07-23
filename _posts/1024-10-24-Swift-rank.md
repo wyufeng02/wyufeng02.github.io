@@ -1,69 +1,19 @@
 ---
 layout: post
-title:  Swift开源项目排行榜 (07-20)
+title:  Swift开源项目排行榜 (07-23)
 tag: Swift 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#Swift开源项目排行榜 (07-20)
+#Swift开源项目排行榜 (07-23)
 
 ![Swift开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/Swift.png)
 
 
 
 
-
-## 31. [mxcl/PromiseKit](http://github.com/mxcl/PromiseKit)  ♥️ 11.7k
-         
-> Promises for Swift & ObjC.
-       
-
-## 32. [CocoaLumberjack/CocoaLumberjack](http://github.com/CocoaLumberjack/CocoaLumberjack)  ♥️ 11.4k
-         
-> A fast & simple, yet powerful & flexible logging framework for Mac and iOS
-       
-
-## 33. [CosmicMind/Material](http://github.com/CosmicMind/Material)  ♥️ 11.1k
-         
-> A UI/UX framework for creating beautiful applications.
-       
-
-## 34. [Moya/Moya](http://github.com/Moya/Moya)  ♥️ 11k
-         
-> Network abstraction layer written in Swift.
-       
-
-## 35. [ochococo/Design-Patterns-In-Swift](http://github.com/ochococo/Design-Patterns-In-Swift)  ♥️ 10.8k
-         
-> 📖 Design Patterns implemented in Swift 5.0
-       
-
-## 36. [allenwong/30DaysofSwift](http://github.com/allenwong/30DaysofSwift)  ♥️ 10.8k
-         
-> A self-taught project to learn Swift.
-       
-
-## 37. [apple/swift-evolution](http://github.com/apple/swift-evolution)  ♥️ 10.3k
-         
-> This maintains proposals for changes and user-visible enhancements to the Swift Programming Language.
-       
-
-## 38. [raywenderlich/swift-style-guide](http://github.com/raywenderlich/swift-style-guide)  ♥️ 10.1k
-         
-> The official Swift style guide for raywenderlich.com.
-       
-
-## 39. [Ramotion/animated-tab-bar](http://github.com/Ramotion/animated-tab-bar)  ♥️ 10.1k
-         
-> RAMAnimatedTabBarController is a Swift UI module library for adding animation to iOS tabbar items and icons. iOS li…
-       
-
-## 40. [xmartlabs/Eureka](http://github.com/xmartlabs/Eureka)  ♥️ 10k
-         
-> Elegant iOS form builder in Swift
- 
 
 
 ## 41. [futurice/ios-good-practices](http://github.com/futurice/ios-good-practices)  ♥️ 9.3k
@@ -101,7 +51,7 @@ categories:
 > The Swift (and Objective-C) testing framework.
        
 
-## 48. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8.1k
+## 48. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8.2k
          
 > Comprehensive mailing tools for PHP
        
@@ -157,15 +107,15 @@ categories:
 > A Swift web framework and HTTP server.
        
 
-## 59. [apple/swift-package-manager](http://github.com/apple/swift-package-manager)  ♥️ 7.1k
-         
-> The Package Manager for the Swift Programming Language
-       
-
-## 60. [krzyzanowskim/CryptoSwift](http://github.com/krzyzanowskim/CryptoSwift)  ♥️ 7.1k
+## 59. [krzyzanowskim/CryptoSwift](http://github.com/krzyzanowskim/CryptoSwift)  ♥️ 7.1k
          
 > CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift
  
+
+## 60. [apple/swift-package-manager](http://github.com/apple/swift-package-manager)  ♥️ 7.1k
+         
+> The Package Manager for the Swift Programming Language
+       
 
 
 ## 61. [draveness/analyze](http://github.com/draveness/analyze)  ♥️ 7k
@@ -219,7 +169,7 @@ categories:
        
 
 
-## 71. [antlr/antlr4](http://github.com/antlr/antlr4)  ♥️ 6k
+## 71. [antlr/antlr4](http://github.com/antlr/antlr4)  ♥️ 6.1k
          
 > ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or t…
        
@@ -285,7 +235,7 @@ categories:
 > ViewAnimator brings your UI to life with just one line
        
 
-## 84. [soapyigu/Swift-30-Projects](http://github.com/soapyigu/Swift-30-Projects)  ♥️ 5.1k
+## 84. [soapyigu/Swift-30-Projects](http://github.com/soapyigu/Swift-30-Projects)  ♥️ 5.2k
          
 > 30 mini Swift Apps for self-study
        
@@ -300,15 +250,15 @@ categories:
 > Event-driven network application framework for high performance protocol servers & clients, non-blocking.
        
 
-## 87. [daltoniam/Starscream](http://github.com/daltoniam/Starscream)  ♥️ 5.1k
-         
-> Websockets in swift for iOS and OSX
-       
-
-## 88. [malcommac/SwiftDate](http://github.com/malcommac/SwiftDate)  ♥️ 5k
+## 87. [malcommac/SwiftDate](http://github.com/malcommac/SwiftDate)  ♥️ 5.1k
          
 > Parse, validate, manipulate, and display dates, time and timezones in Swift
  
+
+## 88. [daltoniam/Starscream](http://github.com/daltoniam/Starscream)  ♥️ 5.1k
+         
+> Websockets in swift for iOS and OSX
+       
 
 ## 89. [JakeLin/SwiftLanguageWeather](http://github.com/JakeLin/SwiftLanguageWeather)  ♥️ 5k
          
@@ -346,7 +296,7 @@ categories:
 > A very flexible message bar for iOS written in Swift.
        
 
-## 96. [kishikawakatsumi/KeychainAccess](http://github.com/kishikawakatsumi/KeychainAccess)  ♥️ 4.8k
+## 96. [kishikawakatsumi/KeychainAccess](http://github.com/kishikawakatsumi/KeychainAccess)  ♥️ 4.9k
          
 > Simple Swift wrapper for Keychain that works on iOS, watchOS, tvOS and macOS.
        

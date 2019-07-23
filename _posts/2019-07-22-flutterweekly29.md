@@ -151,7 +151,7 @@ Code and libraries
 
 通过Dart的外部函数接口(FFI)与TensorFlow Lite(tflite)的Dart接口。
 
-### [flutter-devs / flutter \ _Flipkart \ _UI_clone](https://github.com/flutter-devs/flutter_Flipkart_UI_clone)
+### [flutter-devs/flutter_Flipkart \ _UI_clone](https://github.com/flutter-devs/flutter_Flipkart_UI_clone)
 
 使用Flutter制作的Flipkart应用程序的演示UI。
 

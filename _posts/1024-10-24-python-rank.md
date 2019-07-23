@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  python开源项目排行榜 (07-20)
+title:  python开源项目排行榜 (07-23)
 tag: python 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#python开源项目排行榜 (07-20)
+#python开源项目排行榜 (07-23)
 
 ![python开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/python.png)
 
@@ -17,12 +17,12 @@ categories:
 > An Open Source Machine Learning Framework for Everyone
        
 
-## 2. [robbyrussell/oh-my-zsh](http://github.com/robbyrussell/oh-my-zsh)  ♥️ 92.1k
+## 2. [robbyrussell/oh-my-zsh](http://github.com/robbyrussell/oh-my-zsh)  ♥️ 92.3k
          
 > 🙃 A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 20…
        
 
-## 3. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 71.6k
+## 3. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 71.9k
          
 > 📚 Tech Interview Guide 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计
        
@@ -32,27 +32,27 @@ categories:
 > A curated list of awesome Python frameworks, libraries, software and resources
        
 
-## 5. [donnemartin/system-design-primer](http://github.com/donnemartin/system-design-primer)  ♥️ 69.4k
+## 5. [donnemartin/system-design-primer](http://github.com/donnemartin/system-design-primer)  ♥️ 69.5k
          
 > Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.
        
 
-## 6. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 52.6k
+## 6. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 52.7k
          
 > 📚 免费的计算机编程类中文书籍，欢迎投稿
        
 
-## 7. [TheAlgorithms/Python](http://github.com/TheAlgorithms/Python)  ♥️ 51.5k
+## 7. [TheAlgorithms/Python](http://github.com/TheAlgorithms/Python)  ♥️ 51.7k
          
 > All Algorithms implemented in Python
  
 
-## 8. [jackfrued/Python-100-Days](http://github.com/jackfrued/Python-100-Days)  ♥️ 49.7k
+## 8. [jackfrued/Python-100-Days](http://github.com/jackfrued/Python-100-Days)  ♥️ 50.3k
          
 > Python - 100天从新手到大师
        
 
-## 9. [pallets/flask](http://github.com/pallets/flask)  ♥️ 45.4k
+## 9. [pallets/flask](http://github.com/pallets/flask)  ♥️ 45.5k
          
 > The Python micro framework for building web applications.
        
@@ -63,12 +63,12 @@ categories:
        
 
 
-## 11. [django/django](http://github.com/django/django)  ♥️ 42.8k
+## 11. [django/django](http://github.com/django/django)  ♥️ 42.9k
          
 > The Web framework for perfectionists with deadlines.
        
 
-## 12. [keras-team/keras](http://github.com/keras-team/keras)  ♥️ 42.8k
+## 12. [keras-team/keras](http://github.com/keras-team/keras)  ♥️ 42.9k
          
 > Deep Learning for humans
        
@@ -78,12 +78,12 @@ categories:
 > As easy as httpie /aitch-tee-tee-pie/ 🥧 Modern command line HTTP client – user-friendly curl alternative with intuiti…
        
 
-## 14. [kennethreitz/requests](http://github.com/kennethreitz/requests)  ♥️ 39.4k
+## 14. [not-kennethreitz/requests](http://github.com/not-kennethreitz/requests)  ♥️ 39.5k
          
 > Python HTTP Requests for Humans™ ✨🍰✨
  
 
-## 15. [ansible/ansible](http://github.com/ansible/ansible)  ♥️ 38.4k
+## 15. [ansible/ansible](http://github.com/ansible/ansible)  ♥️ 38.5k
          
 > Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid…
        
@@ -98,7 +98,7 @@ categories:
 > Scrapy, a fast high-level web crawling & scraping framework for Python.
        
 
-## 18. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 32.8k
+## 18. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 32.9k
          
 > TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)
        
@@ -108,11 +108,61 @@ categories:
 > File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audi…
        
 
-## 20. [pytorch/pytorch](http://github.com/pytorch/pytorch)  ♥️ 30k
+## 20. [pytorch/pytorch](http://github.com/pytorch/pytorch)  ♥️ 30.1k
          
 > Tensors and Dynamic neural networks in Python with strong GPU acceleration
        
 
+
+## 21. [ageitgey/face_recognition](http://github.com/ageitgey/face_recognition)  ♥️ 25.7k
+         
+> The world's simplest facial recognition api for Python and the command line
+       
+
+## 22. [python/cpython](http://github.com/python/cpython)  ♥️ 25.6k
+         
+> The Python programming language
+       
+
+## 23. [certbot/certbot](http://github.com/certbot/certbot)  ♥️ 25.4k
+         
+> Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. It can al…
+       
+
+## 24. [home-assistant/home-assistant](http://github.com/home-assistant/home-assistant)  ♥️ 25.4k
+         
+> 🏡 Open source home automation that puts local control and privacy first
+       
+
+## 25. [imhuay/Algorithm_Interview_Notes-Chinese](http://github.com/imhuay/Algorithm_Interview_Notes-Chinese)  ♥️ 24.7k
+         
+> 2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记
+       
+
+## 26. [Avik-Jain/100-Days-Of-ML-Code](http://github.com/Avik-Jain/100-Days-Of-ML-Code)  ♥️ 24.5k
+         
+> 100 Days of ML Coding
+       
+
+## 27. [apache/spark](http://github.com/apache/spark)  ♥️ 22.7k
+         
+> Apache Spark
+       
+
+## 28. [tuvtran/project-based-learning](http://github.com/tuvtran/project-based-learning)  ♥️ 22.7k
+         
+> Curated list of project-based tutorials
+       
+
+## 29. [grpc/grpc](http://github.com/grpc/grpc)  ♥️ 22.2k
+         
+> The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
+       
+
+## 30. [faif/python-patterns](http://github.com/faif/python-patterns)  ♥️ 21.4k
+         
+> A collection of design patterns/idioms in Python
+ 
 
 
 
@@ -134,7 +184,7 @@ categories:
 > 🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained
        
 
-## 74. [google/flatbuffers](http://github.com/google/flatbuffers)  ♥️ 12.5k
+## 74. [google/flatbuffers](http://github.com/google/flatbuffers)  ♥️ 12.6k
          
 > FlatBuffers: Memory Efficient Serialization Library
        
@@ -144,7 +194,7 @@ categories:
 > 100-Days-Of-ML-Code中文版
        
 
-## 76. [huge-success/sanic](http://github.com/huge-success/sanic)  ♥️ 12.4k
+## 76. [huge-success/sanic](http://github.com/huge-success/sanic)  ♥️ 12.5k
          
 > Async Python 3.6+ web server/framework | Build fast. Run fast.
        
@@ -164,30 +214,30 @@ categories:
 > Luigi is a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, work…
        
 
-## 80. [geekcomputers/Python](http://github.com/geekcomputers/Python)  ♥️ 11.8k
+## 80. [geekcomputers/Python](http://github.com/geekcomputers/Python)  ♥️ 11.9k
          
 > My Python Examples
        
 
 
-## 81. [3b1b/manim](http://github.com/3b1b/manim)  ♥️ 11.5k
+## 81. [3b1b/manim](http://github.com/3b1b/manim)  ♥️ 11.6k
          
 > Animation engine for explanatory math videos
        
 
-## 82. [fabric/fabric](http://github.com/fabric/fabric)  ♥️ 11.5k
-         
-> Simple, Pythonic remote execution and deployment.
-       
-
-## 83. [python/black](http://github.com/python/black)  ♥️ 11.5k
+## 82. [psf/black](http://github.com/psf/black)  ♥️ 11.5k
          
 > The uncompromising Python code formatter
        
 
-## 84. [ccxt/ccxt](http://github.com/ccxt/ccxt)  ♥️ 11.4k
+## 83. [ccxt/ccxt](http://github.com/ccxt/ccxt)  ♥️ 11.5k
          
 > A JavaScript / Python / PHP cryptocurrency trading API with support for more than 120 bitcoin/altcoin exchanges
+       
+
+## 84. [fabric/fabric](http://github.com/fabric/fabric)  ♥️ 11.5k
+         
+> Simple, Pythonic remote execution and deployment.
        
 
 ## 85. [virgili0/Virgilio](http://github.com/virgili0/Virgilio)  ♥️ 11.4k
@@ -210,20 +260,20 @@ categories:
 > Eclipse Deeplearning4j, ND4J, DataVec and more - deep learning & linear algebra for Java/Scala with GPUs + Spark
        
 
-## 89. [bokeh/bokeh](http://github.com/bokeh/bokeh)  ♥️ 10.9k
+## 89. [bokeh/bokeh](http://github.com/bokeh/bokeh)  ♥️ 11k
          
 > Interactive Data Visualization in the browser, from Python
  
 
-## 90. [tqdm/tqdm](http://github.com/tqdm/tqdm)  ♥️ 10.8k
+## 90. [tqdm/tqdm](http://github.com/tqdm/tqdm)  ♥️ 10.9k
          
 > A Fast, Extensible Progress Bar for Python and CLI
        
 
 
-## 91. [apachecn/awesome-algorithm](http://github.com/apachecn/awesome-algorithm)  ♥️ 10.6k
+## 91. [fighting41love/funNLP](http://github.com/fighting41love/funNLP)  ♥️ 10.7k
          
-> 项目永久冻结，迁移至新地址：
+> 字符数据、speech-aligner: 从“人声语音”及其“语言文本”产生音素级别时间对齐标注的工具、AmpliGraph: 知识图谱表示学习(Python)库：知识图谱概念链接预测、Scattertext 文本可视化(python)…
        
 
 ## 92. [d2l-ai/d2l-zh](http://github.com/d2l-ai/d2l-zh)  ♥️ 10.6k
@@ -231,12 +281,12 @@ categories:
 > 《动手学深度学习》：面向中文读者、能运行、可讨论。英文版即伯克利“深度学习导论（STAT 157）”教材。
        
 
-## 93. [fighting41love/funNLP](http://github.com/fighting41love/funNLP)  ♥️ 10.6k
+## 93. [apachecn/awesome-algorithm](http://github.com/apachecn/awesome-algorithm)  ♥️ 10.6k
          
-> 字符数据、speech-aligner: 从“人声语音”及其“语言文本”产生音素级别时间对齐标注的工具、AmpliGraph: 知识图谱表示学习(Python)库：知识图谱概念链接预测、Scattertext 文本可视化(python)…
+> 项目永久冻结，迁移至新地址：
        
 
-## 94. [powerline/powerline](http://github.com/powerline/powerline)  ♥️ 10.5k
+## 94. [powerline/powerline](http://github.com/powerline/powerline)  ♥️ 10.6k
          
 > Powerline is a statusline plugin for vim, and provides statuslines and prompts for several other applications, includ…
        
@@ -246,7 +296,7 @@ categories:
 > Scalable user load testing tool written in Python
  
 
-## 96. [dianping/cat](http://github.com/dianping/cat)  ♥️ 10.3k
+## 96. [dianping/cat](http://github.com/dianping/cat)  ♥️ 10.4k
          
 > CAT 作为服务端项目基础组件，提供了 Java, C/C++, Node.js, Python, Go 等多语言客户端，已经在美团点评的基础架构中间件框架（MVC框架，RPC框架，数据库框架，缓存框架等，消息队列，配置系统等）深度集…
        

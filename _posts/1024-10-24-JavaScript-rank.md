@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  JavaScript开源项目排行榜 (07-20)
+title:  JavaScript开源项目排行榜 (07-23)
 tag: JavaScript 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#JavaScript开源项目排行榜 (07-20)
+#JavaScript开源项目排行榜 (07-23)
 
 ![JavaScript开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/JavaScript.png)
 
@@ -37,12 +37,12 @@ categories:
 > A book series on JavaScript. @YDKJS on twitter.
        
 
-## 6. [airbnb/javascript](http://github.com/airbnb/javascript)  ♥️ 87.2k
+## 6. [airbnb/javascript](http://github.com/airbnb/javascript)  ♥️ 87.3k
          
 > JavaScript Style Guide
        
 
-## 7. [electron/electron](http://github.com/electron/electron)  ♥️ 75.3k
+## 7. [electron/electron](http://github.com/electron/electron)  ♥️ 75.4k
          
 > Build cross-platform desktop apps with JavaScript, HTML, and CSS
        
@@ -52,124 +52,274 @@ categories:
 > Node.js JavaScript runtime ✨🐢🚀✨
  
 
-## 9. [axios/axios](http://github.com/axios/axios)  ♥️ 62.2k
+## 9. [axios/axios](http://github.com/axios/axios)  ♥️ 62.3k
          
 > Promise based HTTP client for the browser and node.js
        
 
-## 10. [mrdoob/three.js](http://github.com/mrdoob/three.js)  ♥️ 53.2k
+## 10. [mrdoob/three.js](http://github.com/mrdoob/three.js)  ♥️ 53.3k
          
 > JavaScript 3D library.
        
 
 
-
-
-
-
-
-
-
-## 81. [mobxjs/mobx](http://github.com/mobxjs/mobx)  ♥️ 19.9k
+## 11. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 52.7k
          
-> Simple, scalable state management.
+> 📚 免费的计算机编程类中文书籍，欢迎投稿
        
 
-## 82. [elsewhencode/project-guidelines](http://github.com/elsewhencode/project-guidelines)  ♥️ 19.8k
+## 12. [jquery/jquery](http://github.com/jquery/jquery)  ♥️ 51.9k
          
-> A set of best practices for JavaScript projects
+> jQuery JavaScript Library
        
 
-## 83. [facebook/flow](http://github.com/facebook/flow)  ♥️ 19.8k
+## 13. [microsoft/TypeScript](http://github.com/microsoft/TypeScript)  ♥️ 51.7k
          
-> Adds static typing to JavaScript to improve developer productivity and code quality.
+> TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
        
 
-## 84. [Reactive-Extensions/RxJS](http://github.com/Reactive-Extensions/RxJS)  ♥️ 19.7k
+## 14. [trekhleb/javascript-algorithms](http://github.com/trekhleb/javascript-algorithms)  ♥️ 51.5k
          
-> The Reactive Extensions for JavaScript
+> 📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings
+       
+
+## 15. [webpack/webpack](http://github.com/webpack/webpack)  ♥️ 50.1k
+         
+> A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading…
+       
+
+## 16. [angular/angular](http://github.com/angular/angular)  ♥️ 49.8k
+         
+> One framework. Mobile & desktop.
+       
+
+## 17. [reduxjs/redux](http://github.com/reduxjs/redux)  ♥️ 49.7k
+         
+> Predictable state container for JavaScript apps
+       
+
+## 18. [atom/atom](http://github.com/atom/atom)  ♥️ 49.4k
+         
+> The hackable text editor
+       
+
+## 19. [mui-org/material-ui](http://github.com/mui-org/material-ui)  ♥️ 49k
+         
+> React components for faster and easier web development. Build your own design system, or start with Material Design.
+       
+
+## 20. [30-seconds/30-seconds-of-code](http://github.com/30-seconds/30-seconds-of-code)  ♥️ 47k
+         
+> A curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.
+       
+
+
+## 21. [expressjs/express](http://github.com/expressjs/express)  ♥️ 44.8k
+         
+> Fast, unopinionated, minimalist web framework for node.
+       
+
+## 22. [chartjs/Chart.js](http://github.com/chartjs/Chart.js)  ♥️ 44.5k
+         
+> Simple HTML5 Charts using the <canvas> tag
+       
+
+## 23. [h5bp/html5-boilerplate](http://github.com/h5bp/html5-boilerplate)  ♥️ 43.1k
+         
+> A professional front-end template for building fast, robust, and adaptable web apps or sites.
+       
+
+## 24. [moment/moment](http://github.com/moment/moment)  ♥️ 41.8k
+         
+> Parse, validate, manipulate, and display dates in javascript.
+       
+
+## 25. [meteor/meteor](http://github.com/meteor/meteor)  ♥️ 41.2k
+         
+> Meteor, the JavaScript App Platform
+       
+
+## 26. [lodash/lodash](http://github.com/lodash/lodash)  ♥️ 40.4k
+         
+> A modern JavaScript utility library delivering modularity, performance, & extras.
+       
+
+## 27. [storybookjs/storybook](http://github.com/storybookjs/storybook)  ♥️ 39.8k
+         
+> UI component dev & test: React, Vue, Angular, React Native, Ember, Web Components & more!
+       
+
+## 28. [ElemeFE/element](http://github.com/ElemeFE/element)  ♥️ 39.4k
+         
+> A Vue.js 2.0 UI Toolkit for Web
+       
+
+## 29. [ionic-team/ionic](http://github.com/ionic-team/ionic)  ♥️ 38.6k
+         
+> Build amazing native and progressive web apps with open web technologies. One app running on everything 🎉
  
 
-## 85. [Marak/faker.js](http://github.com/Marak/faker.js)  ♥️ 19.7k
+## 30. [denoland/deno](http://github.com/denoland/deno)  ♥️ 37.1k
          
-> generate massive amounts of realistic fake data in Node.js and the browser
+> A secure JavaScript/TypeScript runtime built with V8, Rust, and Tokio
        
 
-## 86. [VincentGarreau/particles.js](http://github.com/VincentGarreau/particles.js)  ♥️ 19.6k
+
+## 31. [yarnpkg/yarn](http://github.com/yarnpkg/yarn)  ♥️ 36.4k
          
-> A lightweight JavaScript library for creating particles
+> 📦🐈 Fast, reliable, and secure dependency management.
        
 
-## 87. [kriasoft/react-starter-kit](http://github.com/kriasoft/react-starter-kit)  ♥️ 19.3k
+## 32. [Dogfalo/materialize](http://github.com/Dogfalo/materialize)  ♥️ 36.1k
          
-> React Starter Kit — isomorphic web app boilerplate (Node.js, Express, GraphQL, React.js, Babel, PostCSS, Webpack, Bro…
+> Materialize, a CSS Framework based on Material Design
        
 
-## 88. [sequelize/sequelize](http://github.com/sequelize/sequelize)  ♥️ 19.3k
+## 33. [nwjs/nw.js](http://github.com/nwjs/nw.js)  ♥️ 35.7k
          
-> An easy-to-use multi SQL dialect ORM for Node.js
+> Call all Node.js modules directly from DOM/WebWorker and enable a new way of writing applications with all Web techno…
        
 
-## 89. [ReactiveX/rxjs](http://github.com/ReactiveX/rxjs)  ♥️ 19.2k
+## 34. [thedaviddias/Front-End-Checklist](http://github.com/thedaviddias/Front-End-Checklist)  ♥️ 35.1k
          
-> A reactive programming library for JavaScript
+> 🗂 The perfect Front-End Checklist for modern websites and meticulous developers
+       
+
+## 35. [FreeCodeCampChina/freecodecamp.cn](http://github.com/FreeCodeCampChina/freecodecamp.cn)  ♥️ 35.1k
+         
+> The FreeCodeCamp.cn(FCC China) open source codebase and curriculum. Learn to code and help nonprofits.
+       
+
+## 36. [babel/babel](http://github.com/babel/babel)  ♥️ 34k
+         
+> 🐠 Babel is a compiler for writing next generation JavaScript.
+       
+
+## 37. [prettier/prettier](http://github.com/prettier/prettier)  ♥️ 32.8k
+         
+> Prettier is an opinionated code formatter.
+       
+
+## 38. [parcel-bundler/parcel](http://github.com/parcel-bundler/parcel)  ♥️ 32.4k
+         
+> 📦🚀 Blazing fast, zero configuration web application bundler
+       
+
+## 39. [juliangarnier/anime](http://github.com/juliangarnier/anime)  ♥️ 31.8k
+         
+> JavaScript animation engine
+       
+
+## 40. [sindresorhus/awesome-nodejs](http://github.com/sindresorhus/awesome-nodejs)  ♥️ 31.7k
+         
+> ⚡️ Delightful Node.js packages and resources
+       
+
+
+## 41. [i0natan/nodebestpractices](http://github.com/i0natan/nodebestpractices)  ♥️ 31.5k
+         
+> ✅ The largest Node.js best practices list (July 2019)
+       
+
+## 42. [serverless/serverless](http://github.com/serverless/serverless)  ♥️ 31.1k
+         
+> Serverless Framework – Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure F…
+       
+
+## 43. [TryGhost/Ghost](http://github.com/TryGhost/Ghost)  ♥️ 30.5k
+         
+> 👻 The most popular headless Node.js CMS for professional publishing
+       
+
+## 44. [zeit/hyper](http://github.com/zeit/hyper)  ♥️ 30.4k
+         
+> A terminal built on web technologies
+       
+
+## 45. [adobe/brackets](http://github.com/adobe/brackets)  ♥️ 30k
+         
+> An open source code editor for the web, written in JavaScript, HTML and CSS.
+       
+
+## 46. [discourse/discourse](http://github.com/discourse/discourse)  ♥️ 28.7k
+         
+> A platform for community discussion. Free, open, simple.
+       
+
+## 47. [MaximAbramchuck/awesome-interview-questions](http://github.com/MaximAbramchuck/awesome-interview-questions)  ♥️ 28.4k
+         
+> A curated awesome list of lists of interview questions. Feel free to contribute! 🎓
  
 
-## 90. [bevacqua/dragula](http://github.com/bevacqua/dragula)  ♥️ 19.1k
+## 48. [leonardomso/33-js-concepts](http://github.com/leonardomso/33-js-concepts)  ♥️ 28.2k
          
-> 👌 Drag and drop so simple it hurts
+> 📜 33 concepts every JavaScript developer should know.
        
 
-
-## 91. [mbeaudru/modern-js-cheatsheet](http://github.com/mbeaudru/modern-js-cheatsheet)  ♥️ 18.9k
+## 49. [immutable-js/immutable-js](http://github.com/immutable-js/immutable-js)  ♥️ 27.9k
          
-> Cheatsheet for the JavaScript knowledge you will frequently encounter in modern projects.
+> Immutable persistent data collections for Javascript which increase efficiency and simplicity.
        
 
-## 92. [sentsin/layui](http://github.com/sentsin/layui)  ♥️ 18.9k
+## 50. [mozilla/pdf.js](http://github.com/mozilla/pdf.js)  ♥️ 27.4k
          
-> 采用自身模块规范编写的前端 UI 框架，遵循原生 HTML/CSS/JS 的书写形式，极低门槛，拿来即用。
-       
-
-## 93. [dimsemenov/PhotoSwipe](http://github.com/dimsemenov/PhotoSwipe)  ♥️ 18.9k
-         
-> JavaScript image gallery for mobile and desktop, modular, framework independent
-       
-
-## 94. [date-fns/date-fns](http://github.com/date-fns/date-fns)  ♥️ 18.5k
-         
-> ⏳ Modern JavaScript date utility library ⌛️
+> PDF Reader in JavaScript
  
 
-## 95. [nefe/You-Dont-Need-jQuery](http://github.com/nefe/You-Dont-Need-jQuery)  ♥️ 18.4k
+
+## 51. [hexojs/hexo](http://github.com/hexojs/hexo)  ♥️ 27.4k
          
-> Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript.
+> A fast, simple & powerful blog framework, powered by Node.js.
        
 
-## 96. [Prinzhorn/skrollr](http://github.com/Prinzhorn/skrollr)  ♥️ 18.3k
+## 52. [alvarotrigo/fullPage.js](http://github.com/alvarotrigo/fullPage.js)  ♥️ 27.1k
          
-> Stand-alone parallax scrolling library for mobile (Android + iOS) and desktop. No jQuery. Just plain JavaScript (and …
+> fullPage plugin by Alvaro Trigo. Create full screen pages fast and simple
        
 
-## 97. [sorrycc/awesome-javascript](http://github.com/sorrycc/awesome-javascript)  ♥️ 18.2k
+## 53. [ariya/phantomjs](http://github.com/ariya/phantomjs)  ♥️ 26.9k
          
-> 🐢 A collection of awesome browser-side JavaScript libraries, resources and shiny things.
+> Scriptable Headless Browser
        
 
-## 98. [usablica/intro.js](http://github.com/usablica/intro.js)  ♥️ 18.2k
+## 54. [facebook/jest](http://github.com/facebook/jest)  ♥️ 26.6k
          
-> A better way for new feature introduction and step-by-step users guide for your website and project.
+> Delightful JavaScript Testing.
        
 
-## 99. [mochajs/mocha](http://github.com/mochajs/mocha)  ♥️ 18.1k
+## 55. [zenorocha/clipboard.js](http://github.com/zenorocha/clipboard.js)  ♥️ 26.6k
          
-> ☕️ simple, flexible, fun javascript test framework for node.js & the browser
+> ✂️ Modern copy to clipboard. No Flash. Just 3kb gzipped 📋
+ 
+
+## 56. [caolan/async](http://github.com/caolan/async)  ♥️ 25.8k
+         
+> Async utilities for node and the browser
        
 
-## 100. [verekia/js-stack-from-scratch](http://github.com/verekia/js-stack-from-scratch)  ♥️ 18k
+## 57. [pixijs/pixi.js](http://github.com/pixijs/pixi.js)  ♥️ 25.8k
          
-> 🛠️⚡ Step-by-step tutorial to build a modern JavaScript stack.
+> The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.
        
+
+## 58. [videojs/video.js](http://github.com/videojs/video.js)  ♥️ 25.6k
+         
+> Video.js - open source HTML5 & Flash video player
+       
+
+## 59. [Leaflet/Leaflet](http://github.com/Leaflet/Leaflet)  ♥️ 25.3k
+         
+> 🍃 JavaScript library for mobile-friendly interactive maps
+       
+
+## 60. [photonstorm/phaser](http://github.com/photonstorm/phaser)  ♥️ 25.2k
+         
+> Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporti…
+       
+
+
+
+
 
 
 ### 以上数据由[code4flutter](http://flutterdev.top)收集整理

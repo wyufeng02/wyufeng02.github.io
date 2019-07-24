@@ -27,16 +27,16 @@ google 在`flutter widget of the week` 中介绍 `inheritedwidget`， 短短的�
 ## 0x01 前情提要
 
 
-![img](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertwidget_0.png)
-
-![img](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertwidget_01.png)
+![code4flutter](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertwiget_0.png)
 
 
 当应用变得更大时，小部件树,变得更复杂，传递和访问数据,会变得很麻烦。 
 如果你有四个或五个小部件一个接一个地嵌套, 并且您需要从顶部获取一些数据。将它添加到所有这些构造函数中,以及所有这些构建方法。 
   
 然而我只是想到达widget来获取数据。 不想一级一级传递数据。怎么办？幸运的是，有一个小部件类型允许这样。 它叫做InheritedWidget。 
- 
+
+![code4flutter](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertwiget_01.png)
+
 ## 0x02 使用方式
 
 ### 创建一个InhertWidget

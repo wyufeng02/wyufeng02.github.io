@@ -14,7 +14,7 @@ categories:
 > * inhertedwidget 是一个widget，跟其他widget不一样的地方是，他可以在他所持有的child中共享自己的数据。如Theme。
 > * 应用场景：app的复杂度越来越大，对于数据之间的传递，如果都是根据dic或者model作为widget内部的参数传递，是不友好的方式。正常的想法，此时应该有个数据中心，或eventbus，用于数据传递和取用，而在flutter中是inhertwidget
 > * 实现： 内部实现数据更新，自动通知的方式，从而自动刷新界面
-> *  写法： 见demo
+> *  写法： 见下面例子
 
 
 对于赶时间的同学看到这里就可以回去搬砖了。下面留给还有五分钟时间浏览的同学。
@@ -208,7 +208,7 @@ class _MyHomePageState extends State<MyHomePage> {
 ![code4flutter](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inherted_demos.gif)
 
  
-## 使用建议
+## 0x02 使用建议
 
 ###  InheritedWidgets通常包含一个名为的静态方法 of
 
@@ -235,7 +235,7 @@ inhertedwidget改变了就会触发，didChangeDependencies，对于耗时操作
 可以印证两点，widget会重建，但是state不会重建，didChangeDespendice方法调用的时机是其依赖的上下文内容改变。
 
 
-## 应用场景
+## 0x03 应用场景
 
 * Theme实际上是一种InheritedWidget。 Scaffold，Focus Scope等等也是如此。 
 
@@ -244,7 +244,7 @@ inhertedwidget改变了就会触发，didChangeDependencies，对于耗时操作
 * Web API的代理或资产提供者。 服务对象可以有自己的内部状态。 它可以启动网络呼叫，任何事情。 
 
 
-## 继承者们
+## 0x04 继承者们
 
 ### 老大，InheritedNotifier
 
@@ -304,7 +304,11 @@ class ABModel extends InheritedModel<String> {
 
 ![inhertedmodel](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertedmodel.png)
 
+
 参考 
 
 [inhertedwidget 文档](https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html)
  
+
+### 原创不易，版权所有，转载请备注 [code4flutter.com](https://code4flutter.com)
+

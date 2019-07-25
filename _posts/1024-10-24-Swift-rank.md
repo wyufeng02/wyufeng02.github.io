@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Swift开源项目排行榜 (07-23)
+title:  Swift开源项目排行榜 (07-25)
 tag: Swift 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#Swift开源项目排行榜 (07-23)
+#Swift开源项目排行榜 (07-25)
 
 ![Swift开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/Swift.png)
 
@@ -56,15 +56,15 @@ categories:
 > Comprehensive mailing tools for PHP
        
 
-## 49. [IBAnimatable/IBAnimatable](http://github.com/IBAnimatable/IBAnimatable)  ♥️ 8.1k
-         
-> Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Int…
-       
-
-## 50. [WenchaoD/FSCalendar](http://github.com/WenchaoD/FSCalendar)  ♥️ 8.1k
+## 49. [WenchaoD/FSCalendar](http://github.com/WenchaoD/FSCalendar)  ♥️ 8.1k
          
 > A fully customizable iOS calendar library, compatible with Objective-C and Swift
  
+
+## 50. [IBAnimatable/IBAnimatable](http://github.com/IBAnimatable/IBAnimatable)  ♥️ 8.1k
+         
+> Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Int…
+       
 
 
 ## 51. [tristanhimmelman/ObjectMapper](http://github.com/tristanhimmelman/ObjectMapper)  ♥️ 8.1k
@@ -72,7 +72,7 @@ categories:
 > Simple JSON Object mapping written in Swift
  
 
-## 52. [Tencent/MMKV](http://github.com/Tencent/MMKV)  ♥️ 7.8k
+## 52. [Tencent/MMKV](http://github.com/Tencent/MMKV)  ♥️ 7.9k
          
 > An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS, Android, macOS and Windows.
        
@@ -107,15 +107,15 @@ categories:
 > A Swift web framework and HTTP server.
        
 
-## 59. [krzyzanowskim/CryptoSwift](http://github.com/krzyzanowskim/CryptoSwift)  ♥️ 7.1k
-         
-> CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift
- 
-
-## 60. [apple/swift-package-manager](http://github.com/apple/swift-package-manager)  ♥️ 7.1k
+## 59. [apple/swift-package-manager](http://github.com/apple/swift-package-manager)  ♥️ 7.1k
          
 > The Package Manager for the Swift Programming Language
        
+
+## 60. [krzyzanowskim/CryptoSwift](http://github.com/krzyzanowskim/CryptoSwift)  ♥️ 7.1k
+         
+> CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift
+ 
 
 
 ## 61. [draveness/analyze](http://github.com/draveness/analyze)  ♥️ 7k
@@ -204,7 +204,7 @@ categories:
 > Run compilers interactively from your web browser and interact with the assembly
        
 
-## 78. [ChenYilong/CYLTabBarController](http://github.com/ChenYilong/CYLTabBarController)  ♥️ 5.6k
+## 78. [ChenYilong/CYLTabBarController](http://github.com/ChenYilong/CYLTabBarController)  ♥️ 5.7k
          
 > [EN]It is an iOS UI module library for adding animation to iOS tabbar items and icons with Lottie, and adding a bigge…
        
@@ -240,7 +240,7 @@ categories:
 > 30 mini Swift Apps for self-study
        
 
-## 85. [raulriera/TextFieldEffects](http://github.com/raulriera/TextFieldEffects)  ♥️ 5.1k
+## 85. [raulriera/TextFieldEffects](http://github.com/raulriera/TextFieldEffects)  ♥️ 5.2k
          
 > Custom UITextFields effects inspired by Codrops, built using Swift
  
@@ -250,15 +250,15 @@ categories:
 > Event-driven network application framework for high performance protocol servers & clients, non-blocking.
        
 
-## 87. [malcommac/SwiftDate](http://github.com/malcommac/SwiftDate)  ♥️ 5.1k
-         
-> Parse, validate, manipulate, and display dates, time and timezones in Swift
- 
-
-## 88. [daltoniam/Starscream](http://github.com/daltoniam/Starscream)  ♥️ 5.1k
+## 87. [daltoniam/Starscream](http://github.com/daltoniam/Starscream)  ♥️ 5.1k
          
 > Websockets in swift for iOS and OSX
        
+
+## 88. [malcommac/SwiftDate](http://github.com/malcommac/SwiftDate)  ♥️ 5.1k
+         
+> Parse, validate, manipulate, and display dates, time and timezones in Swift
+ 
 
 ## 89. [JakeLin/SwiftLanguageWeather](http://github.com/JakeLin/SwiftLanguageWeather)  ♥️ 5k
          

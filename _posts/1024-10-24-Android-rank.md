@@ -1,23 +1,23 @@
 ---
 layout: post
-title:  Android开源项目排行榜 (07-23)
+title:  Android开源项目排行榜 (07-25)
 tag: Android 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#Android开源项目排行榜 (07-23)
+#Android开源项目排行榜 (07-25)
 
 ![Android开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/Android.png)
 
 
-## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 70.8k
+## 1. [flutter/flutter](http://github.com/flutter/flutter)  ♥️ 71.1k
          
 > Flutter makes it easy and fast to build beautiful mobile apps.
        
 
-## 2. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 52.7k
+## 2. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 52.8k
          
 > 📚 免费的计算机编程类中文书籍，欢迎投稿
        
@@ -37,12 +37,12 @@ categories:
 > An HTTP client for Android, Kotlin, and Java.
        
 
-## 6. [googlesamples/android-architecture](http://github.com/googlesamples/android-architecture)  ♥️ 33.4k
+## 6. [googlesamples/android-architecture](http://github.com/googlesamples/android-architecture)  ♥️ 33.5k
          
 > A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.
        
 
-## 7. [square/retrofit](http://github.com/square/retrofit)  ♥️ 33.1k
+## 7. [square/retrofit](http://github.com/square/retrofit)  ♥️ 33.2k
          
 > Type-safe HTTP client for Android and Java by Square, Inc.
        
@@ -68,12 +68,12 @@ categories:
 > An image loading and caching library for Android focused on smooth scrolling
        
 
-## 12. [airbnb/lottie-android](http://github.com/airbnb/lottie-android)  ♥️ 26.1k
+## 12. [airbnb/lottie-android](http://github.com/airbnb/lottie-android)  ♥️ 26.2k
          
 > Render After Effects animations natively on Android and iOS, Web, and React Native
        
 
-## 13. [fastlane/fastlane](http://github.com/fastlane/fastlane)  ♥️ 26.1k
+## 13. [fastlane/fastlane](http://github.com/fastlane/fastlane)  ♥️ 26.2k
          
 > 🚀 The easiest way to automate building and releasing your iOS and Android apps
        
@@ -83,12 +83,12 @@ categories:
 > Extensive Open-Source Guides for Android Developers
        
 
-## 15. [shadowsocks/shadowsocks-android](http://github.com/shadowsocks/shadowsocks-android)  ♥️ 25k
+## 15. [shadowsocks/shadowsocks-android](http://github.com/shadowsocks/shadowsocks-android)  ♥️ 25.1k
          
 > A shadowsocks client for Android
  
 
-## 16. [JakeWharton/butterknife](http://github.com/JakeWharton/butterknife)  ♥️ 24.2k
+## 16. [JakeWharton/butterknife](http://github.com/JakeWharton/butterknife)  ♥️ 24.3k
          
 > Bind Android views and callbacks to fields and methods.
        
@@ -159,60 +159,60 @@ categories:
 > The Google I/O 2018 Android App
        
 
-## 30. [scwang90/SmartRefreshLayout](http://github.com/scwang90/SmartRefreshLayout)  ♥️ 18.1k
+## 30. [scwang90/SmartRefreshLayout](http://github.com/scwang90/SmartRefreshLayout)  ♥️ 18.2k
          
 > 🔥下拉刷新、上拉加载、二级刷新、淘宝二楼、RefreshLayout、OverScroll，Android智能下拉刷新框架，支持越界回弹、越界拖动，具有极强的扩展性，集成了几十种炫酷的Header和 Footer。
        
 
 
-## 31. [futurice/android-best-practices](http://github.com/futurice/android-best-practices)  ♥️ 18.1k
-         
-> Do's and Don'ts for Android development, by Futurice developers
-       
-
-## 32. [CymChad/BaseRecyclerViewAdapterHelper](http://github.com/CymChad/BaseRecyclerViewAdapterHelper)  ♥️ 17.7k
-         
-> BRVAH:Powerful and flexible RecyclerAdapter
-       
-
-## 33. [alibaba/weex](http://github.com/alibaba/weex)  ♥️ 17.5k
-         
-> A framework for building Mobile cross-platform UI
-       
-
-## 34. [airbnb/lottie-web](http://github.com/airbnb/lottie-web)  ♥️ 17.5k
-         
-> Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/
- 
-
-## 35. [NativeScript/NativeScript](http://github.com/NativeScript/NativeScript)  ♥️ 17.3k
-         
-> NativeScript is an open source framework for building truly native mobile apps with JavaScript. Use web skills, like …
-       
-
-## 36. [square/picasso](http://github.com/square/picasso)  ♥️ 16.9k
+## 31. [square/picasso](http://github.com/square/picasso)  ♥️ 16.9k
          
 > A powerful image downloading and caching library for Android
  
 
-## 37. [react-native-training/react-native-elements](http://github.com/react-native-training/react-native-elements)  ♥️ 16.6k
+## 32. [react-native-training/react-native-elements](http://github.com/react-native-training/react-native-elements)  ♥️ 16.6k
          
 > Cross Platform React Native UI Toolkit
        
 
-## 38. [nostra13/Android-Universal-Image-Loader](http://github.com/nostra13/Android-Universal-Image-Loader)  ♥️ 16.5k
+## 33. [nostra13/Android-Universal-Image-Loader](http://github.com/nostra13/Android-Universal-Image-Loader)  ♥️ 16.5k
          
 > Powerful and flexible library for loading, caching and displaying images on Android.
        
 
-## 39. [afollestad/material-dialogs](http://github.com/afollestad/material-dialogs)  ♥️ 16.2k
+## 34. [afollestad/material-dialogs](http://github.com/afollestad/material-dialogs)  ♥️ 16.2k
          
 > 😍 A beautiful, fluid, and extensible dialogs API for Kotlin & Android.
        
 
-## 40. [facebook/fresco](http://github.com/facebook/fresco)  ♥️ 15.7k
+## 35. [facebook/fresco](http://github.com/facebook/fresco)  ♥️ 15.7k
          
 > An Android library for managing images and the memory they use.
+       
+
+## 36. [libgdx/libgdx](http://github.com/libgdx/libgdx)  ♥️ 15.7k
+         
+> Desktop/Android/HTML5/iOS Java game development framework
+       
+
+## 37. [chrisbanes/PhotoView](http://github.com/chrisbanes/PhotoView)  ♥️ 15.6k
+         
+> Implementation of ImageView for Android that supports zooming, by various touch gestures.
+       
+
+## 38. [Genymobile/scrcpy](http://github.com/Genymobile/scrcpy)  ♥️ 15.3k
+         
+> Display and control your Android device
+       
+
+## 39. [Kotlin/anko](http://github.com/Kotlin/anko)  ♥️ 14.7k
+         
+> Pleasant Android application development
+       
+
+## 40. [framework7io/framework7](http://github.com/framework7io/framework7)  ♥️ 14.6k
+         
+> Full featured HTML framework for building iOS & Android apps
        
 
 
@@ -236,12 +236,12 @@ categories:
 > Pleasant Android application development
        
 
-## 45. [framework7io/framework7](http://github.com/framework7io/framework7)  ♥️ 14.5k
+## 45. [framework7io/framework7](http://github.com/framework7io/framework7)  ♥️ 14.6k
          
 > Full featured HTML framework for building iOS & Android apps
        
 
-## 46. [google/flexbox-layout](http://github.com/google/flexbox-layout)  ♥️ 14.2k
+## 46. [google/flexbox-layout](http://github.com/google/flexbox-layout)  ♥️ 14.3k
          
 > Flexbox for Android
  
@@ -317,6 +317,56 @@ categories:
 > ✔️ Simple, pretty and powerful logger for android
  
 
+
+## 61. [daimajia/AndroidSwipeLayout](http://github.com/daimajia/AndroidSwipeLayout)  ♥️ 11.3k
+         
+> The Most Powerful Swipe Layout!
+       
+
+## 62. [facebook/stetho](http://github.com/facebook/stetho)  ♥️ 11.3k
+         
+> Stetho is a debug bridge for Android applications, enabling the powerful Chrome Developer Tools and much more.
+       
+
+## 63. [quasarframework/quasar](http://github.com/quasarframework/quasar)  ♥️ 11.2k
+         
+> Quasar Framework - Build high-performance VueJS user interfaces in record time
+       
+
+## 64. [jfeinstein10/SlidingMenu](http://github.com/jfeinstein10/SlidingMenu)  ♥️ 11.2k
+         
+> An Android library that allows you to easily create applications with slide-in menus. You may use it in your Android …
+       
+
+## 65. [CarGuo/GSYVideoPlayer](http://github.com/CarGuo/GSYVideoPlayer)  ♥️ 11k
+         
+> 视频播放器（IJKplayer、ExoPlayer、MediaPlayer），HTTPS，支持弹幕，支持滤镜、水印、gif截图，片头广告、中间广告，多个同时播放，支持基本的拖动，声音、亮度调节，支持边播边缓存，支持视频自带rotati…
+       
+
+## 66. [googlesamples/android-UniversalMusicPlayer](http://github.com/googlesamples/android-UniversalMusicPlayer)  ♥️ 11k
+         
+> This sample shows how to implement an audio media app that works across multiple form factors and provide a consisten…
+       
+
+## 67. [androidannotations/androidannotations](http://github.com/androidannotations/androidannotations)  ♥️ 10.8k
+         
+> Fast Android Development. Easy maintainance.
+       
+
+## 68. [daimajia/AndroidViewAnimations](http://github.com/daimajia/AndroidViewAnimations)  ♥️ 10.7k
+         
+> Cute view animation collection.
+       
+
+## 69. [realm/realm-java](http://github.com/realm/realm-java)  ♥️ 10.6k
+         
+> Realm is a mobile database: a replacement for SQLite & ORMs
+       
+
+## 70. [mikepenz/MaterialDrawer](http://github.com/mikepenz/MaterialDrawer)  ♥️ 10.5k
+         
+> The flexible, easy to use, all in one drawer library for your Android project. Now brand new with material 2 design.
+       
 
 
 

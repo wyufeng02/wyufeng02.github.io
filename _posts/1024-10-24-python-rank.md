@@ -1,53 +1,53 @@
 ---
 layout: post
-title:  python开源项目排行榜 (07-23)
+title:  python开源项目排行榜 (07-25)
 tag: python 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#python开源项目排行榜 (07-23)
+#python开源项目排行榜 (07-25)
 
 ![python开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/python.png)
 
 
-## 1. [tensorflow/tensorflow](http://github.com/tensorflow/tensorflow)  ♥️ 131k
+## 1. [tensorflow/tensorflow](http://github.com/tensorflow/tensorflow)  ♥️ 132k
          
 > An Open Source Machine Learning Framework for Everyone
        
 
-## 2. [robbyrussell/oh-my-zsh](http://github.com/robbyrussell/oh-my-zsh)  ♥️ 92.3k
+## 2. [robbyrussell/oh-my-zsh](http://github.com/robbyrussell/oh-my-zsh)  ♥️ 92.4k
          
 > 🙃 A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 20…
        
 
-## 3. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 71.9k
+## 3. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 72.2k
          
 > 📚 Tech Interview Guide 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计
        
 
-## 4. [vinta/awesome-python](http://github.com/vinta/awesome-python)  ♥️ 70.2k
+## 4. [vinta/awesome-python](http://github.com/vinta/awesome-python)  ♥️ 70.3k
          
 > A curated list of awesome Python frameworks, libraries, software and resources
        
 
-## 5. [donnemartin/system-design-primer](http://github.com/donnemartin/system-design-primer)  ♥️ 69.5k
+## 5. [donnemartin/system-design-primer](http://github.com/donnemartin/system-design-primer)  ♥️ 69.7k
          
 > Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.
        
 
-## 6. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 52.7k
+## 6. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 52.8k
          
 > 📚 免费的计算机编程类中文书籍，欢迎投稿
        
 
-## 7. [TheAlgorithms/Python](http://github.com/TheAlgorithms/Python)  ♥️ 51.7k
+## 7. [TheAlgorithms/Python](http://github.com/TheAlgorithms/Python)  ♥️ 51.9k
          
 > All Algorithms implemented in Python
  
 
-## 8. [jackfrued/Python-100-Days](http://github.com/jackfrued/Python-100-Days)  ♥️ 50.3k
+## 8. [jackfrued/Python-100-Days](http://github.com/jackfrued/Python-100-Days)  ♥️ 51k
          
 > Python - 100天从新手到大师
        
@@ -57,13 +57,13 @@ categories:
 > The Python micro framework for building web applications.
        
 
-## 10. [nvbn/thefuck](http://github.com/nvbn/thefuck)  ♥️ 44.9k
+## 10. [nvbn/thefuck](http://github.com/nvbn/thefuck)  ♥️ 45k
          
 > Magnificent app which corrects your previous console command.
        
 
 
-## 11. [django/django](http://github.com/django/django)  ♥️ 42.9k
+## 11. [django/django](http://github.com/django/django)  ♥️ 43k
          
 > The Web framework for perfectionists with deadlines.
        
@@ -78,7 +78,7 @@ categories:
 > As easy as httpie /aitch-tee-tee-pie/ 🥧 Modern command line HTTP client – user-friendly curl alternative with intuiti…
        
 
-## 14. [not-kennethreitz/requests](http://github.com/not-kennethreitz/requests)  ♥️ 39.5k
+## 14. [psf/requests](http://github.com/psf/requests)  ♥️ 39.5k
          
 > Python HTTP Requests for Humans™ ✨🍰✨
  
@@ -88,7 +88,7 @@ categories:
 > Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid…
        
 
-## 16. [scikit-learn/scikit-learn](http://github.com/scikit-learn/scikit-learn)  ♥️ 36.2k
+## 16. [scikit-learn/scikit-learn](http://github.com/scikit-learn/scikit-learn)  ♥️ 36.3k
          
 > scikit-learn: machine learning in Python
  
@@ -98,12 +98,12 @@ categories:
 > Scrapy, a fast high-level web crawling & scraping framework for Python.
        
 
-## 18. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 32.9k
+## 18. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 33k
          
 > TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)
        
 
-## 19. [blueimp/jQuery-File-Upload](http://github.com/blueimp/jQuery-File-Upload)  ♥️ 30.1k
+## 19. [blueimp/jQuery-File-Upload](http://github.com/blueimp/jQuery-File-Upload)  ♥️ 30.2k
          
 > File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audi…
        
@@ -114,7 +114,7 @@ categories:
        
 
 
-## 21. [ageitgey/face_recognition](http://github.com/ageitgey/face_recognition)  ♥️ 25.7k
+## 21. [ageitgey/face_recognition](http://github.com/ageitgey/face_recognition)  ♥️ 25.8k
          
 > The world's simplest facial recognition api for Python and the command line
        
@@ -124,17 +124,17 @@ categories:
 > The Python programming language
        
 
-## 23. [certbot/certbot](http://github.com/certbot/certbot)  ♥️ 25.4k
-         
-> Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. It can al…
-       
-
-## 24. [home-assistant/home-assistant](http://github.com/home-assistant/home-assistant)  ♥️ 25.4k
+## 23. [home-assistant/home-assistant](http://github.com/home-assistant/home-assistant)  ♥️ 25.4k
          
 > 🏡 Open source home automation that puts local control and privacy first
        
 
-## 25. [imhuay/Algorithm_Interview_Notes-Chinese](http://github.com/imhuay/Algorithm_Interview_Notes-Chinese)  ♥️ 24.7k
+## 24. [certbot/certbot](http://github.com/certbot/certbot)  ♥️ 25.4k
+         
+> Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. It can al…
+       
+
+## 25. [imhuay/Algorithm_Interview_Notes-Chinese](http://github.com/imhuay/Algorithm_Interview_Notes-Chinese)  ♥️ 24.8k
          
 > 2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记
        
@@ -144,17 +144,17 @@ categories:
 > 100 Days of ML Coding
        
 
-## 27. [apache/spark](http://github.com/apache/spark)  ♥️ 22.7k
-         
-> Apache Spark
-       
-
-## 28. [tuvtran/project-based-learning](http://github.com/tuvtran/project-based-learning)  ♥️ 22.7k
+## 27. [tuvtran/project-based-learning](http://github.com/tuvtran/project-based-learning)  ♥️ 22.8k
          
 > Curated list of project-based tutorials
        
 
-## 29. [grpc/grpc](http://github.com/grpc/grpc)  ♥️ 22.2k
+## 28. [apache/spark](http://github.com/apache/spark)  ♥️ 22.7k
+         
+> Apache Spark
+       
+
+## 29. [grpc/grpc](http://github.com/grpc/grpc)  ♥️ 22.3k
          
 > The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
        
@@ -169,63 +169,13 @@ categories:
 
 
 
-## 71. [celery/celery](http://github.com/celery/celery)  ♥️ 13k
-         
-> Distributed Task Queue (development branch)
-       
-
-## 72. [machinelearningmindset/TensorFlow-Course](http://github.com/machinelearningmindset/TensorFlow-Course)  ♥️ 12.7k
-         
-> Simple and ready-to-use tutorials for TensorFlow 
-       
-
-## 73. [trekhleb/homemade-machine-learning](http://github.com/trekhleb/homemade-machine-learning)  ♥️ 12.6k
-         
-> 🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained
-       
-
-## 74. [google/flatbuffers](http://github.com/google/flatbuffers)  ♥️ 12.6k
-         
-> FlatBuffers: Memory Efficient Serialization Library
-       
-
-## 75. [MLEveryday/100-Days-Of-ML-Code](http://github.com/MLEveryday/100-Days-Of-ML-Code)  ♥️ 12.5k
-         
-> 100-Days-Of-ML-Code中文版
-       
-
-## 76. [huge-success/sanic](http://github.com/huge-success/sanic)  ♥️ 12.5k
-         
-> Async Python 3.6+ web server/framework | Build fast. Run fast.
-       
-
-## 77. [norvig/pytudes](http://github.com/norvig/pytudes)  ♥️ 12.3k
-         
-> Python programs to practice or demonstrate skills.
-       
-
-## 78. [cool-RR/PySnooper](http://github.com/cool-RR/PySnooper)  ♥️ 12.2k
-         
-> Never use print for debugging again
-       
-
-## 79. [spotify/luigi](http://github.com/spotify/luigi)  ♥️ 11.9k
-         
-> Luigi is a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, work…
-       
-
-## 80. [geekcomputers/Python](http://github.com/geekcomputers/Python)  ♥️ 11.9k
-         
-> My Python Examples
-       
-
 
 ## 81. [3b1b/manim](http://github.com/3b1b/manim)  ♥️ 11.6k
          
 > Animation engine for explanatory math videos
        
 
-## 82. [psf/black](http://github.com/psf/black)  ♥️ 11.5k
+## 82. [psf/black](http://github.com/psf/black)  ♥️ 11.6k
          
 > The uncompromising Python code formatter
        
@@ -255,15 +205,15 @@ categories:
 > Implementation of Reinforcement Learning Algorithms. Python, OpenAI Gym, Tensorflow. Exercises and Solutions to accom…
        
 
-## 88. [eclipse/deeplearning4j](http://github.com/eclipse/deeplearning4j)  ♥️ 11k
-         
-> Eclipse Deeplearning4j, ND4J, DataVec and more - deep learning & linear algebra for Java/Scala with GPUs + Spark
-       
-
-## 89. [bokeh/bokeh](http://github.com/bokeh/bokeh)  ♥️ 11k
+## 88. [bokeh/bokeh](http://github.com/bokeh/bokeh)  ♥️ 11k
          
 > Interactive Data Visualization in the browser, from Python
  
+
+## 89. [eclipse/deeplearning4j](http://github.com/eclipse/deeplearning4j)  ♥️ 11k
+         
+> Eclipse Deeplearning4j, ND4J, DataVec and more - deep learning & linear algebra for Java/Scala with GPUs + Spark
+       
 
 ## 90. [tqdm/tqdm](http://github.com/tqdm/tqdm)  ♥️ 10.9k
          
@@ -271,12 +221,12 @@ categories:
        
 
 
-## 91. [fighting41love/funNLP](http://github.com/fighting41love/funNLP)  ♥️ 10.7k
+## 91. [fighting41love/funNLP](http://github.com/fighting41love/funNLP)  ♥️ 10.8k
          
 > 字符数据、speech-aligner: 从“人声语音”及其“语言文本”产生音素级别时间对齐标注的工具、AmpliGraph: 知识图谱表示学习(Python)库：知识图谱概念链接预测、Scattertext 文本可视化(python)…
        
 
-## 92. [d2l-ai/d2l-zh](http://github.com/d2l-ai/d2l-zh)  ♥️ 10.6k
+## 92. [d2l-ai/d2l-zh](http://github.com/d2l-ai/d2l-zh)  ♥️ 10.7k
          
 > 《动手学深度学习》：面向中文读者、能运行、可讨论。英文版即伯克利“深度学习导论（STAT 157）”教材。
        
@@ -296,7 +246,7 @@ categories:
 > Scalable user load testing tool written in Python
  
 
-## 96. [dianping/cat](http://github.com/dianping/cat)  ♥️ 10.4k
+## 96. [dianping/cat](http://github.com/dianping/cat)  ♥️ 10.5k
          
 > CAT 作为服务端项目基础组件，提供了 Java, C/C++, Node.js, Python, Go 等多语言客户端，已经在美团点评的基础架构中间件框架（MVC框架，RPC框架，数据库框架，缓存框架等，消息队列，配置系统等）深度集…
        

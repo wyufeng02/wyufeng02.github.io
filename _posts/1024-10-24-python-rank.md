@@ -1,17 +1,117 @@
 ---
 layout: post
-title:  python开源项目排行榜 (07-28)
+title:  python开源项目排行榜 (07-30)
 tag: python 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#python开源项目排行榜 (07-28)
+#python开源项目排行榜 (07-30)
 
 ![python开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/python.png)
 
 
+## 1. [tensorflow/tensorflow](http://github.com/tensorflow/tensorflow)  ♥️ 132k
+         
+> An Open Source Machine Learning Framework for Everyone
+       
+
+## 2. [robbyrussell/oh-my-zsh](http://github.com/robbyrussell/oh-my-zsh)  ♥️ 92.6k
+         
+> 🙃 A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 20…
+       
+
+## 3. [CyC2018/CS-Notes](http://github.com/CyC2018/CS-Notes)  ♥️ 72.7k
+         
+> 📚 Tech Interview Guide 技术面试必备基础知识、Leetcode 题解、Java、C++、Python、后端面试、操作系统、计算机网络、系统设计
+       
+
+## 4. [vinta/awesome-python](http://github.com/vinta/awesome-python)  ♥️ 70.5k
+         
+> A curated list of awesome Python frameworks, libraries, software and resources
+       
+
+## 5. [donnemartin/system-design-primer](http://github.com/donnemartin/system-design-primer)  ♥️ 69.9k
+         
+> Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.
+       
+
+## 6. [justjavac/free-programming-books-zh_CN](http://github.com/justjavac/free-programming-books-zh_CN)  ♥️ 53k
+         
+> 📚 免费的计算机编程类中文书籍，欢迎投稿
+       
+
+## 7. [TheAlgorithms/Python](http://github.com/TheAlgorithms/Python)  ♥️ 52.2k
+         
+> All Algorithms implemented in Python
+ 
+
+## 8. [jackfrued/Python-100-Days](http://github.com/jackfrued/Python-100-Days)  ♥️ 51.9k
+         
+> Python - 100天从新手到大师
+       
+
+## 9. [pallets/flask](http://github.com/pallets/flask)  ♥️ 45.6k
+         
+> The Python micro framework for building web applications.
+       
+
+## 10. [nvbn/thefuck](http://github.com/nvbn/thefuck)  ♥️ 45.1k
+         
+> Magnificent app which corrects your previous console command.
+       
+
+
+## 11. [django/django](http://github.com/django/django)  ♥️ 43k
+         
+> The Web framework for perfectionists with deadlines.
+       
+
+## 12. [keras-team/keras](http://github.com/keras-team/keras)  ♥️ 43k
+         
+> Deep Learning for humans
+       
+
+## 13. [jakubroztocil/httpie](http://github.com/jakubroztocil/httpie)  ♥️ 42.5k
+         
+> As easy as httpie /aitch-tee-tee-pie/ 🥧 Modern command line HTTP client – user-friendly curl alternative with intuiti…
+       
+
+## 14. [psf/requests](http://github.com/psf/requests)  ♥️ 39.6k
+         
+> Python HTTP Requests for Humans™ ✨🍰✨
+ 
+
+## 15. [ansible/ansible](http://github.com/ansible/ansible)  ♥️ 38.6k
+         
+> Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid…
+       
+
+## 16. [scikit-learn/scikit-learn](http://github.com/scikit-learn/scikit-learn)  ♥️ 36.3k
+         
+> scikit-learn: machine learning in Python
+ 
+
+## 17. [scrapy/scrapy](http://github.com/scrapy/scrapy)  ♥️ 33.8k
+         
+> Scrapy, a fast high-level web crawling & scraping framework for Python.
+       
+
+## 18. [aymericdamien/TensorFlow-Examples](http://github.com/aymericdamien/TensorFlow-Examples)  ♥️ 33k
+         
+> TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)
+       
+
+## 19. [pytorch/pytorch](http://github.com/pytorch/pytorch)  ♥️ 30.3k
+         
+> Tensors and Dynamic neural networks in Python with strong GPU acceleration
+       
+
+## 20. [blueimp/jQuery-File-Upload](http://github.com/blueimp/jQuery-File-Upload)  ♥️ 30.2k
+         
+> File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audi…
+       
 
 
 ## 21. [ageitgey/face_recognition](http://github.com/ageitgey/face_recognition)  ♥️ 25.9k
@@ -59,222 +159,22 @@ categories:
 > The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
        
 
-## 30. [faif/python-patterns](http://github.com/faif/python-patterns)  ♥️ 21.4k
+## 30. [faif/python-patterns](http://github.com/faif/python-patterns)  ♥️ 21.5k
          
 > A collection of design patterns/idioms in Python
  
 
 
-## 31. [pandas-dev/pandas](http://github.com/pandas-dev/pandas)  ♥️ 20.5k
-         
-> Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R…
-       
-
-## 32. [jakevdp/PythonDataScienceHandbook](http://github.com/jakevdp/PythonDataScienceHandbook)  ♥️ 19.1k
-         
-> Python Data Science Handbook: full text in Jupyter Notebooks
-       
-
-## 33. [GokuMohandas/practicalAI](http://github.com/GokuMohandas/practicalAI)  ♥️ 19k
-         
-> 📚 A practical approach to machine learning.
-       
-
-## 34. [CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers](http://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)  ♥️ 18.8k
-         
-> aka "Bayesian Methods for Hackers": An introduction to Bayesian methods + probabilistic programming with a computatio…
-       
-
-## 35. [realpython/python-guide](http://github.com/realpython/python-guide)  ♥️ 18.7k
-         
-> Python best practices guidebook, written for humans. 
-       
-
-## 36. [tornadoweb/tornado](http://github.com/tornadoweb/tornado)  ♥️ 18.1k
-         
-> Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.
-       
-
-## 37. [pypa/pipenv](http://github.com/pypa/pipenv)  ♥️ 17.8k
-         
-> Python Development Workflow for Humans.
-       
-
-## 38. [serhii-londar/open-source-mac-os-apps](http://github.com/serhii-londar/open-source-mac-os-apps)  ♥️ 17.8k
-         
-> 🚀 Awesome list of open source applications for macOS.
-       
-
-## 39. [donnemartin/interactive-coding-challenges](http://github.com/donnemartin/interactive-coding-challenges)  ♥️ 17.7k
-         
-> 120+ interactive Python coding interview challenges (algorithms and data structures). Includes Anki flashcards.
-       
-
-## 40. [apachecn/AiLearning](http://github.com/apachecn/AiLearning)  ♥️ 17.5k
-         
-> AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP
-       
 
 
-## 41. [mitmproxy/mitmproxy](http://github.com/mitmproxy/mitmproxy)  ♥️ 15.8k
-         
-> An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.
-       
-
-## 42. [ryanoasis/nerd-fonts](http://github.com/ryanoasis/nerd-fonts)  ♥️ 15.6k
-         
-> 🔡 Iconic font aggregator, collection, and patcher. 40+ patched fonts, over 3,600 glyph/icons, includes popular colle…
-       
-
-## 43. [keon/algorithms](http://github.com/keon/algorithms)  ♥️ 15.5k
-         
-> Minimal examples of data structures and algorithms in Python
- 
-
-## 44. [satwikkansal/wtfpython](http://github.com/satwikkansal/wtfpython)  ♥️ 15.4k
-         
-> A collection of surprising Python snippets and lesser-known features.
-       
-
-## 45. [SeleniumHQ/selenium](http://github.com/SeleniumHQ/selenium)  ♥️ 15.1k
-         
-> A browser automation framework and ecosystem.
-       
-
-## 46. [reddit-archive/reddit](http://github.com/reddit-archive/reddit)  ♥️ 15.1k
-         
-> historical code from reddit.com
-       
-
-## 47. [encode/django-rest-framework](http://github.com/encode/django-rest-framework)  ♥️ 14.9k
-         
-> Web APIs for Django. ⚡️
- 
-
-## 48. [fastai/fastai](http://github.com/fastai/fastai)  ♥️ 14.8k
-         
-> The fastai deep learning library, plus lessons and tutorials
-       
-
-## 49. [sqlmapproject/sqlmap](http://github.com/sqlmapproject/sqlmap)  ♥️ 14.7k
-         
-> Automatic SQL injection and database takeover tool
-       
-
-## 50. [google/python-fire](http://github.com/google/python-fire)  ♥️ 14.5k
-         
-> Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object.
-       
 
 
-## 51. [keon/algorithms](http://github.com/keon/algorithms)  ♥️ 15.5k
-         
-> Minimal examples of data structures and algorithms in Python
- 
-
-## 52. [satwikkansal/wtfpython](http://github.com/satwikkansal/wtfpython)  ♥️ 15.4k
-         
-> A collection of surprising Python snippets and lesser-known features.
-       
-
-## 53. [SeleniumHQ/selenium](http://github.com/SeleniumHQ/selenium)  ♥️ 15.1k
-         
-> A browser automation framework and ecosystem.
-       
-
-## 54. [reddit-archive/reddit](http://github.com/reddit-archive/reddit)  ♥️ 15.1k
-         
-> historical code from reddit.com
-       
-
-## 55. [encode/django-rest-framework](http://github.com/encode/django-rest-framework)  ♥️ 14.9k
-         
-> Web APIs for Django. ⚡️
- 
-
-## 56. [fastai/fastai](http://github.com/fastai/fastai)  ♥️ 14.8k
-         
-> The fastai deep learning library, plus lessons and tutorials
-       
-
-## 57. [sqlmapproject/sqlmap](http://github.com/sqlmapproject/sqlmap)  ♥️ 14.7k
-         
-> Automatic SQL injection and database takeover tool
-       
-
-## 58. [google/python-fire](http://github.com/google/python-fire)  ♥️ 14.5k
-         
-> Python Fire is a library for automatically generating command line interfaces (CLIs) from absolutely any Python object.
-       
-
-## 59. [lukasz-madon/awesome-remote-job](http://github.com/lukasz-madon/awesome-remote-job)  ♥️ 14.5k
-         
-> A curated list of awesome remote jobs and resources. Inspired by https://github.com/vinta/awesome-python
- 
-
-## 60. [odoo/odoo](http://github.com/odoo/odoo)  ♥️ 14.4k
-         
-> Odoo. Open Source Apps To Grow Your Business.
-       
-
-
-## 61. [521xueweihan/HelloGitHub](http://github.com/521xueweihan/HelloGitHub)  ♥️ 14.3k
-         
-> Find pearls on open-source seashore 分享 GitHub 上有趣、入门级的开源项目
-       
-
-## 62. [HelloZeroNet/ZeroNet](http://github.com/HelloZeroNet/ZeroNet)  ♥️ 14.1k
-         
-> ZeroNet - Decentralized websites using Bitcoin crypto and BitTorrent network
-       
-
-## 63. [azl397985856/leetcode](http://github.com/azl397985856/leetcode)  ♥️ 14.1k
-         
-> LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)
-       
-
-## 64. [explosion/spaCy](http://github.com/explosion/spaCy)  ♥️ 14k
-         
-> 💫 Industrial-strength Natural Language Processing (NLP) with Python and Cython
-       
-
-## 65. [wangshub/wechat_jump_game](http://github.com/wangshub/wechat_jump_game)  ♥️ 13.9k
-         
-> 微信《跳一跳》Python 辅助
-       
-
-## 66. [nicolargo/glances](http://github.com/nicolargo/glances)  ♥️ 13.9k
-         
-> Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows operating systems.
-       
-
-## 67. [ipython/ipython](http://github.com/ipython/ipython)  ♥️ 13.7k
-         
-> Official repository for IPython itself. Other repos in the IPython organization contain things like the website, docu…
-       
-
-## 68. [binux/pyspider](http://github.com/binux/pyspider)  ♥️ 13.4k
-         
-> A Powerful Spider(Web Crawler) System in Python.
-       
-
-## 69. [getredash/redash](http://github.com/getredash/redash)  ♥️ 13.3k
-         
-> Make Your Company Data Driven. Connect to any data source, easily visualize, dashboard and share your data.
-       
-
-## 70. [StevenBlack/hosts](http://github.com/StevenBlack/hosts)  ♥️ 13.1k
-         
-> Extending and consolidating hosts files from several well-curated sources like adaway.org, mvps.org, malwaredomainlis…
-       
-
-
-## 71. [celery/celery](http://github.com/celery/celery)  ♥️ 13k
+## 71. [celery/celery](http://github.com/celery/celery)  ♥️ 13.1k
          
 > Distributed Task Queue (development branch)
        
 
-## 72. [machinelearningmindset/TensorFlow-Course](http://github.com/machinelearningmindset/TensorFlow-Course)  ♥️ 12.7k
+## 72. [machinelearningmindset/TensorFlow-Course](http://github.com/machinelearningmindset/TensorFlow-Course)  ♥️ 12.8k
          
 > Simple and ready-to-use tutorials for TensorFlow 
        
@@ -325,7 +225,7 @@ categories:
 > Animation engine for explanatory math videos
        
 
-## 82. [psf/black](http://github.com/psf/black)  ♥️ 11.6k
+## 82. [psf/black](http://github.com/psf/black)  ♥️ 11.7k
          
 > The uncompromising Python code formatter
        
@@ -350,22 +250,22 @@ categories:
 > The fundamental package for scientific computing with Python.
        
 
-## 87. [bokeh/bokeh](http://github.com/bokeh/bokeh)  ♥️ 11k
-         
-> Interactive Data Visualization in the browser, from Python
- 
-
-## 88. [dennybritz/reinforcement-learning](http://github.com/dennybritz/reinforcement-learning)  ♥️ 11k
+## 87. [dennybritz/reinforcement-learning](http://github.com/dennybritz/reinforcement-learning)  ♥️ 11.1k
          
 > Implementation of Reinforcement Learning Algorithms. Python, OpenAI Gym, Tensorflow. Exercises and Solutions to accom…
        
+
+## 88. [bokeh/bokeh](http://github.com/bokeh/bokeh)  ♥️ 11.1k
+         
+> Interactive Data Visualization in the browser, from Python
+ 
 
 ## 89. [eclipse/deeplearning4j](http://github.com/eclipse/deeplearning4j)  ♥️ 11k
          
 > Eclipse Deeplearning4j, ND4J, DataVec and more - deep learning & linear algebra for Java/Scala with GPUs + Spark
        
 
-## 90. [tqdm/tqdm](http://github.com/tqdm/tqdm)  ♥️ 10.9k
+## 90. [tqdm/tqdm](http://github.com/tqdm/tqdm)  ♥️ 11k
          
 > A Fast, Extensible Progress Bar for Python and CLI
        
@@ -391,17 +291,17 @@ categories:
 > Scalable user load testing tool written in Python
  
 
-## 95. [apachecn/awesome-algorithm](http://github.com/apachecn/awesome-algorithm)  ♥️ 10.6k
-         
-> 项目永久冻结，迁移至新地址：
-       
-
-## 96. [dianping/cat](http://github.com/dianping/cat)  ♥️ 10.5k
+## 95. [dianping/cat](http://github.com/dianping/cat)  ♥️ 10.6k
          
 > CAT 作为服务端项目基础组件，提供了 Java, C/C++, Node.js, Python, Go 等多语言客户端，已经在美团点评的基础架构中间件框架（MVC框架，RPC框架，数据库框架，缓存框架等，消息队列，配置系统等）深度集…
        
 
-## 97. [taizilongxu/interview_python](http://github.com/taizilongxu/interview_python)  ♥️ 10.3k
+## 96. [apachecn/awesome-algorithm](http://github.com/apachecn/awesome-algorithm)  ♥️ 10.5k
+         
+> 项目永久冻结，迁移至新地址：
+       
+
+## 97. [taizilongxu/interview_python](http://github.com/taizilongxu/interview_python)  ♥️ 10.4k
          
 > 关于Python的面试题
        

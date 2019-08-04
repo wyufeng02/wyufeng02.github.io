@@ -58,7 +58,7 @@ date: 2019-08-04
 
 # Screenshots
 <pre>
-<img src="screenshots/Mediminder_Home Screen.jpg" width="250"/> <img src="screenshots/Mediminder_Register Screen.jpg" width="250"/> <img src="screenshots/Mediminder_ Register Error.jpg" width="250"/> <img src="screenshots/Mediminder_Time Picker.jpg" width="250"/> <img src="screenshots/Mediminder_Data Filled.jpg" width="250"/> <img src="screenshots/Mediminder_Register Success.jpg" width="250"/> <img src="screenshots/Mediminder_Home Screen with Medicine.jpg" width="250"/> <img src="screenshots/Mediminder_Details Screen.jpg" width="250"/>  
+<img src="https://github.com/HossamElghamry/Mediminder/blob/master/screenshots/Mediminder_Home Screen.jpg" width="250"/> <img src="https://github.com/HossamElghamry/Mediminder/blob/master/screenshots/Mediminder_Register Screen.jpg?raw=true" width="250"/> <img src="https://github.com/HossamElghamry/Mediminder/blob/master/screenshots/Mediminder_ Register Error.jpg?raw=true" width="250"/> <img src="https://github.com/HossamElghamry/Mediminder/blob/master/screenshots/Mediminder_Time Picker.jpg?raw=true" width="250"/> <img src="https://github.com/HossamElghamry/Mediminder/blob/master/screenshots/Mediminder_Data Filled.jpg?raw=true" width="250"/> <img src="https://github.com/HossamElghamry/Mediminder/blob/master/screenshots/Mediminder_Register Success.jpg?raw=true" width="250"/> <img src="https://github.com/HossamElghamry/Mediminder/blob/master/screenshots/Mediminder_Home Screen with Medicine.jpg?raw=true" width="250"/> <img src="https://github.com/HossamElghamry/Mediminder/blob/master/screenshots/Mediminder_Details Screen.jpg?raw=true" width="250"/>  
 
 </pre>
 

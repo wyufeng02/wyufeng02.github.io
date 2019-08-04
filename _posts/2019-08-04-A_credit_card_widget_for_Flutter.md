@@ -27,7 +27,7 @@ A Flutter package allows you to easily implement the Credit card's UI easily wit
 
 ## Preview
 
-![The example app running in Android](https://github.com/simformsolutions/flutter_credit_card/blob/master/preview/preview.gif)
+![The example app running in Android](https://github.com/simformsolutions/flutter_credit_card/blob/master/preview/preview.gif?raw=true)
 
 ## Installing
 

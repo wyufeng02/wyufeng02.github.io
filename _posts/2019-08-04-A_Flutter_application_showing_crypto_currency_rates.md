@@ -25,8 +25,8 @@ This application allows to view crypto currency rates from [Coin Market Cap](htt
 
 ## Screenshots
 
-![Crypto currency list](/screenshots/crypto-currency-list.png "Crypto currencies list")
-![Crypto currency details](/screenshots/crypto-currency-detail.png "Crypto currency details")
+![Crypto currency list](https://github.com/klisiewicz/crypto-currency/blob/master/screenshots/crypto-currency-list.png?raw=true "Crypto currencies list")
+![Crypto currency details](https://github.com/klisiewicz/crypto-currency/blob/master/screenshots/crypto-currency-detail.png?raw=true "Crypto currency details")
 
 ## Built with
 * [Flutter](https://github.com/flutter/flutter) - Flutter makes it easy and fast to build beautiful mobile apps.

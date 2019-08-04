@@ -24,16 +24,16 @@ date: 2019-08-04
 A sample app to showcase classified app using flutter. 
 
 # Demo
-<img height="480px" width="270px" src="https://github.com/flutter-devs/flutter_classified_app/blob/master/screens/demo.gif"/>
+<img height="480px" width="270px" src="https://github.com/flutter-devs/flutter_classified_app/blob/master/screens/demo.gif?raw=true"/>
 
 
 
 # Android Screen
-<img height="480px" src="https://github.com/flutter-devs/flutter_classified_app/blob/master/screens/android1.png"/> 
+<img height="480px" src="https://github.com/flutter-devs/flutter_classified_app/blob/master/screens/android1.png?raw=true"/> 
 
 
 # iOS Screen
-<img height="480px" src="https://github.com/flutter-devs/flutter_classified_app/blob/master/screens/iphone1.png"/>
+<img height="480px" src="https://github.com/flutter-devs/flutter_classified_app/blob/master/screens/iphone1.png?raw=true"/>
 
 
 ## Getting Started

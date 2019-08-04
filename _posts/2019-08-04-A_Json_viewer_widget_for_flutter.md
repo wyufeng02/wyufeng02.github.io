@@ -75,5 +75,5 @@ Widget build(BuildContext context) {
 ```
 
 ## Demo
-![Demo](https://github.com/demdog/flutter_json_widget/blob/master/example.gif)
+![Demo](https://github.com/demdog/flutter_json_widget/blob/master/example.gif?raw=true)
 ## Github主页 👉[demdog/flutter_json_widget](http://github.com/demdog/flutter_json_widget)

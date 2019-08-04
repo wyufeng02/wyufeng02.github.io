@@ -27,9 +27,9 @@ I apply MobX as state management for this app. At this time, I only implement th
 There are still room for improvements, so I'm open for any feedback. Sharing with one another helps us all grow and learn. ✌️
 
 ### Screenshots
-<img height="480px" src="screenshot/list.png"/> <img height="480px" src="screenshot/darkmode.png"/>
-<img height="480px" src="screenshot/monstercard.png"/> <img height="480px" src="screenshot/monstercarddark.png"/>
-<img height="480px" src="screenshot/spellcard.png"/> <img height="480px" src="screenshot/trapcard.png"/>
+<img height="480px" src="https://github.com/fikrirazzaq/YugiohCards/blob/master/screenshot/list.png?raw=true"/> <img height="480px" src="https://github.com/fikrirazzaq/YugiohCards/blob/master/screenshot/darkmode.png?raw=true"/>
+<img height="480px" src="https://github.com/fikrirazzaq/YugiohCards/blob/master/screenshot/monstercard.png?raw=true"/> <img height="480px" src="https://github.com/fikrirazzaq/YugiohCards/blob/master/screenshot/monstercarddark.png?raw=true"/>
+<img height="480px" src="https://github.com/fikrirazzaq/YugiohCards/blob/master/screenshot/spellcard.png?raw=true"/> <img height="480px" src="https://github.com/fikrirazzaq/YugiohCards/blob/master/screenshot/trapcard.png?raw=true"/>
 
 
 ### Api Service

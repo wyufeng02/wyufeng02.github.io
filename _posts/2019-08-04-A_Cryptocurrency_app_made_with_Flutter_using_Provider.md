@@ -75,6 +75,6 @@ You can aquire the current app version (apk) <a href="https://github.com/KarimEl
 
 ## Screenshots
 
-<p align="center"><img height="480px" src="screenshots/C1.png"/> <img height="480px" src="screenshots/C2.png"/> <img height="480px" src="screenshots/C5.png"/> <img height="480px" src="screenshots/C3.png"/> <img height="480px" src="screenshots/C4.png"/></p>
+<p align="center"><img height="480px" src="https://github.com/KarimElghamry/cryptoholic/blob/master/screenshots/C1.png?raw=true"/> <img height="480px" src="https://github.com/KarimElghamry/cryptoholic/blob/master/screenshots/C2.png?raw=true"/> <img height="480px" src="https://github.com/KarimElghamry/cryptoholic/blob/master/screenshots/C5.png?raw=true"/> <img height="480px" src="https://github.com/KarimElghamry/cryptoholic/blob/master/screenshots/C3.png?raw=true"/> <img height="480px" src="https://github.com/KarimElghamry/cryptoholic/blob/master/screenshots/C4.png?raw=true"/></p>
 
-## Github主页 👉[KarimElghamry/cryptoholic](http://github.com/KarimElghamry/cryptoholic)
+## Github主页 👉[KarimElghamry/cryptoholic](https://github.com/KarimElghamry/cryptoholic)

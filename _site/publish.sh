@@ -1,6 +1,8 @@
 
 bundle exec jekyll build
 
+#bundle exec jekyll serve
+
 git add .
 git commit -m 'update flutter aswome'
 git push -u origin master

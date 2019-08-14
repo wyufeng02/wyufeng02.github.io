@@ -7,82 +7,6 @@
 		<atom:link href="https://code4flutter.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title></title>
-				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/HossamElghamry/Zodoscope/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/Zodoscope.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-
-  &lt;p&gt;A Horoscope Forcasting Application Built with Flutter, for Android and iOS.&lt;/p&gt;
-
-&lt;/blockquote&gt;
-
-&lt;h1 align=&quot;center&quot;&gt;Zodoscope&lt;/h1&gt;
-
-&lt;div align=&quot;center&quot;&gt;
-  &lt;strong&gt;A Horoscope Forcasting Application&lt;/strong&gt;
-&lt;/div&gt;
-&lt;div align=&quot;center&quot;&gt;
-  Built with Flutter, for Android and iOS
-&lt;/div&gt;
-
-&lt;p&gt;API used: http://horoscope-api.herokuapp.com/&lt;/p&gt;
-
-&lt;h2 id=&quot;key-features&quot;&gt;Key Features&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;All Zodiac Signs Horoscopes&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Information about every zodiac sign’s horoscope with signs&lt;/li&gt;
-      &lt;li&gt;Beautiful slider animation with consistent zodiac icons&lt;/li&gt;
-      &lt;li&gt;Sign hero animation between page transitions&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;API Reading and JSON Manipulation&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Using HTTP requests to take data from the mentioned API&lt;/li&gt;
-      &lt;li&gt;Parsing JSON strings into actual string, displayable format&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Daily, Weekly, Monthly and Yearly Forcasting&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Interval can be change by tapping the FAB&lt;/li&gt;
-      &lt;li&gt;Fluid interval preview animation&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Network Connectivity Check&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Stream listening to connectivity status&lt;/li&gt;
-      &lt;li&gt;Error report upon internet connection issues or data retrieval problems&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;PS: To navigate from the details screen back to the homescreen, simply swipe the sign down.&lt;/p&gt;
-
-&lt;h1 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h1&gt;
-
-&lt;div align=&quot;center&quot;&gt;
-  &lt;pre&gt;
-    &lt;img src=&quot;https://raw.githubusercontent.com/HossamElghamry/Zodoscope/master/preview/zodoscope_homepage.jpg&quot; width=&quot;250&quot; /&gt;  &lt;img src=&quot;preview/zodoscope_details.jpg&quot; width=&quot;250&quot; /&gt;
-  &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;gif-preview&quot;&gt;GIF Preview&lt;/h1&gt;
-&lt;div align=&quot;center&quot;&gt;
-  &lt;pre&gt;
-    &lt;img src=&quot;https://raw.githubusercontent.com/HossamElghamry/Zodoscope/master/preview/zodoscope_preview.gif&quot; width=&quot;300&quot; /&gt;
-  &lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;github主页-hossamelghamryzodoscope&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/HossamElghamry/Zodoscope&quot;&gt;HossamElghamry/Zodoscope&lt;/a&gt;&lt;/h2&gt;
-</description>
-				<pubDate>Wed, 14 Aug 2019 23:39:26 +0800</pubDate>
-				<link>https://code4flutter.com/2019/08/14/2019-08-14-A_Horoscope_Forcasting_Application_Built_with_Flutter/</link>
-				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/2019-08-14-A_Horoscope_Forcasting_Application_Built_with_Flutter/</guid>
-			</item>
-		
-			<item>
 				<title>Use Flutter_web to implement the UI challenge of Google Maps</title>
 				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/flutter-ui-challenges/flutter_web_challenge_googlemaps/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
 
@@ -1118,6 +1042,114 @@ SOFTWARE.
 				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
 				<link>https://code4flutter.com/2019/08/14/Flutter_representation_of_a_furniture_app_UI/</link>
 				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/Flutter_representation_of_a_furniture_app_UI/</guid>
+			</item>
+		
+			<item>
+				<title>Flutter representation of a Social App Concept i found in Uplabs</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/JideGuru/FlutterSocialAppUIKit/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/FlutterSocialAppUIKitv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;Flutter representation of a Social App Concept i found on Uplabs.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;-flutter-social-app-concept-&quot;&gt;🔥🔥 Flutter Social App Concept &lt;a href=&quot;http://makeapullrequest.com&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&quot; alt=&quot;PRs Welcome&quot; /&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;Flutter representation of a Social App Concept i found on Uplabs.&lt;/p&gt;
+
+&lt;p&gt;Star⭐ the repo if you like what you see😉.&lt;/p&gt;
+
+&lt;p&gt;Images are from &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;ss/app.apk&quot;&gt;&lt;img src=&quot;https://playerzon.com/asset/download.png&quot; width=&quot;200&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ls.graphics/free/simple-iphone-x-mockups&quot;&gt;Link to Mockup&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;-requirements&quot;&gt;✨ Requirements&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Any Operating System (ie. MacOS X, Linux, Windows)&lt;/li&gt;
+  &lt;li&gt;Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)&lt;/li&gt;
+  &lt;li&gt;A little knowledge of Dart and Flutter&lt;/li&gt;
+  &lt;li&gt;A brain to think 🤓🤓&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;-screenshots&quot;&gt;📸 ScreenShots&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterSocialAppUIKit/master/ss/1.png&quot; /&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterSocialAppUIKit/master/ss/2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Light&lt;/th&gt;
+      &lt;th&gt;Dark&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterSocialAppUIKit/master/ss/3.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;ss/4.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterSocialAppUIKit/master/ss/5.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;ss/6.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterSocialAppUIKit/master/ss/7.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;ss/8.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterSocialAppUIKit/master/ss/9.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;ss/10.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterSocialAppUIKit/master/ss/11.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;ss/12.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterSocialAppUIKit/master/ss/13.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;ss/14.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;-toggle-theme&quot;&gt;🌗 Toggle theme&lt;/h2&gt;
+&lt;p&gt;To toggle the theme, change the &lt;code class=&quot;highlighter-rouge&quot;&gt;isDark&lt;/code&gt; variable in &lt;code class=&quot;highlighter-rouge&quot;&gt;main.dart&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; for dark and &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; for light.&lt;/p&gt;
+
+&lt;h2 id=&quot;-authors&quot;&gt;🤓 Author(s)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Olusegun Festus Babajide&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;️--donate&quot;&gt;☕️  Donate&lt;/h2&gt;
+
+&lt;p&gt;Buy me a cup of Coffee😁&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Mode&lt;/th&gt;
+      &lt;th&gt;Link/Wallet&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bitcoin&lt;/td&gt;
+      &lt;td&gt;3GrziPW6Gz6S5mXo2EsiYpafW8vXVq5Rbv&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;-licence&quot;&gt;🔖 LICENCE&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.wtfpl.net/about/&quot;&gt;WTFPL&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;github主页-jidegurufluttersocialappuikit&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/JideGuru/FlutterSocialAppUIKit&quot;&gt;JideGuru/FlutterSocialAppUIKit&lt;/a&gt;&lt;/h2&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/Flutter_representation_of_a_Social_App_Concept_i_found_in_Uplabs/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/Flutter_representation_of_a_Social_App_Concept_i_found_in_Uplabs/</guid>
 			</item>
 		
 	</channel>

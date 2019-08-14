@@ -1,0 +1,1357 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter,进度条,flutter开发,圆形进度条," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="文章来源： https://mightytechno.com/flutter-circle-progress-using-custom-painter/">
+<meta name="keywords" content="flutter, 进度条, flutter开发, 圆形进度条">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flutter圆形进度条-使用自定义圆形进度与画板实现">
+<meta property="og:url" content="https://code4flutter.com/2019/07/11/circle-progress/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="文章来源： https://mightytechno.com/flutter-circle-progress-using-custom-painter/">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="flutter圆形进度条-使用自定义圆形进度与画板实现">
+<meta name="twitter:description" content="文章来源： https://mightytechno.com/flutter-circle-progress-using-custom-painter/">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2019/07/11/circle-progress/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>flutter圆形进度条-使用自定义圆形进度与画板实现 - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>flutter圆形进度条-使用自定义圆形进度与画板实现</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2019/07/11/circle-progress/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            flutter圆形进度条-使用自定义圆形进度与画板实现
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/11/circle-progress/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2019/07/11/circle-progress/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  633
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <p>文章来源： https://mightytechno.com/flutter-circle-progress-using-custom-painter/</p>
+
+<div class="entry-content clr" itemprop="text"><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有多个使用案例，我们需要使用圈子进度，如显示健身进度，每周完成进度等。</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用CustomPaint小部件在几分钟内在Flutter中实现循环进度，并为CustomPainter类提供自定义实现。</font></font></p><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">结构体</font></font></h3><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在进入编码之前，我们需要考虑结构。</font><font style="vertical-align: inherit;">在这里，我们需要展示以下内容</font></font></p><ul><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">显示文本进度</font></font></li><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">显示代表填充背景的完整圆圈</font></font></li><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">显示显示当前进度的Arc</font></font></li><li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">显示进度时添加动画</font></font></li></ul><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">履行</font></font></h3><h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CustomPainter</font></font></h4><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在Scaffold体内，包裹我们的自定义小部件将允许在屏幕中央显示进度。</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后，您可以提供</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CustomPaint</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为子窗口小部件。</font><font style="vertical-align: inherit;">在这里，您需要显示文本小部件之外的进度。</font><font style="vertical-align: inherit;">因此，您需要将CustomPainter小部件作为</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">foregroundPainter</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">传递</font><font style="vertical-align: inherit;">。</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后，您需要创建一个CustomProgress。</font><font style="vertical-align: inherit;">要在动画发生时更改进度，我们需要将进度传递给窗口小部件。</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">正如我上面提到的，我们有两个圆圈来显示进度和实际进度的基础。</font><font style="vertical-align: inherit;">为此，您需要创建一个两个绘制对象来绘制“完整圆”和“绘制圆弧”。</font><font style="vertical-align: inherit;">检查此代码。</font></font></p><pre class=" language-dart"><code class=" language-dart">
+<span class="token keyword">class</span> <span class="token class-name">CircleProgress</span> <span class="token keyword">extends</span> <span class="token class-name">CustomPainter</span><span class="token punctuation">{</span><font></font>
+<font></font>
+  double currentProgress<span class="token punctuation">;</span><font></font>
+<font></font>
+  <span class="token function">CircleProgress</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>currentProgress<span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+  <span class="token metadata symbol">@override</span>
+  <span class="token keyword">void</span> <span class="token function">paint</span><span class="token punctuation">(</span>Canvas canvas<span class="token punctuation">,</span> Size size<span class="token punctuation">)</span> <span class="token punctuation">{</span><font></font>
+<font></font>
+    <span class="token comment">//this is base circle</span>
+    Paint outerCircle <span class="token operator">=</span> <span class="token function">Paint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span>strokeWidth <span class="token operator">=</span> <span class="token number">10</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span>color <span class="token operator">=</span> Colors<span class="token punctuation">.</span>black
+        <span class="token punctuation">.</span><span class="token punctuation">.</span>style <span class="token operator">=</span> PaintingStyle<span class="token punctuation">.</span>stroke<span class="token punctuation">;</span><font></font>
+<font></font>
+    Paint completeArc <span class="token operator">=</span> <span class="token function">Paint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span>strokeWidth <span class="token operator">=</span> <span class="token number">10</span>
+      <span class="token punctuation">.</span><span class="token punctuation">.</span>color <span class="token operator">=</span> Colors<span class="token punctuation">.</span>redAccent
+      <span class="token punctuation">.</span><span class="token punctuation">.</span>style <span class="token operator">=</span> PaintingStyle<span class="token punctuation">.</span>stroke
+      <span class="token punctuation">.</span><span class="token punctuation">.</span>strokeCap  <span class="token operator">=</span> StrokeCap<span class="token punctuation">.</span>round<span class="token punctuation">;</span><font></font>
+<font></font>
+    Offset center <span class="token operator">=</span> <span class="token function">Offset</span><span class="token punctuation">(</span>size<span class="token punctuation">.</span>width<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">,</span> size<span class="token punctuation">.</span>height<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    double radius <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>size<span class="token punctuation">.</span>width<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">,</span>size<span class="token punctuation">.</span>height<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">10</span><span class="token punctuation">;</span><font></font>
+<font></font>
+    canvas<span class="token punctuation">.</span><span class="token function">drawCircle</span><span class="token punctuation">(</span>center<span class="token punctuation">,</span> radius<span class="token punctuation">,</span> outerCircle<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// this draws main outer circle</span><font></font>
+<font></font>
+    double angle <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> pi <span class="token operator">*</span> <span class="token punctuation">(</span>currentProgress<span class="token operator">/</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+    canvas<span class="token punctuation">.</span><span class="token function">drawArc</span><span class="token punctuation">(</span>Rect<span class="token punctuation">.</span><span class="token function">fromCircle</span><span class="token punctuation">(</span>center<span class="token punctuation">:</span> center<span class="token punctuation">,</span>radius<span class="token punctuation">:</span> radius<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">-</span>pi<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">,</span> angle<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> completeArc<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><font></font>
+<font></font>
+  <span class="token metadata symbol">@override</span>
+  bool <span class="token function">shouldRepaint</span><span class="token punctuation">(</span>CustomPainter oldDelegate<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// TODO: implement shouldRepaint</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在基本实现完成了。</font><font style="vertical-align: inherit;">接下来我们可以添加一个动画来使这个更酷。</font></font></p><h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动画</font></font></h3><p>In here you can use tween animation to start from 0 and end in the percentage which you want to show on the progress. Then you can assign the current animation value to the text and you can pass that as a parameter to CircleProgress class.</p><pre class=" language-dart"><code class=" language-dart">
+<span class="token keyword">class</span> <span class="token class-name">_CircleProgressState</span> <span class="token keyword">extends</span> <span class="token class-name">State</span> <span class="token keyword">with</span> SingleTickerProviderStateMixin <span class="token punctuation">{</span><font></font>
+<font></font>
+  AnimationController progressController<span class="token punctuation">;</span>
+  Animation animation<span class="token punctuation">;</span><font></font>
+<font></font>
+  <span class="token metadata symbol">@override</span>
+  <span class="token keyword">void</span> <span class="token function">initState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// TODO: implement initState</span>
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">initState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    progressController <span class="token operator">=</span> <span class="token function">AnimationController</span><span class="token punctuation">(</span>vsync<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">,</span>duration<span class="token punctuation">:</span> <span class="token function">Duration</span><span class="token punctuation">(</span>milliseconds<span class="token punctuation">:</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    animation <span class="token operator">=</span> <span class="token function">Tween</span><span class="token punctuation">(</span>begin<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>end<span class="token punctuation">:</span> <span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">animate</span><span class="token punctuation">(</span>progressController<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token function">addListener</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><font></font>
+<font></font>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><font></font>
+<font></font>
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Scaffold</span><span class="token punctuation">(</span>
+      appBar<span class="token punctuation">:</span> <span class="token function">AppBar</span><span class="token punctuation">(</span>
+        title<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span>widget<span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      body<span class="token punctuation">:</span> <span class="token function">Center</span><span class="token punctuation">(</span>
+        child<span class="token punctuation">:</span> <span class="token function">CustomPaint</span><span class="token punctuation">(</span><font></font>
+<font></font>
+          foregroundPainter<span class="token punctuation">:</span> <span class="token function">CircleProgress</span><span class="token punctuation">(</span>animation<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// this will add custom painter after child</span>
+          child<span class="token punctuation">:</span> <span class="token function">Container</span><span class="token punctuation">(</span>
+            width<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            height<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+            child<span class="token punctuation">:</span> <span class="token function">GestureDetector</span><span class="token punctuation">(</span>
+                onTap<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                  <span class="token keyword">if</span><span class="token punctuation">(</span>animation<span class="token punctuation">.</span>value <span class="token operator">==</span> <span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    progressController<span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    progressController<span class="token punctuation">.</span><span class="token function">forward</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                child<span class="token punctuation">:</span> <span class="token function">Center</span><span class="token punctuation">(</span>child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span><span class="token string">"${animation.value.toInt()}%"</span><span class="token punctuation">,</span>style<span class="token punctuation">:</span> <span class="token function">TextStyle</span><span class="token punctuation">(</span>
+                  fontSize<span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+                  fontWeight<span class="token punctuation">:</span> FontWeight<span class="token punctuation">.</span>bold
+                <span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span><font></font>
+<font></font>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>Check the Video</p>
+
+<iframe title="动画的flutter径向进展 - 一步一步" width="600" height="340" src="https://www.youtube.com/embed/3J5FR2H5FDk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>&lt;/div&gt;&lt;/figure&gt;&lt;/div&gt;</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter" rel="tag"># flutter</a>
+          
+            
+            <a href="/tag/#/%E8%BF%9B%E5%BA%A6%E6%9D%A1" rel="tag"># 进度条</a>
+          
+            
+            <a href="/tag/#/flutter%E5%BC%80%E5%8F%91" rel="tag"># flutter开发</a>
+          
+            
+            <a href="/tag/#/%E5%9C%86%E5%BD%A2%E8%BF%9B%E5%BA%A6%E6%9D%A1" rel="tag"># 圆形进度条</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/11/flutter-boring-tab-to-cool-tab/" rel="next" title="做一个酷炫的flutter tab">
+                <i class="fa fa-chevron-left"></i> 做一个酷炫的flutter tab
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/08/flutterstream/" rel="prev" title="Flutter完整开发实战详解(十一、全面深入理解Stream)">
+                Flutter完整开发实战详解(十一、全面深入理解Stream) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2019/07/11/circle-progress/';
+              this.page.identifier = '/2019/07/11/circle-progress/';
+              this.page.title = 'flutter圆形进度条-使用自定义圆形进度与画板实现';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

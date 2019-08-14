@@ -1,0 +1,1902 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter,Location,Maps,UI," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="1. 前言 Flutter作为时下最流行的技术之一，凭借其出色的性能以及抹平多端的差异优势，早已引起大批技术爱好者的关注，甚至一些闲鱼，美团，腾讯等大公司均已开始使用。虽然目前其生态还没有完全成熟，但身靠背后的Google加持，其发展速度已经足够惊人，可以预见将来对Flutter开发人员的需求也会随之增长。 无论是为了现在的技术尝鲜还是将来的潮流趋势，都9102年了，作为一个前端开发者，似乎没有理由不去尝试它。正是带着这样的心理，笔者也开始学习Flutter，同时建了一个用于练习的仓库，后续所有代码都会托管在上面，欢迎star，一起学习。 今天分享的是Flutter中最常用到的一些基础组件，它们是构成UI界面的基础元素：容器，行，列，绝对定位布局，文本，图片和图标等。 2. 基础组件 2.1 Container(容器组件) Container组件是最常用的布局组件之一，可以认为它是web开发中的div，rn开发中的View。其往往可以用来控制大小、背景颜色、边框、阴影、内外边距和内容排列方式等。我们先来看下其构造函数： Container({ Key key, double width, double height, this.margin, this.padding, Color color, this.alignment, BoxConstraints constraints, Decoration decoration, this.foregroundDecoration, this.transform, this.child, }) 2.1.1 width，height，margin，padding 这些属性的含义和我们已经熟知的并没有区别。唯一需要注意的是，margin和padding的赋值不是一个简单的数字，因为其有left, top, right, bottom四个方向的值需要设置。Flutter提供了EdgeInsets这个类，帮助我们方便地生成四个方向的值。通常情况下，我们可能会用到EdgeInsets的4种构造方法： EdgeInsets.all(value): 用于设置4个方向一样的值； EdgeInsets.only(left: val1, top: val2, right: val3, bottom: val4): 可以单独设置某个方向的值； EdgeInsets.symmetric(horizontal: val1, vertical: val2): 用于设置水平/垂直方向上的值； EdgeInsets.fromLTRB(left, top, right, bottom): 按照左上右下的顺序设置4个方向的值。 2.1.2 color 该属性的含义是背景颜色，等同于web/rn中的backgroundColor。需要注意的是Flutter中有一个专门表示颜色的Color类，而非我们常用的字符串。不过我们可以非常轻松地进行转换，举个栗子： 在web/rn中我们会用&apos;#FF0000&apos;或&apos;red&apos;来表示红色，而在Flutter中，我们可以用Color(0xFFFF0000)或Colors.red来表示。 2.1.3 alignment 该属性是用来决定Container组件的子组件将以何种方式进行排列（PS：再也不用为怎么居中操心了）。其可选值通常会用到： Alignment.topLeft: 左上 Alignment.topCenter: 上中 Alignment.topRight: 右上 Alignment.centerLeft: 左中 Alignment.center: 居中 Alignment.centerRight: 右中 Alignment.bottomLeft: 左下 Alignment.bottomCenter: 下中 Alignment.bottomRight: 右下 2.1.4 constraints 在web/rn中我们通常会用minWidth/maxWidth/minHeight/maxHeight等属性来限制容器的宽高。在Flutter中，你需要使用BoxConstraints（盒约束）来实现该功能。 // 容器的大小将被限制在[100*100 ~ 200*200]内 BoxConstraints( minWidth: 100, maxWidth: 200, minHeight: 100, maxHeight: 200, ) 2.1.5 decoration 该属性非常强大，字面意思是装饰，因为通过它你可以设置边框，阴影，渐变，圆角等常用属性。BoxDecoration继承自Decoration类，因此我们通常会生成一个BoxDecoration实例来设置这些属性。 1) 边框 可以用Border.all构造函数直接生成4条边框，也可以用Border构造函数单独设置不同方向上的边框。不过令人惊讶的是官方提供的边框竟然不支持虚线（issue在这里）。 // 同时设置4条边框：1px粗细的黑色实线边框 BoxDecoration( border: Border.all(color: Colors.black, width: 1, style: BorderStyle.solid) )">
+<meta name="keywords" content="flutter, Location, Maps, UI">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用 Flutter 构建漂亮的 UI 界面 - 基础组件篇">
+<meta property="og:url" content="https://code4flutter.com/2019/07/08/flutterbuildbeautyui/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="1. 前言 Flutter作为时下最流行的技术之一，凭借其出色的性能以及抹平多端的差异优势，早已引起大批技术爱好者的关注，甚至一些闲鱼，美团，腾讯等大公司均已开始使用。虽然目前其生态还没有完全成熟，但身靠背后的Google加持，其发展速度已经足够惊人，可以预见将来对Flutter开发人员的需求也会随之增长。 无论是为了现在的技术尝鲜还是将来的潮流趋势，都9102年了，作为一个前端开发者，似乎没有理由不去尝试它。正是带着这样的心理，笔者也开始学习Flutter，同时建了一个用于练习的仓库，后续所有代码都会托管在上面，欢迎star，一起学习。 今天分享的是Flutter中最常用到的一些基础组件，它们是构成UI界面的基础元素：容器，行，列，绝对定位布局，文本，图片和图标等。 2. 基础组件 2.1 Container(容器组件) Container组件是最常用的布局组件之一，可以认为它是web开发中的div，rn开发中的View。其往往可以用来控制大小、背景颜色、边框、阴影、内外边距和内容排列方式等。我们先来看下其构造函数： Container({ Key key, double width, double height, this.margin, this.padding, Color color, this.alignment, BoxConstraints constraints, Decoration decoration, this.foregroundDecoration, this.transform, this.child, }) 2.1.1 width，height，margin，padding 这些属性的含义和我们已经熟知的并没有区别。唯一需要注意的是，margin和padding的赋值不是一个简单的数字，因为其有left, top, right, bottom四个方向的值需要设置。Flutter提供了EdgeInsets这个类，帮助我们方便地生成四个方向的值。通常情况下，我们可能会用到EdgeInsets的4种构造方法： EdgeInsets.all(value): 用于设置4个方向一样的值； EdgeInsets.only(left: val1, top: val2, right: val3, bottom: val4): 可以单独设置某个方向的值； EdgeInsets.symmetric(horizontal: val1, vertical: val2): 用于设置水平/垂直方向上的值； EdgeInsets.fromLTRB(left, top, right, bottom): 按照左上右下的顺序设置4个方向的值。 2.1.2 color 该属性的含义是背景颜色，等同于web/rn中的backgroundColor。需要注意的是Flutter中有一个专门表示颜色的Color类，而非我们常用的字符串。不过我们可以非常轻松地进行转换，举个栗子： 在web/rn中我们会用&apos;#FF0000&apos;或&apos;red&apos;来表示红色，而在Flutter中，我们可以用Color(0xFFFF0000)或Colors.red来表示。 2.1.3 alignment 该属性是用来决定Container组件的子组件将以何种方式进行排列（PS：再也不用为怎么居中操心了）。其可选值通常会用到： Alignment.topLeft: 左上 Alignment.topCenter: 上中 Alignment.topRight: 右上 Alignment.centerLeft: 左中 Alignment.center: 居中 Alignment.centerRight: 右中 Alignment.bottomLeft: 左下 Alignment.bottomCenter: 下中 Alignment.bottomRight: 右下 2.1.4 constraints 在web/rn中我们通常会用minWidth/maxWidth/minHeight/maxHeight等属性来限制容器的宽高。在Flutter中，你需要使用BoxConstraints（盒约束）来实现该功能。 // 容器的大小将被限制在[100*100 ~ 200*200]内 BoxConstraints( minWidth: 100, maxWidth: 200, minHeight: 100, maxHeight: 200, ) 2.1.5 decoration 该属性非常强大，字面意思是装饰，因为通过它你可以设置边框，阴影，渐变，圆角等常用属性。BoxDecoration继承自Decoration类，因此我们通常会生成一个BoxDecoration实例来设置这些属性。 1) 边框 可以用Border.all构造函数直接生成4条边框，也可以用Border构造函数单独设置不同方向上的边框。不过令人惊讶的是官方提供的边框竟然不支持虚线（issue在这里）。 // 同时设置4条边框：1px粗细的黑色实线边框 BoxDecoration( border: Border.all(color: Colors.black, width: 1, style: BorderStyle.solid) )">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://camo.githubusercontent.com/b405ad5a5ed1c0ce4714d3fa5ce30f7a7146207f/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d633638643866343664366364643764622e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430">
+<meta property="og:image" content="500">
+<meta property="og:image" content="500">
+<meta property="og:image" content="500">
+<meta property="og:image" content="500">
+<meta property="og:image" content="500">
+<meta property="og:image" content="500">
+<meta property="og:image" content="350">
+<meta property="og:image" content="350">
+<meta property="og:image" content="https://camo.githubusercontent.com/1722fe4fe7492333a1df23dc8dd72b996872f632/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d656265626663353562333237656137302e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430">
+<meta property="og:image" content="https://camo.githubusercontent.com/d84922fe725417bba85eb4eab931c3795f0c89c1/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d623135353039303138646532663163652e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430">
+<meta property="og:image" content="https://camo.githubusercontent.com/b294435613447d923dcafb8d96e6a00055c7c925/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d323837653933333639626636353235392e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430">
+<meta property="og:image" content="https://camo.githubusercontent.com/4875f81452b9eaf636e803735adf3109b332a09f/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d383465646463623734616163633132312e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用 Flutter 构建漂亮的 UI 界面 - 基础组件篇">
+<meta name="twitter:description" content="1. 前言 Flutter作为时下最流行的技术之一，凭借其出色的性能以及抹平多端的差异优势，早已引起大批技术爱好者的关注，甚至一些闲鱼，美团，腾讯等大公司均已开始使用。虽然目前其生态还没有完全成熟，但身靠背后的Google加持，其发展速度已经足够惊人，可以预见将来对Flutter开发人员的需求也会随之增长。 无论是为了现在的技术尝鲜还是将来的潮流趋势，都9102年了，作为一个前端开发者，似乎没有理由不去尝试它。正是带着这样的心理，笔者也开始学习Flutter，同时建了一个用于练习的仓库，后续所有代码都会托管在上面，欢迎star，一起学习。 今天分享的是Flutter中最常用到的一些基础组件，它们是构成UI界面的基础元素：容器，行，列，绝对定位布局，文本，图片和图标等。 2. 基础组件 2.1 Container(容器组件) Container组件是最常用的布局组件之一，可以认为它是web开发中的div，rn开发中的View。其往往可以用来控制大小、背景颜色、边框、阴影、内外边距和内容排列方式等。我们先来看下其构造函数： Container({ Key key, double width, double height, this.margin, this.padding, Color color, this.alignment, BoxConstraints constraints, Decoration decoration, this.foregroundDecoration, this.transform, this.child, }) 2.1.1 width，height，margin，padding 这些属性的含义和我们已经熟知的并没有区别。唯一需要注意的是，margin和padding的赋值不是一个简单的数字，因为其有left, top, right, bottom四个方向的值需要设置。Flutter提供了EdgeInsets这个类，帮助我们方便地生成四个方向的值。通常情况下，我们可能会用到EdgeInsets的4种构造方法： EdgeInsets.all(value): 用于设置4个方向一样的值； EdgeInsets.only(left: val1, top: val2, right: val3, bottom: val4): 可以单独设置某个方向的值； EdgeInsets.symmetric(horizontal: val1, vertical: val2): 用于设置水平/垂直方向上的值； EdgeInsets.fromLTRB(left, top, right, bottom): 按照左上右下的顺序设置4个方向的值。 2.1.2 color 该属性的含义是背景颜色，等同于web/rn中的backgroundColor。需要注意的是Flutter中有一个专门表示颜色的Color类，而非我们常用的字符串。不过我们可以非常轻松地进行转换，举个栗子： 在web/rn中我们会用&apos;#FF0000&apos;或&apos;red&apos;来表示红色，而在Flutter中，我们可以用Color(0xFFFF0000)或Colors.red来表示。 2.1.3 alignment 该属性是用来决定Container组件的子组件将以何种方式进行排列（PS：再也不用为怎么居中操心了）。其可选值通常会用到： Alignment.topLeft: 左上 Alignment.topCenter: 上中 Alignment.topRight: 右上 Alignment.centerLeft: 左中 Alignment.center: 居中 Alignment.centerRight: 右中 Alignment.bottomLeft: 左下 Alignment.bottomCenter: 下中 Alignment.bottomRight: 右下 2.1.4 constraints 在web/rn中我们通常会用minWidth/maxWidth/minHeight/maxHeight等属性来限制容器的宽高。在Flutter中，你需要使用BoxConstraints（盒约束）来实现该功能。 // 容器的大小将被限制在[100*100 ~ 200*200]内 BoxConstraints( minWidth: 100, maxWidth: 200, minHeight: 100, maxHeight: 200, ) 2.1.5 decoration 该属性非常强大，字面意思是装饰，因为通过它你可以设置边框，阴影，渐变，圆角等常用属性。BoxDecoration继承自Decoration类，因此我们通常会生成一个BoxDecoration实例来设置这些属性。 1) 边框 可以用Border.all构造函数直接生成4条边框，也可以用Border构造函数单独设置不同方向上的边框。不过令人惊讶的是官方提供的边框竟然不支持虚线（issue在这里）。 // 同时设置4条边框：1px粗细的黑色实线边框 BoxDecoration( border: Border.all(color: Colors.black, width: 1, style: BorderStyle.solid) )">
+<meta name="twitter:image" content="https://camo.githubusercontent.com/b405ad5a5ed1c0ce4714d3fa5ce30f7a7146207f/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d633638643866343664366364643764622e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2019/07/08/flutterbuildbeautyui/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>用 Flutter 构建漂亮的 UI 界面 - 基础组件篇 - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>用 Flutter 构建漂亮的 UI 界面 - 基础组件篇</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2019/07/08/flutterbuildbeautyui/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            用 Flutter 构建漂亮的 UI 界面 - 基础组件篇
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/08/flutterbuildbeautyui/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2019/07/08/flutterbuildbeautyui/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  4456
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  22
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <td class="d-block comment-body markdown-body  js-comment-body simpread-focus-highlight" style="z-index: 2147483646; overflow: visible; position: relative;">
+          <h2>1. 前言</h2>
+<p><code>Flutter</code>作为时下最流行的技术之一，凭借其出色的性能以及抹平多端的差异优势，早已引起大批技术爱好者的关注，甚至一些<code>闲鱼</code>，<code>美团</code>，<code>腾讯</code>等大公司均已开始使用。虽然目前其生态还没有完全成熟，但身靠背后的<code>Google</code>加持，其发展速度已经足够惊人，可以预见将来对<code>Flutter</code>开发人员的需求也会随之增长。</p>
+<p>无论是为了现在的技术尝鲜还是将来的潮流趋势，都9102年了，作为一个前端开发者，似乎没有理由不去尝试它。正是带着这样的心理，笔者也开始学习<code>Flutter</code>，同时建了一个用于练习的<a href="https://github.com/SmallStoneSK/flutter_training_app">仓库</a>，后续所有代码都会托管在上面，欢迎star，一起学习。</p>
+<p>今天分享的是Flutter中最常用到的一些基础组件，它们是构成UI界面的基础元素：<code>容器</code>，<code>行</code>，<code>列</code>，<code>绝对定位布局</code>，<code>文本</code>，<code>图片</code>和<code>图标</code>等。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b405ad5a5ed1c0ce4714d3fa5ce30f7a7146207f/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d633638643866343664366364643764622e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img src="https://camo.githubusercontent.com/b405ad5a5ed1c0ce4714d3fa5ce30f7a7146207f/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d633638643866343664366364643764622e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" alt="cover.png" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-c68d8f46d6cdd7db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a></p>
+<h2>2. 基础组件</h2>
+<h3>2.1 Container(容器组件)</h3>
+<div align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/df59b65a94861c4bf83c1bfc6eae4f0ea721ddc7/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d303365316661353231333263366335332e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img width="500" src="https://camo.githubusercontent.com/df59b65a94861c4bf83c1bfc6eae4f0ea721ddc7/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d303365316661353231333263366335332e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-03e1fa52132c6c53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a>
+</div>
+<p><code>Container</code>组件是最常用的布局组件之一，可以认为它是web开发中的<code>div</code>，rn开发中的<code>View</code>。其往往可以用来控制大小、背景颜色、边框、阴影、内外边距和内容排列方式等。我们先来看下其构造函数：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Container</span>({
+  <span class="pl-c1">Key</span> key,
+  <span class="pl-k">double</span> width,
+  <span class="pl-k">double</span> height,
+  <span class="pl-c1">this</span>.margin,
+  <span class="pl-c1">this</span>.padding,
+  <span class="pl-c1">Color</span> color,
+  <span class="pl-c1">this</span>.alignment,
+  <span class="pl-c1">BoxConstraints</span> constraints,
+  <span class="pl-c1">Decoration</span> decoration,
+  <span class="pl-c1">this</span>.foregroundDecoration,
+  <span class="pl-c1">this</span>.transform,
+  <span class="pl-c1">this</span>.child,
+})</pre></div>
+<h4>2.1.1 <code>width</code>，<code>height</code>，<code>margin</code>，<code>padding</code></h4>
+<p>这些属性的含义和我们已经熟知的并没有区别。唯一需要注意的是，<code>margin</code>和<code>padding</code>的赋值不是一个简单的数字，因为其有<code>left</code>, <code>top</code>, <code>right</code>, <code>bottom</code>四个方向的值需要设置。<code>Flutter</code>提供了<code>EdgeInsets</code>这个类，帮助我们方便地生成四个方向的值。通常情况下，我们可能会用到<code>EdgeInsets</code>的4种构造方法：</p>
+<ul>
+<li><code>EdgeInsets.all(value)</code>: 用于设置4个方向一样的值；</li>
+<li><code>EdgeInsets.only(left: val1, top: val2, right: val3, bottom: val4)</code>: 可以单独设置某个方向的值；</li>
+<li><code>EdgeInsets.symmetric(horizontal: val1, vertical: val2)</code>: 用于设置水平/垂直方向上的值；</li>
+<li><code>EdgeInsets.fromLTRB(left, top, right, bottom)</code>: 按照左上右下的顺序设置4个方向的值。</li>
+</ul>
+<h4>2.1.2 <code>color</code></h4>
+<p>该属性的含义是背景颜色，等同于web/rn中的backgroundColor。需要注意的是<code>Flutter</code>中有一个专门表示颜色的<code>Color</code>类，而非我们常用的字符串。不过我们可以非常轻松地进行转换，举个栗子：</p>
+<p>在web/rn中我们会用<code>'#FF0000'</code>或<code>'red'</code>来表示红色，而在Flutter中，我们可以用<code>Color(0xFFFF0000)</code>或<code>Colors.red</code>来表示。</p>
+<h4>2.1.3 <code>alignment</code></h4>
+<p>该属性是用来决定<code>Container</code>组件的子组件将以何种方式进行排列（PS：再也不用为怎么居中操心了）。其可选值通常会用到：</p>
+<ul>
+<li><code>Alignment.topLeft</code>: 左上</li>
+<li><code>Alignment.topCenter</code>: 上中</li>
+<li><code>Alignment.topRight</code>: 右上</li>
+<li><code>Alignment.centerLeft</code>: 左中</li>
+<li><code>Alignment.center</code>: 居中</li>
+<li><code>Alignment.centerRight</code>: 右中</li>
+<li><code>Alignment.bottomLeft</code>: 左下</li>
+<li><code>Alignment.bottomCenter</code>: 下中</li>
+<li><code>Alignment.bottomRight</code>: 右下</li>
+</ul>
+<h4>2.1.4 <code>constraints</code></h4>
+<p>在web/rn中我们通常会用<code>minWidth</code>/<code>maxWidth</code>/<code>minHeight</code>/<code>maxHeight</code>等属性来限制容器的宽高。在<code>Flutter</code>中，你需要使用<code>BoxConstraints</code>（盒约束）来实现该功能。</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c">// 容器的大小将被限制在[100*100 ~ 200*200]内</span>
+<span class="pl-c1">BoxConstraints</span>(
+  minWidth<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+  maxWidth<span class="pl-k">:</span> <span class="pl-c1">200</span>,
+  minHeight<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+  maxHeight<span class="pl-k">:</span> <span class="pl-c1">200</span>,
+)</pre></div>
+<h4>2.1.5 <code>decoration</code></h4>
+<p>该属性非常强大，字面意思是装饰，因为通过它你可以设置<code>边框</code>，<code>阴影</code>，<code>渐变</code>，<code>圆角</code>等常用属性。<code>BoxDecoration</code>继承自<code>Decoration</code>类，因此我们通常会生成一个<code>BoxDecoration</code>实例来设置这些属性。</p>
+<p><strong>1) 边框</strong></p>
+<p>可以用<code>Border.all</code>构造函数直接生成4条边框，也可以用<code>Border</code>构造函数单独设置不同方向上的边框。不过令人惊讶的是官方提供的边框竟然不支持<code>虚线</code>（<a href="https://github.com/flutter/flutter/issues/4858" data-hovercard-type="issue" data-hovercard-url="/flutter/flutter/issues/4858/hovercard">issue</a>在这里）。</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c">// 同时设置4条边框：1px粗细的黑色实线边框</span>
+<span class="pl-c1">BoxDecoration</span>(
+  border<span class="pl-k">:</span> <span class="pl-c1">Border</span>.<span class="pl-en">all</span>(color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.black, width<span class="pl-k">:</span> <span class="pl-c1">1</span>, style<span class="pl-k">:</span> <span class="pl-c1">BorderStyle</span>.solid)
+)
+
+<span class="pl-c">// 设置单边框：上边框为1px粗细的黑色实线边框，右边框为1px粗细的红色实线边框</span>
+<span class="pl-c1">BoxDecoration</span>(
+  border<span class="pl-k">:</span> <span class="pl-c1">Border</span>(
+    top<span class="pl-k">:</span> <span class="pl-c1">BorderSide</span>(color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.black, width<span class="pl-k">:</span> <span class="pl-c1">1</span>, style<span class="pl-k">:</span> <span class="pl-c1">BorderStyle</span>.solid),
+    right<span class="pl-k">:</span> <span class="pl-c1">BorderSide</span>(color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.red, width<span class="pl-k">:</span> <span class="pl-c1">1</span>, style<span class="pl-k">:</span> <span class="pl-c1">BorderStyle</span>.solid),
+  ),
+)</pre></div>
+<p><strong>2) 阴影</strong></p>
+<p>阴影属性和web中的<code>boxShadow</code>几乎没有区别，可以指定<code>x</code>，<code>y</code>，<code>blur</code>，<code>spread</code>，<code>color</code>等属性。</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">BoxDecoration</span>(
+  boxShadow<span class="pl-k">:</span> [
+    <span class="pl-c1">BoxShadow</span>(
+      offset<span class="pl-k">:</span> <span class="pl-c1">Offset</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>),
+      blurRadius<span class="pl-k">:</span> <span class="pl-c1">6</span>,
+      spreadRadius<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+      color<span class="pl-k">:</span> <span class="pl-c1">Color</span>.<span class="pl-en">fromARGB</span>(<span class="pl-c1">20</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>),
+    ),
+  ],
+)</pre></div>
+<p><strong>3) 渐变</strong></p>
+<p>如果你不想容器的背景颜色是单调的，可以尝试用<code>gradient</code>属性。<code>Flutter</code>同时支持<code>线性渐变</code>和<code>径向渐变</code>：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c">// 从左到右，红色到蓝色的线性渐变</span>
+<span class="pl-c1">BoxDecoration</span>(
+  gradient<span class="pl-k">:</span> <span class="pl-c1">LinearGradient</span>(
+    begin<span class="pl-k">:</span> <span class="pl-c1">Alignment</span>.centerLeft,
+    end<span class="pl-k">:</span> <span class="pl-c1">Alignment</span>.centerRight,
+    colors<span class="pl-k">:</span> [<span class="pl-c1">Colors</span>.red, <span class="pl-c1">Colors</span>.blue],
+  ),
+)
+
+<span class="pl-c">// 从中心向四周扩散，红色到蓝色的径向渐变</span>
+<span class="pl-c1">BoxDecoration</span>(
+  gradient<span class="pl-k">:</span> <span class="pl-c1">RadialGradient</span>(
+    center<span class="pl-k">:</span> <span class="pl-c1">Alignment</span>.center,
+    colors<span class="pl-k">:</span> [<span class="pl-c1">Colors</span>.red, <span class="pl-c1">Colors</span>.blue],
+  ),
+)</pre></div>
+<p><strong>4) 圆角</strong></p>
+<p>通常情况下，你可能会用到<code>BorderRadius.circular</code>构造函数来同时设置4个角的圆角，或是<code>BorderRadius.only</code>构造函数来单独设置某几个角的圆角：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c">// 同时设置4个角的圆角为5</span>
+<span class="pl-c1">BoxDecoration</span>(
+  borderRadius<span class="pl-k">:</span> <span class="pl-c1">BorderRadius</span>.<span class="pl-en">circular</span>(<span class="pl-c1">5</span>),
+)
+
+<span class="pl-c">// 设置单圆角：左上角的圆角为5，右上角的圆角为10</span>
+<span class="pl-c1">BoxDecoration</span>(
+  borderRadius<span class="pl-k">:</span> <span class="pl-c1">BorderRadius</span>.<span class="pl-en">only</span>(
+    topLeft<span class="pl-k">:</span> <span class="pl-c1">Radius</span>.<span class="pl-en">circular</span>(<span class="pl-c1">5</span>),
+    topRight<span class="pl-k">:</span> <span class="pl-c1">Radius</span>.<span class="pl-en">circular</span>(<span class="pl-c1">10</span>),
+  ),
+)</pre></div>
+<h4>2.1.6 <code>transform</code></h4>
+<p><code>transform</code>属性和我们在web/rn中经常用到的基本也没有差别，主要包括：<code>平移</code>，<code>缩放</code>、<code>旋转</code>和<code>倾斜</code>。在Flutter中，封装了矩阵变换类<code>Matrix4</code>帮助我们进行变换：</p>
+<ul>
+<li><code>translationValues(x, y, z)</code>: 平移x, y, z；</li>
+<li><code>rotationX(radians)</code>: x轴旋转radians弧度；</li>
+<li><code>rotationY(radians)</code>: y轴旋转radians弧度；</li>
+<li><code>rotationZ(radians)</code>: z轴旋转radians弧度；</li>
+<li><code>skew(alpha, beta)</code>: x轴倾斜alpha度，y轴倾斜beta度；</li>
+<li><code>skewX(alpha)</code>: x轴倾斜alpha度；</li>
+<li><code>skewY(beta)</code>: y轴倾斜beta度；</li>
+</ul>
+<h4>2.1.7 小结</h4>
+<p><code>Container</code>组件的属性很丰富，虽然有些用法上和web/rn有些许差异，但基本上大同小异，所以过渡起来也不会有什么障碍。另外，由于<code>Container</code>组件是单子节点组件，也就是只允许子节点有一个。所以在布局上，很多时候我们会用<code>Row</code>和<code>Column</code>组件进行<code>行</code>/<code>列</code>布局。</p>
+<h3>2.2 Row/Column(行/列组件)</h3>
+<div align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/bdbffeb89e5a2caa0a5914c085e050295c47a967/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d306361353538303137343363323630632e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img width="500" src="https://camo.githubusercontent.com/bdbffeb89e5a2caa0a5914c085e050295c47a967/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d306361353538303137343363323630632e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-0ca55801743c260c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a>
+</div>
+<p><code>Row</code>和<code>Column</code>组件其实和web/rn中的<code>Flex布局</code>（弹性盒子）特别相似，或者我们可以就这么理解。使用<code>Flex布局</code>的同学对<code>主轴</code>和<code>次轴</code>的概念肯定都已经十分熟悉，<code>Row</code>组件的主轴就是横向，<code>Column</code>组件的主轴就是纵向。且它们的构造函数十分相似（已省略不常用属性）：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Row</span>({
+  <span class="pl-c1">Key</span> key,
+  <span class="pl-c1">MainAxisAlignment</span> mainAxisAlignment <span class="pl-k">=</span> <span class="pl-c1">MainAxisAlignment</span>.start,
+  <span class="pl-c1">CrossAxisAlignment</span> crossAxisAlignment <span class="pl-k">=</span> <span class="pl-c1">CrossAxisAlignment</span>.center,
+  <span class="pl-c1">MainAxisSize</span> mainAxisSize <span class="pl-k">=</span> <span class="pl-c1">MainAxisSize</span>.max,
+  <span class="pl-c1">List</span><span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span> children <span class="pl-k">=</span> <span class="pl-k">const</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[],
+})
+
+<span class="pl-c1">Column</span>({
+  <span class="pl-c1">Key</span> key,
+  <span class="pl-c1">MainAxisAlignment</span> mainAxisAlignment <span class="pl-k">=</span> <span class="pl-c1">MainAxisAlignment</span>.start,
+  <span class="pl-c1">CrossAxisAlignment</span> crossAxisAlignment <span class="pl-k">=</span> <span class="pl-c1">CrossAxisAlignment</span>.center,
+  <span class="pl-c1">MainAxisSize</span> mainAxisSize <span class="pl-k">=</span> <span class="pl-c1">MainAxisSize</span>.max,
+  <span class="pl-c1">List</span><span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span> children <span class="pl-k">=</span> <span class="pl-k">const</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[],
+})</pre></div>
+<h4>2.2.1 <code>mainAxisAlignment</code></h4>
+<p>该属性的含义是主轴排列方式，根据上述构造函数可以知道<code>Row</code>和<code>Column</code>组件在主轴方向上默认都是从start开始，也就是说<code>Row</code>组件默认从左到右开始排列子组件，<code>Column</code>组件默认从上到下开始排列子组件。</p>
+<p>当然，你还可以使用其他的可选值：</p>
+<ul>
+<li>MainAxisAlignment.start</li>
+<li>MainAxisAlignment.end</li>
+<li>MainAxisAlignment.center</li>
+<li>MainAxisAlignment.spaceBetween</li>
+<li>MainAxisAlignment.spaceAround</li>
+<li>MainAxisAlignment.spaceEvenly</li>
+</ul>
+<h4>2.2.2 <code>crossAxisAlignment</code></h4>
+<p>该属性的含义是次轴排列方式，根据上述构造函数可以知道<code>Row</code>和<code>Column</code>组件在次轴方向上默认都是居中。</p>
+<p>这里有一点需要<strong>特别注意</strong>：由于<code>Column</code>组件次轴方向上（即水平）默认是居中对齐，所以水平方向上不会撑满其父容器，此时需要指定<code>CrossAxisAlignment.stretch</code>才可以。</p>
+<p>另外，crossAxisAlignment其他的可选值有：</p>
+<ul>
+<li>crossAxisAlignment.start</li>
+<li>crossAxisAlignment.end</li>
+<li>crossAxisAlignment.center</li>
+<li>crossAxisAlignment.stretch</li>
+<li>crossAxisAlignment.baseline</li>
+</ul>
+<h4>2.2.3 <code>mainAxisSize</code></h4>
+<p>字面意思上来说，该属性指的是在主轴上的尺寸。其实就是指在主轴方向上，是包裹其内容，还是撑满其父容器。它的可选值有<code>MainAxisSize.min</code>和<code>MainAxisSize.max</code>。由于其默认值都是<code>MainAxisSize.max</code>，所以主轴方向上默认大小都是尽可能撑满父容器的。</p>
+<h4>2.2.4 小结</h4>
+<p>由于<code>Row</code>/<code>Column</code>组件和我们熟悉的<code>Flex布局</code>非常相似，所以上手起来非常容易，几乎零学习成本。</p>
+<h3>2.3 Stack/Positoned(绝对定位布局组件)</h3>
+<div align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/65c5464e64374868ce3e4482f15eeda4ab1a9300/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d396334616637356435616534646663342e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img width="500" src="https://camo.githubusercontent.com/65c5464e64374868ce3e4482f15eeda4ab1a9300/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d396334616637356435616534646663342e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-9c4af75d5ae4dfc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a>
+</div>
+<p>绝对定位布局在web/rn开发中也是使用频率较高的一种布局方式，<code>Flutter</code>也提供了相应的组件实现，需要将<code>Stack</code>和<code>Positioned</code>组件搭配在一起使用。比如下方的这个例子就是创建了一个黄色的盒子，并且在其四个角落放置了4个红色的小正方形。<code>Stack</code>组件就是绝对定位的容器，<code>Positioned</code>组件通过<code>left</code>，<code>top </code>，<code>right</code>，<code>bottom</code>四个方向上的属性值来决定其在父容器中的位置。</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Container</span>(
+  height<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+  color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.yellow,
+  child<span class="pl-k">:</span> <span class="pl-c1">Stack</span>(
+    children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+      <span class="pl-c1">Positioned</span>(
+        left<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+        top<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+        child<span class="pl-k">:</span> <span class="pl-c1">Container</span>(width<span class="pl-k">:</span> <span class="pl-c1">10</span>, height<span class="pl-k">:</span> <span class="pl-c1">10</span>, color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.red),
+      ),
+      <span class="pl-c1">Positioned</span>(
+        right<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+        top<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+        child<span class="pl-k">:</span> <span class="pl-c1">Container</span>(width<span class="pl-k">:</span> <span class="pl-c1">10</span>, height<span class="pl-k">:</span> <span class="pl-c1">10</span>, color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.red),
+      ),
+      <span class="pl-c1">Positioned</span>(
+        left<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+        bottom<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+        child<span class="pl-k">:</span> <span class="pl-c1">Container</span>(width<span class="pl-k">:</span> <span class="pl-c1">10</span>, height<span class="pl-k">:</span> <span class="pl-c1">10</span>, color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.red),
+      ),
+      <span class="pl-c1">Positioned</span>(
+        right<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+        bottom<span class="pl-k">:</span> <span class="pl-c1">10</span>,
+        child<span class="pl-k">:</span> <span class="pl-c1">Container</span>(width<span class="pl-k">:</span> <span class="pl-c1">10</span>, height<span class="pl-k">:</span> <span class="pl-c1">10</span>, color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.red),
+      ),
+    ],
+  ),
+)</pre></div>
+<h3>2.4 Text（文本组件）</h3>
+<div align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/8c6ba39d87c0162305ba221d30796700890bcfe8/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d626565373531333962646630353233622e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img width="500" src="https://camo.githubusercontent.com/8c6ba39d87c0162305ba221d30796700890bcfe8/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d626565373531333962646630353233622e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-bee75139bdf0523b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a>
+</div>
+<p><code>Text</code>组件也是日常开发中最常用的基础组件之一，我们通常用它来展示文本信息。来看下其构造函数（已省略不常用属性）：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-k">const</span> <span class="pl-c1">Text</span>(
+  <span class="pl-c1">this</span>.data, {
+  <span class="pl-c1">Key</span> key,
+  <span class="pl-c1">this</span>.style,
+  <span class="pl-c1">this</span>.textAlign,
+  <span class="pl-c1">this</span>.softWrap,
+  <span class="pl-c1">this</span>.overflow,
+  <span class="pl-c1">this</span>.maxLines,
+})</pre></div>
+<ul>
+<li><code>data</code>: 显示的文本信息；</li>
+<li><code>style</code>: 文本样式，<code>Flutter</code>提供了一个<code>TextStyle</code>类，最常用的<code>fontSize</code>，<code>fontWeight</code>，<code>color</code>，<code>backgroundColor</code>和<code>shadows</code>等属性都是通过它设置的；</li>
+<li><code>textAlign</code>: 文字对齐方式，常用可选值有<code>TextAlign</code>的<code>left</code>，<code>right</code>，<code>center</code>和<code>justify</code>；</li>
+<li><code>softWrap</code>: 文字是否换行；</li>
+<li><code>overflow</code>: 当文字溢出的时候，以何种方式处理（默认直接截断）。可选值有<code>TextOverflow</code>的<code>clip</code>，<code>fade</code>，<code>ellipsis</code>和<code>visible</code>；</li>
+<li><code>maxLines</code>: 当文字超过最大行数还没显示完的时候，就会根据<code>overflow</code>属性决定如何截断处理。</li>
+</ul>
+<p><code>Flutter</code>的<code>Text</code>组件足够灵活，提供了各种属性让我们定制，不过一般情况下，我们更多地只需下方几行代码就足够了：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Text</span>(
+  <span class="pl-s">'这是测试文本'</span>,
+  style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+    fontSize<span class="pl-k">:</span> <span class="pl-c1">13</span>,
+    fontWeight<span class="pl-k">:</span> <span class="pl-c1">FontWeight</span>.bold,
+    color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF999999</span>),
+  ),
+)</pre></div>
+<p>除了上述的应用场景外，有时我们还会遇到<code>富文本</code>的需求（即一段文本中，可能需要不同的字体样式）。比如在一些UI设计中经常会遇到表示价格的时候，<code>￥</code>符号比<code>金额</code>的字号小点。对于此类需求，我们可以用<code>Flutter</code>提供的<code>Text.rich</code>构造函数来创建相应的文本组件：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Text</span>.<span class="pl-en">rich</span>(<span class="pl-c1">TextSpan</span>(
+  children<span class="pl-k">:</span> [
+    <span class="pl-c1">TextSpan</span>(
+      <span class="pl-s">'￥'</span>,
+      style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+        fontSize<span class="pl-k">:</span> <span class="pl-c1">12</span>,
+        color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFFFF7528</span>),
+      ),
+    ),
+    <span class="pl-c1">TextSpan</span>(
+      <span class="pl-s">'258'</span>,
+      style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+        fontSize<span class="pl-k">:</span> <span class="pl-c1">15</span>,
+        color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFFFF7528</span>),
+      ),
+    ),
+  ]
+))</pre></div>
+<h3>2.5 Image(图片组件)</h3>
+<div align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/2c61d89c4e73df6ae5aba8c9456be1327f1550a0/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d633238623936366337323666623931632e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img width="500" src="https://camo.githubusercontent.com/2c61d89c4e73df6ae5aba8c9456be1327f1550a0/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d633238623936366337323666623931632e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-c28b966c726fb91c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a>
+</div>
+<p><code>Image</code>图片组件作为丰富内容的基础组件之一，日常开发中的使用频率也非常高。看下其构造函数（已省略不常用属性）：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Image</span>({
+  <span class="pl-c1">Key</span> key,
+  <span class="pl-k">@required</span> <span class="pl-c1">this</span>.image,
+  <span class="pl-c1">this</span>.width,
+  <span class="pl-c1">this</span>.height,
+  <span class="pl-c1">this</span>.color,
+  <span class="pl-c1">this</span>.fit,
+  <span class="pl-c1">this</span>.repeat <span class="pl-k">=</span> <span class="pl-c1">ImageRepeat</span>.noRepeat,
+})</pre></div>
+<ul>
+<li><code>image</code>: 图片源，最常用到主要有两种（<code>AssetImage</code>和<code>NetworkImage</code>）。使用<code>AssetImage</code>之前，需要在<code>pubspec.yaml</code>文件中声明好图片资源，然后才能使用；而<code>NextworkImage</code>指定图片的网络地址即可，主要是在加载一些网络图片时会用到；</li>
+<li><code>width</code>: 图片宽度；</li>
+<li><code>height</code>: 图片高度；</li>
+<li><code>color</code>: 图片的背景颜色，当网络图片未加载完毕之前，会显示该背景颜色；</li>
+<li><code>fit</code>: 当我们希望图片根据容器大小进行适配而不是指定固定的宽高值时，可以通过该属性来实现。其可选值有<code>BoxFit</code>的<code>fill</code>，<code>contain</code>，<code>cover</code>，<code>fitWidth</code>，<code>fitHeight</code>，<code>none</code>和<code>scaleDown</code>；</li>
+<li><code>repeat</code>: 决定当图片实际大小不足指定大小时是否使用重复效果。</li>
+</ul>
+<p>另外，<code>Flutter</code>还提供了<code>Image.network</code>和<code>Image.asset</code>构造函数，其实是语法糖。比如下方的两段代码结果是完全一样的：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Image</span>(
+  image<span class="pl-k">:</span> <span class="pl-c1">NetworkImage</span>(<span class="pl-s">'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1402367109,4157195964&amp;fm=27&amp;gp=0.jpg'</span>),
+  width<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+  height<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+)
+
+<span class="pl-c1">Image</span>.<span class="pl-en">network</span>(
+  <span class="pl-s">'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1402367109,4157195964&amp;fm=27&amp;gp=0.jpg'</span>,
+  width<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+  height<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+)</pre></div>
+<h3>2.6 <code>Icon</code>(图标组件)</h3>
+<div align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/df6eab7e8b378b6d52b0207da1f8fbf0eccbd0c3/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d373136613931626262316463316435332e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img width="500" src="https://camo.githubusercontent.com/df6eab7e8b378b6d52b0207da1f8fbf0eccbd0c3/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d373136613931626262316463316435332e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-716a91bbb1dc1d53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a>
+</div>
+<p><code>Icon</code>图标组件相比于图片有着放大不会失真的优势，在日常开发中也是经常会被用到。<code>Flutter</code>更是直接内置了一套<code>Material</code>风格的图标（你可以在<a href="https://api.flutter.dev/flutter/material/Icons-class.html#constants" rel="nofollow">这里</a>预览所有的图标类型）。看下构造函数：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-k">const</span> <span class="pl-c1">Icon</span>(
+  <span class="pl-c1">this</span>.icon, {
+  <span class="pl-c1">Key</span> key,
+  <span class="pl-c1">this</span>.size,
+  <span class="pl-c1">this</span>.color,
+})</pre></div>
+<ul>
+<li><code>icon</code>: 图标类型；</li>
+<li><code>size</code>: 图标大小；</li>
+<li><code>color</code>: 图标颜色。</li>
+</ul>
+<h2>3. 布局实战</h2>
+<p>通过上一节的介绍，我们对<code>Container</code>，<code>Row</code>，<code>Column</code>，<code>Stack</code>，<code>Positioned</code>，<code>Text</code>，<code>Image</code>和<code>Icon</code>组件有了初步的认识。接下来，就让我们通过一个实际的例子来加深理解和记忆。</p>
+<div align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/cc54abdf4d9109c693a4a4fc5bbf7e280af7cbfa/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d643666663539663130323864336234622e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img height="350" src="https://camo.githubusercontent.com/cc54abdf4d9109c693a4a4fc5bbf7e280af7cbfa/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d643666663539663130323864336234622e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-d6ff59f1028d3b4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a>
+</div>
+<h3>3.1 准备工作 - 数据类型</h3>
+<p>根据上述卡片中的内容，我们可以定义一些字段。为了规范开发流程，我们先给卡片定义一个数据类型的类，这样在后续的开发过程中也能更好地对数据进行Mock和管理：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-k">class</span> <span class="pl-c1">PetCardViewModel</span> {
+  <span class="pl-c">///</span><span class="pl-c"> 封面地址</span>
+  <span class="pl-k">final</span> <span class="pl-c1">String</span> coverUrl;
+
+  <span class="pl-c">///</span><span class="pl-c"> 用户头像地址</span>
+  <span class="pl-k">final</span> <span class="pl-c1">String</span> userImgUrl;
+
+  <span class="pl-c">///</span><span class="pl-c"> 用户名</span>
+  <span class="pl-k">final</span> <span class="pl-c1">String</span> userName;
+
+  <span class="pl-c">///</span><span class="pl-c"> 用户描述</span>
+  <span class="pl-k">final</span> <span class="pl-c1">String</span> description;
+
+  <span class="pl-c">///</span><span class="pl-c"> 话题</span>
+  <span class="pl-k">final</span> <span class="pl-c1">String</span> topic;
+
+  <span class="pl-c">///</span><span class="pl-c"> 发布时间</span>
+  <span class="pl-k">final</span> <span class="pl-c1">String</span> publishTime;
+
+  <span class="pl-c">///</span><span class="pl-c"> 发布内容</span>
+  <span class="pl-k">final</span> <span class="pl-c1">String</span> publishContent;
+
+  <span class="pl-c">///</span><span class="pl-c"> 回复数量</span>
+  <span class="pl-k">final</span> <span class="pl-k">int</span> replies;
+
+  <span class="pl-c">///</span><span class="pl-c"> 喜欢数量</span>
+  <span class="pl-k">final</span> <span class="pl-k">int</span> likes;
+
+  <span class="pl-c">///</span><span class="pl-c"> 分享数量</span>
+  <span class="pl-k">final</span> <span class="pl-k">int</span> shares;
+
+  <span class="pl-k">const</span> <span class="pl-c1">PetCardViewModel</span>({
+    <span class="pl-c1">this</span>.coverUrl,
+    <span class="pl-c1">this</span>.userImgUrl,
+    <span class="pl-c1">this</span>.userName,
+    <span class="pl-c1">this</span>.description,
+    <span class="pl-c1">this</span>.topic,
+    <span class="pl-c1">this</span>.publishTime,
+    <span class="pl-c1">this</span>.publishContent,
+    <span class="pl-c1">this</span>.replies,
+    <span class="pl-c1">this</span>.likes,
+    <span class="pl-c1">this</span>.shares,
+  });
+}</pre></div>
+<h3>3.2 搭建骨架，布局拆分</h3>
+<div align="center">
+  <a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/03e8cd93acc329b8c7bab058a560605ca11d5e3c/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d383138653837306464666364366638332e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img height="350" src="https://camo.githubusercontent.com/03e8cd93acc329b8c7bab058a560605ca11d5e3c/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d383138653837306464666364366638332e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-818e870ddfcd6f83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a>
+</div>
+<p>根据给的视觉图，我们可以将整体进行拆分，一共划分成4个部分：<code>Cover</code>，<code>UserInfo</code>，<code>PublishContent</code>和<code>InteractionArea</code>。为此，我们可以搭起代码的基本骨架：</p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-k">class</span> <span class="pl-c1">PetCard</span> <span class="pl-k">extends</span> <span class="pl-c1">StatelessWidget</span> {
+  <span class="pl-k">final</span> <span class="pl-c1">PetCardViewModel</span> data;
+
+  <span class="pl-k">const</span> <span class="pl-c1">PetCard</span>({
+    <span class="pl-c1">Key</span> key,
+    <span class="pl-c1">this</span>.data,
+  }) <span class="pl-k">:</span> <span class="pl-c1">super</span>(key<span class="pl-k">:</span> key);
+
+  <span class="pl-c1">Widget</span> <span class="pl-en">renderCover</span>() {
+    
+  }
+
+  <span class="pl-c1">Widget</span> <span class="pl-en">renderUserInfo</span>() {
+    
+  }
+
+  <span class="pl-c1">Widget</span> <span class="pl-en">renderPublishContent</span>() {
+  
+  }
+
+  <span class="pl-c1">Widget</span> <span class="pl-en">renderInteractionArea</span>() {
+   
+  }
+
+  <span class="pl-k">@override</span>
+  <span class="pl-c1">Widget</span> <span class="pl-en">build</span>(<span class="pl-c1">BuildContext</span> context) {
+    <span class="pl-k">return</span> <span class="pl-c1">Container</span>(
+      margin<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">all</span>(<span class="pl-c1">16</span>),
+      decoration<span class="pl-k">:</span> <span class="pl-c1">BoxDecoration</span>(
+        color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.white,
+        borderRadius<span class="pl-k">:</span> <span class="pl-c1">BorderRadius</span>.<span class="pl-en">circular</span>(<span class="pl-c1">8</span>),
+        boxShadow<span class="pl-k">:</span> [
+          <span class="pl-c1">BoxShadow</span>(
+            blurRadius<span class="pl-k">:</span> <span class="pl-c1">6</span>,
+            spreadRadius<span class="pl-k">:</span> <span class="pl-c1">4</span>,
+            color<span class="pl-k">:</span> <span class="pl-c1">Color</span>.<span class="pl-en">fromARGB</span>(<span class="pl-c1">20</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>),
+          ),
+        ],
+      ),
+      child<span class="pl-k">:</span> <span class="pl-c1">Column</span>(
+        crossAxisAlignment<span class="pl-k">:</span> <span class="pl-c1">CrossAxisAlignment</span>.stretch,
+        children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+          <span class="pl-c1">this</span>.<span class="pl-en">renderCover</span>(),
+          <span class="pl-c1">this</span>.<span class="pl-en">renderUserInfo</span>(),
+          <span class="pl-c1">this</span>.<span class="pl-en">renderPublishContent</span>(),
+          <span class="pl-c1">this</span>.<span class="pl-en">renderInteractionArea</span>(),
+        ],
+      ),
+    );
+  }
+}</pre></div>
+<h3>3.3 封面区域</h3>
+<p>为了更好的凸现图片的效果，这里加了一个蒙层，所以此处刚好可以用得上<code>Stack</code>/<code>Positioned</code>布局和<code>LinearGradient</code>渐变，Dom结构如下：</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/1722fe4fe7492333a1df23dc8dd72b996872f632/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d656265626663353562333237656137302e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img src="https://camo.githubusercontent.com/1722fe4fe7492333a1df23dc8dd72b996872f632/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d656265626663353562333237656137302e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" alt="cover" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-ebebfc55b327ea70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a></p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Widget</span> <span class="pl-en">renderCover</span>() {
+  <span class="pl-k">return</span> <span class="pl-c1">Stack</span>(
+    fit<span class="pl-k">:</span> <span class="pl-c1">StackFit</span>.passthrough,
+    children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+      <span class="pl-c1">ClipRRect</span>(
+        borderRadius<span class="pl-k">:</span> <span class="pl-c1">BorderRadius</span>.<span class="pl-en">only</span>(
+          topLeft<span class="pl-k">:</span> <span class="pl-c1">Radius</span>.<span class="pl-en">circular</span>(<span class="pl-c1">8</span>),
+          topRight<span class="pl-k">:</span> <span class="pl-c1">Radius</span>.<span class="pl-en">circular</span>(<span class="pl-c1">8</span>),
+        ),
+        child<span class="pl-k">:</span> <span class="pl-c1">Image</span>.<span class="pl-en">network</span>(
+          data.coverUrl,
+          height<span class="pl-k">:</span> <span class="pl-c1">200</span>,
+          fit<span class="pl-k">:</span> <span class="pl-c1">BoxFit</span>.fitWidth,
+        ),
+      ),
+      <span class="pl-c1">Positioned</span>(
+        left<span class="pl-k">:</span> <span class="pl-c1">0</span>,
+        top<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+        right<span class="pl-k">:</span> <span class="pl-c1">0</span>,
+        bottom<span class="pl-k">:</span> <span class="pl-c1">0</span>,
+        child<span class="pl-k">:</span> <span class="pl-c1">Container</span>(
+          decoration<span class="pl-k">:</span> <span class="pl-c1">BoxDecoration</span>(
+            gradient<span class="pl-k">:</span> <span class="pl-c1">LinearGradient</span>(
+              begin<span class="pl-k">:</span> <span class="pl-c1">Alignment</span>.topCenter,
+              end<span class="pl-k">:</span> <span class="pl-c1">Alignment</span>.bottomCenter,
+              colors<span class="pl-k">:</span> [
+                <span class="pl-c1">Color</span>.<span class="pl-en">fromARGB</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>),
+                <span class="pl-c1">Color</span>.<span class="pl-en">fromARGB</span>(<span class="pl-c1">80</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>),
+              ],
+            ),
+          ),
+        ),
+      ),
+    ],
+  );
+}</pre></div>
+<h3>3.4 用户信息区域</h3>
+<p>用户信息区域就非常适合使用<code>Row</code>和<code>Column</code>组件来进行布局，Dom结构如下：</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/d84922fe725417bba85eb4eab931c3795f0c89c1/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d623135353039303138646532663163652e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img src="https://camo.githubusercontent.com/d84922fe725417bba85eb4eab931c3795f0c89c1/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d623135353039303138646532663163652e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" alt="user-info" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-b15509018de2f1ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a></p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Widget</span> <span class="pl-en">renderUserInfo</span>() {
+  <span class="pl-k">return</span> <span class="pl-c1">Container</span>(
+    margin<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">only</span>(top<span class="pl-k">:</span> <span class="pl-c1">16</span>),
+    padding<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">symmetric</span>(horizontal<span class="pl-k">:</span> <span class="pl-c1">16</span>),
+    child<span class="pl-k">:</span> <span class="pl-c1">Row</span>(
+      crossAxisAlignment<span class="pl-k">:</span> <span class="pl-c1">CrossAxisAlignment</span>.start,
+      mainAxisAlignment<span class="pl-k">:</span> <span class="pl-c1">MainAxisAlignment</span>.spaceBetween,
+      children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+        <span class="pl-c1">Row</span>(
+          children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+            <span class="pl-c1">CircleAvatar</span>(
+              radius<span class="pl-k">:</span> <span class="pl-c1">20</span>,
+              backgroundColor<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFFCCCCCC</span>),
+              backgroundImage<span class="pl-k">:</span> <span class="pl-c1">NetworkImage</span>(data.userImgUrl),
+            ),
+            <span class="pl-c1">Padding</span>(padding<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">only</span>(left<span class="pl-k">:</span> <span class="pl-c1">8</span>)),
+            <span class="pl-c1">Column</span>(
+              crossAxisAlignment<span class="pl-k">:</span> <span class="pl-c1">CrossAxisAlignment</span>.start,
+              children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+                <span class="pl-c1">Text</span>(
+                  data.userName,
+                  style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+                    fontSize<span class="pl-k">:</span> <span class="pl-c1">15</span>,
+                    fontWeight<span class="pl-k">:</span> <span class="pl-c1">FontWeight</span>.bold,
+                    color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF333333</span>),
+                  ),
+                ),
+                <span class="pl-c1">Padding</span>(padding<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">only</span>(top<span class="pl-k">:</span> <span class="pl-c1">2</span>)),
+                <span class="pl-c1">Text</span>(
+                  data.description,
+                  style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+                    fontSize<span class="pl-k">:</span> <span class="pl-c1">12</span>,
+                    color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF999999</span>),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+        <span class="pl-c1">Text</span>(
+          data.publishTime,
+          style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+            fontSize<span class="pl-k">:</span> <span class="pl-c1">13</span>,
+            color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF999999</span>),
+          ),
+        ),
+      ],
+    ),
+  );
+}</pre></div>
+<h3>3.5 发布内容区域</h3>
+<p>通过这块区域的UI练习，我们可以实践<code>Container</code>组件设置不同的<code>borderRadius</code>，以及<code>Text</code>组件文本内容超出时的截断处理，Dom结构如下：</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/b294435613447d923dcafb8d96e6a00055c7c925/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d323837653933333639626636353235392e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img src="https://camo.githubusercontent.com/b294435613447d923dcafb8d96e6a00055c7c925/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d323837653933333639626636353235392e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" alt="publish-content" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-287e93369bf65259.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a></p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Widget</span> <span class="pl-en">renderPublishContent</span>() {
+  <span class="pl-k">return</span> <span class="pl-c1">Container</span>(
+    margin<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">only</span>(top<span class="pl-k">:</span> <span class="pl-c1">16</span>),
+    padding<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">symmetric</span>(horizontal<span class="pl-k">:</span> <span class="pl-c1">16</span>),
+    child<span class="pl-k">:</span> <span class="pl-c1">Column</span>(
+      crossAxisAlignment<span class="pl-k">:</span> <span class="pl-c1">CrossAxisAlignment</span>.start,
+      children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+        <span class="pl-c1">Container</span>(
+          margin<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">only</span>(bottom<span class="pl-k">:</span> <span class="pl-c1">14</span>),
+          padding<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">symmetric</span>(horizontal<span class="pl-k">:</span> <span class="pl-c1">8</span>, vertical<span class="pl-k">:</span> <span class="pl-c1">2</span>),
+          decoration<span class="pl-k">:</span> <span class="pl-c1">BoxDecoration</span>(
+            color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFFFFC600</span>),
+            borderRadius<span class="pl-k">:</span> <span class="pl-c1">BorderRadius</span>.<span class="pl-en">only</span>(
+              topRight<span class="pl-k">:</span> <span class="pl-c1">Radius</span>.<span class="pl-en">circular</span>(<span class="pl-c1">8</span>),
+              bottomLeft<span class="pl-k">:</span> <span class="pl-c1">Radius</span>.<span class="pl-en">circular</span>(<span class="pl-c1">8</span>),
+              bottomRight<span class="pl-k">:</span> <span class="pl-c1">Radius</span>.<span class="pl-en">circular</span>(<span class="pl-c1">8</span>),
+            ),
+          ),
+          child<span class="pl-k">:</span> <span class="pl-c1">Text</span>(
+            <span class="pl-s">'# ${<span class="pl-v">data.topic</span>}'</span>,
+            style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+              fontSize<span class="pl-k">:</span> <span class="pl-c1">12</span>,
+              color<span class="pl-k">:</span> <span class="pl-c1">Colors</span>.white,
+            ),
+          ),
+        ),
+        <span class="pl-c1">Text</span>(
+          data.publishContent,
+          maxLines<span class="pl-k">:</span> <span class="pl-c1">2</span>,
+          overflow<span class="pl-k">:</span> <span class="pl-c1">TextOverflow</span>.ellipsis,
+          style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+            fontSize<span class="pl-k">:</span> <span class="pl-c1">15</span>,
+            fontWeight<span class="pl-k">:</span> <span class="pl-c1">FontWeight</span>.bold,
+            color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF333333</span>),
+          ),
+        ),
+      ],
+    ),
+  );
+}</pre></div>
+<h3>3.6 互动区域</h3>
+<p>在这个模块，我们会用到<code>Icon</code>图标组件，可以控制其大小和颜色等属性，Dom结构如下：</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4875f81452b9eaf636e803735adf3109b332a09f/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d383465646463623734616163633132312e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430"><img src="https://camo.githubusercontent.com/4875f81452b9eaf636e803735adf3109b332a09f/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313939303133332d383465646463623734616163633132312e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f31323430" alt="interaction-area" data-canonical-src="https://upload-images.jianshu.io/upload_images/1990133-84eddcb74aacc121.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" style="max-width:100%;" /></a></p>
+<div class="highlight highlight-source-dart"><pre><span class="pl-c1">Widget</span> <span class="pl-en">renderInteractionArea</span>() {
+  <span class="pl-k">return</span> <span class="pl-c1">Container</span>(
+    margin<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">symmetric</span>(vertical<span class="pl-k">:</span> <span class="pl-c1">16</span>),
+    padding<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">symmetric</span>(horizontal<span class="pl-k">:</span> <span class="pl-c1">16</span>),
+    child<span class="pl-k">:</span> <span class="pl-c1">Row</span>(
+      mainAxisAlignment<span class="pl-k">:</span> <span class="pl-c1">MainAxisAlignment</span>.spaceBetween,
+      children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+        <span class="pl-c1">Row</span>(
+          children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+            <span class="pl-c1">Icon</span>(
+              <span class="pl-c1">Icons</span>.message,
+              size<span class="pl-k">:</span> <span class="pl-c1">16</span>,
+              color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF999999</span>),
+            ),
+            <span class="pl-c1">Padding</span>(padding<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">only</span>(left<span class="pl-k">:</span> <span class="pl-c1">6</span>)),
+            <span class="pl-c1">Text</span>(
+              data.replies.<span class="pl-en">toString</span>(),
+              style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+                fontSize<span class="pl-k">:</span> <span class="pl-c1">15</span>,
+                color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF999999</span>),
+              ),
+            ),
+          ],
+        ),
+        <span class="pl-c1">Row</span>(
+          children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+            <span class="pl-c1">Icon</span>(
+              <span class="pl-c1">Icons</span>.favorite,
+              size<span class="pl-k">:</span> <span class="pl-c1">16</span>,
+              color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFFFFC600</span>),
+            ),
+            <span class="pl-c1">Padding</span>(padding<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">only</span>(left<span class="pl-k">:</span> <span class="pl-c1">6</span>)),
+            <span class="pl-c1">Text</span>(
+              data.likes.<span class="pl-en">toString</span>(),
+              style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+                fontSize<span class="pl-k">:</span> <span class="pl-c1">15</span>,
+                color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF999999</span>),
+              ),
+            ),
+          ],
+        ),
+        <span class="pl-c1">Row</span>(
+          children<span class="pl-k">:</span> <span class="pl-k">&lt;</span><span class="pl-c1">Widget</span><span class="pl-k">&gt;</span>[
+            <span class="pl-c1">Icon</span>(
+              <span class="pl-c1">Icons</span>.share,
+              size<span class="pl-k">:</span> <span class="pl-c1">16</span>,
+              color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF999999</span>),
+            ),
+            <span class="pl-c1">Padding</span>(padding<span class="pl-k">:</span> <span class="pl-c1">EdgeInsets</span>.<span class="pl-en">only</span>(left<span class="pl-k">:</span> <span class="pl-c1">6</span>)),
+            <span class="pl-c1">Text</span>(
+              data.shares.<span class="pl-en">toString</span>(),
+              style<span class="pl-k">:</span> <span class="pl-c1">TextStyle</span>(
+                fontSize<span class="pl-k">:</span> <span class="pl-c1">15</span>,
+                color<span class="pl-k">:</span> <span class="pl-c1">Color</span>(<span class="pl-c1">0xFF999999</span>),
+              ),
+            ),
+          ],
+        ),
+      ],
+    ),
+  );
+}</pre></div>
+<h3>3.7 小结</h3>
+<p>通过上面的一个例子，我们成功地把一个看起来复杂的UI界面一步步拆解，将之前提到的组件都用了个遍，并且最终得到了不错的效果。其实，日常开发中90%以上的需求都离不开上述提到的基础组件。因此，只要稍加练习，熟悉了<code>Flutter</code>中的基础组件用法，就已经算是迈出了一大步哦~</p>
+<p>这里还有<a href="https://github.com/SmallStoneSK/flutter_training_app/blob/master/lib/basic_widgets/credit_card.dart">银行卡</a>和<a href="https://github.com/SmallStoneSK/flutter_training_app/blob/master/lib/basic_widgets/friend_circle.dart">朋友圈</a>的UI练习例子，由于篇幅原因就不贴代码了，可以去<a href="https://github.com/SmallStoneSK/flutter_training_app/tree/master/lib/basic_widgets">github仓库</a>看。</p>
+<h2>4. 总结</h2>
+<p>本文首先介绍了<code>Flutter</code>中构建UI界面最常用的基础组件（<code>容器</code>，<code>行</code>，<code>列</code>，<code>绝对定位布局</code>，<code>文本</code>，<code>图片</code>和<code>图标</code>）用法。接着，介绍了一个较复杂的UI实战例子。通过对Dom结构的层层拆解，前文提到过的组件得到一个综合运用，也算是巩固了前面所学的概念知识。</p>
+<p>不过最后不得不吐槽一句：<code>Flutter</code>的嵌套真的很难受。。。如果不对UI布局进行模块拆分，那绝对是噩梦般的体验。而且不像web/rn开发样式可以单独抽离，<code>Flutter</code>这种将样式当做属性的处理方式，一眼看去真的很难理清dom结构，对于新接手代码的开发人员而言，需要费点时间理解。。。</p>
+      </td>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter" rel="tag"># flutter</a>
+          
+            
+            <a href="/tag/#/Location" rel="tag"># Location</a>
+          
+            
+            <a href="/tag/#/Maps" rel="tag"># Maps</a>
+          
+            
+            <a href="/tag/#/UI" rel="tag"># UI</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/08/flutterstream/" rel="next" title="Flutter完整开发实战详解(十一、全面深入理解Stream)">
+                <i class="fa fa-chevron-left"></i> Flutter完整开发实战详解(十一、全面深入理解Stream)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/08/flutter_got_guide/" rel="prev" title="Flutter Go 代码开发规范 0.1.0 版">
+                Flutter Go 代码开发规范 0.1.0 版 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2019/07/08/flutterbuildbeautyui/';
+              this.page.identifier = '/2019/07/08/flutterbuildbeautyui/';
+              this.page.title = '用 Flutter 构建漂亮的 UI 界面 - 基础组件篇';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

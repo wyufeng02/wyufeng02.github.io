@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://code4flutter.com/</title>
+  <link>http://code4flutter.com/</link>
+
+<item>
+     <link>https://code4flutter.com/</link>
+     <title>code4Flutter - flutter中国开发者社区</title>
+     <description>Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/archives/</link>
+     <title>归档 | code4Flutter</title>
+     <description>Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/tags/</link>
+     <title>              标签 | code4Flutter      </title>
+     <description>Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-rank/</link>
+     <title>微信小程序开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#微信小程序开源项目排行榜 (06-11) 1. justjavac/awesome-wechat-weapp ♥️ 24.5k 微信小程序开发资源汇总 💯 2. NervJS/taro ♥️ 19.1k 多端统一开发框架，支持用 React 的开发方式编写一次代码，生成能运行在微信/百度/支付宝/字节跳动小程序、H5、React Native 等的应用。 https://taro.jd.com/ 3. fighting41love/funNLP ♥️ 9k 据集、句子相似度匹配算法集合、bert资源、文本生成&amp;amp;amp;摘要相关工具、cocoN</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/category/</link>
+     <title>分类 | code4Flutter</title>
+     <description>Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/python-rank/</link>
+     <title>python开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#python开源项目排行榜 (06-11) 1. tensorflow/tensorflow ♥️ 129k An Open Source Machine Learning Framework for Everyone 2. robbyrussell/oh-my-zsh ♥️ 89.9k 🙃 A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 20… 3. vinta/awesome-python ♥️ 68.5k A curated list of awesome Python frameworks, libraries, software and resources 4. CyC2018/CS-Notes ♥️ 65.8k 📚 技术面试必备基础知识、Leetcode 题解、后</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/c-rank/</link>
+     <title>c开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#c开源项目排行榜 (06-11) 1. freeCodeCamp/freeCodeCamp ♥️ 303k The https://www.freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions o… 2. CyC2018/CS-Notes ♥️ 65.8k 📚 技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计 3. 30-seconds/30-seconds-of-code ♥️ 45.6k A curated collection of useful JavaScript snippets that you can understand in </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/c++-rank/</link>
+     <title>c++开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#c++开源项目排行榜 (06-11) 1. vsouza/awesome-ios ♥️ 31.9k A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects 2. imhuay/Algorithm_Interview_Notes-Chinese ♥️ 23.8k 2018/2019/校招/春招/秋招/算法/机器学习(Machine Learning)/深度学习(Deep Learning)/自然语言处理(NLP)/C/C++/Python/面试笔记 3. isocpp/CppCoreGuidelines ♥️ 23.1k The C++ Core Guidelines are a set of tried-and-true guidelines, rules, and best practices about coding i</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/Swift-rank/</link>
+     <title>Swift开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#Swift开源项目排行榜 (06-11) 1. justjavac/free-programming-books-zh_CN ♥️ 51k 📚 免费的计算机编程类中文书籍，欢迎投稿 2. apple/swift ♥️ 48.1k The Swift Programming Language 3. vsouza/awesome-ios ♥️ 31.9k A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects 4. Alamofire/Alamofire ♥️ 31.1k Elegant HTTP Networking in Swift 5. xitu/gold-miner ♥️ 21.8k 🥇掘金翻译计划，可能是世界最大最好的英译中技术社�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/SQL-rank/</link>
+     <title>SQL开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#SQL开源项目排行榜 (06-11) 1. pingcap/tidb ♥️ 19.1k TiDB is a distributed HTAP database compatible with the MySQL protocol 2. sequelize/sequelize ♥️ 18.8k An easy-to-use multi SQL dialect ORM for Node.js 3. cockroachdb/cockroach ♥️ 16.4k CockroachDB - the open source, cloud-native SQL database. 4. sqlmapproject/sqlmap ♥️ 14.4k Automatic SQL injection and database takeover tool 5. facebook/osquery ♥️ 14.3k SQL powered operating system instrumentation, monitoring, and an</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/PHP-rank/</link>
+     <title>PHP开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#PHP开源项目排行榜 (06-11) 1. robbyrussell/oh-my-zsh ♥️ 89.9k 🙃 A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration. Includes 20… 2. laravel/laravel ♥️ 52.8k A PHP framework for web artisans 3. blueimp/jQuery-File-Upload ♥️ 30k File Upload widget with multiple file selection, drag&amp;amp;amp;drop support, progress bar, validation and preview images, audi… 4. php/php-src ♥️ 23.6k The PHP Interpreter 5. ziadoz/awesome-ph</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/Objective-C-rank/</link>
+     <title>Objective-C开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#Objective-C开源项目排行榜 (06-11) 1. vsouza/awesome-ios ♥️ 31.9k A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects 2. SDWebImage/SDWebImage ♥️ 21.6k Asynchronous image downloader with cache support as a UIImageView category 3. grpc/grpc ♥️ 21.5k The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#) 4. dkhamsing/open-source-ios-apps ♥️ 20.3k 📱 Collaborative List of Open-Source iOS Apps 5. serhii-londar/open-source-mac-os-apps ♥️ </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/JavaScript-rank/</link>
+     <title>JavaScript开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#JavaScript开源项目排行榜 (06-11) 21. expressjs/express ♥️ 44.2k Fast, unopinionated, minimalist web framework for node. 22. chartjs/Chart.js ♥️ 43.9k Simple HTML5 Charts using the tag 23. h5bp/html5-boilerplate ♥️ 42.9k A professional front-end template for building fast, robust, and adaptable web apps or sites. 24. moment/moment ♥️ 41.4k Parse, validate, manipulate, and display dates in javascript. 25. meteor/meteor ♥️ 41.1k Meteor, the JavaScript App Platform 26. lo</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/Flutter-rank/</link>
+     <title>Flutter开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#Flutter开源项目排行榜 (06-11) 1. flutter/flutter ♥️ 66.7k Flutter makes it easy and fast to build beautiful mobile apps. 2. Solido/awesome-flutter ♥️ 18.4k An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more. 3. alibaba/flutter-go ♥️ 12.9k flutter 开发者帮助 APP，包含 flutter 常用 140+ 组件的demo 演示与中文文档 4. flutter/plugins ♥️ 6.4k Plugins for Flutter, including FlutterFire, maintained by the Flutter team </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/page2/</link>
+     <title>code4Flutter - flutter中国开发者社区</title>
+     <description>Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/page5/</link>
+     <title>code4Flutter - flutter中国开发者社区</title>
+     <description>Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/rank/2019/06/11/Android-rank/</link>
+     <title>Android开源项目排行榜 (06-11) | code4Flutter</title>
+     <description>#Android开源项目排行榜 (06-11) 21. xitu/gold-miner ♥️ 21.8k 🥇掘金翻译计划，可能是世界最大最好的英译中技术社区，最懂读者和译者的翻译平台： 22. greenrobot/EventBus ♥️ 21.1k Event bus for Android and Java that simplifies communication between Activities, Fragments, Threads, Services, etc. L… 23. skylot/jadx ♥️ 18.9k Dex to Java decompiler 24. Solido/awesome-flutter ♥️ 18.4k An awesome list that curates the best Flutter libraries, too</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/Upload_Images_using_Firebase_Storage_with_flutter/</link>
+     <title>Firebase存储上传图像例子 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/Flutter_package_for_Eva_Icons/</link>
+     <title>Eva Icons的flutter包 | code4Flutter</title>
+     <description>立即下载 ️⬇️ Eva Icons的flutter包。 eva_icons_flutter</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/Flutter_drawer_dynamic_ready_side_menu/</link>
+     <title>flutter抽屉动态菜单 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/Customizable_and_pluggable_Theme_Provider_with_Flutter/</link>
+     <title>主题切换插件 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/Basic_file_managing_app_for_Android_using_Flutter_framework/</link>
+     <title>Flutter版Android文件管理器 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/An_interval_progress_widget_for_Flutter/</link>
+     <title>Flutter间隔进度条控件 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/An_easy_to_use_and_customizable_Material_Flutter_Button/</link>
+     <title>flutter可定制的进度按钮 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/An_attempt_to_clone_part_of_Google_News_app_design_using_Flutter/</link>
+     <title>Flutter版Google新闻应用 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_tool_to_build_Flutter_layouts_on-device/</link>
+     <title>在设备上构建Flutter布局的工具 | code4Flutter</title>
+     <description>立即下载 ️⬇️ Meta Flutter是一个在设备上创建Flutter布局的项目。</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_simple_and_clean_news_app_made_with_Flutter_and_Dart/</link>
+     <title>一个简单而干净的新闻应用程序，用Flutter和Dart制作 | code4Flutter</title>
+     <description>立即下载 ️⬇️ 该项目是Flutter应用程序的起点。 news_app –&amp;amp;gt; Under Construction</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_simple_Pomodoro_timer_written_in_Flutter_web/</link>
+     <title>Flutter web版番茄钟计时器 | code4Flutter</title>
+     <description>立即下载 ️⬇️ 用Flutter web写的一个简单的番茄钟计时器。 Github主页 👉DinoLeung/pomodoro</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_glorified_todo_list_with_a_beautiful_ui/</link>
+     <title>一个酷炫的ToDo App(带登录) | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_flutter_popup_menu_support_both_iOS_and_Android/</link>
+     <title>弹出菜单支持iOS和Android | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_flutter_package_for_creating_badges/</link>
+     <title>角标-Badges | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_flutter_library_that_allows_you_to_create_a_button_with_animation/</link>
+     <title>twitter的心跳动画 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_flutter_application_implements_flutter_map_and_location_plugins/</link>
+     <title>flutter定位和地图插件-flutter_map | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_customizable_circular_slider_for_Flutter/</link>
+     <title>可定制圆形滑块 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_custom_refresh_indicator_for_flutter/</link>
+     <title>flutter的自定义刷新指示器 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_beautiful_bezier_line_chart_widget_for_flutter/</link>
+     <title>bezier折线图 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_Square_Puzzle_Flutter_game/</link>
+     <title>Flutter版俄罗斯方块游戏 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_Password_Manager_built_using_Flutter/</link>
+     <title>Flutter 密码管理器| Cipherly | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_Full_fledged_todo_app_which_is_made_with_Flutter_and_Dart/</link>
+     <title>Todo App完整项目 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_Flutter_widget_that_scrolls_text_widget_and_other_widget/</link>
+     <title>Marquee控件(走马灯) | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_Flutter_package_for_easily_implementing_Material_Design_navigation_transitions/</link>
+     <title>导航过渡动画 | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/06/10/A_Flutter_music_app_made_with_Provider_and_BLoC_pattern/</link>
+     <title>一款完整Flutter音乐应用程序(支持Provider和BLoC模式) | code4Flutter</title>
+     <description>立即下载 ️⬇️</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2019/05/29/shoubashoubianyi-flutter-engine/</link>
+     <title>手把手教你编译Flutter engine | code4Flutter</title>
+     <description>手把手教你编译Flutter engine | code4Flutter</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2018/11/26/jiejue-futter-engine/</link>
+     <title>手把手教你解决flutter engine内存泄漏 | code4Flutter</title>
+     <description>Flutter/engine 修复版介绍</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/2018/11/26/jsonxuliehua/</link>
+     <title>【译】Flutter json序列号与反序列化 | code4Flutter</title>
+     <description>很难想象一个移动应用程序不需要与Web服务器通信或在某些时候容易存储结构化数据。制作网络连接的应用程序时，迟早需要消耗一些好的旧JSON。</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/tag/</link>
+     <title>标签 | code4Flutter</title>
+     <description>Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/page3/</link>
+     <title>code4Flutter - flutter中国开发者社区</title>
+     <description>Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://code4flutter.com/page4/</link>
+     <title>code4Flutter - flutter中国开发者社区</title>
+     <description>Code4AFlutter是一个移动平台的代码库，是flutter开发好帮手。code4flutter为移动开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码，当然，你也可以浏览这些效果图或者视频，来找找你的UI设计灵感。讨论区提供技术交流、分享设计创意、展�</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

@@ -1,0 +1,1563 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter,动态化,MXFlutter," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="基于JS的高性能Flutter动态化框架">
+<meta name="keywords" content="flutter, 动态化, MXFlutter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于JS的高性能Flutter动态化框架MXFlutter">
+<meta property="og:url" content="https://code4flutter.com/2019/07/14/js_flutter_maxflutter/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="基于JS的高性能Flutter动态化框架">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2d34ded87">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2d533b9e0">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8da4a18677397">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2db7491a3">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2fe6a0164">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec3000a37d7">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec3060a0f92">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec304d27a3f">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2d34ded87">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec334ac9e1a">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec33b003aae">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2d533b9e0">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec340511d89">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec34356d9b8">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec340afef1c?imageslim">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec3469607b3">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/27/16b9502517393140">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/27/16b9502852446a4b">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基于JS的高性能Flutter动态化框架MXFlutter">
+<meta name="twitter:description" content="基于JS的高性能Flutter动态化框架">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2d34ded87">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2019/07/14/js_flutter_maxflutter/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>基于JS的高性能Flutter动态化框架MXFlutter - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>基于JS的高性能Flutter动态化框架MXFlutter</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2019/07/14/js_flutter_maxflutter/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            基于JS的高性能Flutter动态化框架MXFlutter
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/14/js_flutter_maxflutter/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2019/07/14/js_flutter_maxflutter/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  2727
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  13
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <h2 id="基于js的高性能flutter动态化框架">基于JS的高性能Flutter动态化框架</h2>
+
+<p>文章来源：https://juejin.im/post/5d11a4f06fb9a07ec63b21ea</p>
+
+<p># 基于JS的高性能Flutter动态化框架MXFlutter</p>
+
+<h2 id="基于js的高性能flutter动态化框架-1">基于JS的高性能Flutter动态化框架</h2>
+
+<p>可能是目前放出来的相对最完整的Flutter动态化方案</p>
+
+<p>18年10月份，手机QQ看点团队尝试使用 Flutter，做为iOS开发，一接触到Flutter就马上感受到，Flutter
+虽然强大，但不能像RN一样动态化是阻碍我们使用她的唯一障碍了。看Google团队对动态化的计划，短期内应该不会上线，所以撸起袖子自己动手，启动了这个技术探索项目。</p>
+
+<h1 id="简介">简介</h1>
+
+<p>项目代号：MXFlutter （Matrix Flutter）</p>
+
+<p>核心思路是把 Flutter 的渲染逻辑中的三棵树中的第一棵，放到 JavaScript 中生成。用 JavaScript 完整实现了 Flutter
+控件层封装，可以使用 JavaScript，用极其类似 Dart 的开发方式，开发Flutter应用，利用JavaScript版的轻量级Flutter
+Runtime，生成UI描述，传递给Dart层的UI引擎，UI引擎把UI描述生产真正的 Flutter 控件。所以在iOS上是完全动态化的
+，完整代码在github：</p>
+
+<p>如果能帮助到大家，请给MXFlutter点个Star，给我们有动力继续更新下去^_*，也让整个Flutter社区都能了解到我们中国开发者的贡献。<a href="https://link.juejin.im/?target=https://github.com/TGIF-iMatrix/MXFlutter">github
+TGIF-iMatrix
+MXFlutter</a></p>
+
+<p>继续前先瞥一眼整体的架构，一句话介绍MXFlutter，就是用JavaScript，以Flutter的写法开发Flutter。汗…还是有点绕，大家看下面贴出来的代码吧。</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2d34ded87" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<h2 id="效果">效果</h2>
+
+<p>以下截图是在MXFlutter框架下用JS开发，大家可以把上面的源码下载下来，里面有完整的JS代码示例：</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2d533b9e0" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<p>下面是UI截图对应的JS代码，没错，你没有眼花，这个真的是 JavaScript 代码，可以在 MXFlutter 的运行时库上渲染出 Flutter 的UI</p>
+
+<p>源码中还有更丰满的示例，高仿知乎页面JSFlutter版
+<a href="https://link.juejin.im/?target=https://github.com/TGIF-iMatrix/MXFlutter/blob/master/js_flutter_src/app_test/zhihu/home/home_page.js">github.com/TGIF-iMatri…</a>
+，这是对应UI，已经接近在线上版直接使用了。</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8da4a18677397" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<p>这个漂亮的知乎页面，是用Dart版转JS而来，在此鸣谢作者<a href="https://link.juejin.im/?target=https://github.com/HackSoul/zhihu-flutter">许吉友</a>
+，大家可以关注一下他。</p>
+
+<h1 id="现状">现状</h1>
+
+<p>MXFlutter虽然各个模块已相对完整，但投入生产还需要解决其中的BUG，由于19年初，小组启动新项目，非常繁忙，几乎没有时间继续开发，从3月份一直暂停，目前人力仍然很紧张，如果大家有兴趣，期待小伙伴们一起加入，共同丰富
+MXFlutter 动态化能力。</p>
+
+<h2 id="0x00-分享下动态化探索过程中的几个炮灰方案">0x00 分享下动态化探索过程中的几个炮灰方案</h2>
+
+<h3 id="flutter-动态化方案一-静态解析dart语言生成ui描述">Flutter 动态化方案一： 静态解析Dart语言，生成UI描述</h3>
+
+<p>Dart 本身是描述语言，IDE 的 Outline 工具可以解析 Dart 代码生成树形结构，我们可以利用其源码，生成 JSON UI
+描述，相关代码：<a href="https://link.juejin.im/?target=https://github.com/flutter/flutter-intellij/blob/b6461e8d8ed3857a9e4350bc61133c8f48249f43/src/io/flutter/preview/PreviewView.java">github.com/flutter/flu…</a>
+dart-sdk: analysis_server</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2db7491a3" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<p>静态解析 Dart 缺点，不能写逻辑，对编写UI代码有很多限制，不能写判断语句，不能写函数，要支持这些成本很高。所以只好放弃。</p>
+
+<h3 id="快速介绍下flutter的核心渲染模块三棵树">快速介绍下Flutter的核心渲染模块三棵树</h3>
+
+<p>响应式UI框架</p>
+
+<ol>
+  <li>WidgetTree:Widget 里面存储了一个视图的配置信息，可以高效的创建（build）和销毁</li>
+  <li>Element 是分离 WidgetTree 和真正的渲染对象的中间层， WidgetTree 用来描述对应的Element 属性</li>
+  <li>RenderObject 来执行 Diff， Hit Test 布局、绘制</li>
+</ol>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2fe6a0164" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<p>第一棵树有完整的UI描述信息，那么我只要JIT下通过 DartVM 创建第一棵树，其他耗时的操作都丢到AOT里去。</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec3000a37d7" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<h3 id="flutter-动态化方案二-动态运行-dart-语言生产ui描述">Flutter 动态化方案二： 动态运行 Dart 语言，生产UI描述</h3>
+
+<p>和方案一静态解析Dart对比，第二个方案是写一个极其轻量的运行时库，让编写UI的Dart 代码运行了起来，生成树形结构，再序列化为
+JSON（debug），FlatBuffers （release）UI 描述。可以称之为动态解析方案</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec3060a0f92" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<p>具体渲染逻辑</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec304d27a3f" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<p>总体架构</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2d34ded87" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<p>架构也有了，方案也有了，要Run起来还有几个麻烦事要忙活，DartVM 要抽出来，Dart JIT层的轻量级运行时库，Dart
+AOT层把DSL转成真正Widget的UIEngin也要写哦，就是图中黄色和红色的三部分</p>
+
+<h3 id="抽离dartvm">抽离DartVM</h3>
+
+<h4 id="无法简单修改编译条件抽离">无法简单修改编译条件抽离</h4>
+
+<p>Dart源代码在进行编译时会通过DART_PRECOMPILED_RUNTIME宏进行条件编译从而在Debug版编译JIT模式，Release版编译AOT模式。并且这两种模式是互斥的，无法同时存在。</p>
+
+<h4 id="简单的解决方法是">简单的解决方法是</h4>
+
+<p>我们单独编译出一个DartVM，打包成动态库，修改导出符号，避免符合冲突</p>
+
+<h4 id="引入dartvm还需要的工作">引入DartVM还需要的工作</h4>
+
+<ul>
+  <li>开发DartVM与Native互通接口，参考了Flutter，使用Native Extension和Dart_Invoke实现互相调用</li>
+  <li>双DartVM调试方案，两个DartVM独立运行，通过远程端口单独调试DartFlutter</li>
+  <li>支持引入第三方库，DartFlutter在打包发布时会通过shell脚本分析.packages文件将依赖库自动打包随Dart File Zip一起随包下发。
+常用库可以预先打包的App本地，减少下发文件大小</li>
+</ul>
+
+<h4 id="一个暂时无法解决的问题">一个暂时无法解决的问题</h4>
+
+<p>安装包过大，DartVM增大安装包30M，如果加上原本的AOT40M，整个Flutter安装包会增大到70M,用DartVM不现实。怎么办呢。</p>
+
+<h2 id="0x01-最终方案javassriptcore--替换dartvm">0x01 最终方案JavasSriptCore  替换DartVM</h2>
+
+<h3 id="可性能分析">可性能分析</h3>
+
+<ol>
+  <li>JavasSriptCore 是iOS官方库，不增加安装包</li>
+  <li>Dart代码和JS代码非常相近，可以用工具转换</li>
+  <li>JavasSriptCore 与 Native有更方便的互调接口</li>
+  <li>ReactNative 已验证通过JS开发App能力是可行的</li>
+  <li>JS的执行效率是DartVM的3倍编码1M的JSON只需 2毫秒</li>
+</ol>
+
+<h3 id="需要解决的问题">需要解决的问题</h3>
+
+<p>用JS开发假的Flutter Runtime 封装JavasSriptCore与Native、 Flutter互调接口</p>
+
+<h2 id="0x02-讲解下mxflutter的渲染原理">0x02 讲解下MXFlutter的渲染原理</h2>
+
+<h3 id="渲染树">渲染树</h3>
+
+<p>两个重要的数据结构</p>
+
+<ul>
+  <li>MXScriptWidget</li>
+  <li>MXWidgetTree</li>
+</ul>
+
+<p>MXScriptWidget管理一个Script页面或控件，负责创建管理 ScriptWidgetTree，以自增ID与Flutter对应Widget相互调用
+，每次Build都会创建一个新的MXWidgetTree</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec334ac9e1a" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<h3 id="mxflutter-事件">MXFlutter 事件</h3>
+
+<p>在 JS 侧 buildWidget 时，我们会对 function 事件，生成自增的唯一 callbackID，并与 widgetID 组合拼接成
+widgetID/callbackID，作为事件的唯一标识。用户点击界面某个 button 时，事件由 Flutter 侧传到 JS 侧，通过解析
+widgetID/callbackID，找到对应 widget 的 callback，完成事件处理。</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec33b003aae" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<h3 id="mxflutter-高效的动态列表">MXFlutter 高效的动态列表</h3>
+
+<p>通过在 JS 侧，ListView 调用 Build 方法时，提前展开 child, 并为 ListView 增加 children
+成员变量。此时，因为仅有数据配置，不会有多余的 Layout 过程，所以速度是非常快的。</p>
+
+<p>在 Flutter 侧，ListView 仍然是动态创建，滑动列表，MXFlutter Engine 根据 Children 数组里的配置数据,创建真正的
+Flutter WidgetCell，效率与原生相同完全一致。</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec2d533b9e0" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<h3 id="mxflutter-动画的方案">MXFlutter 动画的方案</h3>
+
+<p>动画参数在VM层配置一次，动画开始后在Flutter层闭环循环rebuild,形成动画效果，这个是比较通用的做法了。</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec340511d89" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<h2 id="0x03-渲染优化">0x03 渲染优化</h2>
+
+<p>不管JSWidget创建有多快，总是有跨语言执行，所以减少Build次数和减小Build出来的DSL UI描述大小，可以优化性能。</p>
+
+<h3 id="渲染优化1-局部刷新配置树diff">渲染优化1-局部刷新：配置树Diff</h3>
+
+<h4 id="一个事实">一个事实</h4>
+
+<p>自动对比两次Widget 无论如何都没有直接创建一个新的快，如果开发者不参与，由框架来自动计算Diff是得不偿失的</p>
+
+<h4 id="可行的方法">可行的方法</h4>
+
+<p>牺牲响应式UI框架的设计模式
+采用和Native、Web的方式，由开发者参与自己设置Diff的节点，即根据ID获取对应Widget，修改Widget参数，Rebuild生成新DSL</p>
+
+<h3 id="渲染优化2-局部刷新-嵌套节点">渲染优化2-局部刷新-嵌套节点</h3>
+
+<ul>
+  <li>MXScriptWidget 是一个具备Build
+WidgetTree，缓存Callback映射表，动画支持的基本单位。可以作为普通FlutterWidget来使用。</li>
+  <li>在Flutter层，如果Widget树中节点有MXScriptWidget，则在对应节点上创建MXFlutterWidget自定义控件</li>
+  <li>两个子树可以相互对应获得局部刷新，callback回调，动画支持，Rebuild时所生产的UI DSL 大大减少，加快刷新速率</li>
+</ul>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec34356d9b8" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<h3 id="渲染优化3-可以分离动态和静态控件">渲染优化3-可以分离动态和静态控件</h3>
+
+<p>MXStatelessWidget
+可以通过使用无状态的ScriptWidget来向框架标示，其下面的子树，在每次build中不会变化，其build结果会被缓存，下次在Flutter层直接复用</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec340afef1c?imageslim" alt="" /></p>
+
+<h3 id="内存-跨层镜像对象的生命周期">内存-跨层镜像对象的生命周期</h3>
+
+<p>VM层，Flutter层，Native层镜像对象的生命周期如何控制？ 参考苹果 iOS JavaScriptCore 和 Objective-C的解决方法</p>
+
+<ol>
+  <li>以Flutter层的对象生命周期为主</li>
+  <li>在VM层增加WeakMap支持，不增加对象引用计数，Flutter层释放之后，释放VM层对象</li>
+  <li>在Native层使用 JSManagerValue，VM层对象释放后，Native的引用被自动置空</li>
+</ol>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/25/16b8cec3469607b3" alt="" /></p>
+
+<h3 id="线程问题">线程问题</h3>
+
+<p>参照业界RN等框架的设计，VM层跑在一个单独的后台线程</p>
+
+<ol>
+  <li>从Flutter层通过Native通道调用到VM，发生两次线程切换</li>
+  <li>Flutter UI层和MXScript层是异步调用，限制动态控件的架构设计</li>
+</ol>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/27/16b9502517393140" alt="" /></p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/27/16b9502852446a4b" alt="" />
+<span class="figcaption_hack"></span></p>
+
+<h2 id="0x04-让开发者写出优雅的代码">0x04 让开发者写出优雅的代码</h2>
+
+<p>让开发者写出优雅的代码,咳咳，这里有点吹了，总之，我们想让使用MXFlutter的开发同学写出来的代码看来正规一些，好看一些。</p>
+
+<ul>
+  <li>完美支持Dart Flutter语法</li>
+  <li>定义所有Flutter 中同名Widget类，构建Widget的参数类，支持相同的Build方式，SetState触发刷新，事件响应函数</li>
+  <li>Callback函数自动生成CallbackID</li>
+  <li>Callback函数自动This绑定</li>
+  <li>ListView 像Dart层一样开发，支持itemBuilder回调函数</li>
+</ul>
+
+<p>参考JS示例源码 <a href="https://link.juejin.im/?target=https://github.com/TGIF-iMatrix/MXFlutter/blob/master/js_flutter_src/app_test/home_page.js">TGIF-iMatrix
+home_page.js</a></p>
+
+<h2 id="0x05-mxflutter-基础建设">0x05 MXFlutter 基础建设</h2>
+
+<p>因为 JavaScript 不支持模块化开发，不能引用其他文件代码，我们参照 RN，使用 Node.js 的模块化代码，在Native 层支持 require
+语法。开发时，IDE最好选用 VSCode，因为可以按装JS插件，直接运行调试JS</p>
+
+<p>另外，我们通过重定向模拟器 JS 路径文件到开发机，用户修改完 JS 文件，便可直接看到相应修改，实现模拟器的页面热更新。</p>
+
+<h2 id="结语">结语</h2>
+
+<p>由于时间紧张，MXFlutter还有很多遗留的问题，作为一个技术探索，非常辛苦但非常有趣，期待各位大牛指导，期待小伙伴们提出问题一起讨论解决。</p>
+
+<p>要了解全部，一定要拉下源码，运行起来看看，有问题可以留言一讨论，MXFlutter会持续更新。</p>
+
+<p>项目成员luca浪哥，nice，yockie帅哥贡献了动画，控件，示例APP等核心实现，
+chaodong老师负责了DartVM方案，IP老师帮忙提供了单元测试，健身大神<a href="https://link.juejin.im/?target=http://yoferzhang.com/">yofer</a>老师负责了代码维护，工具建设。</p>
+
+<p>TGIF-iMatrix 
+是一个技术氛围浓厚，有美女有帅哥有趣有爱的团队，还有精通量子计算，5G等前沿技术的数据分析victor老王，欢迎iOS，Android开发小伙伴，数据开发，数据分析岗位同学投递简历哦：imatrixteam@qq.com</p>
+
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter" rel="tag"># flutter</a>
+          
+            
+            <a href="/tag/#/%E5%8A%A8%E6%80%81%E5%8C%96" rel="tag"># 动态化</a>
+          
+            
+            <a href="/tag/#/MXFlutter" rel="tag"># MXFlutter</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/note/2019/07/16/compare_mxflutter_dynamic/" rel="next" title="动态化方案MXFlutter分析和DynamicWidget对比">
+                <i class="fa fa-chevron-left"></i> 动态化方案MXFlutter分析和DynamicWidget对比
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/weekly/2019/07/14/flutter_weekly_28/" rel="prev" title="flutter 周报 - 28期(0708-0714)">
+                flutter 周报 - 28期(0708-0714) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2019/07/14/js_flutter_maxflutter/';
+              this.page.identifier = '/2019/07/14/js_flutter_maxflutter/';
+              this.page.title = '基于JS的高性能Flutter动态化框架MXFlutter';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

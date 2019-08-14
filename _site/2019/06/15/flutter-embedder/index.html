@@ -1,0 +1,1359 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter engine," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="从Flutter technical-overview基本架构来说framework是使用最频繁的，但是对于engine和embedder确实flutter的底层，支持整个flutter的运行 本文图片参考于闲鱼文章 架构图参考flutter.dev">
+<meta name="keywords" content="flutter engine">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flutter底层原理和embedder的隐忧">
+<meta property="og:url" content="https://code4flutter.com/2019/06/15/flutter-embedder/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="从Flutter technical-overview基本架构来说framework是使用最频繁的，但是对于engine和embedder确实flutter的底层，支持整个flutter的运行 本文图片参考于闲鱼文章 架构图参考flutter.dev">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/15/16b5b64545ea5113?w=1588&amp;h=884&amp;f=png&amp;s=106964">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/15/16b5b61aaad058c3?w=731&amp;h=357&amp;f=png&amp;s=25065">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/15/16b5b630686912a0?w=627&amp;h=297&amp;f=png&amp;s=11919">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/15/16b5b7e6cca95542?w=1484&amp;h=724&amp;f=png&amp;s=206849">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/15/16b5b82d301bf985?w=1438&amp;h=852&amp;f=png&amp;s=187994">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/15/16b5b82144b3e46a?w=1450&amp;h=886&amp;f=png&amp;s=243688">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/6/15/16b5b8481e4553f9?w=1582&amp;h=1376&amp;f=png&amp;s=378743">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="flutter底层原理和embedder的隐忧">
+<meta name="twitter:description" content="从Flutter technical-overview基本架构来说framework是使用最频繁的，但是对于engine和embedder确实flutter的底层，支持整个flutter的运行 本文图片参考于闲鱼文章 架构图参考flutter.dev">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2019/6/15/16b5b64545ea5113?w=1588&amp;h=884&amp;f=png&amp;s=106964">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2019/06/15/flutter-embedder/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>flutter底层原理和embedder的隐忧 - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>flutter底层原理和embedder的隐忧</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2019/06/15/flutter-embedder/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            flutter底层原理和embedder的隐忧
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/06/15/flutter-embedder/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2019/06/15/flutter-embedder/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  1122
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <p>从Flutter technical-overview基本架构来说framework是使用最频繁的，但是对于engine和embedder确实flutter的底层，支持整个flutter的运行</p>
+
+<ul>
+  <li>本文图片参考于闲鱼文章</li>
+  <li>架构图参考<a href="https://flutter.dev/docs/resources/technical-overview">flutter.dev</a></li>
+</ul>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/15/16b5b64545ea5113?w=1588&amp;h=884&amp;f=png&amp;s=106964" alt="" /></p>
+
+<p>flutter 有三个学习层次，framework，engine，embedder
+上层的framework负责ui相关的事情，动画，widget，绘图，手势，基础库
+engine层次c++实现，支持flutter相关的渲染，线程管理，平台事件。</p>
+
+<blockquote>
+  <p>engine里面有个内存泄漏，flutter官方一直没有解决，可以出门左转找到解决方案《手把手教你解决flutter内存泄漏》。一句话就是，flutter在处理flutter method channel和register与engine之间持有关系比较混乱，存在一个比较大的循环引用。</p>
+</blockquote>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/15/16b5b61aaad058c3?w=731&amp;h=357&amp;f=png&amp;s=25065" alt="" /></p>
+
+<p>embedder 为engine提供四个task runner，将引擎移植到平台的中间层代码
+渲染设置，原生插件，打包，线程管理，事件循环交互操作</p>
+
+<p>在shell.cc里面可以看到，四个runner包括 ui runner gpu runner、io runner、platform runner</p>
+
+<ul>
+  <li>
+    <p>ui runner负责绑定渲染相关的操作，如通知engine有帧渲染，等待下一个vsync，对创建的widget进行layout并生成layer tree，更新layer tree信息，通知处理native plugin信息，如timer，microtask，异步io操作</p>
+  </li>
+  <li>
+    <p>gpu runner是用于执行gpu指令，负责将layer tree提供的信息转换为平台可执行的gpu指令，负责绘制gpu资源的管理，包括framebuffer，surface、texture、buffers</p>
+  </li>
+  <li>
+    <p>ios runner是处理图片数据，为gpu渲染做准备，比如读取磁盘压缩图片的格式，将解压成gpu能处理的格式，并传给gpu，因其比较消耗性能所以单独开一个线程。</p>
+  </li>
+  <li>
+    <p>platform runner，所有接口调用都使用该接口，长时间卡顿将会被watchdog强杀。</p>
+  </li>
+</ul>
+
+<p>runner的实现策略，ios、android平台启动时为ui，gpu，io runner各自创建一个线程，但是共享platform runner和线程
+Fushia,为ui，gpu，io，platform各自创建一个线程。</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/15/16b5b630686912a0?w=627&amp;h=297&amp;f=png&amp;s=11919" alt="" /></p>
+
+<p>isolate 是dart vm自己管理，engine无法访问，它是对actor并发模式的实现，运行中程序由一个或多个actor组成，这些actor就是isolate。</p>
+
+<p>原意是隔离的意思，表示没有共享内存和并发，逻辑上隔离，按顺序执行，不用担心死锁的问题。
+isolate直接的通信方式只能通过port，消息传递异步，与普通线程最大的区别就是没有共享内存。
+实现的步骤有，初始化isolate数据结构，初始化堆内存，进入对应所在的线程运行isolate，配置port，配置消息处理机制，配置debugger，将isolate注册到全局监控器。</p>
+
+<p>与runner的关系，isolate是dart vm自己管理，engine无法访问。
+如对于ui runner来说，isolate通过dart的c++调用能力，将ui渲染任务提交到ui runner，这样可以跟engine相关模块进行交互，ui相关的任务被提交到ui runner也给isolate一些事件通知，所以isolate同时处理app和native plugin的任务
+对于gpu rnnner来说，isloate将dart的c++调用能力把gpu指令提交给gpu runner，把layer tree信息转换为gpu指令，这些都是通过isolate来执行的</p>
+
+<blockquote>
+  <p>分享一个坑，emmberdder里面有一个fml weakptr会造成四个task runner在reset的时候释放，但是不会把指针置空，会在一定几率下关闭flutterviewcontroller，造成崩溃，因为访问了野指针，fml的实现使用了uniqueptr智能指针，如果控制不好，这个应该后期会给flutter带来比较大的崩溃率。</p>
+</blockquote>
+
+<p>测试代码</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-(void)handleAutoRelase{
+ 
+     FlutterBasicMessageChannel* channel;
+    FlutterEngine * engine;
+    @autoreleasepool {
+        FlutterViewController* flutterViewController =
+        [[FlutterViewController alloc] init];
+        channel = flutterViewController.engine.systemChannel;
+        engine = flutterViewController.engine;
+        NSLog(@"engine111:%@",engine);
+    }
+    NSLog(@"engine222:%@",engine);
+    [channel sendMessage:@"Hello!"];
+    [channel setMessageHandler:^(id  _Nullable message, FlutterReply  _Nonnull callback) { }]; 
+}
+</code></pre></div></div>
+
+<p>以上代码是google工程师提供的测试代码，autoreleasepool中包括了flutter和engine的创建，然后自动释放，然后在释放之后重新调用sendmessage的方法，此时会有一个访问野指针的崩溃。
+对于engine的改写就需要放置在释放的时候放置对内部方法的访问</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/15/16b5b7e6cca95542?w=1484&amp;h=724&amp;f=png&amp;s=206849" alt="" /></p>
+
+<p>这样可以防止释放时候崩溃，但是对于根本的原因是fml内部实现的问题，如上所说，释放完成而指针变成了悬空指针。</p>
+
+<p>engine的第二个隐患，在shell.cc访问weakptr一定会得到一个不为空的指针，即使是在engine或platformview释放的时候，以下是它的实现代码</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/15/16b5b82d301bf985?w=1438&amp;h=852&amp;f=png&amp;s=187994" alt="" /></p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/15/16b5b82144b3e46a?w=1450&amp;h=886&amp;f=png&amp;s=243688" alt="" /></p>
+
+<p>粗略算了一下，四个taskrunner的getweakptr方法的实现都有隐患，归根到底还是fml的实现问题，悬空指针没有解决，这些都会造成野指针访问内存的崩溃。</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2019/6/15/16b5b8481e4553f9?w=1582&amp;h=1376&amp;f=png&amp;s=378743" alt="" /></p>
+
+<ul>
+  <li>本文<a href="https://github.com/Natoto/flutterOnExistApp">demo</a> https://github.com/Natoto/flutterOnExistApp</li>
+  <li>【flutter engine 开发】QQ群号:217429001</li>
+</ul>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter%20engine" rel="tag"># flutter engine</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/weekly/2019/06/23/flutter_weekly_25/" rel="next" title="flutter 周报 - 25期(0617-0623)">
+                <i class="fa fa-chevron-left"></i> flutter 周报 - 25期(0617-0623)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/12/Whatsapp_clone_using_Flutter/" rel="prev" title="Flutter版Whatsapp">
+                Flutter版Whatsapp <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2019/06/15/flutter-embedder/';
+              this.page.identifier = '/2019/06/15/flutter-embedder/';
+              this.page.title = 'flutter底层原理和embedder的隐忧';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

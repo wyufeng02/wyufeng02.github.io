@@ -1,0 +1,1721 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter,Location,awesome-flutter,flutter开发规范," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Flutter Go 代码开发规范 0.1.0 版 代码风格 标识符三种类型 大驼峰 类、枚举、typedef和类型参数 class SliderMenu { ... } class HttpRequest { ... } typedef Predicate = bool Function&amp;lt;T&amp;gt;(T value); 包括用于元数据注释的类 class Foo { const Foo([arg]); } @Foo(anArg) class A { ... } @Foo() class B { ... } 使用小写加下划线来命名库和源文件 library peg_parser.source_scanner; import &apos;file_system.dart&apos;; import &apos;slider_menu.dart&apos;; 不推荐如下写法： library pegparser.SourceScanner; import &apos;file-system.dart&apos;; import &apos;SliderMenu.dart&apos;; 使用小写加下划线来命名导入前缀 import &apos;dart:math&apos; as math; import &apos;package:angular_components/angular_components&apos; as angular_components; import &apos;package:js/js.dart&apos; as js; 不推荐如下写法： import &apos;dart:math&apos; as Math; import &apos;package:angular_components/angular_components&apos; as angularComponents; import &apos;package:js/js.dart&apos; as JS; 使用小驼峰法命名其他标识符 var item; HttpRequest httpRequest; void align(bool clearItems) { // ... } 优先使用小驼峰法作为常量命名 const pi = 3.14; const defaultTimeout = 1000; final urlScheme = RegExp(&apos;^([a-z]+):&apos;); class Dice { static final numberGenerator = Random(); } 不推荐如下写法： const PI = 3.14; const DefaultTimeout = 1000; final URL_SCHEME = RegExp(&apos;^([a-z]+):&apos;); class Dice { static final NUMBER_GENERATOR = Random(); } 不使用前缀字母 因为Dart可以告诉您声明的类型、范围、可变性和其他属性，所以没有理由将这些属性编码为标识符名称。 defaultTimeout 不推荐如下写法： kDefaultTimeout 排序 为了使你的文件前言保持整洁，我们有规定的命令，指示应该出现在其中。每个“部分”应该用空行分隔。 在其他引入之前引入所需的dart库 import &apos;dart:async&apos;; import &apos;dart:html&apos;; import &apos;package:bar/bar.dart&apos;; import &apos;package:foo/foo.dart&apos;; 在相对引入之前先引入在包中的库 import &apos;package:bar/bar.dart&apos;; import &apos;package:foo/foo.dart&apos;; import &apos;util.dart&apos;; 第三方包的导入先于其他包 import &apos;package:bar/bar.dart&apos;; import &apos;package:foo/foo.dart&apos;; import &apos;package:my_package/util.dart&apos;; 在所有导入之后，在单独的部分中指定导出 import &apos;src/error.dart&apos;; import &apos;src/foo_bar.dart&apos;; export &apos;src/error.dart&apos;; 不推荐如下写法： import &apos;src/error.dart&apos;; export &apos;src/error.dart&apos;; import &apos;src/foo_bar.dart&apos;; 所有流控制结构，请使用大括号 这样做可以避免悬浮的else问题 if (isWeekDay) { print(&apos;Bike to work!&apos;); } else { print(&apos;Go dancing or read a book!&apos;); } 例外 一个if语句没有else子句，其中整个if语句和then主体都适合一行。在这种情况下，如果你喜欢的话，你可以去掉大括号 if (arg == null) return defaultValue; 如果流程体超出了一行需要分划请使用大括号： if (overflowChars != other.overflowChars) { return overflowChars &amp;lt; other.overflowChars; } 不推荐如下写法： if (overflowChars != other.overflowChars) return overflowChars &amp;lt; other.overflowChars; 注释 要像句子一样格式化 除非是区分大小写的标识符，否则第一个单词要大写。以句号结尾(或“!”或“?”)。对于所有的注释都是如此：doc注释、内联内容，甚至TODOs。即使是一个句子片段。 greet(name) { // Assume we have a valid name. print(&apos;Hi, $name!&apos;); } 不推荐如下写法： greet(name) { /* Assume we have a valid name. */ print(&apos;Hi, $name!&apos;); } 可以使用块注释(/…/)临时注释掉一段代码，但是所有其他注释都应该使用// Doc注释 使用///文档注释来记录成员和类型。 使用doc注释而不是常规注释，可以让dartdoc找到并生成文档。 /// The number of characters in this chunk when unsplit. int get length =&amp;gt; ... 由于历史原因，达特茅斯学院支持道格评论的两种语法:///(“C#风格”)和/**…* /(“JavaDoc风格”)。我们更喜欢/// 因为它更紧凑。/*和/在多行文档注释中添加两个无内容的行。在某些情况下，///语法也更容易阅读，例如文档注释包含使用*标记列表项的项目符号列表。 考虑为私有api编写文档注释 Doc注释并不仅仅针对库的公共API的外部使用者。它们还有助于理解从库的其他部分调用的私有成员 用一句话总结开始doc注释 以简短的、以用户为中心的描述开始你的文档注释，以句号结尾。 /// Deletes the file at [path] from the file system. void delete(String path) { ... } 不推荐如下写法： /// Depending on the state of the file system and the user&apos;s permissions, /// certain operations may or may not be possible. If there is no file at /// [path] or it can&apos;t be accessed, this function throws either [IOError] /// or [PermissionError], respectively. Otherwise, this deletes the file. void delete(String path) { ... } “doc注释”的第一句话分隔成自己的段落 在第一个句子之后添加一个空行，把它分成自己的段落 /// Deletes the file at [path]. /// /// Throws an [IOError] if the file could not be found. Throws a /// [PermissionError] if the file is present but could not be deleted. void delete(String path) { ... } Flutter_Go 使用参考 库的引用 flutter go 中，导入lib下文件库，统一指定包名，避免过多的../../ package:flutter_go/ 字符串的使用 使用相邻字符串连接字符串文字 如果有两个字符串字面值(不是值，而是实际引用的字面值)，则不需要使用+连接它们。就像在C和c++中，简单地把它们放在一起就能做到。这是创建一个长字符串很好的方法但是不适用于单独一行。 raiseAlarm( &apos;ERROR: Parts of the spaceship are on fire. Other &apos; &apos;parts are overrun by martians. Unclear which are which.&apos;); 不推荐如下写法: raiseAlarm(&apos;ERROR: Parts of the spaceship are on fire. Other &apos; + &apos;parts are overrun by martians. Unclear which are which.&apos;); 优先使用模板字符串 &apos;Hello, $name! You are ${year - birth} years old.&apos;; 在不需要的时候，避免使用花括号 &apos;Hi, $name!&apos; &quot;Wear your wildest $decade&apos;s outfit.&quot; 不推荐如下写法： &apos;Hello, &apos; + name + &apos;! You are &apos; + (year - birth).toString() + &apos; y...&apos;; 不推荐如下写法： &apos;Hi, ${name}!&apos; &quot;Wear your wildest ${decade}&apos;s outfit.&quot; 集合 尽可能使用集合字面量 如果要创建一个不可增长的列表，或者其他一些自定义集合类型，那么无论如何，都要使用构造函数。 var points = []; var addresses = {}; var lines = &amp;lt;Lines&amp;gt;[]; 不推荐如下写法： var points = List(); var addresses = Map(); 不要使用.length查看集合是否为空 if (lunchBox.isEmpty) return &apos;so hungry...&apos;; if (words.isNotEmpty) return words.join(&apos; &apos;); 不推荐如下写法： if (lunchBox.length == 0) return &apos;so hungry...&apos;; if (!words.isEmpty) return words.join(&apos; &apos;); 考虑使用高阶方法转换序列 如果有一个集合，并且希望从中生成一个新的修改后的集合，那么使用.map()、.where()和Iterable上的其他方便的方法通常更短，也更具有声明性 var aquaticNames = animals .where((animal) =&amp;gt; animal.isAquatic) .map((animal) =&amp;gt; animal.name); 避免使用带有函数字面量的Iterable.forEach() 在Dart中，如果你想遍历一个序列，惯用的方法是使用循环。 for (var person in people) { ... } 不推荐如下写法： people.forEach((person) { ... }); 不要使用List.from()，除非打算更改结果的类型 给定一个迭代，有两种明显的方法可以生成包含相同元素的新列表 var copy1 = iterable.toList(); var copy2 = List.from(iterable); 明显的区别是第一个比较短。重要的区别是第一个保留了原始对象的类型参数 // Creates a List&amp;lt;int&amp;gt;: var iterable = [1, 2, 3];">
+<meta name="keywords" content="flutter, Location, awesome-flutter, flutter开发规范">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flutter Go 代码开发规范 0.1.0 版">
+<meta property="og:url" content="https://code4flutter.com/2019/07/08/flutter_got_guide/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="Flutter Go 代码开发规范 0.1.0 版 代码风格 标识符三种类型 大驼峰 类、枚举、typedef和类型参数 class SliderMenu { ... } class HttpRequest { ... } typedef Predicate = bool Function&amp;lt;T&amp;gt;(T value); 包括用于元数据注释的类 class Foo { const Foo([arg]); } @Foo(anArg) class A { ... } @Foo() class B { ... } 使用小写加下划线来命名库和源文件 library peg_parser.source_scanner; import &apos;file_system.dart&apos;; import &apos;slider_menu.dart&apos;; 不推荐如下写法： library pegparser.SourceScanner; import &apos;file-system.dart&apos;; import &apos;SliderMenu.dart&apos;; 使用小写加下划线来命名导入前缀 import &apos;dart:math&apos; as math; import &apos;package:angular_components/angular_components&apos; as angular_components; import &apos;package:js/js.dart&apos; as js; 不推荐如下写法： import &apos;dart:math&apos; as Math; import &apos;package:angular_components/angular_components&apos; as angularComponents; import &apos;package:js/js.dart&apos; as JS; 使用小驼峰法命名其他标识符 var item; HttpRequest httpRequest; void align(bool clearItems) { // ... } 优先使用小驼峰法作为常量命名 const pi = 3.14; const defaultTimeout = 1000; final urlScheme = RegExp(&apos;^([a-z]+):&apos;); class Dice { static final numberGenerator = Random(); } 不推荐如下写法： const PI = 3.14; const DefaultTimeout = 1000; final URL_SCHEME = RegExp(&apos;^([a-z]+):&apos;); class Dice { static final NUMBER_GENERATOR = Random(); } 不使用前缀字母 因为Dart可以告诉您声明的类型、范围、可变性和其他属性，所以没有理由将这些属性编码为标识符名称。 defaultTimeout 不推荐如下写法： kDefaultTimeout 排序 为了使你的文件前言保持整洁，我们有规定的命令，指示应该出现在其中。每个“部分”应该用空行分隔。 在其他引入之前引入所需的dart库 import &apos;dart:async&apos;; import &apos;dart:html&apos;; import &apos;package:bar/bar.dart&apos;; import &apos;package:foo/foo.dart&apos;; 在相对引入之前先引入在包中的库 import &apos;package:bar/bar.dart&apos;; import &apos;package:foo/foo.dart&apos;; import &apos;util.dart&apos;; 第三方包的导入先于其他包 import &apos;package:bar/bar.dart&apos;; import &apos;package:foo/foo.dart&apos;; import &apos;package:my_package/util.dart&apos;; 在所有导入之后，在单独的部分中指定导出 import &apos;src/error.dart&apos;; import &apos;src/foo_bar.dart&apos;; export &apos;src/error.dart&apos;; 不推荐如下写法： import &apos;src/error.dart&apos;; export &apos;src/error.dart&apos;; import &apos;src/foo_bar.dart&apos;; 所有流控制结构，请使用大括号 这样做可以避免悬浮的else问题 if (isWeekDay) { print(&apos;Bike to work!&apos;); } else { print(&apos;Go dancing or read a book!&apos;); } 例外 一个if语句没有else子句，其中整个if语句和then主体都适合一行。在这种情况下，如果你喜欢的话，你可以去掉大括号 if (arg == null) return defaultValue; 如果流程体超出了一行需要分划请使用大括号： if (overflowChars != other.overflowChars) { return overflowChars &amp;lt; other.overflowChars; } 不推荐如下写法： if (overflowChars != other.overflowChars) return overflowChars &amp;lt; other.overflowChars; 注释 要像句子一样格式化 除非是区分大小写的标识符，否则第一个单词要大写。以句号结尾(或“!”或“?”)。对于所有的注释都是如此：doc注释、内联内容，甚至TODOs。即使是一个句子片段。 greet(name) { // Assume we have a valid name. print(&apos;Hi, $name!&apos;); } 不推荐如下写法： greet(name) { /* Assume we have a valid name. */ print(&apos;Hi, $name!&apos;); } 可以使用块注释(/…/)临时注释掉一段代码，但是所有其他注释都应该使用// Doc注释 使用///文档注释来记录成员和类型。 使用doc注释而不是常规注释，可以让dartdoc找到并生成文档。 /// The number of characters in this chunk when unsplit. int get length =&amp;gt; ... 由于历史原因，达特茅斯学院支持道格评论的两种语法:///(“C#风格”)和/**…* /(“JavaDoc风格”)。我们更喜欢/// 因为它更紧凑。/*和/在多行文档注释中添加两个无内容的行。在某些情况下，///语法也更容易阅读，例如文档注释包含使用*标记列表项的项目符号列表。 考虑为私有api编写文档注释 Doc注释并不仅仅针对库的公共API的外部使用者。它们还有助于理解从库的其他部分调用的私有成员 用一句话总结开始doc注释 以简短的、以用户为中心的描述开始你的文档注释，以句号结尾。 /// Deletes the file at [path] from the file system. void delete(String path) { ... } 不推荐如下写法： /// Depending on the state of the file system and the user&apos;s permissions, /// certain operations may or may not be possible. If there is no file at /// [path] or it can&apos;t be accessed, this function throws either [IOError] /// or [PermissionError], respectively. Otherwise, this deletes the file. void delete(String path) { ... } “doc注释”的第一句话分隔成自己的段落 在第一个句子之后添加一个空行，把它分成自己的段落 /// Deletes the file at [path]. /// /// Throws an [IOError] if the file could not be found. Throws a /// [PermissionError] if the file is present but could not be deleted. void delete(String path) { ... } Flutter_Go 使用参考 库的引用 flutter go 中，导入lib下文件库，统一指定包名，避免过多的../../ package:flutter_go/ 字符串的使用 使用相邻字符串连接字符串文字 如果有两个字符串字面值(不是值，而是实际引用的字面值)，则不需要使用+连接它们。就像在C和c++中，简单地把它们放在一起就能做到。这是创建一个长字符串很好的方法但是不适用于单独一行。 raiseAlarm( &apos;ERROR: Parts of the spaceship are on fire. Other &apos; &apos;parts are overrun by martians. Unclear which are which.&apos;); 不推荐如下写法: raiseAlarm(&apos;ERROR: Parts of the spaceship are on fire. Other &apos; + &apos;parts are overrun by martians. Unclear which are which.&apos;); 优先使用模板字符串 &apos;Hello, $name! You are ${year - birth} years old.&apos;; 在不需要的时候，避免使用花括号 &apos;Hi, $name!&apos; &quot;Wear your wildest $decade&apos;s outfit.&quot; 不推荐如下写法： &apos;Hello, &apos; + name + &apos;! You are &apos; + (year - birth).toString() + &apos; y...&apos;; 不推荐如下写法： &apos;Hi, ${name}!&apos; &quot;Wear your wildest ${decade}&apos;s outfit.&quot; 集合 尽可能使用集合字面量 如果要创建一个不可增长的列表，或者其他一些自定义集合类型，那么无论如何，都要使用构造函数。 var points = []; var addresses = {}; var lines = &amp;lt;Lines&amp;gt;[]; 不推荐如下写法： var points = List(); var addresses = Map(); 不要使用.length查看集合是否为空 if (lunchBox.isEmpty) return &apos;so hungry...&apos;; if (words.isNotEmpty) return words.join(&apos; &apos;); 不推荐如下写法： if (lunchBox.length == 0) return &apos;so hungry...&apos;; if (!words.isEmpty) return words.join(&apos; &apos;); 考虑使用高阶方法转换序列 如果有一个集合，并且希望从中生成一个新的修改后的集合，那么使用.map()、.where()和Iterable上的其他方便的方法通常更短，也更具有声明性 var aquaticNames = animals .where((animal) =&amp;gt; animal.isAquatic) .map((animal) =&amp;gt; animal.name); 避免使用带有函数字面量的Iterable.forEach() 在Dart中，如果你想遍历一个序列，惯用的方法是使用循环。 for (var person in people) { ... } 不推荐如下写法： people.forEach((person) { ... }); 不要使用List.from()，除非打算更改结果的类型 给定一个迭代，有两种明显的方法可以生成包含相同元素的新列表 var copy1 = iterable.toList(); var copy2 = List.from(iterable); 明显的区别是第一个比较短。重要的区别是第一个保留了原始对象的类型参数 // Creates a List&amp;lt;int&amp;gt;: var iterable = [1, 2, 3];">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Flutter Go 代码开发规范 0.1.0 版">
+<meta name="twitter:description" content="Flutter Go 代码开发规范 0.1.0 版 代码风格 标识符三种类型 大驼峰 类、枚举、typedef和类型参数 class SliderMenu { ... } class HttpRequest { ... } typedef Predicate = bool Function&amp;lt;T&amp;gt;(T value); 包括用于元数据注释的类 class Foo { const Foo([arg]); } @Foo(anArg) class A { ... } @Foo() class B { ... } 使用小写加下划线来命名库和源文件 library peg_parser.source_scanner; import &apos;file_system.dart&apos;; import &apos;slider_menu.dart&apos;; 不推荐如下写法： library pegparser.SourceScanner; import &apos;file-system.dart&apos;; import &apos;SliderMenu.dart&apos;; 使用小写加下划线来命名导入前缀 import &apos;dart:math&apos; as math; import &apos;package:angular_components/angular_components&apos; as angular_components; import &apos;package:js/js.dart&apos; as js; 不推荐如下写法： import &apos;dart:math&apos; as Math; import &apos;package:angular_components/angular_components&apos; as angularComponents; import &apos;package:js/js.dart&apos; as JS; 使用小驼峰法命名其他标识符 var item; HttpRequest httpRequest; void align(bool clearItems) { // ... } 优先使用小驼峰法作为常量命名 const pi = 3.14; const defaultTimeout = 1000; final urlScheme = RegExp(&apos;^([a-z]+):&apos;); class Dice { static final numberGenerator = Random(); } 不推荐如下写法： const PI = 3.14; const DefaultTimeout = 1000; final URL_SCHEME = RegExp(&apos;^([a-z]+):&apos;); class Dice { static final NUMBER_GENERATOR = Random(); } 不使用前缀字母 因为Dart可以告诉您声明的类型、范围、可变性和其他属性，所以没有理由将这些属性编码为标识符名称。 defaultTimeout 不推荐如下写法： kDefaultTimeout 排序 为了使你的文件前言保持整洁，我们有规定的命令，指示应该出现在其中。每个“部分”应该用空行分隔。 在其他引入之前引入所需的dart库 import &apos;dart:async&apos;; import &apos;dart:html&apos;; import &apos;package:bar/bar.dart&apos;; import &apos;package:foo/foo.dart&apos;; 在相对引入之前先引入在包中的库 import &apos;package:bar/bar.dart&apos;; import &apos;package:foo/foo.dart&apos;; import &apos;util.dart&apos;; 第三方包的导入先于其他包 import &apos;package:bar/bar.dart&apos;; import &apos;package:foo/foo.dart&apos;; import &apos;package:my_package/util.dart&apos;; 在所有导入之后，在单独的部分中指定导出 import &apos;src/error.dart&apos;; import &apos;src/foo_bar.dart&apos;; export &apos;src/error.dart&apos;; 不推荐如下写法： import &apos;src/error.dart&apos;; export &apos;src/error.dart&apos;; import &apos;src/foo_bar.dart&apos;; 所有流控制结构，请使用大括号 这样做可以避免悬浮的else问题 if (isWeekDay) { print(&apos;Bike to work!&apos;); } else { print(&apos;Go dancing or read a book!&apos;); } 例外 一个if语句没有else子句，其中整个if语句和then主体都适合一行。在这种情况下，如果你喜欢的话，你可以去掉大括号 if (arg == null) return defaultValue; 如果流程体超出了一行需要分划请使用大括号： if (overflowChars != other.overflowChars) { return overflowChars &amp;lt; other.overflowChars; } 不推荐如下写法： if (overflowChars != other.overflowChars) return overflowChars &amp;lt; other.overflowChars; 注释 要像句子一样格式化 除非是区分大小写的标识符，否则第一个单词要大写。以句号结尾(或“!”或“?”)。对于所有的注释都是如此：doc注释、内联内容，甚至TODOs。即使是一个句子片段。 greet(name) { // Assume we have a valid name. print(&apos;Hi, $name!&apos;); } 不推荐如下写法： greet(name) { /* Assume we have a valid name. */ print(&apos;Hi, $name!&apos;); } 可以使用块注释(/…/)临时注释掉一段代码，但是所有其他注释都应该使用// Doc注释 使用///文档注释来记录成员和类型。 使用doc注释而不是常规注释，可以让dartdoc找到并生成文档。 /// The number of characters in this chunk when unsplit. int get length =&amp;gt; ... 由于历史原因，达特茅斯学院支持道格评论的两种语法:///(“C#风格”)和/**…* /(“JavaDoc风格”)。我们更喜欢/// 因为它更紧凑。/*和/在多行文档注释中添加两个无内容的行。在某些情况下，///语法也更容易阅读，例如文档注释包含使用*标记列表项的项目符号列表。 考虑为私有api编写文档注释 Doc注释并不仅仅针对库的公共API的外部使用者。它们还有助于理解从库的其他部分调用的私有成员 用一句话总结开始doc注释 以简短的、以用户为中心的描述开始你的文档注释，以句号结尾。 /// Deletes the file at [path] from the file system. void delete(String path) { ... } 不推荐如下写法： /// Depending on the state of the file system and the user&apos;s permissions, /// certain operations may or may not be possible. If there is no file at /// [path] or it can&apos;t be accessed, this function throws either [IOError] /// or [PermissionError], respectively. Otherwise, this deletes the file. void delete(String path) { ... } “doc注释”的第一句话分隔成自己的段落 在第一个句子之后添加一个空行，把它分成自己的段落 /// Deletes the file at [path]. /// /// Throws an [IOError] if the file could not be found. Throws a /// [PermissionError] if the file is present but could not be deleted. void delete(String path) { ... } Flutter_Go 使用参考 库的引用 flutter go 中，导入lib下文件库，统一指定包名，避免过多的../../ package:flutter_go/ 字符串的使用 使用相邻字符串连接字符串文字 如果有两个字符串字面值(不是值，而是实际引用的字面值)，则不需要使用+连接它们。就像在C和c++中，简单地把它们放在一起就能做到。这是创建一个长字符串很好的方法但是不适用于单独一行。 raiseAlarm( &apos;ERROR: Parts of the spaceship are on fire. Other &apos; &apos;parts are overrun by martians. Unclear which are which.&apos;); 不推荐如下写法: raiseAlarm(&apos;ERROR: Parts of the spaceship are on fire. Other &apos; + &apos;parts are overrun by martians. Unclear which are which.&apos;); 优先使用模板字符串 &apos;Hello, $name! You are ${year - birth} years old.&apos;; 在不需要的时候，避免使用花括号 &apos;Hi, $name!&apos; &quot;Wear your wildest $decade&apos;s outfit.&quot; 不推荐如下写法： &apos;Hello, &apos; + name + &apos;! You are &apos; + (year - birth).toString() + &apos; y...&apos;; 不推荐如下写法： &apos;Hi, ${name}!&apos; &quot;Wear your wildest ${decade}&apos;s outfit.&quot; 集合 尽可能使用集合字面量 如果要创建一个不可增长的列表，或者其他一些自定义集合类型，那么无论如何，都要使用构造函数。 var points = []; var addresses = {}; var lines = &amp;lt;Lines&amp;gt;[]; 不推荐如下写法： var points = List(); var addresses = Map(); 不要使用.length查看集合是否为空 if (lunchBox.isEmpty) return &apos;so hungry...&apos;; if (words.isNotEmpty) return words.join(&apos; &apos;); 不推荐如下写法： if (lunchBox.length == 0) return &apos;so hungry...&apos;; if (!words.isEmpty) return words.join(&apos; &apos;); 考虑使用高阶方法转换序列 如果有一个集合，并且希望从中生成一个新的修改后的集合，那么使用.map()、.where()和Iterable上的其他方便的方法通常更短，也更具有声明性 var aquaticNames = animals .where((animal) =&amp;gt; animal.isAquatic) .map((animal) =&amp;gt; animal.name); 避免使用带有函数字面量的Iterable.forEach() 在Dart中，如果你想遍历一个序列，惯用的方法是使用循环。 for (var person in people) { ... } 不推荐如下写法： people.forEach((person) { ... }); 不要使用List.from()，除非打算更改结果的类型 给定一个迭代，有两种明显的方法可以生成包含相同元素的新列表 var copy1 = iterable.toList(); var copy2 = List.from(iterable); 明显的区别是第一个比较短。重要的区别是第一个保留了原始对象的类型参数 // Creates a List&amp;lt;int&amp;gt;: var iterable = [1, 2, 3];">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2019/07/08/flutter_got_guide/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>Flutter Go 代码开发规范 0.1.0 版 - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>Flutter Go 代码开发规范 0.1.0 版</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2019/07/08/flutter_got_guide/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            Flutter Go 代码开发规范 0.1.0 版
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/08/flutter_got_guide/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2019/07/08/flutter_got_guide/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  2708
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  13
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><h1><a id="user-content-flutter-go-代码开发规范-010-版" class="anchor" aria-hidden="true" href="#flutter-go-代码开发规范-010-版"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flutter Go 代码开发规范 0.1.0 版</h1>
+<h2><a id="user-content-代码风格" class="anchor" aria-hidden="true" href="#代码风格"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>代码风格</h2>
+<h3><a id="user-content-标识符三种类型" class="anchor" aria-hidden="true" href="#标识符三种类型"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>标识符三种类型</h3>
+<h4><a id="user-content-大驼峰" class="anchor" aria-hidden="true" href="#大驼峰"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>大驼峰</h4>
+<p>类、枚举、typedef和类型参数</p>
+<pre><code>  class SliderMenu { ... }
+  
+  class HttpRequest { ... }
+  
+  typedef Predicate = bool Function&lt;T&gt;(T value);
+</code></pre>
+<p>包括用于元数据注释的类</p>
+<pre><code>  class Foo {
+    const Foo([arg]);
+  }
+  
+  @Foo(anArg)
+  class A { ... }
+  
+  @Foo()
+  class B { ... }
+</code></pre>
+<h4><a id="user-content-使用小写加下划线来命名库和源文件" class="anchor" aria-hidden="true" href="#使用小写加下划线来命名库和源文件"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>使用小写加下划线来命名库和源文件</h4>
+<pre><code>  library peg_parser.source_scanner;
+  
+  import 'file_system.dart';
+  import 'slider_menu.dart';
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  library pegparser.SourceScanner;
+  
+  import 'file-system.dart';
+  import 'SliderMenu.dart';
+</code></pre>
+<h4><a id="user-content-使用小写加下划线来命名导入前缀" class="anchor" aria-hidden="true" href="#使用小写加下划线来命名导入前缀"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>使用小写加下划线来命名导入前缀</h4>
+<pre><code>  import 'dart:math' as math;
+  import 'package:angular_components/angular_components'
+      as angular_components;
+  import 'package:js/js.dart' as js;
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  import 'dart:math' as Math;
+  import 'package:angular_components/angular_components'
+      as angularComponents;
+  import 'package:js/js.dart' as JS;
+</code></pre>
+<h4><a id="user-content-使用小驼峰法命名其他标识符" class="anchor" aria-hidden="true" href="#使用小驼峰法命名其他标识符"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>使用小驼峰法命名其他标识符</h4>
+<pre><code>  var item;
+  
+  HttpRequest httpRequest;
+  
+  void align(bool clearItems) {
+    // ...
+  }
+</code></pre>
+<h4><a id="user-content-优先使用小驼峰法作为常量命名" class="anchor" aria-hidden="true" href="#优先使用小驼峰法作为常量命名"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>优先使用小驼峰法作为常量命名</h4>
+<pre><code>  const pi = 3.14;
+  const defaultTimeout = 1000;
+  final urlScheme = RegExp('^([a-z]+):');
+  
+  class Dice {
+    static final numberGenerator = Random();
+  }
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  const PI = 3.14;
+  const DefaultTimeout = 1000;
+  final URL_SCHEME = RegExp('^([a-z]+):');
+  
+  class Dice {
+    static final NUMBER_GENERATOR = Random();
+  }
+</code></pre>
+<h4><a id="user-content-不使用前缀字母" class="anchor" aria-hidden="true" href="#不使用前缀字母"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>不使用前缀字母</h4>
+<p>因为Dart可以告诉您声明的类型、范围、可变性和其他属性，所以没有理由将这些属性编码为标识符名称。</p>
+<pre><code>  defaultTimeout
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  kDefaultTimeout
+</code></pre>
+<h3><a id="user-content-排序" class="anchor" aria-hidden="true" href="#排序"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>排序</h3>
+<p>为了使你的文件前言保持整洁，我们有规定的命令，指示应该出现在其中。每个“部分”应该用空行分隔。</p>
+<h4><a id="user-content-在其他引入之前引入所需的dart库" class="anchor" aria-hidden="true" href="#在其他引入之前引入所需的dart库"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>在其他引入之前引入所需的dart库</h4>
+<pre><code>  import 'dart:async';
+  import 'dart:html';
+  
+  import 'package:bar/bar.dart';
+  import 'package:foo/foo.dart';
+</code></pre>
+<h4><a id="user-content-在相对引入之前先引入在包中的库" class="anchor" aria-hidden="true" href="#在相对引入之前先引入在包中的库"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>在相对引入之前先引入在包中的库</h4>
+<pre><code>  import 'package:bar/bar.dart';
+  import 'package:foo/foo.dart';
+  
+  import 'util.dart';
+</code></pre>
+<h4><a id="user-content-第三方包的导入先于其他包" class="anchor" aria-hidden="true" href="#第三方包的导入先于其他包"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>第三方包的导入先于其他包</h4>
+<pre><code>  import 'package:bar/bar.dart';
+  import 'package:foo/foo.dart';
+  
+  import 'package:my_package/util.dart';
+</code></pre>
+<h4><a id="user-content-在所有导入之后在单独的部分中指定导出" class="anchor" aria-hidden="true" href="#在所有导入之后在单独的部分中指定导出"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>在所有导入之后，在单独的部分中指定导出</h4>
+<pre><code>  import 'src/error.dart';
+  import 'src/foo_bar.dart';
+  
+  export 'src/error.dart';
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  import 'src/error.dart';
+  export 'src/error.dart';
+  import 'src/foo_bar.dart';
+</code></pre>
+<h3><a id="user-content-所有流控制结构请使用大括号" class="anchor" aria-hidden="true" href="#所有流控制结构请使用大括号"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>所有流控制结构，请使用大括号</h3>
+<p>这样做可以避免悬浮的else问题</p>
+<pre><code>  if (isWeekDay) {
+    print('Bike to work!');
+  } else {
+    print('Go dancing or read a book!');
+  }
+</code></pre>
+<h4><a id="user-content-例外" class="anchor" aria-hidden="true" href="#例外"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>例外</h4>
+<p>一个if语句没有else子句，其中整个if语句和then主体都适合一行。在这种情况下，如果你喜欢的话，你可以去掉大括号</p>
+<pre><code>  if (arg == null) return defaultValue;
+</code></pre>
+<p>如果流程体超出了一行需要分划请使用大括号：</p>
+<pre><code>  if (overflowChars != other.overflowChars) {
+    return overflowChars &lt; other.overflowChars;
+  }
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  if (overflowChars != other.overflowChars)
+    return overflowChars &lt; other.overflowChars;
+</code></pre>
+<h2><a id="user-content-注释" class="anchor" aria-hidden="true" href="#注释"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>注释</h2>
+<h3><a id="user-content-要像句子一样格式化" class="anchor" aria-hidden="true" href="#要像句子一样格式化"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>要像句子一样格式化</h3>
+<p>除非是区分大小写的标识符，否则第一个单词要大写。以句号结尾(或“!”或“?”)。对于所有的注释都是如此：doc注释、内联内容，甚至TODOs。即使是一个句子片段。</p>
+<pre><code>  greet(name) {
+    // Assume we have a valid name.
+    print('Hi, $name!');
+  }
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  greet(name) {
+    /* Assume we have a valid name. */
+    print('Hi, $name!');
+  }
+</code></pre>
+<p>可以使用块注释(/…/)临时注释掉一段代码，但是所有其他注释都应该使用//</p>
+<h3><a id="user-content-doc注释" class="anchor" aria-hidden="true" href="#doc注释"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Doc注释</h3>
+<p>使用///文档注释来记录成员和类型。</p>
+<p>使用doc注释而不是常规注释，可以让dartdoc找到并生成文档。</p>
+<pre><code>  /// The number of characters in this chunk when unsplit.
+  int get length =&gt; ...
+</code></pre>
+<blockquote>
+<p>由于历史原因，达特茅斯学院支持道格评论的两种语法:///(“C#风格”)和/**…* /(“JavaDoc风格”)。我们更喜欢/// 因为它更紧凑。/*<em>和</em>/在多行文档注释中添加两个无内容的行。在某些情况下，///语法也更容易阅读，例如文档注释包含使用*标记列表项的项目符号列表。</p>
+</blockquote>
+<h3><a id="user-content-考虑为私有api编写文档注释" class="anchor" aria-hidden="true" href="#考虑为私有api编写文档注释"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>考虑为私有api编写文档注释</h3>
+<p>Doc注释并不仅仅针对库的公共API的外部使用者。它们还有助于理解从库的其他部分调用的私有成员</p>
+<h4><a id="user-content-用一句话总结开始doc注释" class="anchor" aria-hidden="true" href="#用一句话总结开始doc注释"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>用一句话总结开始doc注释</h4>
+<p>以简短的、以用户为中心的描述开始你的文档注释，以句号结尾。</p>
+<pre><code>/// Deletes the file at [path] from the file system.
+void delete(String path) {
+  ...
+}
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  /// Depending on the state of the file system and the user's permissions,
+  /// certain operations may or may not be possible. If there is no file at
+  /// [path] or it can't be accessed, this function throws either [IOError]
+  /// or [PermissionError], respectively. Otherwise, this deletes the file.
+  void delete(String path) {
+    ...
+  }
+</code></pre>
+<h4><a id="user-content-doc注释的第一句话分隔成自己的段落" class="anchor" aria-hidden="true" href="#doc注释的第一句话分隔成自己的段落"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>“doc注释”的第一句话分隔成自己的段落</h4>
+<p>在第一个句子之后添加一个空行，把它分成自己的段落</p>
+<pre><code>  /// Deletes the file at [path].
+  ///
+  /// Throws an [IOError] if the file could not be found. Throws a
+  /// [PermissionError] if the file is present but could not be deleted.
+  void delete(String path) {
+    ...
+  }
+</code></pre>
+<h2><a id="user-content-flutter_go-使用参考" class="anchor" aria-hidden="true" href="#flutter_go-使用参考"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flutter_Go 使用参考</h2>
+<h3><a id="user-content-库的引用" class="anchor" aria-hidden="true" href="#库的引用"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>库的引用</h3>
+<p>flutter go 中，导入lib下文件库，统一指定包名，避免过多的<code>../../</code></p>
+<pre><code>package:flutter_go/
+</code></pre>
+<h3><a id="user-content-字符串的使用" class="anchor" aria-hidden="true" href="#字符串的使用"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>字符串的使用</h3>
+<h4><a id="user-content-使用相邻字符串连接字符串文字" class="anchor" aria-hidden="true" href="#使用相邻字符串连接字符串文字"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>使用相邻字符串连接字符串文字</h4>
+<p>如果有两个字符串字面值(不是值，而是实际引用的字面值)，则不需要使用+连接它们。就像在C和c++中，简单地把它们放在一起就能做到。这是创建一个长字符串很好的方法但是不适用于单独一行。</p>
+<pre><code>raiseAlarm(
+    'ERROR: Parts of the spaceship are on fire. Other '
+    'parts are overrun by martians. Unclear which are which.');
+</code></pre>
+<p>不推荐如下写法:</p>
+<pre><code>raiseAlarm('ERROR: Parts of the spaceship are on fire. Other ' +
+    'parts are overrun by martians. Unclear which are which.');
+</code></pre>
+<h4><a id="user-content-优先使用模板字符串" class="anchor" aria-hidden="true" href="#优先使用模板字符串"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>优先使用模板字符串</h4>
+<pre><code>'Hello, $name! You are ${year - birth} years old.';
+</code></pre>
+<h4><a id="user-content-在不需要的时候避免使用花括号" class="anchor" aria-hidden="true" href="#在不需要的时候避免使用花括号"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>在不需要的时候，避免使用花括号</h4>
+<pre><code>  'Hi, $name!'
+  "Wear your wildest $decade's outfit."
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  'Hello, ' + name + '! You are ' + (year - birth).toString() + ' y...';
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  'Hi, ${name}!'
+  "Wear your wildest ${decade}'s outfit."
+</code></pre>
+<h3><a id="user-content-集合" class="anchor" aria-hidden="true" href="#集合"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>集合</h3>
+<h4><a id="user-content-尽可能使用集合字面量" class="anchor" aria-hidden="true" href="#尽可能使用集合字面量"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>尽可能使用集合字面量</h4>
+<p>如果要创建一个不可增长的列表，或者其他一些自定义集合类型，那么无论如何，都要使用构造函数。</p>
+<pre><code>  var points = [];
+  var addresses = {};
+  var lines = &lt;Lines&gt;[];
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  var points = List();
+  var addresses = Map();
+</code></pre>
+<h4><a id="user-content-不要使用length查看集合是否为空" class="anchor" aria-hidden="true" href="#不要使用length查看集合是否为空"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>不要使用.length查看集合是否为空</h4>
+<pre><code>if (lunchBox.isEmpty) return 'so hungry...';
+if (words.isNotEmpty) return words.join(' ');
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  if (lunchBox.length == 0) return 'so hungry...';
+  if (!words.isEmpty) return words.join(' ');
+</code></pre>
+<h4><a id="user-content-考虑使用高阶方法转换序列" class="anchor" aria-hidden="true" href="#考虑使用高阶方法转换序列"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>考虑使用高阶方法转换序列</h4>
+<p>如果有一个集合，并且希望从中生成一个新的修改后的集合，那么使用.map()、.where()和Iterable上的其他方便的方法通常更短，也更具有声明性</p>
+<pre><code>  var aquaticNames = animals
+      .where((animal) =&gt; animal.isAquatic)
+      .map((animal) =&gt; animal.name);
+</code></pre>
+<h4><a id="user-content-避免使用带有函数字面量的iterableforeach" class="anchor" aria-hidden="true" href="#避免使用带有函数字面量的iterableforeach"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>避免使用带有函数字面量的Iterable.forEach()</h4>
+<p>在Dart中，如果你想遍历一个序列，惯用的方法是使用循环。</p>
+<pre><code>for (var person in people) {
+  ...
+}
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  people.forEach((person) {
+    ...
+  });
+</code></pre>
+<h4><a id="user-content-不要使用listfrom除非打算更改结果的类型" class="anchor" aria-hidden="true" href="#不要使用listfrom除非打算更改结果的类型"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>不要使用List.from()，除非打算更改结果的类型</h4>
+<p>给定一个迭代，有两种明显的方法可以生成包含相同元素的新列表</p>
+<pre><code>var copy1 = iterable.toList();
+var copy2 = List.from(iterable);
+</code></pre>
+<p>明显的区别是第一个比较短。重要的区别是第一个保留了原始对象的类型参数</p>
+<pre><code>// Creates a List&lt;int&gt;:
+var iterable = [1, 2, 3];
+
+// Prints "List&lt;int&gt;":
+print(iterable.toList().runtimeType);
+</code></pre>
+<pre><code>// Creates a List&lt;int&gt;:
+var iterable = [1, 2, 3];
+
+// Prints "List&lt;dynamic&gt;":
+print(List.from(iterable).runtimeType);
+</code></pre>
+<h3><a id="user-content-参数的使用" class="anchor" aria-hidden="true" href="#参数的使用"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>参数的使用</h3>
+<h4><a id="user-content-使用将命名参数与其默认值分割开" class="anchor" aria-hidden="true" href="#使用将命名参数与其默认值分割开"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>使用=将命名参数与其默认值分割开</h4>
+<p>由于遗留原因，Dart均允许“:”和“=”作为指定参数的默认值分隔符。为了与可选的位置参数保持一致，使用“=”。</p>
+<pre><code>  void insert(Object item, {int at = 0}) { ... }
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  void insert(Object item, {int at: 0}) { ... }
+</code></pre>
+<h4><a id="user-content-不要使用显式默认值null" class="anchor" aria-hidden="true" href="#不要使用显式默认值null"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>不要使用显式默认值null</h4>
+<p>如果参数是可选的，但没有给它一个默认值，则语言隐式地使用null作为默认值，因此不需要编写它</p>
+<pre><code>void error([String message]) {
+  stderr.write(message ?? '\n');
+}
+</code></pre>
+<p>不推荐如下写法:</p>
+<pre><code>void error([String message = null]) {
+  stderr.write(message ?? '\n');
+}
+</code></pre>
+<h3><a id="user-content-变量" class="anchor" aria-hidden="true" href="#变量"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>变量</h3>
+<h4><a id="user-content-不要显式地将变量初始化为空" class="anchor" aria-hidden="true" href="#不要显式地将变量初始化为空"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>不要显式地将变量初始化为空</h4>
+<p>在Dart中，未显式初始化的变量或字段自动被初始化为null。不要多余赋值null</p>
+<pre><code>  int _nextId;
+  
+  class LazyId {
+    int _id;
+  
+    int get id {
+      if (_nextId == null) _nextId = 0;
+      if (_id == null) _id = _nextId++;
+  
+      return _id;
+    }
+  }
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  int _nextId = null;
+  
+  class LazyId {
+    int _id = null;
+  
+    int get id {
+      if (_nextId == null) _nextId = 0;
+      if (_id == null) _id = _nextId++;
+  
+      return _id;
+    }
+  }
+</code></pre>
+<h4><a id="user-content-避免储存你能计算的东西" class="anchor" aria-hidden="true" href="#避免储存你能计算的东西"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>避免储存你能计算的东西</h4>
+<p>在设计类时，您通常希望将多个视图公开到相同的底层状态。通常你会看到在构造函数中计算所有视图的代码，然后存储它们:</p>
+<p>应该避免的写法：</p>
+<pre><code>  class Circle {
+    num radius;
+    num area;
+    num circumference;
+  
+    Circle(num radius)
+        : radius = radius,
+          area = pi * radius * radius,
+          circumference = pi * 2.0 * radius;
+  }
+</code></pre>
+<p>如上代码问题：</p>
+<ul>
+<li>浪费内存</li>
+<li>缓存的问题是无效——如何知道何时缓存过期需要重新计算？</li>
+</ul>
+<p>推荐的写法如下：</p>
+<pre><code>  class Circle {
+    num radius;
+  
+    Circle(this.radius);
+  
+    num get area =&gt; pi * radius * radius;
+    num get circumference =&gt; pi * 2.0 * radius;
+  }
+</code></pre>
+<h3><a id="user-content-类成员" class="anchor" aria-hidden="true" href="#类成员"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>类成员</h3>
+<h4><a id="user-content-不要把不必要地将字段包装在getter和setter中" class="anchor" aria-hidden="true" href="#不要把不必要地将字段包装在getter和setter中"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>不要把不必要地将字段包装在getter和setter中</h4>
+<p>不推荐如下写法：</p>
+<pre><code>  class Box {
+    var _contents;
+    get contents =&gt; _contents;
+    set contents(value) {
+      _contents = value;
+    }
+  }
+</code></pre>
+<h4><a id="user-content-优先使用final字段来创建只读属性" class="anchor" aria-hidden="true" href="#优先使用final字段来创建只读属性"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>优先使用final字段来创建只读属性</h4>
+<p>尤其对于 <code>StatelessWidget</code></p>
+<h4><a id="user-content-在不需要的时候不要用this" class="anchor" aria-hidden="true" href="#在不需要的时候不要用this"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>在不需要的时候不要用this</h4>
+<p>不推荐如下写法：</p>
+<pre><code>  class Box {
+    var value;
+    
+    void clear() {
+      this.update(null);
+    }
+    
+    void update(value) {
+      this.value = value;
+    }
+  }
+</code></pre>
+<p>推荐如下写法：</p>
+<pre><code>  class Box {
+    var value;
+  
+    void clear() {
+      update(null);
+    }
+  
+    void update(value) {
+      this.value = value;
+    }
+  }
+</code></pre>
+<h3><a id="user-content-构造函数" class="anchor" aria-hidden="true" href="#构造函数"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>构造函数</h3>
+<h4><a id="user-content-尽可能使用初始化的形式" class="anchor" aria-hidden="true" href="#尽可能使用初始化的形式"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>尽可能使用初始化的形式</h4>
+<p>不推荐如下写法：</p>
+<pre><code>  class Point {
+    num x, y;
+    Point(num x, num y) {
+      this.x = x;
+      this.y = y;
+    }
+  }
+</code></pre>
+<p>推荐如下写法：</p>
+<pre><code>class Point {
+  num x, y;
+  Point(this.x, this.y);
+}
+</code></pre>
+<h4><a id="user-content-不要使用new" class="anchor" aria-hidden="true" href="#不要使用new"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>不要使用new</h4>
+<p>Dart2使new 关键字可选</p>
+<p>推荐写法：</p>
+<pre><code>  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        RaisedButton(
+          child: Text('Increment'),
+        ),
+        Text('Click!'),
+      ],
+    );
+  }
+</code></pre>
+<p>不推荐如下写法：</p>
+<pre><code>  Widget build(BuildContext context) {
+    return new Row(
+      children: [
+        new RaisedButton(
+          child: new Text('Increment'),
+        ),
+        new Text('Click!'),
+      ],
+    );
+  }
+</code></pre>
+<h3><a id="user-content-异步" class="anchor" aria-hidden="true" href="#异步"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>异步</h3>
+<h4><a id="user-content-优先使用asyncawait代替原始的futures" class="anchor" aria-hidden="true" href="#优先使用asyncawait代替原始的futures"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>优先使用async/await代替原始的futures</h4>
+<p>async/await语法提高了可读性，允许你在异步代码中使用所有Dart控制流结构。</p>
+<pre><code>  Future&lt;int&gt; countActivePlayers(String teamName) async {
+    try {
+      var team = await downloadTeam(teamName);
+      if (team == null) return 0;
+  
+      var players = await team.roster;
+      return players.where((player) =&gt; player.isActive).length;
+    } catch (e) {
+      log.error(e);
+      return 0;
+    }
+  }
+</code></pre>
+<h4><a id="user-content-当异步没有任何用处时不要使用它" class="anchor" aria-hidden="true" href="#当异步没有任何用处时不要使用它"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>当异步没有任何用处时，不要使用它</h4>
+<p>如果可以在不改变函数行为的情况下省略异步，那么就这样做。、</p>
+<pre><code>  Future afterTwoThings(Future first, Future second) {
+    return Future.wait([first, second]);
+  }
+</code></pre>
+<p>不推荐写法：</p>
+<pre><code>  Future afterTwoThings(Future first, Future second) async {
+    return Future.wait([first, second]);
+  }
+</code></pre>
+</article>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter" rel="tag"># flutter</a>
+          
+            
+            <a href="/tag/#/Location" rel="tag"># Location</a>
+          
+            
+            <a href="/tag/#/awesome-flutter" rel="tag"># awesome-flutter</a>
+          
+            
+            <a href="/tag/#/flutter%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83" rel="tag"># flutter开发规范</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/08/flutterbuildbeautyui/" rel="next" title="用 Flutter 构建漂亮的 UI 界面 - 基础组件篇">
+                <i class="fa fa-chevron-left"></i> 用 Flutter 构建漂亮的 UI 界面 - 基础组件篇
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/08/flutter_go_code/" rel="prev" title="Flutter Go">
+                Flutter Go <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2019/07/08/flutter_got_guide/';
+              this.page.identifier = '/2019/07/08/flutter_got_guide/';
+              this.page.title = 'Flutter Go 代码开发规范 0.1.0 版';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

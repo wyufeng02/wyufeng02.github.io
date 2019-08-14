@@ -1,0 +1,1547 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter代码库,SVG,Animation," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="立即下载 ️⬇️">
+<meta name="keywords" content="flutter代码库, SVG, Animation">
+<meta property="og:type" content="article">
+<meta property="og:title" content="绘图动画插件库">
+<meta property="og:url" content="https://code4flutter.com/2019/07/20/A_Flutter_library_for_gradually_painting_SVG_path_objects_on_canvas/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="立即下载 ️⬇️">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://flutterawesome.com/content/images/2019/07/drawing_animation1.gif">
+<meta property="og:image" content="https://img.shields.io/pub/v/drawing_animation.svg">
+<meta property="og:image" content="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&amp;style=flat-square">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/art_egypt1.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/art_dino2.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/art_order.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/art_child7.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_dynamic_1.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/loader_1.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_oneByOne.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_allAtOnce.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_original.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_bottomToTop.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_decreasingLength.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_increasingLength.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_leftToRight.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_rightToLeft.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_topToBottom.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_linear.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_elasticOut.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_bounceInOut.gif">
+<meta property="og:image" content="https://github.com/biocarl/img/raw/master/drawing_animation/met_decelerate.gif">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="绘图动画插件库">
+<meta name="twitter:description" content="立即下载 ️⬇️">
+<meta name="twitter:image" content="https://flutterawesome.com/content/images/2019/07/drawing_animation1.gif">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2019/07/20/A_Flutter_library_for_gradually_painting_SVG_path_objects_on_canvas/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>绘图动画插件库 - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>绘图动画插件库</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2019/07/20/A_Flutter_library_for_gradually_painting_SVG_path_objects_on_canvas/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            绘图动画插件库
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/20/A_Flutter_library_for_gradually_painting_SVG_path_objects_on_canvas/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2019/07/20/A_Flutter_library_for_gradually_painting_SVG_path_objects_on_canvas/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  1762
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  8
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <h2 id="立即下载-️️-"><a href="https://codeload.github.com/biocarl/drawing_animation/zip/master">立即下载 ️⬇️ </a></h2>
+
+<p><img src="https://flutterawesome.com/content/images/2019/07/drawing_animation1.gif" alt="" /></p>
+
+<blockquote>
+
+  <p>用于在画布上逐渐绘制SVG路径对象的Flutter库(绘制线动画)。</p>
+
+</blockquote>
+
+<h1 id="drawing_animation-">drawing_animation <a href="https://pub.dartlang.org/packages/drawing_animation"><img src="https://img.shields.io/pub/v/drawing_animation.svg" alt="Pub" /></a><a href="https://github.com/Solido/awesome-flutter"><img src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&amp;style=flat-square" alt="awesome" /></a></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>From static SVG assets</strong></th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">See more examples in the <a href="https://github.com/biocarl/drawing_animation/tree/master/example/example_03">showcasing app</a>.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_egypt1.gif" width="400px" /></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_dino2.gif" width="400px" /> <br /> <img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_order.gif" width="400px" /></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/art_child7.gif" width="400px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Dynamically created from Path objects which are animated over time</strong></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_dynamic_1.gif" width="400px" /></td>
+      <td style="text-align: center"><em>more coming soon</em><br />…</td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/loader_1.gif" width="400px" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>渲染库公开了一个名为<code class="highlighter-rouge">AnimatedDrawing</code>的中央窗口小部件，它允许在类似时尚的图形中渲染SVG路径(通过<code class="highlighter-rouge">AnimatedDrawing.svg</code>)或Flutter Path对象(通过<code class="highlighter-rouge">AnimatedDrawing.paths</code>)。</p>
+
+<p>##入门 -  AnimatedDrawing.svg
+要开始使用<code class="highlighter-rouge">drawing_animation</code>包，您需要一个有效的Svg文件。
+目前只支持没有转换的简单路径元素(参见<a href="https://github.com/biocarl/drawing_animation#supported-svg-specifications">支持的SVG规范</a>)</p>
+
+<ol>
+  <li><strong>添加依赖，在文件 <code class="highlighter-rouge">pubspec.yaml</code></strong></li>
+</ol>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">dependencies</span><span class="pi">:</span>
+  <span class="na">drawing_animation</span><span class="pi">:</span> <span class="s">^0.1.1</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>** 添加 SVG 资源**
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">assets</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">assets/my_drawing.svg</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>**使用插件 **</p>
+
+<p>可以通过两种方式启动AnimatedDrawing小部件:</p>
+
+<p>例子 - 没有动画控制器(参见<a href="https://github.com/biocarl/drawing_animation/tree/master/example/example_01">Example_01</a>)
+      默认情况下，每个动画都会无限重复。 仅在运行动画一次后，您可以使用回调在第一个动画循环完成后将<code class="highlighter-rouge">run</code>设置为false(请参阅字段<code class="highlighter-rouge">onFinish</code>)。</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="n">AnimatedDrawing</span><span class="o">.</span><span class="na">svg</span><span class="o">(</span>
+          <span class="s">"assets/my_drawing.svg"</span><span class="o">,</span>
+          <span class="nl">run:</span> <span class="k">this</span><span class="o">.</span><span class="na">run</span><span class="o">,</span>
+          <span class="nl">duration:</span> <span class="k">new</span> <span class="n">Duration</span><span class="o">(</span><span class="nl">seconds:</span> <span class="mi">3</span><span class="o">),</span>
+          <span class="nl">onFinish:</span> <span class="o">()=&gt;</span> <span class="n">setState</span><span class="o">((){</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">run</span>  <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+          <span class="o">}),</span>
+        <span class="o">)</span>
+</code></pre></div></div>
+
+<p>带动画控制器(参见<a href="https://github.com/biocarl/drawing_animation/tree/master/example/example_02">Example_02</a>)</p>
+
+<p>在大多数用例中，简化版本就足够了。 如果您希望进一步控制动画或者想要将其与其他现有动画同步，您可以考虑使用自定义<a href="https://docs.flutter.io/flutter/animation/AnimationController-class.html">动画控制器</a>:</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">AnimatedDrawing</span><span class="o">.</span><span class="na">svg</span><span class="o">(</span>
+    <span class="s">"assets/test.svg"</span><span class="o">,</span>
+    <span class="nl">controller:</span> <span class="k">this</span><span class="o">.</span><span class="na">controller</span><span class="o">,</span>
+  <span class="o">)</span>
+</code></pre></div></div>
+<p>查看<code class="highlighter-rouge">examples</code>文件夹中的示例。 在使用调试模式时，似乎关闭了Paint/ Canvas的抗锯齿功能。 为了获得漂亮的结果，请使用<code class="highlighter-rouge">flutter run --release</code>。</p>
+
+<h2 id="入门----animateddrawingpaths仍在实验中">入门 -  AnimatedDrawing.paths(仍在实验中)</h2>
+<p>通过将Path对象直接提供给窗口小部件，即使在动画期间，也可以动态更改元素。 每次状态更改时都会重建内部数据结构，因此如果<code class="highlighter-rouge">paths</code>中的元素数量非常高(见限制)，动画性能可能会受到影响。 不久将提供更多示例(现在请参阅 <a href="https://github.com/biocarl/drawing_animation/tree/master/example/example_01">Example_01</a>and <a href="https://github.com/biocarl/drawing_animation/tree/master/example/example_04">Example_04</a>).</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">AnimatedDrawing</span><span class="o">.</span><span class="na">paths</span><span class="o">(</span>
+      <span class="o">[</span>
+     <span class="c1">///Path objects</span>
+      <span class="o">],</span>
+      <span class="nl">paints:</span><span class="o">[</span>
+     <span class="c1">///Paint objects (optional), specifies a [Paint] object for each [Path] element in `paths`.</span>
+      <span class="o">],</span>
+      <span class="nl">run:</span> <span class="k">this</span><span class="o">.</span><span class="na">run</span><span class="o">,</span>
+      <span class="nl">duration:</span> <span class="k">new</span> <span class="n">Duration</span><span class="o">(</span><span class="nl">seconds:</span> <span class="mi">3</span><span class="o">),</span>
+      <span class="nl">onFinish:</span> <span class="o">()=&gt;</span> <span class="n">setState</span><span class="o">((){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">run</span>  <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+      <span class="o">}),</span>
+    <span class="o">)</span>
+</code></pre></div></div>
+
+<p><strong>目前的限制:</strong></p>
+
+<p>如上所述，对于窗口小部件的每个状态更改，都会重建路径对象的内部数据结构。 当提供的路径对象的数量很大并且定义了自定义<code class="highlighter-rouge">animationOrder</code>(触发对数据结构的排序操作)时，它可能导致滞后。 当通过另一个动画以60fps重建状态时(例如，在每帧处旋转路径对象)，这变得尤其明显。 关于如何优雅地解决这个问题的任何建议都非常受欢迎:-)</p>
+
+<h2 id="选项列表">选项列表</h2>
+<p>这是越来越多的列表，包括所有可用参数及其视觉效果。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Field</th>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: center">&lt;pre&gt; ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ &lt;/pre&gt;Example&lt;pre&gt; ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍ &lt;/pre&gt;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">lineAnimation</code> <br /><br /> <em>Specifies in which way the path elements are drawn to the canvas. When <code class="highlighter-rouge">allAtOnce</code> selected all path segments are drawn simultaneously. <code class="highlighter-rouge">oneByOne</code> paints every path segment one after another.</em></td>
+      <td style="text-align: center"><code class="highlighter-rouge">LineAnimation.oneByOne</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_oneByOne.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">LineAnimation.allAtOnce</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_allAtOnce.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">animationOrder</code> <br /><br /> <em>Denotes the order in which the path elements are drawn to canvas when <code class="highlighter-rouge">lineAnimation</code> is set to <code class="highlighter-rouge">LineAnimation.oneByOne</code>. When no <code class="highlighter-rouge">animationOrder</code> is specified it defaults to the same order specified in the Svg asset or path array (<code class="highlighter-rouge">PathOrder.original</code>).</em></td>
+      <td style="text-align: center"><code class="highlighter-rouge">PathOrders.original</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_original.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">PathOrders.bottomToTop</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_bottomToTop.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">PathOrders.decreasingLength</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_decreasingLength.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">PathOrders.increasingLength</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_increasingLength.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">PathOrders.leftToRight</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_leftToRight.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">PathOrders.rightToLeft</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_rightToLeft.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">PathOrders.topToBottom</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_topToBottom.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">animationCurve</code> <br /><br /> <em>Easing curves are used to adjust the rate of change of an animation over time, allowing them to speed up and slow down, rather than moving at a constant rate. See <a href="https://docs.flutter.io/flutter/animation/Curve-class.html">Flutter docs</a>.</em></td>
+      <td style="text-align: center"><code class="highlighter-rouge">Curves.linear</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_linear.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">Curves.elasticOut</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_elasticOut.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">Curves.bounceInOut</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_bounceInOut.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><code class="highlighter-rouge">Curves.decelerate</code></td>
+      <td style="text-align: center"><img src="https://github.com/biocarl/img/raw/master/drawing_animation/met_decelerate.gif" width="200px" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"><strong>Other</strong></td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">onFinish</code> <br /><br /> <em>Callback when one animation cycle is finished. By default every animation repeats infinitely.</em></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">onPaint</code> <br /><br /> <em>Callback when a complete path is painted to the canvas. Returns with the relative index and the Path element itself.</em></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">range</code> <br /><br /> <em>Start and stop a animation from a certain moment in time by defining a <code class="highlighter-rouge">AnimationRange</code> object.</em></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">scaleToViewport</code> <br /><br /> <em>Path objects are scaled to the available viewport while maintaining the aspect ratio. Defaults to true.</em></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="支持的svg规范">支持的SVG规范</h2>
+<p>     - 现在只支持路径元素(<code class="highlighter-rouge">&lt;path d =“M3m1 ....”&gt;</code>)。 我目前正在考虑添加<a href="https://pub.dartlang.org/packages/flutter_svg">flutter_svg</a>作为更完整的SVG解析的依赖项。
+     - 属性
+      *笔画，现在只有没有alpha的Hex-Color
+      *笔画宽度
+      *风格，但只有上面的两个字段
+     - 尚未支持转换。</p>
+
+<h2 id="如何使用自己的svg文件">如何使用自己的SVG文件？</h2>
+<p>许多工具可以将现有的SVG文件转换为<a href="#supported-svg-specifications">支持的格式</a>。
+例如使用Inkscape:
+1.选择所有对象并取消组合，直到没有组为止(Ctrl + U)
+2.将选择转换为路径:<code class="highlighter-rouge">Path &gt;&gt; Object to Path</code>并点击保存
+3.然后使用<a href="https://github.com/svg/svgo">svgo</a>或webversion <a href="https://jakearchibald.github.io/svgomg/">svgomg</a>删除转换。
+现在它应该工作，如果不是随便写一个问题！</p>
+
+<h2 id="例子">例子:</h2>
+<p>    -  <a href="https://github.com/biocarl/drawing_animation/tree/master/example/example_01"><code class="highlighter-rouge">Example_01</code></a>:使用AnimatedDrawing.svg和AnimatedDrawing.paths设置simplfied AnimatedDrawing
+    -  <a href="https://github.com/biocarl/drawing_animation/tree/master/example/example_02"><code class="highlighter-rouge">Example_02</code></a>:使用自定义动画控制器设置AnimatedDrawing
+    -  <a href="https://github.com/biocarl/drawing_animation/tree/master/example/example_03"><code class="highlighter-rouge">Example_03</code></a>:小型艺术展示应用程序，带有[旧书扫描]的矢量化图纸(https://www.flickr。 com/ photos/ britishlibrary)由大英图书馆提供
+    -  <a href="https://github.com/biocarl/drawing_animation/tree/master/example/example_04"><code class="highlighter-rouge">Example_04</code></a>:演示如何使用<code class="highlighter-rouge">debug</code>字段创建高分辨率的Gif。</p>
+
+<h2 id="todo">Todo</h2>
+
+<ul>
+  <li>更好的测试覆盖率</li>
+  <li>改进SVG解析功能
+    <em>圈子，矩形等
+    </em>更好的色彩分析，包括。十六进制代码和RGB的阿尔法(A)
+    *使用成熟的解析库将SVG解析逻辑替换为<a href="https://pub.dartlang.org/packages/flutter_svg">flutter_svg</a></li>
+  <li>提供一种覆盖<code class="highlighter-rouge">AnimatedDrawing.svg</code>的颜色/画笔等的方法 - 也许还可以覆盖<code class="highlighter-rouge">paint</code>对象？</li>
+  <li>定义[PathOrder]，它维护每个Path并仅相对于彼此进行排序</li>
+  <li>提高性能AnimatedDrawing.paths，对于每次重建，必须再次解析所有提供的路径。有没有办法检查路径对象是否相等，如小部件的键？想法:为Path实现一个代理，在命令被唤起时创建一个唯一的哈希</li>
+  <li>展示:以不同方式编写“drawing_animation”+ 3个cirlcles +为它添加颜色和一个gif并将其放在顶部</li>
+  <li>展示:使用L-Systems创建分形</li>
+  <li>AnimatedDrawing.paths:
+    <em>提供某种固定边界框，因为路径和整个边界框可以动态改变(例如旋转圆形脉冲的大小)
+    </em>也是自定义视口</li>
+</ul>
+
+<h2 id="学分">学分</h2>
+
+<p>感谢<a href="https://github.com/maxwellito">maxwellito</a>为他的<a href="https://github.com/maxwellito/vivus">vivus项目</a>提供了这个库的初步灵感。也感谢<a href="https://github.com/dnfield">dnfield</a>了解<a href="https://github.com/dnfield/dart_path_parsing">path_parsing</a>库。</p>
+
+<p>英国图书馆为他们用于<a href="https://github.com/biocarl/">展示应用程序</a>的精彩<a href="https://www.flickr.com/photos/britishlibrary">旧书扫描集</a>的信用额度drawing_animation/树/主/示例/ example_03)。</p>
+
+<h2 id="github主页-biocarldrawing_animation">Github主页 👉<a href="http://github.com/biocarl/drawing_animation">biocarl/drawing_animation</a></h2>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter%E4%BB%A3%E7%A0%81%E5%BA%93" rel="tag"># flutter代码库</a>
+          
+            
+            <a href="/tag/#/SVG" rel="tag"># SVG</a>
+          
+            
+            <a href="/tag/#/Animation" rel="tag"># Animation</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/20/A_Flutter_movie_app_build_with_Fish-Redux_and_TMDB_api/" rel="next" title="Fish-Redux开发的电影app">
+                <i class="fa fa-chevron-left"></i> Fish-Redux开发的电影app
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/note/2019/07/19/libra/" rel="prev" title="facebook libra 一分钟简介">
+                facebook libra 一分钟简介 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2019/07/20/A_Flutter_library_for_gradually_painting_SVG_path_objects_on_canvas/';
+              this.page.identifier = '/2019/07/20/A_Flutter_library_for_gradually_painting_SVG_path_objects_on_canvas/';
+              this.page.title = '绘图动画插件库';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

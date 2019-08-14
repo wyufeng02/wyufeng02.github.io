@@ -1,0 +1,1476 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter代码库,Json,Widgets,Table," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="立即下载 ️⬇️ Flutter package: Json Table Widget to create table from json array Json Table Widget">
+<meta name="keywords" content="flutter代码库, Json, Widgets, Table">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Provides a Json Table Widget for directly showing table from a json">
+<meta property="og:url" content="https://code4flutter.com/2019/08/14/Provides_a_Json_Table_Widget_for_directly_showing_table_from_a_json/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="立即下载 ️⬇️ Flutter package: Json Table Widget to create table from json array Json Table Widget">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://flutterawesome.com/content/images/2019/08/Json-Table-Widget.jpg">
+<meta property="og:image" content="https://img.shields.io/github/stars/apgapg/json_table.svg?style=social">
+<meta property="og:image" content="https://img.shields.io/twitter/url/https/@ayushpgupta.svg?style=social">
+<meta property="og:image" content="https://img.shields.io/github/last-commit/apgapg/json_table.svg">
+<meta property="og:image" content="https://img.shields.io/website-up-down-green-red/http/shields.io.svg">
+<meta property="og:image" content="https://badges.frapsoft.com/os/v2/open-source.svg?v=103">
+<meta property="og:image" content="https://raw.githubusercontent.com/apgapg/json_table/master/src/s1.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/apgapg/json_table/master/src/s2.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/apgapg/json_table/master/src/s3.gif">
+<meta property="og:image" content="https://raw.githubusercontent.com/apgapg/json_table/master/src/ss1.png">
+<meta property="og:image" content="https://img.shields.io/pub/v/json_table.svg">
+<meta property="og:image" content="https://raw.githubusercontent.com/apgapg/json_table/master/src/ss2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/apgapg/json_table/master/src/ss1.png">
+<meta property="og:image" content="https://img.shields.io/github/stars/apgapg/pie_chart.svg?style=social">
+<meta property="og:image" content="https://img.shields.io/github/stars/apgapg/avatar_glow.svg?style=social">
+<meta property="og:image" content="https://img.shields.io/github/stars/apgapg/search_widget.svg?style=social">
+<meta property="og:image" content="https://img.shields.io/github/stars/apgapg/animating_location_pin.svg?style=social">
+<meta property="og:image" content="https://img.shields.io/github/stars/apgapg/flutter_profile.svg?style=social">
+<meta property="og:image" content="https://img.shields.io/github/stars/apgapg/flutter_sankalan.svg?style=social">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Provides a Json Table Widget for directly showing table from a json">
+<meta name="twitter:description" content="立即下载 ️⬇️ Flutter package: Json Table Widget to create table from json array Json Table Widget">
+<meta name="twitter:image" content="https://flutterawesome.com/content/images/2019/08/Json-Table-Widget.jpg">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2019/08/14/Provides_a_Json_Table_Widget_for_directly_showing_table_from_a_json/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>Provides a Json Table Widget for directly showing table from a json - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>Provides a Json Table Widget for directly showing table from a json</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2019/08/14/Provides_a_Json_Table_Widget_for_directly_showing_table_from_a_json/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            Provides a Json Table Widget for directly showing table from a json
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/08/14/Provides_a_Json_Table_Widget_for_directly_showing_table_from_a_json/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2019/08/14/Provides_a_Json_Table_Widget_for_directly_showing_table_from_a_json/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  740
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <h2 id="立即下载-️️-"><a href="https://codeload.github.com/apgapg/json_table/zip/master">立即下载 ️⬇️ </a></h2>
+
+<p><img src="https://flutterawesome.com/content/images/2019/08/Json-Table-Widget.jpg" alt="" /></p>
+
+<blockquote>
+
+  <p>Flutter package: Json Table Widget to create table from json array</p>
+
+</blockquote>
+
+<h1 id="json-table-widget----">Json Table Widget <a href="https://github.com/apgapg/json_table"><img src="https://img.shields.io/github/stars/apgapg/json_table.svg?style=social" alt="GitHub stars" /></a> <a href="https://twitter.com/ayushpgupta"><img src="https://img.shields.io/twitter/url/https/@ayushpgupta.svg?style=social" alt="Twitter Follow" /></a> <img src="https://img.shields.io/github/last-commit/apgapg/json_table.svg" alt="GitHub last commit" /> <a href="https://play.google.com/store/apps/details?id=com.coddu.flutterprofile"><img src="https://img.shields.io/website-up-down-green-red/http/shields.io.svg" alt="Website shields.io" /></a><a href="https://github.com/apgapg/json_table"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103" alt="Open Source Love" /></a></h1>
+
+<p>This Flutter package provides a Json Table Widget for directly showing table from a json(Map). Supports Column toggle also.</p>
+
+<p><img src="https://raw.githubusercontent.com/apgapg/json_table/master/src/s1.gif" height="400" alt="JsonTable" /> <img src="https://raw.githubusercontent.com/apgapg/json_table/master/src/s2.gif" height="400" alt="JsonTable" /> <img src="https://raw.githubusercontent.com/apgapg/json_table/master/src/s3.gif" height="400" alt="JsonTable" /> <img src="https://raw.githubusercontent.com/apgapg/json_table/master/src/ss1.png" height="400" alt="JsonTable" /></p>
+
+<h1 id="-installation">💻 Installation</h1>
+<p>In the <code class="highlighter-rouge">dependencies:</code> section of your <code class="highlighter-rouge">pubspec.yaml</code>, add the following line:</p>
+
+<p><a href="https://pub.dartlang.org/packages/json_table"><img src="https://img.shields.io/pub/v/json_table.svg" alt="Version" /></a></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">dependencies</span><span class="pi">:</span>
+  <span class="na">json_table</span><span class="pi">:</span> <span class="s">&lt;latest version&gt;</span>
+</code></pre></div></div>
+
+<h1 id="-usage">❔ Usage</h1>
+
+<h3 id="import-this-class">Import this class</h3>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:json_table/json_table.dart'</span><span class="o">;</span>
+</code></pre></div></div>
+
+<h3 id="add-json-table-widget">Add Json Table Widget</h3>
+<ul>
+  <li>Accepts Map<dynamic> as input. Just decode your json array string and pass it in JsonTable. No casting to model required.</dynamic></li>
+  <li>Option for creating column header builder. This basically returns a widget to show as table column header
+    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">tableHeaderBuilder:</span> <span class="o">(</span><span class="kt">String</span> <span class="n">header</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">return</span> <span class="n">Container</span><span class="o">(</span>
+    <span class="nl">padding:</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">symmetric</span><span class="o">(</span><span class="nl">horizontal:</span> <span class="mf">8.0</span><span class="o">,</span> <span class="nl">vertical:</span> <span class="mf">4.0</span><span class="o">),</span>
+    <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="o">(</span><span class="nl">border:</span> <span class="n">Border</span><span class="o">.</span><span class="na">all</span><span class="o">(</span><span class="nl">width:</span> <span class="mf">0.5</span><span class="o">),</span><span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">grey</span><span class="o">[</span><span class="mi">300</span><span class="o">]),</span>
+    <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span>
+      <span class="n">header</span><span class="o">,</span>
+      <span class="nl">textAlign:</span> <span class="n">TextAlign</span><span class="o">.</span><span class="na">center</span><span class="o">,</span>
+      <span class="nl">style:</span> <span class="n">Theme</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">context</span><span class="o">).</span><span class="na">textTheme</span><span class="o">.</span><span class="na">display1</span><span class="o">.</span><span class="na">copyWith</span><span class="o">(</span><span class="nl">fontWeight:</span> <span class="n">FontWeight</span><span class="o">.</span><span class="na">w700</span><span class="o">,</span> <span class="nl">fontSize:</span> <span class="mf">14.0</span><span class="o">,</span><span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">black87</span><span class="o">),</span>
+    <span class="o">),</span>
+  <span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Option for creating table cell builder
+    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">tableCellBuilder:</span> <span class="o">(</span><span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">return</span> <span class="n">Container</span><span class="o">(</span>
+    <span class="nl">padding:</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">symmetric</span><span class="o">(</span><span class="nl">horizontal:</span> <span class="mf">4.0</span><span class="o">,</span> <span class="nl">vertical:</span> <span class="mf">2.0</span><span class="o">),</span>
+    <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="o">(</span><span class="nl">border:</span> <span class="n">Border</span><span class="o">.</span><span class="na">all</span><span class="o">(</span><span class="nl">width:</span> <span class="mf">0.5</span><span class="o">,</span> <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">grey</span><span class="o">.</span><span class="na">withOpacity</span><span class="o">(</span><span class="mf">0.5</span><span class="o">))),</span>
+    <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span>
+      <span class="n">value</span><span class="o">,</span>
+      <span class="nl">textAlign:</span> <span class="n">TextAlign</span><span class="o">.</span><span class="na">center</span><span class="o">,</span>
+      <span class="nl">style:</span> <span class="n">Theme</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">context</span><span class="o">).</span><span class="na">textTheme</span><span class="o">.</span><span class="na">display1</span><span class="o">.</span><span class="na">copyWith</span><span class="o">(</span><span class="nl">fontSize:</span> <span class="mf">14.0</span><span class="o">,</span> <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">grey</span><span class="o">[</span><span class="mi">900</span><span class="o">]),</span>
+    <span class="o">),</span>
+  <span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Option for toggling column(s) also. User can customise which columns are to be shown
+    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nl">showColumnToggle:</span> <span class="kc">true</span>
+</code></pre></div>    </div>
+    <p><img src="https://raw.githubusercontent.com/apgapg/json_table/master/src/ss2.png" height="600" alt="JsonTable" /></p>
+  </li>
+</ul>
+
+<h3 id="--vanilla-implementation">- Vanilla Implementation</h3>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Decode your json string</span>
+<span class="kd">final</span> <span class="kt">String</span> <span class="n">jsonSample</span><span class="o">=</span><span class="s">'[{"id":1},{"id":2}]'</span><span class="o">;</span>
+<span class="kd">var</span> <span class="n">json</span> <span class="o">=</span> <span class="n">jsonDecode</span><span class="o">(</span><span class="n">jsonSample</span><span class="o">);</span>
+
+<span class="c1">//Simply pass this json to JsonTable</span>
+<span class="nl">child:</span> <span class="n">JsonTable</span><span class="o">(</span><span class="n">json</span><span class="o">)</span>
+</code></pre></div></div>
+
+<h3 id="--implementation-with-header-and-cell-widget-builders">- Implementation with HEADER and CELL widget builders</h3>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">JsonTable</span><span class="o">(</span>
+   <span class="n">json</span><span class="o">,</span>
+   <span class="nl">tableHeaderBuilder:</span> <span class="o">(</span><span class="kt">String</span> <span class="n">header</span><span class="o">)</span> <span class="o">{</span>
+     <span class="k">return</span> <span class="n">Container</span><span class="o">(</span>
+       <span class="nl">padding:</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">symmetric</span><span class="o">(</span><span class="nl">horizontal:</span> <span class="mf">8.0</span><span class="o">,</span> <span class="nl">vertical:</span> <span class="mf">4.0</span><span class="o">),</span>
+       <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="o">(</span><span class="nl">border:</span> <span class="n">Border</span><span class="o">.</span><span class="na">all</span><span class="o">(</span><span class="nl">width:</span> <span class="mf">0.5</span><span class="o">),</span><span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">grey</span><span class="o">[</span><span class="mi">300</span><span class="o">]),</span>
+       <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span>
+         <span class="n">header</span><span class="o">,</span>
+         <span class="nl">textAlign:</span> <span class="n">TextAlign</span><span class="o">.</span><span class="na">center</span><span class="o">,</span>
+         <span class="nl">style:</span> <span class="n">Theme</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">context</span><span class="o">).</span><span class="na">textTheme</span><span class="o">.</span><span class="na">display1</span><span class="o">.</span><span class="na">copyWith</span><span class="o">(</span><span class="nl">fontWeight:</span> <span class="n">FontWeight</span><span class="o">.</span><span class="na">w700</span><span class="o">,</span> <span class="nl">fontSize:</span> <span class="mf">14.0</span><span class="o">,</span><span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">black87</span><span class="o">),</span>
+       <span class="o">),</span>
+     <span class="o">);</span>
+   <span class="o">},</span>
+   <span class="nl">tableCellBuilder:</span> <span class="o">(</span><span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+     <span class="k">return</span> <span class="n">Container</span><span class="o">(</span>
+       <span class="nl">padding:</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">symmetric</span><span class="o">(</span><span class="nl">horizontal:</span> <span class="mf">4.0</span><span class="o">,</span> <span class="nl">vertical:</span> <span class="mf">2.0</span><span class="o">),</span>
+       <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="o">(</span><span class="nl">border:</span> <span class="n">Border</span><span class="o">.</span><span class="na">all</span><span class="o">(</span><span class="nl">width:</span> <span class="mf">0.5</span><span class="o">,</span> <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">grey</span><span class="o">.</span><span class="na">withOpacity</span><span class="o">(</span><span class="mf">0.5</span><span class="o">))),</span>
+       <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span>
+         <span class="n">value</span><span class="o">,</span>
+         <span class="nl">textAlign:</span> <span class="n">TextAlign</span><span class="o">.</span><span class="na">center</span><span class="o">,</span>
+         <span class="nl">style:</span> <span class="n">Theme</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">context</span><span class="o">).</span><span class="na">textTheme</span><span class="o">.</span><span class="na">display1</span><span class="o">.</span><span class="na">copyWith</span><span class="o">(</span><span class="nl">fontSize:</span> <span class="mf">14.0</span><span class="o">,</span> <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">grey</span><span class="o">[</span><span class="mi">900</span><span class="o">]),</span>
+       <span class="o">),</span>
+     <span class="o">);</span>
+   <span class="o">},</span>
+ <span class="o">)</span>
+</code></pre></div></div>
+
+<p>Head over to example code: <a href="https://github.com/apgapg/json_table/blob/master/example/lib/pages/simple_table.dart">simple_table.dart</a></p>
+
+<h3 id="--implementation-with-custom-columns-list">- Implementation with custom COLUMNS list</h3>
+
+<ul>
+  <li>Pass custom column list to control what columns are displayed in table</li>
+  <li>The list item must be constructed using JsonTableColumn class</li>
+  <li>JsonTableColumn provides 4 parameters, namely,
+    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">JsonTableColumn</span><span class="o">(</span><span class="s">"age"</span><span class="o">,</span> <span class="nl">label:</span> <span class="s">"Eligible to Vote"</span><span class="o">,</span> <span class="nl">valueBuilder:</span> <span class="n">eligibleToVote</span><span class="o">,</span> <span class="nl">defaultValue:</span><span class="s">"NA"</span><span class="o">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>First parameter is the field/key to pick from the data</li>
+  <li>label: The column header label to be displayed</li>
+  <li>defaultValue: To be used when data or key is null</li>
+  <li>valueBuilder: To get the formatted value like date etc</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/apgapg/json_table/master/src/ss1.png" height="600" alt="JsonTable" /></p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Decode your json string</span>
+<span class="kd">final</span> <span class="kt">String</span> <span class="n">jsonSample</span><span class="o">=</span><span class="s">'[{"id":1},{"id":2}]'</span><span class="o">;</span>
+<span class="kd">var</span> <span class="n">json</span> <span class="o">=</span> <span class="n">jsonDecode</span><span class="o">(</span><span class="n">jsonSample</span><span class="o">);</span>
+<span class="c1">//Create your column list</span>
+<span class="kd">var</span> <span class="n">columns</span> <span class="o">=</span> <span class="o">[</span>
+      <span class="n">JsonTableColumn</span><span class="o">(</span><span class="s">"name"</span><span class="o">,</span> <span class="nl">label:</span> <span class="s">"Name"</span><span class="o">),</span>
+      <span class="n">JsonTableColumn</span><span class="o">(</span><span class="s">"age"</span><span class="o">,</span> <span class="nl">label:</span> <span class="s">"Age"</span><span class="o">),</span>
+      <span class="n">JsonTableColumn</span><span class="o">(</span><span class="s">"DOB"</span><span class="o">,</span> <span class="nl">label:</span> <span class="s">"Date of Birth"</span><span class="o">,</span> <span class="nl">valueBuilder:</span> <span class="n">formatDOB</span><span class="o">),</span>
+      <span class="n">JsonTableColumn</span><span class="o">(</span><span class="s">"age"</span><span class="o">,</span> <span class="nl">label:</span> <span class="s">"Eligible to Vote"</span><span class="o">,</span> <span class="nl">valueBuilder:</span> <span class="n">eligibleToVote</span><span class="o">),</span>
+      <span class="n">JsonTableColumn</span><span class="o">(</span><span class="s">"email"</span><span class="o">,</span> <span class="nl">label:</span> <span class="s">"E-mail"</span><span class="o">,</span> <span class="nl">defaultValue:</span> <span class="s">"NA"</span><span class="o">),</span>
+    <span class="o">];</span>
+<span class="c1">//Simply pass this column list to JsonTable</span>
+<span class="nl">child:</span> <span class="n">JsonTable</span><span class="o">(</span><span class="n">json</span><span class="o">,</span><span class="nl">columns:</span> <span class="n">columns</span><span class="o">)</span>
+
+<span class="c1">//Example of valueBuilder</span>
+<span class="kt">String</span> <span class="nf">eligibleToVote</span><span class="p">(</span><span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">value</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="s">"Yes"</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span>
+      <span class="k">return</span> <span class="s">"No"</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Head over to example code: <a href="https://github.com/apgapg/json_table/blob/master/example/lib/pages/custom_column_table.dart">custom_column_table.dart</a></p>
+
+<h3 id="key-highlights">Key Highlights</h3>
+<ul>
+  <li>The table constructed isn’t the flutter’s native DataTable.</li>
+  <li>The table is manually coded hence serves a great learning purpose on how to create simple tables manually in flutter</li>
+  <li>Supports vertical &amp; horizontal scroll</li>
+  <li>Supports custom columns includes default value, column name, value builder</li>
+</ul>
+
+<h2 id="todo">TODO</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Custom header list parameter. This will help to show only those keys as mentioned in header list</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Add support for keys missing in json object</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Add support for auto formatting of date</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Extracting column headers logic must be change. Not to depend on first object</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Pagination support etc. Its good if this table can be replaced with Flutter’s native DataTable</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add option to change header row to vertical row on left</li>
+</ul>
+
+<h1 id="-my-flutter-packages">⭐ My Flutter Packages</h1>
+<ul>
+  <li><a href="https://pub.dartlang.org/packages/pie_chart">pie_chart</a>  <a href="https://github.com/apgapg/pie_chart"><img src="https://img.shields.io/github/stars/apgapg/pie_chart.svg?style=social" alt="GitHub stars" /></a>  Flutter Pie Chart with cool animation.</li>
+  <li><a href="https://pub.dartlang.org/packages/avatar_glow">avatar_glow</a>  <a href="https://github.com/apgapg/avatar_glow"><img src="https://img.shields.io/github/stars/apgapg/avatar_glow.svg?style=social" alt="GitHub stars" /></a>  Flutter Avatar Glow Widget with glowing animation.</li>
+  <li><a href="https://pub.dartlang.org/packages/search_widget">search_widget</a>  <a href="https://github.com/apgapg/search_widget"><img src="https://img.shields.io/github/stars/apgapg/search_widget.svg?style=social" alt="GitHub stars" /></a>  Flutter Search Widget for selecting an option from list.</li>
+  <li><a href="https://pub.dev/packages/animating_location_pin">animating_location_pin</a>  <a href="https://github.com/apgapg/animating_location_pin"><img src="https://img.shields.io/github/stars/apgapg/animating_location_pin.svg?style=social" alt="GitHub stars" /></a>  Flutter Animating Location Pin Widget providing Animating Location Pin Widget which can be used while fetching device location.</li>
+</ul>
+
+<h1 id="-my-flutter-apps">⭐ My Flutter Apps</h1>
+<ul>
+  <li><a href="https://github.com/apgapg/flutter_profile">flutter_profile</a>  <a href="https://github.com/apgapg/flutter_profile"><img src="https://img.shields.io/github/stars/apgapg/flutter_profile.svg?style=social" alt="GitHub stars" /></a>  Showcase My Portfolio: Ayush P Gupta on Playstore.</li>
+  <li><a href="https://github.com/apgapg/flutter_sankalan">flutter_sankalan</a>  <a href="https://github.com/apgapg/flutter_sankalan"><img src="https://img.shields.io/github/stars/apgapg/flutter_sankalan.svg?style=social" alt="GitHub stars" /></a>  Flutter App which allows reading/uploading short stories.</li>
+</ul>
+
+<h1 id="-contribution">👍 Contribution</h1>
+<ol>
+  <li>Fork it</li>
+  <li>Create your feature branch (git checkout -b my-new-feature)</li>
+  <li>Commit your changes (git commit -m ‘Add some feature’)</li>
+  <li>Push to the branch (git push origin my-new-feature)</li>
+  <li>Create new Pull Request</li>
+</ol>
+
+<h2 id="github主页-apgapgjson_table">Github主页 👉<a href="http://github.com/apgapg/json_table">apgapg/json_table</a></h2>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter%E4%BB%A3%E7%A0%81%E5%BA%93" rel="tag"># flutter代码库</a>
+          
+            
+            <a href="/tag/#/Json" rel="tag"># Json</a>
+          
+            
+            <a href="/tag/#/Widgets" rel="tag"># Widgets</a>
+          
+            
+            <a href="/tag/#/Table" rel="tag"># Table</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/14/QR_Code_Scanner_for_Flutter/" rel="next" title="QR Code Scanner for Flutter">
+                <i class="fa fa-chevron-left"></i> QR Code Scanner for Flutter
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/14/PIN_input_field_widget_for_Flutter_with_paste_from_clipboard_functionality/" rel="prev" title="PIN input field widget for Flutter with paste from clipboard functionality">
+                PIN input field widget for Flutter with paste from clipboard functionality <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2019/08/14/Provides_a_Json_Table_Widget_for_directly_showing_table_from_a_json/';
+              this.page.identifier = '/2019/08/14/Provides_a_Json_Table_Widget_for_directly_showing_table_from_a_json/';
+              this.page.title = 'Provides a Json Table Widget for directly showing table from a json';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

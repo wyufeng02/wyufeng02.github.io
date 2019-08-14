@@ -1,0 +1,1735 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter,Ad," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="立即下载 ️⬇️ 该软件包将使用插件firebase_admob，以便快速轻松地将广告实施到Flutter应用程序中。 Add Ads to your App in a Snap! This Dart package will utilize the plugin, firebase_admob, so to quickly and easily implement ads into a Flutter app. Sign Up and Get Your ID’s First and foremost, you have to sign up for AdMob. Please, turn to AdMob Help for further guidance on this. You’re going to have to go to your Google AdMob Dashboard and get your id’s as well. There’s the ‘app ID’ used to identify your individual app, and there’s individual unit ID’s unique to each ‘type’ of ad you decide to use. Currently, there are three types: a Banner ad, an Interstitial ad, and a Video ad. Might as well do all that now, and then come back here to learn how to display such ads in your Flutter app.">
+<meta name="keywords" content="flutter, Ad">
+<meta property="og:type" content="article">
+<meta property="og:title" content="轻松将广告实施到Flutter应用中">
+<meta property="og:url" content="https://code4flutter.com/2019/07/07/Easily_implement_ads_into_a_Flutter_app/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="立即下载 ️⬇️ 该软件包将使用插件firebase_admob，以便快速轻松地将广告实施到Flutter应用程序中。 Add Ads to your App in a Snap! This Dart package will utilize the plugin, firebase_admob, so to quickly and easily implement ads into a Flutter app. Sign Up and Get Your ID’s First and foremost, you have to sign up for AdMob. Please, turn to AdMob Help for further guidance on this. You’re going to have to go to your Google AdMob Dashboard and get your id’s as well. There’s the ‘app ID’ used to identify your individual app, and there’s individual unit ID’s unique to each ‘type’ of ad you decide to use. Currently, there are three types: a Banner ad, an Interstitial ad, and a Video ad. Might as well do all that now, and then come back here to learn how to display such ads in your Flutter app.">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://flutterawesome.com/content/images/2019/06/ads.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/59965408-8add0500-94db-11e9-9c28-2f161ccfb62e.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/54394329-ef89f780-4682-11e9-9539-3edeab1c7351.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/59237381-14c9cb80-8bc8-11e9-9bd7-c104fdde2f5e.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/59237573-c406a280-8bc8-11e9-9600-cb051d068573.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/60599891-35c3ad80-9d7d-11e9-9c1d-e258fbb0add9.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/60599892-35c3ad80-9d7d-11e9-928f-cee55d4344ab.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/59965843-55d3b100-94e1-11e9-909a-d27de8ac8fa1.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/59965197-e4900000-94d8-11e9-9cc2-b1519d22201d.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/59967883-ec629b00-94fe-11e9-8223-600e100b9d8c.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/54376841-4929fc00-465a-11e9-9343-3438f5fd802e.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/54376782-2ef01e00-465a-11e9-9fc5-1b3de42dab5a.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/32497443/54376787-31eb0e80-465a-11e9-8678-4a89f4f4c5d7.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="轻松将广告实施到Flutter应用中">
+<meta name="twitter:description" content="立即下载 ️⬇️ 该软件包将使用插件firebase_admob，以便快速轻松地将广告实施到Flutter应用程序中。 Add Ads to your App in a Snap! This Dart package will utilize the plugin, firebase_admob, so to quickly and easily implement ads into a Flutter app. Sign Up and Get Your ID’s First and foremost, you have to sign up for AdMob. Please, turn to AdMob Help for further guidance on this. You’re going to have to go to your Google AdMob Dashboard and get your id’s as well. There’s the ‘app ID’ used to identify your individual app, and there’s individual unit ID’s unique to each ‘type’ of ad you decide to use. Currently, there are three types: a Banner ad, an Interstitial ad, and a Video ad. Might as well do all that now, and then come back here to learn how to display such ads in your Flutter app.">
+<meta name="twitter:image" content="https://flutterawesome.com/content/images/2019/06/ads.jpg">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2019/07/07/Easily_implement_ads_into_a_Flutter_app/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>轻松将广告实施到Flutter应用中 - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>轻松将广告实施到Flutter应用中</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2019/07/07/Easily_implement_ads_into_a_Flutter_app/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            轻松将广告实施到Flutter应用中
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/07/Easily_implement_ads_into_a_Flutter_app/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2019/07/07/Easily_implement_ads_into_a_Flutter_app/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  2392
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  11
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <h2 id="立即下载-️️-"><a href="https://codeload.github.com/AndriousSolutions/ads/zip/master">立即下载 ️⬇️ </a></h2>
+
+<p><img src="https://flutterawesome.com/content/images/2019/06/ads.jpg" alt="" /></p>
+
+<blockquote>
+
+  <p>该软件包将使用插件firebase_admob，以便快速轻松地将广告实施到Flutter应用程序中。</p>
+
+</blockquote>
+
+<h1 id="add-ads-to-your-app-in-a-snap">Add Ads to your App in a Snap!</h1>
+<p>This Dart package will utilize the plugin, <strong>firebase_admob</strong>, so to quickly and easily implement ads into a Flutter app.</p>
+<h2 id="sign-up-and-get-your-ids">Sign Up and Get Your ID’s</h2>
+<p>First and foremost, you have to <a href="https://support.google.com/admob/answer/7356219?hl=en">sign up for AdMob</a>. Please, turn to <a href="https://support.google.com/admob">AdMob Help</a> for further guidance on this. You’re going to have to go to your <a href="https://apps.admob.com/v2/apps/list?pli=1">Google AdMob Dashboard</a> and get your id’s as well. There’s the ‘app ID’ used to identify your individual app, and there’s individual unit ID’s unique to each ‘type’ of ad you decide to use. Currently, there are three types: a Banner ad, an Interstitial ad, and a Video ad. Might as well do all that now, and then come back here to learn how to display such ads in your Flutter app. 
+<a href="https://apps.admob.com/v2/home?pli=1"><img src="https://user-images.githubusercontent.com/32497443/59965408-8add0500-94db-11e9-9c28-2f161ccfb62e.png" alt="GoogleAdMob" title="Google Admob Dashboard" /></a></p>
+
+<h2 id="its-a-test-not-for-real">It’s A Test. Not For Real</h2>
+<p>Note, test id’s are supplied by the plugin to be used during development. Using your own id would violate ‘AdMob by Google’ policy. You can’t be clicking ads on your own app. They’ll know.</p>
+
+<h2 id="for-android-modify-androidmanifestxml">For Android, Modify AndroidManifest.xml</h2>
+<p>A common error you may encounter when trying this package out is Google complaining that the AdMob was not properly initialized. Merely follow the directions below to resolve this:
+<a href="https://developers.google.com/admob/android/quick-start#update_your_androidmanifestxml"><img src="https://user-images.githubusercontent.com/32497443/54394329-ef89f780-4682-11e9-9539-3edeab1c7351.png" alt="androidManifest" /></a></p>
+<h2 id="for-ios-update-your-infoplist">For iOS, Update your Info.plist</h2>
+<p><a href="https://developers.google.com/admob/ios/quick-start#update_your_infoplist"><img src="https://user-images.githubusercontent.com/32497443/59237381-14c9cb80-8bc8-11e9-9bd7-c104fdde2f5e.png" alt="Info.plist" /></a>
+and add
+<img src="https://user-images.githubusercontent.com/32497443/59237573-c406a280-8bc8-11e9-9600-cb051d068573.png" alt="Info plist" /></p>
+
+<h2 id="your-apps-analytics-in-ads">Your App’s Analytics in Ads</h2>
+<p>So, you created an AdMob account in order to monetize with ads in your production app. However, the kind of ads displayed will get a little help if you assign a Firebase project to your app as well. In fact, it’s been suggested to be an esstential step, <a href="https://github.com/AndriousSolutions/ads/issues/9">Missing setup steps in readme</a>. This is yet to be confirmed however. Regardless, turn to the links below to add Firebase to your app: <a href="https://firebase.google.com/docs/ios/setup#create-firebase-project">Add Firebase to your iOS project</a> and <a href="https://firebase.google.com/docs/android/setup#create-firebase-project">Add Firebase to your Android project</a>
+<a href="https://firebase.google.com/docs/ios/setup#create-firebase-project"><img src="https://user-images.githubusercontent.com/32497443/60599891-35c3ad80-9d7d-11e9-9c1d-e258fbb0add9.png" alt="FirebaseToiOS" /></a>
+<a href="https://firebase.google.com/docs/android/setup#create-firebase-project"><img src="https://user-images.githubusercontent.com/32497443/60599892-35c3ad80-9d7d-11e9-928f-cee55d4344ab.png" alt="FirebaseToAndroid" /></a></p>
+
+<h2 id="failed-to-load-ad--3">failed to load ad : 3</h2>
+<p><a href="https://stackoverflow.com/questions/33566485/failed-to-load-ad-3#answer-33712905"><img src="https://user-images.githubusercontent.com/32497443/59965843-55d3b100-94e1-11e9-909a-d27de8ac8fa1.png" alt="errorLoadAd03" title="failed to load ad : 3" /></a>
+Patience is a virtue. The only errors I consistently receive from users are not of the Dart package itself, but are due to Google. Once the user has registered with Google, a common complaint is there’s still only ‘test’ ads being displayed, but that’s because it’ll take some hours if not a day to receive production ads. Wait a day, and see for yourself.</p>
+
+<h2 id="there-must-only-be-one">There Must Only Be One!</h2>
+<p>Try instantiating more than one Ads object, and you’ll be a little dissappointed if not down right confused. It’ll appear the second Ads object is not working, and you’d be right.</p>
+<pre><code class="language-Java">    _ads = Ads(
+      appId,
+      bannerUnitId: bannerUnitId,
+      screenUnitId: screenUnitId,
+      keywords: &lt;String&gt;['ibm', 'computers'],
+      contentUrl: 'http://www.ibm.com',
+      childDirected: false,
+      testDevices: ['Samsung_Galaxy_SII_API_26:5554'],
+      listener: eventListener,
+    );
+
+    _adsTest = Ads(
+      appId,
+      bannerUnitId: bannerUnitId,
+      screenUnitId: screenUnitId,
+      keywords: &lt;String&gt;['ibm', 'computers'],
+      contentUrl: 'http://www.ibm.com',
+      childDirected: false,
+      testDevices: ['Samsung_Galaxy_SII_API_26:5554'],
+      listener: eventListener,
+    );
+</code></pre>
+<p>The Google plugin is designed to work with one app and its set of ads. That’s all. Creating another Ads object will serve no purpose for you because the Ads Dart package will be aware of the first one and work only with that one. Note, they’ll be no ‘error message’ or notification there’s more than one Ads object. The Dart package is designed not to be that disruptive in development or in production. The second object will just not do anything. It simply won’t work, and will record the reason why in the log files. That’s all.</p>
+
+<h2 id="theres-an-article-on-this">There’s An Article On This</h2>
+<p>There is an extensive article about this Dart package available on medium.com:
+<a href="https://medium.com/@greg.perry/add-ads-in-your-app-in-a-snap-a980d2050ef9?postPublishedType=repub">Add Ads To Your App in a Snap!</a></p>
+
+<p><a href="https://medium.com/@greg.perry/add-ads-in-your-app-in-a-snap-a980d2050ef9?postPublishedType=repub"><img src="https://user-images.githubusercontent.com/32497443/59965197-e4900000-94d8-11e9-9cc2-b1519d22201d.png" alt="admobFlutter03" title="Add Ads to Your App in a Snap!" /></a></p>
+
+<h2 id="how-it-works">How it works</h2>
+<p><img src="https://user-images.githubusercontent.com/32497443/59967883-ec629b00-94fe-11e9-8223-600e100b9d8c.png" alt="appCodeSample" />
+gist: <a href="https://gist.github.com/Andrious/889f8774ddeee409a640e3cd4c10e7f4#file-admobadsexample-dart">AdMobAdsExample.dart</a></p>
+<pre><code class="language-Java">import 'package:flutter/material.dart';
+import 'dart:io' show Platform;
+import 'package:firebase_admob/firebase_admob.dart';
+
+import 'package:ads/ads.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({Key key}) : super(key: key);
+
+  @override
+  _MyAppState createState() =&gt; _MyAppState();
+}
+
+class _MyAppState extends State&lt;MyApp&gt; {
+  Ads appAds;
+  int _coins = 0;
+
+  final String appId = Platform.isAndroid
+      ? 'ca-app-pub-3940256099942544~3347511713'
+      : 'ca-app-pub-3940256099942544~1458002511';
+
+  final String bannerUnitId = Platform.isAndroid
+      ? 'ca-app-pub-3940256099942544/6300978111'
+      : 'ca-app-pub-3940256099942544/2934735716';
+
+  final String screenUnitId = Platform.isAndroid
+      ? 'ca-app-pub-3940256099942544/1033173712'
+      : 'ca-app-pub-3940256099942544/4411468910';
+
+  final String videoUnitId = Platform.isAndroid
+      ? 'ca-app-pub-3940256099942544/5224354917'
+      : 'ca-app-pub-3940256099942544/1712485313';
+
+  @override
+  void initState() {
+    super.initState();
+
+    /// Assign a listener.
+    var eventListener = (MobileAdEvent event) {
+      if (event == MobileAdEvent.opened) {
+        print("The opened ad is clicked on.");
+      }
+    };
+
+    appAds = Ads(
+      appId,
+      bannerUnitId: bannerUnitId,
+      screenUnitId: screenUnitId,
+      keywords: &lt;String&gt;['ibm', 'computers'],
+      contentUrl: 'http://www.ibm.com',
+      childDirected: false,
+      testDevices: ['Samsung_Galaxy_SII_API_26:5554'],
+      testing: false,
+      listener: eventListener,
+    );
+
+    appAds.setVideoAd(
+      adUnitId: videoUnitId,
+      keywords: ['dart', 'java'],
+      contentUrl: 'http://www.publang.org',
+      childDirected: true,
+      testDevices: null,
+      listener: (RewardedVideoAdEvent event,
+          {String rewardType, int rewardAmount}) {
+        print("The ad was sent a reward amount.");
+        setState(() {
+          _coins += rewardAmount;
+        });
+      },
+    );
+
+    appAds.showBannerAd();
+  }
+
+  @override
+  void dispose() {
+    appAds.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('AdMob Ad Examples'),
+        ),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: &lt;Widget&gt;[
+                RaisedButton(
+                    key: ValueKey&lt;String&gt;('SHOW BANNER'),
+                    child: const Text('SHOW BANNER'),
+                    onPressed: () {
+                      appAds.showBannerAd(state: this, anchorOffset: null);
+                    }),
+                RaisedButton(
+                    key: ValueKey&lt;String&gt;('REMOVE BANNER'),
+                    child: const Text('REMOVE BANNER'),
+                    onPressed: () {
+                      appAds.hideBannerAd();
+                    }),
+                RaisedButton(
+                  key: ValueKey&lt;String&gt;('SHOW INTERSTITIAL'),
+                  child: const Text('SHOW INTERSTITIAL'),
+                  onPressed: () {
+                    appAds.showFullScreenAd(state: this);
+                  },
+                ),
+                RaisedButton(
+                  key: ValueKey&lt;String&gt;('SHOW REWARDED VIDEO'),
+                  child: const Text('SHOW REWARDED VIDEO'),
+                  onPressed: () {
+                    appAds.showVideoAd(state: this);
+                  },
+                ),
+                Text(
+                  "You have $_coins coins.",
+                  key: ValueKey&lt;String&gt;('COINS'),
+                ),
+              ].map((Widget button) {
+                return Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16.0),
+                  child: button,
+                );
+              }).toList(),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+</code></pre>
+
+<h2 id="beta-you-bet">Beta You Bet!</h2>
+<p>As of this writing, <strong>firebase_admob</strong>, is still in beta. As such, Banner ads can only be positioned at the top or the bottom of the screen, animation is limited, the ads come in a infinite set of sizes. Lastly, ‘native ads’ (i.e. ads displayed on UI components native to the platform) are not yet supported.</p>
+
+<h2 id="and-the-number-of-the-counting-shall-bethree">And the Number of the Counting Shall Be…Three</h2>
+<p>There are three types of ads currently offered by the firebase_admob plugin. There’s the traditional Banner ad, the Interstitial or full-screen ad that covers the interface of their host app when opened, and finally, there’s the Video ad that also covers the screen when opened and then returns to the app when closed.</p>
+
+<p><img src="https://user-images.githubusercontent.com/32497443/54376841-4929fc00-465a-11e9-9343-3438f5fd802e.png" alt="Three types of ads." /></p>
+
+<h2 id="its-an-event">It’s an Event!</h2>
+<p>The plugin, <strong>firebase_admob</strong>, watches for seven separate events when it comes to the Banner ad and the Full-screen ad. Everything from the much-called ‘loaded’ event to the ‘impression’ event—which I think fires each if the user has been looking at the ad for so long that the ad itself has refreshed itself. I’m not certain however as there’s not much API documentation for this plugin at the time of this writing either.</p>
+
+<p>Below is the the enumerated values currently describing the currently supported events:</p>
+
+<p><img src="https://user-images.githubusercontent.com/32497443/54376782-2ef01e00-465a-11e9-9fc5-1b3de42dab5a.png" alt="Seven events are available to the Banner and Full-screen ad." /></p>
+
+<p>With Video ads, there are eight events made available to watch out for. Events are triggered, for example, when the video opens, when the video starts to play, and when the video has completed running. There’s also an event that rewards the user for viewing the video.</p>
+
+<p><img src="https://user-images.githubusercontent.com/32497443/54376787-31eb0e80-465a-11e9-8678-4a89f4f4c5d7.png" alt="Eight events associated with a Video." /></p>
+
+<h2 id="listen-and-earn">Listen and Earn!</h2>
+<p>Since the plugin supplies a whole bunch of events, I’ve implemented no less than eleven event listeners in this library. The gist provided above lists all the possibles ways to set an event handler on all the types of ads offered by the plugin.</p>
+
+<p>The Banner ad and the FullScreen ad use the same set of ‘MobileAdEvent’ events while the Video Ad has its own set under the event type, ‘RewardedVideoAdEvent’. This means you can break up your event listeners by the type of ad if you want.</p>
+
+<p>Yes, you can assign as many listeners as you want to a particular event. You or someone else can. For example, someone else on your team working on another part of your app may also need to know when an ad is opened.</p>
+
+<h2 id="the-main-event-listener">The Main Event Listener</h2>
+<p>There is a setter called, <em>eventListener</em>, that you can use to catch ‘MobileAdEvent’ events. Again, currently there is seven events defined so far and are used by the Banner ad and the Full-Screen (Interstitial) ad.</p>
+<pre><code class="language-Java">  appAds.eventListener = (MobileAdEvent event) {
+    switch (event) {
+      case MobileAdEvent.loaded:
+        print("An ad has loaded successfully in memory.");
+        break;
+      case MobileAdEvent.failedToLoad:
+        print("The ad failed to load into memory.");
+        break;
+      case MobileAdEvent.clicked:
+        print("The opened ad was clicked on.");
+        break;
+      case MobileAdEvent.impression:
+        print("The user is still looking at the ad. A new ad came up.");
+        break;
+      case MobileAdEvent.opened:
+        print("The Ad is now open.");
+        break;
+      case MobileAdEvent.leftApplication:
+        print("You've left the app after clicking the Ad.");
+        break;
+      case MobileAdEvent.closed:
+        print("You've closed the Ad and returned to the app.");
+        break;
+      default:
+        print("There's a 'new' MobileAdEvent?!");
+    }
+  };
+</code></pre>
+<p>Again, you can assign a listener at the <strong>init</strong>() function and at the ‘set’ functions—any number of listeners you like. There’s functions available to remove these listeners as well of course.</p>
+
+<h2 id="the-banner-listener">The Banner Listener</h2>
+<p>The Banner ad has its own <em>setter</em>. You can see below it’s called <em>bannerListener</em>.</p>
+<pre><code class="language-Java">  appAds.bannerListener = (MobileAdEvent event) {
+    switch (event) {
+      case MobileAdEvent.loaded:
+        print("An ad has loaded successfully in memory.");
+        break;
+      case MobileAdEvent.failedToLoad:
+        print("The ad failed to load into memory.");
+        break;
+      case MobileAdEvent.clicked:
+        print("The opened ad was clicked on.");
+        break;
+      case MobileAdEvent.impression:
+        print("The user is still looking at the ad. A new ad came up.");
+        break;
+      case MobileAdEvent.opened:
+        print("The ad is now open.");
+        break;
+      case MobileAdEvent.leftApplication:
+        print("You've left the app after clicking the Ad.");
+        break;
+      case MobileAdEvent.closed:
+        print("You've closed the Ad and returned to the app.");
+        break;
+      default:
+        print("There's a 'new' MobileAdEvent?!");
+    }
+  };
+</code></pre>
+<h2 id="the-full-screen-listener">The Full-Screen Listener</h2>
+<p>The <em>setter</em> for the Interstitial ad is called <em>screenListener</em>.</p>
+<pre><code class="language-Java">  appAds.screenListener = (MobileAdEvent event) {
+    switch (event) {
+      case MobileAdEvent.loaded:
+        print("An ad has loaded successfully in memory.");
+        break;
+      case MobileAdEvent.failedToLoad:
+        print("The ad failed to load into memory.");
+        break;
+      case MobileAdEvent.clicked:
+        print("The opened ad was clicked on.");
+        break;
+      case MobileAdEvent.impression:
+        print("The user is still looking at the ad. A new ad came up.");
+        break;
+      case MobileAdEvent.opened:
+        print("The ad is now open.");
+        break;
+      case MobileAdEvent.leftApplication:
+        print("You've left the app after clicking the Ad.");
+        break;
+      case MobileAdEvent.closed:
+        print("You've closed the Ad and returned to the app.");
+        break;
+      default:
+        print("There's a 'new' MobileAdEvent?!");
+    }
+  };
+</code></pre>
+<h2 id="the-video-listener">The Video Listener</h2>
+<p>Finally, the <em>setter</em> for the Video ad is called <em>videoListener</em>.</p>
+<pre><code class="language-Java">  appAds.videoListener =
+      (RewardedVideoAdEvent event, {String rewardType, int rewardAmount}) {
+    switch (event) {
+      case RewardedVideoAdEvent.loaded:
+        print("An ad has loaded successfully in memory.");
+        break;
+      case RewardedVideoAdEvent.failedToLoad:
+        print("The ad failed to load into memory.");
+        break;
+      case RewardedVideoAdEvent.opened:
+        print("The ad is now open.");
+        break;
+      case RewardedVideoAdEvent.leftApplication:
+        print("You've left the app after clicking the Ad.");
+        break;
+      case RewardedVideoAdEvent.closed:
+        print("You've closed the Ad and returned to the app.");
+        break;
+      case RewardedVideoAdEvent.rewarded:
+        print("The ad has sent a reward amount.");
+        break;
+      case RewardedVideoAdEvent.started:
+        print("You've just started playing the Video ad.");
+        break;
+      case RewardedVideoAdEvent.completed:
+        print("You've just finished playing the Video ad.");
+        break;
+      default:
+        print("There's a 'new' RewardedVideoAdEvent?!");
+    }
+  };
+</code></pre>
+<h2 id="a-event-listener-for-every-occasion">A Event Listener For Every Occasion</h2>
+<p>This last section provides yet another way to implement a specific event listeners for your ads:</p>
+<pre><code class="language-Java">  appAds.banner.loadedListener = () {
+    print("An ad has loaded successfully in memory.");
+  };
+
+  appAds.banner.failedListener = () {
+    print("An ad failed to load into memory.");
+  };
+
+  appAds.banner.clickedListener = () {
+    print("The opened ad is clicked on.");
+  };
+
+  appAds.banner.impressionListener = () {
+    print("The user is still looking at the ad. A new ad came up.");
+  };
+
+  appAds.banner.openedListener = () {
+    print("The ad has opened.");
+  };
+
+  appAds.banner.leftAppListener = () {
+    print("You left the app and gone to the ad's website.");
+  };
+
+  appAds.banner.impressionListener = () {
+    print("The user is still looking at the ad. A new ad came up.");
+  };
+
+  appAds.banner.closedListener = () {
+    print("You've closed an ad and returned to your app.");
+  };
+
+  appAds.screen.loadedListener = () {
+    print("An ad has loaded into memory.");
+  };
+
+  appAds.screen.failedListener = () {
+    print("An ad has failed to load in memory.");
+  };
+
+  appAds.screen.clickedListener = () {
+    print("The opened ad was clicked on.");
+  };
+
+  appAds.screen.impressionListener = () {
+    print("You've clicked on a link in the open ad.");
+  };
+
+  appAds.screen.openedListener = () {
+    print("The ad has opened.");
+  };
+
+  appAds.screen.leftAppListener = () {
+    print("The user has left the app and gone to the opened ad.");
+  };
+
+  appAds.screen.closedListener = () {
+    print("The ad has been closed. The user returns to the app.");
+  };
+
+  appAds.video.loadedListener = () {
+    print("An ad has loaded in memory.");
+  };
+
+  appAds.video.failedListener = () {
+    print("An ad has failed to load in memory.");
+  };
+
+  appAds.video.clickedListener = () {
+    print("An ad has been clicked on.");
+  };
+
+  appAds.video.openedListener = () {
+    print("An ad has been opened.");
+  };
+
+  appAds.video.leftAppListener = () {
+    print("You've left the app to view the video.");
+  };
+
+  appAds.video.closedListener = () {
+    print("The video has been closed.");
+  };
+
+  appAds.video.rewardedListener = (String rewardType, int rewardAmount) {
+    print("The ad was sent a reward amount.");
+  };
+
+  appAds.video.startedListener = () {
+    print("You've just started playing the Video ad.");
+  };
+
+  appAds.video.completedListener = () {
+    print("You've just finished playing the Video ad.");
+  };
+</code></pre>
+<h2 id="github主页-andrioussolutionsads">Github主页 👉<a href="http://github.com/AndriousSolutions/ads">AndriousSolutions/ads</a></h2>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter" rel="tag"># flutter</a>
+          
+            
+            <a href="/tag/#/Ad" rel="tag"># Ad</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/07/Facebook_Audience_Network_plugin_for_Flutter_applications/" rel="next" title="Flutter Facebook Audience Network插件">
+                <i class="fa fa-chevron-left"></i> Flutter Facebook Audience Network插件
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/07/Customizable_and_pluggable_Theme_Provider_with_Flutter/" rel="prev" title="主题插件">
+                主题插件 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2019/07/07/Easily_implement_ads_into_a_Flutter_app/';
+              this.page.identifier = '/2019/07/07/Easily_implement_ads_into_a_Flutter_app/';
+              this.page.title = '轻松将广告实施到Flutter应用中';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

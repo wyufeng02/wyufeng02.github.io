@@ -1,0 +1,786 @@
+/* BASICS */
+
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: monospace;
+  height: 300px;
+  color: black;
+  direction: ltr;
+}
+
+/* PADDING */
+
+.CodeMirror-lines {
+  padding: 4px 0; /* Vertical padding around content */
+}
+.CodeMirror pre {
+  padding: 0 4px; /* Horizontal padding of content */
+}
+
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: white; /* The little square between H and V scrollbars */
+}
+
+/* GUTTER */
+
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+  white-space: nowrap;
+}
+.CodeMirror-linenumbers {}
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+}
+
+.CodeMirror-guttermarker { color: black; }
+.CodeMirror-guttermarker-subtle { color: #999; }
+
+/* CURSOR */
+
+.CodeMirror-cursor {
+  border-left: 1px solid black;
+  border-right: none;
+  width: 0;
+}
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver;
+}
+.cm-fat-cursor .CodeMirror-cursor {
+  width: auto;
+  border: 0 !important;
+  background: #7e7;
+}
+.cm-fat-cursor div.CodeMirror-cursors {
+  z-index: 1;
+}
+.cm-fat-cursor-mark {
+  background-color: rgba(20, 255, 20, 0.5);
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+}
+.cm-animate-fat-cursor {
+  width: auto;
+  border: 0;
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+  background-color: #7e7;
+}
+@-moz-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@-webkit-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+
+/* Can style cursor different in overwrite (non-insert) mode */
+.CodeMirror-overwrite .CodeMirror-cursor {}
+
+.cm-tab { display: inline-block; text-decoration: inherit; }
+
+.CodeMirror-rulers {
+  position: absolute;
+  left: 0; right: 0; top: -50px; bottom: -20px;
+  overflow: hidden;
+}
+.CodeMirror-ruler {
+  border-left: 1px solid #ccc;
+  top: 0; bottom: 0;
+  position: absolute;
+}
+
+/* DEFAULT THEME */
+
+.cm-s-default .cm-header {color: blue;}
+.cm-s-default .cm-quote {color: #090;}
+.cm-negative {color: #d44;}
+.cm-positive {color: #292;}
+.cm-header, .cm-strong {font-weight: bold;}
+.cm-em {font-style: italic;}
+.cm-link {text-decoration: underline;}
+.cm-strikethrough {text-decoration: line-through;}
+
+.cm-s-default .cm-keyword {color: #708;}
+.cm-s-default .cm-atom {color: #219;}
+.cm-s-default .cm-number {color: #164;}
+.cm-s-default .cm-def {color: #00f;}
+.cm-s-default .cm-variable,
+.cm-s-default .cm-punctuation,
+.cm-s-default .cm-property,
+.cm-s-default .cm-operator {}
+.cm-s-default .cm-variable-2 {color: #05a;}
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}
+.cm-s-default .cm-comment {color: #a50;}
+.cm-s-default .cm-string {color: #a11;}
+.cm-s-default .cm-string-2 {color: #f50;}
+.cm-s-default .cm-meta {color: #555;}
+.cm-s-default .cm-qualifier {color: #555;}
+.cm-s-default .cm-builtin {color: #30a;}
+.cm-s-default .cm-bracket {color: #997;}
+.cm-s-default .cm-tag {color: #170;}
+.cm-s-default .cm-attribute {color: #00c;}
+.cm-s-default .cm-hr {color: #999;}
+.cm-s-default .cm-link {color: #00c;}
+
+.cm-s-default .cm-error {color: #f00;}
+.cm-invalidchar {color: #f00;}
+
+.CodeMirror-composing { border-bottom: 2px solid; }
+
+/* Default styles for common addons */
+
+div.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}
+.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }
+.CodeMirror-activeline-background {background: #e8f2ff;}
+
+/* STOP */
+
+/* The rest of this file contains styles related to the mechanics of
+   the editor. You probably shouldn't touch them. */
+
+.CodeMirror {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.CodeMirror-scroll {
+  overflow: scroll !important; /* Things will break if this is overridden */
+  /* 30px is the magic margin used to hide the element's real scrollbars */
+  /* See overflow: hidden in .CodeMirror */
+  margin-bottom: -30px; margin-right: -30px;
+  padding-bottom: 30px;
+  height: 100%;
+  outline: none; /* Prevent dragging from highlighting the element */
+  position: relative;
+}
+.CodeMirror-sizer {
+  position: relative;
+  border-right: 30px solid transparent;
+}
+
+/* The fake, visible scrollbars. Used to force redraw during scrolling
+   before actual scrolling happens, thus preventing shaking and
+   flickering artifacts. */
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  position: absolute;
+  z-index: 6;
+  display: none;
+}
+.CodeMirror-vscrollbar {
+  right: 0; top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.CodeMirror-hscrollbar {
+  bottom: 0; left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.CodeMirror-scrollbar-filler {
+  right: 0; bottom: 0;
+}
+.CodeMirror-gutter-filler {
+  left: 0; bottom: 0;
+}
+
+.CodeMirror-gutters {
+  position: absolute; left: 0; top: 0;
+  min-height: 100%;
+  z-index: 3;
+}
+.CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -30px;
+}
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: none !important;
+  border: none !important;
+}
+.CodeMirror-gutter-background {
+  position: absolute;
+  top: 0; bottom: 0;
+  z-index: 4;
+}
+.CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4;
+}
+.CodeMirror-gutter-wrapper ::selection { background-color: transparent }
+.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }
+
+.CodeMirror-lines {
+  cursor: text;
+  min-height: 1px; /* prevents collapsing before first draw */
+}
+.CodeMirror pre {
+  /* Reset some styles that the rest of the page might have set */
+  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+  border-width: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual;
+}
+.CodeMirror-wrap pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
+.CodeMirror-linebackground {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 0;
+}
+
+.CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  padding: 0.1px; /* Force widget margins to stay inside of the container */
+}
+
+.CodeMirror-widget {}
+
+.CodeMirror-rtl pre { direction: rtl; }
+
+.CodeMirror-code {
+  outline: none;
+}
+
+/* Force content-box sizing for the elements where we expect it */
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.CodeMirror-cursor {
+  position: absolute;
+  pointer-events: none;
+}
+.CodeMirror-measure pre { position: static; }
+
+div.CodeMirror-cursors {
+  visibility: hidden;
+  position: relative;
+  z-index: 3;
+}
+div.CodeMirror-dragcursors {
+  visibility: visible;
+}
+
+.CodeMirror-focused div.CodeMirror-cursors {
+  visibility: visible;
+}
+
+.CodeMirror-selected { background: #d9d9d9; }
+.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }
+.CodeMirror-crosshair { cursor: crosshair; }
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }
+
+.cm-searching {
+  background-color: #ffa;
+  background-color: rgba(255, 255, 0, .4);
+}
+
+/* Used to force a border model for a node */
+.cm-force-border { padding-right: .1px; }
+
+@media print {
+  /* Hide the cursor when printing */
+  .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden;
+  }
+}
+
+/* See issue #2901 */
+.cm-tab-wrap-hack:after { content: ''; }
+
+/* Help users use markselection to safely style text background */
+span.CodeMirror-selectedtext { background: none; }
+
+
+.content-markdown {
+    font-size: 15px;
+}
+
+.content-markdown h1, .content-markdown .h1 {
+    font-size: 2em;
+}
+
+.content-markdown h2, .content-markdown .h2 {
+    font-size: 1.6em;
+}
+
+.content-markdown h3, .content-markdown .h3 {
+    font-size: 1.2em;
+}
+
+.content-markdown h4, .content-markdown .h4 {
+    font-size: 1.06667em;
+}
+
+.content-markdown h5, .content-markdown .h5 {
+    font-size: 1em;
+}
+
+.content-markdown h6, .content-markdown .h6 {
+    font-size: 0.93333em;
+}
+
+.content-markdown pre {
+    font-size: 0.93333em;
+}
+
+.content-markdown table {
+    background: #fff;
+    margin-bottom: 1.25em;
+    border: solid 1px #dedede;
+}
+
+.content-markdown table thead, .content-markdown table tfoot {
+    background: #f7f8f7;
+    font-weight: bold;
+}
+
+.content-markdown table thead tr th, .content-markdown table thead tr td, .content-markdown table tfoot tr th, .content-markdown table tfoot tr td {
+    padding: .5em .625em .625em;
+    font-size: inherit;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+}
+
+.content-markdown table tr th, .content-markdown table tr td {
+    padding: .5625em .625em;
+    font-size: inherit;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.content-markdown table tr.even, .content-markdown table tr.alt, .content-markdown table tr:nth-of-type(even) {
+    background: #f8f8f7;
+}
+
+.content-markdown table thead tr th, .content-markdown table tfoot tr th, .content-markdown table tbody tr td, .content-markdown table tr td, .content-markdown table tfoot tr td {
+    display: table-cell;
+    line-height: 1.6;
+}
+
+.content-markdown table.tableblock {
+    max-width: 100%;
+    border-collapse: separate;
+}
+
+.content-markdown table.tableblock td > .paragraph:last-child p > p:last-child, .content-markdown table.tableblock th > p:last-child, .content-markdown table.tableblock td > p:last-child {
+    margin-bottom: 0;
+}
+
+.content-markdown table.tableblock, .content-markdown th.tableblock, .content-markdown td.tableblock {
+    border: 0 solid #dedede;
+}
+
+.content-markdown table.grid-all th.tableblock, .content-markdown table.grid-all td.tableblock {
+    border-width: 0 1px 1px 0;
+}
+
+.content-markdown table.grid-all tfoot > tr > th.tableblock, .content-markdown table.grid-all tfoot > tr > td.tableblock {
+    border-width: 1px 1px 0 0;
+}
+
+.content-markdown table.grid-cols th.tableblock, .content-markdown table.grid-cols td.tableblock {
+    border-width: 0 1px 0 0;
+}
+
+.content-markdown table.grid-all * > tr > .tableblock:last-child, .content-markdown table.grid-cols * > tr > .tableblock:last-child {
+    border-right-width: 0;
+}
+
+.content-markdown table.grid-rows th.tableblock, .content-markdown table.grid-rows td.tableblock {
+    border-width: 0 0 1px 0;
+}
+
+.content-markdown table.grid-all tbody > tr:last-child > th.tableblock, .content-markdown table.grid-all tbody > tr:last-child > td.tableblock, .content-markdown table.grid-all thead:last-child > tr > th.tableblock, .content-markdown table.grid-rows tbody > tr:last-child > th.tableblock, .content-markdown table.grid-rows tbody > tr:last-child > td.tableblock, .content-markdown table.grid-rows thead:last-child > tr > th.tableblock {
+    border-bottom-width: 0;
+}
+
+.content-markdown table.grid-rows tfoot > tr > th.tableblock, .content-markdown table.grid-rows tfoot > tr > td.tableblock {
+    border-width: 1px 0 0 0;
+}
+
+.content-markdown table.frame-all {
+    border-width: 1px;
+}
+
+.content-markdown table.frame-sides {
+    border-width: 0 1px;
+}
+
+.content-markdown table.frame-topbot {
+    border-width: 1px 0;
+}
+
+.content-markdown th.halign-left, .content-markdown td.halign-left {
+    text-align: left;
+}
+
+.content-markdown th.halign-right, .content-markdown td.halign-right {
+    text-align: right;
+}
+
+.content-markdown th.halign-center, .content-markdown td.halign-center {
+    text-align: center;
+}
+
+.content-markdown th.valign-top, .content-markdown td.valign-top {
+    vertical-align: top;
+}
+
+.content-markdown th.valign-bottom, .content-markdown td.valign-bottom {
+    vertical-align: bottom;
+}
+
+.content-markdown th.valign-middle, .content-markdown td.valign-middle {
+    vertical-align: middle;
+}
+
+.content-markdown table thead th, .content-markdown table tfoot th {
+    font-weight: bold;
+}
+
+.content-markdown tbody tr th {
+    display: table-cell;
+    line-height: 1.6;
+    background: #f7f8f7;
+}
+
+.content-markdown tbody tr th, .content-markdown tbody tr th p, .content-markdown tfoot tr th, .content-markdown tfoot tr th p {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+.content-markdown p.tableblock > code:only-child {
+    background: none;
+    padding: 0;
+}
+
+.content-markdown p.tableblock {
+    font-size: 1em;
+    margin: 0;
+}
+
+.content-markdown td > div.verse {
+    white-space: pre;
+}
+
+.content-markdown .hdlist > table, .content-markdown .colist > table {
+    border: 0;
+    background: none;
+}
+
+.content-markdown .hdlist > table > tbody > tr, .content-markdown .colist > table > tbody > tr {
+    background: none;
+}
+
+.content-markdown td.hdlist1, .content-markdown td.hdlist2 {
+    vertical-align: top;
+    padding: 0 .625em;
+}
+
+.content-markdown td.hdlist1 {
+    font-weight: bold;
+    padding-bottom: 1.25em;
+}
+
+.content-markdown blockquote {
+    margin: 0 0 1.25em;
+    padding: .5625em 1.25em 0 1.1875em;
+    border-left: 1px solid #ddd;
+}
+
+.content-markdown blockquote cite {
+    display: block;
+    font-size: .9375em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.content-markdown blockquote cite:before {
+    content: "\2014 \0020";
+}
+
+.content-markdown blockquote cite a, .content-markdown blockquote cite a:visited {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.content-markdown blockquote, .content-markdown blockquote p {
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.content-markdown .quoteblock {
+    margin: 0 1em 1.25em 1.5em;
+    display: table;
+}
+
+.content-markdown .quoteblock > .title {
+    margin-left: -1.5em;
+    margin-bottom: .75em;
+}
+
+.content-markdown .quoteblock blockquote, .content-markdown .quoteblock blockquote p {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: inherit;
+    line-height: 1.75;
+    word-spacing: .1em;
+    letter-spacing: 0;
+    font-style: italic;
+    text-align: justify;
+}
+
+.content-markdown .quoteblock blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.content-markdown .quoteblock blockquote:before {
+    content: "\201c";
+    float: left;
+    font-size: 2.75em;
+    font-weight: bold;
+    line-height: .6em;
+    margin-left: -.6em;
+    color: rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.content-markdown .quoteblock blockquote > .paragraph:last-child p {
+    margin-bottom: 0;
+}
+
+.content-markdown .quoteblock .attribution {
+    margin-top: .5em;
+    margin-right: .5ex;
+    text-align: right;
+}
+
+.content-markdown .quoteblock .quoteblock {
+    margin-left: 0;
+    margin-right: 0;
+    padding: .5em 0;
+    border-left: 3px solid rgba(0, 0, 0, 0.6);
+}
+
+.content-markdown .quoteblock .quoteblock blockquote {
+    padding: 0 0 0 .75em;
+}
+
+.content-markdown .quoteblock .quoteblock blockquote:before {
+    display: none;
+}
+
+.content-markdown .quoteblock .attribution, .content-markdown .verseblock .attribution {
+    font-size: .9375em;
+    line-height: 1.45;
+    font-style: italic;
+}
+
+.content-markdown .quoteblock .attribution br, .content-markdown .verseblock .attribution br {
+    display: none;
+}
+
+.content-markdown .quoteblock .attribution cite, .content-markdown .verseblock .attribution cite {
+    display: block;
+    letter-spacing: -.025em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.content-markdown .quoteblock.abstract {
+    margin: 0 0 1.25em 0;
+    display: block;
+}
+
+.content-markdown .quoteblock.abstract blockquote, .content-markdown .quoteblock.abstract blockquote p {
+    text-align: left;
+    word-spacing: 0;
+}
+
+.content-markdown .quoteblock.abstract blockquote:before, .content-markdown .quoteblock.abstract blockquote p:first-of-type:before {
+    display: none;
+}
+
+.content-markdown ul.unstyled, .content-markdown ol.unnumbered, .content-markdown ul.checklist, .content-markdown ul.none {
+    list-style-type: none;
+}
+
+.content-markdown ul.unstyled, .content-markdown ol.unnumbered, .content-markdown ul.checklist {
+    margin-left: .625em;
+}
+
+.content-markdown ul.checklist li > p:first-child > .fa-square-o:first-child, .content-markdown ul.checklist li > p:first-child > .fa-check-square-o:first-child {
+    width: 1em;
+    font-size: .85em;
+}
+
+.content-markdown ul.checklist li > p:first-child > input[type="checkbox"]:first-child {
+    width: 1em;
+    position: relative;
+    top: 1px;
+}
+
+.content-markdown ul.inline {
+    margin: 0 auto .625em auto;
+    margin-left: -1.375em;
+    margin-right: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.content-markdown ul.inline > li {
+    list-style: none;
+    float: left;
+    margin-left: 1.375em;
+    display: block;
+}
+
+.content-markdown ul.inline > li > * {
+    display: block;
+}
+
+.content-markdown .unstyled dl dt {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content-markdown ol.arabic, .content-markdown ol.arabic li {
+    list-style-type: decimal;
+}
+
+.content-markdown ol.decimal, .content-markdown ol.decimal li {
+    list-style-type: decimal-leading-zero;
+}
+
+.content-markdown ol.loweralpha, .content-markdown ol.loweralpha li {
+    list-style-type: lower-alpha;
+}
+
+.content-markdown ol.upperalpha, .content-markdown ol.upperalpha li {
+    list-style-type: upper-alpha;
+}
+
+.content-markdown ol.lowerroman, .content-markdown ol.lowerroman li {
+    list-style-type: lower-roman;
+}
+
+.content-markdown ol.upperroman, .content-markdown ol.upperroman li {
+    list-style-type: upper-roman;
+}
+
+.content-markdown ol.lowergreek, .content-markdown ol.lowergreek li {
+    list-style-type: lower-greek;
+}
+
+.content-markdown span.line-through {
+    text-decoration: line-through;
+}
+
+.editor-panel {
+    height: 500px;
+}
+.editor-preview {
+    padding: 15px;
+}
+.ui-layout-pane {
+    border: 1px solid #ccc;
+}
+.ui-layout-resizer {
+    background-color: #E5E5E5;
+}
+.ui-layout-resizer-dragging {
+    border-color: #999;
+}
+.ui-layout-toggler {
+    background-image: url(../image/handle-v-light.png);
+}
+.editor-toolbar {
+    line-height: 1;
+    padding: 2px 5px;
+}
+.editor-toolbar .icon-btn {
+    vertical-align: bottom;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.editor-toolbar .icon-btn:hover {
+    border-color: #ccc;
+}
+.editor-toolbar .icon {
+    width: 26px;
+    height: 26px;
+    stroke: none;
+    fill: #666;
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: inline-block;
+}
+.editor-toolbar .text {
+    height: 26px;
+    line-height: 26px;
+    padding: 0 8px;
+}
+.editor-toolbar .icon-link {
+    stroke: #666;
+    fill: none;
+}

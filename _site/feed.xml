@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title></title>
+		<description>code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。</description>
+		<link>https://code4flutter.com</link>
+		<atom:link href="https://code4flutter.com/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title></title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/HossamElghamry/Zodoscope/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/Zodoscope.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;A Horoscope Forcasting Application Built with Flutter, for Android and iOS.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 align=&quot;center&quot;&gt;Zodoscope&lt;/h1&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+  &lt;strong&gt;A Horoscope Forcasting Application&lt;/strong&gt;
+&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt;
+  Built with Flutter, for Android and iOS
+&lt;/div&gt;
+
+&lt;p&gt;API used: http://horoscope-api.herokuapp.com/&lt;/p&gt;
+
+&lt;h2 id=&quot;key-features&quot;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;All Zodiac Signs Horoscopes&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Information about every zodiac sign’s horoscope with signs&lt;/li&gt;
+      &lt;li&gt;Beautiful slider animation with consistent zodiac icons&lt;/li&gt;
+      &lt;li&gt;Sign hero animation between page transitions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;API Reading and JSON Manipulation&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Using HTTP requests to take data from the mentioned API&lt;/li&gt;
+      &lt;li&gt;Parsing JSON strings into actual string, displayable format&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Daily, Weekly, Monthly and Yearly Forcasting&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Interval can be change by tapping the FAB&lt;/li&gt;
+      &lt;li&gt;Fluid interval preview animation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Network Connectivity Check&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Stream listening to connectivity status&lt;/li&gt;
+      &lt;li&gt;Error report upon internet connection issues or data retrieval problems&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PS: To navigate from the details screen back to the homescreen, simply swipe the sign down.&lt;/p&gt;
+
+&lt;h1 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h1&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+  &lt;pre&gt;
+    &lt;img src=&quot;https://raw.githubusercontent.com/HossamElghamry/Zodoscope/master/preview/zodoscope_homepage.jpg&quot; width=&quot;250&quot; /&gt;  &lt;img src=&quot;preview/zodoscope_details.jpg&quot; width=&quot;250&quot; /&gt;
+  &lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;gif-preview&quot;&gt;GIF Preview&lt;/h1&gt;
+&lt;div align=&quot;center&quot;&gt;
+  &lt;pre&gt;
+    &lt;img src=&quot;https://raw.githubusercontent.com/HossamElghamry/Zodoscope/master/preview/zodoscope_preview.gif&quot; width=&quot;300&quot; /&gt;
+  &lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;github主页-hossamelghamryzodoscope&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/HossamElghamry/Zodoscope&quot;&gt;HossamElghamry/Zodoscope&lt;/a&gt;&lt;/h2&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 23:38:32 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/2019-08-14-A_Horoscope_Forcasting_Application_Built_with_Flutter/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/2019-08-14-A_Horoscope_Forcasting_Application_Built_with_Flutter/</guid>
+			</item>
+		
+			<item>
+				<title>Use Flutter_web to implement the UI challenge of Google Maps</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/flutter-ui-challenges/flutter_web_challenge_googlemaps/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/flutter_web_challenge_googlemaps.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;Use Flutter_web to implement the UI challenge of Google Maps on uplabs.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;flutter_web_challenge_googlemaps_web&quot;&gt;flutter_web_challenge_googlemaps_web&lt;/h1&gt;
+
+&lt;p&gt;Use Flutter_web💪  to implement the UI challenge of Google Maps on &lt;a href=&quot;https://www.uplabs.com/posts/google-maps-redesign-919dd0d6-0883-4378-b5b2-f77e36adb6b5&quot;&gt;uplabs&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;README_CN.md&quot;&gt;中文版本&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Designer : &lt;a href=&quot;https://www.uplabs.com/joydeeproni&quot;&gt;Joydeep Sengupta&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;Uplabs : &lt;a href=&quot;https://www.uplabs.com/posts/google-maps-redesign-919dd0d6-0883-4378-b5b2-f77e36adb6b5&quot;&gt;https://www.uplabs.com/posts/google-maps-redesign-919dd0d6-0883-4378-b5b2-f77e36adb6b5&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;Developer : &lt;a href=&quot;https://github.com/ditclear&quot;&gt;ditclear&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;run&quot;&gt;Run&lt;/h3&gt;
+
+&lt;p&gt;First, make sure the relevant environment is installed, please refer to &lt;a href=&quot;https://github.com/flutter/flutter_web&quot;&gt;Flutter-web&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then clone&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git clone https://github.com/flutter-ui-challenges/flutter_web_challenge_googlemaps.git&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can open the project with Android Studio, IntelliJ or Visual Studio Code and run the &lt;code class=&quot;highlighter-rouge&quot;&gt;main.dart&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h3 id=&quot;challenge&quot;&gt;Challenge&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/flutter-ui-challenges/flutter_web_challenge_googlemaps/master/ui/all.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/flutter-ui-challenges/flutter_web_challenge_googlemaps/master/ui/attachment.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/flutter-ui-challenges/flutter_web_challenge_googlemaps/master/ui/preview.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;不用客气buy-me-a-lunch-&quot;&gt;不用客气，buy Me a Lunch ~&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Alipay&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;WeChatPay&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/fbaa3ecc28af039c8e6011ddf473e51d2a08c8d2/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f333732323639352d666664653137306665633933316561652e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f333430&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/ade43488617a69c72d5be1841fd4d0934689a3b0/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f333732323639352d316238323761353465633237346535392e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f772f333430&quot; alt=&quot;&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;license&quot;&gt;License&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Copyright 2019 ditclear
+
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;github主页-flutter-ui-challengesflutter_web_challenge_googlemaps&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/flutter-ui-challenges/flutter_web_challenge_googlemaps&quot;&gt;flutter-ui-challenges/flutter_web_challenge_googlemaps&lt;/a&gt;&lt;/h2&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/Use_Flutter_web_to_implement_the_UI_challenge_of_Google_Maps/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/Use_Flutter_web_to_implement_the_UI_challenge_of_Google_Maps/</guid>
+			</item>
+		
+			<item>
+				<title>Thanos snap effect in Flutter</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/MarcinusX/snappable/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/snappable.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;Thanos snap effect in Flutter.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;snappable&quot;&gt;snappable&lt;/h1&gt;
+
+&lt;p&gt;Thanos effect library in Flutter&lt;/p&gt;
+
+&lt;p&gt;Check out &lt;a href=&quot;https://fidev.io/thanos&quot;&gt;blog post&lt;/a&gt; describing the package on &lt;a href=&quot;https://fidev.io&quot;&gt;Fidev&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;examples&quot;&gt;Examples&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/16286046/62490322-51313680-b7c9-11e9-91f2-1363c292f544.gif&quot; alt=&quot;Example 1&quot; /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/16286046/62490326-52626380-b7c9-11e9-9ed3-5545e3175cb6.gif&quot; alt=&quot;Example 2&quot; /&gt;
+&lt;img src=&quot;https://user-images.githubusercontent.com/16286046/62490340-5bebcb80-b7c9-11e9-8bcf-e94c18f25f1b.gif&quot; alt=&quot;Example 3&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;h3 id=&quot;import-it&quot;&gt;Import it&lt;/h3&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'package:snappable/snappable.dart'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;wrap-any-widget-in-snappable&quot;&gt;Wrap any widget in Snappable&lt;/h3&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@override&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Widget&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Snappable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'This will be snapped'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;snap-with-a-key&quot;&gt;Snap with a Key&lt;/h4&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyWidget&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StatelessWidget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GlobalKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SnappableState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;();&lt;/span&gt;
+  &lt;span class=&quot;nd&quot;&gt;@override&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Widget&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Snappable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;key:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'This will be snapped'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;snap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;currentState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;snap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Undo by &lt;code class=&quot;highlighter-rouge&quot;&gt;currentState.reset()&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;or-snap-by-tap&quot;&gt;or snap by tap&lt;/h4&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyWidget&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StatelessWidget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nd&quot;&gt;@override&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Widget&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Snappable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;snapOntap:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'This will be snapped'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Undo by tapping again.&lt;/p&gt;
+
+&lt;p&gt;### Callback for when the snap ends&lt;/p&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 
+ &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyWidget&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StatelessWidget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;nd&quot;&gt;@override&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;Widget&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Snappable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+       &lt;span class=&quot;nl&quot;&gt;onSnapped:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Snapped!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'This will be snapped'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;github主页-marcinusxsnappable&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/MarcinusX/snappable&quot;&gt;MarcinusX/snappable&lt;/a&gt;&lt;/h2&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/Thanos_snap_effect_in_Flutter/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/Thanos_snap_effect_in_Flutter/</guid>
+			</item>
+		
+			<item>
+				<title>Social media app which is made entirely with flutter and firebase</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/saket-shetty/Post-it/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/Post-It.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;Post it is a social media app which is made entirely with flutter and firebase. The user can login with both Google and Twitter.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;center&gt;&lt;h3&gt;Post It&lt;/h3&gt;&lt;/center&gt;
+&lt;p&gt;App link: https://drive.google.com/open?id=1cOBkuDWbt3fOvkcgi930rCXG2PDcYWne&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Post it is a social media app which is made entirely with flutter and firebase.
+The user can login with both Google and Twitter.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;It uses UTC(Universal Time Co-ordinate) to store and sort the data and the time cannot be manipulate or change by user.
+The app is made with MediaQuery so it can be run in any device without any UI issue.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The user can now see the amout of like and comment a post got in the main page.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;User can now see the post of other user.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The user can now follow other user and can unfollow the on their own will and the user profile image will be stored in canche so no need of download image again and again.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Session is been created so that user does not have to login again and again.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now in this new update the user can also report other user if they misbehave and that user will not be able to post unless admin allows them and user will only see the 10 recently added posts and not every data of database as previous&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this new update instead of default icon and splash created a new icon and splash screen for the app which will run for the set time&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Any Query contact: shettysaket05@gmail.com&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/saket-shetty/Post-it/master/material/login.jpeg&quot; width=&quot;180&quot; height=&quot;300&quot; /&gt;&lt;/td&gt;
+     &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/saket-shetty/Post-it/master/material/main.jpeg&quot; width=&quot;180&quot; height=&quot;300&quot; /&gt;&lt;/td&gt;
+     &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/saket-shetty/Post-it/master/material/message.jpeg&quot; width=&quot;180&quot; height=&quot;300&quot; /&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+     &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/saket-shetty/Post-it/master/material/profile.jpeg&quot; width=&quot;180&quot; height=&quot;300&quot; /&gt;&lt;/td&gt;
+     &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/saket-shetty/Post-it/master/material/chat.jpeg&quot; width=&quot;180&quot; height=&quot;300&quot; /&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;h1 id=&quot;firebaseapp&quot;&gt;firebaseapp&lt;/h1&gt;
+
+&lt;p&gt;A new Flutter application.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;For help getting started with Flutter, view our online
+&lt;a href=&quot;https://flutter.io/&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;github主页-saket-shettypost-it&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/saket-shetty/Post-it&quot;&gt;saket-shetty/Post-it&lt;/a&gt;&lt;/h2&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/Social_media_app_which_is_made_entirely_with_flutter_and_firebase/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/Social_media_app_which_is_made_entirely_with_flutter_and_firebase/</guid>
+			</item>
+		
+			<item>
+				<title>QR Code Scanner for Flutter</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/juliuscanute/qr_code_scanner/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/07/android_front_camera_scan.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;A QR code scanner that works on both iOS and Android by natively embedding the platform view within Flutter.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;qr-code-scanner&quot;&gt;QR Code Scanner&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://dev.azure.com/juliuscanute/spring/_build/latest?definitionId=7&amp;amp;branchName=master&quot;&gt;&lt;img src=&quot;https://dev.azure.com/juliuscanute/spring/_apis/build/status/juliuscanute.qr_code_scanner?branchName=master&quot; alt=&quot;Build Status&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A QR code scanner that works on both iOS and Android by natively embedding the platform view within Flutter. The integration with Flutter is seamless, much better than jumping into a native Activity or a ViewController to perform the scan.&lt;/p&gt;
+
+&lt;h2 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h2&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th colspan=&quot;2&quot;&gt;
+Android
+&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https://github.com/juliuscanute/qr_code_scanner/blob/master/.resources/android-app-screen-one.jpg&quot; width=&quot;30%&quot; height=&quot;30%&quot; /&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https://github.com/juliuscanute/qr_code_scanner/blob/master/.resources/android-app-screen-two.jpg&quot; width=&quot;30%&quot; height=&quot;30%&quot; /&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;th colspan=&quot;2&quot;&gt;
+iOS
+&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https://github.com/juliuscanute/qr_code_scanner/blob/master/.resources/ios-app-screen-one.png&quot; width=&quot;30%&quot; height=&quot;30%&quot; /&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https://github.com/juliuscanute/qr_code_scanner/blob/master/.resources/ios-app-screen-two.png&quot; width=&quot;30%&quot; height=&quot;30%&quot; /&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;h2 id=&quot;get-scanned-qr-code&quot;&gt;Get Scanned QR Code&lt;/h2&gt;
+
+&lt;p&gt;When a QR code is recognized, the text identified will be set in ‘qrText’.&lt;/p&gt;
+
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;_QRViewExampleState&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;State&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QRViewExample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GlobalKey&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;qrKey&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GlobalKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;debugLabel:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'QR'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;qrText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;QRViewController&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;nd&quot;&gt;@override&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Widget&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Scaffold&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;body:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Column&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;children:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Widget&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;[&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;Expanded&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;nl&quot;&gt;flex:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QRView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+              &lt;span class=&quot;nl&quot;&gt;key:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;qrKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;nl&quot;&gt;onQRViewCreated:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_onQRViewCreated&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;Expanded&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;nl&quot;&gt;flex:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+              &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Scan result: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$qrText&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;],&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_onQRViewCreated&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QRViewController&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;scannedDataStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scanData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;qrText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scanData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nd&quot;&gt;@override&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dispose&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;dispose&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;dispose&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;ios-integration&quot;&gt;iOS Integration&lt;/h2&gt;
+&lt;p&gt;In order to use this plugin, add the following to your Info.plist file:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;key&amp;gt;io.flutter.embedded_views_preview&amp;lt;/key&amp;gt;
+&amp;lt;true/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;flip-camera-backfront&quot;&gt;Flip Camera (Back/Front)&lt;/h2&gt;
+&lt;p&gt;The default camera is the back camera.&lt;/p&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;flipCamera&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;flash-offon&quot;&gt;Flash (Off/On)&lt;/h2&gt;
+&lt;p&gt;By default, flash is OFF.&lt;/p&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toggleFlash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;resumepause&quot;&gt;Resume/Pause&lt;/h2&gt;
+&lt;p&gt;Pause camera stream and scanner.&lt;/p&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Resume camera stream and scanner.&lt;/p&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;todos&quot;&gt;TODO’S:&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;iOS Native embedding is written to match what is supported in the framework as of the date of publication of this package. It needs to be improved as the framework support improves.&lt;/li&gt;
+  &lt;li&gt;In future, options will be provided for default states.&lt;/li&gt;
+  &lt;li&gt;Finally, I welcome PR’s to make it better :), thanks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;credits&quot;&gt;Credits&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Android: https://github.com/zxing/zxing&lt;/li&gt;
+  &lt;li&gt;iOS: https://github.com/mikebuss/MTBBarcodeScanner&lt;/li&gt;
+  &lt;li&gt;Special Thanks To: LeonDevLifeLog for his contributions towards improving this package.
+    &lt;h2 id=&quot;github主页-juliuscanuteqr_code_scanner&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/juliuscanute/qr_code_scanner&quot;&gt;juliuscanute/qr_code_scanner&lt;/a&gt;&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/QR_Code_Scanner_for_Flutter/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/QR_Code_Scanner_for_Flutter/</guid>
+			</item>
+		
+			<item>
+				<title>Provides a Json Table Widget for directly showing table from a json</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/apgapg/json_table/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/Json-Table-Widget.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;Flutter package: Json Table Widget to create table from json array&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;json-table-widget----&quot;&gt;Json Table Widget &lt;a href=&quot;https://github.com/apgapg/json_table&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/stars/apgapg/json_table.svg?style=social&quot; alt=&quot;GitHub stars&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://twitter.com/ayushpgupta&quot;&gt;&lt;img src=&quot;https://img.shields.io/twitter/url/https/@ayushpgupta.svg?style=social&quot; alt=&quot;Twitter Follow&quot; /&gt;&lt;/a&gt; &lt;img src=&quot;https://img.shields.io/github/last-commit/apgapg/json_table.svg&quot; alt=&quot;GitHub last commit&quot; /&gt; &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.coddu.flutterprofile&quot;&gt;&lt;img src=&quot;https://img.shields.io/website-up-down-green-red/http/shields.io.svg&quot; alt=&quot;Website shields.io&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/apgapg/json_table&quot;&gt;&lt;img src=&quot;https://badges.frapsoft.com/os/v2/open-source.svg?v=103&quot; alt=&quot;Open Source Love&quot; /&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;This Flutter package provides a Json Table Widget for directly showing table from a json(Map). Supports Column toggle also.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/apgapg/json_table/master/src/s1.gif&quot; height=&quot;400&quot; alt=&quot;JsonTable&quot; /&gt; &lt;img src=&quot;https://raw.githubusercontent.com/apgapg/json_table/master/src/s2.gif&quot; height=&quot;400&quot; alt=&quot;JsonTable&quot; /&gt; &lt;img src=&quot;https://raw.githubusercontent.com/apgapg/json_table/master/src/s3.gif&quot; height=&quot;400&quot; alt=&quot;JsonTable&quot; /&gt; &lt;img src=&quot;https://raw.githubusercontent.com/apgapg/json_table/master/src/ss1.png&quot; height=&quot;400&quot; alt=&quot;JsonTable&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;-installation&quot;&gt;💻 Installation&lt;/h1&gt;
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;dependencies:&lt;/code&gt; section of your &lt;code class=&quot;highlighter-rouge&quot;&gt;pubspec.yaml&lt;/code&gt;, add the following line:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pub.dartlang.org/packages/json_table&quot;&gt;&lt;img src=&quot;https://img.shields.io/pub/v/json_table.svg&quot; alt=&quot;Version&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;json_table&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;lt;latest version&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;-usage&quot;&gt;❔ Usage&lt;/h1&gt;
+
+&lt;h3 id=&quot;import-this-class&quot;&gt;Import this class&lt;/h3&gt;
+
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'package:json_table/json_table.dart'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;add-json-table-widget&quot;&gt;Add Json Table Widget&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Accepts Map&lt;dynamic&gt; as input. Just decode your json array string and pass it in JsonTable. No casting to model required.&lt;/dynamic&gt;&lt;/li&gt;
+  &lt;li&gt;Option for creating column header builder. This basically returns a widget to show as table column header
+    &lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;tableHeaderBuilder:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EdgeInsets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;symmetric&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;horizontal:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;8.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;vertical:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;decoration:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BoxDecoration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;border:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;width:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;color:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;grey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;textAlign:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextAlign&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;style:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;textTheme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;display1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;copyWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;fontWeight:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FontWeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;w700&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;fontSize:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;14.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;color:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;black87&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Option for creating table cell builder
+    &lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nl&quot;&gt;tableCellBuilder:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EdgeInsets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;symmetric&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;horizontal:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;vertical:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;decoration:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BoxDecoration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;border:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;width:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;color:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;grey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withOpacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;textAlign:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextAlign&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;style:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;textTheme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;display1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;copyWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;fontSize:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;14.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;color:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;grey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;900&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]),&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Option for toggling column(s) also. User can customise which columns are to be shown
+    &lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nl&quot;&gt;showColumnToggle:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/apgapg/json_table/master/src/ss2.png&quot; height=&quot;600&quot; alt=&quot;JsonTable&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;--vanilla-implementation&quot;&gt;- Vanilla Implementation&lt;/h3&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//Decode your json string&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonSample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'[{&quot;id&quot;:1},{&quot;id&quot;:2}]'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonDecode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jsonSample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//Simply pass this json to JsonTable&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsonTable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;--implementation-with-header-and-cell-widget-builders&quot;&gt;- Implementation with HEADER and CELL widget builders&lt;/h3&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;JsonTable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;nl&quot;&gt;tableHeaderBuilder:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+       &lt;span class=&quot;nl&quot;&gt;padding:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EdgeInsets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;symmetric&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;horizontal:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;8.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;vertical:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;nl&quot;&gt;decoration:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BoxDecoration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;border:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;width:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;color:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;grey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]),&lt;/span&gt;
+       &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;nl&quot;&gt;textAlign:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextAlign&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;nl&quot;&gt;style:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;textTheme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;display1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;copyWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;fontWeight:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FontWeight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;w700&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;fontSize:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;14.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;color:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;black87&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;},&lt;/span&gt;
+   &lt;span class=&quot;nl&quot;&gt;tableCellBuilder:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+       &lt;span class=&quot;nl&quot;&gt;padding:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EdgeInsets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;symmetric&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;horizontal:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;vertical:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;nl&quot;&gt;decoration:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BoxDecoration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;border:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;width:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;color:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;grey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;withOpacity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))),&lt;/span&gt;
+       &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;nl&quot;&gt;textAlign:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextAlign&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;nl&quot;&gt;style:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Theme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;textTheme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;display1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;copyWith&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;fontSize:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;14.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;color:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;grey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;900&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]),&lt;/span&gt;
+       &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;},&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Head over to example code: &lt;a href=&quot;https://github.com/apgapg/json_table/blob/master/example/lib/pages/simple_table.dart&quot;&gt;simple_table.dart&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;--implementation-with-custom-columns-list&quot;&gt;- Implementation with custom COLUMNS list&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pass custom column list to control what columns are displayed in table&lt;/li&gt;
+  &lt;li&gt;The list item must be constructed using JsonTableColumn class&lt;/li&gt;
+  &lt;li&gt;JsonTableColumn provides 4 parameters, namely,
+    &lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;JsonTableColumn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;age&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;label:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Eligible to Vote&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;valueBuilder:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eligibleToVote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;defaultValue:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;NA&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;First parameter is the field/key to pick from the data&lt;/li&gt;
+  &lt;li&gt;label: The column header label to be displayed&lt;/li&gt;
+  &lt;li&gt;defaultValue: To be used when data or key is null&lt;/li&gt;
+  &lt;li&gt;valueBuilder: To get the formatted value like date etc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/apgapg/json_table/master/src/ss1.png&quot; height=&quot;600&quot; alt=&quot;JsonTable&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//Decode your json string&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonSample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'[{&quot;id&quot;:1},{&quot;id&quot;:2}]'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonDecode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jsonSample&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//Create your column list&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;JsonTableColumn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;label:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Name&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;JsonTableColumn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;age&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;label:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Age&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;JsonTableColumn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;DOB&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;label:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Date of Birth&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;valueBuilder:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;formatDOB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;JsonTableColumn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;age&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;label:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Eligible to Vote&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;valueBuilder:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eligibleToVote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;JsonTableColumn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;email&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;label:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;E-mail&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;defaultValue:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;NA&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//Simply pass this column list to JsonTable&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JsonTable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;columns:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//Example of valueBuilder&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;eligibleToVote&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Yes&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Head over to example code: &lt;a href=&quot;https://github.com/apgapg/json_table/blob/master/example/lib/pages/custom_column_table.dart&quot;&gt;custom_column_table.dart&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;key-highlights&quot;&gt;Key Highlights&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;The table constructed isn’t the flutter’s native DataTable.&lt;/li&gt;
+  &lt;li&gt;The table is manually coded hence serves a great learning purpose on how to create simple tables manually in flutter&lt;/li&gt;
+  &lt;li&gt;Supports vertical &amp;amp; horizontal scroll&lt;/li&gt;
+  &lt;li&gt;Supports custom columns includes default value, column name, value builder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;todo&quot;&gt;TODO&lt;/h2&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Custom header list parameter. This will help to show only those keys as mentioned in header list&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Add support for keys missing in json object&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Add support for auto formatting of date&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Extracting column headers logic must be change. Not to depend on first object&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Pagination support etc. Its good if this table can be replaced with Flutter’s native DataTable&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Add option to change header row to vertical row on left&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-my-flutter-packages&quot;&gt;⭐ My Flutter Packages&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pub.dartlang.org/packages/pie_chart&quot;&gt;pie_chart&lt;/a&gt;  &lt;a href=&quot;https://github.com/apgapg/pie_chart&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/stars/apgapg/pie_chart.svg?style=social&quot; alt=&quot;GitHub stars&quot; /&gt;&lt;/a&gt;  Flutter Pie Chart with cool animation.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pub.dartlang.org/packages/avatar_glow&quot;&gt;avatar_glow&lt;/a&gt;  &lt;a href=&quot;https://github.com/apgapg/avatar_glow&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/stars/apgapg/avatar_glow.svg?style=social&quot; alt=&quot;GitHub stars&quot; /&gt;&lt;/a&gt;  Flutter Avatar Glow Widget with glowing animation.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pub.dartlang.org/packages/search_widget&quot;&gt;search_widget&lt;/a&gt;  &lt;a href=&quot;https://github.com/apgapg/search_widget&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/stars/apgapg/search_widget.svg?style=social&quot; alt=&quot;GitHub stars&quot; /&gt;&lt;/a&gt;  Flutter Search Widget for selecting an option from list.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pub.dev/packages/animating_location_pin&quot;&gt;animating_location_pin&lt;/a&gt;  &lt;a href=&quot;https://github.com/apgapg/animating_location_pin&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/stars/apgapg/animating_location_pin.svg?style=social&quot; alt=&quot;GitHub stars&quot; /&gt;&lt;/a&gt;  Flutter Animating Location Pin Widget providing Animating Location Pin Widget which can be used while fetching device location.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-my-flutter-apps&quot;&gt;⭐ My Flutter Apps&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/apgapg/flutter_profile&quot;&gt;flutter_profile&lt;/a&gt;  &lt;a href=&quot;https://github.com/apgapg/flutter_profile&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/stars/apgapg/flutter_profile.svg?style=social&quot; alt=&quot;GitHub stars&quot; /&gt;&lt;/a&gt;  Showcase My Portfolio: Ayush P Gupta on Playstore.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/apgapg/flutter_sankalan&quot;&gt;flutter_sankalan&lt;/a&gt;  &lt;a href=&quot;https://github.com/apgapg/flutter_sankalan&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/stars/apgapg/flutter_sankalan.svg?style=social&quot; alt=&quot;GitHub stars&quot; /&gt;&lt;/a&gt;  Flutter App which allows reading/uploading short stories.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-contribution&quot;&gt;👍 Contribution&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Fork it&lt;/li&gt;
+  &lt;li&gt;Create your feature branch (git checkout -b my-new-feature)&lt;/li&gt;
+  &lt;li&gt;Commit your changes (git commit -m ‘Add some feature’)&lt;/li&gt;
+  &lt;li&gt;Push to the branch (git push origin my-new-feature)&lt;/li&gt;
+  &lt;li&gt;Create new Pull Request&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;github主页-apgapgjson_table&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/apgapg/json_table&quot;&gt;apgapg/json_table&lt;/a&gt;&lt;/h2&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/Provides_a_Json_Table_Widget_for_directly_showing_table_from_a_json/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/Provides_a_Json_Table_Widget_for_directly_showing_table_from_a_json/</guid>
+			</item>
+		
+			<item>
+				<title>PIN input field widget for Flutter with paste from clipboard functionality</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/Tkko/Flutter_PinPut/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/PinPut.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;PIN input field widget for flutter&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;pinput&quot;&gt;PinPut&lt;/h1&gt;
+
+&lt;p&gt;PIN input field widget for Flutter with paste from clipboard functionality&lt;/p&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#overview&quot;&gt;Overview&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#installation&quot;&gt;Installation&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#properties&quot;&gt;Properties&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#example&quot;&gt;Example&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;#contribute&quot;&gt;Contribute&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;This widget keeps whole width of parent widget and layouts textfields in a way to create PIN code input field look it accepts string of any length and calls the onSubmit method when all fields are filled.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/Tkko/Flutter_PinPut/master/example/pinput_demo.gif&quot; alt=&quot;drawing&quot; width=&quot;180&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
+
+&lt;p&gt;Install the latest version &lt;a href=&quot;https://pub.dartlang.org/packages/pinput&quot;&gt;from pub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;properties&quot;&gt;Properties&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Property&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Default/Meaning&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;onSubmit&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;@required Function&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;fieldsCount&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;@required number&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;isTextObscure&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;textStyle&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TextStyle(fontSize: 30)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;spaceBetween&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;space between fields Default: 10.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;clearButtonIcon&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Icon(Icons.backspace, size: 30)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;pasteButtonIcon&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Icon(Icons.content_paste, size: 30)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;unFocusWhen&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Default is False, True to hide keyboard&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;inputDecoration&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Ability to style field’s border, padding etc…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;keybaordType&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;number&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;keyboardAction&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;next&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;actionButtonEnabled&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;autoFocus&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;textCapitalization&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TextCapitalization.none&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;Import the package:&lt;/p&gt;
+
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'package:flutter/material.dart'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'package:pinput/pin_put/pin_put.dart'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;runApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PinPutTest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PinPutTest&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StatelessWidget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nd&quot;&gt;@override&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Widget&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MaterialApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;theme:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ThemeData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;nl&quot;&gt;primaryColor:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;green&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;nl&quot;&gt;hintColor:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;green&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;home:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Scaffold&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;nl&quot;&gt;body:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Builder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;nl&quot;&gt;builder:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;nl&quot;&gt;padding:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EdgeInsets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;40.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+                &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+                  &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PinPut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+                    &lt;span class=&quot;nl&quot;&gt;fieldsCount:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;nl&quot;&gt;onSubmit:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_showSnackBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+                  &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+              &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_showSnackBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BuildContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;snackBar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SnackBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;duration:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Duration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;seconds:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;content:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+          &lt;span class=&quot;nl&quot;&gt;height:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;80.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+              &lt;span class=&quot;s&quot;&gt;'Pin Submitted. Value: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$pin&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;nl&quot;&gt;style:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TextStyle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;fontSize:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;25.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;)),&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;backgroundColor:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;greenAccent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Scaffold&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;showSnackBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;snackBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;-support&quot;&gt;👍 Support&lt;/h2&gt;
+
+&lt;h2 id=&quot;contribute&quot;&gt;Contribute&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fork it&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create your feature branch (git checkout -b my-new-feature)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Commit your changes (git commit -am ‘Add some feature’)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Push to the branch (git push origin my-new-feature)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create new Pull Request&lt;/p&gt;
+    &lt;h2 id=&quot;github主页-tkkoflutter_pinput&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/Tkko/Flutter_PinPut&quot;&gt;Tkko/Flutter_PinPut&lt;/a&gt;&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/PIN_input_field_widget_for_Flutter_with_paste_from_clipboard_functionality/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/PIN_input_field_widget_for_Flutter_with_paste_from_clipboard_functionality/</guid>
+			</item>
+		
+			<item>
+				<title>Material Style Date Picker with Bikram Sambat(Nepali) Calendar Support</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/sarbagyastha/nepali_date_picker/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/Nepali-Date-Picker.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;Material and Cupertino Style Date Picker with Bikram Sambat(Nepali) Calendar Support. Supports Android, iOS and Fuchsia. Available in Nepali and English Languages.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;nepali-date-picker&quot;&gt;Nepali Date Picker&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pub.dev/packages/nepali_date_picker&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/pub-v3.1.0+1-green.svg&quot; alt=&quot;Pub Package&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://github.com/sarbagyastha/nepali_date_picker/blob/master/LICENSE&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Licence-MIT-orange.svg&quot; alt=&quot;Licence&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://github.com/sarbagyastha/nepali_date_picker/raw/master/ndp_eg.apk&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Download-APK-blueviolet.svg&quot; alt=&quot;Download&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Material and Cupertino Style Date Picker with Bikram Sambat(Nepali) Calendar Support. Supports Android, iOS and Fuchsia. Available in Nepali and English Languages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sarbagyastha/nepali_date_picker/master/nepali_datePicker_demo.gif&quot; alt=&quot;Loading Demo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nepali Date Picker returns data in &lt;strong&gt;NepaliDateTime&lt;/strong&gt; type, which is
+included in &lt;a href=&quot;https://pub.dev/packages/nepali_utils&quot;&gt;&lt;em&gt;nepali_utils&lt;/em&gt;&lt;/a&gt;
+package.&lt;/p&gt;
+
+&lt;h3 id=&quot;salient-features&quot;&gt;Salient Features&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Material DatePicker&lt;/li&gt;
+  &lt;li&gt;Cupertino DatePicker&lt;/li&gt;
+  &lt;li&gt;Adaptive DatePicker&lt;/li&gt;
+  &lt;li&gt;Supports from 2000 B.S. to 2099 B.S.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+
+&lt;h4 id=&quot;material-style-date-picker&quot;&gt;Material Style Date Picker&lt;/h4&gt;
+
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'package:nepali_date_picker/nepali_date_picker.dart'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;picker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_selectedDateTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;picker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;showMaterialDatePicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;context:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;initialDate:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;firstDate:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;lastDate:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2090&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;language:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_language&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;initialDatePickerMode:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DatePickerMode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_selectedDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 2076-02-16T00:00:00&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;cupertino-style-date-picker&quot;&gt;Cupertino Style Date Picker&lt;/h4&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;picker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;showCupertinoDatePicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;context:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;initialDate:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;firstDate:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;lastDate:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2090&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;language:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_language&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;dateOrder:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_dateOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;onDateChanged:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_selectedDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;adaptive-date-picker&quot;&gt;Adaptive Date Picker&lt;/h4&gt;
+&lt;p&gt;Shows DatePicker based on Platform. 
+&lt;em&gt;i.e. Cupertino DatePicker will be shown on iOS while Material on Android and Fuchsia.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_selectedDateTime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;picker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;showAdaptiveDatePicker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;context:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;initialDate:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;firstDate:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;lastDate:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NepaliDateTime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2090&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;language:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_language&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;dateOrder:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_dateOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// for iOS only&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;initialDatePickerMode:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DatePickerMode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// for platform except iOS&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Material Design&lt;/em&gt;&lt;/strong&gt; (Portrait)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sarbagyastha/nepali_date_picker/master/screenshot/portrait.jpg&quot; alt=&quot;Portrait Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Material Design&lt;/em&gt;&lt;/strong&gt; (Landscape)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sarbagyastha/nepali_date_picker/master/screenshot/landscape.jpg&quot; alt=&quot;Landscape Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Cupertino Design&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sarbagyastha/nepali_date_picker/master/screenshot/cupertino_en.jpg&quot; alt=&quot;Cupertino English&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/sarbagyastha/nepali_date_picker/master/screenshot/cupertino_np.jpg&quot; alt=&quot;Cupertino Nepali&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/sarbagyastha/nepali_date_picker/tree/master/example&quot;&gt;Detailed Example&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Copyright (c) 2019 Sarbagya Dhaubanjar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;github主页-sarbagyasthanepali_date_picker&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/sarbagyastha/nepali_date_picker&quot;&gt;sarbagyastha/nepali_date_picker&lt;/a&gt;&lt;/h2&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/Material_Style_Date_Picker_with_Bikram_Sambat(Nepali)_Calendar_Support/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/Material_Style_Date_Picker_with_Bikram_Sambat(Nepali)_Calendar_Support/</guid>
+			</item>
+		
+			<item>
+				<title>Gatra Bali news reader made using Flutter</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/apps4bali/gatrabali-app/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/Gatra-Bali.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;Gatra Bali menyajikan berita Bali terkini yang bersumber dari BaliPost.com, MetroBali.com, BaliPuspaNews.com, Jawapos.com dan BaleBengong.id.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;gatra-bali---balinese-news-reader&quot;&gt;Gatra Bali - Balinese News Reader&lt;/h1&gt;
+
+&lt;p&gt;Balinese news reader app. Now available on Google Play:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.gatrabali.android&quot;&gt;https://play.google.com/store/apps/details?id=com.gatrabali.android&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/apps4bali/gatrabali-app/master/appstore/Banner.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;how-it-works&quot;&gt;How it works&lt;/h1&gt;
+&lt;p&gt;Please read &lt;a href=&quot;https://github.com/apps4bali/gatrabali-backend#how-it-works&quot;&gt;here&lt;/a&gt; on how the App connected to the backend services.&lt;/p&gt;
+
+&lt;h2 id=&quot;github主页-apps4baligatrabali-app&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/apps4bali/gatrabali-app&quot;&gt;apps4bali/gatrabali-app&lt;/a&gt;&lt;/h2&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/Gatra_Bali_news_reader_made_using_Flutter/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/Gatra_Bali_news_reader_made_using_Flutter/</guid>
+			</item>
+		
+			<item>
+				<title>Flutter representation of a furniture app UI</title>
+				<description>&lt;h2 id=&quot;立即下载-️️-&quot;&gt;&lt;a href=&quot;https://codeload.github.com/JideGuru/FlutterFurnitureAppUI/zip/master&quot;&gt;立即下载 ️⬇️ &lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://flutterawesome.com/content/images/2019/08/FlutterFurnitureAppUI.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;p&gt;Flutter representation of a Furniture App Concept i found on Uplabs.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;-flutter-furniture-app-concept-&quot;&gt;🛏🛏 Flutter Furniture App Concept &lt;a href=&quot;http://makeapullrequest.com&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&quot; alt=&quot;PRs Welcome&quot; /&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;Flutter representation of a Furniture App Concept i found on Uplabs.&lt;/p&gt;
+
+&lt;p&gt;Star⭐ the repo if you like what you see😉.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.uplabs.com/posts/e-commerce-app-interface-for-furniture&quot;&gt;Link to Original Design on Uplabs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Images are from &lt;a href=&quot;https://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;ss/app.apk&quot;&gt;&lt;img src=&quot;https://playerzon.com/asset/download.png&quot; width=&quot;200&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;-requirements&quot;&gt;✨ Requirements&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Any Operating System (ie. MacOS X, Linux, Windows)&lt;/li&gt;
+  &lt;li&gt;Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)&lt;/li&gt;
+  &lt;li&gt;A little knowledge of Dart and Flutter&lt;/li&gt;
+  &lt;li&gt;A brain to think 🤓🤓&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;-screenshots&quot;&gt;📸 ScreenShots&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterFurnitureAppUI/master/ss/1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Light&lt;/th&gt;
+      &lt;th&gt;Dark&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterFurnitureAppUI/master/ss/2.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;ss/3.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;img src=&quot;https://raw.githubusercontent.com/JideGuru/FlutterFurnitureAppUI/master/ss/5.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;ss/4.png&quot; width=&quot;400&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;-toggle-theme&quot;&gt;🌗 Toggle theme&lt;/h2&gt;
+&lt;p&gt;To toggle the theme, change the &lt;code class=&quot;highlighter-rouge&quot;&gt;isDark&lt;/code&gt; variable in &lt;code class=&quot;highlighter-rouge&quot;&gt;main.dart&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; for dark and &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; for light.&lt;/p&gt;
+
+&lt;h2 id=&quot;-authors&quot;&gt;🤓 Author(s)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Olusegun Festus Babajide&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;️--donate&quot;&gt;☕️  Donate&lt;/h2&gt;
+
+&lt;p&gt;Buy me a cup of Coffee😁&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Mode&lt;/th&gt;
+      &lt;th&gt;Link/Wallet&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bitcoin&lt;/td&gt;
+      &lt;td&gt;3GrziPW6Gz6S5mXo2EsiYpafW8vXVq5Rbv&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;-licence&quot;&gt;🔖 LICENCE&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.wtfpl.net/about/&quot;&gt;WTFPL&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;github主页-jideguruflutterfurnitureappui&quot;&gt;Github主页 👉&lt;a href=&quot;http://github.com/JideGuru/FlutterFurnitureAppUI&quot;&gt;JideGuru/FlutterFurnitureAppUI&lt;/a&gt;&lt;/h2&gt;
+</description>
+				<pubDate>Wed, 14 Aug 2019 00:00:00 +0800</pubDate>
+				<link>https://code4flutter.com/2019/08/14/Flutter_representation_of_a_furniture_app_UI/</link>
+				<guid isPermaLink="true">https://code4flutter.com/2019/08/14/Flutter_representation_of_a_furniture_app_UI/</guid>
+			</item>
+		
+	</channel>
+</rss>

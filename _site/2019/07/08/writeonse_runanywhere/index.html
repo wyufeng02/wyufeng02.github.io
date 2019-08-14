@@ -1,0 +1,1659 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter,Location,Maps,UI," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="本文同步自个人博客Flutter + Kotlin Multiplatform, Write Once Run Anywhere，转载请注明出处。 Motivation Flutter是Google 2017年推出的跨平台框架，拥有Fast Development，Expressive and Flexible UI，Native Performance等特点。Flutter使用Dart作为开发语言，Android和iOS项目可以共用一套Dart代码，很多人迫不及待的尝试，包括我，但在学习的过程中，同时在思考以下的问题： Flutter很优秀，但相对来说还比较新，目前并不是所有的第三方SDK支持Flutter（特别是在国内），所以在使用第三方SDK时很多时候需要我们编写原生代码集成逻辑，需要Android和iOS分别编写不同的集成代码。 项目要集成Flutter，一次性替换所有页面有点不太实际，但是部分页面集成的时候，会面临需要将数据库操作等公用逻辑使用Dart重写一遍的问题，因为原生的逻辑在其他的页面也需要用到，没办法做到只保留Dart的实现代码，所以很容易出现一套逻辑需要提供不同平台的实现如：Dao.kt， Dao.swift， Dao.dart。当然可以使用Flutter提供的MethodChannel/FlutterMethodChannel来直接调用原生代码的逻辑，但是如果数据库操作逻辑需要修改的时候，我们依然要同时修改不同平台的代码逻辑。 项目组里有內部的SDK，同时提供给不同项目（Android和iOS）使用，但是一些App需要集成Flutter，就需要SDK分别提供Flutter/Android/iOS的代码实现，这时需要同时维护三个SDK反而增加了SDK维护者的维护和实现成本。 所以，最后可以把问题归结为原生代码无法复用，导致我们需要为不同平台提供同一代码逻辑实现。那么有没有能让原生代码复用的框架，答案是肯定的，Kotlin Multiplatform是Kotlin的一个功能（目前还在实验性阶段），其目标就是使用Kotlin：Sharing code between platforms。 于是我有一个大胆的想法，同时使用Flutter和Kotlin Multiplatform，虽然使用不同的语言（Dart/Kotlin），但不同平台共用一套代码逻辑实现。使用Kotlin Multiplatform编写公用逻辑，然后在Android/iOS上使用MethodChannel/FlutterMethodChannel供Flutter调用公用逻辑。 接下来以实现公用的数据库操作逻辑为例，来简单描述如何使用Flutter和Kotlin Multiplatform达到Write Once Run Anywhere。 接下来的内容需要读者对Flutter和Kotlin Multiplatform有所了解。 Kotlin Multiplatform 我们使用Sqldelight实现公用的数据库操作逻辑，然后通过kotlinx.serialization把查询结果序列化为json字符串，通过MethodChannel/FlutterMethodChannel传递到Flutter中使用。 Flutter的目录结构如下面所示： | |__android | |__app |__ios |__lib |__test 复制代码其中android目录下是一个完整的Gradle项目，参照官方文档Multiplatform Project: iOS and Android，我们在android目录下创建一个common module，来存放公用的代码逻辑。 Gradle脚本 apply plugin: &apos;org.jetbrains.kotlin.multiplatform&apos; apply plugin: &apos;com.squareup.sqldelight&apos; apply plugin: &apos;kotlinx-serialization&apos;">
+<meta name="keywords" content="flutter, Location, Maps, UI">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用flutter + Kotlin 一次编写，任意运行">
+<meta property="og:url" content="https://code4flutter.com/2019/07/08/writeonse_runanywhere/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="本文同步自个人博客Flutter + Kotlin Multiplatform, Write Once Run Anywhere，转载请注明出处。 Motivation Flutter是Google 2017年推出的跨平台框架，拥有Fast Development，Expressive and Flexible UI，Native Performance等特点。Flutter使用Dart作为开发语言，Android和iOS项目可以共用一套Dart代码，很多人迫不及待的尝试，包括我，但在学习的过程中，同时在思考以下的问题： Flutter很优秀，但相对来说还比较新，目前并不是所有的第三方SDK支持Flutter（特别是在国内），所以在使用第三方SDK时很多时候需要我们编写原生代码集成逻辑，需要Android和iOS分别编写不同的集成代码。 项目要集成Flutter，一次性替换所有页面有点不太实际，但是部分页面集成的时候，会面临需要将数据库操作等公用逻辑使用Dart重写一遍的问题，因为原生的逻辑在其他的页面也需要用到，没办法做到只保留Dart的实现代码，所以很容易出现一套逻辑需要提供不同平台的实现如：Dao.kt， Dao.swift， Dao.dart。当然可以使用Flutter提供的MethodChannel/FlutterMethodChannel来直接调用原生代码的逻辑，但是如果数据库操作逻辑需要修改的时候，我们依然要同时修改不同平台的代码逻辑。 项目组里有內部的SDK，同时提供给不同项目（Android和iOS）使用，但是一些App需要集成Flutter，就需要SDK分别提供Flutter/Android/iOS的代码实现，这时需要同时维护三个SDK反而增加了SDK维护者的维护和实现成本。 所以，最后可以把问题归结为原生代码无法复用，导致我们需要为不同平台提供同一代码逻辑实现。那么有没有能让原生代码复用的框架，答案是肯定的，Kotlin Multiplatform是Kotlin的一个功能（目前还在实验性阶段），其目标就是使用Kotlin：Sharing code between platforms。 于是我有一个大胆的想法，同时使用Flutter和Kotlin Multiplatform，虽然使用不同的语言（Dart/Kotlin），但不同平台共用一套代码逻辑实现。使用Kotlin Multiplatform编写公用逻辑，然后在Android/iOS上使用MethodChannel/FlutterMethodChannel供Flutter调用公用逻辑。 接下来以实现公用的数据库操作逻辑为例，来简单描述如何使用Flutter和Kotlin Multiplatform达到Write Once Run Anywhere。 接下来的内容需要读者对Flutter和Kotlin Multiplatform有所了解。 Kotlin Multiplatform 我们使用Sqldelight实现公用的数据库操作逻辑，然后通过kotlinx.serialization把查询结果序列化为json字符串，通过MethodChannel/FlutterMethodChannel传递到Flutter中使用。 Flutter的目录结构如下面所示： | |__android | |__app |__ios |__lib |__test 复制代码其中android目录下是一个完整的Gradle项目，参照官方文档Multiplatform Project: iOS and Android，我们在android目录下创建一个common module，来存放公用的代码逻辑。 Gradle脚本 apply plugin: &apos;org.jetbrains.kotlin.multiplatform&apos; apply plugin: &apos;com.squareup.sqldelight&apos; apply plugin: &apos;kotlinx-serialization&apos;">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="kmpp+flutter">
+<meta property="og:image" content="android">
+<meta property="og:image" content="ios">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用flutter + Kotlin 一次编写，任意运行">
+<meta name="twitter:description" content="本文同步自个人博客Flutter + Kotlin Multiplatform, Write Once Run Anywhere，转载请注明出处。 Motivation Flutter是Google 2017年推出的跨平台框架，拥有Fast Development，Expressive and Flexible UI，Native Performance等特点。Flutter使用Dart作为开发语言，Android和iOS项目可以共用一套Dart代码，很多人迫不及待的尝试，包括我，但在学习的过程中，同时在思考以下的问题： Flutter很优秀，但相对来说还比较新，目前并不是所有的第三方SDK支持Flutter（特别是在国内），所以在使用第三方SDK时很多时候需要我们编写原生代码集成逻辑，需要Android和iOS分别编写不同的集成代码。 项目要集成Flutter，一次性替换所有页面有点不太实际，但是部分页面集成的时候，会面临需要将数据库操作等公用逻辑使用Dart重写一遍的问题，因为原生的逻辑在其他的页面也需要用到，没办法做到只保留Dart的实现代码，所以很容易出现一套逻辑需要提供不同平台的实现如：Dao.kt， Dao.swift， Dao.dart。当然可以使用Flutter提供的MethodChannel/FlutterMethodChannel来直接调用原生代码的逻辑，但是如果数据库操作逻辑需要修改的时候，我们依然要同时修改不同平台的代码逻辑。 项目组里有內部的SDK，同时提供给不同项目（Android和iOS）使用，但是一些App需要集成Flutter，就需要SDK分别提供Flutter/Android/iOS的代码实现，这时需要同时维护三个SDK反而增加了SDK维护者的维护和实现成本。 所以，最后可以把问题归结为原生代码无法复用，导致我们需要为不同平台提供同一代码逻辑实现。那么有没有能让原生代码复用的框架，答案是肯定的，Kotlin Multiplatform是Kotlin的一个功能（目前还在实验性阶段），其目标就是使用Kotlin：Sharing code between platforms。 于是我有一个大胆的想法，同时使用Flutter和Kotlin Multiplatform，虽然使用不同的语言（Dart/Kotlin），但不同平台共用一套代码逻辑实现。使用Kotlin Multiplatform编写公用逻辑，然后在Android/iOS上使用MethodChannel/FlutterMethodChannel供Flutter调用公用逻辑。 接下来以实现公用的数据库操作逻辑为例，来简单描述如何使用Flutter和Kotlin Multiplatform达到Write Once Run Anywhere。 接下来的内容需要读者对Flutter和Kotlin Multiplatform有所了解。 Kotlin Multiplatform 我们使用Sqldelight实现公用的数据库操作逻辑，然后通过kotlinx.serialization把查询结果序列化为json字符串，通过MethodChannel/FlutterMethodChannel传递到Flutter中使用。 Flutter的目录结构如下面所示： | |__android | |__app |__ios |__lib |__test 复制代码其中android目录下是一个完整的Gradle项目，参照官方文档Multiplatform Project: iOS and Android，我们在android目录下创建一个common module，来存放公用的代码逻辑。 Gradle脚本 apply plugin: &apos;org.jetbrains.kotlin.multiplatform&apos; apply plugin: &apos;com.squareup.sqldelight&apos; apply plugin: &apos;kotlinx-serialization&apos;">
+<meta name="twitter:image" content="kmpp+flutter">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2019/07/08/writeonse_runanywhere/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>使用flutter + Kotlin 一次编写，任意运行 - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>使用flutter + Kotlin 一次编写，任意运行</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2019/07/08/writeonse_runanywhere/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            使用flutter + Kotlin 一次编写，任意运行
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/08/writeonse_runanywhere/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2019/07/08/writeonse_runanywhere/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  2540
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  12
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <div data-v-4f8894a8="" data-id="5d20a2e06fb9a07efe2dde1c" itemprop="articleBody" class="article-content simpread-focus-highlight" style="z-index: 2147483646; overflow: visible; position: relative;"><blockquote>
+<p>本文同步自个人博客<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Flittlegnal.github.io%2F2019-07-06%2Fkmpp-flutter" rel="nofollow noopener noreferrer">Flutter + Kotlin Multiplatform, Write Once Run Anywhere</a>，转载请注明出处。</p>
+</blockquote>
+<h2 class="heading" data-id="heading-0">Motivation</h2>
+<p><a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fflutter.dev%2F" rel="nofollow noopener noreferrer">Flutter</a>是Google 2017年推出的跨平台框架，拥有<strong>Fast Development</strong>，<strong>Expressive and Flexible UI</strong>，<strong>Native Performance</strong>等特点。Flutter使用<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fdart.dev%2F" rel="nofollow noopener noreferrer">Dart</a>作为开发语言，Android和iOS项目可以共用一套Dart代码，很多人迫不及待的尝试，包括我，但在学习的过程中，同时在思考以下的问题：</p>
+<ul>
+<li>
+<p>Flutter很优秀，但相对来说还比较新，目前并不是所有的第三方SDK支持Flutter（特别是在国内），所以在使用第三方SDK时很多时候需要我们编写原生代码集成逻辑，需要Android和iOS分别编写不同的集成代码。</p>
+</li>
+<li>
+<p>项目要集成Flutter，一次性替换所有页面有点不太实际，但是部分页面集成的时候，会面临需要将数据库操作等公用逻辑使用Dart重写一遍的问题，因为原生的逻辑在其他的页面也需要用到，没办法做到只保留Dart的实现代码，所以很容易出现一套逻辑需要提供不同平台的实现如：<code>Dao.kt</code>， <code>Dao.swift</code>， <code>Dao.dart</code>。当然可以使用Flutter提供的<code>MethodChannel</code>/<code>FlutterMethodChannel</code>来直接调用原生代码的逻辑，但是如果数据库操作逻辑需要修改的时候，我们依然要同时修改不同平台的代码逻辑。</p>
+</li>
+<li>
+<p>项目组里有內部的SDK，同时提供给不同项目（Android和iOS）使用，但是一些App需要集成Flutter，就需要SDK分别提供Flutter/Android/iOS的代码实现，这时需要同时维护三个SDK反而增加了SDK维护者的维护和实现成本。</p>
+</li>
+</ul>
+<p>所以，最后可以把问题归结为原生代码无法复用，导致我们需要为不同平台提供同一代码逻辑实现。那么有没有能让原生代码复用的框架，答案是肯定的，<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fkotlinlang.org%2Fdocs%2Freference%2Fmultiplatform.html" rel="nofollow noopener noreferrer">Kotlin Multiplatform</a>是Kotlin的一个功能（目前还在实验性阶段），其目标就是使用Kotlin：<em>Sharing code between platforms</em>。</p>
+<p>于是我有一个大胆的想法，同时使用Flutter和Kotlin Multiplatform，虽然使用不同的语言（Dart/Kotlin），但不同平台共用一套代码逻辑实现。使用Kotlin Multiplatform编写公用逻辑，然后在Android/iOS上使用<code>MethodChannel</code>/<code>FlutterMethodChannel</code>供Flutter调用公用逻辑。</p>
+<p></p><figure><img alt="kmpp+flutter" class="lazyload inited loaded" data-src="https://user-gold-cdn.xitu.io/2019/7/8/16bcfc8a51c700e4?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" data-width="1115" data-height="1280" src="https://user-gold-cdn.xitu.io/2019/7/8/16bcfc8a51c700e4?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" /><figcaption></figcaption></figure><p></p>
+<p>接下来以实现公用的数据库操作逻辑为例，来简单描述如何使用Flutter和Kotlin Multiplatform达到<em>Write Once Run Anywhere</em>。</p>
+<p><em>接下来的内容需要读者对Flutter和Kotlin Multiplatform有所了解。</em></p>
+<h2 class="heading" data-id="heading-1">Kotlin Multiplatform</h2>
+<p>我们使用<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Fsquare%2Fsqldelight" rel="nofollow noopener noreferrer">Sqldelight</a>实现公用的数据库操作逻辑，然后通过<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2FKotlin%2Fkotlinx.serialization" rel="nofollow noopener noreferrer">kotlinx.serialization</a>把查询结果序列化为json字符串，通过<code>MethodChannel</code>/<code>FlutterMethodChannel</code>传递到Flutter中使用。</p>
+<p>Flutter的目录结构如下面所示：</p>
+<pre><code class="hljs bash copyable" lang="bash">|
+|__android
+|  |__app
+|__ios
+|__lib
+|__test
+<span class="copy-code-btn">复制代码</span></code></pre><p>其中<code>android</code>目录下是一个完整的Gradle项目，参照官方文档<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fkotlinlang.org%2Fdocs%2Ftutorials%2Fnative%2Fmpp-ios-android.html" rel="nofollow noopener noreferrer">Multiplatform Project: iOS and Android</a>，我们在<code>android</code>目录下创建一个<code>common</code> module，来存放公用的代码逻辑。</p>
+<h3 class="heading" data-id="heading-2">Gradle脚本</h3>
+<pre><code class="hljs gradle copyable" lang="gradle">apply plugin: <span class="hljs-string">'org.jetbrains.kotlin.multiplatform'</span>
+apply plugin: <span class="hljs-string">'com.squareup.sqldelight'</span>
+apply plugin: <span class="hljs-string">'kotlinx-serialization'</span>
+
+sqldelight {
+    AccountingDB {
+        packageName = <span class="hljs-string">"com.littlegnal.accountingmultiplatform"</span>
+    }
+}
+
+kotlin {
+    <span class="hljs-keyword">sourceSets</span> {
+        commonMain.<span class="hljs-keyword">dependencies</span> {
+            implementation deps.kotlin.stdlib.stdlib
+            implementation deps.kotlin.serialiaztion.<span class="hljs-keyword">runtime</span>.common
+            implementation deps.kotlin.coroutines.common
+        }
+
+        androidMain.<span class="hljs-keyword">dependencies</span> {
+            implementation deps.kotlin.stdlib.stdlib
+            implementation deps.sqldelight.runtimejvm
+            implementation deps.kotlin.serialiaztion.<span class="hljs-keyword">runtime</span>.<span class="hljs-keyword">runtime</span>
+            implementation deps.kotlin.coroutines.android
+        }
+
+        iosMain.<span class="hljs-keyword">dependencies</span> {
+            implementation deps.kotlin.stdlib.stdlib
+            implementation deps.sqldelight.driver.ios
+            implementation deps.kotlin.serialiaztion.<span class="hljs-keyword">runtime</span>.<span class="hljs-keyword">native</span>
+            implementation deps.kotlin.coroutines.<span class="hljs-keyword">native</span>
+        }
+    }
+
+    targets {
+        fromPreset(presets.jvm, <span class="hljs-string">'android'</span>)
+        <span class="hljs-keyword">final</span> <span class="hljs-keyword">def</span> iOSTarget = System.getenv(<span class="hljs-string">'SDK_NAME'</span>)?.startsWith(<span class="hljs-string">"iphoneos"</span>) \
+                              ? presets.iosArm64 : presets.iosX64
+
+        fromPreset(iOSTarget, <span class="hljs-string">'ios'</span>) {
+            binaries {
+                framework(<span class="hljs-string">'common'</span>)
+            }
+        }
+    }
+}
+
+<span class="hljs-comment">// workaround for https://youtrack.jetbrains.com/issue/KT-27170</span>
+<span class="hljs-keyword">configurations</span> {
+    compileClasspath
+}
+
+<span class="hljs-keyword">task</span> packForXCode(type: Sync) {
+    <span class="hljs-keyword">final</span> <span class="hljs-keyword">File</span> frameworkDir = <span class="hljs-keyword">new</span> <span class="hljs-keyword">File</span>(buildDir, <span class="hljs-string">"xcode-frameworks"</span>)
+    <span class="hljs-keyword">final</span> String mode = <span class="hljs-keyword">project</span>.findProperty(<span class="hljs-string">"XCODE_CONFIGURATION"</span>)?.toUpperCase() ?: <span class="hljs-string">'DEBUG'</span>
+    <span class="hljs-keyword">final</span> <span class="hljs-keyword">def</span> framework = kotlin.targets.ios.binaries.getFramework(<span class="hljs-string">"common"</span>, mode)
+
+    inputs.property <span class="hljs-string">"mode"</span>, mode
+    dependsOn framework.linkTask
+
+    <span class="hljs-keyword">from</span> { framework.outputFile.parentFile }
+    <span class="hljs-keyword">into</span> frameworkDir
+
+    <span class="hljs-keyword">doLast</span> {
+        <span class="hljs-keyword">new</span> <span class="hljs-keyword">File</span>(frameworkDir, <span class="hljs-string">'gradlew'</span>).with {
+            text = <span class="hljs-string">"#!/bin/bash\nexport 'JAVA_HOME=${System.getProperty("</span>java.home<span class="hljs-string">")}'\ncd '${rootProject.rootDir}'\n./gradlew \$@\n"</span>
+            setExecutable(<span class="hljs-keyword">true</span>)
+        }
+    }
+}
+tasks.build.dependsOn packForXCode
+<span class="copy-code-btn">复制代码</span></code></pre><h3 class="heading" data-id="heading-3">实现<code>AccountingRepository</code></h3>
+<p>在<code>common</code> module下创建<code>commonMain</code>目录，并在<code>commonMain</code>目录下创建<code>AccountingRepository</code>类用于封装数据库操作逻辑（这里不需要关心代码实现细节，只是简单的查询数据库结果，然后序列化为json字符串）。</p>
+<pre><code class="hljs kotlin copyable" lang="kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountingRepository</span></span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> accountingDB: AccountingDB) {
+
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> json: Json <span class="hljs-keyword">by</span> lazy {
+    Json(JsonConfiguration.Stable)
+  }
+
+  ...
+
+  <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getMonthTotalAmount</span><span class="hljs-params">(yearAndMonthList: <span class="hljs-type">List</span>&lt;<span class="hljs-type">String</span>&gt;)</span></span>: String {
+    <span class="hljs-keyword">val</span> list = mutableListOf&lt;GetMonthTotalAmount&gt;()
+        .apply {
+          <span class="hljs-keyword">for</span> (yearAndMonth <span class="hljs-keyword">in</span> yearAndMonthList) {
+            <span class="hljs-keyword">val</span> r = accountingDB.accountingDBQueries
+                .getMonthTotalAmount(yearAndMonth)
+                .executeAsOneOrNull()
+
+            <span class="hljs-keyword">if</span> (r?.total != <span class="hljs-literal">null</span> &amp;&amp; r.yearMonth != <span class="hljs-literal">null</span>) {
+              add(r)
+            }
+          }
+        }
+        .map {
+          it.toGetMonthTotalAmountSerialization()
+        }
+
+    <span class="hljs-keyword">return</span> json.stringify(GetMonthTotalAmountSerialization.serializer().list, list)
+  }
+  
+  <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getGroupingMonthTotalAmount</span><span class="hljs-params">(yearAndMonth: <span class="hljs-type">String</span>)</span></span>: String {
+    <span class="hljs-keyword">val</span> list = accountingDB.accountingDBQueries
+        .getGroupingMonthTotalAmount(yearAndMonth)
+        .executeAsList()
+        .map {
+          it.toGetGroupingMonthTotalAmountSerialization()
+        }
+    <span class="hljs-keyword">return</span> json.stringify(GetGroupingMonthTotalAmountSerialization.serializer().list, list)
+  }
+}
+<span class="copy-code-btn">复制代码</span></code></pre><p>到这里我们已经实现了公用的数据库操作逻辑，但是为了Android/iOS更加简单的调用数据库操作逻辑，我们把<code>MethodChannel#setMethodCallHandler</code>/<code>FlutterMethodChannel#setMethodCallHandler</code>中的调用逻辑进行简单的封装：</p>
+<pre><code class="hljs kotlin copyable" lang="kotlin">const <span class="hljs-keyword">val</span> SQLDELIGHT_CHANNEL = <span class="hljs-string">"com.littlegnal.accountingmultiplatform/sqldelight"</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SqlDelightManager</span></span>(
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> accountingRepository: AccountingRepository
+) : CoroutineScope {
+
+  ...
+
+  <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">methodCall</span><span class="hljs-params">(method: <span class="hljs-type">String</span>, arguments: <span class="hljs-type">Map</span>&lt;<span class="hljs-type">String</span>, Any&gt;, result: (<span class="hljs-type">Any</span>)</span></span> -&gt; <span class="hljs-built_in">Unit</span>) {
+    launch(coroutineContext) {
+      <span class="hljs-keyword">when</span> (method) {
+        ...
+
+        <span class="hljs-string">"getMonthTotalAmount"</span> -&gt; {
+          <span class="hljs-meta">@Suppress(<span class="hljs-meta-string">"UNCHECKED_CAST"</span>)</span> <span class="hljs-keyword">val</span> yearAndMonthList: List&lt;String&gt; =
+            arguments[<span class="hljs-string">"yearAndMonthList"</span>] <span class="hljs-keyword">as</span>? List&lt;String&gt; ?: emptyList()
+          <span class="hljs-keyword">val</span> r = accountingRepository.getMonthTotalAmount(yearAndMonthList)
+          result(r)
+        }
+        <span class="hljs-string">"getGroupingMonthTotalAmount"</span> -&gt; {
+          <span class="hljs-keyword">val</span> yearAndMonth: String = arguments[<span class="hljs-string">"yearAndMonth"</span>] <span class="hljs-keyword">as</span>? String ?: <span class="hljs-string">""</span>
+          <span class="hljs-keyword">val</span> r = accountingRepository.getGroupingMonthTotalAmount(yearAndMonth)
+          result(r)
+        }
+      }
+    }
+  }
+}
+<span class="copy-code-btn">复制代码</span></code></pre><p>因为<code>MethodChannel#setMethodHandler</code>中<code>Result</code>和<code>FlutterMethodChannel#setMethodHandler</code>中<code>FlutterResult</code>对象不一样，所以我们在<code>SqlDelightManager#methodCall</code>定义<code>result</code> function以回调的形式让外部处理。</p>
+<h3 class="heading" data-id="heading-4">在Android使用<code>SqlDelightManager</code></h3>
+<p>在Android项目使用<code>SqlDelightManager</code>，参考官方文档<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fkotlinlang.org%2Fdocs%2Ftutorials%2Fnative%2Fmpp-ios-android.html" rel="nofollow noopener noreferrer">Multiplatform Project: iOS and Android</a>，我们需要先在<code>app</code>目录下添加对<code>common</code> module的依赖：</p>
+<pre><code class="hljs gradle copyable" lang="gradle">implementation <span class="hljs-keyword">project</span>(<span class="hljs-string">":common"</span>)
+<span class="copy-code-btn">复制代码</span></code></pre><p>参照官方文档<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fflutter.dev%2Fdocs%2Fdevelopment%2Fplatform-integration%2Fplatform-channels" rel="nofollow noopener noreferrer">Writing custom platform-specific code</a>，我们在<code>MainActivity</code>实现<code>MethodChannel</code>并调用<code>SqlDelightManager#methodCall</code>:</p>
+<pre><code class="hljs kotlin copyable" lang="kotlin"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainActivity</span>: <span class="hljs-type">FlutterActivity</span></span>() {
+
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> sqlDelightManager <span class="hljs-keyword">by</span> lazy {
+    <span class="hljs-keyword">val</span> accountingRepository = AccountingRepository(Db.getInstance(applicationContext))
+    SqlDelightManager(accountingRepository)
+  }
+
+  <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
+    <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
+    GeneratedPluginRegistrant.registerWith(<span class="hljs-keyword">this</span>)
+
+    MethodChannel(flutterView, SQLDELIGHT_CHANNEL).setMethodCallHandler { methodCall, result -&gt;
+      <span class="hljs-meta">@Suppress(<span class="hljs-meta-string">"UNCHECKED_CAST"</span>)</span>
+      <span class="hljs-keyword">val</span> args = methodCall.arguments <span class="hljs-keyword">as</span>? Map&lt;String, Any&gt; ?: emptyMap()
+      sqlDelightManager.methodCall(methodCall.method, args) {
+        result.success(it)
+      }
+    }
+  }
+
+  ...
+}
+<span class="copy-code-btn">复制代码</span></code></pre><h3 class="heading" data-id="heading-5">在iOS使用<code>SqlDelightManager</code></h3>
+<p>继续参考<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fkotlinlang.org%2Fdocs%2Ftutorials%2Fnative%2Fmpp-ios-android.html" rel="nofollow noopener noreferrer">Multiplatform Project: iOS and Android</a>，让Xcode项目识别<code>common</code> module的代码，主要把<code>common</code> module生成的frameworks添加Xcode项目中，我简单总结为以下步骤：</p>
+<ul>
+<li>运行<code>./gradlew :common:build</code>，生成<em>iOS frameworks</em></li>
+<li><em>General</em> -&gt; 添加<em>Embedded Binaries</em></li>
+<li><em>Build Setting</em> -&gt; 添加<em>Framework Search Paths</em></li>
+<li><em>Build Phases</em> -&gt; 添加<em>Run Script</em></li>
+</ul>
+<p>有一点跟官方文档不同的是，frameworks的存放目录不一样，因为Flutter项目结构把<code>android</code>项目的<code>build</code>文件路径放到根目录，所以frameworks的路径应该是<code>$(SRCROOT)/../build/xcode-frameworks</code>。可以查看<code>android/build.gradle</code>:</p>
+<pre><code class="hljs gradle copyable" lang="gradle">rootProject.buildDir = <span class="hljs-string">'../build'</span>
+<span class="hljs-keyword">subprojects</span> {
+    <span class="hljs-keyword">project</span>.buildDir = <span class="hljs-string">"${rootProject.buildDir}/${project.name}"</span>
+}
+<span class="copy-code-btn">复制代码</span></code></pre><p>这几步完成之后就可以在Swift里面调用<code>common</code> module的Kotlin代码了。参照官方文档<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fflutter.dev%2Fdocs%2Fdevelopment%2Fplatform-integration%2Fplatform-channels" rel="nofollow noopener noreferrer">Writing custom platform-specific code</a>，我们在<code>AppDelegate.swift</code>实现<code>FlutterMethodChannel</code>并调用<code>SqlDelightManager#methodCall</code>（Swift代码全是靠Google搜出来的XD）：</p>
+<pre><code class="hljs swift copyable" lang="swift"><span class="hljs-meta">@UIApplicationMain</span>
+<span class="hljs-meta">@objc</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppDelegate</span>: <span class="hljs-title">FlutterAppDelegate</span> </span>{
+    <span class="hljs-built_in">lazy</span> <span class="hljs-keyword">var</span> sqlDelightManager: <span class="hljs-type">SqlDelightManager</span> = {
+        <span class="hljs-type">Db</span>().defaultDriver()
+        <span class="hljs-keyword">let</span> accountingRepository = <span class="hljs-type">AccountingRepository</span>(accountingDB: <span class="hljs-type">Db</span>().instance)
+        <span class="hljs-keyword">return</span> <span class="hljs-type">SqlDelightManager</span>(accountingRepository: accountingRepository)
+    }()
+    
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(
+        <span class="hljs-number">_</span> application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?
+    )</span></span> -&gt; <span class="hljs-type">Bool</span> {
+    <span class="hljs-keyword">let</span> controller: <span class="hljs-type">FlutterViewController</span> = window?.rootViewController <span class="hljs-keyword">as</span>! <span class="hljs-type">FlutterViewController</span>
+
+    <span class="hljs-keyword">let</span> sqlDelightChannel = <span class="hljs-type">FlutterMethodChannel</span>(
+        name: <span class="hljs-type">SqlDelightManagerKt</span>.<span class="hljs-type">SQLDELIGHT_CHANNEL</span>,
+        binaryMessenger: controller)
+
+    sqlDelightChannel.setMethodCallHandler({
+        [<span class="hljs-keyword">weak</span> <span class="hljs-keyword">self</span>] (methodCall: <span class="hljs-type">FlutterMethodCall</span>, flutterResult: @escaping <span class="hljs-type">FlutterResult</span>) -&gt; <span class="hljs-type">Void</span> <span class="hljs-keyword">in</span>
+        <span class="hljs-keyword">let</span> args = methodCall.arguments <span class="hljs-keyword">as</span>? [<span class="hljs-type">String</span>: <span class="hljs-type">Any</span>] ?? [:]
+        
+        <span class="hljs-keyword">self</span>?.sqlDelightManager.methodCall(
+            method: methodCall.method,
+            arguments: args,
+            result: {(r: <span class="hljs-type">Any</span>) -&gt; <span class="hljs-type">KotlinUnit</span> <span class="hljs-keyword">in</span>
+                flutterResult(r)
+                <span class="hljs-keyword">return</span> <span class="hljs-type">KotlinUnit</span>()
+            })
+    })
+
+    <span class="hljs-type">GeneratedPluginRegistrant</span>.register(with: <span class="hljs-keyword">self</span>)
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.application(application, didFinishLaunchingWithOptions: launchOptions)
+    }
+    
+    ...
+}
+<span class="copy-code-btn">复制代码</span></code></pre><p>可以看到，除了<code>MethodChannel</code>/<code>FlutterMethodChannel</code>对象不同以及Kotlin/Swift语法不同，我们调用的是同一方法<code>SqlDelightManager#methodCall</code>，并不需要分别在Android/iOS上实现同一套逻辑。</p>
+<p>到这里我们已经使用了Kotlin Multiplatform实现原生代码复用了，然后我们只需在Flutter使用<code>MethodChannel</code>调用相应的方法就可以了。</p>
+<h2 class="heading" data-id="heading-6">Flutter</h2>
+<p>同样的我们在Flutter中也实现<code>AccountingRepository</code>类封装数据库操作逻辑：</p>
+<pre><code class="hljs dart copyable" lang="dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccountingRepository</span> </span>{
+  <span class="hljs-keyword">static</span> <span class="hljs-keyword">const</span> _platform =
+      <span class="hljs-keyword">const</span> MethodChannel(<span class="hljs-string">"com.littlegnal.accountingmultiplatform/sqldelight"</span>);
+
+  ...
+
+  Future&lt;BuiltList&lt;TotalExpensesOfMonth&gt;&gt; getMonthTotalAmount(
+      [<span class="hljs-built_in">DateTime</span> latestMonth]) <span class="hljs-keyword">async</span> {
+    <span class="hljs-keyword">var</span> dateTime = latestMonth ?? <span class="hljs-built_in">DateTime</span>.now();
+    <span class="hljs-keyword">var</span> yearMonthList = <span class="hljs-built_in">List</span>&lt;<span class="hljs-built_in">String</span>&gt;();
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">6</span>; i++) {
+      <span class="hljs-keyword">var</span> d = <span class="hljs-built_in">DateTime</span>(dateTime.year, dateTime.month - i, <span class="hljs-number">1</span>);
+      yearMonthList.add(_yearMonthFormat.format(d));
+    }
+
+    <span class="hljs-keyword">var</span> arguments = {<span class="hljs-string">"yearAndMonthList"</span>: yearMonthList};
+    <span class="hljs-keyword">var</span> result = <span class="hljs-keyword">await</span> _platform.invokeMethod(<span class="hljs-string">"getMonthTotalAmount"</span>, arguments);
+
+    <span class="hljs-keyword">return</span> deserializeListOf&lt;TotalExpensesOfMonth&gt;(jsonDecode(result));
+  }
+
+  Future&lt;BuiltList&lt;TotalExpensesOfGroupingTag&gt;&gt; getGroupingTagOfLatestMonth(
+      <span class="hljs-built_in">DateTime</span> latestMonth) <span class="hljs-keyword">async</span> {
+    <span class="hljs-keyword">return</span> getGroupingMonthTotalAmount(latestMonth);
+  }
+
+  Future&lt;BuiltList&lt;TotalExpensesOfGroupingTag&gt;&gt; getGroupingMonthTotalAmount(
+      <span class="hljs-built_in">DateTime</span> dateTime) <span class="hljs-keyword">async</span> {
+    <span class="hljs-keyword">var</span> arguments = {<span class="hljs-string">"yearAndMonth"</span>: _yearMonthFormat.format(dateTime)};
+    <span class="hljs-keyword">var</span> result =
+        <span class="hljs-keyword">await</span> _platform.invokeMethod(<span class="hljs-string">"getGroupingMonthTotalAmount"</span>, arguments);
+
+    <span class="hljs-keyword">return</span> deserializeListOf&lt;TotalExpensesOfGroupingTag&gt;(jsonDecode(result));
+  }
+}
+<span class="copy-code-btn">复制代码</span></code></pre><p>简单使用<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fflutter.dev%2Fdocs%2Fdevelopment%2Fdata-and-backend%2Fstate-mgmt%2Foptions%23bloc--rx" rel="nofollow noopener noreferrer">BLoC</a>来调用<code>AccountingRepository</code>的方法：</p>
+<pre><code class="hljs dart copyable" lang="dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SummaryBloc</span> </span>{
+  SummaryBloc(<span class="hljs-keyword">this</span>._db);
+
+  <span class="hljs-keyword">final</span> AccountingRepository _db;
+
+  <span class="hljs-keyword">final</span> _summaryChartDataSubject =
+      BehaviorSubject&lt;SummaryChartData&gt;.seeded(...);
+  <span class="hljs-keyword">final</span> _summaryListSubject =
+      BehaviorSubject&lt;BuiltList&lt;SummaryListItem&gt;&gt;.seeded(BuiltList());
+
+  Stream&lt;SummaryChartData&gt; <span class="hljs-keyword">get</span> summaryChartData =&gt;
+      _summaryChartDataSubject.stream;
+
+  Stream&lt;BuiltList&lt;SummaryListItem&gt;&gt; <span class="hljs-keyword">get</span> summaryList =&gt;
+      _summaryListSubject.stream;
+
+  ...
+
+  Future&lt;<span class="hljs-built_in">Null</span>&gt; getGroupingTagOfLatestMonth({<span class="hljs-built_in">DateTime</span> dateTime}) <span class="hljs-keyword">async</span> {
+    <span class="hljs-keyword">var</span> list =
+        <span class="hljs-keyword">await</span> _db.getGroupingTagOfLatestMonth(dateTime ?? <span class="hljs-built_in">DateTime</span>.now());
+    _summaryListSubject.sink.add(_createSummaryList(list));
+  }
+
+  Future&lt;<span class="hljs-built_in">Null</span>&gt; getMonthTotalAmount({<span class="hljs-built_in">DateTime</span> dateTime}) <span class="hljs-keyword">async</span> {
+    ...
+    <span class="hljs-keyword">var</span> result = <span class="hljs-keyword">await</span> _db.getMonthTotalAmount(dateTime);
+
+    ...
+
+    _summaryChartDataSubject.sink.add(...);
+  }
+
+  ...
+
+<span class="copy-code-btn">复制代码</span></code></pre><p>在Widget中使用BLoC：</p>
+<pre><code class="hljs dart copyable" lang="dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SummaryPage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">StatefulWidget</span> </span>{
+  <span class="hljs-meta">@override</span>
+  State&lt;StatefulWidget&gt; createState() =&gt; _SummaryPageState();
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_SummaryPageState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">State</span>&lt;<span class="hljs-title">SummaryPage</span>&gt; </span>{
+  <span class="hljs-keyword">final</span> _summaryBloc = SummaryBloc(AccountingRepository.db);
+
+  ...
+
+  <span class="hljs-meta">@override</span>
+  Widget build(BuildContext context) {
+    <span class="hljs-keyword">return</span> Scaffold(
+      ...
+
+      body: Column(
+        children: &lt;Widget&gt;[
+          Divider(
+            height: <span class="hljs-number">1.0</span>,
+          ),
+          Container(
+            color: Colors.white,
+            padding: EdgeInsets.only(bottom: <span class="hljs-number">10</span>),
+            child: StreamBuilder(
+              stream: _summaryBloc.summaryChartData,
+              builder: (BuildContext context,
+                  AsyncSnapshot&lt;SummaryChartData&gt; snapshot) {
+                ...
+              },
+            ),
+          ),
+          Expanded(
+            child: StreamBuilder(
+              stream: _summaryBloc.summaryList,
+              builder: (BuildContext context,
+                  AsyncSnapshot&lt;BuiltList&lt;SummaryListItem&gt;&gt; snapshot) {
+                ...
+              },
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+<span class="copy-code-btn">复制代码</span></code></pre><p>完结撒花，最后我们来看看项目的运行效果：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Android</th>
+<th style="text-align:center">iOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><figure><img alt="android" class="lazyload inited" data-src="https://user-gold-cdn.xitu.io/2019/7/8/16bcfc8a51b30e03?imageslim" data-width="360" data-height="640" src="data:image/svg+xml;utf8,&lt;?xml version=&quot;1.0&quot;?&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot; width=&quot;360&quot; height=&quot;640&quot;&gt;&lt;/svg&gt;" /><figcaption></figcaption></figure></td>
+<td style="text-align:center"><figure><img alt="ios" class="lazyload inited" data-src="https://user-gold-cdn.xitu.io/2019/7/8/16bcfc8a535cc30f?imageslim" data-width="360" data-height="779" src="data:image/svg+xml;utf8,&lt;?xml version=&quot;1.0&quot;?&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot; width=&quot;360&quot; height=&quot;779&quot;&gt;&lt;/svg&gt;" /><figcaption></figcaption></figure></td>
+</tr>
+</tbody>
+</table>
+<h2 class="heading" data-id="heading-7">Unit Test</h2>
+<p>为了保证代码质量和逻辑正确性Unit Test是必不可少的，对于<code>common</code> module代码，我们只要在<code>commonTest</code>中写一套Unit Test就可以了，当然有时候我们需要为不同平台编写不同的测试用例。在<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2FlittleGnAl%2Faccounting-multiplatform%2Ftree%2Flittlegnal%2Fblog-kmpp-flutter" rel="nofollow noopener noreferrer">Demo</a>里我主要使用<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Fmockk%2Fmockk" rel="nofollow noopener noreferrer">MockK</a>来mock数据，但是遇到一些问题，在Kotlin/Native无法识别<code>MockK</code>的引用。对于这个问题，我提了一个<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Fmockk%2Fmockk%2Fissues%2F322" rel="nofollow noopener noreferrer">issue</a>，目前还在处理中。</p>
+<h2 class="heading" data-id="heading-8">TL;DR</h2>
+<p>跨平台这个话题在现在已经是老生常谈了，很多公司很多团队都希望使用跨平台技术来提高开发效率，降低人力成本，但开发的过程中会发现踩的坑越来越多，很多时候并没有达到当初的预期，个人认为跨平台的最大目标是代码复用，<em>Write Once Run Anywhere</em>，让多端的开发者共同实现和维护同一代码逻辑，减少沟通导致实现的差异和多端代码实现导致的差异，使代码更加健壮便于维护。</p>
+<p>本文简单演示了如何使用Flutter和Kotlin Multiplatform来达到<em>Write Once Run Anywhere</em>的效果。个人认为Kotlin Multiplatform有很大的前景，Kotlin Multiplatform还支持JS平台，所以公用的代码理论上还能提供给小程序使用（希望有机会验证这个猜想）。在今年的Google IO上Google发布了下一代UI开发框架<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fdeveloper.android.com%2Fjetpack%2Fcompose" rel="nofollow noopener noreferrer">Jetpack Compose</a>，苹果开发者大会上苹果为我们带来了<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fdeveloper.apple.com%2Fxcode%2Fswiftui%2F" rel="nofollow noopener noreferrer">SwiftUI</a>，这意味着如果把这2个框架的API统一起来，我们可以使用Kotlin来编写拥有Native性能的跨平台的代码。<a target="_blank" href="https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2FlittleGnAl%2Faccounting-multiplatform%2Ftree%2Flittlegnal%2Fblog-kmpp-flutter" rel="nofollow noopener noreferrer">Demo</a>已经上传到github，感兴趣的可以clone下来研究（虽然写的很烂）。有问题可以在github上提issue。Have Fun！</p>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter" rel="tag"># flutter</a>
+          
+            
+            <a href="/tag/#/Location" rel="tag"># Location</a>
+          
+            
+            <a href="/tag/#/Maps" rel="tag"># Maps</a>
+          
+            
+            <a href="/tag/#/UI" rel="tag"># UI</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/08/GSYflutterdemo/" rel="next" title="GSY Flutter Demo">
+                <i class="fa fa-chevron-left"></i> GSY Flutter Demo
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/weekly/2019/07/07/flutter_weekly_27/" rel="prev" title="flutter 周报 - 27期(0701-0707)">
+                flutter 周报 - 27期(0701-0707) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2019/07/08/writeonse_runanywhere/';
+              this.page.identifier = '/2019/07/08/writeonse_runanywhere/';
+              this.page.title = '使用flutter + Kotlin 一次编写，任意运行';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

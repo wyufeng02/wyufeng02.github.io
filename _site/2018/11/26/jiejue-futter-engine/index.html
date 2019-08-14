@@ -1,0 +1,1496 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter engine," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Flutter/engine 修复版介绍">
+<meta name="keywords" content="flutter engine">
+<meta property="og:type" content="article">
+<meta property="og:title" content="手把手教你解决flutter engine内存泄漏">
+<meta property="og:url" content="https://code4flutter.com/2018/11/26/jiejue-futter-engine/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="Flutter/engine 修复版介绍">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d3eb51e3?w=1240&amp;h=415&amp;f=png&amp;s=170082">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d3dca246?w=1240&amp;h=489&amp;f=png&amp;s=171304">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d4025af7?w=1240&amp;h=812&amp;f=png&amp;s=344297">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d44c5139?w=1192&amp;h=407&amp;f=png&amp;s=97547">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d4364ea6?w=1240&amp;h=455&amp;f=png&amp;s=132205">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d44334c7?w=1232&amp;h=832&amp;f=png&amp;s=171137">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef44802eec349?w=1240&amp;h=1175&amp;f=png&amp;s=568340">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef4480586affb?w=1240&amp;h=518&amp;f=png&amp;s=145477">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef448096a58a5?w=1011&amp;h=297&amp;f=png&amp;s=57345">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef4480ebe8321?w=200&amp;h=305&amp;f=png&amp;s=43452">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef44816ee0b56?w=250&amp;h=249&amp;f=png&amp;s=46663">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="手把手教你解决flutter engine内存泄漏">
+<meta name="twitter:description" content="Flutter/engine 修复版介绍">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d3eb51e3?w=1240&amp;h=415&amp;f=png&amp;s=170082">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/2018/11/26/jiejue-futter-engine/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>手把手教你解决flutter engine内存泄漏 - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>手把手教你解决flutter engine内存泄漏</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/2018/11/26/jiejue-futter-engine/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            手把手教你解决flutter engine内存泄漏
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/26/jiejue-futter-engine/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2018/11/26/jiejue-futter-engine/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  1708
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  8
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <h2 id="flutterengine-修复版介绍">Flutter/engine 修复版介绍</h2>
+
+<p>tags: <code class="highlighter-rouge">flutter</code> <code class="highlighter-rouge">engine</code> <code class="highlighter-rouge">memory</code> <code class="highlighter-rouge">leak</code> <code class="highlighter-rouge">fix</code> <code class="highlighter-rouge">natoto</code></p>
+
+<h3 id="最近更新">最近更新</h3>
+<p>0305 更新flutter 1.2内存引用问题 
+<a href="https://github.com/Natoto/flutterOnExistApp/tree/flutter1.2">demo地址</a></p>
+
+<blockquote>
+
+  <p>团队在0.9.4 版本解决了一系列循环引用，但是代码不能上传，由于flutter和engine的限制，必须flutter版本号和engine的commit号要保持一致，提交了将导致commit号不一致的问题，导致运行失败，官方号称1.0解决了循环引用，下载了一看，令人失望，还是没有彻底解决，于是决定<code class="highlighter-rouge">自己动手,丰衣足食</code> ，经过了几天痛苦的下载编译，调试，测试，终于把内存降下来了。</p>
+</blockquote>
+
+<p>欢迎关注
+姊妹篇<a href="https://www.jianshu.com/p/6519ed563fcc">《手把手教你编译Flutter engine》</a></p>
+
+<h2 id="官方flutter的大麻烦">官方flutter的大麻烦</h2>
+<p>google团队的大bug,个人认为内存是很重要的，尤其是集成到现有app中的方式。</p>
+
+<p>https://github.com/flutter/flutter/issues/24714
+https://github.com/flutter/flutter/issues/23231
+https://github.com/flutter/flutter/issues/25255
+https://github.com/flutter/engine/pull/6879
+https://github.com/flutter/flutter/issues/16995</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d3eb51e3?w=1240&amp;h=415&amp;f=png&amp;s=170082" alt="image.png" /></p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d3dca246?w=1240&amp;h=489&amp;f=png&amp;s=171304" alt="image.png" /></p>
+
+<p>flutter 1.0 解决了FlutterViewController的循环引用问题，但是把循环引用的问题转嫁到了FlutterEngine上面，下面手把手教你如何解决1.0的循环引用。</p>
+
+<h2 id="如何找到内存泄漏">如何找到内存泄漏</h2>
+
+<h3 id="为什么google难以解决">为什么google难以解决</h3>
+<p>由于整个FlutterEngine是用MRC的方式编写，所以内存管理比较困难，每个变量生成retain，都需要被release，如果一个实例retain了两次，只release一次，也会导致无法释放，如果设置了autorelease，就有可能提前释放，导致badasses，访问野指针。</p>
+
+<p>客观原因，一般的应用只会创建一个flutter应用，或者干脆就直接都是flutter应用，不释放就不释放，多点内存也无所谓，不影响崩溃，不影响使用，所以google照常发布1.0版。</p>
+
+<h3 id="现状">现状</h3>
+<p>每次进去都会新增几十M然而当退出flutterViewController的时候，内存仅仅下降2m左右，还有几十兆保留在内存中。下降的部分就是flutterviewcontroller，从程序运行到了dealloc可以证明。</p>
+
+<h3 id="修改结果">修改结果</h3>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d4025af7?w=1240&amp;h=812&amp;f=png&amp;s=344297" alt="这是修改后的文件" /></p>
+
+<p>修改后的framework下载列表</p>
+<ul>
+  <li>
+    <p>1.0版engine arm64 debug下载 <a href="https://github.com/Natoto/flutterOnExistApp/blob/multiflutter/flutterOnExistApp/Resources/Flutter.framework.zip">https://github.com/Natoto/flutterOnExistApp/blob/multiflutter/flutterOnExistApp/Resources/Flutter.framework.zip</a></p>
+  </li>
+  <li>
+    <p>其他版本打包发布github 地址
+<a href="https://github.com/Natoto/fixFlutterEngine">https://github.com/Natoto/fixFlutterEngine</a></p>
+  </li>
+</ul>
+
+<p>下面将一步步带领大家找到循环引用，解决循环引用，这一步可能比较繁琐，如果不愿看推理过程，可以直接跳到文末获取构建后的framework。</p>
+
+<h3 id="使用flutterviewcontroller">使用flutterViewController</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+* 加载boundle资源
+*/
+- (void)handleBoundleResource {    
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"flutter_assets" ofType:@""];
+    NSURL * url = [NSURL URLWithString:path];
+    FlutterDartProject * dart = [[FlutterDartProject alloc] init];
+    if (!self.engine) {
+        FlutterEngine * engine = [[FlutterEngine alloc] initWithName:path.lastPathComponent project:dart];
+        [engine runWithEntrypoint:nil];
+        self.engine = engine;
+    }
+    FlutterViewController* flutterViewController = [[FlutterViewController alloc] initWithEngine:self.engine nibName:nil bundle:nil];    
+    [GeneratedPluginRegistrant registerWithRegistry:flutterViewController];    
+    [self addBackButton:flutterViewController]; 
+     [flutterViewController setInitialRoute:@"route1"];
+    [self presentViewController:flutterViewController animated:YES completion:nil];    
+}
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">flutterEngine</code>, flutter官方推荐方式是自己管理flutterEngine，然后flutterviewcontroller是可以独自创建和释放，<code class="highlighter-rouge">FlutterEngine</code>是新1.0引进，用于管理所有的metchodChannel，就是维护所有的方法消息，生命周期等作用。也是要解决它的引用问题。
+执行<code class="highlighter-rouge">engine runwithEntrypoint</code>可以启动engine vm。</p>
+
+<p><code class="highlighter-rouge">FlutterDartProject</code> 用于配置启动参数，默认可以直接new，或者从bundle启动，找boundle下面的的flutter_assets文件夹，或直接导入App.framework</p>
+
+<p><code class="highlighter-rouge">FlutterViewController </code>用来显示flutter工程的，所有的界面都是在其上面渲染出来的。跟普通的UIViewController一样，可以present出来，或者push出来。</p>
+
+<h3 id="flutter的入口">Flutter的入口</h3>
+<p>plugin是flutter的入口，这个入口可以连接flutter和原生代码
+比如自带的<code class="highlighter-rouge">GeneratedPluginRegistrant</code>，将flutter工程中用到的插件都集中注册到原生</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@implementation</span> <span class="nc">GeneratedPluginRegistrant</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">registerWithRegistry</span><span class="p">:(</span><span class="n">NSObject</span><span class="o">&lt;</span><span class="n">FlutterPluginRegistry</span><span class="o">&gt;*</span><span class="p">)</span><span class="nv">registry</span> <span class="p">{</span>
+  <span class="p">[</span><span class="n">FlutterWebviewPlugin</span> <span class="nf">registerWithRegistrar</span><span class="p">:[</span><span class="n">registry</span> <span class="nf">registrarForPlugin</span><span class="p">:</span><span class="s">@"FlutterWebviewPlugin"</span><span class="p">]];</span>
+  <span class="p">[</span><span class="n">FLTPathProviderPlugin</span> <span class="nf">registerWithRegistrar</span><span class="p">:[</span><span class="n">registry</span> <span class="nf">registrarForPlugin</span><span class="p">:</span><span class="s">@"FLTPathProviderPlugin"</span><span class="p">]];</span>
+  <span class="p">[</span><span class="n">FLTSharedPreferencesPlugin</span> <span class="nf">registerWithRegistrar</span><span class="p">:[</span><span class="n">registry</span> <span class="nf">registrarForPlugin</span><span class="p">:</span><span class="s">@"FLTSharedPreferencesPlugin"</span><span class="p">]];</span>
+<span class="p">}</span>
+
+<span class="k">@end</span>
+
+</code></pre></div></div>
+
+<p>介绍上面两个是为了找到断点入口</p>
+
+<h3 id="如何设flutter断点">如何设flutter断点</h3>
+<p>为了方便调试，可以在编译现有工程的时候替换flutter.framework
+具体做法是在build phases 中创建一个脚本，用自己编译的engine中的flutter.framework替换 .ios/engine/Flutter.framework</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d44c5139?w=1192&amp;h=407&amp;f=png&amp;s=97547" alt="替换脚本" /></p>
+
+<p>替换完之后则可以设置symbol断点了，如下</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d4364ea6?w=1240&amp;h=455&amp;f=png&amp;s=132205" alt="设置断点" /></p>
+
+<p>或者用lldb命令设置断点 <code class="highlighter-rouge">br xxxx</code>  <a href="https://objccn.io/issue-19-2/">lldb传送门</a></p>
+
+<h3 id="几个疑点">几个疑点</h3>
+<p>从目前的情况来看engine没有被释放，就是<code class="highlighter-rouge">FlutterEngine.mm</code> <code class="highlighter-rouge">FlutterChannel.mm</code> 和 <code class="highlighter-rouge">PluginRegister</code>直接的关系混乱了
+有两点情况</p>
+<ol>
+  <li>互相引用</li>
+  <li>内部引用没有release</li>
+  <li>多次retain</li>
+  <li>block是否使用的__block引用</li>
+  <li>主动destory</li>
+  <li>编译，看dealloc
+从0.9.4经验来看，需要手动destory一下，destory完成这个类中变量的release
+以上五个过程需要不断的循环重试，过程比较长。。</li>
+</ol>
+
+<p>方法论说完了，下面直接说我的几天试错结果。共计10个文件，核心的地方贴一下</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef447d44334c7?w=1232&amp;h=832&amp;f=png&amp;s=171137" alt="maybesetupPlatformViewChannels" /></p>
+
+<p><code class="highlighter-rouge">maybesetupPlatformViewChannels</code>在flutterengine里面，启动默认平台changnle和方法回调</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef44802eec349?w=1240&amp;h=1175&amp;f=png&amp;s=568340" alt="image.png" /></p>
+
+<p>重心，FlutterChannel.mm里面 <code class="highlighter-rouge">FlutterMethodChannel</code>，flutter每个plugin的方法都会经过通过register注册一个channel，然而，messger是register，不应该被持有或autorelease的，所以这样做是会造成提前释放或无法释放的</p>
+
+<p>对应于其他的channel也是用了messager，会有相同的问题。改造这些基本上就能解除大循环了。</p>
+
+<h3 id="总结engine的大循环引用">总结engine的大循环引用</h3>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef4480586affb?w=1240&amp;h=518&amp;f=png&amp;s=145477" alt="循环引用示例" /></p>
+
+<h2 id="如何使用">如何使用</h2>
+<p>有两种方法</p>
+<ol>
+  <li>
+    <p>替换flutter里面的framework
+路径如下
+ <code class="highlighter-rouge">/Users/boo/Documents/flutter/bin/cache/artifacts/engine/ios</code>
+不用担心是否会破坏之前发flutter.framework，如果想用回官方的直接解压同文件夹里面的.zip文件即可</p>
+  </li>
+  <li>
+    <p>工程中用zip，解压成framework替换掉真正从官方复制过来的flutter.framework
+适用于 arm64真机</p>
+  </li>
+</ol>
+
+<p>工程配置添加sh脚本</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#R.replace.engine
+cd "${SRCROOT}/flutterOnExistApp/Resources/"
+  
+unzip -u Flutter.framework.zip
+
+cp -rf "${SRCROOT}/flutterOnExistApp/Resources/Flutter.framework" "${SRCROOT}/myflutter/.ios/Flutter/engine"
+
+</code></pre></div></div>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef448096a58a5?w=1011&amp;h=297&amp;f=png&amp;s=57345" alt="image.png" /></p>
+
+<h2 id="修改后代码">修改后代码</h2>
+
+<p>修改的文件放在<code class="highlighter-rouge">1.0engine修改的文件</code>，可以直接替换使用并构建自己的framework</p>
+
+<ul>
+  <li>1.0 修改的代码地址 <a href="https://github.com/Natoto/flutterOnExistApp/tree/multiflutter/1.0engine%E4%BF%AE%E6%94%B9%E7%9A%84%E6%96%87%E4%BB%B6">https://github.com/Natoto/flutterOnExistApp/tree/multiflutter/1.0engine%E4%BF%AE%E6%94%B9%E7%9A%84%E6%96%87%E4%BB%B6</a></li>
+  <li>
+    <p>github demo 工程
+<a href="https://github.com/Natoto/flutterOnExistApp/tree/multiflutter">https://github.com/Natoto/flutterOnExistApp/tree/multiflutter</a></p>
+  </li>
+  <li>1.0版engine arm64 debug下载 <a href="https://github.com/Natoto/flutterOnExistApp/blob/multiflutter/flutterOnExistApp/Resources/Flutter.framework.zip">https://github.com/Natoto/flutterOnExistApp/blob/multiflutter/flutterOnExistApp/Resources/Flutter.framework.zip</a>
+ ### 打包framework</li>
+</ul>
+
+<p>看一下构建后结果</p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef4480ebe8321?w=200&amp;h=305&amp;f=png&amp;s=43452" alt="engine的文件大小" /></p>
+
+<p><img src="https://user-gold-cdn.xitu.io/2018/12/27/167ef44816ee0b56?w=250&amp;h=249&amp;f=png&amp;s=46663" alt="一种模式的工程大小" /></p>
+
+<p>如构建debug版的engine如下路径或生产一个framework，这个通过执行<code class="highlighter-rouge">all.wxworkspace</code>生成的，注意arm架构，如果选target是真机，则会生成arm64架构framework
+<code class="highlighter-rouge">/Users/boo/Documents/engine/src/out/ios_debug/Flutter.framework</code></p>
+
+<p>这个可以直接替换掉工程中原有的framework</p>
+
+<p>构建release framework类似。
+详细步骤可以参考<a href="https://www.jianshu.com/p/6519ed563fcc">《手把手教你编译Flutter engine》</a></p>
+
+<hr />
+
+<p>### YY Flutter技术积累相关链接</p>
+
+<p><a href="https://juejin.im/post/5c6e84156fb9a049a5718047">flutter多实例实战 by共田君</a></p>
+
+<p><a href="https://juejin.im/post/5c6e6dd5f265da2dcf62821f">一行代码教你解决FlutterPlatformViews内存泄露 by 
+AShawn </a></p>
+
+<p><a href="https://juejin.im/post/5c45c72d6fb9a049d81c2b4c">手把手教你在Flutter项目优雅的使用ORM数据库 by 
+williamwen1986</a></p>
+
+<p><a href="https://juejin.im/post/5c34597651882523d3200c98">flutter通用基础库flutter_luakit_plugin  by 
+williamwen1986</a></p>
+
+<p><a href="https://github.com/williamwen1986/flutter_luakit_demo">github - flutter_luakit_plugin使用例子  by 
+williamwen1986</a></p>
+
+<p><a href="https://juejin.im/post/5c24acd5f265da6164141236">手把手教你编译Flutter engine by 共田君</a></p>
+
+<p><a href="https://juejin.im/post/5c24ad306fb9a049d2361cff">手把手教你解决 Flutter engine 内存泄漏 by 共田君</a></p>
+
+<p><a href="https://github.com/Natoto/fixFlutterEngine">github - 编译产物下载 修复内存泄漏后的flutter engine（可直接使用）by 共田君</a>&lt;/font&gt;</p>
+
+<p><a href="https://github.com/Natoto/flutterOnExistApp/tree/multiflutter">github demo - 修复内存泄漏后的flutter engine by 共田君</a></p>
+
+<p>持续更新中…</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter%20engine" rel="tag"># flutter engine</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/29/shoubashoubianyi-flutter-engine/" rel="next" title="手把手教你编译Flutter engine">
+                <i class="fa fa-chevron-left"></i> 手把手教你编译Flutter engine
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/26/jsonxuliehua/" rel="prev" title="【译】Flutter json序列号与反序列化">
+                【译】Flutter json序列号与反序列化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/2018/11/26/jiejue-futter-engine/';
+              this.page.identifier = '/2018/11/26/jiejue-futter-engine/';
+              this.page.title = '手把手教你解决flutter engine内存泄漏';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

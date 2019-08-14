@@ -1,0 +1,1427 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter,weekly," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Flutter Weekly＃26">
+<meta name="keywords" content="flutter, weekly">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flutter 周报 - 26期(0624-0630)">
+<meta property="og:url" content="https://code4flutter.com/weekly/2019/06/30/flutter_weekly_26/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="Flutter Weekly＃26">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="flutter 周报 - 26期(0624-0630)">
+<meta name="twitter:description" content="Flutter Weekly＃26">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/weekly/2019/06/30/flutter_weekly_26/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>flutter 周报 - 26期(0624-0630) - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>flutter 周报 - 26期(0624-0630)</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/weekly/2019/06/30/flutter_weekly_26/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            flutter 周报 - 26期(0624-0630)
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/weekly" itemprop="url" rel="index">
+                    <span itemprop="name">weekly</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/weekly/2019/06/30/flutter_weekly_26/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/weekly/2019/06/30/flutter_weekly_26/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  1197
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <h1 id="flutter-weekly26">Flutter Weekly＃26</h1>
+
+<p>这是2019年第26周，也是<code class="highlighter-rouge">code4flutter</code> 第26篇flutter的周报</p>
+
+<h2 id="文章和教程">文章和教程</h2>
+
+<h3 id="flouter中的多fab菜单与unicorndial"><a href="https://www.filledstacks.com/snippet/multi-fab-menu-in-flutter-with-unicorndial/">Flouter中的多Fab菜单与unicorndial</a></h3>
+
+<p>在本教程中，Dane Mackier展示了如何使用unicorndial小部件来创建可扩展的FAB。</p>
+
+<h3 id="flutter-for-desktop创建并运行桌面应用程序"><a href="https://ayushshekhar.hashnode.dev/flutter-for-desktop-create-and-run-a-desktop-application-ebeb1604f1e0">Flutter for Desktop：创建并运行桌面应用程序</a></h3>
+
+<p>Ayush Shekhar将指导您完成在桌面环境中运行新的或现有的Flutter应用程序的过程。</p>
+
+<h3 id="flutter-semantics指南"><a href="https://kpsroka.dev/technical/guide-to-flutter-semantics.html">Flutter Semantics指南</a></h3>
+
+<p>Krzysztof Sroka关于使用语义在您的应用中启用a11y(辅助功能)功能的优秀文章。</p>
+
+<h3 id="将flutter添加到现有的android--ios应用程序"><a href="https://medium.com/flutter-community/add-flutter-to-existing-android-ios-app-ae8c4fb1582e">将Flutter添加到现有的Android / iOS应用程序</a></h3>
+
+<p>如果您想将Flutter代码添加到现有的Android或iOS应用程序中，请查看Nirav Tukadiya的本教程。</p>
+
+<h3 id="用动画更改flutter中的app栏"><a href="https://medium.com/@nishantdesai1306_93115/change-app-bar-in-flutter-with-animation-cfffb3413e8a">用动画更改Flutter中的App栏</a></h3>
+
+<p>Nishant Desai演示了如何在应用栏状态之间创建动画过渡。</p>
+
+<h3 id="custom-clipperwave-curve-----part-1"><a href="https://medium.com/@bhoomiharkhani22/custom-clipper-wave-curve-part-1-b49853a75876">Custom Clipper：Wave Curve  -  Part 1</a></h3>
+
+<p>如果您对Custom Clipper感到困惑，Bhoomika Harkhani会帮助您了解它的工作原理。</p>
+
+<h3 id="flgter中的draggable和drag-target"><a href="https://medium.com/flutterdevs/draggable-and-drag-target-in-flutter-2513ea7c09f2">Flgter中的Draggable和Drag Target</a></h3>
+
+<p>学习Manik Gupta撰写本文后，在您的应用中创建拖放元素。</p>
+
+<h3 id="在颤动中画出弯曲的虚线"><a href="https://medium.com/@meysam.mahfouzi/drawing-curved-dashed-lines-in-flutter-b5d0645b04c8">在颤动中画出弯曲的虚线</a></h3>
+
+<p>Meysam Mahfouzi对曲线的介绍，以创建虚线曲线。</p>
+
+<h3 id="轻松管理flutter上的权限请求"><a href="https://medium.com/@ajviera/easily-manage-permission-requests-on-flutter-9baff63df16e?sk=28ff9dba756b2b488f00c27fab652889">轻松管理Flutter上的权限请求</a></h3>
+
+<p>Ariel Martinez Viera解释了如何使用easy_permission_validator库处理Android和iOS的权限。</p>
+
+<h3 id="使用admob_flutter将广告嵌入到flutter的小部件树中"><a href="https://medium.com/@vitopiegari/embedding-ads-into-flutters-widget-tree-with-admob-flutter-ae59c3a66492">使用admob_flutter将广告嵌入到flutter的小部件树中</a></h3>
+
+<p>Vito Piegari关于如何在您的应用中插入广告以通过其获利的教程。</p>
+
+<h3 id="flutter-calendar-libraries-comparison"><a href="https://medium.com/flutter-community/flutter-calendar-library-comparison-c08d5ba3cc9e">Flutter Calendar Libraries Comparison</a></h3>
+
+<p>Alison Wyllie对Flutter提供的不同日历小部件进行了深入分析。</p>
+
+<h3 id="android和ios开发者的flutter生命周期"><a href="https://medium.com/flutter-community/flutter-lifecycle-for-android-and-ios-developers-8f532307e0c7">Android和iOS开发者的Flutter生命周期</a></h3>
+
+<p>过渡到Flutter最令人困惑的想法之一是了解它如何处理其生命周期，Mariano Zorrilla回答了最常见的问题。</p>
+
+<h3 id="flutter-navigation-cheatsheet----命名路由指南"><a href="https://medium.com/flutter-community/flutter-navigation-cheatsheet-a-guide-to-named-routing-dc642702b98c">Flutter Navigation Cheatsheet  - 命名路由指南</a></h3>
+
+<p>Dane Mackier的这个教程应该作为命名路线导航的备忘单，从设置到等待结果。</p>
+
+<h3 id="flutterbuilding-wearos-app"><a href="https://medium.com/flutter-community/flutter-building-wearos-app-fedf0f06d1b4">Flutter：Building WearOS app</a></h3>
+
+<p>尽管没有得到“正式”支持，Souvik Biswas解释了如何在Flutter中构建手表应用程序。</p>
+
+<h3 id="在flutter学习和推进的免费资源"><a href="https://medium.com/flutter-community/free-resources-to-learn-and-advance-in-flutter-e07875ffc825">在Flutter学习和推进的免费资源</a></h3>
+
+<p>Katarina Sheremet收集的Flutter学习资源。</p>
+
+<h3 id="在flutter中进入导航底部"><a href="https://medium.com/flutter/getting-to-the-bottom-of-navigation-in-flutter-b3e440b9386">在Flutter中进入导航底部</a></h3>
+
+<p>深入分析Hans Muller在Flutter中导航栏的工作原理。</p>
+
+<h3 id="两天内从头开始到一个成熟的flutter应用程序"><a href="https://medium.com/flutter-community/going-from-scratch-to-a-full-blown-flutter-app-in - 两个天-c06f1d1a1975">两天内从头开始到一个成熟的Flutter应用程序</a></h3>
+
+<p>Jayesh参加了为期2天的Hackathon并使用Flutter创建了一个应用程序。在本文中，他叙述了整个过程，直到实现所需的应用程序。</p>
+
+<h3 id="flutter-driver的主要学习内容"><a href="https://medium.com/flutter-community/key-learnings-from-flutter-driver-d1d35ad1402e">Flutter Driver的主要学习内容</a></h3>
+
+<p>Darshan Kawar一直在使用Flutter Driver进行UI测试，并分享他的想法和发现</p>
+
+<h3 id="使用背景图像在flutter中刷新"><a href="https://medium.com/flutter-community/pull-to-refresh-in-flutter-with-background-image-bb9ff1700ea9">使用背景图像在Flutter中刷新</a></h3>
+
+<p>Dane Mackier如何创建一个刷新与可折叠标题结合使用。</p>
+
+<h3 id="使用带有built_value-for-flutter的standardjsonplugin"><a href="https://medium.com/@efthymis/using-standardjsonplugin-with-built-value-for-flutter-4a4657b34737">使用带有Built_value for Flutter的StandardJsonPlugin</a></h3>
+
+<p>Efthymis Sarmpanis解释了在使用built_value反序列化JSON文件时如何解决常见问题。</p>
+
+<p>##视频和媒体</p>
+
+<h3 id="chopperflutter的改造---2拦截器----dart-http客户端生成器教程"><a href="https://www.youtube.com/watch?v=ViqtHHLfN94&amp;feature=youtu.be">Chopper(Flutter的改造) - ＃2拦截器 -  Dart HTTP客户端生成器教程</a></h3>
+
+<p>了解如何在Chopper中使用拦截器，这是一个功能强大的工具，用于修改请求的请求和响应。</p>
+
+<h3 id="flutter-navigation-complete-named-routing-setup-and-guide"><a href="https://www.youtube.com/watch?v=YXDFlpdpp3g&amp;feature=youtu.be">Flutter Navigation Complete Named Routing Setup and Guide</a></h3>
+
+<p>本教程使用命名路由覆盖所有Flutter导航场景。</p>
+
+<h3 id="flutter-tutorial-----flutter-interview-questions"><a href="https://www.youtube.com/watch?v=p4Z7fwcDMmg&amp;feature=youtu.be">Flutter Tutorial  -  Flutter Interview Questions</a></h3>
+
+<p>在本视频中，您将看到有关Flutter参加面试的最常见问题。</p>
+
+<h3 id="颤动点击选择裁剪压缩图像"><a href="https://www.youtube.com/watch?v=hV9gY01m61Y&amp;feature=youtu.be">颤动：点击|选择|裁剪|压缩图像</a></h3>
+
+<p>在本视频中，您将学习如何点击，从图库中选择，裁剪和压缩来自Android和iOS设备的图像。</p>
+
+<h3 id="使用入门使用flutter进行应用内付款"><a href="https://www.youtube.com/watch?v=HFAyy_AH0No">使用入门：使用Flutter进行应用内付款</a></h3>
+
+<p>有关如何开始将In-App Payments SDK实施到Flutter应用程序的教程。</p>
+
+<h3 id="在flutter中购买app"><a href="https://www.youtube.com/watch?v=NWbkKH-2xcQ">在Flutter中购买App</a></h3>
+
+<p>了解如何在Flutter中设置In App Purchases，以便在iOS和Android上以真钱出售消费类数字产品。</p>
+
+<h3 id="flutter介绍---使用小部件构建基本布局---第二部分"><a href="https://www.youtube.com/watch?v=dKGnRcr8FZU">Flutter介绍 - 使用小部件构建基本布局 - 第二部分</a></h3>
+
+<p>在本教程中，我们将了解Flutter中布局的基础知识。我们查看基本小部件，如容器，展开，堆栈，列，行，对齐和填充。</p>
+
+<h3 id="limitedbox本周flutter-widget"><a href="https://www.youtube.com/watch?v=uVki2CIzBTs&amp;feature=youtu.be">LimitedBox(本周Flutter Widget)</a></h3>
+
+<p>曾经有一个小部件，当给予无限大小增长时行为不端？ LimitedBox小部件在小部件无限制的情况下为小部件提供大小限制。</p>
+
+<h3 id="moorflutter会议室---桌子和查询---流利的sqlite数据库"><a href="https://www.youtube.com/watch?v=zpWsedYMczM&amp;feature=youtu.be">Moor(Flutter会议室) - 桌子和查询 - 流利的SQLite数据库</a></h3>
+
+<p>MOOR是一个库，允许您流畅地使用Flutter的SQLite数据库和纯Dart。在幕后，它使用SQFLite包。</p>
+
+<p>##代码和库</p>
+
+<h3 id="aloisdeniel--flutter_staggered_animation"><a href="https://github.com/aloisdeniel/flutter_staggered_animation">aloisdeniel / flutter_staggered_animation</a></h3>
+
+<p>交错的动画变得容易。</p>
+
+<h3 id="esmerlinjm--card-wallet-app"><a href="https://github.com/EsmerlinJM/Card-Wallet-App">EsmerlinJM / Card-Wallet-App</a></h3>
+
+<p>简单的卡片钱包应用多平台与Flutter</p>
+
+<h3 id="jasonlong--geo_pattern"><a href="https://github.com/jasonlong/geo_pattern">jasonlong / geo_pattern</a></h3>
+
+<p>从字符串创建美丽的生成几何背景图像。</p>
+
+<h3 id="rajajain08--particles_flutter"><a href="https://github.com/rajajain08/particles_flutter">rajajain08 / particles_flutter</a></h3>
+
+<p>在Flutter项目中添加粒子动画的简便方法。</p>
+
+<h3 id="thalapathysiva--drink_reminder_flutter"><a href="https://github.com/ThalapathySiva/drink_reminder_flutter">ThalapathySiva / drink_reminder_flutter</a></h3>
+
+<p>一个跨平台的移动应用程序，以帮助您保湿。</p>
+
+<h3 id="vanethos--flutter_connectivity_widget"><a href="https://github.com/Vanethos/flutter_connectivity_widget">Vanethos / flutter_connectivity_widget</a></h3>
+
+<p>一个小部件，显示用户手机是否连接到互联网</p>
+
+<p>如果您想提交文章，提出建议或与我们分享您的想法，请随时<a href="mailto：natoto@qq.com">发送邮件给我们</a>。</p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter" rel="tag"># flutter</a>
+          
+            
+            <a href="/tag/#/weekly" rel="tag"># weekly</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/07/A_Dart_implementation_of_Leaflet.markercluster_for_Flutter/" rel="next" title="地图定位 Leaflet.markercluster">
+                <i class="fa fa-chevron-left"></i> 地图定位 Leaflet.markercluster
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/weekly/2019/06/23/flutter_weekly_25/" rel="prev" title="flutter 周报 - 25期(0617-0623)">
+                flutter 周报 - 25期(0617-0623) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/weekly/2019/06/30/flutter_weekly_26/';
+              this.page.identifier = '/weekly/2019/06/30/flutter_weekly_26/';
+              this.page.title = 'flutter 周报 - 26期(0624-0630)';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

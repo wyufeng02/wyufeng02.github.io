@@ -1,0 +1,1577 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+  
+  
+    
+    
+  <script src="/assets/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/assets/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="flutter," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="code4flutter" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/code4flutter.png?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="0x00 概念介绍">
+<meta name="keywords" content="flutter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="InhertedWidget和它的继承者们">
+<meta property="og:url" content="https://code4flutter.com/note/2019/07/22/flutter_inhertedwidget/">
+<meta property="og:site_name" content="code4flutter">
+<meta property="og:description" content="0x00 概念介绍">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertwiget_01.png">
+<meta property="og:image" content="http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inherted_notify.png">
+<meta property="og:image" content="http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inherted_demos.gif">
+<meta property="og:image" content="http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertedmodel.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="InhertedWidget和它的继承者们">
+<meta name="twitter:description" content="0x00 概念介绍">
+<meta name="twitter:image" content="http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertwiget_01.png">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"remove","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://code4flutter.com/note/2019/07/22/flutter_inhertedwidget/">
+  
+  <!-- <link rel="canonical" href="https://code4flutter.com/"/> -->
+
+
+
+
+
+  <title>InhertedWidget和它的继承者们 - code4flutter</title>
+<meta name="description" content="code4Flutter是一个flutter平台的代码库，是flutter开发好帮手。code4flutter为flutter开发程序员提供大量的开源代码，flutter代码实例搜索，flutter特效示例，flutter代码例子下载。所有的开源代码都经过严格测试，并且配有效果图和演示视频。你可以搜索并下载你需要的任意代码。">
+<!-- <meta http-equiv="refresh" content="0; url="> -->
+<link rel="author" href="https://juejin.im/user/5cf763b1f265da1b7152e3a5"/>
+
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?32729bcc8017c49aca55cef767a6da04";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- google广告 👇 -->
+  
+  <meta name="google-site-verification" content="GTONtcic5FicsMpYMrxWznMYnBbrcElVMRzob5Te2BQ" /> 
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9104318899007816",
+      enable_page_level_ads: true
+    });
+  </script>
+  <meta charset="UTF-8" />
+  <!-- <title>InhertedWidget和它的继承者们</title> -->
+  <meta name="viewport" content="width=device-width" />
+<!-- google广告 👆 -->
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-9104318899007816">
+</amp-auto-ads>
+      <!-- 百度统计 👇-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?426f1e4464116c54060fd43355f14f53";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="baidu-site-verification" content="j811164E7m" />
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+    <!-- 百度统计 👆-->  
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">code4flutter</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">flutter代码库 为flutter程序员提供大量的开源代码 代码实例搜索 特效示例演示 flutter代码例子下载 QQ群:217429001</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+<meta name="renderer" content="webkit">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<meta name="applicable-device" content="pc,mobile">
+ 
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+<div id="posts" class="posts-expand">
+    
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="5178878794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://code4flutter.com/note/2019/07/22/flutter_inhertedwidget/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="code4flutter">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="code4flutter">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            InhertedWidget和它的继承者们
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/note" itemprop="url" rel="index">
+                    <span itemprop="name">note</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/note/2019/07/22/flutter_inhertedwidget/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/note/2019/07/22/flutter_inhertedwidget/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article</span>
+                
+                <span title="Words count in article">
+                  1515
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time</span>
+                
+                <span title="Reading time">
+                  7
+                </span>
+              
+            </div>
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  <h2 id="0x00-概念介绍">0x00 概念介绍</h2>
+
+<p>简单一点说</p>
+<blockquote>
+
+  <ul>
+    <li>inhertedwidget 是一个widget，跟其他widget不一样的地方是，他可以在他所持有的child中共享自己的数据。如Theme。</li>
+    <li>应用场景：app的复杂度越来越大，对于数据之间的传递，如果都是根据dic或者model作为widget内部的参数传递，是不友好的方式。正常的想法，此时应该有个数据中心，或eventbus，用于数据传递和取用，而在flutter中是inhertwidget</li>
+    <li>实现： 内部实现数据更新，自动通知的方式，从而自动刷新界面</li>
+    <li>写法： 见下面例子</li>
+  </ul>
+</blockquote>
+
+<p>对于赶时间的同学看到这里就可以回去搬砖了。下面留给还有五分钟时间浏览的同学。</p>
+
+<p>google 在<code class="highlighter-rouge">flutter widget of the week</code> 中介绍 <code class="highlighter-rouge">inheritedwidget</code>， 短短的两个简短的视频，让人看到了flutter的用心，外语一般的我也能把概念看得个大概。但是对于真正使用其上手开发的同学总觉得离实际开发距离有点远，还是得编写一下例子才能理解更深一点。</p>
+
+<p>作为一名高效的搬砖工，先看看它说了啥</p>
+
+<h2 id="0x01-前情提要">0x01 前情提要</h2>
+
+<p><img src="http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertwiget_01.png" alt="code4flutter" /></p>
+
+<p>当应用变得更大时，小部件树,变得更复杂，传递和访问数据,会变得很麻烦。 
+如果你有四个或五个小部件一个接一个地嵌套, 并且您需要从顶部获取一些数据。将它添加到所有这些构造函数中,以及所有这些构建方法。</p>
+
+<p>然而我只是想到达widget来获取数据。 不想一级一级传递数据。怎么办？幸运的是，有一个小部件类型允许这样。 它叫做InheritedWidget。</p>
+
+<p><img src="http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inherted_notify.png" alt="inherted_notify" /></p>
+
+<h2 id="0x02-使用方式">0x02 使用方式</h2>
+
+<h3 id="创建一个inhertwidget">创建一个InhertWidget</h3>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">class</span> <span class="nc">FrogColor</span> <span class="kd">extends</span> <span class="n">InheritedWidget</span> <span class="o">{</span>
+   <span class="kd">const</span> <span class="n">FrogColor</span><span class="o">({</span>
+     <span class="n">Key</span> <span class="n">key</span><span class="o">,</span>
+     <span class="nd">@required</span> <span class="k">this</span><span class="o">.</span><span class="na">color</span><span class="o">,</span>
+     <span class="nd">@required</span> <span class="n">Widget</span> <span class="n">child</span><span class="o">,</span>
+   <span class="o">})</span> <span class="o">:</span> <span class="k">assert</span><span class="o">(</span><span class="n">color</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">),</span>
+        <span class="k">assert</span><span class="o">(</span><span class="n">child</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">),</span>
+        <span class="k">super</span><span class="o">(</span><span class="nl">key:</span> <span class="n">key</span><span class="o">,</span> <span class="nl">child:</span> <span class="n">child</span><span class="o">);</span>
+
+   <span class="kd">final</span> <span class="n">Color</span> <span class="n">color</span><span class="o">;</span>
+
+   <span class="kd">static</span> <span class="n">FrogColor</span> <span class="n">of</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+     <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="na">inheritFromWidgetOfExactType</span><span class="o">(</span><span class="n">FrogColor</span><span class="o">)</span> <span class="k">as</span> <span class="n">FrogColor</span><span class="o">;</span>
+   <span class="o">}</span>
+
+   <span class="nd">@override</span>
+   <span class="kt">bool</span> <span class="n">updateShouldNotify</span><span class="o">(</span><span class="n">FrogColor</span> <span class="n">old</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">color</span> <span class="o">!=</span> <span class="n">old</span><span class="o">.</span><span class="na">color</span><span class="o">;</span>
+ <span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="创建子widgeta-b">创建子WidgetA B</h3>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">class</span> <span class="nc">TestWidgetA</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="o">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">final</span> <span class="n">inheritedContext</span> <span class="o">=</span> <span class="n">FrogColor</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="n">Padding</span><span class="o">(</span>
+        <span class="nl">padding:</span> <span class="kd">const</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">only</span><span class="o">(</span><span class="nl">left:</span> <span class="mf">10.0</span><span class="o">,</span> <span class="nl">top:</span> <span class="mf">10.0</span><span class="o">,</span> <span class="nl">right:</span> <span class="mf">10.0</span><span class="o">),</span>
+        <span class="nl">child:</span> <span class="n">Container</span><span class="o">(</span>
+          <span class="nl">color:</span> <span class="n">inheritedContext</span><span class="o">.</span><span class="na">color</span><span class="o">,</span>
+          <span class="nl">height:</span> <span class="mi">100</span><span class="o">,</span>
+          <span class="nl">width:</span> <span class="mi">100</span><span class="o">,</span>
+          <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">'第一个widget'</span><span class="o">),</span>
+        <span class="o">));</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+
+<span class="kd">class</span> <span class="nc">TestWidgetB</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="o">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kd">final</span> <span class="n">inheritedContext</span> <span class="o">=</span> <span class="n">FrogColor</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="n">Padding</span><span class="o">(</span>
+        <span class="nl">padding:</span> <span class="kd">const</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">only</span><span class="o">(</span><span class="nl">left:</span> <span class="mf">10.0</span><span class="o">,</span> <span class="nl">top:</span> <span class="mf">10.0</span><span class="o">,</span> <span class="nl">right:</span> <span class="mf">10.0</span><span class="o">),</span>
+        <span class="nl">child:</span> <span class="n">Container</span><span class="o">(</span>
+          <span class="nl">color:</span> <span class="n">inheritedContext</span><span class="o">.</span><span class="na">color</span><span class="o">,</span>
+          <span class="nl">height:</span> <span class="mi">50</span><span class="o">,</span>
+          <span class="nl">width:</span> <span class="mi">50</span><span class="o">,</span>
+          <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">'第二个widget'</span><span class="o">),</span>
+        <span class="o">));</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="创建带状态的widgetc">创建带状态的widgetC</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class TestWidgetC extends StatefulWidget {
+  TestWidgetC({Key key}) : super(key: key);
+
+  _TestWidgetCState createState() =&gt; _TestWidgetCState();
+}
+
+class _TestWidgetCState extends State&lt;TestWidgetC&gt; {
+ 
+
+  @override
+  Widget build(BuildContext context) {
+     final inheritedContext = FrogColor.of(context);
+    // print(" 重建c CCC ");
+    return Container(
+        child: Container(
+      color: inheritedContext.color,
+      height: 200,
+      width: 200,
+      child: prefix0.Column(
+        children: &lt;Widget&gt;[
+          Text("第三个widget"),        
+        ],
+      ),
+    ));
+  }
+
+  @override
+  void didChangeDependencies() {
+    print(" 更改依赖 CCC ");
+    super.didChangeDependencies();
+  }
+}
+</code></pre></div></div>
+
+<h3 id="组装">组装</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+  @override
+  _MyHomePageState createState() =&gt; _MyHomePageState();
+}
+
+class _MyHomePageState extends State&lt;MyHomePage&gt; {
+  int _counter = 0;
+  Color color = Color.fromARGB(0, 0xff, 0xdd, 0xdd);
+  Color color2 = Color.fromARGB(0, 0xff, 0xdd, 0xdd);
+
+  void _incrementCounter() {
+    setState(() {
+      _counter = (_counter + 20) % 255;
+      Color color = Color.fromARGB(_counter, 0xff, 0xdd, 0xdd);
+      this.color = color;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: &lt;Widget&gt;[
+            Text(
+              'You have pushed the button this many times:',
+            ),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.display1,
+            ),
+            new FrogColor(
+              color: this.color,
+              color2: this.color2,
+              child: Column(
+                children: &lt;Widget&gt;[
+                  new TestWidgetA(),
+                  new TestWidgetB(),
+                  new TestWidgetC()
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+</code></pre></div></div>
+
+<p>本段代码实现了点击+号，数字增加，并且两个widget的颜色加深</p>
+
+<p>效果图如下</p>
+
+<p><img src="http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inherted_demos.gif" alt="code4flutter" /></p>
+
+<h2 id="0x02-使用建议">0x02 使用建议</h2>
+
+<h3 id="inheritedwidgets通常包含一个名为的静态方法-of">InheritedWidgets通常包含一个名为的静态方法 of</h3>
+
+<p>它为您调用InheritWidget的精确类型方法。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   static FrogColor of(BuildContext context) {
+     return context.inheritFromWidgetOfExactType(FrogColor) as FrogColor;
+   }
+</code></pre></div></div>
+
+<h3 id="final-不可变性">final 不可变性</h3>
+
+<p>例子中FrogColor 里面的color就是一个final类型，不可以改变</p>
+
+<p>只能替换InheritedWidget的字段,通过<code class="highlighter-rouge">重建</code>整个widget 树。 这个很重要!!! 只是意味着它<code class="highlighter-rouge">无法重新分配</code>。 但是并不意味着它不能在内部改变。</p>
+
+<h3 id="didchangedependencies-改变时机">didChangeDependencies 改变时机</h3>
+
+<p>inhertedwidget改变了就会触发，didChangeDependencies，对于耗时操作的业务如网络请求来说可以放置这里。</p>
+
+<p>从上例中可以做个试验，在widgetC中移除 <code class="highlighter-rouge">FrogColor.of(context)</code> 这句话，可以看到，颜色不好随着按钮点击变色，另外也不会调用<code class="highlighter-rouge">didChangeDependencies</code> 这个方法了。但是widgetc还是会走build方法。</p>
+
+<p>可以印证两点，widget会重建，但是state不会重建，didChangeDespendice方法调用的时机是其依赖的上下文内容改变。</p>
+
+<h2 id="0x03-应用场景">0x03 应用场景</h2>
+
+<ul>
+  <li>
+    <p>Theme实际上是一种InheritedWidget。 Scaffold，Focus Scope等等也是如此。</p>
+  </li>
+  <li>
+    <p>附加服务对象到InheritedWidget。 如开发数据库的包装器</p>
+  </li>
+  <li>
+    <p>Web API的代理或资产提供者。 服务对象可以有自己的内部状态。 它可以启动网络呼叫，任何事情。</p>
+  </li>
+</ul>
+
+<h2 id="0x04-继承者们">0x04 继承者们</h2>
+
+<h3 id="老大inheritednotifier">老大，InheritedNotifier</h3>
+
+<p>继承自Inhertedwidget，其值可以是被监听的，并且只要值发送通知就会通知依赖者。</p>
+
+<p>使用场景有 <code class="highlighter-rouge">ChangeNotifier</code>或<code class="highlighter-rouge">ValueNotifier</code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>abstract class InheritedNotifier&lt;T extends Listenable&gt; extends InheritedWidget {
+
+  const InheritedNotifier({
+    Key key,
+    this.notifier,
+    @required Widget child,
+  }) : assert(child != null),
+       super(key: key, child: child);
+ 
+  @override
+  bool updateShouldNotify(InheritedNotifier&lt;T&gt; oldWidget) {
+    return oldWidget.notifier != notifier;
+  }
+
+  @override
+  _InheritedNotifierElement&lt;T&gt; createElement() =&gt; _InheritedNotifierElement&lt;T&gt;(this);
+}
+</code></pre></div></div>
+
+<h3 id="老二-inheritedmodel">老二， InheritedModel</h3>
+
+<p>继承自 Inertedwidget的，允许客户端订阅值的子部分的更改。</p>
+
+<p>就比InertedWidget多了一个必要方法<code class="highlighter-rouge">updateShouldNotifyDependent</code>，表示可以根据，部分内容的改变发送依赖变更通知。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ABModel extends InheritedModel&lt;String&gt; {
+  ABModel({this.a, this.b, Widget child}) : super(child: child);
+
+  final int a;
+  final int b;
+
+  @override
+  bool updateShouldNotify(ABModel old) {
+    return a != old.a || b != old.b;
+  }
+
+  @override
+  bool updateShouldNotifyDependent(ABModel old, Set&lt;String&gt; aspects) {
+    return (a != old.a &amp;&amp; aspects.contains('a')) ||
+        (b != old.b &amp;&amp; aspects.contains('b'));
+  }
+  // ...
+}
+</code></pre></div></div>
+
+<p>一图说明</p>
+
+<p><img src="http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/inhertedmodel.png" alt="inhertedmodel" /></p>
+
+<p>参考</p>
+
+<p><a href="https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html">inhertedwidget 文档</a></p>
+
+<h3 id="原创不易版权所有转载请备注-code4fluttercom">原创不易，版权所有，转载请备注 <a href="https://code4flutter.com">code4flutter.com</a></h3>
+
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/flutter" rel="tag"># flutter</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/04/A_Cryptocurrency_app_made_with_Flutter_using_Provider/" rel="next" title="A_cryptocurrency_app_made_with_flutter_using_provider">
+                <i class="fa fa-chevron-left"></i> A_cryptocurrency_app_made_with_flutter_using_provider
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/weekly/2019/07/22/flutterweekly29/" rel="prev" title="flutter周报 - 29期(0715-0721)">
+                flutter周报 - 29期(0715-0721) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9104318899007816"
+     data-ad-slot="8567297764"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <related-posts /> 
+  <div class="post-spread">
+    
+      
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">code4flutter</span>
+</div>
+
+
+  
+<p>
+  友情链接: &nbsp;<a href="/gitbook/">极客时间</a> &nbsp;<a href="/html2md/">markdown编辑器</a> &nbsp;<a href="https://www.geekersq.cc/">小彦的自留地</a>  &nbsp;<a href="https://www.91ppts.com">91ppts</a>  &nbsp; <a href=" https://www.mcbar.cn">McBar综合社区</a>
+  &nbsp; <a href="http://www.shejiinn.com">免费接码</a> &nbsp; <a href="http://flutterdev.top/sms/">国外短信平台impl.xin</a> &nbsp; <a href="https://github.com/xiaolai/regular-investing-in-box">李笑来定投</a>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277819033'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277819033%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+
+ 
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://geeklearn-1.disqus.com/count.js" async></script>
+    
+
+    
+      
+      <script type="text/javascript">
+          var disqus_config = function () {
+              this.page.url = 'https://code4flutter.com/note/2019/07/22/flutter_inhertedwidget/';
+              this.page.identifier = '/note/2019/07/22/flutter_inhertedwidget/';
+              this.page.title = 'InhertedWidget和它的继承者们';
+          };
+          var d = document, s = d.createElement('script');
+          s.src = 'https://geeklearn-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', '' + +new Date());
+          (d.head || d.body).appendChild(s);
+      </script>
+      
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+ 
+  
+  
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+ 

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>129_代码精进之路 · 极客时间索引</title>
+        <title>220_ZooKeeper实战与源码剖析 · 极客时间索引</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="130_算法面试通关40讲.html" />
     
-    
-    <link rel="prev" href="127_如何设计一个秒杀系统.html" />
+    <link rel="prev" href="219_编译原理之美.html" />
     
 
     </head>
@@ -582,7 +580,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.38" data-path="129_代码精进之路.html">
+        <li class="chapter " data-level="1.38" data-path="129_代码精进之路.html">
             
                 <a href="129_代码精进之路.html">
             
@@ -1232,7 +1230,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.88" data-path="220_ZooKeeper实战与源码剖析.html">
+        <li class="chapter active" data-level="1.88" data-path="220_ZooKeeper实战与源码剖析.html">
             
                 <a href="220_ZooKeeper实战与源码剖析.html">
             
@@ -1275,7 +1273,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >129_代码精进之路</a>
+        <a href="." >220_ZooKeeper实战与源码剖析</a>
     </h1>
 </div>
 
@@ -1290,57 +1288,20 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4EE3;&#x7801;&#x7CBE;&#x8FDB;&#x4E4B;&#x8DEF;">&#x4EE3;&#x7801;&#x7CBE;&#x8FDB;&#x4E4B;&#x8DEF;</h1>
-<p> &#x8BB2;&#x5E08;&#x4ECB;&#x7ECD;: Oracle&#x9996;&#x5E2D;&#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x5E08;&#xFF0C;Java SE&#x5B89;&#x5168;&#x7EC4;&#x6210;&#x5458;&#xFF0C;OpenJDK&#x8BC4;&#x5BA1;&#x6210;&#x5458; </p>
-<p> <img src="https://static001.geekbang.org/resource/image/cf/cd/cf198bedf8dfb16cea74d4ae60f71dcd.jpg" alt="img"></p>
+                                <h1 id="zookeeper&#x5B9E;&#x6218;&#x4E0E;&#x6E90;&#x7801;&#x5256;&#x6790;">ZooKeeper&#x5B9E;&#x6218;&#x4E0E;&#x6E90;&#x7801;&#x5256;&#x6790;</h1>
+<p> &#x8BB2;&#x5E08;&#x4ECB;&#x7ECD;: &#x65B0;&#x4E1C;&#x65B9;&#x96C6;&#x56E2;&#x9996;&#x5E2D;&#x67B6;&#x6784;&#x5E08; </p>
+<p> <img src="https://static001.geekbang.org/resource/image/5f/be/5faa1457c1e9c12e19c583cb8e4f4cbe.jpg" alt="img"></p>
 <p> &#x58F0;&#x660E;&#xFF1A;&#x7248;&#x6743;&#x5F52;&#x6781;&#x5BA2;&#x65F6;&#x95F4;&#x548C;&#x8BB2;&#x5E08;&#x6240;&#x6709;&#xFF0C;&#x7D20;&#x6750;&#x7531;<a href="https://code4flutter.com" target="_blank">code4flutter</a>&#x6536;&#x96C6;&#x6574;&#x7406;&#xFF0C;&#x8BF7;&#x5927;&#x5BB6;&#x591A;&#x591A;&#x652F;&#x6301;</p>
-<p><a href="https://time.geekbang.org/column/article/75516" target="_blank">&#x5F00;&#x7BC7;&#x8BCD; | &#x4F60;&#x5199;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#xFF0C;&#x90FD;&#x662F;&#x4F60;&#x7684;&#x540D;&#x7247;</a></p>
-<p><a href="https://time.geekbang.org/column/article/75980" target="_blank">01 | &#x4ECE;&#x6761;&#x4EF6;&#x8FD0;&#x7B97;&#x7B26;&#x8BF4;&#x8D77;&#xFF0C;&#x53CD;&#x601D;&#x4EC0;&#x4E48;&#x662F;&#x597D;&#x4EE3;&#x7801;</a></p>
-<p><a href="https://time.geekbang.org/column/article/76349" target="_blank">02 | &#x628A;&#x9519;&#x8BEF;&#x5173;&#x5728;&#x7B3C;&#x5B50;&#x91CC;&#x7684;&#x4E94;&#x9053;&#x5173;&#x5361;</a></p>
-<p><a href="https://time.geekbang.org/column/article/76666" target="_blank">Q&amp;A&#x52A0;&#x9910;&#x4E28;&#x5173;&#x4E8E;&#x4EE3;&#x7801;&#x8D28;&#x91CF;&#xFF0C;&#x4F60;&#x5173;&#x5FC3;&#x7684;&#x90A3;&#x4E9B;&#x4E8B;&#x513F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/76808" target="_blank">03 | &#x4F18;&#x79C0;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x516D;&#x4E2A;&#x5173;&#x952E;&#x7279;&#x8D28;</a></p>
-<p><a href="https://time.geekbang.org/column/article/77048" target="_blank">04 | &#x4EE3;&#x7801;&#x89C4;&#x8303;&#x7684;&#x4EF7;&#x503C;&#xFF1A;&#x590D;&#x76D8;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x7684;GoToFail&#x6F0F;&#x6D1E;</a></p>
-<p><a href="https://time.geekbang.org/column/article/77301" target="_blank">05 | &#x7ECF;&#x9A8C;&#x603B;&#x7ED3;&#xFF1A;&#x5982;&#x4F55;&#x7ED9;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x8D77;&#x597D;&#x540D;&#x5B57;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/77673" target="_blank">06 | &#x4EE3;&#x7801;&#x6574;&#x7406;&#x7684;&#x5173;&#x952E;&#x903B;&#x8F91;&#x548C;&#x6700;&#x4F73;&#x6848;&#x4F8B;</a></p>
-<p><a href="https://time.geekbang.org/column/article/78086" target="_blank">07 | &#x5199;&#x597D;&#x6CE8;&#x91CA;&#xFF0C;&#x771F;&#x7684;&#x662F;&#x5C0F;&#x83DC;&#x4E00;&#x789F;&#x5417;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/78288" target="_blank">08 | &#x5199;&#x597D;&#x58F0;&#x660E;&#x7684;&#x201C;&#x516B;&#x9879;&#x7EAA;&#x5F8B;&#x201D;</a></p>
-<p><a href="https://time.geekbang.org/column/article/78674" target="_blank">09 | &#x600E;&#x4E48;&#x7528;&#x597D;Java&#x6CE8;&#x89E3;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/79083" target="_blank">10 | &#x5F02;&#x5E38;&#x5904;&#x7406;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x9677;&#x9631;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/79306" target="_blank">11 | &#x7EC4;&#x7EC7;&#x597D;&#x4EE3;&#x7801;&#x6BB5;&#xFF0C;&#x8BA9;&#x4EBA;&#x5BF9;&#x5B83;&#x201C;&#x4E00;&#x89C1;&#x949F;&#x60C5;&#x201D;</a></p>
-<p><a href="https://time.geekbang.org/column/article/79789" target="_blank">12&#x4E28;&#x7EC4;&#x7EC7;&#x597D;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#xFF0C;&#x8981;&#x6709;&#x201C;&#x7528;&#x6237;&#x601D;&#x7EF4;&#x201D;</a></p>
-<p><a href="https://time.geekbang.org/column/article/80002" target="_blank">13 | &#x63A5;&#x53E3;&#x89C4;&#x8303;&#xFF0C;&#x662F;&#x534F;&#x4F5C;&#x7684;&#x5408;&#x7EA6;</a></p>
-<p><a href="https://time.geekbang.org/column/article/80740" target="_blank">14 | &#x600E;&#x4E48;&#x5199;&#x597D;&#x7528;&#x6237;&#x6307;&#x5357;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/80993" target="_blank">15 | &#x7F16;&#x5199;&#x89C4;&#x8303;&#x4EE3;&#x7801;&#x7684;&#x68C0;&#x67E5;&#x6E05;&#x5355;</a></p>
-<p><a href="https://time.geekbang.org/column/article/81055" target="_blank">16&#x4E28;&#x4EE3;&#x7801;&#x201C;&#x89C4;&#x8303;&#x201D;&#x7BC7;&#x7528;&#x6237;&#x7B54;&#x7591;</a></p>
-<p><a href="https://time.geekbang.org/column/article/81394" target="_blank">17 | &#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x7ECF;&#x6D4E;&#x7684;&#x4EE3;&#x7801;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/81608" target="_blank">18&#x4E28;&#x601D;&#x8003;&#x6846;&#x67B6;&#xFF1A;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x624D;&#x662F;&#x9AD8;&#x6548;&#x7684;&#x4EE3;&#x7801;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/81899" target="_blank">19 | &#x600E;&#x4E48;&#x907F;&#x514D;&#x8FC7;&#x5EA6;&#x8BBE;&#x8BA1;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/82335" target="_blank">20 | &#x7B80;&#x5355;&#x548C;&#x76F4;&#x89C2;&#xFF0C;&#x662F;&#x6C38;&#x6052;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;</a></p>
-<p><a href="https://time.geekbang.org/column/article/82605" target="_blank">21 | &#x600E;&#x4E48;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x53C8;&#x76F4;&#x89C2;&#x7684;&#x63A5;&#x53E3;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/82954" target="_blank">22&#x4E28;&#x9AD8;&#x6548;&#x7387;&#xFF0C;&#x4ECE;&#x8D85;&#x8D8A;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#x5F00;&#x59CB;&#xFF01;</a></p>
-<p><a href="https://time.geekbang.org/column/article/83045" target="_blank">23 | &#x600E;&#x4E48;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#xFF0C;&#x51CF;&#x8F7B;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x8D1F;&#x62C5;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/83504" target="_blank">24 | &#x9ED1;&#x767D;&#x7070;&#xFF0C;&#x7406;&#x89E3;&#x5EF6;&#x8FDF;&#x5206;&#x914D;&#x7684;&#x4E24;&#x9762;&#x6027;</a></p>
-<p><a href="https://time.geekbang.org/column/article/83897" target="_blank">25 | &#x4F7F;&#x7528;&#x6709;&#x5E8F;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8C03;&#x52A8;&#x5F02;&#x6B65;&#x7684;&#x4E8B;&#x4EF6;</a></p>
-<p><a href="https://time.geekbang.org/column/article/84096" target="_blank">26 | &#x6709;&#x54EA;&#x4E9B;&#x62DB;&#x60F9;&#x9EBB;&#x70E6;&#x7684;&#x6027;&#x80FD;&#x9677;&#x9631;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/84488" target="_blank">27 | &#x600E;&#x4E48;&#x7F16;&#x5199;&#x53EF;&#x6301;&#x7EED;&#x53D1;&#x5C55;&#x7684;&#x4EE3;&#x7801;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/84904" target="_blank">28 | &#x600E;&#x4E48;&#x5C3D;&#x91CF;&#x201C;&#x4E0D;&#x5199;&#x201D;&#x4EE3;&#x7801;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/85163" target="_blank">29 | &#x7F16;&#x5199;&#x7ECF;&#x6D4E;&#x4EE3;&#x7801;&#x7684;&#x68C0;&#x67E5;&#x6E05;&#x5355;</a></p>
-<p><a href="https://time.geekbang.org/column/article/85561" target="_blank">30&#x4E28;&#x201C;&#x4EE3;&#x7801;&#x7ECF;&#x6D4E;&#x7BC7;&#x201D;&#x7B54;&#x7591;&#x6C47;&#x603B;</a></p>
-<p><a href="https://time.geekbang.org/column/article/85968" target="_blank">31 | &#x4E3A;&#x4EC0;&#x4E48;&#x5B89;&#x5168;&#x7684;&#x4EE3;&#x7801;&#x8FD9;&#x4E48;&#x91CD;&#x8981;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/86204" target="_blank">32 | &#x5982;&#x4F55;&#x8BC4;&#x4F30;&#x4EE3;&#x7801;&#x7684;&#x5B89;&#x5168;&#x7F3A;&#x9677;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/86590" target="_blank">33 | &#x6574;&#x6570;&#x7684;&#x8FD0;&#x7B97;&#x6709;&#x54EA;&#x4E9B;&#x5B89;&#x5168;&#x5A01;&#x80C1;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/87077" target="_blank">34 | &#x6570;&#x7EC4;&#x548C;&#x96C6;&#x5408;&#xFF0C;&#x53EF;&#x53D8;&#x91CF;&#x7684;&#x5B89;&#x5168;&#x9677;&#x9631;</a></p>
-<p><a href="https://time.geekbang.org/column/article/87256" target="_blank">35 | &#x600E;&#x4E48;&#x5904;&#x7406;&#x654F;&#x611F;&#x4FE1;&#x606F;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/87633" target="_blank">36 | &#x7EE7;&#x627F;&#x6709;&#x4EC0;&#x4E48;&#x5B89;&#x5168;&#x7F3A;&#x9677;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/88097" target="_blank">37 | &#x8FB9;&#x754C;&#xFF0C;&#x4FE1;&#x4EFB;&#x7684;&#x5206;&#x6C34;&#x5CAD;</a></p>
-<p><a href="https://time.geekbang.org/column/article/88417" target="_blank">38 | &#x5BF9;&#x8C61;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x5371;&#x5BB3;&#x6709;&#x591A;&#x5927;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/88673" target="_blank">39 | &#x600E;&#x4E48;&#x63A7;&#x5236;&#x597D;&#x4EE3;&#x7801;&#x7684;&#x6743;&#x529B;&#xFF1F;</a></p>
-<p><a href="https://time.geekbang.org/column/article/89213" target="_blank">40 | &#x89C4;&#x8303;&#xFF0C;&#x4EE3;&#x7801;&#x957F;&#x6CBB;&#x4E45;&#x5B89;&#x7684;&#x57FA;&#x7840;</a></p>
-<p><a href="https://time.geekbang.org/column/article/89226" target="_blank">41 | &#x9884;&#x6848;&#xFF0C;&#x4EE3;&#x7801;&#x7684;&#x4E3B;&#x52A8;&#x98CE;&#x9669;&#x7BA1;&#x7406;</a></p>
-<p><a href="https://time.geekbang.org/column/article/89616" target="_blank">42 | &#x7EB5;&#x6DF1;&#xFF0C;&#x4EE3;&#x7801;&#x5B89;&#x5168;&#x7684;&#x6DF1;&#x5EA6;&#x9632;&#x5FA1;</a></p>
-<p><a href="https://time.geekbang.org/column/article/90026" target="_blank">43 | &#x7F16;&#x5199;&#x5B89;&#x5168;&#x4EE3;&#x7801;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x6E05;&#x5355;</a></p>
-<p><a href="https://time.geekbang.org/column/article/90212" target="_blank">44 | &#x201C;&#x4EE3;&#x7801;&#x5B89;&#x5168;&#x7BC7;&#x201D;&#x7B54;&#x7591;&#x6C47;&#x603B;</a></p>
-<p><a href="https://time.geekbang.org/column/article/90758" target="_blank">45 | &#x5C3E;&#x58F0;&#xFF1A;&#x5982;&#x4F55;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x7F16;&#x7A0B;&#x597D;&#x624B;&#xFF1F;</a></p>
+<p><a href="https://time.geekbang.org/column/article/119488" target="_blank">01 | &#x8BFE;&#x7A0B;&#x4ECB;&#x7ECD;</a></p>
+<p><a href="https://time.geekbang.org/column/article/119489" target="_blank">02 | &#x5185;&#x5BB9;&#x7EFC;&#x8FF0;</a></p>
+<p><a href="https://time.geekbang.org/column/article/119490" target="_blank">03 | &#x4EC0;&#x4E48;&#x662F;ZooKeeper</a></p>
+<p><a href="https://time.geekbang.org/column/article/119491" target="_blank">04 | ZooKeeper&#x63D0;&#x4F9B;&#x4EC0;&#x4E48;&#x670D;&#x52A1;</a></p>
+<p><a href="https://time.geekbang.org/column/article/119492" target="_blank">05 | &#x5F00;&#x59CB;&#x4F7F;&#x7528;ZooKeeper</a></p>
+<p><a href="https://time.geekbang.org/column/article/119493" target="_blank">06 | &#x4F7F;&#x7528;ZooKeeper&#x5B9E;&#x73B0;Master-Worker&#x534F;&#x540C;</a></p>
+<p><a href="https://time.geekbang.org/column/article/119494" target="_blank">07 | ZooKeeper&#x67B6;&#x6784;&#x89E3;&#x6790;</a></p>
+<p><a href="https://time.geekbang.org/column/article/119495" target="_blank">08 | ZooKeeper API&#x7B80;&#x4ECB;</a></p>
+<p><a href="https://time.geekbang.org/column/article/119497" target="_blank">09 | ZooKeeper API&#xFF1A;Watch&#x793A;&#x4F8B;</a></p>
+<p><a href="https://time.geekbang.org/column/article/119498" target="_blank">10 | &#x4F7F;&#x7528;ZooKeeper&#x5B9E;&#x73B0;&#x5206;&#x5E03;&#x5F0F;&#x961F;&#x5217;</a></p>
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -1355,7 +1316,7 @@ var _hmt = _hmt || [];
 <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-gw-3+1f-3d+2z" data-ad-client="ca-pub-9104318899007816" data-ad-slot="1371441828"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script><!-- tags --><div id="tags" class="tags"><p><i class="fa fa-tags" aria-hidden="true"></i> <a href="tags.html#&#x4EE3;&#x7801;&#x7CBE;&#x8FDB;&#x4E4B;&#x8DEF;">&#x4EE3;&#x7801;&#x7CBE;&#x8FDB;&#x4E4B;&#x8DEF;</a></p></div><!-- tagsstop -->
+</script><!-- tags --><div id="tags" class="tags"><p><i class="fa fa-tags" aria-hidden="true"></i> <a href="tags.html#zookeeper&#x5B9E;&#x6218;&#x4E0E;&#x6E90;&#x7801;&#x5256;&#x6790;">ZooKeeper&#x5B9E;&#x6218;&#x4E0E;&#x6E90;&#x7801;&#x5256;&#x6790;</a></p></div><!-- tagsstop -->
                                 
                                 </section>
                             
@@ -1382,14 +1343,10 @@ var _hmt = _hmt || [];
 
             
                 
-                <a href="127_如何设计一个秒杀系统.html" class="navigation navigation-prev " aria-label="Previous page: 127_如何设计一个秒杀系统">
+                <a href="219_编译原理之美.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 219_编译原理之美">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="130_算法面试通关40讲.html" class="navigation navigation-next " aria-label="Next page: 130_算法面试通关40讲">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1398,7 +1355,7 @@ var _hmt = _hmt || [];
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"129_代码精进之路","level":"1.38","depth":1,"next":{"title":"130_算法面试通关40讲","level":"1.39","depth":1,"path":"130_算法面试通关40讲.md","ref":"130_算法面试通关40讲.md","articles":[]},"previous":{"title":"127_如何设计一个秒杀系统","level":"1.37","depth":1,"path":"127_如何设计一个秒杀系统.md","ref":"127_如何设计一个秒杀系统.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","github","editlink","prism","-highlight","baidu","splitter","sitemap","tags","adsense","baiduana"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"disqus":{"useIdentifier":false,"shortName":"geeklearn-1"},"github":{"url":"https://github.com/wyufeng02/geeklearn"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/"},"splitter":{},"search":{},"adsense":{"client":"ca-pub-3595647280789331","slot":"8284206653","format":"auto","element":".page-inner section","position":"bottom"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://code4flutter.com/gitbook/"},"tags":{"placement":"bottom"},"baiduana":{},"baidu":{"token":"426f1e4464116c54060fd43355f14f53"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"极客时间索引","language":"zh","gitbook":"*","description":"极客时间课程列表"},"file":{"path":"129_代码精进之路.md","mtime":"2019-08-21T01:39:10.557Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-21T01:39:11.810Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"220_ZooKeeper实战与源码剖析","level":"1.88","depth":1,"previous":{"title":"219_编译原理之美","level":"1.87","depth":1,"path":"219_编译原理之美.md","ref":"219_编译原理之美.md","articles":[]},"dir":"ltr"},"config":{"plugins":["disqus","github","editlink","prism","-highlight","baidu","splitter","sitemap","tags","adsense","baiduana"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"disqus":{"useIdentifier":false,"shortName":"geeklearn-1"},"github":{"url":"https://github.com/wyufeng02/geeklearn"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/"},"splitter":{},"search":{},"adsense":{"client":"ca-pub-3595647280789331","slot":"8284206653","format":"auto","element":".page-inner section","position":"bottom"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://code4flutter.com/gitbook/"},"tags":{"placement":"bottom"},"baiduana":{},"baidu":{"token":"426f1e4464116c54060fd43355f14f53"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"极客时间索引","language":"zh","gitbook":"*","description":"极客时间课程列表"},"file":{"path":"220_ZooKeeper实战与源码剖析.md","mtime":"2019-08-21T01:39:10.588Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-21T01:39:11.810Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

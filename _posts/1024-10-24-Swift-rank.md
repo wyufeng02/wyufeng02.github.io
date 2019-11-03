@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  Swift开源项目排行榜 (10-19)
+title:  Swift开源项目排行榜 (11-03)
 tag: Swift 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#Swift开源项目排行榜 (10-19)
+#Swift开源项目排行榜 (11-03)
 
 ![Swift开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/Swift.png)
 
 
 
-## 11. [serhii-londar/open-source-mac-os-apps](http://github.com/serhii-londar/open-source-mac-os-apps)  ♥️ 20.2k
+## 11. [serhii-londar/open-source-mac-os-apps](http://github.com/serhii-londar/open-source-mac-os-apps)  ♥️ 20.3k
          
 > 🚀 Awesome list of open source applications for macOS.
        
@@ -23,22 +23,22 @@ categories:
 > Reactive extensions to Cocoa frameworks, built on top of ReactiveSwift
        
 
-## 13. [SwiftyJSON/SwiftyJSON](http://github.com/SwiftyJSON/SwiftyJSON)  ♥️ 19k
+## 13. [SwiftyJSON/SwiftyJSON](http://github.com/SwiftyJSON/SwiftyJSON)  ♥️ 19.1k
          
 > The better way to deal with JSON data in Swift.
        
 
-## 14. [SwiftGGTeam/the-swift-programming-language-in-chinese](http://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)  ♥️ 18.9k
+## 14. [SwiftGGTeam/the-swift-programming-language-in-chinese](http://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)  ♥️ 19k
          
 > 中文版 Apple 官方 Swift 教程《The Swift Programming Language》
        
 
-## 15. [matteocrippa/awesome-swift](http://github.com/matteocrippa/awesome-swift)  ♥️ 18.1k
+## 15. [matteocrippa/awesome-swift](http://github.com/matteocrippa/awesome-swift)  ♥️ 18.2k
          
 > A collaborative list of awesome Swift libraries and resources. Feel free to contribute!
        
 
-## 16. [HeroTransitions/Hero](http://github.com/HeroTransitions/Hero)  ♥️ 17.5k
+## 16. [HeroTransitions/Hero](http://github.com/HeroTransitions/Hero)  ♥️ 17.6k
          
 > Elegant transition library for iOS & tvOS
        
@@ -48,12 +48,12 @@ categories:
 > Reactive Programming in Swift
  
 
-## 18. [vapor/vapor](http://github.com/vapor/vapor)  ♥️ 17.3k
+## 18. [vapor/vapor](http://github.com/vapor/vapor)  ♥️ 17.4k
          
 > 💧 A server-side Swift web framework.
        
 
-## 19. [rclone/rclone](http://github.com/rclone/rclone)  ♥️ 16.5k
+## 19. [rclone/rclone](http://github.com/rclone/rclone)  ♥️ 16.7k
          
 > "rsync for cloud storage" - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfile…
        
@@ -64,32 +64,32 @@ categories:
        
 
 
-## 21. [onevcat/Kingfisher](http://github.com/onevcat/Kingfisher)  ♥️ 15k
+## 21. [onevcat/Kingfisher](http://github.com/onevcat/Kingfisher)  ♥️ 15.1k
          
 > A lightweight, pure-Swift library for downloading and caching images from the web.
        
 
-## 22. [ipader/SwiftGuide](http://github.com/ipader/SwiftGuide)  ♥️ 14.7k
+## 22. [ipader/SwiftGuide](http://github.com/ipader/SwiftGuide)  ♥️ 14.8k
          
 > Swift Featured Projects in brain Mapping
        
 
-## 23. [PerfectlySoft/Perfect](http://github.com/PerfectlySoft/Perfect)  ♥️ 13.6k
-         
-> Server-side Swift. The Perfect core toolset and framework for Swift Developers. (For mobile back-end development, web…
-       
-
-## 24. [hackiftekhar/IQKeyboardManager](http://github.com/hackiftekhar/IQKeyboardManager)  ♥️ 13.6k
+## 23. [hackiftekhar/IQKeyboardManager](http://github.com/hackiftekhar/IQKeyboardManager)  ♥️ 13.6k
          
 > Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. …
        
 
-## 25. [realm/realm-cocoa](http://github.com/realm/realm-cocoa)  ♥️ 13.5k
+## 24. [PerfectlySoft/Perfect](http://github.com/PerfectlySoft/Perfect)  ♥️ 13.6k
+         
+> Server-side Swift. The Perfect core toolset and framework for Swift Developers. (For mobile back-end development, web…
+       
+
+## 25. [realm/realm-cocoa](http://github.com/realm/realm-cocoa)  ♥️ 13.6k
          
 > Realm is a mobile database: a replacement for Core Data & SQLite
        
 
-## 26. [MengTo/Spring](http://github.com/MengTo/Spring)  ♥️ 13.3k
+## 26. [MengTo/Spring](http://github.com/MengTo/Spring)  ♥️ 13.4k
          
 > A library to simplify iOS animations in Swift.
        
@@ -109,7 +109,7 @@ categories:
 > Color framework for Swift & Objective-C (Gradient colors, hexcode support, colors from images & more).
        
 
-## 30. [mxcl/PromiseKit](http://github.com/mxcl/PromiseKit)  ♥️ 12k
+## 30. [mxcl/PromiseKit](http://github.com/mxcl/PromiseKit)  ♥️ 12.1k
          
 > Promises for Swift & ObjC.
        
@@ -125,17 +125,17 @@ categories:
 > A fast & simple, yet powerful & flexible logging framework for Mac and iOS
        
 
-## 33. [Moya/Moya](http://github.com/Moya/Moya)  ♥️ 11.3k
+## 33. [Moya/Moya](http://github.com/Moya/Moya)  ♥️ 11.4k
          
 > Network abstraction layer written in Swift.
        
 
-## 34. [CosmicMind/Material](http://github.com/CosmicMind/Material)  ♥️ 11.2k
+## 34. [CosmicMind/Material](http://github.com/CosmicMind/Material)  ♥️ 11.3k
          
 > A UI/UX framework for creating beautiful applications.
        
 
-## 35. [ochococo/Design-Patterns-In-Swift](http://github.com/ochococo/Design-Patterns-In-Swift)  ♥️ 11.1k
+## 35. [ochococo/Design-Patterns-In-Swift](http://github.com/ochococo/Design-Patterns-In-Swift)  ♥️ 11.2k
          
 > 📖 Design Patterns implemented in Swift 5.0
        
@@ -166,7 +166,7 @@ categories:
        
 
 
-## 41. [futurice/ios-good-practices](http://github.com/futurice/ios-good-practices)  ♥️ 9.5k
+## 41. [futurice/ios-good-practices](http://github.com/futurice/ios-good-practices)  ♥️ 9.6k
          
 > Good ideas for iOS development, by Futurice developers.
        
@@ -186,17 +186,17 @@ categories:
 > swift implementation of flappy bird. More at fullstackedu.com
        
 
-## 45. [ninjaprox/NVActivityIndicatorView](http://github.com/ninjaprox/NVActivityIndicatorView)  ♥️ 8.7k
+## 45. [ninjaprox/NVActivityIndicatorView](http://github.com/ninjaprox/NVActivityIndicatorView)  ♥️ 8.8k
          
 > A collection of awesome loading animations
        
 
-## 46. [Tencent/MMKV](http://github.com/Tencent/MMKV)  ♥️ 8.5k
+## 46. [Tencent/MMKV](http://github.com/Tencent/MMKV)  ♥️ 8.6k
          
 > An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS, Android, macOS and Windows.
        
 
-## 47. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8.5k
+## 47. [swiftmailer/swiftmailer](http://github.com/swiftmailer/swiftmailer)  ♥️ 8.6k
          
 > Comprehensive mailing tools for PHP
        
@@ -206,7 +206,7 @@ categories:
 > Xcode plug-in which helps you write documentation comment easier, for both Objective-C and Swift.
        
 
-## 49. [Quick/Quick](http://github.com/Quick/Quick)  ♥️ 8.4k
+## 49. [Quick/Quick](http://github.com/Quick/Quick)  ♥️ 8.5k
          
 > The Swift (and Objective-C) testing framework.
        
@@ -217,7 +217,7 @@ categories:
  
 
 
-## 51. [tristanhimmelman/ObjectMapper](http://github.com/tristanhimmelman/ObjectMapper)  ♥️ 8.2k
+## 51. [tristanhimmelman/ObjectMapper](http://github.com/tristanhimmelman/ObjectMapper)  ♥️ 8.3k
          
 > Simple JSON Object mapping written in Swift
  
@@ -227,12 +227,12 @@ categories:
 > Design and prototype customized UI, interaction, navigation, transition and animation for App Store ready Apps in Int…
        
 
-## 53. [Juanpe/SkeletonView](http://github.com/Juanpe/SkeletonView)  ♥️ 8.1k
+## 53. [Juanpe/SkeletonView](http://github.com/Juanpe/SkeletonView)  ♥️ 8.2k
          
 > An elegant way to show users that something is happening and also prepare them to which contents he is waiting
        
 
-## 54. [SwifterSwift/SwifterSwift](http://github.com/SwifterSwift/SwifterSwift)  ♥️ 7.7k
+## 54. [SwifterSwift/SwifterSwift](http://github.com/SwifterSwift/SwifterSwift)  ♥️ 7.8k
          
 > A handy collection of more than 500 native Swift extensions to boost your productivity.
        
@@ -247,19 +247,19 @@ categories:
 > The unofficial WWDC app for macOS
        
 
-## 57. [krzyzanowskim/CryptoSwift](http://github.com/krzyzanowskim/CryptoSwift)  ♥️ 7.3k
+## 57. [krzyzanowskim/CryptoSwift](http://github.com/krzyzanowskim/CryptoSwift)  ♥️ 7.4k
          
 > CryptoSwift is a growing collection of standard and secure cryptographic algorithms implemented in Swift
  
 
-## 58. [PureLayout/PureLayout](http://github.com/PureLayout/PureLayout)  ♥️ 7.3k
-         
-> The ultimate API for iOS & OS X Auto Layout — impressively simple, immensely powerful. Objective-C and Swift compatible.
-       
-
-## 59. [apple/swift-package-manager](http://github.com/apple/swift-package-manager)  ♥️ 7.3k
+## 58. [apple/swift-package-manager](http://github.com/apple/swift-package-manager)  ♥️ 7.3k
          
 > The Package Manager for the Swift Programming Language
+       
+
+## 59. [PureLayout/PureLayout](http://github.com/PureLayout/PureLayout)  ♥️ 7.3k
+         
+> The ultimate API for iOS & OS X Auto Layout — impressively simple, immensely powerful. Objective-C and Swift compatible.
        
 
 ## 60. [IBM-Swift/Kitura](http://github.com/IBM-Swift/Kitura)  ♥️ 7.2k
@@ -268,7 +268,7 @@ categories:
        
 
 
-## 61. [draveness/analyze](http://github.com/draveness/analyze)  ♥️ 7.1k
+## 61. [draveness/analyze](http://github.com/draveness/analyze)  ♥️ 7.2k
          
 > Draven's Blog
        
@@ -278,14 +278,14 @@ categories:
 > [EXPERIMENTAL] Graceful morphing effects for UILabel written in Swift.
        
 
-## 63. [kickstarter/ios-oss](http://github.com/kickstarter/ios-oss)  ♥️ 7k
-         
-> Kickstarter for iOS. Bring new ideas to life, anywhere.
-       
-
-## 64. [AudioKit/AudioKit](http://github.com/AudioKit/AudioKit)  ♥️ 7k
+## 63. [AudioKit/AudioKit](http://github.com/AudioKit/AudioKit)  ♥️ 7k
          
 > Swift audio synthesis, processing, & analysis platform for iOS, macOS and tvOS
+       
+
+## 64. [kickstarter/ios-oss](http://github.com/kickstarter/ios-oss)  ♥️ 7k
+         
+> Kickstarter for iOS. Bring new ideas to life, anywhere.
        
 
 ## 65. [robb/Cartography](http://github.com/robb/Cartography)  ♥️ 7k
@@ -298,7 +298,7 @@ categories:
 > Get strong typed, autocompleted resources like images, fonts and segues in Swift projects
        
 
-## 67. [antlr/antlr4](http://github.com/antlr/antlr4)  ♥️ 6.5k
+## 67. [antlr/antlr4](http://github.com/antlr/antlr4)  ♥️ 6.6k
          
 > ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or t…
        
@@ -339,7 +339,7 @@ categories:
 > Android PagerTabStrip for iOS.
        
 
-## 75. [mattgodbolt/compiler-explorer](http://github.com/mattgodbolt/compiler-explorer)  ♥️ 6k
+## 75. [mattgodbolt/compiler-explorer](http://github.com/mattgodbolt/compiler-explorer)  ♥️ 6.1k
          
 > Run compilers interactively from your web browser and interact with the assembly
        
@@ -354,7 +354,7 @@ categories:
 > A curated list of awesome ARKit projects and resources. Feel free to contribute!
        
 
-## 78. [ChenYilong/CYLTabBarController](http://github.com/ChenYilong/CYLTabBarController)  ♥️ 5.8k
+## 78. [ChenYilong/CYLTabBarController](http://github.com/ChenYilong/CYLTabBarController)  ♥️ 5.9k
          
 > [EN]It is an iOS UI module library for adding animation to iOS tabbar items and icons with Lottie, and adding a bigge…
        
@@ -380,7 +380,7 @@ categories:
 > 30 mini Swift Apps for self-study
        
 
-## 83. [marcosgriselli/ViewAnimator](http://github.com/marcosgriselli/ViewAnimator)  ♥️ 5.5k
+## 83. [marcosgriselli/ViewAnimator](http://github.com/marcosgriselli/ViewAnimator)  ♥️ 5.6k
          
 > ViewAnimator brings your UI to life with just one line
        
@@ -390,7 +390,7 @@ categories:
 > 🔥 Learn some Swift
  
 
-## 85. [apple/swift-nio](http://github.com/apple/swift-nio)  ♥️ 5.3k
+## 85. [apple/swift-nio](http://github.com/apple/swift-nio)  ♥️ 5.4k
          
 > Event-driven network application framework for high performance protocol servers & clients, non-blocking.
        
@@ -410,14 +410,14 @@ categories:
 > Custom UITextFields effects inspired by Codrops, built using Swift
  
 
-## 89. [cgoldsby/LoginCritter](http://github.com/cgoldsby/LoginCritter)  ♥️ 5.1k
-         
-> An animated avatar that responds to text field interactions
-       
-
-## 90. [SwiftKickMobile/SwiftMessages](http://github.com/SwiftKickMobile/SwiftMessages)  ♥️ 5.1k
+## 89. [SwiftKickMobile/SwiftMessages](http://github.com/SwiftKickMobile/SwiftMessages)  ♥️ 5.1k
          
 > A very flexible message bar for iOS written in Swift.
+       
+
+## 90. [cgoldsby/LoginCritter](http://github.com/cgoldsby/LoginCritter)  ♥️ 5.1k
+         
+> An animated avatar that responds to text field interactions
        
 
 
@@ -441,24 +441,24 @@ categories:
 > An adaptive scrollable graph view for iOS to visualise simple discrete datasets. Written in Swift.
        
 
-## 95. [Wolg/awesome-swift](http://github.com/Wolg/awesome-swift)  ♥️ 5k
-         
-> A curated list of awesome Swift frameworks, libraries and software.
-       
-
-## 96. [Haneke/HanekeSwift](http://github.com/Haneke/HanekeSwift)  ♥️ 4.9k
-         
-> A lightweight generic cache for iOS written in Swift with extra love for images.
-       
-
-## 97. [toptal/gitignore.io](http://github.com/toptal/gitignore.io)  ♥️ 4.9k
+## 95. [toptal/gitignore.io](http://github.com/toptal/gitignore.io)  ♥️ 5k
          
 > Create useful .gitignore files for your project
        
 
-## 98. [krzysztofzablocki/Sourcery](http://github.com/krzysztofzablocki/Sourcery)  ♥️ 4.9k
+## 96. [Wolg/awesome-swift](http://github.com/Wolg/awesome-swift)  ♥️ 5k
+         
+> A curated list of awesome Swift frameworks, libraries and software.
+       
+
+## 97. [krzysztofzablocki/Sourcery](http://github.com/krzysztofzablocki/Sourcery)  ♥️ 5k
          
 > Meta-programming for Swift, stop writing boilerplate code.
+       
+
+## 98. [Haneke/HanekeSwift](http://github.com/Haneke/HanekeSwift)  ♥️ 4.9k
+         
+> A lightweight generic cache for iOS written in Swift with extra love for images.
        
 
 ## 99. [vikmeup/SCLAlertView-Swift](http://github.com/vikmeup/SCLAlertView-Swift)  ♥️ 4.9k
@@ -466,7 +466,7 @@ categories:
 > Beautiful animated Alert View. Written in Swift
  
 
-## 100. [tensorflow/swift](http://github.com/tensorflow/swift)  ♥️ 4.8k
+## 100. [tensorflow/swift](http://github.com/tensorflow/swift)  ♥️ 4.9k
          
 > Swift for TensorFlow Project Home Page
        

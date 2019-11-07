@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  Objective-C开源项目排行榜 (11-03)
+title:  Objective-C开源项目排行榜 (11-07)
 tag: Objective-C 排行榜
 date: 2019-06-11
 categories:
 - rank
 ---
 
-#Objective-C开源项目排行榜 (11-03)
+#Objective-C开源项目排行榜 (11-07)
 
 ![Objective-C开源项目排行榜](http://code4flutter.oss-cn-beijing.aliyuncs.com/imgs/Objective-C.png)
 
 
-## 1. [vsouza/awesome-ios](http://github.com/vsouza/awesome-ios)  ♥️ 33.3k
+## 1. [vsouza/awesome-ios](http://github.com/vsouza/awesome-ios)  ♥️ 33.4k
          
 > A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects 
        
@@ -32,7 +32,7 @@ categories:
 > 📱 Collaborative List of Open-Source iOS Apps
        
 
-## 5. [serhii-londar/open-source-mac-os-apps](http://github.com/serhii-londar/open-source-mac-os-apps)  ♥️ 20.3k
+## 5. [serhii-londar/open-source-mac-os-apps](http://github.com/serhii-londar/open-source-mac-os-apps)  ♥️ 20.4k
          
 > 🚀 Awesome list of open source applications for macOS.
        
@@ -63,7 +63,7 @@ categories:
        
 
 
-## 11. [CocoaPods/CocoaPods](http://github.com/CocoaPods/CocoaPods)  ♥️ 12k
+## 11. [CocoaPods/CocoaPods](http://github.com/CocoaPods/CocoaPods)  ♥️ 12.1k
          
 > The Cocoa Dependency Manager.
        
@@ -88,7 +88,7 @@ categories:
 > 🕹 Retro video game emulation for macOS
        
 
-## 16. [Instagram/IGListKit](http://github.com/Instagram/IGListKit)  ♥️ 10.6k
+## 16. [Instagram/IGListKit](http://github.com/Instagram/IGListKit)  ♥️ 10.7k
          
 > A data-driven UICollectionView framework for building fast and flexible lists.
        
@@ -287,7 +287,7 @@ categories:
 > Send User Notifications on macOS from the command-line.
        
 
-## 55. [MacPass/MacPass](http://github.com/MacPass/MacPass)  ♥️ 5k
+## 55. [MacPass/MacPass](http://github.com/MacPass/MacPass)  ♥️ 5.1k
          
 > A native OS X KeePass client 
        
@@ -328,7 +328,7 @@ categories:
 > VimR — Neovim GUI for macOS
        
 
-## 63. [halfrost/Halfrost-Field](http://github.com/halfrost/Halfrost-Field)  ♥️ 4.3k
+## 63. [halfrost/Halfrost-Field](http://github.com/halfrost/Halfrost-Field)  ♥️ 4.4k
          
 > ✍️ 这里是写博客的地方 —— Halfrost-Field 冰霜之地
        
@@ -369,14 +369,14 @@ categories:
        
 
 
-## 71. [ninjinkun/NJKWebViewProgress](http://github.com/ninjinkun/NJKWebViewProgress)  ♥️ 4k
-         
-> UIWebView progress interface
-       
-
-## 72. [pujiaxin33/JXCategoryView](http://github.com/pujiaxin33/JXCategoryView)  ♥️ 3.9k
+## 71. [pujiaxin33/JXCategoryView](http://github.com/pujiaxin33/JXCategoryView)  ♥️ 4k
          
 > A powerful and easy to use category view (segmentedcontrol, segmentview, pagingview, pagerview, pagecontrol) (腾讯新闻、今日…
+       
+
+## 72. [ninjinkun/NJKWebViewProgress](http://github.com/ninjinkun/NJKWebViewProgress)  ♥️ 4k
+         
+> UIWebView progress interface
        
 
 ## 73. [BohdanOrlov/iOS-Developer-Roadmap](http://github.com/BohdanOrlov/iOS-Developer-Roadmap)  ♥️ 3.9k
@@ -430,14 +430,14 @@ categories:
 > Modular and customizable Material Design UI components for iOS
        
 
-## 83. [HeshamMegid/HMSegmentedControl](http://github.com/HeshamMegid/HMSegmentedControl)  ♥️ 3.6k
-         
-> A drop-in replacement for UISegmentedControl mimicking the style of the segmented control used in Google Currents and…
-       
-
-## 84. [quicktype/quicktype](http://github.com/quicktype/quicktype)  ♥️ 3.6k
+## 83. [quicktype/quicktype](http://github.com/quicktype/quicktype)  ♥️ 3.6k
          
 > Generate types and converters from JSON, Schema, and GraphQL
+       
+
+## 84. [HeshamMegid/HMSegmentedControl](http://github.com/HeshamMegid/HMSegmentedControl)  ♥️ 3.6k
+         
+> A drop-in replacement for UISegmentedControl mimicking the style of the segmented control used in Google Currents and…
        
 
 ## 85. [mapbox/mapbox-gl-native](http://github.com/mapbox/mapbox-gl-native)  ♥️ 3.6k

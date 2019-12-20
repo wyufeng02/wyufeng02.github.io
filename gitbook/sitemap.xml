@@ -15,10 +15,10 @@
 <url> <loc>http://code4flutter.com/75_深入浅出gRPC.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://code4flutter.com/76_深入浅出区块链.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://code4flutter.com/77_9小时搞定微信小程序开发.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://code4flutter.com/79_技术领导力300讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/79_技术领导力实战笔记.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://code4flutter.com/80_硅谷产品实战36讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://code4flutter.com/81_从0开始学架构.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://code4flutter.com/82_Java核心技术36讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/82_Java核心技术面试精讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://code4flutter.com/84_微服务架构实战160讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://code4flutter.com/85_趣谈网络协议.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://code4flutter.com/87_从0开始学游戏开发.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -101,4 +101,14 @@
 <url> <loc>http://code4flutter.com/242_苏杰的产品创新课.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://code4flutter.com/244_移动端自动化测试实战.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://code4flutter.com/245_项目管理实战20讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/250_设计模式之美.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/252_JavaScript核心原理解析.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/253_MongoDB高手课.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/254_后端技术面试38讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/256_现代C++实战30讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/257_前端全链路性能优化实战.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/259_性能工程高手课.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/262_安全攻防技能30讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/264_性能测试实战30讲.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://code4flutter.com/265_小马哥讲Spring核心编程思想.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
